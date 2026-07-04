@@ -1,0 +1,39 @@
+{
+  "benchmark_wide:A": {
+    "n": 94,
+    "accuracy": 0.83,
+    "mean_split_distance": 0.73
+  },
+  "benchmark_wide:B": {
+    "n": 93,
+    "accuracy": 0.774,
+    "mean_split_distance": 2.0
+  },
+  "memorization:famous:A": {
+    "n": 24,
+    "accuracy": 0.958,
+    "mean_split_distance": 0.0
+  },
+  "memorization:famous:B": {
+    "n": 24,
+    "accuracy": 0.958,
+    "mean_split_distance": 1.54
+  },
+  "memorization:scdb:A": {
+    "n": 25,
+    "accuracy": 0.96,
+    "mean_split_distance": 0.48
+  },
+  "memorization:scdb:B": {
+    "n": 25,
+    "accuracy": 1.0,
+    "mean_split_distance": 1.48
+  },
+  "benchmark:C": {
+    "n": 3,
+    "accuracy": 0.333,
+    "mean_split_distance": 2.67,
+    "total_vote_changes": 21,
+    "mean_rounds": 4.0
+  }
+}

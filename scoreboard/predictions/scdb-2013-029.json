@@ -1,0 +1,22 @@
+{
+  "set": "memorization",
+  "A": {
+    "disposition": "reverse",
+    "vote_split": "8-1"
+  },
+  "B": {
+    "disposition": "reverse",
+    "vote_split": "8-1",
+    "votes": {
+      "textualist": "reverse",
+      "originalist": "reverse",
+      "living_constitutionalist": "affirm",
+      "pragmatist": "reverse",
+      "precedent_maximalist": "reverse",
+      "federalism_hawk": "reverse",
+      "civil_libertarian": "reverse",
+      "process_formalist": "reverse",
+      "minimalist": "reverse"
+    }
+  }
+}

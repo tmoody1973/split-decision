@@ -1,0 +1,22 @@
+{
+  "set": "benchmark_wide",
+  "A": {
+    "disposition": "reverse",
+    "vote_split": "9-0"
+  },
+  "B": {
+    "disposition": "reverse",
+    "vote_split": "7-2",
+    "votes": {
+      "textualist": "reverse",
+      "originalist": "reverse",
+      "living_constitutionalist": "affirm",
+      "pragmatist": "reverse",
+      "precedent_maximalist": "reverse",
+      "federalism_hawk": "reverse",
+      "civil_libertarian": "affirm",
+      "process_formalist": "reverse",
+      "minimalist": "reverse"
+    }
+  }
+}
