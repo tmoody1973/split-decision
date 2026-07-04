@@ -63,7 +63,7 @@
                         │                         │        └────────────┘
                         │              ┌──────────┼──────────┐            
                         │              ▼          ▼          ▼            
-                        │       cosyvoice-v3+  Qwen-Image  cue_sheet.json 
+                        │       qwen3-tts-vd  Qwen-Image  cue_sheet.json  
                         │        (voices)    (ep. art)                    
                         │              │          │                       
                         │              ▼          ▼                       
@@ -90,7 +90,7 @@ hackathon requirements; it wins every conflict with this file):**
 |---|---|---|
 | Language (pipeline) | Python 3.11 | `openai` SDK (Qwen Cloud is OpenAI-compatible) |
 | Reasoning models | `qwen3.7-plus` (9 jurors), `qwen3.7-max` (Foreperson, Clerk), `qwen3.6-flash` (cheap tier) | per official model catalog in `docs/Qwen Cloud Proof of Deployment.md` |
-| TTS | `cosyvoice-v3-plus` for 12 distinct voices | **OPEN QUESTION (Day 1):** curl-verify whether cosyvoice supports custom voice creation (Voice Design-style). Fallback: 12 maximally distinct built-in voices/timbres. Blind-distinguishability bar still applies. |
+| TTS | **Qwen3-TTS Voice Design**: `qwen-voice-design` (create voices from text prompts) + `qwen3-tts-vd-2026-01-26` (synthesis with the created `voice`) | RESOLVED 2026-07-04 by live probe: cosyvoice-v3-plus is Beijing-only (engine 418 on intl) despite the hackathon doc's catalog. Voice Design works on `dashscope-intl`: POST `/api/v1/services/audio/tts/customization`, fields `action=create`, `target_model`, `preferred_name`, `voice_prompt`, `preview_text` → returns `output.voice` id + preview audio. 10 free creations (90 days), then $0.20 each. Synthesis: `/services/aigc/multimodal-generation/generation`. |
 | Image gen | `wan2.6-t2i` (episode art), `qwen-image-2.0-pro` (show cover — image gen + edit) | download → OSS immediately, URLs die in 24h |
 | Sprites | **SpriteCook via MCP** (`npx spritecook-mcp setup`) | generated at BUILD TIME, committed as static assets |
 | Courtroom renderer | Phaser 3 + Vite, TypeScript | deterministic replay of events.jsonl + cue sheet |
@@ -316,14 +316,14 @@ who host the podcast as a newsroom covering the chamber:
 Their contrast is structural: lead explains the LAW, analyst reads the ROOM. Write
 their two-way chemistry into both system prompts (they reference each other by role).
 
-**Voices (Day 1):** one script `scripts/create_voices.py` assigns a `cosyvoice-v3-plus`
-voice per persona, saves preview MP3s to `/assets/voice_previews/`, writes `voice_id`
-back to YAML. **OPEN QUESTION resolved here:** first curl-verify whether cosyvoice
-supports custom voice creation from a text prompt (the `voice_design_prompt` fields
-assume it). If not, fall back to selecting 12 maximally distinct built-in
-voices/timbres — the persona prompts become selection criteria, not generation prompts.
-LISTEN to all twelve before proceeding. Distinctiveness is the product.
-Design/select the two anchors FIRST — they carry the most airtime per episode.
+**Voices (Day 1):** one script `scripts/create_voices.py` calls **Voice Design**
+(`qwen-voice-design`, verified live 2026-07-04) per persona with its
+`voice_design_prompt`, saves preview audio to `/assets/voice_previews/`, writes the
+returned `voice` id back to YAML. LISTEN to all twelve before proceeding.
+Distinctiveness is the product. Budget: 12 voices = 10 free creations + 2 × $0.20;
+regenerations $0.20 each, cap at 5. Design the two anchors FIRST — they carry the
+most airtime per episode. (anchor_lead created 2026-07-04:
+`qwen-tts-vd-anchorlead-voice-20260704224120229-0762`.)
 
 ---
 
@@ -395,8 +395,8 @@ Per episode (`scripts/run_episode.py --case cl-12345`):
       or "prediction on the record" for pending → season scoreboard check-in
       ("the panel is now 14-for-17 this term") → outro. Target 12–18 min.
       Anchor lines carry `speaker: anchor_lead|anchor_analyst` in the script JSON.
-2. **TTS pass:** every utterance → `cosyvoice-v3-plus` with the speaker's `voice_id` →
-   `utt_NNN.mp3`. Record durations.
+2. **TTS pass:** every utterance → `qwen3-tts-vd-2026-01-26` with the speaker's
+   `voice_id` → `utt_NNN.mp3`. Record durations.
 3. **Timestamp pass:** fill event `t` values; write `cue_sheet.json`.
 4. **Assembly:** ffmpeg concat with 300ms gaps, music bed under host segments
    (bed ducked −14dB under speech; source a CC0 bed, commit license note).
