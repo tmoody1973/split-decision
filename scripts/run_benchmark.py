@@ -97,13 +97,21 @@ def run_predictions() -> None:
         if pred.get("A") and pred.get("B"):
             continue
         case = json.loads((CASES_DIR / f"{case_id}.json").read_text())
-        if not pred.get("A"):
-            pred["A"] = condition_a(case)
-        if not pred.get("B"):
-            pred["B"] = condition_b(case, personas)
+        for cond, runner in (("A", lambda: condition_a(case)), ("B", lambda: condition_b(case, personas))):
+            if pred.get(cond):
+                continue
+            try:
+                pred[cond] = runner()
+            except Exception as err:  # moderation blocks etc. — record and move on
+                if "data_inspection_failed" in str(err):
+                    pred[cond] = {"blocked": "data_inspection_failed"}
+                    print(f"  ! {case_id} {cond}: content-moderation block, recorded as skip")
+                else:
+                    print(f"  ! {case_id} {cond}: {type(err).__name__}: {str(err)[:120]}")
         pred_path.write_text(json.dumps(pred, indent=2) + "\n")
         a, b = pred.get("A") or {}, pred.get("B") or {}
-        print(f"[{n}/{len(targets)}] {case_id} A={a.get('disposition')} B={b.get('disposition')}")
+        print(f"[{n}/{len(targets)}] {case_id} A={a.get('disposition') or a.get('blocked')} "
+              f"B={b.get('disposition') or b.get('blocked')}")
 
 
 def _maj(split: str) -> int | None:
@@ -127,8 +135,8 @@ def aggregate() -> dict:
                     continue
                 pred = (json.loads(pred_path.read_text()) or {}).get(cond)
                 gt = json.loads((CASES_DIR / f"{e['case_id']}.json").read_text())["ground_truth"]
-                if not (pred and gt):
-                    continue
+                if not (pred and pred.get("disposition") and gt):
+                    continue  # missing, malformed, or moderation-blocked
                 n += 1
                 actual = "affirm" if gt["disposition"] == "affirmed" else "reverse"
                 hits += pred["disposition"] == actual
