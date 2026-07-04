@@ -37,7 +37,11 @@
           "type": "object",
           "properties": {
             "disposition": { "enum": ["affirmed", "reversed"] },
-            "vote_split": { "type": "string", "pattern": "^[0-9]-[0-9]$" },
+            "vote_split": {
+              "description": "N-M, or 'unknown' when the opinion text does not state the lineup (split-distance metric skips these)",
+              "type": "string",
+              "pattern": "^([0-9]-[0-9]|unknown)$"
+            },
             "scdb_id": {
               "description": "SCDB caseId; null when the outcome was hand-coded because SCDB lags",
               "oneOf": [{ "type": "string", "minLength": 1 }, { "type": "null" }]

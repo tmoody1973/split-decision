@@ -203,8 +203,16 @@ def famous_names(client, names: list[str]) -> set[str]:
     return famous
 
 
-def extract_ground_truth(client, name: str, syllabus: str) -> dict | None:
-    """Extract disposition + vote split from the official syllabus text."""
+def extract_ground_truth(client, name: str, syllabus: str, cache_key: str | None = None) -> dict | None:
+    """Extract disposition + vote split from the official syllabus text.
+
+    Results are disk-cached (they're deterministic extractions from fixed
+    text) so reruns don't re-spend tokens.
+    """
+    cache_path = (REPO_ROOT / "data" / "cache" / f"gt_{cache_key}.json") if cache_key else None
+    if cache_path and cache_path.exists():
+        cached = json.loads(cache_path.read_text())
+        return cached or None
     completion = client.chat.completions.create(
         model="qwen3.7-plus",
         messages=[{
@@ -229,9 +237,13 @@ def extract_ground_truth(client, name: str, syllabus: str) -> dict | None:
     except json.JSONDecodeError:
         return None
     if gt.get("disposition") not in ("affirmed", "reversed"):
-        return None
-    if not re.fullmatch(r"[0-9]-[0-9]", gt.get("vote_split", "")):
-        return None
+        gt = None
+    # Disposition is the primary ground truth; a missing lineup is not a reason
+    # to discard the case — the split-distance metric skips unknowns.
+    elif not re.fullmatch(r"[0-9]-[0-9]", gt.get("vote_split", "")):
+        gt["vote_split"] = "unknown"
+    if cache_path:
+        cache_path.write_text(json.dumps(gt))
     return gt
 
 
@@ -442,8 +454,16 @@ def main() -> int:
     famous = famous_names(client, [c["case_name"] for c in clusters])
     print(f"  famous-name exclusions: {sorted(famous) or 'none'}")
 
+    seen_names: set[str] = set()
     for cluster in clusters:
         name = cluster["case_name"]
+        # CL posts revised opinions as new clusters — dedupe on normalized name,
+        # keeping the first (newest, since we iterate newest-first).
+        norm = re.sub(r"\s*Revisions?:.*$", "", name).strip().casefold()
+        if norm in seen_names:
+            manifest["excluded"].append({"name": name, "reason": "duplicate cluster (revision)"})
+            continue
+        seen_names.add(norm)
         if name in famous:
             manifest["excluded"].append({"name": name, "reason": "famous-name contamination filter"})
             continue
@@ -451,7 +471,7 @@ def main() -> int:
         if len(syllabus) < 500:
             manifest["excluded"].append({"name": name, "reason": "no usable opinion text"})
             continue
-        gt = extract_ground_truth(client, name, syllabus)
+        gt = extract_ground_truth(client, name, syllabus, cache_key=str(cluster["id"]))
         if not gt:
             manifest["excluded"].append({"name": name, "reason": "ground truth not cleanly extractable (mixed/unclear)"})
             continue
