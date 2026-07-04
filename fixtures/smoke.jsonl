@@ -1,0 +1,10 @@
+{"t": 0, "type": "session_start", "case_id": "cl-cluster-99001", "round": 0}
+{"t": 500, "type": "foreperson", "action": "open_session", "text": "We are convened on case 24-901. Opening statements, then private votes. Textualist, you have the floor.", "audio_file": "utt_000.mp3", "dur_ms": 7200}
+{"t": 7700, "type": "move", "agent": "textualist", "to": "lectern"}
+{"t": 9200, "type": "speak", "agent": "textualist", "round": 1, "text": "The statute says 'shall,' not 'may.' That ends it for me. Reverse.", "stance": "reverse", "confidence": 0.85, "audio_file": "utt_001.mp3", "dur_ms": 6400}
+{"t": 15600, "type": "speak", "agent": "pragmatist", "round": 1, "text": "And if we reverse, every permit issued under the old reading is void overnight. That chaos is not what Congress wrote either.", "stance": "affirm", "confidence": 0.6, "audio_file": "utt_002.mp3", "dur_ms": 8100}
+{"t": 23700, "type": "vote", "agent": "pragmatist", "round": 1, "position": "affirm", "confidence": 0.6, "public": false}
+{"t": 24200, "type": "foreperson", "action": "pair_debate", "agents": ["textualist", "pragmatist"], "text": "Sharpest split on the board. Textualist, Pragmatist — two turns each, text versus consequences.", "audio_file": "utt_003.mp3", "dur_ms": 6800}
+{"t": 31000, "type": "vote_change", "agent": "pragmatist", "round": 2, "from": "affirm", "to": "reverse", "influenced_by": ["textualist"], "reason_text": "The savings clause in subsection (e) answers my reliance concern — existing permits survive. With that, the plain text controls.", "audio_file": "utt_004.mp3", "dur_ms": 9300}
+{"t": 40300, "type": "verdict", "position": "reverse", "vote_split": "7-2", "dissenters": ["living_constitutionalist", "civil_libertarian"]}
+{"t": 41000, "type": "reveal", "actual": "reverse", "actual_split": "6-3", "match": true}

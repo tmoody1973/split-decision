@@ -1,0 +1,218 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "split-decision/contracts/events.schema.json",
+  "title": "Split Decision event",
+  "description": "One JSON object per line. Two streams share this schema: episodes/{case_id}/events.jsonl (the deliberation record — immutable once generated; event types session_start/speak/vote/vote_change/foreperson/move/verdict/reveal) and episodes/{case_id}/studio_events.jsonl (the journalists' show — references but never contains deliberation content; event types studio/tape_ref). Scoreboard reads only the deliberation stream. Timestamps `t` are ms from episode start; the engine emits t=null in sequence order and the Producer fills final values after TTS (durations known). Renderers MUST hard-fail on agent ids outside the persona registry.",
+  "oneOf": [
+    { "$ref": "#/$defs/session_start" },
+    { "$ref": "#/$defs/speak" },
+    { "$ref": "#/$defs/vote" },
+    { "$ref": "#/$defs/vote_change" },
+    { "$ref": "#/$defs/foreperson" },
+    { "$ref": "#/$defs/move" },
+    { "$ref": "#/$defs/verdict" },
+    { "$ref": "#/$defs/reveal" },
+    { "$ref": "#/$defs/studio" },
+    { "$ref": "#/$defs/tape_ref" }
+  ],
+  "$defs": {
+    "t": {
+      "description": "ms from episode start; null until the Producer's timestamp pass",
+      "oneOf": [{ "type": "integer", "minimum": 0 }, { "type": "null" }]
+    },
+    "jurist": {
+      "description": "Persona registry ids — the nine jurists (personas/*.yaml)",
+      "enum": [
+        "textualist",
+        "originalist",
+        "living_constitutionalist",
+        "pragmatist",
+        "precedent_maximalist",
+        "federalism_hawk",
+        "civil_libertarian",
+        "process_formalist",
+        "minimalist"
+      ]
+    },
+    "anchor": {
+      "description": "Persona registry ids — the two journalist anchors",
+      "enum": ["anchor_lead", "anchor_analyst"]
+    },
+    "position": { "enum": ["affirm", "reverse"] },
+    "vote_split": { "type": "string", "pattern": "^[0-9]-[0-9]$" },
+    "round": { "type": "integer", "minimum": 0, "maximum": 5 },
+    "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+    "audio_file": {
+      "description": "Path relative to the episode dir; absent until the TTS pass",
+      "type": "string",
+      "pattern": "\\.mp3$"
+    },
+    "dur_ms": { "type": "integer", "minimum": 1 },
+
+    "session_start": {
+      "type": "object",
+      "properties": {
+        "t": { "$ref": "#/$defs/t" },
+        "type": { "const": "session_start" },
+        "case_id": { "type": "string", "minLength": 1 },
+        "round": { "const": 0 }
+      },
+      "required": ["t", "type", "case_id", "round"],
+      "additionalProperties": false
+    },
+
+    "speak": {
+      "description": "One jurist utterance. THE core event.",
+      "type": "object",
+      "properties": {
+        "t": { "$ref": "#/$defs/t" },
+        "type": { "const": "speak" },
+        "agent": { "$ref": "#/$defs/jurist" },
+        "round": { "$ref": "#/$defs/round" },
+        "text": { "type": "string", "minLength": 1 },
+        "stance": { "$ref": "#/$defs/position" },
+        "confidence": { "$ref": "#/$defs/confidence" },
+        "audio_file": { "$ref": "#/$defs/audio_file" },
+        "dur_ms": { "$ref": "#/$defs/dur_ms" }
+      },
+      "required": ["t", "type", "agent", "round", "text", "stance", "confidence"],
+      "additionalProperties": false
+    },
+
+    "vote": {
+      "description": "Private scratchpad vote at a round boundary (drives the scoreboard)",
+      "type": "object",
+      "properties": {
+        "t": { "$ref": "#/$defs/t" },
+        "type": { "const": "vote" },
+        "agent": { "$ref": "#/$defs/jurist" },
+        "round": { "$ref": "#/$defs/round" },
+        "position": { "$ref": "#/$defs/position" },
+        "confidence": { "$ref": "#/$defs/confidence" },
+        "public": { "const": false }
+      },
+      "required": ["t", "type", "agent", "round", "position", "confidence", "public"],
+      "additionalProperties": false
+    },
+
+    "vote_change": {
+      "description": "A flip. THE wow event — courtroom flashes, board tile flips.",
+      "type": "object",
+      "properties": {
+        "t": { "$ref": "#/$defs/t" },
+        "type": { "const": "vote_change" },
+        "agent": { "$ref": "#/$defs/jurist" },
+        "round": { "$ref": "#/$defs/round" },
+        "from": { "$ref": "#/$defs/position" },
+        "to": { "$ref": "#/$defs/position" },
+        "influenced_by": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/jurist" },
+          "minItems": 1
+        },
+        "reason_text": { "type": "string", "minLength": 1 },
+        "audio_file": { "$ref": "#/$defs/audio_file" },
+        "dur_ms": { "$ref": "#/$defs/dur_ms" }
+      },
+      "required": ["t", "type", "agent", "round", "from", "to", "influenced_by", "reason_text"],
+      "additionalProperties": false
+    },
+
+    "foreperson": {
+      "description": "Moderation act. Known actions: pair_debate, call_vote, set_speaking_order, open_session, close_session. Renderers treat unrecognized actions as narration-only.",
+      "type": "object",
+      "properties": {
+        "t": { "$ref": "#/$defs/t" },
+        "type": { "const": "foreperson" },
+        "action": { "type": "string", "minLength": 1 },
+        "agents": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/jurist" }
+        },
+        "text": { "type": "string", "minLength": 1 },
+        "audio_file": { "$ref": "#/$defs/audio_file" },
+        "dur_ms": { "$ref": "#/$defs/dur_ms" }
+      },
+      "required": ["t", "type", "action", "text"],
+      "additionalProperties": false
+    },
+
+    "move": {
+      "description": "Renderer hint, inserted by the Producer",
+      "type": "object",
+      "properties": {
+        "t": { "$ref": "#/$defs/t" },
+        "type": { "const": "move" },
+        "agent": { "$ref": "#/$defs/jurist" },
+        "to": { "enum": ["bench", "lectern", "huddle"] }
+      },
+      "required": ["t", "type", "agent", "to"],
+      "additionalProperties": false
+    },
+
+    "verdict": {
+      "type": "object",
+      "properties": {
+        "t": { "$ref": "#/$defs/t" },
+        "type": { "const": "verdict" },
+        "position": { "$ref": "#/$defs/position" },
+        "vote_split": { "$ref": "#/$defs/vote_split" },
+        "dissenters": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/jurist" },
+          "maxItems": 4
+        }
+      },
+      "required": ["t", "type", "position", "vote_split", "dissenters"],
+      "additionalProperties": false
+    },
+
+    "reveal": {
+      "description": "Decided cases only — the real Court's outcome vs the panel's",
+      "type": "object",
+      "properties": {
+        "t": { "$ref": "#/$defs/t" },
+        "type": { "const": "reveal" },
+        "actual": { "$ref": "#/$defs/position" },
+        "actual_split": { "$ref": "#/$defs/vote_split" },
+        "match": { "type": "boolean" }
+      },
+      "required": ["t", "type", "actual", "actual_split", "match"],
+      "additionalProperties": false
+    },
+
+    "studio": {
+      "description": "Anchor segment — studio stream only, never in events.jsonl",
+      "type": "object",
+      "properties": {
+        "t": { "$ref": "#/$defs/t" },
+        "type": { "const": "studio" },
+        "agent": { "$ref": "#/$defs/anchor" },
+        "text": { "type": "string", "minLength": 1 },
+        "audio_file": { "$ref": "#/$defs/audio_file" },
+        "dur_ms": { "$ref": "#/$defs/dur_ms" }
+      },
+      "required": ["t", "type", "agent", "text"],
+      "additionalProperties": false
+    },
+
+    "tape_ref": {
+      "description": "Studio-stream pointer into the deliberation record: play events [start, end] inclusive, by index into events.jsonl. Tape integrity: clips are selected by index, never rewritten.",
+      "type": "object",
+      "properties": {
+        "t": { "$ref": "#/$defs/t" },
+        "type": { "const": "tape_ref" },
+        "clip_id": { "type": "string", "pattern": "^c[0-9]+$" },
+        "event_span": {
+          "type": "array",
+          "items": { "type": "integer", "minimum": 0 },
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "dur_ms": { "$ref": "#/$defs/dur_ms" }
+      },
+      "required": ["t", "type", "clip_id", "event_span", "dur_ms"],
+      "additionalProperties": false
+    }
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "split-decision/contracts/case.schema.json",
+  "title": "Split Decision case record",
+  "description": "One benchmark or pending case, assembled by ingest_cases.py from CourtListener + SCDB (scdb.wustl.edu) + Oyez. ground_truth and date_decided are null for pending cases. Contamination guard: decided cases must post-date 2025-06-01.",
+  "type": "object",
+  "properties": {
+    "case_id": { "type": "string", "pattern": "^cl-cluster-[0-9]+$" },
+    "name": { "type": "string", "minLength": 1 },
+    "docket": { "type": "string", "minLength": 1 },
+    "date_argued": { "type": "string", "format": "date" },
+    "date_decided": {
+      "oneOf": [{ "type": "string", "format": "date" }, { "type": "null" }]
+    },
+    "question_presented": {
+      "description": "From Oyez or the syllabus",
+      "type": "string",
+      "minLength": 1
+    },
+    "facts_summary": {
+      "description": "Clerk-generated, ≤400 words",
+      "type": "string",
+      "minLength": 1
+    },
+    "lower_court_ruling": { "type": "string", "minLength": 1 },
+    "opinion_excerpt_urls": {
+      "type": "array",
+      "items": { "type": "string", "format": "uri" }
+    },
+    "ground_truth": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "disposition": { "enum": ["affirmed", "reversed"] },
+            "vote_split": { "type": "string", "pattern": "^[0-9]-[0-9]$" },
+            "scdb_id": {
+              "description": "SCDB caseId; null when the outcome was hand-coded because SCDB lags",
+              "oneOf": [{ "type": "string", "minLength": 1 }, { "type": "null" }]
+            }
+          },
+          "required": ["disposition", "vote_split", "scdb_id"],
+          "additionalProperties": false
+        },
+        { "type": "null" }
+      ]
+    },
+    "status": { "enum": ["decided", "pending"] }
+  },
+  "required": [
+    "case_id",
+    "name",
+    "docket",
+    "date_argued",
+    "date_decided",
+    "question_presented",
+    "facts_summary",
+    "lower_court_ruling",
+    "opinion_excerpt_urls",
+    "ground_truth",
+    "status"
+  ],
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "description": "pending ⇔ no decision date and no ground truth",
+      "if": { "properties": { "status": { "const": "pending" } } },
+      "then": {
+        "properties": {
+          "date_decided": { "type": "null" },
+          "ground_truth": { "type": "null" }
+        }
+      },
+      "else": {
+        "properties": {
+          "date_decided": { "type": "string" },
+          "ground_truth": { "type": "object" }
+        }
+      }
+    }
+  ]
+}

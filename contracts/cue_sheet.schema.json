@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "split-decision/contracts/cue_sheet.schema.json",
+  "title": "Split Decision cue sheet",
+  "description": "episodes/{case_id}/cue_sheet.json — the derived timing view for the Phaser player and video export, written by the Producer's timestamp pass. Ordered by t ascending. Spans both streams: `stream` says which file `event_index` points into (events.jsonl or studio_events.jsonl). The player consumes cue sheet + events; it never re-derives timing.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "t": { "type": "integer", "minimum": 0 },
+      "stream": { "enum": ["deliberation", "studio"] },
+      "event_index": {
+        "description": "0-based line index into the stream's .jsonl file",
+        "type": "integer",
+        "minimum": 0
+      },
+      "audio_file": { "type": "string", "pattern": "\\.mp3$" },
+      "dur_ms": { "type": "integer", "minimum": 1 }
+    },
+    "required": ["t", "stream", "event_index", "audio_file", "dur_ms"],
+    "additionalProperties": false
+  }
+}
