@@ -24,8 +24,11 @@
 4. **Contamination guard.** Benchmark cases MUST be decided after 2025-06-01 or be
    obscure per-curiam decisions. Pending (undecided) cases are the headline.
    Never benchmark on famous cases — Qwen has memorized them.
-5. **$40 token budget.** Log every API call's token usage to `costs.jsonl`.
-   Jurors run on `qwen-plus`. Only the Foreperson and Clerk run `qwen-max`.
+5. **Token budget: 70M+ free tokens** (new-account free tier — see
+   `docs/Qwen Cloud Proof of Deployment.md`). Still log every API call's token usage
+   to `costs.jsonl` — the pool is finite and the log is the audit trail.
+   Jurors run on `qwen3.7-plus`. Only the Foreperson and Clerk run `qwen3.7-max`.
+   `qwen3.6-flash` is available for low-stakes calls (formatting, summaries).
 6. **Everything to OSS immediately.** Qwen-Image URLs expire in 24h. Any generated
    asset is downloaded and pushed to Alibaba OSS in the same function that created it.
 7. **Open source hygiene.** Apache-2.0 LICENSE at repo root, visible in About.
@@ -43,9 +46,9 @@
   CourtListener API ───▶│  ┌──────────┐    ┌──────────────────┐   │
   Oyez API ────────────▶│  │  CLERK   │───▶│   DELIBERATION   │   │
   SCDB CSV (local) ────▶│  │  agent   │    │     CHAMBER      │   │
-                        │  │ qwen-max │    │  9 × qwen-plus   │   │
+                        │  │ 3.7-max  │    │  9 × qwen3.7-plus│   │
                         │  └──────────┘    │  + Foreperson    │   │
-                        │   bench memo     │    (qwen-max)    │   │
+                        │   bench memo     │   (qwen3.7-max)  │   │
                         │   + precedents   └────────┬─────────┘   │
                         │                           │             │
                         │                    events.jsonl         │
@@ -55,26 +58,29 @@
                         │  ┌───────────┐    ┌────────────┐ ┌────────────┐
                         │  │ SCOREBOARD│    │  PRODUCER  │ │ COURTROOM  │
                         │  │ benchmark │    │   agent    │ │  renderer  │
-                        │  │  metrics  │    │ qwen-plus  │ │ (Phaser 3, │
+                        │  │  metrics  │    │qwen3.7-plus│ │ (Phaser 3, │
                         │  └───────────┘    └─────┬──────┘ │  browser)  │
                         │                         │        └────────────┘
                         │              ┌──────────┼──────────┐            
                         │              ▼          ▼          ▼            
-                        │        Qwen3-TTS   Qwen-Image   cue_sheet.json  
+                        │       cosyvoice-v3+  Qwen-Image  cue_sheet.json 
                         │        (voices)    (ep. art)                    
                         │              │          │                       
                         │              ▼          ▼                       
                         │        ffmpeg mix → MP3 + RSS → OSS bucket      
                         └─────────────────────────────────────────┘
                                        │
-                          Function Compute (pipeline runner)
+                          SAS — Simple Application Server (pipeline runner)
                           OSS static hosting (podcast feed + courtroom app)
 ```
 
-**Deploy targets (proof-of-deployment recording covers these):**
-- **Function Compute** — the pipeline orchestrator (`run_episode.py` as an HTTP-triggered function)
+**Deploy targets — authority: `docs/Qwen Cloud Proof of Deployment.md` (official
+hackathon requirements; it wins every conflict with this file):**
+- **SAS (Simple Application Server)** — the pipeline runner (`run_episode.py` behind a
+  systemd service). The doc's fast path: deploy in under 5 minutes.
 - **OSS** — static hosting: podcast MP3s, RSS feed, episode art, and the built courtroom web app
-- Region: **Singapore (ap-southeast-1)** for Model Studio. Beijing-region keys DO NOT work here.
+- **Proof of deployment** = Workbench Overview screenshot of the running project,
+  exactly as the sample screenshots in the doc show. Capture it on Day 4.
 
 ---
 
@@ -82,22 +88,28 @@
 
 | Layer | Choice | Notes |
 |---|---|---|
-| Language (pipeline) | Python 3.11 | dashscope SDK for Model Studio |
-| Reasoning models | `qwen-plus` (9 jurors), `qwen-max` (Foreperson, Clerk) | Singapore endpoint |
-| TTS | Qwen3-TTS via Model Studio — **Voice Design** for 10 distinct voices | 10 free voice creations; batch (non-realtime) synthesis |
-| Image gen | `qwen-image-plus` (episode art), `qwen-image-2.0-pro` (show cover — best text rendering) | download → OSS immediately, URLs die in 24h |
+| Language (pipeline) | Python 3.11 | `openai` SDK (Qwen Cloud is OpenAI-compatible) |
+| Reasoning models | `qwen3.7-plus` (9 jurors), `qwen3.7-max` (Foreperson, Clerk), `qwen3.6-flash` (cheap tier) | per official model catalog in `docs/Qwen Cloud Proof of Deployment.md` |
+| TTS | `cosyvoice-v3-plus` for 12 distinct voices | **OPEN QUESTION (Day 1):** curl-verify whether cosyvoice supports custom voice creation (Voice Design-style). Fallback: 12 maximally distinct built-in voices/timbres. Blind-distinguishability bar still applies. |
+| Image gen | `wan2.6-t2i` (episode art), `qwen-image-2.0-pro` (show cover — image gen + edit) | download → OSS immediately, URLs die in 24h |
 | Sprites | **SpriteCook via MCP** (`npx spritecook-mcp setup`) | generated at BUILD TIME, committed as static assets |
 | Courtroom renderer | Phaser 3 + Vite, TypeScript | deterministic replay of events.jsonl + cue sheet |
-| Audio assembly | ffmpeg (concat + music bed ducking) | runs inside Function Compute layer or locally |
+| Audio assembly | ffmpeg (concat + music bed ducking) | runs on the SAS instance or locally |
 | Case data | CourtListener REST v4 + SCDB CSV + Oyez | free, token auth for CourtListener |
 | Storage | Alibaba OSS | episodes, art, RSS, courtroom app |
 | Vector store (precedent RAG) | Simple: JSON + local embedding is fine at this scale. Stretch: DashVector | 20–30 cases → don't over-engineer |
 
-**Endpoint boilerplate (Singapore):**
+**Endpoint boilerplate (OpenAI-compatible — per the official doc):**
 ```python
-import dashscope
-dashscope.base_http_api_url = "https://{WorkspaceId}.ap-southeast-1.maas.aliyuncs.com/api/v1"
-# API key: env var DASHSCOPE_API_KEY (Singapore-region key ONLY)
+import os
+from openai import OpenAI
+
+client = OpenAI(
+    api_key=os.getenv("DASHSCOPE_API_KEY"),
+    base_url=os.getenv("DASHSCOPE_BASE_URL", "https://dashscope-intl.aliyuncs.com/compatible-mode/v1"),
+)
+# NOTE: do NOT mix Token Plan keys (sk-sp-*) with this pay-as-you-go endpoint —
+# Token Plan uses token-plan.ap-southeast-1.maas.aliyuncs.com and 401s otherwise.
 ```
 
 ---
@@ -110,7 +122,7 @@ dashscope.base_http_api_url = "https://{WorkspaceId}.ap-southeast-1.maas.aliyunc
 |---|---|---|
 | **CourtListener REST v4** `/api/rest/v4/clusters/?docket__court=scotus` | case name, dates, syllabus, opinion text (`html_with_citations`), `scdb_id` | free token — `Authorization: Token <key>` |
 | **CourtListener search API** `/api/rest/v4/search/?court=scotus&q=...` | discovery of recent + pending-adjacent cases | same token |
-| **SCDB CSV** (download once, commit to `/data/scdb/`) | coded ground truth: `caseDisposition`, `decisionDirection`, `majVotes`, `minVotes`, `issueArea` | free CSV, no auth |
+| **SCDB CSV** — http://scdb.wustl.edu/ (download once, commit to `/data/scdb/`) | coded ground truth: `caseDisposition`, `decisionDirection`, `majVotes`, `minVotes`, `issueArea` | free CSV, no auth |
 | **Oyez** `api.oyez.org/cases/{term}/{docket}` | plain-English facts + question presented (great for scripts) | free, no auth |
 
 ### 3.2 Case selection rules (contamination guard — CRITICAL)
@@ -269,7 +281,7 @@ display_name: "The Textualist"
 voice_design_prompt: >
   Older male voice, gravelly, deliberate, low pitch, slight Southern cadence,
   speaks in short declarative sentences, dry wit.
-voice_id: null            # filled after Voice Design call, committed
+voice_id: null            # filled after voice creation/selection (cosyvoice), committed
 system_prompt: |
   You are a jurist on a nine-member deliberative panel. Your judicial philosophy:
   the text of the statute or Constitution controls. Legislative history is noise.
@@ -293,7 +305,7 @@ bias_axes: {textualism: 0.95, precedent_weight: 0.5, pragmatism: 0.1, federalism
 8. `process_formalist` — jurisdiction, standing, procedure before merits
 9. `minimalist` — decide narrowly, avoid the big question if possible
 
-Plus: `foreperson` (qwen-max; moderates, never votes) and **two journalist anchors**
+Plus: `foreperson` (qwen3.7-max; moderates, never votes) and **two journalist anchors**
 who host the podcast as a newsroom covering the chamber:
 - `anchor_lead` — legal-affairs correspondent. Precise, warm, carries the facts and
   procedural stakes. Public-radio two-way register.
@@ -303,11 +315,14 @@ who host the podcast as a newsroom covering the chamber:
 Their contrast is structural: lead explains the LAW, analyst reads the ROOM. Write
 their two-way chemistry into both system prompts (they reference each other by role).
 
-**Voice Design (Day 1):** one script `scripts/create_voices.py` calls Voice Design
-per persona, saves preview MP3s to `/assets/voice_previews/`, writes `voice_id` back
-to YAML. LISTEN to all twelve before proceeding. Distinctiveness is the product.
-Budget: 12 voices = 10 free creations + 2 × $0.20. Regenerations $0.20 each; cap at 5.
-Design the two anchors FIRST — they carry the most airtime per episode.
+**Voices (Day 1):** one script `scripts/create_voices.py` assigns a `cosyvoice-v3-plus`
+voice per persona, saves preview MP3s to `/assets/voice_previews/`, writes `voice_id`
+back to YAML. **OPEN QUESTION resolved here:** first curl-verify whether cosyvoice
+supports custom voice creation from a text prompt (the `voice_design_prompt` fields
+assume it). If not, fall back to selecting 12 maximally distinct built-in
+voices/timbres — the persona prompts become selection criteria, not generation prompts.
+LISTEN to all twelve before proceeding. Distinctiveness is the product.
+Design/select the two anchors FIRST — they carry the most airtime per episode.
 
 ---
 
@@ -335,15 +350,15 @@ ROUND (max 5):
   written from ITS OWN perspective (its `memory_digest`), not a shared neutral summary
 
 **Token budget per case:** 9 jurors × 5 rounds × ~900 tokens I/O ≈ 40–50K + Foreperson/Clerk
-≈ 70K total. 25 cases ≈ 1.75M tokens on mostly qwen-plus → comfortably inside $40.
-Track in `costs.jsonl`; alert (print red) at $25 cumulative.
+≈ 70K total. 25 cases ≈ 1.75M tokens on mostly qwen3.7-plus → a small fraction of the
+70M+ free-tier pool. Track in `costs.jsonl`; alert (print red) at 50M cumulative tokens.
 
 ---
 
 ## 8. Scoreboard / Benchmark (`scoreboard/`)
 
 Three conditions per benchmark case, all on identical case records:
-- **A. Solo:** single `qwen-max` predicts disposition + split (1 call)
+- **A. Solo:** single `qwen3.7-max` predicts disposition + split (1 call)
 - **B. Independent jury:** 9 personas vote once, no communication; majority wins
 - **C. Society:** full deliberation protocol
 Metrics: disposition accuracy, split-distance (|predicted majVotes − actual|),
@@ -367,7 +382,7 @@ juror's words or votes. The script pass selects clip spans by event index, it do
 rewrite them. Podcast, scoreboard, and courtroom share one source of truth.
 
 Per episode (`scripts/run_episode.py --case cl-12345`):
-1. **Newsroom pass** (qwen-plus, two calls):
+1. **Newsroom pass** (qwen3.7-plus, two calls):
    a. *Clip selection* — given the transcript, select 6–10 tape blocks by event index:
       the sharpest exchange (cold open), each vote_change and its trigger, the verdict.
       Output: `clip_manifest.json` (spans of event indices, no text rewriting).
@@ -379,13 +394,13 @@ Per episode (`scripts/run_episode.py --case cl-12345`):
       or "prediction on the record" for pending → season scoreboard check-in
       ("the panel is now 14-for-17 this term") → outro. Target 12–18 min.
       Anchor lines carry `speaker: anchor_lead|anchor_analyst` in the script JSON.
-2. **TTS pass:** every utterance → Qwen3-TTS batch with the speaker's `voice_id` →
+2. **TTS pass:** every utterance → `cosyvoice-v3-plus` with the speaker's `voice_id` →
    `utt_NNN.mp3`. Record durations.
 3. **Timestamp pass:** fill event `t` values; write `cue_sheet.json`.
 4. **Assembly:** ffmpeg concat with 300ms gaps, music bed under host segments
    (bed ducked −14dB under speech; source a CC0 bed, commit license note).
 5. **Art pass:** Producer writes a scene-descriptive art prompt (style-locked:
-   *"hand-drawn courtroom sketch, warm pastel, loose ink lines"*) → `qwen-image-plus`
+   *"hand-drawn courtroom sketch, warm pastel, loose ink lines"*) → `wan2.6-t2i`
    → download → OSS. Show cover uses `qwen-image-2.0-pro` (renders "SPLIT DECISION" text).
    **Prompt rule: describe the SCENE, never the underlying crime/violence —
    avoids DataInspectionFailed moderation errors.**
@@ -471,8 +486,8 @@ split-decision/
   courtroom/             # Vite+Phaser app
   assets/sprites/        # SpriteCook output + manifest.json + THEME.md
   episodes/              # committed hero episodes (cache-the-wow)
-  deploy/                # Function Compute config, OSS sync script (this file =
-                         # proof-of-Alibaba-deployment link for submission)
+  deploy/                # SAS setup (systemd unit, provisioning notes), OSS sync
+                         # script, proof-of-deployment screenshot for submission
   costs.jsonl
 ```
 
@@ -481,10 +496,12 @@ split-decision/
 ## 12. Phased Build Plan (bumwad → 5 days)
 
 **Day 1 — Foundations & curl-before-commit (~8h)**
-- [ ] Alibaba Cloud account, Model Studio activated, SINGAPORE API key, claim $40 coupon
-- [ ] curl: qwen-plus chat completion ✓, qwen-max ✓
-- [ ] `create_voices.py` → 10 Voice Design voices → LISTEN, iterate, lock voice_ids
-- [ ] curl: qwen-image-plus one test image → OSS round-trip
+- [ ] Qwen Cloud account, API key from home.qwencloud.com/api-keys (70M+ free tokens)
+- [ ] curl: `qwen3.7-plus` chat completion ✓, `qwen3.7-max` ✓, `qwen3.6-flash` ✓
+      (OpenAI-compatible endpoint — this also validates the model IDs in this file)
+- [ ] `create_voices.py` → resolve cosyvoice voice-creation open question → 12 voices
+      → LISTEN, iterate, lock voice_ids
+- [ ] curl: `wan2.6-t2i` one test image → OSS round-trip
 - [ ] CourtListener token; `ingest_cases.py` pulls 25 decided post-cutoff + 3 pending; SCDB join
 - [ ] `npx spritecook-mcp setup`; theme locked; first 2 jurist sprites; ToS/license check
 - [ ] Commit all contracts (§3.3, §4, sprite manifest)
@@ -508,8 +525,10 @@ split-decision/
 **Day 4 — Courtroom + deploy (~10h)**
 - [ ] Phaser build order §10 (fixture → sprites → board → real data)
 - [ ] Episode art pass (Qwen-Image) + show cover; RSS live on OSS
-- [ ] Function Compute deploy of `run_episode`; OSS static hosting of courtroom
-- [ ] Record proof-of-deployment clip (console + live invocation)
+- [ ] SAS deploy: provision instance, `run_episode.py` behind a systemd service;
+      OSS static hosting of courtroom
+- [ ] Capture proof-of-deployment per `docs/Qwen Cloud Proof of Deployment.md`:
+      Workbench Overview screenshot of the running project (+ console clip)
 - [ ] Run the 2–3 PENDING cases → hero episode = strongest pending case
 - **Gate:** courtroom replays hero episode start-to-finish, deployed URL works.
 
@@ -547,8 +566,8 @@ keep board odd... actually keep ≥7 and odd).
 ## 14. Env Vars (`.env.example`)
 
 ```
-DASHSCOPE_API_KEY=        # Model Studio, SINGAPORE region
-DASHSCOPE_WORKSPACE_ID=
+DASHSCOPE_API_KEY=        # Qwen Cloud, from home.qwencloud.com/api-keys (sk-*, NOT sk-sp-*)
+DASHSCOPE_BASE_URL=https://dashscope-intl.aliyuncs.com/compatible-mode/v1
 COURTLISTENER_TOKEN=
 SPRITECOOK_API_KEY=       # build-time only
 OSS_ACCESS_KEY_ID=
@@ -556,3 +575,24 @@ OSS_ACCESS_KEY_SECRET=
 OSS_BUCKET=split-decision
 OSS_REGION=ap-southeast-1
 ```
+
+## 15. Project Tracking (Linear via linear-build)
+
+All build work is tracked in **Linear** through the `/linear-build:linear-build`
+plugin. Rules:
+
+- The Linear project **"Split Decision — Qwen Hackathon"** is the source of truth for
+  build status — not this file's checkboxes. §12 remains the plan of record; Linear
+  records what actually happened.
+- Issues are **per-module** (~12) and each carries **Intent / Acceptance /
+  Verification**. Acceptance criteria come from the §12 checklists; verification ties
+  to the day gate.
+- **Milestones = the five Day gates** in §12. A day is done when its gate issue
+  verifies, not when its checkboxes look done.
+- Start work by picking up the next unblocked Linear issue (`/linear-build:linear-build`);
+  write results (what was verified, with evidence) back to the issue on completion.
+- **Submission requirements authority:** `docs/Qwen Cloud Proof of Deployment.md`.
+  When this file and that doc disagree, the doc wins — update this file, not the doc.
+- Design decisions live in `docs/superpowers/specs/` (see
+  `2026-07-04-linear-tracking-and-claudemd-reconcile-design.md` for why SAS, the
+  model-ID reconcile, and the issue breakdown).
