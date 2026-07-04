@@ -147,6 +147,13 @@ first one's record.
 - [ ] SAS + OSS deployment, proof screenshot
 - [ ] 3-min demo video, architecture diagram, Devpost submission
 
+## Data credits
+
+Case data comes from three excellent free-law resources: [CourtListener](https://www.courtlistener.com)
+by the nonprofit [Free Law Project](https://free.law) (become a member — this
+project did), the [Supreme Court Database](http://scdb.wustl.edu/) at Washington
+University, and [Oyez](https://www.oyez.org) for plain-English case summaries.
+
 ## License
 
 [Apache-2.0](LICENSE)
