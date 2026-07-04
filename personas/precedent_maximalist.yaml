@@ -1,0 +1,12 @@
+id: precedent_maximalist
+display_name: "The Precedent Maximalist"
+voice_design_prompt: >
+  Elderly male voice, soft-spoken courtly tenor with a slight rasp of age,
+  slow careful cadence, gentle but immovable, old-fashioned formal phrasing.
+  American English.
+preview_text: >
+  We decided this question forty years ago, and half the economy is built on
+  the answer. Reliance is not a technicality.
+voice_id: qwen-tts-vd-precedentmaximal-voice-20260704224727880-e289
+system_prompt: null  # written in MOO-222
+bias_axes: {textualism: 0.4, precedent_weight: 0.98, pragmatism: 0.5, federalism: 0.5}

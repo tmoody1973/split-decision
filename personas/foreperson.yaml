@@ -1,0 +1,11 @@
+id: foreperson
+display_name: "The Foreperson"
+voice_design_prompt: >
+  Female presiding officer in her 60s. Low contralto, unhurried, formal,
+  judicial gravitas without coldness. Even pacing, deliberate pauses,
+  neutral American accent. The voice of order in the room.
+preview_text: >
+  We are convened on the question presented. Private votes first, then
+  statements. Textualist, you have the floor.
+voice_id: qwen-tts-vd-foreperson-voice-20260704224558707-319d
+system_prompt: null  # written in MOO-222; structurally barred from stating a position

@@ -1,0 +1,11 @@
+id: anchor_lead
+display_name: "The Correspondent"
+voice_design_prompt: >
+  Female legal-affairs correspondent in her 40s. Warm, precise, measured pace,
+  mid-range pitch, public-radio register. Clear articulation, calm authority,
+  slight brightness on key facts. American English.
+preview_text: >
+  Ninety seconds before the whole panel flipped, the Textualist said one
+  sentence. I'm your host — this is Split Decision.
+voice_id: qwen-tts-vd-anchorlead-voice-20260704224120229-0762
+system_prompt: null  # written in MOO-222/MOO-224
