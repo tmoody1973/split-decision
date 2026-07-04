@@ -233,11 +233,12 @@ The Phaser player consumes cue sheet + events; it never re-derives timing.
 
 ## 5. Sprite Pipeline (SpriteCook MCP)
 
-### 5.1 Setup (once, Day 1)
-```bash
-npx spritecook-mcp setup     # auto-configures Claude Code MCP + agent skills
-# API key from app.spritecook.ai/api-keys → env SPRITECOOK_API_KEY
-```
+### 5.1 Setup (once, Day 1) — DONE 2026-07-04
+The official **SpriteCook Claude Code plugin** is installed (marketplace
+`SpriteCook/claude-plugin`), replacing the older `npx spritecook-mcp setup` path.
+It provides the `spritecook:*` skills (generate-sprites, animate-assets,
+generate-tilesets, use-presets, workflow-essentials) and MCP auth tools.
+Authenticate via the plugin's MCP `authenticate` flow on first use.
 
 ### 5.2 Workflow rules
 - Create **one SpriteCook theme/style guide first** and reference it for every asset

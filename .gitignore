@@ -1,0 +1,15 @@
+# Secrets — never commit
+.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Node / build
+node_modules/
+courtroom/dist/
+
+# OS
+.DS_Store
