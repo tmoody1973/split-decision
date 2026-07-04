@@ -1,0 +1,13 @@
+{
+  "case_id": "oyez-63889",
+  "name": "Younge v. Fulton Judicial Circuit District Attorney's Office, Georgia",
+  "docket": "25-352",
+  "date_argued": null,
+  "date_decided": null,
+  "question_presented": "May a defendant raise an affirmative defense it never pleaded in its answer as the sole basis for a summary judgment motion \u2014 without seeking to amend its answer \u2014 and does it matter that the court's scheduling order deadline would have barred any such amendment?",
+  "facts_summary": "In April 2019, Fulton County District Attorney Paul Howard \u2014 an elected official \u2014 hired Dr. Jasmine Younge as Deputy Chief of Staff and Director of Policy and Programs at a salary of $120,282. Younge ranked third in the office's chain of command, reported exclusively to Howard, supervised more than thirty employees, and worked so closely with Howard that he described her as a \"key member\" and his \"go-to person for almost everything.\" About two months into her tenure, Younge told Howard she was pregnant. After that announcement, Howard stopped meeting with Younge, excluded her from meetings, treated her dismissively, and reassigned some of her duties \u2014 then fired her two weeks later. Younge sued the Fulton County District Attorney's Office for pregnancy discrimination under Title VII. In its answer, the DA's Office raised several affirmative defenses but did not plead the Title VII personal-staff exemption \u2014 which excludes from Title VII's coverage persons chosen to serve on an elected official's \"personal staff.\" The DA's Office did not recognize the exemption as relevant until it began preparing its summary judgment motion, after discovery had already closed. The district court allowed the DA's Office to raise the personal-staff exemption for the first time at summary judgment, finding no prejudice to Younge from the late assertion, and granted summary judgment to the DA's Office on that basis; Younge then appealed to the U.S. Court of Appeals for the Eleventh Circuit, which affirmed.",
+  "lower_court_ruling": "United States Court of Appeals for the Eleventh Circuit",
+  "opinion_excerpt_urls": [],
+  "ground_truth": null,
+  "status": "pending"
+}

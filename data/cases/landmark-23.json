@@ -9,7 +9,7 @@
   "lower_court_ruling": "not provided (memorization-check arm)",
   "opinion_excerpt_urls": [],
   "ground_truth": {
-    "disposition": "reversed",
+    "disposition": "affirmed",
     "vote_split": "7-2",
     "scdb_id": null
   },

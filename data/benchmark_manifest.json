@@ -330,11 +330,6 @@
       "rationale": "decided 2026-04-20 (post-cutoff); ground truth extracted from syllabus (reversed unknown); oyez=no"
     },
     {
-      "case_id": "cl-cluster-10844563",
-      "name": "Chevron USA Inc. v. Plaquemines Parish",
-      "rationale": "decided 2026-04-17 (post-cutoff); ground truth extracted from syllabus (reversed unknown); oyez=no"
-    },
-    {
       "case_id": "cl-cluster-10830408",
       "name": "Chiles v. Salazar",
       "rationale": "decided 2026-03-31 (post-cutoff); ground truth extracted from syllabus (reversed unknown); oyez=no"
@@ -727,12 +722,6 @@
       "rationale": "landmark case, maximally memorized; memorization-check arm (conditions A/B only)"
     },
     {
-      "case_id": "landmark-22",
-      "name": "New York Times Co. v. United States",
-      "tier": "famous",
-      "rationale": "landmark case, maximally memorized; memorization-check arm (conditions A/B only)"
-    },
-    {
       "case_id": "landmark-23",
       "name": "Roe v. Wade",
       "tier": "famous",
@@ -753,6 +742,12 @@
     {
       "case_id": "landmark-29",
       "name": "United States v. Lopez",
+      "tier": "famous",
+      "rationale": "landmark case, maximally memorized; memorization-check arm (conditions A/B only)"
+    },
+    {
+      "case_id": "landmark-30",
+      "name": "Romer v. Evans",
       "tier": "famous",
       "rationale": "landmark case, maximally memorized; memorization-check arm (conditions A/B only)"
     },
@@ -909,19 +904,19 @@
   ],
   "pending": [
     {
-      "case_id": "oyez-63796",
-      "name": "National Republican Senatorial Committee v. Federal Election Commission",
-      "rationale": "argued 2025-12-09, undecided as of ingestion; uncontaminatable by definition"
+      "case_id": "oyez-63884",
+      "name": "Suncor Energy (U.S.A.) Inc. v. County Commissioners of Boulder County",
+      "rationale": "cert granted for OT2026, not yet argued; prediction filed pre-argument \u2014 uncontaminatable by definition"
     },
     {
-      "case_id": "oyez-63811",
-      "name": "Little v. Hecox",
-      "rationale": "argued 2026-01-13, undecided as of ingestion; uncontaminatable by definition"
+      "case_id": "oyez-63889",
+      "name": "Younge v. Fulton Judicial Circuit District Attorney's Office, Georgia",
+      "rationale": "cert granted for OT2026, not yet argued; prediction filed pre-argument \u2014 uncontaminatable by definition"
     },
     {
-      "case_id": "oyez-63813",
-      "name": "West Virginia v. B.P.J.",
-      "rationale": "argued 2026-01-13, undecided as of ingestion; uncontaminatable by definition"
+      "case_id": "oyez-63890",
+      "name": "Department of the Air Force v. Prutehi Guahan",
+      "rationale": "cert granted for OT2026, not yet argued; prediction filed pre-argument \u2014 uncontaminatable by definition"
     }
   ],
   "excluded": [
@@ -960,6 +955,10 @@
     {
       "name": "Louisiana v. Callais",
       "reason": "duplicate cluster (revision)"
+    },
+    {
+      "name": "Chevron USA Inc. v. Plaquemines Parish",
+      "reason": "famous-name contamination filter"
     },
     {
       "name": "Chiles v. Salazar Revisions: 3/31/26",

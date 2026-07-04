@@ -1,0 +1,13 @@
+{
+  "case_id": "oyez-63884",
+  "name": "Suncor Energy (U.S.A.) Inc. v. County Commissioners of Boulder County",
+  "docket": "25-170",
+  "date_argued": null,
+  "date_decided": null,
+  "question_presented": "1. Does the Court have statutory and Article III jurisdiction to hear this case? 2. Does federal law preclude state-law claims seeking relief for injuries allegedly caused by the effects of interstate and international greenhouse-gas emissions on the global climate?",
+  "facts_summary": "Boulder County and the City of Boulder (collectively, \"Boulder\") sued Exxon Mobil Corporation and three Suncor Energy entities, alleging that the companies' decades-long production, promotion, refining, marketing, and sale of fossil fuels knowingly drove climate change and caused concrete harm to Boulder's property and residents. Boulder further alleges that the defendants compounded this harm by intentionally misleading the public about fossil fuels' role in accelerating climate change. The alleged injuries include flood damage, increased wildfire risk, drought, and physical damage to public buildings and infrastructure\u2014costs Boulder claims it has absorbed and will continue to absorb. To recover those costs, Boulder asserts state common law claims for public nuisance, private nuisance, trespass, unjust enrichment, and civil conspiracy. Critically, Boulder seeks only monetary damages\u2014not an injunction against fossil fuel operations or any form of emissions regulation. The defendants argue that these state-law claims are precluded because federal law\u2014specifically the Clean Air Act, the federal common law of interstate pollution, and the federal foreign affairs power\u2014occupies the field and bars state courts from adjudicating harms rooted in interstate and international greenhouse-gas emissions. Boulder filed suit in state court; the defendants removed the case to federal court, but after extensive litigation that included appeals to the U.S. Court of Appeals for the Tenth Circuit and two certiorari petitions in the U.S. Supreme Court, the Tenth Circuit affirmed the remand order and the case returned to the Boulder County District Court, which denied the defendants' motion to dismiss on preemption grounds. The defendants then petitioned the Supreme Court of the State of Colorado for extraordinary review under C.A.R. 21, which that court accepted and resolved in Boulder's favor on May 12, 2025.",
+  "lower_court_ruling": "Colorado Supreme Court",
+  "opinion_excerpt_urls": [],
+  "ground_truth": null,
+  "status": "pending"
+}
