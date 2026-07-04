@@ -1,0 +1,19 @@
+{
+  "case_id": "cl-cluster-10617644",
+  "name": "Hewitt v. United States",
+  "docket": "n/a",
+  "date_argued": "2025-06-26",
+  "date_decided": "2025-06-26",
+  "question_presented": "(Slip Opinion) OCTOBER TERM, 2024 1 Syllabus NOTE: Where it is feasible, a syllabus (headnote) will be released, as is being done in connection with this case, at the time the opinion is issued. The syllabus constitutes no part of the opinion of the Court but has been prepared by the Reporter of Decisions for the convenience of the reader. See United States v. Detroit Timber & Lumber Co., 200 U. S. 321, 337. SUPREME COURT OF THE UNITED STATES Syllabus HEWITT v. UNITED STATES CERTIORARI TO THE UNITED STATES COURT OF APPEALS FOR THE FIFTH CIRCUIT No. 23\u20131002. Argued January 13, 2025\u2014Decided June 26, 2025* Before the First Step Act was enacted in 2018, federal judges were re- quired",
+  "facts_summary": "(Slip Opinion) OCTOBER TERM, 2024 1 Syllabus NOTE: Where it is feasible, a syllabus (headnote) will be released, as is being done in connection with this case, at the time the opinion is issued. The syllabus constitutes no part of the opinion of the Court but has been prepared by the Reporter of Decisions for the convenience of the reader. See United States v. Detroit Timber & Lumber Co., 200 U. S. 321, 337. SUPREME COURT OF THE UNITED STATES Syllabus HEWITT v. UNITED STATES CERTIORARI TO THE UNITED STATES COURT OF APPEALS FOR THE FIFTH CIRCUIT No. 23\u20131002. Argued January 13, 2025\u2014Decided June 26, 2025* Before the First Step Act was enacted in 2018, federal judges were re- quired to sentence first-time offenders convicted of violating 18 U. S. C. \u00a7924(c)\u2014a law that criminalizes possessing a firearm while committing other crimes\u2014to \u201cstacked\u201d 25-year periods of incarcera- tion. The First Step Act eliminated this harsh mandatory minimum penalty. Section 403(b) of the Act also made its more lenient penalties partially retroactive. Specifically, if a sentence \u201chas not been imposed\u201d upon an eligible \u00a7924(c) offender as of the date of the First Step Act\u2019s enactment, the Act applies. The question presented here concerns an edge case: What penalties apply when a \u00a7924(c) offender had been sen- tenced as of the Act\u2019s enactment, but that sentence was subsequently vacated, such that the offender must face a post-Act resentencing? In 2009, petitioners Tony Hewitt, Corey Duffey, and Jarvis Ross were convicted of multiple counts of bank robbery and conspiracy to commit bank robbery, along with corresponding \u00a7924(c) offenses for use of a firearm during a crime of violence. Each petitioner received a mandatory 5-year sentence for his first \u00a7924(c) count of conviction and, despite being first-time offenders, each received 25-year mandatory sentences on every \u00a7924(c) count beyond his first. Thus, each peti- tioner\u2019s sentence exceeded 325 years. Petitioners successfully chal- lenged some of their convictions on direct appeal, and the Fifth Circuit vacated petitioners\u2019 sentences. In 2012, the District Court resentenced each petitioner to between 285 and 305 years on the counts that re- mained. \u2014\u2014\u2014\u2014\u2014\u2014 *Together with No. 23\u20131150, Duffey et al. v. United States, also on cer- tiorari to the same court. 2 HEWITT v. UNITED STATES Syllabus In 2019, the Court held that the \u201ccrime of violence\u201d definition the Government routinely used to support some \u00a7924(c) convictions was unconstitutionally vague.",
+  "lower_court_ruling": "see syllabus",
+  "opinion_excerpt_urls": [
+    "https://www.courtlistener.com/opinion/10617644/hewitt-v-united-states/"
+  ],
+  "ground_truth": {
+    "disposition": "reversed",
+    "vote_split": "unknown",
+    "scdb_id": null
+  },
+  "status": "decided"
+}

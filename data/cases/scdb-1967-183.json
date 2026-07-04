@@ -1,0 +1,17 @@
+{
+  "case_id": "scdb-1967-183",
+  "name": "POWELL v. TEXAS",
+  "docket": "405",
+  "date_argued": "1968-06-17",
+  "date_decided": "1968-06-17",
+  "question_presented": "Memorization-check set: predict the Supreme Court's disposition in POWELL v. TEXAS (392 U.S. 514, 1967 Term).",
+  "facts_summary": "Historical case in the memorization-check arm. By design, only the case name, citation, and term are provided \u2014 this arm measures recall of memorized outcomes, not reasoning.",
+  "lower_court_ruling": "not provided (memorization-check arm)",
+  "opinion_excerpt_urls": [],
+  "ground_truth": {
+    "disposition": "affirmed",
+    "vote_split": "5-4",
+    "scdb_id": "1967-183"
+  },
+  "status": "decided"
+}

@@ -1,0 +1,19 @@
+{
+  "case_id": "cl-cluster-10776753",
+  "name": "Berk v. Choy",
+  "docket": "n/a",
+  "date_argued": "2026-01-20",
+  "date_decided": "2026-01-20",
+  "question_presented": "(Slip Opinion) OCTOBER TERM, 2025 1 Syllabus NOTE: Where it is feasible, a syllabus (headnote) will be released, as is being done in connection with this case, at the time the opinion is issued. The syllabus constitutes no part of the opinion of the Court but has been prepared by the Reporter of Decisions for the convenience of the reader. See United States v. Detroit Timber & Lumber Co., 200 U. S. 321, 337. SUPREME COURT OF THE UNITED STATES Syllabus BERK v. CHOY ET AL. CERTIORARI TO THE UNITED STATES COURT OF APPEALS FOR THE THIRD CIRCUIT No. 24\u2013440. Argued October 6, 2025\u2014Decided January 20, 2026 Delaware law provides that a plaintiff may not sue for medical malprac- tice",
+  "facts_summary": "(Slip Opinion) OCTOBER TERM, 2025 1 Syllabus NOTE: Where it is feasible, a syllabus (headnote) will be released, as is being done in connection with this case, at the time the opinion is issued. The syllabus constitutes no part of the opinion of the Court but has been prepared by the Reporter of Decisions for the convenience of the reader. See United States v. Detroit Timber & Lumber Co., 200 U. S. 321, 337. SUPREME COURT OF THE UNITED STATES Syllabus BERK v. CHOY ET AL. CERTIORARI TO THE UNITED STATES COURT OF APPEALS FOR THE THIRD CIRCUIT No. 24\u2013440. Argued October 6, 2025\u2014Decided January 20, 2026 Delaware law provides that a plaintiff may not sue for medical malprac- tice unless a medical professional attests to the suit\u2019s merit in an \u201caf- fidavit of merit\u201d that \u201caccompanie[s]\u201d the plaintiff\u2019s complaint. Del. Code, Tit. 18, \u00a76853(a)(1). Petitioner Harold Berk sued Dr. Wilson Choy and Beebe Medical Center in federal court for medical malprac- tice under Delaware law, but failed to provide the affidavit required by \u00a76853. Berk argued that \u00a76853 is not enforceable in federal court be- cause it is displaced by the Federal Rules of Civil Procedure. The Dis- trict Court dismissed Berk\u2019s lawsuit for failure to comply with Dela- ware\u2019s affidavit law. The Third Circuit affirmed. Held: Delaware\u2019s affidavit law does not apply in federal court. Pp. 3\u201311. (a) When a plaintiff brings a state-law claim in federal court, the court faces a choice-of-law problem: whether to apply state or federal law. The Rules of Decision Act directs federal courts to apply state substantive law unless the Constitution, a treaty, or a statute other- wise requires or provides. 28 U. S. C. \u00a71652. The Rules Enabling Act, which authorizes the Supreme Court to adopt uniform rules of proce- dure for district courts, provides for the application of federal law. \u00a72072(a). So, when a valid Federal Rule of Civil Procedure is on point, it displaces contrary state law even if the state law would qualify as substantive under Erie R. Co. v. Tompkins, 304 U. S. 64. The analysis is straightforward: The Court first asks whether a Federal Rule an- swers the disputed question. If a Federal Rule does, it governs, unless it \u201cexceeds statutory authorization or Congress\u2019s rulemaking power.\u201d Shady Grove Orthopedic Associates, P. A. v. Allstate Ins. Co., 559 U. S. 393, 398. Pp. 3\u20134. 2 BERK v.",
+  "lower_court_ruling": "see syllabus",
+  "opinion_excerpt_urls": [
+    "https://www.courtlistener.com/opinion/10776753/berk-v-choy/"
+  ],
+  "ground_truth": {
+    "disposition": "reversed",
+    "vote_split": "9-0",
+    "scdb_id": null
+  },
+  "status": "decided"
+}

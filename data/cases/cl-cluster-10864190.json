@@ -1,0 +1,19 @@
+{
+  "case_id": "cl-cluster-10864190",
+  "name": "Margolin v. NAIJ",
+  "docket": "n/a",
+  "date_argued": "2026-05-26",
+  "date_decided": "2026-05-26",
+  "question_presented": "Cite as: 608 U. S. ____ (2026) 1 Per Curiam SUPREME COURT OF THE UNITED STATES DAREN K. MARGOLIN, DIRECTOR OF THE EXECUTIVE OFFICE FOR IMMIGRATION REVIEW v. NATIONAL ASSOCIATION OF IMMIGRATION JUDGES ON PETITION FOR WRIT OF CERTIORARI TO THE UNITED STATES COURT OF APPEALS FOR THE FOURTH CIRCUIT No. 25\u2013767. Decided May 26, 2026 PER CURIAM. After the Executive Office for Immigration Review adopted a policy regulating immigration judges\u2019 work- related speech, an association of such judges (respondent here) challenged the policy in federal district court. The District Court held that respondent\u2019s challenge must pro- ceed through the administrative review scheme established by the Civil Service Reform Act. But the Fourth Circuit va- cated and remanded based on",
+  "facts_summary": "Cite as: 608 U. S. ____ (2026) 1 Per Curiam SUPREME COURT OF THE UNITED STATES DAREN K. MARGOLIN, DIRECTOR OF THE EXECUTIVE OFFICE FOR IMMIGRATION REVIEW v. NATIONAL ASSOCIATION OF IMMIGRATION JUDGES ON PETITION FOR WRIT OF CERTIORARI TO THE UNITED STATES COURT OF APPEALS FOR THE FOURTH CIRCUIT No. 25\u2013767. Decided May 26, 2026 PER CURIAM. After the Executive Office for Immigration Review adopted a policy regulating immigration judges\u2019 work- related speech, an association of such judges (respondent here) challenged the policy in federal district court. The District Court held that respondent\u2019s challenge must pro- ceed through the administrative review scheme established by the Civil Service Reform Act. But the Fourth Circuit va- cated and remanded based on an issue the parties had not raised. That decision violated the principle of party presen- tation, and we reverse. I The Executive Office for Immigration Review sets policies governing the immigration courts. See 8 CFR \u00a71003.0 (2024). In October 2021, it implemented a rule requiring immigration judges to obtain supervisory approval for pub- lic speeches relating to their official duties. Joint App. in No. 23\u20132235 (CA4), pp. 56\u201362. The policy was meant to en- sure that employee speech which may be seen as bearing the \u201cimprimatur\u201d of the Office is consistent with its official positions. Id., at 57. Respondent challenged the policy in the Eastern District of Virginia, asserting violations of its members\u2019 First and Fifth Amendment rights. This Court has held that, under the Civil Service Reform Act of 1978 (CSRA), 92 Stat. 1122, 2 MARGOLIN v. NAIJ Per Curiam 1125, 5 U. S. C. \u00a7\u00a71205, 1206, Congress intended federal employees to bring most work-related grievances to the Merit Systems Protection Board (MSPB) and the Special Counsel\u2014not to federal district court. See United States v. Fausto, 484 U. S. 439, 455 (1988); Elgin v. Department of Treasury, 567 U. S. 1, 11\u201312 (2012). Respondent thus ac- cepted that \u201cthe CSRA channels judicial review of chal- lenges to covered employment actions\u201d to the MSPB. Oppo- sition to Motion to Dismiss in No. 1:20\u2013cv\u2013731 (ED Va.), ECF Doc. 72, pp. 2\u20133. It argued only that its members\u2019 con- stitutional claims were not the kind of work-related claims that Congress intended to steer out of district court. See id., at 21\u201330. The District Court dismissed respondent\u2019s claims. The court, like respondent, acknowledged that \u201cCongress in- tended to preclude district-court jurisdiction\u201d over \u201ccovered",
+  "lower_court_ruling": "see syllabus",
+  "opinion_excerpt_urls": [
+    "https://www.courtlistener.com/opinion/10864190/margolin-v-naij/"
+  ],
+  "ground_truth": {
+    "disposition": "reversed",
+    "vote_split": "unknown",
+    "scdb_id": null
+  },
+  "status": "decided"
+}

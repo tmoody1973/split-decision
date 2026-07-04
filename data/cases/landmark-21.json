@@ -1,0 +1,17 @@
+{
+  "case_id": "landmark-21",
+  "name": "Tinker v. Des Moines Independent Community School District",
+  "docket": "n/a",
+  "date_argued": "1969-02-24",
+  "date_decided": "1969-02-24",
+  "question_presented": "Memorization-check set: predict the Supreme Court's disposition in Tinker v. Des Moines Independent Community School District (393 U.S. 503, 1969).",
+  "facts_summary": "Historical case in the memorization-check arm (famous tier). By design, only the case name, citation, and year are provided \u2014 this arm measures recall of memorized outcomes, not reasoning.",
+  "lower_court_ruling": "not provided (memorization-check arm)",
+  "opinion_excerpt_urls": [],
+  "ground_truth": {
+    "disposition": "reversed",
+    "vote_split": "7-2",
+    "scdb_id": null
+  },
+  "status": "decided"
+}

@@ -1,0 +1,19 @@
+{
+  "case_id": "cl-cluster-10617642",
+  "name": "Riley v. Bondi",
+  "docket": "n/a",
+  "date_argued": "2025-06-26",
+  "date_decided": "2025-06-26",
+  "question_presented": "(Slip Opinion) OCTOBER TERM, 2024 1 Syllabus NOTE: Where it is feasible, a syllabus (headnote) will be released, as is being done in connection with this case, at the time the opinion is issued. The syllabus constitutes no part of the opinion of the Court but has been prepared by the Reporter of Decisions for the convenience of the reader. See United States v. Detroit Timber & Lumber Co., 200 U. S. 321, 337. SUPREME COURT OF THE UNITED STATES Syllabus RILEY v. BONDI, ATTORNEY GENERAL CERTIORARI TO THE UNITED STATES COURT OF APPEALS FOR THE FOURTH CIRCUIT No. 23\u20131270. Argued March 24, 2025\u2014Decided June 26, 2025 The Department of Homeland Security (DHS) sought to remove Pierre Riley, a citizen",
+  "facts_summary": "(Slip Opinion) OCTOBER TERM, 2024 1 Syllabus NOTE: Where it is feasible, a syllabus (headnote) will be released, as is being done in connection with this case, at the time the opinion is issued. The syllabus constitutes no part of the opinion of the Court but has been prepared by the Reporter of Decisions for the convenience of the reader. See United States v. Detroit Timber & Lumber Co., 200 U. S. 321, 337. SUPREME COURT OF THE UNITED STATES Syllabus RILEY v. BONDI, ATTORNEY GENERAL CERTIORARI TO THE UNITED STATES COURT OF APPEALS FOR THE FOURTH CIRCUIT No. 23\u20131270. Argued March 24, 2025\u2014Decided June 26, 2025 The Department of Homeland Security (DHS) sought to remove Pierre Riley, a citizen of Jamaica, from the United States under expedited procedures for aliens convicted of aggravated felonies. On January 26, 2021, the DHS issued a \u201cfinal administrative review order\u201d (FARO) directing Riley\u2019s removal to Jamaica. Under 8 U. S. C. \u00a71228(b)(3), al- iens may petition courts of appeals for FARO review. While Riley did not contest his removal from the United States, he sought relief under the Convention Against Torture and Other Cruel, Inhuman or Degrad- ing Treatment or Punishment (CAT), telling an immigration officer that he would likely be killed by a drug kingpin if he returned to Ja- maica. The officer concluded that Riley did not demonstrate reasona- ble fear of persecution, but an Immigration Judge (IJ) disagreed and concluded that Riley was entitled to relief under the CAT, which pro- hibits removal to countries where torture is likely. The IJ sent Riley\u2019s case to a \u201cwithholding-only\u201d proceeding to determine whether he could be removed to Jamaica. At that proceeding, the IJ found Riley credible and granted deferral of removal to Jamaica under the CAT. The DHS appealed to the Board of Immigration Appeals (BIA), which vacated the IJ\u2019s order and allowed the FARO\u2019s enforcement. Three days later, Riley filed a petition for review in the Fourth Circuit. The Fourth Cir- cuit dismissed Riley\u2019s petition for lack of jurisdiction, holding that (1) aliens cannot obtain review of BIA decisions in \u201cwithholding-only\u201d pro- ceedings by filing within 30 days of that decision, and (2) \u00a71252(b)(1)\u2019s 30-day filing deadline is jurisdictional, not merely a mandatory claims- processing rule. Held: 1. BIA orders denying deferral of removal in \u201cwithholding-only\u201d pro- ceedings are not \u201cfinal order[s] of removal\u201d under \u00a71252(b)(1). 2 RILEY v. BONDI",
+  "lower_court_ruling": "see syllabus",
+  "opinion_excerpt_urls": [
+    "https://www.courtlistener.com/opinion/10617642/riley-v-bondi/"
+  ],
+  "ground_truth": {
+    "disposition": "reversed",
+    "vote_split": "unknown",
+    "scdb_id": null
+  },
+  "status": "decided"
+}

@@ -1,0 +1,17 @@
+{
+  "case_id": "scdb-1982-003",
+  "name": "IMMIGRATION AND NATURALIZATION SERVICE v. MIRANDA",
+  "docket": "82-29",
+  "date_argued": "1982-11-08",
+  "date_decided": "1982-11-08",
+  "question_presented": "Memorization-check set: predict the Supreme Court's disposition in IMMIGRATION AND NATURALIZATION SERVICE v. MIRANDA (459 U.S. 14, 1982 Term).",
+  "facts_summary": "Historical case in the memorization-check arm. By design, only the case name, citation, and term are provided \u2014 this arm measures recall of memorized outcomes, not reasoning.",
+  "lower_court_ruling": "not provided (memorization-check arm)",
+  "opinion_excerpt_urls": [],
+  "ground_truth": {
+    "disposition": "reversed",
+    "vote_split": "8-1",
+    "scdb_id": "1982-003"
+  },
+  "status": "decided"
+}

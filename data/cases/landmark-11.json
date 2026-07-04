@@ -1,0 +1,17 @@
+{
+  "case_id": "landmark-11",
+  "name": "Mapp v. Ohio",
+  "docket": "n/a",
+  "date_argued": "1961-06-19",
+  "date_decided": "1961-06-19",
+  "question_presented": "Memorization-check set: predict the Supreme Court's disposition in Mapp v. Ohio (367 U.S. 643, 1961).",
+  "facts_summary": "Historical case in the memorization-check arm (famous tier). By design, only the case name, citation, and year are provided \u2014 this arm measures recall of memorized outcomes, not reasoning.",
+  "lower_court_ruling": "not provided (memorization-check arm)",
+  "opinion_excerpt_urls": [],
+  "ground_truth": {
+    "disposition": "reversed",
+    "vote_split": "6-3",
+    "scdb_id": null
+  },
+  "status": "decided"
+}

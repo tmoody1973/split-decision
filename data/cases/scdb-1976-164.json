@@ -1,0 +1,17 @@
+{
+  "case_id": "scdb-1976-164",
+  "name": "COMMISSIONER OF INTERNAL REVENUE v. STANDARD LIFE & ACCIDENT INSURANCE CO.",
+  "docket": "75-1771",
+  "date_argued": "1977-06-23",
+  "date_decided": "1977-06-23",
+  "question_presented": "Memorization-check set: predict the Supreme Court's disposition in COMMISSIONER OF INTERNAL REVENUE v. STANDARD LIFE & ACCIDENT INSURANCE CO. (433 U.S. 148, 1976 Term).",
+  "facts_summary": "Historical case in the memorization-check arm. By design, only the case name, citation, and term are provided \u2014 this arm measures recall of memorized outcomes, not reasoning.",
+  "lower_court_ruling": "not provided (memorization-check arm)",
+  "opinion_excerpt_urls": [],
+  "ground_truth": {
+    "disposition": "reversed",
+    "vote_split": "8-0",
+    "scdb_id": "1976-164"
+  },
+  "status": "decided"
+}

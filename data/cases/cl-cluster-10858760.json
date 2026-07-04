@@ -1,0 +1,19 @@
+{
+  "case_id": "cl-cluster-10858760",
+  "name": "Montgomery v. Caribe Transport II, LLC",
+  "docket": "n/a",
+  "date_argued": "2026-05-14",
+  "date_decided": "2026-05-14",
+  "question_presented": "(Slip Opinion) OCTOBER TERM, 2025 1 Syllabus NOTE: Where it is feasible, a syllabus (headnote) will be released, as is being done in connection with this case, at the time the opinion is issued. The syllabus constitutes no part of the opinion of the Court but has been prepared by the Reporter of Decisions for the convenience of the reader. See United States v. Detroit Timber & Lumber Co., 200 U. S. 321, 337. SUPREME COURT OF THE UNITED STATES Syllabus MONTGOMERY v. CARIBE TRANSPORT II, LLC, ET AL. CERTIORARI TO THE UNITED STATES COURT OF APPEALS FOR THE SEVENTH CIRCUIT No. 24\u20131238. Argued March 4, 2026\u2014Decided May 14, 2026 Petitioner Shawn Montgomery sustained severe and permanent injuries after his",
+  "facts_summary": "(Slip Opinion) OCTOBER TERM, 2025 1 Syllabus NOTE: Where it is feasible, a syllabus (headnote) will be released, as is being done in connection with this case, at the time the opinion is issued. The syllabus constitutes no part of the opinion of the Court but has been prepared by the Reporter of Decisions for the convenience of the reader. See United States v. Detroit Timber & Lumber Co., 200 U. S. 321, 337. SUPREME COURT OF THE UNITED STATES Syllabus MONTGOMERY v. CARIBE TRANSPORT II, LLC, ET AL. CERTIORARI TO THE UNITED STATES COURT OF APPEALS FOR THE SEVENTH CIRCUIT No. 24\u20131238. Argued March 4, 2026\u2014Decided May 14, 2026 Petitioner Shawn Montgomery sustained severe and permanent injuries after his tractor trailer was struck by a truck driven by respondent Yosniel Varela-Mojena. Varela-Mojena was driving a load of plastic pots through Illinois for respondent Caribe Transport II, LLC, a motor carrier. Respondent C.H. Robinson Worldwide, Inc.\u2014a transportation broker\u2014had coordinated the shipment. Montgomery sued all respond- ents in Federal District Court and alleged, among other things, that C.H. Robinson was liable for his injuries because it negligently hired Varela-Mojena and Caribe Transport. Montgomery claimed that C.H. Robinson knew (or should have known) from Caribe Transport\u2019s safety rating that hiring it to transport goods was reasonably likely to result in crashes that would injure others. The District Court held that the Federal Aviation Administration Authorization Act (FAAAA)\u2014which preempts state laws related to the prices, routes, and services of the trucking industry, 49 U. S. C. \u00a714501(c)(1)\u2014expressly preempted Montgomery\u2019s negligent-hiring claim against C.H. Robinson. The Dis- trict Court further held that the claim did not fall within the FAAAA\u2019s safety exception, which provides that the FAAAA\u2019s preemption provi- sion \u201cshall not restrict the safety regulatory authority of a State with respect to motor vehicles.\u201d \u00a714501(c)(2)(A). The Seventh Circuit af- firmed. The Court granted certiorari to resolve whether the FAAAA\u2019s safety exception permits negligent-hiring claims against brokers like C.H. Robinson that coordinate shipments in the transportation indus- try. Held: A claim that one company negligently hired another to transport goods is not preempted by the FAAAA because States retain authority 2 MONTGOMERY v. CARIBE TRANSPORT II, LLC Syllabus to regulate safety \u201cwith respect to motor vehicles\u201d under the Act. Pp. 4\u20138. (a) Even if the FAAAA otherwise preempts Montgomery\u2019s negligent- hiring claim against C.H. Robinson, the safety exception saves it. The relevant text provides",
+  "lower_court_ruling": "see syllabus",
+  "opinion_excerpt_urls": [
+    "https://www.courtlistener.com/opinion/10858760/montgomery-v-caribe-transport-ii-llc/"
+  ],
+  "ground_truth": {
+    "disposition": "reversed",
+    "vote_split": "9-0",
+    "scdb_id": null
+  },
+  "status": "decided"
+}

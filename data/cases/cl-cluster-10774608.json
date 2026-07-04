@@ -1,0 +1,19 @@
+{
+  "case_id": "cl-cluster-10774608",
+  "name": "Barrett v. United States Revisions: 1/14/26",
+  "docket": "n/a",
+  "date_argued": "2026-01-14",
+  "date_decided": "2026-01-14",
+  "question_presented": "(Slip Opinion) OCTOBER TERM, 2025 1 Syllabus NOTE: Where it is feasible, a syllabus (headnote) will be released, as is being done in connection with this case, at the time the opinion is issued. The syllabus constitutes no part of the opinion of the Court but has been prepared by the Reporter of Decisions for the convenience of the reader. See United States v. Detroit Timber & Lumber Co., 200 U. S. 321, 337. SUPREME COURT OF THE UNITED STATES Syllabus BARRETT v. UNITED STATES CERTIORARI TO THE UNITED STATES COURT OF APPEALS FOR THE SECOND CIRCUIT No. 24\u20135774. Argued October 7, 2025\u2014Decided January 14, 2026 This case concerns the relationship between two provisions of 18 U. S. C. \u00a7924:",
+  "facts_summary": "(Slip Opinion) OCTOBER TERM, 2025 1 Syllabus NOTE: Where it is feasible, a syllabus (headnote) will be released, as is being done in connection with this case, at the time the opinion is issued. The syllabus constitutes no part of the opinion of the Court but has been prepared by the Reporter of Decisions for the convenience of the reader. See United States v. Detroit Timber & Lumber Co., 200 U. S. 321, 337. SUPREME COURT OF THE UNITED STATES Syllabus BARRETT v. UNITED STATES CERTIORARI TO THE UNITED STATES COURT OF APPEALS FOR THE SECOND CIRCUIT No. 24\u20135774. Argued October 7, 2025\u2014Decided January 14, 2026 This case concerns the relationship between two provisions of 18 U. S. C. \u00a7924: subsection (c)(1)(A)(i), which criminalizes using, carrying, or pos- sessing a firearm in connection with a federal crime of violence or drug trafficking crime, and subsection (j), which prescribes different penal- ties\u2014including, in certain circumstances, capital punishment\u2014when \u201ca violation of subsection (c)\u201d causes death. The question presented is whether a single act that violates both provisions may yield two con- victions\u2014one under each provision\u2014or only one. The Second Circuit held that one such act may yield two convictions. The Second Circuit acknowledged that subsection (c)(1) and subsection (j) qualify as the same offense under the test in Blockburger v. United States, 284 U. S. 299. But it believed that, as construed in Lora v. United States, 599 U. S. 453, the two provisions are separate offenses for which Congress has clearly authorized cumulative punishments. Because the Second Circuit\u2019s decision deepened a split among the Courts of Appeals, this Court granted certiorari. Held: Congress did not clearly authorize convictions under both \u00a7\u00a7924(c)(1)(A)(i) and (j) for a single act that violates both provisions. One act that violates both provisions therefore may spawn only one conviction. The part of the Second Circuit\u2019s judgment that held other- wise is reversed. Pp. 5\u201319. (a) When enacted, \u00a7924(c) \u201cmade it a discrete offense\u201d to use or carry a firearm in connection with a predicate federal crime of violence or drug trafficking crime. Abbott v. United States, 562 U. S. 8, 12. A \u00a7924(c) violation triggers a mandatory minimum sentence of at least five years. Congress later added \u00a7924(j) to provide a different penalty scheme for \u00a7924(c) violations that cause death. Section 924(j) has no 2 BARRETT v. UNITED STATES Syllabus mandatory minimums; it instead authorized significant maximum",
+  "lower_court_ruling": "see syllabus",
+  "opinion_excerpt_urls": [
+    "https://www.courtlistener.com/opinion/10774608/barrett-v-united-states-revisions-11426/"
+  ],
+  "ground_truth": {
+    "disposition": "reversed",
+    "vote_split": "unknown",
+    "scdb_id": null
+  },
+  "status": "decided"
+}

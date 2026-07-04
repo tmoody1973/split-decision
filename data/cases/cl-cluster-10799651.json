@@ -1,0 +1,19 @@
+{
+  "case_id": "cl-cluster-10799651",
+  "name": "Postal Service v. Konan",
+  "docket": "n/a",
+  "date_argued": "2026-02-24",
+  "date_decided": "2026-02-24",
+  "question_presented": "(Slip Opinion) OCTOBER TERM, 2025 1 Syllabus NOTE: Where it is feasible, a syllabus (headnote) will be released, as is being done in connection with this case, at the time the opinion is issued. The syllabus constitutes no part of the opinion of the Court but has been prepared by the Reporter of Decisions for the convenience of the reader. See United States v. Detroit Timber & Lumber Co., 200 U. S. 321, 337. SUPREME COURT OF THE UNITED STATES Syllabus UNITED STATES POSTAL SERVICE ET AL. v. KONAN CERTIORARI TO THE UNITED STATES COURT OF APPEALS FOR THE FIFTH CIRCUIT No. 24\u2013351. Argued October 8, 2025\u2014Decided February 24, 2026 Respondent Lebene Konan and the local post office in Euless,",
+  "facts_summary": "(Slip Opinion) OCTOBER TERM, 2025 1 Syllabus NOTE: Where it is feasible, a syllabus (headnote) will be released, as is being done in connection with this case, at the time the opinion is issued. The syllabus constitutes no part of the opinion of the Court but has been prepared by the Reporter of Decisions for the convenience of the reader. See United States v. Detroit Timber & Lumber Co., 200 U. S. 321, 337. SUPREME COURT OF THE UNITED STATES Syllabus UNITED STATES POSTAL SERVICE ET AL. v. KONAN CERTIORARI TO THE UNITED STATES COURT OF APPEALS FOR THE FIFTH CIRCUIT No. 24\u2013351. Argued October 8, 2025\u2014Decided February 24, 2026 Respondent Lebene Konan and the local post office in Euless, Texas, had an extended dispute concerning mail delivery to two rental properties owned by Konan. Konan alleged that, among other things, United States Postal Service employees intentionally withheld her mail and interfered with its delivery. After administrative complaints proved unsuccessful, Konan sued the United States in federal court, bringing various state-law tort claims alleging that the United States Postal Service intentionally and wrongfully withheld her mail. The District Court dismissed Konan\u2019s complaint pursuant to the Federal Tort Claims Act\u2019s postal exception, under which the United States retains sovereign immunity for all claims \u201carising out of the loss, miscarriage, or negligent transmission of letters or postal matter,\u201d 28 U. S. C. \u00a72680(b). The District Court concluded that the United States enjoys sovereign immunity from Konan\u2019s claims because they all relate to personal or financial harms arising from nondelivery of mail. The District Court further held that the postal exception is not limited to merely negligent failure to properly carry the mail. The Fifth Circuit reversed, holding that the terms \u201closs,\u201d \u201cmiscarriage,\u201d and \u201cnegligent transmission\u201d do not encompass the intentional act of not delivering the mail at all. In contrast, the First and Second Circuits have inter- preted the postal exception to apply to suits even when they arise from harms caused by intentional misconduct. The Court granted certiorari to resolve the split. Held: The United States retains sovereign immunity for claims arising out of the intentional nondelivery of mail because both \u201cmiscarriage\u201d and \u201closs\u201d of mail under the FTCA\u2019s postal exception can occur as a 2 POSTAL SERVICE v. KONAN Syllabus result of the Postal Service\u2019s intentional failure to deliver the mail. Pp. 5\u201313. (a) The postal exception reflects Congress\u2019s judgment",
+  "lower_court_ruling": "see syllabus",
+  "opinion_excerpt_urls": [
+    "https://www.courtlistener.com/opinion/10799651/postal-service-v-konan/"
+  ],
+  "ground_truth": {
+    "disposition": "reversed",
+    "vote_split": "unknown",
+    "scdb_id": null
+  },
+  "status": "decided"
+}

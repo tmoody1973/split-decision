@@ -1,0 +1,19 @@
+{
+  "case_id": "cl-cluster-10599010",
+  "name": "Ames v. Ohio Department of Youth Services",
+  "docket": "23-1039",
+  "date_argued": "2025-02-26",
+  "date_decided": "2025-06-05",
+  "question_presented": "Does a plaintiff who belongs to a majority group need to demonstrate \u201cbackground circumstances suggesting that the defendant is the unusual employer who discriminates against the majority\u201d in order to establish a prima facie case of discrimination under Title VII of the Civil Rights Act of 1964?",
+  "facts_summary": "The Ohio Department of Youth Services hired Marlean Ames, a heterosexual woman, in 2004 and promoted her to Administrator of the Prison Rape Elimination Act (PREA) in 2014. In 2017, Ames was assigned a new supervisor, Ginine Trim, who is gay. Trim reported to Assistant Director Julie Walburn, and in 2019, Ryan Gies was appointed as the Department's Director. Both Walburn and Gies are heterosexual. In December 2018, Trim gave Ames a generally positive performance evaluation. In April 2019, Ames applied for the position of Bureau Chief of Quality but was not selected. Shortly after, Trim suggested that Ames consider retirement. On May 10, 2019, Ames was demoted from her PREA Administrator position, resulting in a significant pay cut. The Department then promoted Alexander Stojsavljevic, a 25-year-old gay man, to the PREA Administrator position. Later that year, Yolanda Frierson, a gay woman, was chosen as Bureau Chief of Quality. Following these events, Ames filed a discrimination charge with the Equal Employment Opportunity Commission and then sued the Department under Title VII of the Civil Rights Act of 1964, asserting claims of discrimination based on sexual orientation and sex. The district court granted summary judgment to the Department, holding that Ames lacked evidence of \u201cbackground circumstances\u201d necessary to establishing her prima facie case for her claim based on sexual orientation, and that Ames lacked evidence of pretext for purposes of her sex-discrimination claim. The U.S. Court of Appeals for the Sixth Circuit affirmed.",
+  "lower_court_ruling": "United States Court of Appeals for the Sixth Circuit",
+  "opinion_excerpt_urls": [
+    "https://www.courtlistener.com/opinion/10599010/ames-v-ohio-department-of-youth-services/"
+  ],
+  "ground_truth": {
+    "disposition": "reversed",
+    "vote_split": "9-0",
+    "scdb_id": null
+  },
+  "status": "decided"
+}

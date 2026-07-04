@@ -1,0 +1,19 @@
+{
+  "case_id": "cl-cluster-10867983",
+  "name": "Whitton v. Dixon",
+  "docket": "n/a",
+  "date_argued": "2026-06-01",
+  "date_decided": "2026-06-01",
+  "question_presented": "Cite as: 608 U. S. ____ (2026) 1 Per Curiam SUPREME COURT OF THE UNITED STATES GARY RICHARD WHITTON v. RICKY D. DIXON, SECRETARY, FLORIDA DEPARTMENT OF CORRECTIONS ON PETITION FOR WRIT OF CERTIORARI TO THE UNITED STATES COURT OF APPEALS FOR THE ELEVENTH CIRCUIT No. 25\u2013580. Decided June 1, 2026 PER CURIAM. A Florida jury convicted petitioner Gary Richard Whitton of murder and sentenced him to death. During his trial, the State called several witnesses, including a jailhouse inform- ant named Jake Ozio. Ozio was a high school student who, on a spring-break trip in Florida, was arrested and jailed for burglary and possession of a short-barrel shotgun. Ozio testified that, while he was incarcerated with Whitton, he overheard",
+  "facts_summary": "Cite as: 608 U. S. ____ (2026) 1 Per Curiam SUPREME COURT OF THE UNITED STATES GARY RICHARD WHITTON v. RICKY D. DIXON, SECRETARY, FLORIDA DEPARTMENT OF CORRECTIONS ON PETITION FOR WRIT OF CERTIORARI TO THE UNITED STATES COURT OF APPEALS FOR THE ELEVENTH CIRCUIT No. 25\u2013580. Decided June 1, 2026 PER CURIAM. A Florida jury convicted petitioner Gary Richard Whitton of murder and sentenced him to death. During his trial, the State called several witnesses, including a jailhouse inform- ant named Jake Ozio. Ozio was a high school student who, on a spring-break trip in Florida, was arrested and jailed for burglary and possession of a short-barrel shotgun. Ozio testified that, while he was incarcerated with Whitton, he overheard Whitton confess to \u201c \u2018stabb[ing] the bastard.\u2019 \u201d Whitton v. Secretary, Fla. Dept. of Corrections, 2025 WL 1305158, *2 (CA11, May 6, 2025) (per curiam). Ozio also testified that he had no criminal history prior to his spring- break arrest. That last piece of testimony turned out to be false. Ozio\u2019s juvenile records\u2014which the State had in its possession at the time\u2014showed that he had previously been charged with \u201cassault with bodily injury against his father, terroristic threats against his mother, and at least one other burglary.\u201d Id., at *15. After unsuccessfully pursuing a direct appeal and state postconviction relief, Whitton filed an application for a writ of habeas corpus in Federal District Court. Among other claims, he argued that Ozio\u2019s criminal-history testimony was false, that the prosecution knew the testimony was false, and that there was a reasonable likelihood the testi- mony affected the jury\u2019s verdict. Whitton claimed that, as a result, his due process rights had been violated under this Court\u2019s decision in Giglio v. United States, 405 U. S. 150 2 WHITTON v. DIXON Per Curiam (1972). And he contended, as was additionally necessary for federal habeas relief, that the Giglio error had a \u201c \u2018sub- stantial and injurious effect or influence in determining the jury\u2019s verdict.\u2019 \u201d Brecht v. Abrahamson, 507 U. S. 619, 623 (1993). The District Court denied relief, finding that any Giglio error \u201ccould not have made a difference\u201d to the jury\u2019s verdict because Florida juvenile criminal records are gener- ally inadmissible to attack a witness\u2019s credibility. App. to Pet. for Cert. 79a. The Court of Appeals for the Eleventh Circuit affirmed, but on different reasoning.1 The court agreed with Whitton that Ozio\u2019s",
+  "lower_court_ruling": "see syllabus",
+  "opinion_excerpt_urls": [
+    "https://www.courtlistener.com/opinion/10867983/whitton-v-dixon/"
+  ],
+  "ground_truth": {
+    "disposition": "reversed",
+    "vote_split": "unknown",
+    "scdb_id": null
+  },
+  "status": "decided"
+}

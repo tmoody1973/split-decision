@@ -1,0 +1,19 @@
+{
+  "case_id": "cl-cluster-10776834",
+  "name": "NRC v. Texas",
+  "docket": "n/a",
+  "date_argued": "2025-06-18",
+  "date_decided": "2025-06-18",
+  "question_presented": "PRELIMINARY PRINT Volume 605 U. S. Part 2 Pages 665\u2013713 OFFICIAL REPORTS OF THE SUPREME COURT June 18, 2025 Page Proof Pending Publication REBECCA A. WOMELDORF reporter of decisions NOTICE: This preliminary print is subject to formal revision before the bound volume is published. Users are requested to notify the Reporter of Decisions, Supreme Court of the United States, Washington, D. C. 20543, pio@supremecourt.gov, of any typographical or other formal errors. OCTOBER TERM, 2024 665 Syllabus NUCLEAR REGULATORY COMMISSION et al. v. TEXAS et al. certiorari to the united states court of appeals for the \ue405fth circuit No. 23\u20131300. Argued March 5, 2025\u2014Decided June 18, 2025* The Atomic Energy Act of 1954 generally prohibits the private possession of nuclear materials,",
+  "facts_summary": "PRELIMINARY PRINT Volume 605 U. S. Part 2 Pages 665\u2013713 OFFICIAL REPORTS OF THE SUPREME COURT June 18, 2025 Page Proof Pending Publication REBECCA A. WOMELDORF reporter of decisions NOTICE: This preliminary print is subject to formal revision before the bound volume is published. Users are requested to notify the Reporter of Decisions, Supreme Court of the United States, Washington, D. C. 20543, pio@supremecourt.gov, of any typographical or other formal errors. OCTOBER TERM, 2024 665 Syllabus NUCLEAR REGULATORY COMMISSION et al. v. TEXAS et al. certiorari to the united states court of appeals for the \ue405fth circuit No. 23\u20131300. Argued March 5, 2025\u2014Decided June 18, 2025* The Atomic Energy Act of 1954 generally prohibits the private possession of nuclear materials, including spent nuclear fuel, without a license. The Nuclear Regulatory Commission may license the possession of nu- clear materials, subject to statutory and procedural requirements. 42 U. S. C. \u00a7\u00a7 2073(a), 2092\u20132093(a), 2111(a), 2231, 2239. Here, Interim Storage Partners (ISP) applied for a license to build a facility in West Texas to store spent nuclear fuel. During ISP's licensing proceeding, a Texas government agency submitted comments, including comments on a draft environmental impact statement (EIS) prepared by the Commis- sion for the proposed facility. Fasken Land and Minerals, a private West Texas business, similarly submitted comments, and it also sought to intervene in the licensing proceeding. The Commission denied Page Proof Pending Publication Fasken's petition to intervene. Fasken then unsuccessfully challenged that denial of intervention before the full Commission and the D. C. Circuit. In September 2021, the Commission granted ISP a license to build and operate its proposed storage facility. Texas and Fasken sought re- view of the Commission's licensing decision in the Fifth Circuit. The Fifth Circuit vacated ISP's license. Held: Because Texas and Fasken were not parties to the Commission's licensing proceeding, they are not entitled to obtain judicial review of the Commission's licensing decision. Pp. 674\u2013690. (a) In the Hobbs Act, Congress specifed that only a \u201cparty aggrieved\u201d by a licensing order of the Commission may seek judicial review. Texas and Fasken argue they qualify as parties because they participated in the licensing proceeding by submitting comments on the draft EIS and, in Fasken's case, by attempting to intervene. But the text of the Atomic Energy Act indicates that one must be the license applicant or successfully intervene in order to obtain party status in a",
+  "lower_court_ruling": "see syllabus",
+  "opinion_excerpt_urls": [
+    "https://www.courtlistener.com/opinion/10776834/nrc-v-texas/"
+  ],
+  "ground_truth": {
+    "disposition": "reversed",
+    "vote_split": "unknown",
+    "scdb_id": null
+  },
+  "status": "decided"
+}

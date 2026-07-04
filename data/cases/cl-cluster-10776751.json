@@ -1,0 +1,19 @@
+{
+  "case_id": "cl-cluster-10776751",
+  "name": "Ellingburg v. United States",
+  "docket": "n/a",
+  "date_argued": "2026-01-20",
+  "date_decided": "2026-01-20",
+  "question_presented": "(Slip Opinion) OCTOBER TERM, 2025 1 Syllabus NOTE: Where it is feasible, a syllabus (headnote) will be released, as is being done in connection with this case, at the time the opinion is issued. The syllabus constitutes no part of the opinion of the Court but has been prepared by the Reporter of Decisions for the convenience of the reader. See United States v. Detroit Timber & Lumber Co., 200 U. S. 321, 337. SUPREME COURT OF THE UNITED STATES Syllabus ELLINGBURG v. UNITED STATES CERTIORARI TO THE UNITED STATES COURT OF APPEALS FOR THE EIGHTH CIRCUIT No. 24\u2013482. Argued October 14, 2025\u2014Decided January 20, 2026 The Mandatory Victims Restitution Act of 1996 requires defendants convicted of certain federal crimes",
+  "facts_summary": "(Slip Opinion) OCTOBER TERM, 2025 1 Syllabus NOTE: Where it is feasible, a syllabus (headnote) will be released, as is being done in connection with this case, at the time the opinion is issued. The syllabus constitutes no part of the opinion of the Court but has been prepared by the Reporter of Decisions for the convenience of the reader. See United States v. Detroit Timber & Lumber Co., 200 U. S. 321, 337. SUPREME COURT OF THE UNITED STATES Syllabus ELLINGBURG v. UNITED STATES CERTIORARI TO THE UNITED STATES COURT OF APPEALS FOR THE EIGHTH CIRCUIT No. 24\u2013482. Argued October 14, 2025\u2014Decided January 20, 2026 The Mandatory Victims Restitution Act of 1996 requires defendants convicted of certain federal crimes to pay monetary restitution to victims. Although petitioner Ellingburg committed his crime before the MVRA\u2019s enactment, he was sentenced under the MRVA and ordered to pay $7,567.25 in restitution. Ellingburg raised an Ex Post Facto Clause challenge to his continued restitution obligation. The Eighth Circuit concluded that restitution under the MVRA is not criminal punishment subject to the Ex Post Facto Clause. Held: Restitution under the MVRA is plainly criminal punishment for purposes of the Ex Post Facto Clause. Whether a law violates the Ex Post Facto Clause requires evaluating whether the law imposes a criminal or penal sanction as opposed to a civil remedy. That question is one \u201cof statutory construction\u201d that requires the Court to \u201cconsider the statute\u2019s text and its structure.\u201d Smith v. Doe, 538 U. S. 84, 92 (quotation marks omitted). When viewed as a whole, the MVRA makes abundantly clear that restitution is criminal punishment. The MVRA labels restitution as a \u201cpenalty\u201d for a criminal \u201coffense.\u201d 18 U. S. C. \u00a73663A(a)(1). Only a criminal defendant convicted of a qualifying crime may be ordered to pay restitution. Restitution is imposed at sentencing for that offense together with other criminal punishments such as imprisonment and fines. And at the sentencing proceeding where restitution is imposed, the Government, not the victim, is the party adverse to the defendant. Further, the federal MVRA restitution regime is codified in Title 18, \u201cCrimes and Criminal Procedure,\u201d and the statutory provisions authorizing restitution orders are contained in Chapter 232 of that Title, entitled \u201cMiscellaneous Sentencing Provisions.\u201d A district court imposing restitution must follow the 2 ELLINGBURG v. UNITED STATES Syllabus procedures applicable to other criminal penalties. The Court\u2019s precedents have understood restitution",
+  "lower_court_ruling": "see syllabus",
+  "opinion_excerpt_urls": [
+    "https://www.courtlistener.com/opinion/10776751/ellingburg-v-united-states/"
+  ],
+  "ground_truth": {
+    "disposition": "reversed",
+    "vote_split": "9-0",
+    "scdb_id": null
+  },
+  "status": "decided"
+}

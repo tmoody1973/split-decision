@@ -1,0 +1,19 @@
+{
+  "case_id": "cl-cluster-10858761",
+  "name": "Jules v. Andre Balazs Properties",
+  "docket": "n/a",
+  "date_argued": "2026-05-14",
+  "date_decided": "2026-05-14",
+  "question_presented": "(Slip Opinion) OCTOBER TERM, 2025 1 Syllabus NOTE: Where it is feasible, a syllabus (headnote) will be released, as is being done in connection with this case, at the time the opinion is issued. The syllabus constitutes no part of the opinion of the Court but has been prepared by the Reporter of Decisions for the convenience of the reader. See United States v. Detroit Timber & Lumber Co., 200 U. S. 321, 337. SUPREME COURT OF THE UNITED STATES Syllabus JULES v. ANDRE BALAZS PROPERTIES ET AL. CERTIORARI TO THE UNITED STATES COURT OF APPEALS FOR THE SECOND CIRCUIT No. 25\u201383. Argued March 30, 2026\u2014Decided May 14, 2026 This case presents the question whether a federal court that has",
+  "facts_summary": "(Slip Opinion) OCTOBER TERM, 2025 1 Syllabus NOTE: Where it is feasible, a syllabus (headnote) will be released, as is being done in connection with this case, at the time the opinion is issued. The syllabus constitutes no part of the opinion of the Court but has been prepared by the Reporter of Decisions for the convenience of the reader. See United States v. Detroit Timber & Lumber Co., 200 U. S. 321, 337. SUPREME COURT OF THE UNITED STATES Syllabus JULES v. ANDRE BALAZS PROPERTIES ET AL. CERTIORARI TO THE UNITED STATES COURT OF APPEALS FOR THE SECOND CIRCUIT No. 25\u201383. Argued March 30, 2026\u2014Decided May 14, 2026 This case presents the question whether a federal court that has previ- ously stayed claims in a pending action under \u00a73 of the Federal Arbi- tration Act (FAA) has jurisdiction to confirm or vacate a resulting ar- bitral award on those claims, even when the motion to confirm under \u00a79 or the motion to vacate under \u00a710 does not independently present a basis for federal jurisdiction on its face. Between 2017 and 2020, petitioner Adrian Jules worked at the Cha- teau Marmont Hotel in Los Angeles, California. When the hotel ended his employment in March 2020, Jules sued in Federal District Court in New York, alleging that respondents unlawfully discriminated against him in violation of federal and state law. Citing an arbitration agreement Jules had signed before beginning work at the hotel, re- spondents moved to stay federal proceedings pending arbitration un- der \u00a73 of the FAA. The District Court held that the arbitration agree- ment covered Jules\u2019s claims and stayed proceedings. Jules then commenced arbitration against respondents. The arbitrator issued a final award, ruling against Jules on all claims and awarding approxi- mately $34,500 in sanctions to respondents. Back in the same District Court that had previously stayed Jules\u2019s claims pending arbitration, respondents moved to confirm the award under \u00a79. Jules opposed con- firmation while cross-moving to vacate the arbitral award under \u00a710 on various grounds. Jules argued that, under Badgerow v. Walters, 596 U. S. 1, the District Court lacked jurisdiction to confirm the award because the \u00a79 and \u00a710 motions neither presented federal questions nor satisfied the requirements for diversity jurisdiction. The District Court disagreed and confirmed the arbitral award. The Second Circuit affirmed, reasoning that Badgerow involved a freestanding action com- menced for the sole purpose of",
+  "lower_court_ruling": "see syllabus",
+  "opinion_excerpt_urls": [
+    "https://www.courtlistener.com/opinion/10858761/jules-v-andre-balazs-properties/"
+  ],
+  "ground_truth": {
+    "disposition": "affirmed",
+    "vote_split": "unknown",
+    "scdb_id": null
+  },
+  "status": "decided"
+}

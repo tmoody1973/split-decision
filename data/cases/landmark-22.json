@@ -1,0 +1,17 @@
+{
+  "case_id": "landmark-22",
+  "name": "New York Times Co. v. United States",
+  "docket": "n/a",
+  "date_argued": "1971-06-30",
+  "date_decided": "1971-06-30",
+  "question_presented": "Memorization-check set: predict the Supreme Court's disposition in New York Times Co. v. United States (403 U.S. 713, 1971).",
+  "facts_summary": "Historical case in the memorization-check arm (famous tier). By design, only the case name, citation, and year are provided \u2014 this arm measures recall of memorized outcomes, not reasoning.",
+  "lower_court_ruling": "not provided (memorization-check arm)",
+  "opinion_excerpt_urls": [],
+  "ground_truth": {
+    "disposition": "affirmed",
+    "vote_split": "6-3",
+    "scdb_id": null
+  },
+  "status": "decided"
+}

@@ -1,0 +1,17 @@
+{
+  "case_id": "scdb-2012-015",
+  "name": "FLORIDA, PETITIONER v. CLAYTON HARRIS",
+  "docket": "11-817",
+  "date_argued": "2013-02-19",
+  "date_decided": "2013-02-19",
+  "question_presented": "Memorization-check set: predict the Supreme Court's disposition in FLORIDA, PETITIONER v. CLAYTON HARRIS (568 U.S. 237, 2012 Term).",
+  "facts_summary": "Historical case in the memorization-check arm. By design, only the case name, citation, and term are provided \u2014 this arm measures recall of memorized outcomes, not reasoning.",
+  "lower_court_ruling": "not provided (memorization-check arm)",
+  "opinion_excerpt_urls": [],
+  "ground_truth": {
+    "disposition": "reversed",
+    "vote_split": "9-0",
+    "scdb_id": "2012-015"
+  },
+  "status": "decided"
+}

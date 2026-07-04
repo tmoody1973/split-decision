@@ -1,0 +1,19 @@
+{
+  "case_id": "cl-cluster-10881682",
+  "name": "Trump v. Cook",
+  "docket": "25A312",
+  "date_argued": "2026-01-21",
+  "date_decided": "2026-06-29",
+  "question_presented": "Should the Court stay a district court injunction preventing the President from removing a member of the Federal Reserve Board of Governors \"for cause\" based on pre-appointment conduct without prior notice or a hearing?",
+  "facts_summary": "In 2023, President Joseph Biden nominated Lisa D. Cook for a full 14-year term on the Board of Governors of the Federal Reserve System after she had served a short unexpired term beginning in 2022. The Senate confirmed her to the new term in September 2023. In August 2025, William Pulte, Director of the Federal Housing Finance Agency, referred allegations against Cook to the Department of Justice, claiming she had committed mortgage fraud in 2021\u2014before she joined the Board\u2014by misrepresenting her residency to obtain favorable loan terms. Shortly after the referral was made public, President Donald Trump accused Cook of untrustworthiness and, on August 25, 2025, issued a public letter removing her from office. The President\u2019s letter cited the mortgage allegations as cause for removal but did not offer Cook any prior notice or opportunity to respond. Cook sued in the U.S. District Court for the District of Columbia on August 28, 2025, alleging that her removal violated the Federal Reserve Act\u2019s requirement that Governors may be removed only \u201cfor cause\u201d and that the President\u2019s action also violated her procedural due process rights under the Fifth Amendment. She sought a temporary restraining order, which the district court treated as a motion for a preliminary injunction. The district court granted the preliminary injunction on September 9, 2025, ordering that Cook\u2019s removal not be enforced while the litigation proceeds. The court found that Cook was likely to prevail on her statutory and constitutional claims and that the government\u2019s asserted harms were outweighed by the public interest in due process and Federal Reserve independence. The U.S. Court of Appeals for the District of Columbia Circuit denied the government\u2019s emergency motion for a stay on September 15, 2025, with Judges Garcia and Childs concurring and Judge Katsas dissenting. The Trump administration filed an emergency application for a stay with the Supreme Court, asking the Justices to allow Cook\u2019s removal to take effect immediately. The Court deferred a ruling on the stay. Instead of issuing a summary order, the Court kept the injunction in place\u2014allowing Cook to remain in office\u2014and scheduled the application for full oral argument.",
+  "lower_court_ruling": "United States Court of Appeals for the District of Columbia Circuit",
+  "opinion_excerpt_urls": [
+    "https://www.courtlistener.com/opinion/10881682/trump-v-cook/"
+  ],
+  "ground_truth": {
+    "disposition": "affirmed",
+    "vote_split": "unknown",
+    "scdb_id": null
+  },
+  "status": "decided"
+}

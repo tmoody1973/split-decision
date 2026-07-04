@@ -1,0 +1,19 @@
+{
+  "case_id": "cl-cluster-10645534",
+  "name": "Goldey v. Fields",
+  "docket": "n/a",
+  "date_argued": "2025-06-30",
+  "date_decided": "2025-06-30",
+  "question_presented": "PRELIMINARY PRINT Volume 606 U. S. Part 2 Pages 942\u2013945 OFFICIAL REPORTS OF THE SUPREME COURT June 30, 2025 REBECCA A. WOMELDORF reporter of decisions NOTICE: This preliminary print is subject to formal revision before the bound volume is published. Users are requested to notify the Reporter of Decisions, Supreme Court of the United States, Washington, D. C. 20543, pio@supremecourt.gov, of any typographical or other formal errors. 942 OCTOBER TERM, 2024 Syllabus GOLDEY, ASSOCIATE WARDEN, et al. v. FIELDS et al. on petition for writ of certiorari to the united states court of appeals for the fourth circuit No. 24\u2013809. Decided June 30, 2025 Prison offcials at the U. S. Penitentiary in Lee County, Virginia, placed petitioner Fields in solitary",
+  "facts_summary": "PRELIMINARY PRINT Volume 606 U. S. Part 2 Pages 942\u2013945 OFFICIAL REPORTS OF THE SUPREME COURT June 30, 2025 REBECCA A. WOMELDORF reporter of decisions NOTICE: This preliminary print is subject to formal revision before the bound volume is published. Users are requested to notify the Reporter of Decisions, Supreme Court of the United States, Washington, D. C. 20543, pio@supremecourt.gov, of any typographical or other formal errors. 942 OCTOBER TERM, 2024 Syllabus GOLDEY, ASSOCIATE WARDEN, et al. v. FIELDS et al. on petition for writ of certiorari to the united states court of appeals for the fourth circuit No. 24\u2013809. Decided June 30, 2025 Prison offcials at the U. S. Penitentiary in Lee County, Virginia, placed petitioner Fields in solitary confnement. Fields alleges that during periodic checks, offcials physically abused him. Fields sued the Bureau of Prisons and prison offcials for damages, claiming excessive force in violation of the Eighth Amendment. The District Court dismissed Fields's complaint, determining he lacked a cause of action under Bivens v. Six Unknown Fed. Narcotics Agents, 403 U. S. 388. The Fourth Cir- cuit reversed, concluding that Fields could proceed with his Eighth Amendment excessive-force claim for damages. Held: Bivens does not extend to allow an Eighth Amendment excessive- force claim for damages against federal prison offcials. For 45 years, this Court has consistently declined to extend Bivens to new contexts. This case arises in a new context, and special factors counsel against recognizing an implied Bivens cause of action for Eighth Amendment excessive-force violations. Congress has actively legislated in prisoner litigation but has not enacted a statutory cause of action for money damages. Extending Bivens to excessive-force claims could have nega- tive consequences for prison operations, and alternative remedial proce- dures already exist for federal prisoners. Certiorari granted; 109 F. 4th 264, reversed and remanded. Per Curiam. In Bivens v. Six Unknown Fed. Narcotics Agents, 403 U. S. 388 (1971), this Court recognized an implied cause of action for damages against federal offcers for certain alleged violations of the Fourth Amendment. The Court subse- quently recognized two additional contexts where implied Bivens causes of action were permitted, neither of which was an Eighth Amendment excessive-force claim. After 1980, we have declined more than 10 times to extend Bivens to cover other constitutional violations. Those many post-1980 Bivens \u201ccases have made clear that, in all but the most un- Cite as: 606 U. S.",
+  "lower_court_ruling": "see syllabus",
+  "opinion_excerpt_urls": [
+    "https://www.courtlistener.com/opinion/10645534/goldey-v-fields/"
+  ],
+  "ground_truth": {
+    "disposition": "reversed",
+    "vote_split": "unknown",
+    "scdb_id": null
+  },
+  "status": "decided"
+}

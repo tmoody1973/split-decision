@@ -1,0 +1,19 @@
+{
+  "case_id": "cl-cluster-10599007",
+  "name": "Catholic Charities Bureau, Inc. v. Wisconsin Labor and Industry Review Comm'n.",
+  "docket": "24-154",
+  "date_argued": "2025-03-31",
+  "date_decided": "2025-06-05",
+  "question_presented": "Does a state violate the First Amendment\u2019s religion clauses by denying a religious organization an otherwise-available tax exemption because the organization does not meet the state\u2019s criteria for religious behavior?",
+  "facts_summary": "Catholic Charities Bureau (CCB) is the social ministry arm of the Diocese of Superior in Wisconsin, operating since 1917 to provide services to the poor and disadvantaged as an expression of the Catholic Church's social ministry. The organization is controlled by the bishop of the Diocese, who serves as CCB\u2019s president and appoints its membership. CCB\u2019s mission is to provide service to people in need and advocate for justice, with a philosophy rooted in being \u201can effective sign of the charity of Christ.\u201d The organization makes no distinctions based on race, sex, or religion in its services, employment, or board appointments. Under CCB\u2019s umbrella are four sub-entities involved in this case: Barron County Developmental Services, Black River Industries, Diversified Services, and Headwaters. These entities provide various social services, including job placement and coaching for people with disabilities, community-based training, daily living services, and support programs. While CCB oversees these sub-entities and provides management services, the sub-entities themselves are primarily funded through government contracts and do not receive direct funding from the Diocese. Neither employees nor service recipients are required to be of any particular religious faith, and the programs do not provide religious training or attempt to promote the Catholic faith. CCB and its sub-entities sought an exemption from state unemployment insurance contributions in 2016, but the Department of Workforce Development denied the exemption. An administrative law judge reversed that decision, but then the Labor and Industry Review Commission (LIRC) reversed again, finding the organizations were not operated primarily for religious purposes. Then, the circuit court sided with CCB, and then the Wisconsin Court of Appeals reversed and reinstated LIRC\u2019s decision. Ultimately, the Wisconsin Supreme Court affirmed, holding that the organizations did not qualify for the religious purposes exemption under state law.",
+  "lower_court_ruling": "Wisconsin Supreme Court",
+  "opinion_excerpt_urls": [
+    "https://www.courtlistener.com/opinion/10599007/catholic-charities-bureau-inc-v-wisconsin-labor-and-industry-review/"
+  ],
+  "ground_truth": {
+    "disposition": "reversed",
+    "vote_split": "9-0",
+    "scdb_id": null
+  },
+  "status": "decided"
+}

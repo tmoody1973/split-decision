@@ -1,0 +1,17 @@
+{
+  "case_id": "scdb-1962-124",
+  "name": "HAYNES v. WASHINGTON",
+  "docket": "147",
+  "date_argued": "1963-05-27",
+  "date_decided": "1963-05-27",
+  "question_presented": "Memorization-check set: predict the Supreme Court's disposition in HAYNES v. WASHINGTON (373 U.S. 503, 1962 Term).",
+  "facts_summary": "Historical case in the memorization-check arm. By design, only the case name, citation, and term are provided \u2014 this arm measures recall of memorized outcomes, not reasoning.",
+  "lower_court_ruling": "not provided (memorization-check arm)",
+  "opinion_excerpt_urls": [],
+  "ground_truth": {
+    "disposition": "reversed",
+    "vote_split": "5-4",
+    "scdb_id": "1962-124"
+  },
+  "status": "decided"
+}

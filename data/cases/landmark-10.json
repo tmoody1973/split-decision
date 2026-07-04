@@ -1,0 +1,17 @@
+{
+  "case_id": "landmark-10",
+  "name": "Brown v. Board of Education",
+  "docket": "n/a",
+  "date_argued": "1954-05-17",
+  "date_decided": "1954-05-17",
+  "question_presented": "Memorization-check set: predict the Supreme Court's disposition in Brown v. Board of Education (347 U.S. 483, 1954).",
+  "facts_summary": "Historical case in the memorization-check arm (famous tier). By design, only the case name, citation, and year are provided \u2014 this arm measures recall of memorized outcomes, not reasoning.",
+  "lower_court_ruling": "not provided (memorization-check arm)",
+  "opinion_excerpt_urls": [],
+  "ground_truth": {
+    "disposition": "reversed",
+    "vote_split": "9-0",
+    "scdb_id": null
+  },
+  "status": "decided"
+}

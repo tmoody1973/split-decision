@@ -1,0 +1,19 @@
+{
+  "case_id": "cl-cluster-10865526",
+  "name": "Flowers Foods, Inc. v. Brock",
+  "docket": "n/a",
+  "date_argued": "2026-05-28",
+  "date_decided": "2026-05-28",
+  "question_presented": "(Slip Opinion) OCTOBER TERM, 2025 1 Syllabus NOTE: Where it is feasible, a syllabus (headnote) will be released, as is being done in connection with this case, at the time the opinion is issued. The syllabus constitutes no part of the opinion of the Court but has been prepared by the Reporter of Decisions for the convenience of the reader. See United States v. Detroit Timber & Lumber Co., 200 U. S. 321, 337. SUPREME COURT OF THE UNITED STATES Syllabus FLOWERS FOODS, INC., ET AL. v. BROCK CERTIORARI TO THE UNITED STATES COURT OF APPEALS FOR THE TENTH CIRCUIT No. 24\u2013935. Argued March 25, 2026\u2014Decided May 28, 2026 The Federal Arbitration Act (FAA) requires courts to enforce many pri-",
+  "facts_summary": "(Slip Opinion) OCTOBER TERM, 2025 1 Syllabus NOTE: Where it is feasible, a syllabus (headnote) will be released, as is being done in connection with this case, at the time the opinion is issued. The syllabus constitutes no part of the opinion of the Court but has been prepared by the Reporter of Decisions for the convenience of the reader. See United States v. Detroit Timber & Lumber Co., 200 U. S. 321, 337. SUPREME COURT OF THE UNITED STATES Syllabus FLOWERS FOODS, INC., ET AL. v. BROCK CERTIORARI TO THE UNITED STATES COURT OF APPEALS FOR THE TENTH CIRCUIT No. 24\u2013935. Argued March 25, 2026\u2014Decided May 28, 2026 The Federal Arbitration Act (FAA) requires courts to enforce many pri- vate arbitration agreements, but it also provides that \u201cnothing\u201d in the law shall be used to compel arbitration in disputes involving the \u201ccon- tracts of employment\u201d of any class of workers \u201cengaged in . . . inter- state commerce.\u201d 9 U. S. C. \u00a71. This case poses the question whether someone can qualify as a worker under the \u00a71 exemption if he never crosses state lines and never interacts with vehicles that do. Flowers Foods, Inc., is a large producer of packaged baked goods with bakeries in 19 States. To get its products to market, the company depends in part on franchisees who buy the distribution rights to Flowers\u2019s prod- ucts in specific geographic territories. Angelo Brock is one such fran- chisee serving the Denver area; he picks up Flowers\u2019s products from a warehouse in Colorado and delivers them to local stores, all without leaving the State. In 2022, Brock sued Flowers in federal district court alleging that the company had underpaid him and other distributors in violation of various federal and state laws. Flowers moved to compel arbitration, arguing that the FAA generally requires courts to stay or dismiss cases when the parties have agreed to resolve their disputes by arbitration and that Brock had signed a distribution agreement promising to arbitrate any disagreement. The district court denied Flowers\u2019s motion, and the Tenth Circuit affirmed. Resting its decision on 9 U. S. C. \u00a71, the Tenth Circuit reasoned that Brock belonged to a class of workers engaged in interstate commerce and thus the court lacked authority to compel arbitration. Held: A worker who transports goods on an intrastate leg of an interstate journey can qualify for \u00a71\u2019s exemption without",
+  "lower_court_ruling": "see syllabus",
+  "opinion_excerpt_urls": [
+    "https://www.courtlistener.com/opinion/10865526/flowers-foods-inc-v-brock/"
+  ],
+  "ground_truth": {
+    "disposition": "affirmed",
+    "vote_split": "9-0",
+    "scdb_id": null
+  },
+  "status": "decided"
+}

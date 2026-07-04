@@ -1,0 +1,19 @@
+{
+  "case_id": "cl-cluster-10880241",
+  "name": "Wolford v. Lopez",
+  "docket": "24-1046",
+  "date_argued": "2026-01-20",
+  "date_decided": "2026-06-25",
+  "question_presented": "Does a law that makes it a crime for a licensed concealed carry permit holder to bring a handgun onto private property open to the public\u2014such as a store or restaurant\u2014unless the property owner gives \u201cexpress authorization\u201d violate the Second Amendment?",
+  "facts_summary": "In 2023, Hawaii and California enacted new laws, Act 52 and Senate Bill 2, respectively, that significantly restrict the public carry of firearms. Both laws prohibit individuals with carry permits from bringing firearms into numerous specified \u201csensitive places.\u201d Hawaii\u2019s list includes fifteen categories, such as bars, restaurants serving alcohol, parks, beaches, and banks. California\u2019s list is broader, covering more than two dozen types of property, including hospitals, public transit, playgrounds, libraries, museums, places of worship, and casinos. Both states also changed the default rule for private property open to the public, generally banning firearms unless the property owner expressly permits them. Hawaii allows owners to consent verbally, in writing, or via a posted sign. California\u2019s rule is stricter, permitting consent only through the posting of a specific, state-mandated sign. Plaintiffs in both states include individuals who hold concealed-carry permits and various gun-rights organizations. They filed lawsuits alleging that these new restrictions violate their Second Amendment right to keep and bear arms. Plaintiffs in both actions sued their respective state attorneys general, and federal district courts issued preliminary injunctions blocking enforcement of many of the new provisions. On appeal, the U.S. Court of Appeals for the Ninth Circuit consolidated the cases, affirming the injunctions in part but reversing them in large part. The Ninth Circuit\u2019s ruling allowed many of the challenged restrictions to remain in effect but agreed with the district courts that the states could not, for example, ban firearms in banks or hospitals.",
+  "lower_court_ruling": "United States Court of Appeals for the Ninth Circuit",
+  "opinion_excerpt_urls": [
+    "https://www.courtlistener.com/opinion/10880241/wolford-v-lopez/"
+  ],
+  "ground_truth": {
+    "disposition": "reversed",
+    "vote_split": "unknown",
+    "scdb_id": null
+  },
+  "status": "decided"
+}

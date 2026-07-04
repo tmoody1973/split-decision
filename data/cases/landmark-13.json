@@ -1,0 +1,17 @@
+{
+  "case_id": "landmark-13",
+  "name": "Engel v. Vitale",
+  "docket": "n/a",
+  "date_argued": "1962-06-25",
+  "date_decided": "1962-06-25",
+  "question_presented": "Memorization-check set: predict the Supreme Court's disposition in Engel v. Vitale (370 U.S. 421, 1962).",
+  "facts_summary": "Historical case in the memorization-check arm (famous tier). By design, only the case name, citation, and year are provided \u2014 this arm measures recall of memorized outcomes, not reasoning.",
+  "lower_court_ruling": "not provided (memorization-check arm)",
+  "opinion_excerpt_urls": [],
+  "ground_truth": {
+    "disposition": "reversed",
+    "vote_split": "6-1",
+    "scdb_id": null
+  },
+  "status": "decided"
+}

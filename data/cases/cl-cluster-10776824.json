@@ -1,0 +1,19 @@
+{
+  "case_id": "cl-cluster-10776824",
+  "name": "Gutierrez v. Saenz",
+  "docket": "n/a",
+  "date_argued": "2025-06-26",
+  "date_decided": "2025-06-26",
+  "question_presented": "PRELIMINARY PRINT Volume 606 U. S. Part 1 Pages 305\u2013356 OFFICIAL REPORTS OF THE SUPREME COURT June 26, 2025 Page Proof Pending Publication REBECCA A. WOMELDORF reporter of decisions NOTICE: This preliminary print is subject to formal revision before the bound volume is published. Users are requested to notify the Reporter of Decisions, Supreme Court of the United States, Washington, D. C. 20543, pio@supremecourt.gov, of any typographical or other formal errors. OCTOBER TERM, 2024 305 Syllabus GUTIERREZ v. SAENZ et al. certiorari to the united states court of appeals for the \ue405fth circuit No. 23\u20137809. Argued February 24, 2025\u2014Decided June 26, 2025 In 1998, Texas charged Ruben Gutierrez with capital murder for his involvement in the killing of Escolastica Harrison.",
+  "facts_summary": "PRELIMINARY PRINT Volume 606 U. S. Part 1 Pages 305\u2013356 OFFICIAL REPORTS OF THE SUPREME COURT June 26, 2025 Page Proof Pending Publication REBECCA A. WOMELDORF reporter of decisions NOTICE: This preliminary print is subject to formal revision before the bound volume is published. Users are requested to notify the Reporter of Decisions, Supreme Court of the United States, Washington, D. C. 20543, pio@supremecourt.gov, of any typographical or other formal errors. OCTOBER TERM, 2024 305 Syllabus GUTIERREZ v. SAENZ et al. certiorari to the united states court of appeals for the \ue405fth circuit No. 23\u20137809. Argued February 24, 2025\u2014Decided June 26, 2025 In 1998, Texas charged Ruben Gutierrez with capital murder for his involvement in the killing of Escolastica Harrison. The State's theory at trial was that Gutierrez wielded one of the two screwdrivers used to stab Harrison to death in her mobile home. The jury convicted Gutier- rez of capital murder. At the sentencing phase of Gutierrez's trial, the jury was required to answer whether Texas proved beyond a reasonable doubt that Gutierrez \u201cactually caused\u201d Harrison's death or, if not, that he \u201cintended to kill [her]\u201d or \u201canticipated that a human life would be taken.\u201d Tex. Code Crim. Proc. Ann., Art. 37.071(2)(b)(2). The jury an- swered yes, and Gutierrez was sentenced to death. For nearly 15 years, Gutierrez has sought DNA testing of evidence he claims would prove he was not in Harrison's home the night of the murder. Texas's Article 64 allows DNA testing where a \u201cconvicted per- Page Proof Pending Publication son establishes by a preponderance of the evidence\u201d that he \u201cwould not have been convicted if exculpatory results had been obtained through DNA testing,\u201d among other criteria. Art. 64.03(a)(2). Invoking Arti- cle 64, Gutierrez twice moved in state court for DNA testing of untested crime scene evidence. The trial court denied his frst request in 2010, and the Texas Court of Criminal Appeals (TCCA) affrmed. The court reasoned that even if Gutierrez's DNA was not found on the tested items, that would not establish his innocence of capital murder because he would still be a party to the robbery that resulted in Harrison's death. The court concluded that Gutierrez could not use Article 64 to show he was wrongly sentenced to death unless he could also establish his innocence of the underlying crime. In 2019, Gutierrez again sought DNA testing, but Texas courts denied his motion.",
+  "lower_court_ruling": "see syllabus",
+  "opinion_excerpt_urls": [
+    "https://www.courtlistener.com/opinion/10776824/gutierrez-v-saenz/"
+  ],
+  "ground_truth": {
+    "disposition": "reversed",
+    "vote_split": "unknown",
+    "scdb_id": null
+  },
+  "status": "decided"
+}

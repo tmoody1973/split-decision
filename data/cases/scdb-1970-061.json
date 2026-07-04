@@ -1,0 +1,17 @@
+{
+  "case_id": "scdb-1970-061",
+  "name": "SCHLANGER v. SEAMANS, SECRETARY OF THE AIR FORCE, et al.",
+  "docket": "5481",
+  "date_argued": "1971-03-23",
+  "date_decided": "1971-03-23",
+  "question_presented": "Memorization-check set: predict the Supreme Court's disposition in SCHLANGER v. SEAMANS, SECRETARY OF THE AIR FORCE, et al. (401 U.S. 487, 1970 Term).",
+  "facts_summary": "Historical case in the memorization-check arm. By design, only the case name, citation, and term are provided \u2014 this arm measures recall of memorized outcomes, not reasoning.",
+  "lower_court_ruling": "not provided (memorization-check arm)",
+  "opinion_excerpt_urls": [],
+  "ground_truth": {
+    "disposition": "affirmed",
+    "vote_split": "8-1",
+    "scdb_id": "1970-061"
+  },
+  "status": "decided"
+}

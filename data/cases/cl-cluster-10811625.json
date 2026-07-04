@@ -1,0 +1,19 @@
+{
+  "case_id": "cl-cluster-10811625",
+  "name": "Olivier v. City of Brandon",
+  "docket": "n/a",
+  "date_argued": "2026-03-20",
+  "date_decided": "2026-03-20",
+  "question_presented": "(Slip Opinion) OCTOBER TERM, 2025 1 Syllabus NOTE: Where it is feasible, a syllabus (headnote) will be released, as is being done in connection with this case, at the time the opinion is issued. The syllabus constitutes no part of the opinion of the Court but has been prepared by the Reporter of Decisions for the convenience of the reader. See United States v. Detroit Timber & Lumber Co., 200 U. S. 321, 337. SUPREME COURT OF THE UNITED STATES Syllabus OLIVIER v. CITY OF BRANDON, MISSISSIPPI CERTIORARI TO THE UNITED STATES COURT OF APPEALS FOR THE FIFTH CIRCUIT No. 24\u2013993. Argued December 3, 2025\u2014Decided March 20, 2026 Petitioner Gabriel Olivier is a street preacher in Mississippi who believes that",
+  "facts_summary": "(Slip Opinion) OCTOBER TERM, 2025 1 Syllabus NOTE: Where it is feasible, a syllabus (headnote) will be released, as is being done in connection with this case, at the time the opinion is issued. The syllabus constitutes no part of the opinion of the Court but has been prepared by the Reporter of Decisions for the convenience of the reader. See United States v. Detroit Timber & Lumber Co., 200 U. S. 321, 337. SUPREME COURT OF THE UNITED STATES Syllabus OLIVIER v. CITY OF BRANDON, MISSISSIPPI CERTIORARI TO THE UNITED STATES COURT OF APPEALS FOR THE FIFTH CIRCUIT No. 24\u2013993. Argued December 3, 2025\u2014Decided March 20, 2026 Petitioner Gabriel Olivier is a street preacher in Mississippi who believes that sharing his religious views with fellow citizens is an important part of exercising his faith. His vocation sometimes took him to the sidewalks near an amphitheater in the City of Brandon, where he could find sizable audiences attending events. In 2019, the City adopted an ordinance requiring all individuals or groups engaging in \u201cprotests\u201d or \u201cdemonstrations,\u201d at around the time events were sched- uled, to stay within a \u201cdesignated protest area.\u201d In 2021, Olivier was arrested for violating that ordinance. He pleaded no contest in munic- ipal court. The court imposed a $304 fine, one year of probation, and 10 days of imprisonment to be served only if he violated the ordinance during his probation. Olivier did not appeal, paid the fine, and served no prison time. Because he still wanted to preach near the amphithe- ater, Olivier filed suit against the City in federal court under 42 U. S. C. \u00a71983, alleging that the city ordinance violates the Free Speech Clause of the First Amendment by consigning him and other speakers to the amphitheater\u2019s protest area. The complaint seeks, as a remedy, a declaration that the ordinance infringes the First Amend- ment and an injunction preventing city officials from enforcing the or- dinance in the future. In other words, the relief requested is only pro- spective; Olivier seeks neither the reversal of, nor compensation for, his prior conviction. The parties contested in the lower courts whether this Court\u2019s deci- sion in Heck v. Humphrey, 512 U. S. 477\u2014which prohibits the use of \u00a71983 to challenge the validity of a prior conviction or sentence so as to obtain release from custody or monetary damages\u2014bars the suit from going forward. On",
+  "lower_court_ruling": "see syllabus",
+  "opinion_excerpt_urls": [
+    "https://www.courtlistener.com/opinion/10811625/olivier-v-city-of-brandon/"
+  ],
+  "ground_truth": {
+    "disposition": "reversed",
+    "vote_split": "unknown",
+    "scdb_id": null
+  },
+  "status": "decided"
+}

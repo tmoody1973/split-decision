@@ -1,0 +1,19 @@
+{
+  "case_id": "cl-cluster-10776828",
+  "name": "FDA v. R. J. Reynolds Vapor Co.",
+  "docket": "n/a",
+  "date_argued": "2025-06-20",
+  "date_decided": "2025-06-20",
+  "question_presented": "PRELIMINARY PRINT Volume 606 U. S. Part 1 Pages 226\u2013258 OFFICIAL REPORTS OF THE SUPREME COURT June 20, 2025 Page Proof Pending Publication REBECCA A. WOMELDORF reporter of decisions NOTICE: This preliminary print is subject to formal revision before the bound volume is published. Users are requested to notify the Reporter of Decisions, Supreme Court of the United States, Washington, D. C. 20543, pio@supremecourt.gov, of any typographical or other formal errors. 226 OCTOBER TERM, 2024 Syllabus FOOD AND DRUG ADMINISTRATION et al. v. R. J. REYNOLDS VAPOR CO. et al. certiorari to the united states court of appeals for the \ue405fth circuit No. 23\u20131187. Argued January 21, 2025\u2014Decided June 20, 2025 The Family Smoking Prevention and Tobacco Control Act (TCA)",
+  "facts_summary": "PRELIMINARY PRINT Volume 606 U. S. Part 1 Pages 226\u2013258 OFFICIAL REPORTS OF THE SUPREME COURT June 20, 2025 Page Proof Pending Publication REBECCA A. WOMELDORF reporter of decisions NOTICE: This preliminary print is subject to formal revision before the bound volume is published. Users are requested to notify the Reporter of Decisions, Supreme Court of the United States, Washington, D. C. 20543, pio@supremecourt.gov, of any typographical or other formal errors. 226 OCTOBER TERM, 2024 Syllabus FOOD AND DRUG ADMINISTRATION et al. v. R. J. REYNOLDS VAPOR CO. et al. certiorari to the united states court of appeals for the \ue405fth circuit No. 23\u20131187. Argued January 21, 2025\u2014Decided June 20, 2025 The Family Smoking Prevention and Tobacco Control Act (TCA) requires manufacturers to apply for and receive approval from the Food and Drug Administration (FDA) before marketing any \u201cnew tobacco prod- uct.\u201d 21 U. S. C. \u00a7 387j. In 2016, the FDA decided that e-cigarettes and related products were new tobacco products subject to the TCA. Given the size of the existing e-cigarette market, the FDA announced that it would defer enforcement of the TCA against e-cigarette manu- facturers and retailers while the manufacturers sought FDA appro- val. R. J. Reynolds Vapor Co. (RJR Vapor)\u2014a manufacturer of e-cigarettes\u2014sought FDA approval to continue marketing its popular Vuse Alto products. The FDA denied the applications, fnding that Page Proof Pending Publication RJR Vapor had failed to demonstrate that marketing Vuse Alto prod- ucts would be \u201cappropriate for the protection of the public health\u201d as required by the TCA. \u00a7 387j(c)(2)(A). The FDA's order sounded the death knell for a signifcant portion of the e-cigarette market, and RJR Vapor sought to challenge it. The TCA provides that \u201cany person adversely affected\u201d by an FDA denial order can petition for judicial review in either the D. C. Circuit or \u201cthe circuit in which such person resides or has their principal place of business.\u201d \u00a7 387l(a)(1). Had RJR Vapor sought judicial review on its own, it could have fled a petition in the D. C. Circuit (the statutory default) or the Fourth Circuit (which includes North Carolina, RJR Va- por's state of incorporation and principal place of business). RJR Vapor instead combined forces with a Texas-based retailer and a Mississippi- based trade association of retailers to challenge the FDA's denial order in the Fifth Circuit (which includes both Texas and Mississippi). In response, the FDA",
+  "lower_court_ruling": "see syllabus",
+  "opinion_excerpt_urls": [
+    "https://www.courtlistener.com/opinion/10776828/fda-v-r-j-reynolds-vapor-co/"
+  ],
+  "ground_truth": {
+    "disposition": "affirmed",
+    "vote_split": "unknown",
+    "scdb_id": null
+  },
+  "status": "decided"
+}

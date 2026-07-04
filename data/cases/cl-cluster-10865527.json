@@ -1,0 +1,19 @@
+{
+  "case_id": "cl-cluster-10865527",
+  "name": "Fernandez v. United States",
+  "docket": "n/a",
+  "date_argued": "2026-05-28",
+  "date_decided": "2026-05-28",
+  "question_presented": "(Slip Opinion) OCTOBER TERM, 2025 1 Syllabus NOTE: Where it is feasible, a syllabus (headnote) will be released, as is being done in connection with this case, at the time the opinion is issued. The syllabus constitutes no part of the opinion of the Court but has been prepared by the Reporter of Decisions for the convenience of the reader. See United States v. Detroit Timber & Lumber Co., 200 U. S. 321, 337. SUPREME COURT OF THE UNITED STATES Syllabus FERNANDEZ v. UNITED STATES CERTIORARI TO THE UNITED STATES COURT OF APPEALS FOR THE SECOND CIRCUIT No. 24\u2013556. Argued November 12, 2025\u2014Decided May 28, 2026 Joe Fernandez was indicted in 2013 for his role in the assassination of two",
+  "facts_summary": "(Slip Opinion) OCTOBER TERM, 2025 1 Syllabus NOTE: Where it is feasible, a syllabus (headnote) will be released, as is being done in connection with this case, at the time the opinion is issued. The syllabus constitutes no part of the opinion of the Court but has been prepared by the Reporter of Decisions for the convenience of the reader. See United States v. Detroit Timber & Lumber Co., 200 U. S. 321, 337. SUPREME COURT OF THE UNITED STATES Syllabus FERNANDEZ v. UNITED STATES CERTIORARI TO THE UNITED STATES COURT OF APPEALS FOR THE SECOND CIRCUIT No. 24\u2013556. Argued November 12, 2025\u2014Decided May 28, 2026 Joe Fernandez was indicted in 2013 for his role in the assassination of two gang members. The prosecution\u2019s theory was that members of a drug ring had paid Fernandez to act as the backup shooter, and when the primary shooter\u2019s gun jammed, Fernandez fired 14 rounds and killed both victims. Fernandez\u2019s alleged co-conspirator, Patrick Darge, testified against Fernandez at trial. The jury convicted Fernandez of murder for hire and a firearms offense, and the District Court imposed two consecutive life sentences. Fernandez pursued multiple avenues of relief. He first asked the District Court to reconsider, alleging Brady violations related to the Government\u2019s failure to disclose that another alleged co-conspirator, Luis Rivera, had denied driving the getaway car. The District Court reviewed the Government\u2019s notes from interviewing Rivera and con- cluded that they did not contain relevant information, though the judge noted he was \u201ctroubled\u201d by the Government\u2019s lenient treatment of Rivera. The Second Circuit affirmed the conviction and sentence, rejecting both the Brady claim and Fernandez\u2019s insufficiency-of-evi- dence argument. It held that a reasonable jury could credit Darge\u2019s testimony and that the evidence was sufficient to support conviction. Fernandez then twice moved for postconviction relief under 28 U. S. C. \u00a72255. The first motion, arguing actual innocence based on witness credibility, was described by the Second Circuit as \u201cplainly meritless.\u201d The second succeeded only in vacating his firearms conviction based on United States v. Davis, 588 U. S. 445, thus leaving in place Fernan- dez\u2019s murder-for-hire conviction. In the order vacating the firearms conviction, the District Judge speculated that the Government had of- fered Rivera a lenient plea deal because it \u201ckn[ew] something\u201d incon- sistent with Darge\u2019s testimony, and pointedly noted that if 2 FERNANDEZ v. UNITED STATES Syllabus Fernandez\u2019s life sentence on the",
+  "lower_court_ruling": "see syllabus",
+  "opinion_excerpt_urls": [
+    "https://www.courtlistener.com/opinion/10865527/fernandez-v-united-states/"
+  ],
+  "ground_truth": {
+    "disposition": "affirmed",
+    "vote_split": "unknown",
+    "scdb_id": null
+  },
+  "status": "decided"
+}

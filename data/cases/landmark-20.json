@@ -1,0 +1,17 @@
+{
+  "case_id": "landmark-20",
+  "name": "Terry v. Ohio",
+  "docket": "n/a",
+  "date_argued": "1968-06-10",
+  "date_decided": "1968-06-10",
+  "question_presented": "Memorization-check set: predict the Supreme Court's disposition in Terry v. Ohio (392 U.S. 1, 1968).",
+  "facts_summary": "Historical case in the memorization-check arm (famous tier). By design, only the case name, citation, and year are provided \u2014 this arm measures recall of memorized outcomes, not reasoning.",
+  "lower_court_ruling": "not provided (memorization-check arm)",
+  "opinion_excerpt_urls": [],
+  "ground_truth": {
+    "disposition": "affirmed",
+    "vote_split": "8-1",
+    "scdb_id": null
+  },
+  "status": "decided"
+}

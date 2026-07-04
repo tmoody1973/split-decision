@@ -1,0 +1,19 @@
+{
+  "case_id": "cl-cluster-10880243",
+  "name": "Mullin v. Al Otro Lado",
+  "docket": "25-5",
+  "date_argued": "2026-03-24",
+  "date_decided": "2026-06-25",
+  "question_presented": "Does a noncitizen who is stopped on the Mexican side of the U.S.-Mexico border \u201carrive[] in the United States\u201d within the meaning of Immigration and Nationality Act?",
+  "facts_summary": "Beginning in 2016, U.S. Customs and Border Protection (CBP) implemented a \u201cmetering\u201d policy at ports of entry along the United States-Mexico border to manage asserted capacity constraints. CBP officers stationed at the physical boundary line turned away asylum seekers lacking valid travel documents, preventing them from stepping onto U.S. soil to undergo mandatory inspection and processing. These officials instructed migrants to return to Mexico and wait for future processing opportunities, often without providing specific appointment times, forcing numerous asylum seekers to endure prolonged delays in Mexican border towns where they faced significant safety risks. While these asylum seekers waited, the federal government promulgated the \u201cAsylum Transit Rule\u201d in 2019, which generally rendered noncitizens ineligible for asylum if they traveled through a third country without first seeking protection there. This regulatory change prejudiced individuals previously turned away under the metering policy because, had CBP processed them upon their initial arrival, the Transit Rule would not have applied to their claims. Al Otro Lado, a legal aid organization, joined thirteen individual asylum seekers to file a class-action lawsuit challenging the metering policy and seeking to prevent the government from applying the Transit Rule to those who attempted to enter before its enactment. The U.S. District Court for the Southern District of California declared the metering policy unlawful under the Administrative Procedure Act and permanently enjoined the government from applying the Asylum Transit Rule to class members . The U.S. Court of Appeals for the Ninth Circuit affirmed the district court\u2019s conclusion that the policy unlawfully withheld mandatory agency action, but narrowed the injunction to prevent the district court from forcing the government to unilaterally reopen past asylum denials.",
+  "lower_court_ruling": "United States Court of Appeals for the Ninth Circuit",
+  "opinion_excerpt_urls": [
+    "https://www.courtlistener.com/opinion/10880243/mullin-v-al-otro-lado/"
+  ],
+  "ground_truth": {
+    "disposition": "reversed",
+    "vote_split": "unknown",
+    "scdb_id": null
+  },
+  "status": "decided"
+}

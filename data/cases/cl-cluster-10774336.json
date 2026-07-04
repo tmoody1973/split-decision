@@ -1,0 +1,19 @@
+{
+  "case_id": "cl-cluster-10774336",
+  "name": "Bost v. Illinois Bd. of Elections",
+  "docket": "24-568",
+  "date_argued": "2025-10-08",
+  "date_decided": "2026-01-14",
+  "question_presented": "Do federal candidates have Article III standing to challenge state laws that allow mail-in ballots to be received and counted for two weeks after Election Day based on claims that such laws dilute their votes and force them to incur additional campaign expenses for extended ballot monitoring?",
+  "facts_summary": "Michael Bost, a multi-term U.S. Representative from Illinois\u2019s 12th District, along with Laura Pollastrini and Susan Sweeney, political activists who served as presidential electors in 2020, challenged Illinois\u2019s mail-in ballot receipt procedure. Under Illinois law, election officials can receive and count mail-in ballots for up to fourteen days after Election Day if the ballots are postmarked or certified by Election Day. Plaintiffs argued this procedure violates federal election statutes by impermissibly extending Election Day beyond the federally mandated date. They claimed the counting of these \u201cuntimely\u201d ballots dilutes their votes and forces them to expend additional campaign resources to monitor ballot counting for two weeks after Election Day. Plaintiffs filed suit in May 2022 against the Illinois State Board of Elections and its Executive Director. The U.S. District Court for the Northern District of Illinois dismissed the case, finding that Plaintiffs lacked Article III standing. The court also rejected their claims on the merits. The U.S. Court of Appeals for the Seventh Circuit affirmed the dismissal on jurisdictional grounds.",
+  "lower_court_ruling": "United States Court of Appeals for the Seventh Circuit",
+  "opinion_excerpt_urls": [
+    "https://www.courtlistener.com/opinion/10774336/bost-v-illinois-bd-of-elections/"
+  ],
+  "ground_truth": {
+    "disposition": "reversed",
+    "vote_split": "5-4",
+    "scdb_id": null
+  },
+  "status": "decided"
+}

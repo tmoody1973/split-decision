@@ -1,0 +1,19 @@
+{
+  "case_id": "cl-cluster-10774335",
+  "name": "Case v. Montana",
+  "docket": "n/a",
+  "date_argued": "2026-01-14",
+  "date_decided": "2026-01-14",
+  "question_presented": "(Slip Opinion) OCTOBER TERM, 2025 1 Syllabus NOTE: Where it is feasible, a syllabus (headnote) will be released, as is being done in connection with this case, at the time the opinion is issued. The syllabus constitutes no part of the opinion of the Court but has been prepared by the Reporter of Decisions for the convenience of the reader. See United States v. Detroit Timber & Lumber Co., 200 U. S. 321, 337. SUPREME COURT OF THE UNITED STATES Syllabus CASE v. MONTANA CERTIORARI TO THE SUPREME COURT OF MONTANA No. 24\u2013624. Argued October 15, 2025\u2014Decided January 14, 2026 In Brigham City v. Stuart, 547 U. S. 398, 400, the Court held that the Fourth Amendment allows police officers",
+  "facts_summary": "(Slip Opinion) OCTOBER TERM, 2025 1 Syllabus NOTE: Where it is feasible, a syllabus (headnote) will be released, as is being done in connection with this case, at the time the opinion is issued. The syllabus constitutes no part of the opinion of the Court but has been prepared by the Reporter of Decisions for the convenience of the reader. See United States v. Detroit Timber & Lumber Co., 200 U. S. 321, 337. SUPREME COURT OF THE UNITED STATES Syllabus CASE v. MONTANA CERTIORARI TO THE SUPREME COURT OF MONTANA No. 24\u2013624. Argued October 15, 2025\u2014Decided January 14, 2026 In Brigham City v. Stuart, 547 U. S. 398, 400, the Court held that the Fourth Amendment allows police officers to enter a home without a warrant if they have an \u201cobjectively reasonable basis for believing\u201d that someone inside needs emergency assistance. In this case, Mon- tana police officers responded to the home of petitioner William Case after his ex-girlfriend called 9\u20131\u20131 to report that he was threatening suicide and may have shot himself. The officers knocked on the doors and yelled into an open window, but got no response. They could see an empty handgun holster and something that looked like a suicide note inside, and they ultimately decided to enter the home to render emergency aid. When one officer approached a bedroom closet in which Case was hiding, Case threw open the closet curtain while hold- ing an object that looked like a gun. Fearing that he was about to be shot, the officer shot and injured Case. An ambulance was called to take Case to the hospital, and officers found a handgun next to where Case had stood. Case was charged with assaulting a police officer. Case moved to suppress all evidence obtained from the home entry, arguing that the police violated the Fourth Amendment by entering without a warrant. The trial court denied the motion, and a jury found Case guilty. A divided Montana Supreme Court upheld the officers\u2019 entry as lawful under Montana\u2019s caretaker doctrine, rejecting the contention that an officer must have probable cause to believe that an occupant needs emergency aid. Held: Brigham City\u2019s objective reasonableness standard for warrantless home entries to render emergency aid applies without further gloss and was satisfied in this case. Pp. 5\u201311. 2 CASE v. MONTANA Syllabus (a) \u201c[S]earches and seizures inside a home without a warrant are",
+  "lower_court_ruling": "see syllabus",
+  "opinion_excerpt_urls": [
+    "https://www.courtlistener.com/opinion/10774335/case-v-montana/"
+  ],
+  "ground_truth": {
+    "disposition": "affirmed",
+    "vote_split": "9-0",
+    "scdb_id": null
+  },
+  "status": "decided"
+}

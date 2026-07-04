@@ -1,0 +1,19 @@
+{
+  "case_id": "cl-cluster-10814782",
+  "name": "Cox Communications, Inc. v. Sony Music Entertainment",
+  "docket": "n/a",
+  "date_argued": "2026-03-25",
+  "date_decided": "2026-03-25",
+  "question_presented": "(Slip Opinion) OCTOBER TERM, 2025 1 Syllabus NOTE: Where it is feasible, a syllabus (headnote) will be released, as is being done in connection with this case, at the time the opinion is issued. The syllabus constitutes no part of the opinion of the Court but has been prepared by the Reporter of Decisions for the convenience of the reader. See United States v. Detroit Timber & Lumber Co., 200 U. S. 321, 337. SUPREME COURT OF THE UNITED STATES Syllabus COX COMMUNICATIONS, INC., ET AL. v. SONY MUSIC ENTERTAINMENT ET AL. CERTIORARI TO THE UNITED STATES COURT OF APPEALS FOR THE FOURTH CIRCUIT No. 24\u2013171. Argued December 1, 2025\u2014Decided March 25, 2026 Under the Copyright Act, \u201c[a]nyone who violates",
+  "facts_summary": "(Slip Opinion) OCTOBER TERM, 2025 1 Syllabus NOTE: Where it is feasible, a syllabus (headnote) will be released, as is being done in connection with this case, at the time the opinion is issued. The syllabus constitutes no part of the opinion of the Court but has been prepared by the Reporter of Decisions for the convenience of the reader. See United States v. Detroit Timber & Lumber Co., 200 U. S. 321, 337. SUPREME COURT OF THE UNITED STATES Syllabus COX COMMUNICATIONS, INC., ET AL. v. SONY MUSIC ENTERTAINMENT ET AL. CERTIORARI TO THE UNITED STATES COURT OF APPEALS FOR THE FOURTH CIRCUIT No. 24\u2013171. Argued December 1, 2025\u2014Decided March 25, 2026 Under the Copyright Act, \u201c[a]nyone who violates any of the exclusive rights of the copyright owner . . . is an infringer of the copyright.\u201d 17 U. S. C. \u00a7501(a). This Court has also recognized two categories of sec- ondary liability, which means liability for the copyright infringement of another. Those two categories are \u201ccontributory\u201d liability and \u201cvi- carious\u201d liability. Metro-Goldwyn-Mayer Studios Inc. v. Grokster, Ltd., 545 U. S. 913, 930. This case concerns contributory liability, which requires that a pro- vider intended its service to be used for infringement. A copyright owner can show the requisite intent in two ways. First, it can show that a party affirmatively induced the infringement. Ibid. Second, it can show that the party sold a service tailored to infringement. Id., at 942 (Ginsburg, J., concurring). These two bases for contributory lia- bility track patent law. See 35 U. S. C. \u00a7\u00a7271(b), (c). Cox Communications, Inc., is an Internet service provider serving approximately six million subscribers, each associated with a unique Internet Protocol address. Internet service providers like Cox have limited knowledge about how their services are used; they know which IP address corresponds to which subscriber account but cannot distin- guish individual users or directly control how services are used. Cox contractually prohibits subscribers from using their connection to post, copy, transmit, or disseminate content that infringes copyrights. Sony Music Entertainment and other major music copyright owners enlisted MarkMonitor to track copyright infringement across the In- ternet. MarkMonitor\u2019s software detects when copyrighted works are 2 COX COMMUNICATIONS, INC. v. SONY MUSIC ENTERTAINMENT Syllabus illegally uploaded or downloaded and traces the activity to particular IP addresses. During the roughly two-year period at issue, MarkMon- itor sent Cox 163,148 notices identifying IP",
+  "lower_court_ruling": "see syllabus",
+  "opinion_excerpt_urls": [
+    "https://www.courtlistener.com/opinion/10814782/cox-communications-inc-v-sony-music-entertainment/"
+  ],
+  "ground_truth": {
+    "disposition": "reversed",
+    "vote_split": "unknown",
+    "scdb_id": null
+  },
+  "status": "decided"
+}

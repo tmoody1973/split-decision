@@ -1,0 +1,19 @@
+{
+  "case_id": "cl-cluster-10776846",
+  "name": "BLOM Bank SAL v. Honickman",
+  "docket": "n/a",
+  "date_argued": "2025-06-05",
+  "date_decided": "2025-06-05",
+  "question_presented": "PRELIMINARY PRINT Volume 605 U. S. Part 1 Pages 204\u2013222 OFFICIAL REPORTS OF THE SUPREME COURT June 5, 2025 Page Proof Pending Publication REBECCA A. WOMELDORF reporter of decisions NOTICE: This preliminary print is subject to formal revision before the bound volume is published. Users are requested to notify the Reporter of Decisions, Supreme Court of the United States, Washington, D. C. 20543, pio@supremecourt.gov, of any typographical or other formal errors. 204 OCTOBER TERM, 2024 Syllabus BLOM BANK SAL v. HONICKMAN et al. certiorari to the united states court of appeals for the second circuit No. 23\u20131259. Argued March 3, 2025\u2014Decided June 5, 2025 Plaintiffs, who are victims and families of victims of terrorist attacks car- ried out by Hamas",
+  "facts_summary": "PRELIMINARY PRINT Volume 605 U. S. Part 1 Pages 204\u2013222 OFFICIAL REPORTS OF THE SUPREME COURT June 5, 2025 Page Proof Pending Publication REBECCA A. WOMELDORF reporter of decisions NOTICE: This preliminary print is subject to formal revision before the bound volume is published. Users are requested to notify the Reporter of Decisions, Supreme Court of the United States, Washington, D. C. 20543, pio@supremecourt.gov, of any typographical or other formal errors. 204 OCTOBER TERM, 2024 Syllabus BLOM BANK SAL v. HONICKMAN et al. certiorari to the united states court of appeals for the second circuit No. 23\u20131259. Argued March 3, 2025\u2014Decided June 5, 2025 Plaintiffs, who are victims and families of victims of terrorist attacks car- ried out by Hamas between 2001 and 2003, sued BLOM Bank SAL under the Anti-Terrorism Act for allegedly aiding and abetting the attacks by providing fnancial services to Hamas-affliated customers. BLOM argued that the complaint failed to state a claim, and plaintiffs repeat- edly affrmed they would not seek to amend their complaint if it were dismissed. The District Court dismissed the complaint with prejudice, fnding that plaintiffs had not adequately alleged that BLOM had the requisite general awareness for aiding-and-abetting liability. The court denied leave to amend because plaintiffs had declined several opportuni- ties to amend and failed to identify additional facts they could allege. The Second Circuit affrmed the dismissal, fnding that even though the District Court had applied too stringent a standard for the general Page Proof Pending Publication awareness element, plaintiffs' claims still failed under the correct stand- ard. Following the affrmance, plaintiffs returned to the District Court and moved under Federal Rule of Civil Procedure 60(b)(6) to vacate the fnal judgment so that they could fle an amended complaint to meet the Second Circuit's clarifed standard. The District Court denied the motion, ruling that the Second Circuit's clarifcation did not constitute the \u201cextraordinary circumstances\u201d required for Rule 60(b)(6) relief, and that plaintiffs' prior deliberate choices not to amend counseled against relief. On appeal, the Second Circuit reversed, holding that when a party seeks Rule 60(b) relief to fle an amended complaint, district courts must not apply Rule 60(b)(6)'s extraordinary circumstances standard in isolation but must instead balance Rule 60(b)'s fnality prin- ciples with Rule 15(a)'s liberal amendment policy. Held: Relief under Rule 60(b)(6) requires extraordinary circumstances, and this standard does not become less demanding when the movant seeks to",
+  "lower_court_ruling": "see syllabus",
+  "opinion_excerpt_urls": [
+    "https://www.courtlistener.com/opinion/10776846/blom-bank-sal-v-honickman/"
+  ],
+  "ground_truth": {
+    "disposition": "reversed",
+    "vote_split": "unknown",
+    "scdb_id": null
+  },
+  "status": "decided"
+}

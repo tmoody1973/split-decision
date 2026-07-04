@@ -1,0 +1,19 @@
+{
+  "case_id": "cl-cluster-10845431",
+  "name": "District of Columbia v. R.W.",
+  "docket": "n/a",
+  "date_argued": "2026-04-20",
+  "date_decided": "2026-04-20",
+  "question_presented": "Cite as: 608 U. S. ____ (2026) 1 Per Curiam SUPREME COURT OF THE UNITED STATES DISTRICT OF COLUMBIA v. R.W. ON PETITION FOR WRIT OF CERTIORARI TO THE DISTRICT OF COLUMBIA COURT OF APPEALS No. 25\u2013248. Decided April 20, 2026 PER CURIAM. In the wee hours of a winter morning in Washington, D. C., District of Columbia Metropolitan Police Officer Clifford Vanterpool received a radio dispatch call directing him to check out a suspicious vehicle at a specific address. Officer Vanterpool reached the apartment building at that address around 2:00 a.m. As he turned his marked police vehicle into the parking lot, he saw two people immediately flee from a car, \u201cunprovoked,\u201d after \u201c[p]olice had not done anything other",
+  "facts_summary": "Cite as: 608 U. S. ____ (2026) 1 Per Curiam SUPREME COURT OF THE UNITED STATES DISTRICT OF COLUMBIA v. R.W. ON PETITION FOR WRIT OF CERTIORARI TO THE DISTRICT OF COLUMBIA COURT OF APPEALS No. 25\u2013248. Decided April 20, 2026 PER CURIAM. In the wee hours of a winter morning in Washington, D. C., District of Columbia Metropolitan Police Officer Clifford Vanterpool received a radio dispatch call directing him to check out a suspicious vehicle at a specific address. Officer Vanterpool reached the apartment building at that address around 2:00 a.m. As he turned his marked police vehicle into the parking lot, he saw two people immediately flee from a car, \u201cunprovoked,\u201d after \u201c[p]olice had not done anything other than simply pull up.\u201d App. to Pet. for Cert. 48a. The runners left open at least one of the car doors. The driver then began to back out of the parking space, rear door still open. Officer Vanterpool decided to investigate. He parked directly behind the car, left his own vehicle, or- dered the driver, R. W., to put his hands up, and drew his service weapon. R. W. raised a \u201csingle argument\u201d on appeal\u2014that Officer Vanterpool lacked reasonable articulable suspicion suffi- cient to justify the seizure. In re R.W., 334 A. 3d 593, 599 (D. C. 2025). The District of Columbia Court of Appeals held that Officer Vanterpool, by stopping R. W. without rea- sonable suspicion, violated the Fourth Amendment. We disagree. When an officer makes a \u201cbrief investigatory stop[ ] of per- sons or vehicles that fall[s] short of [a] traditional arrest,\u201d the Fourth Amendment \u201cis satisfied if the officer\u2019s action is supported by reasonable suspicion to believe that criminal activity \u2018 \u201cmay be afoot.\u201d \u2019 \u201d United States v. Arvizu, 534 U. S. 266, 273 (2002) (quoting United States v. Sokolow, 490 U. S. 2 DISTRICT OF COLUMBIA v. R.W. Per Curiam 1, 7 (1989)). In assessing whether an officer had reasonable suspicion, a reviewing court must \u201clook at the \u2018totality of the circumstances\u2019 of each case\u201d\u2014an analysis that precludes the \u201cevaluation and rejection\u201d of \u201cfactors in isolation from each other.\u201d Arvizu, 534 U. S., at 273\u2013274. Because the D. C. Court of Appeals departed from these principles\u2014and because Officer Vanterpool clearly had reasonable suspi- cion to stop R. W.\u2014we reverse. I Largely based on evidence found after Officer Vanterpool told R. W. to put his hands",
+  "lower_court_ruling": "see syllabus",
+  "opinion_excerpt_urls": [
+    "https://www.courtlistener.com/opinion/10845431/district-of-columbia-v-rw/"
+  ],
+  "ground_truth": {
+    "disposition": "reversed",
+    "vote_split": "unknown",
+    "scdb_id": null
+  },
+  "status": "decided"
+}

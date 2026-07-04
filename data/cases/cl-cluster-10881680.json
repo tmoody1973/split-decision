@@ -1,0 +1,19 @@
+{
+  "case_id": "cl-cluster-10881680",
+  "name": "Watson v. Republican National Committee",
+  "docket": "24-1260",
+  "date_argued": "2026-03-23",
+  "date_decided": "2026-06-29",
+  "question_presented": "Do the federal election-day statutes preempt a state law that allows ballots that are cast by federal election day to be received by election officials after that day?",
+  "facts_summary": "Federal statutes designate the Tuesday after the first Monday in November as the uniform day for electing members of Congress and appointing presidential electors. While Mississippi requires voters to cast absentee ballots by this federal deadline, the state legislature amended its election code in 2020 to permit the counting of mail-in ballots received up to five business days after Election Day, provided they are postmarked by that Tuesday. This \u201cpostmark rule\u201d allows validly cast votes delayed by mail service to be included in the final tally, a practice currently utilized by approximately thirty states. In 2024, the Republican National Committee, the Mississippi Republican Party, the Libertarian Party of Mississippi, and individual voters filed suit against Mississippi Secretary of State Michael Watson and county election officials. The plaintiffs argued that the federal statutes establishing a singular \u201celection\u201d day preempt Mississippi\u2019s five-day receipt window, contending that an election is not legally concluded until officials actually receive the ballots. They sought to invalidate the state statute and enjoin officials from counting any absentee ballots received after federal Election Day. The district court granted summary judgment in favor of the state officials, ruling that the state law did not conflict with federal statutes. The U.S. Court of Appeals for the Fifth Circuit reversed, holding that federal law preempts the Mississippi statute because ballots must be both cast and received by Election Day.",
+  "lower_court_ruling": "United States Court of Appeals for the Fifth Circuit",
+  "opinion_excerpt_urls": [
+    "https://www.courtlistener.com/opinion/10881680/watson-v-republican-national-committee/"
+  ],
+  "ground_truth": {
+    "disposition": "reversed",
+    "vote_split": "unknown",
+    "scdb_id": null
+  },
+  "status": "decided"
+}

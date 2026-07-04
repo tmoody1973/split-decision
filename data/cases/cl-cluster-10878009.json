@@ -1,0 +1,19 @@
+{
+  "case_id": "cl-cluster-10878009",
+  "name": "McCarthy v. Hernandez",
+  "docket": "25-748",
+  "date_argued": "2026-06-22",
+  "date_decided": "2026-06-22",
+  "question_presented": "Cite as: 608 U. S. ____ (2026) 1 Per Curiam SUPREME COURT OF THE UNITED STATES KEVIN MCCARTHY, SUPERINTENDENT, ELMIRA CORRECTIONAL FACILITY v. PEDRO HERNANDEZ ON PETITION FOR WRIT OF CERTIORARI TO THE UNITED STATES COURT OF APPEALS FOR THE SECOND CIRCUIT No. 25\u2013748. Decided June 22, 2026 PER CURIAM. The Antiterrorism and Effective Death Penalty Act of 1996 (AEDPA) imposes strict limits on federal courts\u2019 power to grant habeas relief to a prisoner convicted in state court. District courts and courts of appeals have sometimes chafed under these restraints, and when they have strayed too far from the modest role that AEDPA prescribes, we have sum- marily reversed their decisions. See, e.g., Klein v. Martin, 607 U. S. 213",
+  "facts_summary": "Cite as: 608 U. S. ____ (2026) 1 Per Curiam SUPREME COURT OF THE UNITED STATES KEVIN MCCARTHY, SUPERINTENDENT, ELMIRA CORRECTIONAL FACILITY v. PEDRO HERNANDEZ ON PETITION FOR WRIT OF CERTIORARI TO THE UNITED STATES COURT OF APPEALS FOR THE SECOND CIRCUIT No. 25\u2013748. Decided June 22, 2026 PER CURIAM. The Antiterrorism and Effective Death Penalty Act of 1996 (AEDPA) imposes strict limits on federal courts\u2019 power to grant habeas relief to a prisoner convicted in state court. District courts and courts of appeals have sometimes chafed under these restraints, and when they have strayed too far from the modest role that AEDPA prescribes, we have sum- marily reversed their decisions. See, e.g., Klein v. Martin, 607 U. S. 213 (2026) (per curiam). We must do the same today. The Second Circuit ordered habeas relief in this case based on its holding that a state-court decision was \u201ccon- trary to\u201d and \u201cinvolved an unreasonable application\u201d of Mis- souri v. Seibert, 542 U. S. 600 (2004), because the decision approved a trial judge\u2019s refusal to tell a jury how to apply Seibert\u2014or, more precisely, how to apply what the Second Circuit understood to be the holding in that case. 28 U. S. C. \u00a72254(d)(1). But Seibert said nothing about jury instructions. For this reason and others, the Second Circuit exceeded the role that AEDPA prescribes. I A This case concerns a tragic event that once captured the Nation\u2019s attention. On May 25, 1979, 6-year-old Etan Patz left his family\u2019s apartment in lower Manhattan to take a bus to school. Before boarding the bus, he stopped to buy a 2 MCCARTHY v. HERNANDEZ Per Curiam drink at a bodega where respondent Pedro Hernandez, then 18 years old, was working. Patz never got on the bus and was never seen alive again. Despite a vigorous search, law enforcement could not locate him or find evidence of his fate. For the next 20 years, authorities investigated several suspects, but they were never prosecuted, and the case went cold. It was revived in 2012, when Hernandez\u2019s brother-in-law reported that Hernandez had made statements about his involvement in Patz\u2019s disappearance and suspected mur- der. At that time, Hernandez was living in southern New Jersey, and detectives took him to the Camden County (New Jersey) Prosecutor\u2019s Office (CCPO). They began ques- tioning him there without first administering a Miranda warning, see Miranda v. Arizona, 384 U. S.",
+  "lower_court_ruling": "see syllabus",
+  "opinion_excerpt_urls": [
+    "https://www.courtlistener.com/opinion/10878009/mccarthy-v-hernandez/"
+  ],
+  "ground_truth": {
+    "disposition": "reversed",
+    "vote_split": "unknown",
+    "scdb_id": null
+  },
+  "status": "decided"
+}

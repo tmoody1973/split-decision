@@ -1,0 +1,17 @@
+{
+  "case_id": "landmark-14",
+  "name": "Gideon v. Wainwright",
+  "docket": "n/a",
+  "date_argued": "1963-03-18",
+  "date_decided": "1963-03-18",
+  "question_presented": "Memorization-check set: predict the Supreme Court's disposition in Gideon v. Wainwright (372 U.S. 335, 1963).",
+  "facts_summary": "Historical case in the memorization-check arm (famous tier). By design, only the case name, citation, and year are provided \u2014 this arm measures recall of memorized outcomes, not reasoning.",
+  "lower_court_ruling": "not provided (memorization-check arm)",
+  "opinion_excerpt_urls": [],
+  "ground_truth": {
+    "disposition": "reversed",
+    "vote_split": "9-0",
+    "scdb_id": null
+  },
+  "status": "decided"
+}

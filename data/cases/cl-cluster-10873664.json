@@ -1,0 +1,19 @@
+{
+  "case_id": "cl-cluster-10873664",
+  "name": "FS Credit Opportunities Corp. v. Saba Capital Master Fund, Ltd.",
+  "docket": "24-345",
+  "date_argued": "2025-12-10",
+  "date_decided": "2026-06-11",
+  "question_presented": "Does Section 47(b) of the ICA, 15 U.S.C. \u00a7 80a-46 (b), create an implied private right of action?",
+  "facts_summary": "Investment funds organized as closed-end mutual funds under Maryland law adopted \u201ccontrol share provisions\u201d that stripped voting rights from shareholders who owned 10% or more of a fund\u2019s shares. These provisions were adopted in response to activist investor Saba Capital, which had been acquiring large positions in underperforming closed-end funds with the goal of unlocking shareholder value through various strategies, including electing new directors and advocating for share buybacks. Saba Capital sued sixteen closed-end funds in June 2023, seeking rescission of these control share provisions. Saba argued that the provisions violated Section 18(i) of the Investment Company Act (ICA), which requires that \u201cevery share of stock shall be a voting stock and have equal voting rights with every other outstanding stock.\u201d Saba brought its lawsuit under Section 47(b) of the ICA, relying on Second Circuit precedent that recognized an implied private right of action for parties seeking to rescind contracts that violate the ICA. The U.S. District Court for the Southern District of New York granted summary judgment in favor of Saba against eleven of the funds (five were dismissed due to forum selection clauses requiring suit in Maryland). The district court held that the control share provisions violated the ICA\u2019s equal voting rights mandate and ordered their rescission. The U.S. Court of Appeals for the Second Circuit affirmed this decision in a summary order.",
+  "lower_court_ruling": "United States Court of Appeals for the Second Circuit",
+  "opinion_excerpt_urls": [
+    "https://www.courtlistener.com/opinion/10873664/fs-credit-opportunities-corp-v-saba-capital-master-fund-ltd/"
+  ],
+  "ground_truth": {
+    "disposition": "reversed",
+    "vote_split": "unknown",
+    "scdb_id": null
+  },
+  "status": "decided"
+}

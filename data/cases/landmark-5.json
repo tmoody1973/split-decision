@@ -1,0 +1,17 @@
+{
+  "case_id": "landmark-5",
+  "name": "Plessy v. Ferguson",
+  "docket": "n/a",
+  "date_argued": "1896-05-18",
+  "date_decided": "1896-05-18",
+  "question_presented": "Memorization-check set: predict the Supreme Court's disposition in Plessy v. Ferguson (163 U.S. 537, 1896).",
+  "facts_summary": "Historical case in the memorization-check arm (famous tier). By design, only the case name, citation, and year are provided \u2014 this arm measures recall of memorized outcomes, not reasoning.",
+  "lower_court_ruling": "not provided (memorization-check arm)",
+  "opinion_excerpt_urls": [],
+  "ground_truth": {
+    "disposition": "affirmed",
+    "vote_split": "7-1",
+    "scdb_id": null
+  },
+  "status": "decided"
+}

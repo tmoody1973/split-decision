@@ -1,0 +1,19 @@
+{
+  "case_id": "cl-cluster-10862762",
+  "name": "M & K Employee Solutions, Inc. v. Trustees of IAM Nat. Pension",
+  "docket": "n/a",
+  "date_argued": "2026-05-21",
+  "date_decided": "2026-05-21",
+  "question_presented": "(Slip Opinion) OCTOBER TERM, 2025 1 Syllabus NOTE: Where it is feasible, a syllabus (headnote) will be released, as is being done in connection with this case, at the time the opinion is issued. The syllabus constitutes no part of the opinion of the Court but has been prepared by the Reporter of Decisions for the convenience of the reader. See United States v. Detroit Timber & Lumber Co., 200 U. S. 321, 337. SUPREME COURT OF THE UNITED STATES Syllabus M & K EMPLOYEE SOLUTIONS, LLC, ET AL. v. TRUSTEES OF THE IAM NATIONAL PENSION FUND CERTIORARI TO THE UNITED STATES COURT OF APPEALS FOR THE DISTRICT OF COLUMBIA CIRCUIT No. 23\u20131209. Argued January 20, 2026\u2014Decided May 21, 2026",
+  "facts_summary": "(Slip Opinion) OCTOBER TERM, 2025 1 Syllabus NOTE: Where it is feasible, a syllabus (headnote) will be released, as is being done in connection with this case, at the time the opinion is issued. The syllabus constitutes no part of the opinion of the Court but has been prepared by the Reporter of Decisions for the convenience of the reader. See United States v. Detroit Timber & Lumber Co., 200 U. S. 321, 337. SUPREME COURT OF THE UNITED STATES Syllabus M & K EMPLOYEE SOLUTIONS, LLC, ET AL. v. TRUSTEES OF THE IAM NATIONAL PENSION FUND CERTIORARI TO THE UNITED STATES COURT OF APPEALS FOR THE DISTRICT OF COLUMBIA CIRCUIT No. 23\u20131209. Argued January 20, 2026\u2014Decided May 21, 2026 Pursuant to the Employee Retirement Income Security Act of 1974 (ERISA), as amended, an employer that stops participating in an un- derfunded Multiemployer Pension Plan (MPP), must pay the plan \u201cwithdrawal liability,\u201d i.e., the employer\u2019s share of the plan\u2019s unfunded vested benefits (UVBs). See 29 U. S. C. \u00a71391. Withdrawal liability is calculated based on the plan\u2019s UVBs \u201cas of \u201d the statutory measure- ment date\u2014the last day of the plan year preceding the employer\u2019s withdrawal. \u00a7\u00a71391(b)(2)(E)(i), (c)(2)(C)(i), (3)(A), (4)(A). Determining the value of a plan\u2019s UVBs depends upon both hard data (such as the number of beneficiaries and the value of the plan\u2019s assets) and a vari- ety of actuarial predictions about the future. One key actuarial as- sumption is the discount rate, which is the interest rate \u201cused to dis- count future benefit payments to their present value.\u201d 87 Fed. Reg. 62317. Petitioners are four employers who withdrew from the IAM National Pension Fund (Fund)\u2014an underfunded MPP\u2014between April and De- cember 2018. The Fund assessed each employer\u2019s withdrawal liability \u201cas of \u201d December 31, 2017 (the measurement date). In making this calculation, the Fund applied a discount rate of 6.50%, which it had adopted with its actuarial firm in January 2018. The Fund had previ- ously used a discount rate of 7.50% to value its UVBs. Petitioners each initiated arbitrations challenging their assessments. In each case, the arbitrators determined that the assessments were erroneous because the Fund had applied actuarial assumptions adopted after the meas- urement date. The arbitrators instead required the Fund to use the 2 M & K EMPLOYEE SOLUTIONS, LLC v. TRUSTEES OF IAM NAT. PENSION FUND Syllabus actuarial assumptions that were \u201cin effect\u201d on",
+  "lower_court_ruling": "see syllabus",
+  "opinion_excerpt_urls": [
+    "https://www.courtlistener.com/opinion/10862762/m-k-employee-solutions-inc-v-trustees-of-iam-nat-pension/"
+  ],
+  "ground_truth": {
+    "disposition": "affirmed",
+    "vote_split": "unknown",
+    "scdb_id": null
+  },
+  "status": "decided"
+}

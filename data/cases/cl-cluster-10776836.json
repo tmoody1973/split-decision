@@ -1,0 +1,19 @@
+{
+  "case_id": "cl-cluster-10776836",
+  "name": "Soto v. United States",
+  "docket": "24-320",
+  "date_argued": "2025-04-28",
+  "date_decided": "2025-06-12",
+  "question_presented": "When disabled combat veterans claim past-due compensation, should the military use the CRSC statute's rules to calculate how far back they can be paid, or should it use the Barring Act's six-year limit?",
+  "facts_summary": "Simon Soto, a Marine Corps veteran with a combat-related disability, was medically retired in 2006 with less than 20 years of service. Although he became eligible for Combat-Related Special Compensation (CRSC) in 2009 when he received his disability rating, he did not apply until 2016. The Navy used the Barring Act\u2019s six-year limitation period to calculate his retroactive payments, giving him payments dating back only to 2010 instead of to 2008 when Congress had expanded CRSC eligibility to veterans with less than 20 years of service. Soto filed a class action lawsuit on behalf of himself and other similarly situated veterans who received only six years of back payments, arguing that the CRSC statute\u2019s own procedures should apply instead of the Barring Act\u2019s six-year limit. The district court granted summary judgment to Soto\u2019s class, holding that the CRSC statute was more specific and therefore superseded the Barring Act. The court also applied the pro-veteran canon of statutory interpretation, resolving any doubt in favor of the veterans. On appeal, the U.S. Court of Appeals for the Federal Circuit reversed.",
+  "lower_court_ruling": "United States Court of Appeals for the Federal Circuit",
+  "opinion_excerpt_urls": [
+    "https://www.courtlistener.com/opinion/10776836/soto-v-united-states/"
+  ],
+  "ground_truth": {
+    "disposition": "reversed",
+    "vote_split": "9-0",
+    "scdb_id": null
+  },
+  "status": "decided"
+}

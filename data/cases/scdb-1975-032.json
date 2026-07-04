@@ -1,0 +1,17 @@
+{
+  "case_id": "scdb-1975-032",
+  "name": "UNITED STATES v. WATSON",
+  "docket": "74-538",
+  "date_argued": "1976-01-26",
+  "date_decided": "1976-01-26",
+  "question_presented": "Memorization-check set: predict the Supreme Court's disposition in UNITED STATES v. WATSON (423 U.S. 411, 1975 Term).",
+  "facts_summary": "Historical case in the memorization-check arm. By design, only the case name, citation, and term are provided \u2014 this arm measures recall of memorized outcomes, not reasoning.",
+  "lower_court_ruling": "not provided (memorization-check arm)",
+  "opinion_excerpt_urls": [],
+  "ground_truth": {
+    "disposition": "reversed",
+    "vote_split": "6-2",
+    "scdb_id": "1975-032"
+  },
+  "status": "decided"
+}

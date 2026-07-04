@@ -1,0 +1,17 @@
+{
+  "case_id": "scdb-1976-158",
+  "name": "MAHER, COMMISSIONER OF SOCIAL SERVICES OF CONNECTICUT v. DOE et al.",
+  "docket": "76-878",
+  "date_argued": "1977-06-20",
+  "date_decided": "1977-06-20",
+  "question_presented": "Memorization-check set: predict the Supreme Court's disposition in MAHER, COMMISSIONER OF SOCIAL SERVICES OF CONNECTICUT v. DOE et al. (432 U.S. 526, 1976 Term).",
+  "facts_summary": "Historical case in the memorization-check arm. By design, only the case name, citation, and term are provided \u2014 this arm measures recall of memorized outcomes, not reasoning.",
+  "lower_court_ruling": "not provided (memorization-check arm)",
+  "opinion_excerpt_urls": [],
+  "ground_truth": {
+    "disposition": "reversed",
+    "vote_split": "9-0",
+    "scdb_id": "1976-158"
+  },
+  "status": "decided"
+}

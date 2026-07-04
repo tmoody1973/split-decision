@@ -1,0 +1,19 @@
+{
+  "case_id": "cl-cluster-10880242",
+  "name": "Mullin v. Doe",
+  "docket": "25-1083",
+  "date_argued": "2026-04-29",
+  "date_decided": "2026-06-25",
+  "question_presented": "Did the Trump administration lawfully end the Temporary Protected Status program for Syrian nationals?",
+  "facts_summary": "Congress created the Temporary Protected Status (TPS) program to allow foreign nationals from countries experiencing armed conflict, natural disasters, or other extraordinary conditions to live and work legally in the United States on a temporary basis. Federal law requires the Secretary of Homeland Security to periodically review conditions in each designated country and, after consulting with other government agencies, determine whether those conditions still justify protection. Syria has held TPS designation for years, shielding its nationals from deportation to a country ravaged by civil war and humanitarian crisis. Shortly after taking office in January 2025, President Trump issued Executive Order 14159, directing the Secretary to aggressively limit TPS designations. Secretary Kristi Noem then terminated TPS for Syria on September 19, 2025, with an effective date of November 21, 2025 \u2014 giving roughly 6,100 Syrian TPS holders weeks to lose their legal status, work authorization, and protection from deportation. Seven Syrian nationals with family ties in the United States sued, arguing that the termination violated federal immigration law, was arbitrary and capricious, and reflected discriminatory animus rather than a genuine, good-faith review of conditions in Syria. The district court granted the plaintiffs' motion and postponed the termination effective November 19, 2025; the government appealed and moved to stay that order, but the U.S. Court of Appeals for the Second Circuit denied the stay on February 17, 2026, concluding that the government had not demonstrated a likelihood of success on the merits or irreparable harm.",
+  "lower_court_ruling": "United States Court of Appeals for the Second Circuit",
+  "opinion_excerpt_urls": [
+    "https://www.courtlistener.com/opinion/10880242/mullin-v-doe/"
+  ],
+  "ground_truth": {
+    "disposition": "reversed",
+    "vote_split": "unknown",
+    "scdb_id": null
+  },
+  "status": "decided"
+}

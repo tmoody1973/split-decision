@@ -1,0 +1,19 @@
+{
+  "case_id": "cl-cluster-10749076",
+  "name": "Doe v. Dynamic Physical Therapy, LLC",
+  "docket": "n/a",
+  "date_argued": "2025-12-08",
+  "date_decided": "2025-12-08",
+  "question_presented": "Cite as: 607 U. S. ____ (2025) 1 Per Curiam SUPREME COURT OF THE UNITED STATES JOHN DOE v. DYNAMIC PHYSICAL THERAPY, LLC, ET AL. ON PETITION FOR WRIT OF CERTIORARI TO THE COURT OF APPEAL OF LOUISIANA, FIRST CIRCUIT No. 25\u2013180. Decided December 8, 2025 PER CURIAM. Louisiana immunizes healthcare providers from civil lia- bility during public health emergencies. La. Rev. Stat. Ann. \u00a729:771(B)(2)(c)(i) (West 2022). Below, the Louisiana Court of Appeal held that this state statute barred plaintiff \u2019s fed- eral claims. 2024\u20130723, pp. 11\u201312 (1 Cir. 12/27/24), 404 So. 3d 1008, 1017\u20131018, writ denied, 2025\u201300105 (La. 4/29/25), 407 So. 3d 623. That decision is incorrect. Defin- ing the scope of liability under state law is the State\u2019s",
+  "facts_summary": "Cite as: 607 U. S. ____ (2025) 1 Per Curiam SUPREME COURT OF THE UNITED STATES JOHN DOE v. DYNAMIC PHYSICAL THERAPY, LLC, ET AL. ON PETITION FOR WRIT OF CERTIORARI TO THE COURT OF APPEAL OF LOUISIANA, FIRST CIRCUIT No. 25\u2013180. Decided December 8, 2025 PER CURIAM. Louisiana immunizes healthcare providers from civil lia- bility during public health emergencies. La. Rev. Stat. Ann. \u00a729:771(B)(2)(c)(i) (West 2022). Below, the Louisiana Court of Appeal held that this state statute barred plaintiff \u2019s fed- eral claims. 2024\u20130723, pp. 11\u201312 (1 Cir. 12/27/24), 404 So. 3d 1008, 1017\u20131018, writ denied, 2025\u201300105 (La. 4/29/25), 407 So. 3d 623. That decision is incorrect. Defin- ing the scope of liability under state law is the State\u2019s pre- rogative. But a State has no power to confer immunity from federal causes of action. See, e.g., Howlett v. Rose, 496 U. S. 356, 383 (1990); Haywood v. Drown, 556 U. S. 729, 740 (2009); Williams v. Reed, 604 U. S. 168, 174 (2025). \u201c[T]he Judges in every State\u201d are bound to follow federal law, \u201cany Thing in the Constitution or Laws of any state to the Con- trary notwithstanding.\u201d U. S. Const., Art. VI, cl. 2. Plaintiff \u2019s federal claims may well fail on other federal grounds. Cf. Cummings v. Premier Rehab Keller, 596 U. S. 212, 222 (2022). But that is for the Louisiana courts to de- cide in the first instance. The petition for certiorari is granted, the judgment of the Louisiana Court of Appeal is reversed, and the case is remanded for further proceedings not inconsistent with this opinion. It is so ordered.",
+  "lower_court_ruling": "see syllabus",
+  "opinion_excerpt_urls": [
+    "https://www.courtlistener.com/opinion/10749076/doe-v-dynamic-physical-therapy-llc/"
+  ],
+  "ground_truth": {
+    "disposition": "reversed",
+    "vote_split": "unknown",
+    "scdb_id": null
+  },
+  "status": "decided"
+}

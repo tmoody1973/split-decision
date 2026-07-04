@@ -1,0 +1,17 @@
+{
+  "case_id": "scdb-1980-144",
+  "name": "CALIFORNIA v. PRYSOCK",
+  "docket": "80-1846",
+  "date_argued": "1981-06-29",
+  "date_decided": "1981-06-29",
+  "question_presented": "Memorization-check set: predict the Supreme Court's disposition in CALIFORNIA v. PRYSOCK (453 U.S. 355, 1980 Term).",
+  "facts_summary": "Historical case in the memorization-check arm. By design, only the case name, citation, and term are provided \u2014 this arm measures recall of memorized outcomes, not reasoning.",
+  "lower_court_ruling": "not provided (memorization-check arm)",
+  "opinion_excerpt_urls": [],
+  "ground_truth": {
+    "disposition": "reversed",
+    "vote_split": "6-3",
+    "scdb_id": "1980-144"
+  },
+  "status": "decided"
+}

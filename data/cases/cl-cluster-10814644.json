@@ -1,0 +1,19 @@
+{
+  "case_id": "cl-cluster-10814644",
+  "name": "Rico v. United States",
+  "docket": "n/a",
+  "date_argued": "2026-03-25",
+  "date_decided": "2026-03-25",
+  "question_presented": "(Slip Opinion) OCTOBER TERM, 2025 1 Syllabus NOTE: Where it is feasible, a syllabus (headnote) will be released, as is being done in connection with this case, at the time the opinion is issued. The syllabus constitutes no part of the opinion of the Court but has been prepared by the Reporter of Decisions for the convenience of the reader. See United States v. Detroit Timber & Lumber Co., 200 U. S. 321, 337. SUPREME COURT OF THE UNITED STATES Syllabus RICO v. UNITED STATES CERTIORARI TO THE UNITED STATES COURT OF APPEALS FOR THE NINTH CIRCUIT No. 24\u20131056. Argued November 3, 2025\u2014Decided March 25, 2026 A criminal defendant, on supervised release from federal prison, must comply with various conditions\u2014both",
+  "facts_summary": "(Slip Opinion) OCTOBER TERM, 2025 1 Syllabus NOTE: Where it is feasible, a syllabus (headnote) will be released, as is being done in connection with this case, at the time the opinion is issued. The syllabus constitutes no part of the opinion of the Court but has been prepared by the Reporter of Decisions for the convenience of the reader. See United States v. Detroit Timber & Lumber Co., 200 U. S. 321, 337. SUPREME COURT OF THE UNITED STATES Syllabus RICO v. UNITED STATES CERTIORARI TO THE UNITED STATES COURT OF APPEALS FOR THE NINTH CIRCUIT No. 24\u20131056. Argued November 3, 2025\u2014Decided March 25, 2026 A criminal defendant, on supervised release from federal prison, must comply with various conditions\u2014both mandatory (commit no more crimes, see 18 U. S. C. \u00a73583(d)) and discretionary (commonly, \u201creport to a probation officer as directed\u201d and \u201cnotify the probation officer promptly of any change in address,\u201d \u00a7\u00a73563(b)(15), (17)). Violating a prescribed condition may result in the revocation of supervised release and a return to prison, \u00a73583(e)(3), as well as an additional \u201cterm of supervised release after imprisonment,\u201d \u00a73583(h). After petitioner Isabel Rico violated the terms of her supervised re- lease conditions, the judge revoked her release and ordered her to serve two months of additional imprisonment and a new 42-month term of supervised release set to expire in 2021. When released the second time, Ms. Rico again violated her conditions by changing her residence without notifying her probation officer. A warrant issued for her arrest, but federal authorities did not locate her until January 2023. As relevant here, during her abscondment, Ms. Rico committed a state law drug offense in January 2022, which resulted in a convic- tion. Back in federal district court, the judge treated Ms. Rico\u2019s drug offense as a Grade A violation of her supervised release conditions and sentenced her to 16 months of incarceration followed by two more years of supervised release. Ms. Rico appealed, arguing that the district court lacked authority to treat her drug offense as a supervised release violation because that offense occurred after her supervised term ex- pired in June 2021. The Ninth Circuit disagreed, describing Ms. Rico\u2019s abscondment as having \u201ctolled\u201d the clock so that her term continued to run until federal authorities caught up with her in 2023. Because of that, the Ninth Circuit held, Ms. Rico\u2019s January 2022 drug offense could count as",
+  "lower_court_ruling": "see syllabus",
+  "opinion_excerpt_urls": [
+    "https://www.courtlistener.com/opinion/10814644/rico-v-united-states/"
+  ],
+  "ground_truth": {
+    "disposition": "reversed",
+    "vote_split": "unknown",
+    "scdb_id": null
+  },
+  "status": "decided"
+}

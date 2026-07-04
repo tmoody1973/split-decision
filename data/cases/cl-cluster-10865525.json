@@ -1,0 +1,19 @@
+{
+  "case_id": "cl-cluster-10865525",
+  "name": "Pitchford v. Cain",
+  "docket": "n/a",
+  "date_argued": "2026-05-28",
+  "date_decided": "2026-05-28",
+  "question_presented": "(Slip Opinion) OCTOBER TERM, 2025 1 Syllabus NOTE: Where it is feasible, a syllabus (headnote) will be released, as is being done in connection with this case, at the time the opinion is issued. The syllabus constitutes no part of the opinion of the Court but has been prepared by the Reporter of Decisions for the convenience of the reader. See United States v. Detroit Timber & Lumber Co., 200 U. S. 321, 337. SUPREME COURT OF THE UNITED STATES Syllabus PITCHFORD v. CAIN CERTIORARI TO THE UNITED STATES COURT OF APPEALS FOR THE FIFTH CIRCUIT No. 24\u20137351. Argued March 31, 2026\u2014Decided May 28, 2026 In 2004, two black teenagers, Terry Pitchford and Eric Bullins, robbed a grocery store near",
+  "facts_summary": "(Slip Opinion) OCTOBER TERM, 2025 1 Syllabus NOTE: Where it is feasible, a syllabus (headnote) will be released, as is being done in connection with this case, at the time the opinion is issued. The syllabus constitutes no part of the opinion of the Court but has been prepared by the Reporter of Decisions for the convenience of the reader. See United States v. Detroit Timber & Lumber Co., 200 U. S. 321, 337. SUPREME COURT OF THE UNITED STATES Syllabus PITCHFORD v. CAIN CERTIORARI TO THE UNITED STATES COURT OF APPEALS FOR THE FIFTH CIRCUIT No. 24\u20137351. Argued March 31, 2026\u2014Decided May 28, 2026 In 2004, two black teenagers, Terry Pitchford and Eric Bullins, robbed a grocery store near Grenada, Mississippi. During the robbery, Bullins shot and killed the white store owner. Bullins reached a plea agree- ment and received a 20-year sentence for the homicide. The State charged Pitchford with capital murder and sought the death penalty. During jury selection at Pitchford\u2019s trial, the prosecutor used peremp- tory strikes against four of the five black potential jurors. As this Court held in Batson v. Kentucky, 476 U. S. 79, the Equal Protection Clause bars prosecutors from exercising peremptory challenges based on race. In Batson and subsequent cases, the Court has spelled out a three-step process for a trial court to determine whether a prosecutor employed a peremptory challenge based on race. Here, Pitchford\u2019s counsel raised an objection under Batson and made a prima facie show- ing that the strikes of the four black jurors were based on race (step one). The trial court asked the prosecutor for race-neutral reasons for each strike, and the prosecutor offered reasons (step two). The trial court declared the prosecutor\u2019s stated reasons to be race neutral, but the trial court did not afford defense counsel an opportunity to rebut the prosecutor\u2019s race-neutral reasons as pretextual (step three); nor did it make any findings regarding whether the prosecutor\u2019s stated reasons were pretextual. At the close of jury selection, defense counsel sought to raise the Batson issue again, but the trial court twice cut off defense counsel. The empaneled jury, consisting of 11 white jurors and 1 black juror, convicted Pitchford of capital murder and sentenced him to death. On direct appeal, the Mississippi Supreme Court concluded that Pitchford had waived his Batson objection by not arguing to the trial court that the prosecutor\u2019s proffered",
+  "lower_court_ruling": "see syllabus",
+  "opinion_excerpt_urls": [
+    "https://www.courtlistener.com/opinion/10865525/pitchford-v-cain/"
+  ],
+  "ground_truth": {
+    "disposition": "reversed",
+    "vote_split": "unknown",
+    "scdb_id": null
+  },
+  "status": "decided"
+}

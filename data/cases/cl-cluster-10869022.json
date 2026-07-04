@@ -1,0 +1,19 @@
+{
+  "case_id": "cl-cluster-10869022",
+  "name": "Allen v. Milligan",
+  "docket": "25A1314",
+  "date_argued": "2026-06-02",
+  "date_decided": "2026-06-02",
+  "question_presented": "Cite as: 608 U. S. ____ (2026) 1 Per Curiam SUPREME COURT OF THE UNITED STATES _________________ No. 25A1314 _________________ WES ALLEN, ALABAMA SECRETARY OF STATE, ET AL. v. EVAN MILLIGAN, ET AL. ON APPLICATION FOR STAY _________________ No. 25A1315 _________________ WES ALLEN, ALABAMA SECRETARY OF STATE, ET AL. v. BOBBY SINGLETON, ET AL. ON APPLICATION FOR STAY _________________ No. 25A1316 _________________ WES ALLEN, ALABAMA SECRETARY OF STATE, ET AL. v. MARCUS CASTER, ET AL. ON APPLICATION FOR STAY [June 2, 2026] PER CURIAM. In Louisiana v. Callais, 608 U. S. ___ (2026), to resolve the tension between vote-dilution claims under \u00a72 of the Voting Rights Act of 1965 and our colorblind Constitution, we updated the standards for \u00a72 liability",
+  "facts_summary": "Cite as: 608 U. S. ____ (2026) 1 Per Curiam SUPREME COURT OF THE UNITED STATES _________________ No. 25A1314 _________________ WES ALLEN, ALABAMA SECRETARY OF STATE, ET AL. v. EVAN MILLIGAN, ET AL. ON APPLICATION FOR STAY _________________ No. 25A1315 _________________ WES ALLEN, ALABAMA SECRETARY OF STATE, ET AL. v. BOBBY SINGLETON, ET AL. ON APPLICATION FOR STAY _________________ No. 25A1316 _________________ WES ALLEN, ALABAMA SECRETARY OF STATE, ET AL. v. MARCUS CASTER, ET AL. ON APPLICATION FOR STAY [June 2, 2026] PER CURIAM. In Louisiana v. Callais, 608 U. S. ___ (2026), to resolve the tension between vote-dilution claims under \u00a72 of the Voting Rights Act of 1965 and our colorblind Constitution, we updated the standards for \u00a72 liability established by Thornburg v. Gingles, 478 U. S. 30 (1986). Under Gingles, to prove a \u00a72 violation, a plaintiff must first establish three preconditions. First, the minority group must be large and geographically compact enough to be a majority in a reasonably configured congressional dis- trict, meaning that the district \u201ccomports with traditional districting criteria.\u201d Callais, 608 U. S., at ___ (slip op., at 2 ALLEN v. MILLIGAN Per Curiam 8) (internal quotation marks omitted). Second, the minority group must be politically cohesive. Third, the majority group must vote enough as a bloc to defeat the minority group\u2019s preferred candidate. Ibid. After establishing those three preconditions, the plaintiff must prove that the polit- ical process was not equally open to minority voters based on the totality of the circumstances. Ibid. Callais updated these standards. As relevant here, we held that for plaintiffs to satisfy the first Gingles precondi- tion, a plaintiff \u2019s alternative map \u201cmust meet all the State\u2019s legitimate districting objectives\u201d \u201cjust as well\u201d as the State\u2019s own map. 608 U. S., at ___ (slip op., at 29) (emphasis added). Those legitimate districting objectives, we held, in- clude \u201cthe State\u2019s specified political goals\u201d and \u201cany other goal not prohibited by the Constitution.\u201d Ibid. A plaintiff also \u201ccannot use race as a districting criterion\u201d in preparing the alternative map. Ibid. To prove the second and third preconditions, a plaintiff \u201cmust provide an analysis that controls for party affiliation\u201d and \u201cshow that voters engage in racial bloc voting that cannot be explained by partisan affiliation.\u201d Id., at ___ (slip op., at 30). These updates, we held, were necessary to avoid requiring congressional maps under \u00a72 that would be unconstitutional racial gerryman-",
+  "lower_court_ruling": "see syllabus",
+  "opinion_excerpt_urls": [
+    "https://www.courtlistener.com/opinion/10869022/allen-v-milligan/"
+  ],
+  "ground_truth": {
+    "disposition": "reversed",
+    "vote_split": "unknown",
+    "scdb_id": null
+  },
+  "status": "decided"
+}

@@ -1,0 +1,19 @@
+{
+  "case_id": "cl-cluster-10844563",
+  "name": "Chevron USA Inc. v. Plaquemines Parish",
+  "docket": "n/a",
+  "date_argued": "2026-04-17",
+  "date_decided": "2026-04-17",
+  "question_presented": "(Slip Opinion) OCTOBER TERM, 2025 1 Syllabus NOTE: Where it is feasible, a syllabus (headnote) will be released, as is being done in connection with this case, at the time the opinion is issued. The syllabus constitutes no part of the opinion of the Court but has been prepared by the Reporter of Decisions for the convenience of the reader. See United States v. Detroit Timber & Lumber Co., 200 U. S. 321, 337. SUPREME COURT OF THE UNITED STATES Syllabus CHEVRON USA INC. ET AL. v. PLAQUEMINES PARISH, LOUISIANA, ET AL. CERTIORARI TO THE UNITED STATES COURT OF APPEALS FOR THE FIFTH CIRCUIT No. 24\u2013813. Argued January 12, 2026\u2014Decided April 17, 2026 The federal officer removal statute, 28 U.",
+  "facts_summary": "(Slip Opinion) OCTOBER TERM, 2025 1 Syllabus NOTE: Where it is feasible, a syllabus (headnote) will be released, as is being done in connection with this case, at the time the opinion is issued. The syllabus constitutes no part of the opinion of the Court but has been prepared by the Reporter of Decisions for the convenience of the reader. See United States v. Detroit Timber & Lumber Co., 200 U. S. 321, 337. SUPREME COURT OF THE UNITED STATES Syllabus CHEVRON USA INC. ET AL. v. PLAQUEMINES PARISH, LOUISIANA, ET AL. CERTIORARI TO THE UNITED STATES COURT OF APPEALS FOR THE FIFTH CIRCUIT No. 24\u2013813. Argued January 12, 2026\u2014Decided April 17, 2026 The federal officer removal statute, 28 U. S. C. \u00a71442(a)(1), authorizes removal of state-court suits against federal officers or persons \u201cacting under\u201d them \u201cfor or relating to any act under color of such office.\u201d This case concerns whether, for purposes of the statute, a state-court envi- ronmental suit challenging Chevron\u2019s crude-oil production during the Second World War is \u201cfor or relating to\u201d Chevron\u2019s wartime refining of crude oil into aviation gasoline for the U. S. military. In 1978, Louisiana enacted the State and Local Coastal Resources Management Act, which prohibited certain uses of Louisiana\u2019s coastal zone, including oil production, without a permit. The Act exempted uses legally commenced before 1980. In 2013, Plaquemines Parish and other parishes filed 42 state-court suits against oil and gas companies under the Act. They alleged that the companies lacked permits and that some uses, although initiated before 1980, were illegally com- menced and therefore not covered by the exemption. An expert report filed by the parish made clear that it intended to challenge certain de- fendants\u2019 crude-oil production during the Second World War. The re- port alleged that Chevron failed to use steel tanks instead of earthen pits, should not have used vertical-drilling methods, and failed to equip fields with sufficient roads, using canals instead. Chevron removed the suit to federal court under the federal officer removal statute, arguing that the suit \u201crelat[ed] to\u201d its contractual du- ties to refine crude oil into avgas for the military during the war. The District Court rejected this argument and granted the parish\u2019s motion to remand to state court. The Fifth Circuit affirmed, agreeing that Chevron had \u201cacted under\u201d a federal officer as a military contractor 2 CHEVRON USA INC. v. PLAQUEMINES PARISH Syllabus",
+  "lower_court_ruling": "see syllabus",
+  "opinion_excerpt_urls": [
+    "https://www.courtlistener.com/opinion/10844563/chevron-usa-inc-v-plaquemines-parish/"
+  ],
+  "ground_truth": {
+    "disposition": "reversed",
+    "vote_split": "unknown",
+    "scdb_id": null
+  },
+  "status": "decided"
+}

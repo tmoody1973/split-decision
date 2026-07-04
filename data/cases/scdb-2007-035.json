@@ -1,0 +1,17 @@
+{
+  "case_id": "scdb-2007-035",
+  "name": "WILLIAM CRAWFORD, et al., Petitioners v. MARION COUNTY ELECTION BOARD et al.",
+  "docket": "07-21",
+  "date_argued": "2008-04-28",
+  "date_decided": "2008-04-28",
+  "question_presented": "Memorization-check set: predict the Supreme Court's disposition in WILLIAM CRAWFORD, et al., Petitioners v. MARION COUNTY ELECTION BOARD et al. (553 U.S. 181, 2007 Term).",
+  "facts_summary": "Historical case in the memorization-check arm. By design, only the case name, citation, and term are provided \u2014 this arm measures recall of memorized outcomes, not reasoning.",
+  "lower_court_ruling": "not provided (memorization-check arm)",
+  "opinion_excerpt_urls": [],
+  "ground_truth": {
+    "disposition": "affirmed",
+    "vote_split": "6-3",
+    "scdb_id": "2007-035"
+  },
+  "status": "decided"
+}

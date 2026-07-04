@@ -1,0 +1,19 @@
+{
+  "case_id": "cl-cluster-10776819",
+  "name": "Free Speech Coalition, Inc. v. Paxton",
+  "docket": "n/a",
+  "date_argued": "2025-06-27",
+  "date_decided": "2025-06-27",
+  "question_presented": "PRELIMINARY PRINT Volume 606 U. S. Part 2 Pages 461\u2013521 OFFICIAL REPORTS OF THE SUPREME COURT June 27, 2025 Page Proof Pending Publication REBECCA A. WOMELDORF reporter of decisions NOTICE: This preliminary print is subject to formal revision before the bound volume is published. Users are requested to notify the Reporter of Decisions, Supreme Court of the United States, Washington, D. C. 20543, pio@supremecourt.gov, of any typographical or other formal errors. OCTOBER TERM, 2024 461 Syllabus FREE SPEECH COALITION, INC., et al. v. PAXTON, ATTORNEY GENERAL OF TEXAS certiorari to the united states court of appeals for the \ue405fth circuit No. 23\u20131122. Argued January 15, 2025\u2014Decided June 27, 2025 Texas, like many States, prohibits distributing sexually explicit content to children.",
+  "facts_summary": "PRELIMINARY PRINT Volume 606 U. S. Part 2 Pages 461\u2013521 OFFICIAL REPORTS OF THE SUPREME COURT June 27, 2025 Page Proof Pending Publication REBECCA A. WOMELDORF reporter of decisions NOTICE: This preliminary print is subject to formal revision before the bound volume is published. Users are requested to notify the Reporter of Decisions, Supreme Court of the United States, Washington, D. C. 20543, pio@supremecourt.gov, of any typographical or other formal errors. OCTOBER TERM, 2024 461 Syllabus FREE SPEECH COALITION, INC., et al. v. PAXTON, ATTORNEY GENERAL OF TEXAS certiorari to the united states court of appeals for the \ue405fth circuit No. 23\u20131122. Argued January 15, 2025\u2014Decided June 27, 2025 Texas, like many States, prohibits distributing sexually explicit content to children. In 2023, Texas enacted H. B. 1181, requiring certain commer- cial websites publishing sexually explicit content that is obscene to mi- nors to verify that visitors are 18 or older. Knowing violations subject covered entities to injunctions and civil penalties. Petitioners\u2014representatives of the pornography industry\u2014sued the Texas attorney general to enjoin enforcement of H. B. 1181 as facially unconstitutional under the First Amendment's Free Speech Clause. They alleged that adults have a right to access the covered speech, and that the statute impermissibly hinders them. The Fifth Circuit held that an injunction was not warranted because petitioners were unlikely to succeed on their First Amendment claim. The court viewed H. B. Page Proof Pending Publication 1181 as a \u201cregulatio[n] of the distribution to minors of materials obscene for minors.\u201d 95 F. 4th 263, 269, 271. It therefore determined that the law is not subject to any heightened scrutiny under the First Amendment. Held: H. B. 1181 triggers, and survives, review under intermediate scru- tiny because it only incidentally burdens the protected speech of adults. Pp. 470\u2013499. (a) H. B. 1181 is subject to intermediate scrutiny. Pp. 470\u2013495. (1) To determine whether a law that regulates speech violates the First Amendment, the Court considers both the nature of the burden imposed by the law and the nature of the speech at issue. Laws that target protected speech \u201cbased on its communicative content\u201d \u201care pre- sumptively unconstitutional and may be justifed only if \u201d they satisfy strict scrutiny. Reed v. Town of Gilbert, 576 U. S. 155, 163. Laws that only incidentally burden protected speech are subject to intermediate scrutiny. Turner Broadcasting System, Inc. v. FCC, 512 U. S. 622, 642. And",
+  "lower_court_ruling": "see syllabus",
+  "opinion_excerpt_urls": [
+    "https://www.courtlistener.com/opinion/10776819/free-speech-coalition-inc-v-paxton/"
+  ],
+  "ground_truth": {
+    "disposition": "affirmed",
+    "vote_split": "unknown",
+    "scdb_id": null
+  },
+  "status": "decided"
+}

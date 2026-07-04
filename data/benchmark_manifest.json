@@ -1,257 +1,910 @@
 {
   "cutoff": "2025-06-02",
   "created": "2026-07-04",
-  "benchmark": [],
+  "benchmark": [
+    {
+      "case_id": "cl-cluster-10883542",
+      "name": "Trump v. Barbara Revisions: 7/01/26",
+      "rationale": "decided 2026-06-30 (post-cutoff); ground truth extracted from syllabus (affirmed unknown); oyez=yes"
+    },
+    {
+      "case_id": "cl-cluster-10882240",
+      "name": "National Republican Senatorial Committee v. Federal Election Comm'n",
+      "rationale": "decided 2026-06-30 (post-cutoff); ground truth extracted from syllabus (reversed unknown); oyez=yes"
+    },
+    {
+      "case_id": "cl-cluster-10882186",
+      "name": "West Virginia v. B. P. J.",
+      "rationale": "decided 2026-06-30 (post-cutoff); ground truth extracted from syllabus (reversed unknown); oyez=yes"
+    },
+    {
+      "case_id": "cl-cluster-10881681",
+      "name": "Trump v. Slaughter",
+      "rationale": "decided 2026-06-29 (post-cutoff); ground truth extracted from syllabus (reversed unknown); oyez=yes"
+    },
+    {
+      "case_id": "cl-cluster-10881682",
+      "name": "Trump v. Cook",
+      "rationale": "decided 2026-06-29 (post-cutoff); ground truth extracted from syllabus (affirmed unknown); oyez=yes"
+    },
+    {
+      "case_id": "cl-cluster-10881680",
+      "name": "Watson v. Republican National Committee",
+      "rationale": "decided 2026-06-29 (post-cutoff); ground truth extracted from syllabus (reversed unknown); oyez=yes"
+    },
+    {
+      "case_id": "cl-cluster-10881683",
+      "name": "Chatrie v. United States",
+      "rationale": "decided 2026-06-29 (post-cutoff); ground truth extracted from syllabus (reversed unknown); oyez=yes"
+    },
+    {
+      "case_id": "cl-cluster-10880244",
+      "name": "Monsanto v. Durnell",
+      "rationale": "decided 2026-06-25 (post-cutoff); ground truth extracted from syllabus (reversed unknown); oyez=yes"
+    },
+    {
+      "case_id": "cl-cluster-10880243",
+      "name": "Mullin v. Al Otro Lado",
+      "rationale": "decided 2026-06-25 (post-cutoff); ground truth extracted from syllabus (reversed unknown); oyez=yes"
+    },
+    {
+      "case_id": "cl-cluster-10880241",
+      "name": "Wolford v. Lopez",
+      "rationale": "decided 2026-06-25 (post-cutoff); ground truth extracted from syllabus (reversed unknown); oyez=yes"
+    },
+    {
+      "case_id": "cl-cluster-10880242",
+      "name": "Mullin v. Doe",
+      "rationale": "decided 2026-06-25 (post-cutoff); ground truth extracted from syllabus (reversed unknown); oyez=yes"
+    },
+    {
+      "case_id": "cl-cluster-10879690",
+      "name": "Landor v. Louisiana Dept of Corrections and Public Safety Revisions: 6/24/26",
+      "rationale": "decided 2026-06-23 (post-cutoff); ground truth extracted from syllabus (affirmed unknown); oyez=yes"
+    },
+    {
+      "case_id": "cl-cluster-10878534",
+      "name": "Pung v. Isabella County",
+      "rationale": "decided 2026-06-23 (post-cutoff); ground truth extracted from syllabus (reversed 9-0); oyez=yes"
+    },
+    {
+      "case_id": "cl-cluster-10878538",
+      "name": "Blanche v. Lau",
+      "rationale": "decided 2026-06-23 (post-cutoff); ground truth extracted from syllabus (reversed unknown); oyez=yes"
+    },
+    {
+      "case_id": "cl-cluster-10878537",
+      "name": "Cisco Systems, Inc. v. Doe",
+      "rationale": "decided 2026-06-23 (post-cutoff); ground truth extracted from syllabus (reversed unknown); oyez=yes"
+    },
+    {
+      "case_id": "cl-cluster-10878536",
+      "name": "Exxon Mobil Corp. v. Corporaci\u00f3n Cimex, S. A. (Cuba)",
+      "rationale": "decided 2026-06-23 (post-cutoff); ground truth extracted from syllabus (reversed unknown); oyez=yes"
+    },
+    {
+      "case_id": "cl-cluster-10878009",
+      "name": "McCarthy v. Hernandez",
+      "rationale": "decided 2026-06-22 (post-cutoff); ground truth extracted from syllabus (reversed unknown); oyez=no"
+    },
+    {
+      "case_id": "cl-cluster-10877643",
+      "name": "T. M. v. University of Md. Medical System Corporation Revisions: 6/19/26",
+      "rationale": "decided 2026-06-18 (post-cutoff); ground truth extracted from syllabus (affirmed unknown); oyez=yes"
+    },
+    {
+      "case_id": "cl-cluster-10876933",
+      "name": "United States v. Hemani",
+      "rationale": "decided 2026-06-18 (post-cutoff); ground truth extracted from syllabus (affirmed unknown); oyez=yes"
+    },
+    {
+      "case_id": "cl-cluster-10875833",
+      "name": "Abouammo v. United States Revisions: 6/16/26",
+      "rationale": "decided 2026-06-11 (post-cutoff); ground truth extracted from syllabus (reversed unknown); oyez=yes"
+    },
+    {
+      "case_id": "cl-cluster-10873664",
+      "name": "FS Credit Opportunities Corp. v. Saba Capital Master Fund, Ltd.",
+      "rationale": "decided 2026-06-11 (post-cutoff); ground truth extracted from syllabus (reversed unknown); oyez=yes"
+    },
+    {
+      "case_id": "cl-cluster-10873663",
+      "name": "Keathley v. Buddy Ayers Construction, Inc.",
+      "rationale": "decided 2026-06-11 (post-cutoff); ground truth extracted from syllabus (reversed 9-0); oyez=yes"
+    },
+    {
+      "case_id": "cl-cluster-10870059",
+      "name": "Sripetch v. SEC",
+      "rationale": "decided 2026-06-04 (post-cutoff); ground truth extracted from syllabus (affirmed 9-0); oyez=yes"
+    },
+    {
+      "case_id": "cl-cluster-10870060",
+      "name": "Hikma Pharmaceuticals USA Inc. v. Amarin Pharma, Inc.",
+      "rationale": "decided 2026-06-04 (post-cutoff); ground truth extracted from syllabus (reversed unknown); oyez=yes"
+    },
+    {
+      "case_id": "cl-cluster-10869022",
+      "name": "Allen v. Milligan",
+      "rationale": "decided 2026-06-02 (post-cutoff); ground truth extracted from syllabus (reversed unknown); oyez=no"
+    }
+  ],
+  "benchmark_wide": [
+    {
+      "case_id": "cl-cluster-10883542",
+      "name": "Trump v. Barbara Revisions: 7/01/26",
+      "rationale": "decided 2026-06-30 (post-cutoff); ground truth extracted from syllabus (affirmed unknown); oyez=yes"
+    },
+    {
+      "case_id": "cl-cluster-10882240",
+      "name": "National Republican Senatorial Committee v. Federal Election Comm'n",
+      "rationale": "decided 2026-06-30 (post-cutoff); ground truth extracted from syllabus (reversed unknown); oyez=yes"
+    },
+    {
+      "case_id": "cl-cluster-10882186",
+      "name": "West Virginia v. B. P. J.",
+      "rationale": "decided 2026-06-30 (post-cutoff); ground truth extracted from syllabus (reversed unknown); oyez=yes"
+    },
+    {
+      "case_id": "cl-cluster-10881681",
+      "name": "Trump v. Slaughter",
+      "rationale": "decided 2026-06-29 (post-cutoff); ground truth extracted from syllabus (reversed unknown); oyez=yes"
+    },
+    {
+      "case_id": "cl-cluster-10881682",
+      "name": "Trump v. Cook",
+      "rationale": "decided 2026-06-29 (post-cutoff); ground truth extracted from syllabus (affirmed unknown); oyez=yes"
+    },
+    {
+      "case_id": "cl-cluster-10881680",
+      "name": "Watson v. Republican National Committee",
+      "rationale": "decided 2026-06-29 (post-cutoff); ground truth extracted from syllabus (reversed unknown); oyez=yes"
+    },
+    {
+      "case_id": "cl-cluster-10881683",
+      "name": "Chatrie v. United States",
+      "rationale": "decided 2026-06-29 (post-cutoff); ground truth extracted from syllabus (reversed unknown); oyez=yes"
+    },
+    {
+      "case_id": "cl-cluster-10880244",
+      "name": "Monsanto v. Durnell",
+      "rationale": "decided 2026-06-25 (post-cutoff); ground truth extracted from syllabus (reversed unknown); oyez=yes"
+    },
+    {
+      "case_id": "cl-cluster-10880243",
+      "name": "Mullin v. Al Otro Lado",
+      "rationale": "decided 2026-06-25 (post-cutoff); ground truth extracted from syllabus (reversed unknown); oyez=yes"
+    },
+    {
+      "case_id": "cl-cluster-10880241",
+      "name": "Wolford v. Lopez",
+      "rationale": "decided 2026-06-25 (post-cutoff); ground truth extracted from syllabus (reversed unknown); oyez=yes"
+    },
+    {
+      "case_id": "cl-cluster-10880242",
+      "name": "Mullin v. Doe",
+      "rationale": "decided 2026-06-25 (post-cutoff); ground truth extracted from syllabus (reversed unknown); oyez=yes"
+    },
+    {
+      "case_id": "cl-cluster-10879690",
+      "name": "Landor v. Louisiana Dept of Corrections and Public Safety Revisions: 6/24/26",
+      "rationale": "decided 2026-06-23 (post-cutoff); ground truth extracted from syllabus (affirmed unknown); oyez=yes"
+    },
+    {
+      "case_id": "cl-cluster-10878534",
+      "name": "Pung v. Isabella County",
+      "rationale": "decided 2026-06-23 (post-cutoff); ground truth extracted from syllabus (reversed 9-0); oyez=yes"
+    },
+    {
+      "case_id": "cl-cluster-10878538",
+      "name": "Blanche v. Lau",
+      "rationale": "decided 2026-06-23 (post-cutoff); ground truth extracted from syllabus (reversed unknown); oyez=yes"
+    },
+    {
+      "case_id": "cl-cluster-10878537",
+      "name": "Cisco Systems, Inc. v. Doe",
+      "rationale": "decided 2026-06-23 (post-cutoff); ground truth extracted from syllabus (reversed unknown); oyez=yes"
+    },
+    {
+      "case_id": "cl-cluster-10878536",
+      "name": "Exxon Mobil Corp. v. Corporaci\u00f3n Cimex, S. A. (Cuba)",
+      "rationale": "decided 2026-06-23 (post-cutoff); ground truth extracted from syllabus (reversed unknown); oyez=yes"
+    },
+    {
+      "case_id": "cl-cluster-10878009",
+      "name": "McCarthy v. Hernandez",
+      "rationale": "decided 2026-06-22 (post-cutoff); ground truth extracted from syllabus (reversed unknown); oyez=no"
+    },
+    {
+      "case_id": "cl-cluster-10877643",
+      "name": "T. M. v. University of Md. Medical System Corporation Revisions: 6/19/26",
+      "rationale": "decided 2026-06-18 (post-cutoff); ground truth extracted from syllabus (affirmed unknown); oyez=yes"
+    },
+    {
+      "case_id": "cl-cluster-10876933",
+      "name": "United States v. Hemani",
+      "rationale": "decided 2026-06-18 (post-cutoff); ground truth extracted from syllabus (affirmed unknown); oyez=yes"
+    },
+    {
+      "case_id": "cl-cluster-10875833",
+      "name": "Abouammo v. United States Revisions: 6/16/26",
+      "rationale": "decided 2026-06-11 (post-cutoff); ground truth extracted from syllabus (reversed unknown); oyez=yes"
+    },
+    {
+      "case_id": "cl-cluster-10873664",
+      "name": "FS Credit Opportunities Corp. v. Saba Capital Master Fund, Ltd.",
+      "rationale": "decided 2026-06-11 (post-cutoff); ground truth extracted from syllabus (reversed unknown); oyez=yes"
+    },
+    {
+      "case_id": "cl-cluster-10873663",
+      "name": "Keathley v. Buddy Ayers Construction, Inc.",
+      "rationale": "decided 2026-06-11 (post-cutoff); ground truth extracted from syllabus (reversed 9-0); oyez=yes"
+    },
+    {
+      "case_id": "cl-cluster-10870059",
+      "name": "Sripetch v. SEC",
+      "rationale": "decided 2026-06-04 (post-cutoff); ground truth extracted from syllabus (affirmed 9-0); oyez=yes"
+    },
+    {
+      "case_id": "cl-cluster-10870060",
+      "name": "Hikma Pharmaceuticals USA Inc. v. Amarin Pharma, Inc.",
+      "rationale": "decided 2026-06-04 (post-cutoff); ground truth extracted from syllabus (reversed unknown); oyez=yes"
+    },
+    {
+      "case_id": "cl-cluster-10869022",
+      "name": "Allen v. Milligan",
+      "rationale": "decided 2026-06-02 (post-cutoff); ground truth extracted from syllabus (reversed unknown); oyez=no"
+    },
+    {
+      "case_id": "cl-cluster-10867983",
+      "name": "Whitton v. Dixon",
+      "rationale": "decided 2026-06-01 (post-cutoff); ground truth extracted from syllabus (reversed unknown); oyez=no"
+    },
+    {
+      "case_id": "cl-cluster-10865524",
+      "name": "Rutherford v. United States",
+      "rationale": "decided 2026-05-28 (post-cutoff); ground truth extracted from syllabus (affirmed unknown); oyez=no"
+    },
+    {
+      "case_id": "cl-cluster-10865525",
+      "name": "Pitchford v. Cain",
+      "rationale": "decided 2026-05-28 (post-cutoff); ground truth extracted from syllabus (reversed unknown); oyez=no"
+    },
+    {
+      "case_id": "cl-cluster-10865526",
+      "name": "Flowers Foods, Inc. v. Brock",
+      "rationale": "decided 2026-05-28 (post-cutoff); ground truth extracted from syllabus (affirmed 9-0); oyez=no"
+    },
+    {
+      "case_id": "cl-cluster-10865527",
+      "name": "Fernandez v. United States",
+      "rationale": "decided 2026-05-28 (post-cutoff); ground truth extracted from syllabus (affirmed unknown); oyez=no"
+    },
+    {
+      "case_id": "cl-cluster-10864190",
+      "name": "Margolin v. NAIJ",
+      "rationale": "decided 2026-05-26 (post-cutoff); ground truth extracted from syllabus (reversed unknown); oyez=no"
+    },
+    {
+      "case_id": "cl-cluster-10862762",
+      "name": "M & K Employee Solutions, Inc. v. Trustees of IAM Nat. Pension",
+      "rationale": "decided 2026-05-21 (post-cutoff); ground truth extracted from syllabus (affirmed unknown); oyez=no"
+    },
+    {
+      "case_id": "cl-cluster-10862763",
+      "name": "Havana Docks Corp. v. Royal Caribbean Cruises, Ltd.",
+      "rationale": "decided 2026-05-21 (post-cutoff); ground truth extracted from syllabus (reversed unknown); oyez=no"
+    },
+    {
+      "case_id": "cl-cluster-10858760",
+      "name": "Montgomery v. Caribe Transport II, LLC",
+      "rationale": "decided 2026-05-14 (post-cutoff); ground truth extracted from syllabus (reversed 9-0); oyez=no"
+    },
+    {
+      "case_id": "cl-cluster-10858761",
+      "name": "Jules v. Andre Balazs Properties",
+      "rationale": "decided 2026-05-14 (post-cutoff); ground truth extracted from syllabus (affirmed unknown); oyez=no"
+    },
+    {
+      "case_id": "cl-cluster-10852760",
+      "name": "Louisiana v. Callais Revisions: 5/04/26",
+      "rationale": "decided 2026-04-29 (post-cutoff); ground truth extracted from syllabus (affirmed unknown); oyez=no"
+    },
+    {
+      "case_id": "cl-cluster-10850133",
+      "name": "First Choice Women's Resource Centers, Inc. v. Davenport",
+      "rationale": "decided 2026-04-29 (post-cutoff); ground truth extracted from syllabus (reversed unknown); oyez=no"
+    },
+    {
+      "case_id": "cl-cluster-10846666",
+      "name": "Hencely v. Fluor Corp.",
+      "rationale": "decided 2026-04-22 (post-cutoff); ground truth extracted from syllabus (reversed unknown); oyez=no"
+    },
+    {
+      "case_id": "cl-cluster-10846667",
+      "name": "Enbridge Energy, LP v. Nessel",
+      "rationale": "decided 2026-04-22 (post-cutoff); ground truth extracted from syllabus (affirmed unknown); oyez=no"
+    },
+    {
+      "case_id": "cl-cluster-10845431",
+      "name": "District of Columbia v. R.W.",
+      "rationale": "decided 2026-04-20 (post-cutoff); ground truth extracted from syllabus (reversed unknown); oyez=no"
+    },
+    {
+      "case_id": "cl-cluster-10844563",
+      "name": "Chevron USA Inc. v. Plaquemines Parish",
+      "rationale": "decided 2026-04-17 (post-cutoff); ground truth extracted from syllabus (reversed unknown); oyez=no"
+    },
+    {
+      "case_id": "cl-cluster-10830408",
+      "name": "Chiles v. Salazar",
+      "rationale": "decided 2026-03-31 (post-cutoff); ground truth extracted from syllabus (reversed unknown); oyez=no"
+    },
+    {
+      "case_id": "cl-cluster-10814782",
+      "name": "Cox Communications, Inc. v. Sony Music Entertainment",
+      "rationale": "decided 2026-03-25 (post-cutoff); ground truth extracted from syllabus (reversed unknown); oyez=no"
+    },
+    {
+      "case_id": "cl-cluster-10814644",
+      "name": "Rico v. United States",
+      "rationale": "decided 2026-03-25 (post-cutoff); ground truth extracted from syllabus (reversed unknown); oyez=no"
+    },
+    {
+      "case_id": "cl-cluster-10813527",
+      "name": "Zorn v. Linton",
+      "rationale": "decided 2026-03-23 (post-cutoff); ground truth extracted from syllabus (reversed unknown); oyez=no"
+    },
+    {
+      "case_id": "cl-cluster-10811625",
+      "name": "Olivier v. City of Brandon",
+      "rationale": "decided 2026-03-20 (post-cutoff); ground truth extracted from syllabus (reversed unknown); oyez=no"
+    },
+    {
+      "case_id": "cl-cluster-10803603",
+      "name": "Urias-Orellana v. Bondi",
+      "rationale": "decided 2026-03-04 (post-cutoff); ground truth extracted from syllabus (affirmed 9-0); oyez=no"
+    },
+    {
+      "case_id": "cl-cluster-10800125",
+      "name": "Villarreal v. Texas",
+      "rationale": "decided 2026-02-25 (post-cutoff); ground truth extracted from syllabus (affirmed 7-2); oyez=no"
+    },
+    {
+      "case_id": "cl-cluster-10800194",
+      "name": "Geo Group, Inc. v. Menocal",
+      "rationale": "decided 2026-02-25 (post-cutoff); ground truth extracted from syllabus (affirmed unknown); oyez=no"
+    },
+    {
+      "case_id": "cl-cluster-10799652",
+      "name": "Hain Celestial Group, Inc. v. Palmquist",
+      "rationale": "decided 2026-02-24 (post-cutoff); ground truth extracted from syllabus (affirmed unknown); oyez=no"
+    },
+    {
+      "case_id": "cl-cluster-10799651",
+      "name": "Postal Service v. Konan",
+      "rationale": "decided 2026-02-24 (post-cutoff); ground truth extracted from syllabus (reversed unknown); oyez=no"
+    },
+    {
+      "case_id": "cl-cluster-10779476",
+      "name": "Klein v. Martin",
+      "rationale": "decided 2026-01-26 (post-cutoff); ground truth extracted from syllabus (reversed unknown); oyez=no"
+    },
+    {
+      "case_id": "cl-cluster-10776751",
+      "name": "Ellingburg v. United States",
+      "rationale": "decided 2026-01-20 (post-cutoff); ground truth extracted from syllabus (reversed 9-0); oyez=no"
+    },
+    {
+      "case_id": "cl-cluster-10776752",
+      "name": "Coney Island Auto Parts Unlimited, Inc. v. Burton",
+      "rationale": "decided 2026-01-20 (post-cutoff); ground truth extracted from syllabus (affirmed 9-0); oyez=no"
+    },
+    {
+      "case_id": "cl-cluster-10776753",
+      "name": "Berk v. Choy",
+      "rationale": "decided 2026-01-20 (post-cutoff); ground truth extracted from syllabus (reversed 9-0); oyez=no"
+    },
+    {
+      "case_id": "cl-cluster-10774608",
+      "name": "Barrett v. United States Revisions: 1/14/26",
+      "rationale": "decided 2026-01-14 (post-cutoff); ground truth extracted from syllabus (reversed unknown); oyez=no"
+    },
+    {
+      "case_id": "cl-cluster-10774569",
+      "name": "Bost v. Illinois Bd. of Elections Revisions: 1/14/26",
+      "rationale": "decided 2026-01-14 (post-cutoff); ground truth extracted from syllabus (reversed 5-4); oyez=no"
+    },
+    {
+      "case_id": "cl-cluster-10774335",
+      "name": "Case v. Montana",
+      "rationale": "decided 2026-01-14 (post-cutoff); ground truth extracted from syllabus (affirmed 9-0); oyez=no"
+    },
+    {
+      "case_id": "cl-cluster-10772450",
+      "name": "Bowe v. United States",
+      "rationale": "decided 2026-01-09 (post-cutoff); ground truth extracted from syllabus (reversed unknown); oyez=no"
+    },
+    {
+      "case_id": "cl-cluster-10749076",
+      "name": "Doe v. Dynamic Physical Therapy, LLC",
+      "rationale": "decided 2025-12-08 (post-cutoff); ground truth extracted from syllabus (reversed unknown); oyez=no"
+    },
+    {
+      "case_id": "cl-cluster-10741338",
+      "name": "Pitts v. Mississippi",
+      "rationale": "decided 2025-11-24 (post-cutoff); ground truth extracted from syllabus (reversed unknown); oyez=no"
+    },
+    {
+      "case_id": "cl-cluster-10741339",
+      "name": "Clark v. Sweeney",
+      "rationale": "decided 2025-11-24 (post-cutoff); ground truth extracted from syllabus (reversed unknown); oyez=no"
+    },
+    {
+      "case_id": "cl-cluster-10645534",
+      "name": "Goldey v. Fields",
+      "rationale": "decided 2025-06-30 (post-cutoff); ground truth extracted from syllabus (reversed unknown); oyez=no"
+    },
+    {
+      "case_id": "cl-cluster-10645535",
+      "name": "Trump v. CASA, Inc. Revisions: 7/02/25",
+      "rationale": "decided 2025-06-27 (post-cutoff); ground truth extracted from syllabus (reversed unknown); oyez=no"
+    },
+    {
+      "case_id": "cl-cluster-10776818",
+      "name": "Kennedy v. Braidwood Management, Inc.",
+      "rationale": "decided 2025-06-27 (post-cutoff); ground truth extracted from syllabus (reversed unknown); oyez=no"
+    },
+    {
+      "case_id": "cl-cluster-10776820",
+      "name": "FCC v. Consumers' Research",
+      "rationale": "decided 2025-06-27 (post-cutoff); ground truth extracted from syllabus (reversed unknown); oyez=no"
+    },
+    {
+      "case_id": "cl-cluster-10776817",
+      "name": "Mahmoud v. Taylor",
+      "rationale": "decided 2025-06-27 (post-cutoff); ground truth extracted from syllabus (reversed unknown); oyez=no"
+    },
+    {
+      "case_id": "cl-cluster-10776819",
+      "name": "Free Speech Coalition, Inc. v. Paxton",
+      "rationale": "decided 2025-06-27 (post-cutoff); ground truth extracted from syllabus (affirmed unknown); oyez=no"
+    },
+    {
+      "case_id": "cl-cluster-10617644",
+      "name": "Hewitt v. United States",
+      "rationale": "decided 2025-06-26 (post-cutoff); ground truth extracted from syllabus (reversed unknown); oyez=no"
+    },
+    {
+      "case_id": "cl-cluster-10617642",
+      "name": "Riley v. Bondi",
+      "rationale": "decided 2025-06-26 (post-cutoff); ground truth extracted from syllabus (reversed unknown); oyez=no"
+    },
+    {
+      "case_id": "cl-cluster-10776824",
+      "name": "Gutierrez v. Saenz",
+      "rationale": "decided 2025-06-26 (post-cutoff); ground truth extracted from syllabus (reversed unknown); oyez=no"
+    },
+    {
+      "case_id": "cl-cluster-10776822",
+      "name": "Medina v. Planned Parenthood South Atlantic",
+      "rationale": "decided 2025-06-26 (post-cutoff); ground truth extracted from syllabus (reversed unknown); oyez=no"
+    },
+    {
+      "case_id": "cl-cluster-10614324",
+      "name": "Esteras v. United States",
+      "rationale": "decided 2025-06-20 (post-cutoff); ground truth extracted from syllabus (reversed unknown); oyez=no"
+    },
+    {
+      "case_id": "cl-cluster-10776827",
+      "name": "Fuld v. Palestine Liberation Organization",
+      "rationale": "decided 2025-06-20 (post-cutoff); ground truth extracted from syllabus (reversed unknown); oyez=no"
+    },
+    {
+      "case_id": "cl-cluster-10776826",
+      "name": "McLaughlin Chiropractic Associates, Inc. v. McKesson Corp.",
+      "rationale": "decided 2025-06-20 (post-cutoff); ground truth extracted from syllabus (reversed unknown); oyez=no"
+    },
+    {
+      "case_id": "cl-cluster-10776825",
+      "name": "Stanley v. City of Sanford",
+      "rationale": "decided 2025-06-20 (post-cutoff); ground truth extracted from syllabus (affirmed unknown); oyez=no"
+    },
+    {
+      "case_id": "cl-cluster-10776830",
+      "name": "Diamond Alternative Energy, LLC v. EPA",
+      "rationale": "decided 2025-06-20 (post-cutoff); ground truth extracted from syllabus (reversed unknown); oyez=no"
+    },
+    {
+      "case_id": "cl-cluster-10776828",
+      "name": "FDA v. R. J. Reynolds Vapor Co.",
+      "rationale": "decided 2025-06-20 (post-cutoff); ground truth extracted from syllabus (affirmed unknown); oyez=no"
+    },
+    {
+      "case_id": "cl-cluster-10614320",
+      "name": "Stanley v. City of Stanford",
+      "rationale": "decided 2025-06-20 (post-cutoff); ground truth extracted from syllabus (affirmed unknown); oyez=no"
+    },
+    {
+      "case_id": "cl-cluster-10776833",
+      "name": "Oklahoma v. EPA",
+      "rationale": "decided 2025-06-18 (post-cutoff); ground truth extracted from syllabus (reversed unknown); oyez=no"
+    },
+    {
+      "case_id": "cl-cluster-10776831",
+      "name": "United States v. Skrmetti",
+      "rationale": "decided 2025-06-18 (post-cutoff); ground truth extracted from syllabus (affirmed unknown); oyez=no"
+    },
+    {
+      "case_id": "cl-cluster-10776834",
+      "name": "NRC v. Texas",
+      "rationale": "decided 2025-06-18 (post-cutoff); ground truth extracted from syllabus (reversed unknown); oyez=no"
+    },
+    {
+      "case_id": "cl-cluster-10776835",
+      "name": "EPA v. Calumet Shreveport Refining, L.L.C.",
+      "rationale": "decided 2025-06-18 (post-cutoff); ground truth extracted from syllabus (reversed unknown); oyez=no"
+    },
+    {
+      "case_id": "cl-cluster-10776832",
+      "name": "Perttu v. Richards",
+      "rationale": "decided 2025-06-18 (post-cutoff); ground truth extracted from syllabus (affirmed unknown); oyez=no"
+    },
+    {
+      "case_id": "cl-cluster-10603451",
+      "name": "Parrish v. United States",
+      "rationale": "decided 2025-06-12 (post-cutoff); ground truth extracted from syllabus (reversed unknown); oyez=no"
+    },
+    {
+      "case_id": "cl-cluster-10603452",
+      "name": "Martin v. United States",
+      "rationale": "decided 2025-06-12 (post-cutoff); ground truth extracted from syllabus (reversed unknown); oyez=no"
+    },
+    {
+      "case_id": "cl-cluster-10603449",
+      "name": "Soto v. United States",
+      "rationale": "decided 2025-06-12 (post-cutoff); ground truth extracted from syllabus (reversed 9-0); oyez=no"
+    },
+    {
+      "case_id": "cl-cluster-10603453",
+      "name": "Commissioner v. Zuch",
+      "rationale": "decided 2025-06-12 (post-cutoff); ground truth extracted from syllabus (reversed unknown); oyez=no"
+    },
+    {
+      "case_id": "cl-cluster-10776837",
+      "name": "Rivers v. Guerrero",
+      "rationale": "decided 2025-06-12 (post-cutoff); ground truth extracted from syllabus (affirmed unknown); oyez=no"
+    },
+    {
+      "case_id": "cl-cluster-10776841",
+      "name": "A. J. T. v. Osseo Area Schools, Independent School Dist. No. 279",
+      "rationale": "decided 2025-06-12 (post-cutoff); ground truth extracted from syllabus (reversed unknown); oyez=no"
+    },
+    {
+      "case_id": "cl-cluster-10599914",
+      "name": "Catholic Charities Bureau, Inc. v. Wisconsin Labor and Industry Review Comm'n. Revisions: 6/06/25",
+      "rationale": "decided 2025-06-05 (post-cutoff); ground truth extracted from syllabus (reversed 9-0); oyez=no"
+    },
+    {
+      "case_id": "cl-cluster-10776847",
+      "name": "Ames v. Ohio Department of Youth Services",
+      "rationale": "decided 2025-06-05 (post-cutoff); ground truth extracted from syllabus (reversed 9-0); oyez=no"
+    },
+    {
+      "case_id": "cl-cluster-10776845",
+      "name": "CC/Devas (Mauritius) Ltd. v. Antrix Corp.",
+      "rationale": "decided 2025-06-05 (post-cutoff); ground truth extracted from syllabus (reversed unknown); oyez=no"
+    },
+    {
+      "case_id": "cl-cluster-10776842",
+      "name": "Smith & Wesson Brands, Inc. v. Estados Unidos Mexicanos",
+      "rationale": "decided 2025-06-05 (post-cutoff); ground truth extracted from syllabus (reversed unknown); oyez=no"
+    },
+    {
+      "case_id": "cl-cluster-10776846",
+      "name": "BLOM Bank SAL v. Honickman",
+      "rationale": "decided 2025-06-05 (post-cutoff); ground truth extracted from syllabus (reversed unknown); oyez=no"
+    }
+  ],
   "memorization": [
+    {
+      "case_id": "landmark-2",
+      "name": "McCulloch v. Maryland",
+      "tier": "famous",
+      "rationale": "landmark case, maximally memorized; memorization-check arm (conditions A/B only)"
+    },
+    {
+      "case_id": "landmark-3",
+      "name": "Gibbons v. Ogden",
+      "tier": "famous",
+      "rationale": "landmark case, maximally memorized; memorization-check arm (conditions A/B only)"
+    },
+    {
+      "case_id": "landmark-4",
+      "name": "Dred Scott v. Sandford",
+      "tier": "famous",
+      "rationale": "landmark case, maximally memorized; memorization-check arm (conditions A/B only)"
+    },
+    {
+      "case_id": "landmark-5",
+      "name": "Plessy v. Ferguson",
+      "tier": "famous",
+      "rationale": "landmark case, maximally memorized; memorization-check arm (conditions A/B only)"
+    },
+    {
+      "case_id": "landmark-6",
+      "name": "Lochner v. New York",
+      "tier": "famous",
+      "rationale": "landmark case, maximally memorized; memorization-check arm (conditions A/B only)"
+    },
+    {
+      "case_id": "landmark-7",
+      "name": "Schenck v. United States",
+      "tier": "famous",
+      "rationale": "landmark case, maximally memorized; memorization-check arm (conditions A/B only)"
+    },
+    {
+      "case_id": "landmark-8",
+      "name": "Korematsu v. United States",
+      "tier": "famous",
+      "rationale": "landmark case, maximally memorized; memorization-check arm (conditions A/B only)"
+    },
+    {
+      "case_id": "landmark-9",
+      "name": "Youngstown Sheet & Tube Co. v. Sawyer",
+      "tier": "famous",
+      "rationale": "landmark case, maximally memorized; memorization-check arm (conditions A/B only)"
+    },
+    {
+      "case_id": "landmark-10",
+      "name": "Brown v. Board of Education",
+      "tier": "famous",
+      "rationale": "landmark case, maximally memorized; memorization-check arm (conditions A/B only)"
+    },
+    {
+      "case_id": "landmark-11",
+      "name": "Mapp v. Ohio",
+      "tier": "famous",
+      "rationale": "landmark case, maximally memorized; memorization-check arm (conditions A/B only)"
+    },
+    {
+      "case_id": "landmark-12",
+      "name": "Baker v. Carr",
+      "tier": "famous",
+      "rationale": "landmark case, maximally memorized; memorization-check arm (conditions A/B only)"
+    },
+    {
+      "case_id": "landmark-13",
+      "name": "Engel v. Vitale",
+      "tier": "famous",
+      "rationale": "landmark case, maximally memorized; memorization-check arm (conditions A/B only)"
+    },
+    {
+      "case_id": "landmark-14",
+      "name": "Gideon v. Wainwright",
+      "tier": "famous",
+      "rationale": "landmark case, maximally memorized; memorization-check arm (conditions A/B only)"
+    },
+    {
+      "case_id": "landmark-15",
+      "name": "New York Times Co. v. Sullivan",
+      "tier": "famous",
+      "rationale": "landmark case, maximally memorized; memorization-check arm (conditions A/B only)"
+    },
+    {
+      "case_id": "landmark-16",
+      "name": "Heart of Atlanta Motel, Inc. v. United States",
+      "tier": "famous",
+      "rationale": "landmark case, maximally memorized; memorization-check arm (conditions A/B only)"
+    },
+    {
+      "case_id": "landmark-17",
+      "name": "Griswold v. Connecticut",
+      "tier": "famous",
+      "rationale": "landmark case, maximally memorized; memorization-check arm (conditions A/B only)"
+    },
+    {
+      "case_id": "landmark-18",
+      "name": "Miranda v. Arizona",
+      "tier": "famous",
+      "rationale": "landmark case, maximally memorized; memorization-check arm (conditions A/B only)"
+    },
+    {
+      "case_id": "landmark-19",
+      "name": "Loving v. Virginia",
+      "tier": "famous",
+      "rationale": "landmark case, maximally memorized; memorization-check arm (conditions A/B only)"
+    },
+    {
+      "case_id": "landmark-20",
+      "name": "Terry v. Ohio",
+      "tier": "famous",
+      "rationale": "landmark case, maximally memorized; memorization-check arm (conditions A/B only)"
+    },
+    {
+      "case_id": "landmark-21",
+      "name": "Tinker v. Des Moines Independent Community School District",
+      "tier": "famous",
+      "rationale": "landmark case, maximally memorized; memorization-check arm (conditions A/B only)"
+    },
+    {
+      "case_id": "landmark-22",
+      "name": "New York Times Co. v. United States",
+      "tier": "famous",
+      "rationale": "landmark case, maximally memorized; memorization-check arm (conditions A/B only)"
+    },
+    {
+      "case_id": "landmark-23",
+      "name": "Roe v. Wade",
+      "tier": "famous",
+      "rationale": "landmark case, maximally memorized; memorization-check arm (conditions A/B only)"
+    },
+    {
+      "case_id": "landmark-24",
+      "name": "United States v. Nixon",
+      "tier": "famous",
+      "rationale": "landmark case, maximally memorized; memorization-check arm (conditions A/B only)"
+    },
+    {
+      "case_id": "landmark-27",
+      "name": "Texas v. Johnson",
+      "tier": "famous",
+      "rationale": "landmark case, maximally memorized; memorization-check arm (conditions A/B only)"
+    },
+    {
+      "case_id": "landmark-29",
+      "name": "United States v. Lopez",
+      "tier": "famous",
+      "rationale": "landmark case, maximally memorized; memorization-check arm (conditions A/B only)"
+    },
     {
       "case_id": "scdb-1988-018",
       "name": "PERRY v. LEEKE, COMMISSIONER, SOUTH CAROLINA DEPARTMENT OF CORRECTIONS, et al.",
-      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
+      "tier": "scdb",
+      "rationale": "ordinary pre-cutoff SCDB case (era spread); memorization-check arm (conditions A/B only)"
     },
     {
-      "case_id": "scdb-1987-018",
-      "name": "LOWENFIELD v. PHELPS, SECRETARY, LOUISIANA DEPARTMENT OF CORRECTIONS, et al.",
-      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
+      "case_id": "scdb-1971-043",
+      "name": "LOVE v. PULLMAN CO.",
+      "tier": "scdb",
+      "rationale": "ordinary pre-cutoff SCDB case (era spread); memorization-check arm (conditions A/B only)"
     },
     {
-      "case_id": "scdb-1965-038",
-      "name": "KOEHRING CO. v. HYDE CONSTRUCTION CO., INC., et al.",
-      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
+      "case_id": "scdb-1975-032",
+      "name": "UNITED STATES v. WATSON",
+      "tier": "scdb",
+      "rationale": "ordinary pre-cutoff SCDB case (era spread); memorization-check arm (conditions A/B only)"
     },
     {
-      "case_id": "scdb-1980-028",
-      "name": "RUBIN v. UNITED STATES",
-      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
+      "case_id": "scdb-1957-003",
+      "name": "BLACK, ASSISTANT REGIONAL COMMISSIONER, ALCOHOL AND TOBACCO TAX DIVISION, INTERNAL REVENUE SERVICE, v. MAGNOLIA LIQUOR CO., INC.",
+      "tier": "scdb",
+      "rationale": "ordinary pre-cutoff SCDB case (era spread); memorization-check arm (conditions A/B only)"
     },
     {
-      "case_id": "scdb-1975-030",
-      "name": "NATIONAL INDEPENDENT COAL OPERATORS' ASSOCIATION et al. v. KLEPPE, SECRETARY OF THE INTERIOR, et al.",
-      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
+      "case_id": "scdb-1982-003",
+      "name": "IMMIGRATION AND NATURALIZATION SERVICE v. MIRANDA",
+      "tier": "scdb",
+      "rationale": "ordinary pre-cutoff SCDB case (era spread); memorization-check arm (conditions A/B only)"
     },
     {
-      "case_id": "scdb-1984-020",
-      "name": "ALEXANDER, GOVERNOR OF TENNESSEE, et al. v. CHOATE et al.",
-      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
+      "case_id": "scdb-1946-021",
+      "name": "EAGLES, POST COMMANDING OFFICER, v. UNITED STATES EX REL. HOROWITZ",
+      "tier": "scdb",
+      "rationale": "ordinary pre-cutoff SCDB case (era spread); memorization-check arm (conditions A/B only)"
     },
     {
-      "case_id": "scdb-1975-004",
-      "name": "CONNECTICUT v. MENILLO",
-      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
+      "case_id": "scdb-2012-015",
+      "name": "FLORIDA, PETITIONER v. CLAYTON HARRIS",
+      "tier": "scdb",
+      "rationale": "ordinary pre-cutoff SCDB case (era spread); memorization-check arm (conditions A/B only)"
     },
     {
-      "case_id": "scdb-1964-005",
-      "name": "UNITED STATES et al. v. POWELL et al.",
-      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
+      "case_id": "scdb-2003-031",
+      "name": "GENERAL DYNAMICS LAND SYSTEMS, INC. v. DENNIS CLINE et al.",
+      "tier": "scdb",
+      "rationale": "ordinary pre-cutoff SCDB case (era spread); memorization-check arm (conditions A/B only)"
     },
     {
-      "case_id": "scdb-1971-003",
-      "name": "SUPERINTENDENT OF INSURANCE OF NEW YORK v. BANKERS LIFE & CASUALTY CO. et al.",
-      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
+      "case_id": "scdb-2013-029",
+      "name": "BRANDT TRUST v. UNITED STATES",
+      "tier": "scdb",
+      "rationale": "ordinary pre-cutoff SCDB case (era spread); memorization-check arm (conditions A/B only)"
     },
     {
-      "case_id": "scdb-1982-010",
-      "name": "LARKIN et al. v. GRENDEL'S DEN, INC.",
-      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
+      "case_id": "scdb-1970-061",
+      "name": "SCHLANGER v. SEAMANS, SECRETARY OF THE AIR FORCE, et al.",
+      "tier": "scdb",
+      "rationale": "ordinary pre-cutoff SCDB case (era spread); memorization-check arm (conditions A/B only)"
     },
     {
-      "case_id": "scdb-1952-027",
-      "name": "F. W. WOOLWORTH CO. v. CONTEMPORARY ARTS, INC.",
-      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
+      "case_id": "scdb-1996-034",
+      "name": "ARIZONANS FOR OFFICIAL ENGLISH AND ROBERT D. PARK v. ARIZONA et al.",
+      "tier": "scdb",
+      "rationale": "ordinary pre-cutoff SCDB case (era spread); memorization-check arm (conditions A/B only)"
     },
     {
-      "case_id": "scdb-1952-017",
-      "name": "UNITED STATES v. CALTEX (PHILIPPINES), INC. ET AL.",
-      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
+      "case_id": "scdb-1986-051",
+      "name": "IMMIGRATION AND NATURALIZATION SERVICE v. CARDOZA-FONSECA",
+      "tier": "scdb",
+      "rationale": "ordinary pre-cutoff SCDB case (era spread); memorization-check arm (conditions A/B only)"
     },
     {
-      "case_id": "scdb-1996-029",
-      "name": "FRANCIS BERNARD AUER, et al. v. DAVID A. ROBBINS et al.",
-      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
+      "case_id": "scdb-1981-080",
+      "name": "INTERNATIONAL LONGSHOREMEN'S ASSOCIATION, AFL-CIO, et al. v. ALLIED INTERNATIONAL, INC.",
+      "tier": "scdb",
+      "rationale": "ordinary pre-cutoff SCDB case (era spread); memorization-check arm (conditions A/B only)"
     },
     {
-      "case_id": "scdb-1983-042",
-      "name": "DIXSON v. UNITED STATES",
-      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
+      "case_id": "scdb-2007-035",
+      "name": "WILLIAM CRAWFORD, et al., Petitioners v. MARION COUNTY ELECTION BOARD et al.",
+      "tier": "scdb",
+      "rationale": "ordinary pre-cutoff SCDB case (era spread); memorization-check arm (conditions A/B only)"
     },
     {
-      "case_id": "scdb-1992-033",
-      "name": "EMERY L. NEGONSOTT v. HAROLD SAMUELS, WARDEN, et al.",
-      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
+      "case_id": "scdb-2012-042",
+      "name": "RANDY CURTIS BULLOCK, PETITIONER v. BANKCHAMPAIGN, N. A.",
+      "tier": "scdb",
+      "rationale": "ordinary pre-cutoff SCDB case (era spread); memorization-check arm (conditions A/B only)"
     },
     {
-      "case_id": "scdb-1979-044",
-      "name": "TRAMMEL v. UNITED STATES",
-      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
+      "case_id": "scdb-1962-105",
+      "name": "PETERSON et al. v. CITY OF GREENVILLE",
+      "tier": "scdb",
+      "rationale": "ordinary pre-cutoff SCDB case (era spread); memorization-check arm (conditions A/B only)"
     },
     {
-      "case_id": "scdb-1968-052",
-      "name": "GREGORY et al. v. CITY OF CHICAGO",
-      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
+      "case_id": "scdb-1962-124",
+      "name": "HAYNES v. WASHINGTON",
+      "tier": "scdb",
+      "rationale": "ordinary pre-cutoff SCDB case (era spread); memorization-check arm (conditions A/B only)"
     },
     {
-      "case_id": "scdb-1998-027",
-      "name": "ARIZONA DEPARTMENT OF REVENUE v. BLAZE CONSTRUCTION COMPANY, INC.",
-      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
+      "case_id": "scdb-1947-087",
+      "name": "PATERNO v. LYONS, COMMISSIONER OF CORRECTION",
+      "tier": "scdb",
+      "rationale": "ordinary pre-cutoff SCDB case (era spread); memorization-check arm (conditions A/B only)"
     },
     {
-      "case_id": "scdb-1963-085",
-      "name": "JACKSON et al. v. UNITED STATES",
-      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
+      "case_id": "scdb-1948-092",
+      "name": "UNITED STATES v. CORS",
+      "tier": "scdb",
+      "rationale": "ordinary pre-cutoff SCDB case (era spread); memorization-check arm (conditions A/B only)"
     },
     {
-      "case_id": "scdb-1973-083",
-      "name": "HUDDLESTON v. UNITED STATES",
-      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
+      "case_id": "scdb-1967-183",
+      "name": "POWELL v. TEXAS",
+      "tier": "scdb",
+      "rationale": "ordinary pre-cutoff SCDB case (era spread); memorization-check arm (conditions A/B only)"
     },
     {
-      "case_id": "scdb-1980-047",
-      "name": "DIAMOND, COMMISSIONER OF PATENTS AND TRADEMARKS v. DIEHR et al.",
-      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
+      "case_id": "scdb-1976-158",
+      "name": "MAHER, COMMISSIONER OF SOCIAL SERVICES OF CONNECTICUT v. DOE et al.",
+      "tier": "scdb",
+      "rationale": "ordinary pre-cutoff SCDB case (era spread); memorization-check arm (conditions A/B only)"
     },
     {
-      "case_id": "scdb-1972-070",
-      "name": "BRADLEY et al. v. UNITED STATES",
-      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
+      "case_id": "scdb-1976-164",
+      "name": "COMMISSIONER OF INTERNAL REVENUE v. STANDARD LIFE & ACCIDENT INSURANCE CO.",
+      "tier": "scdb",
+      "rationale": "ordinary pre-cutoff SCDB case (era spread); memorization-check arm (conditions A/B only)"
     },
     {
-      "case_id": "scdb-1969-056",
-      "name": "INTERNATIONAL LONGSHOREMEN'S ASSOCIATION, LOCAL 1416, AFL-CIO v. ARIADNE SHIPPING CO., LTD., et al.",
-      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
+      "case_id": "scdb-1973-166",
+      "name": "TAYLOR v. HAYES, JUDGE",
+      "tier": "scdb",
+      "rationale": "ordinary pre-cutoff SCDB case (era spread); memorization-check arm (conditions A/B only)"
     },
     {
-      "case_id": "scdb-1989-058",
-      "name": "NATIONAL LABOR RELATIONS BOARD v. CURTIN MATHESON SCIENTIFIC, INC.",
-      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
+      "case_id": "scdb-1980-144",
+      "name": "CALIFORNIA v. PRYSOCK",
+      "tier": "scdb",
+      "rationale": "ordinary pre-cutoff SCDB case (era spread); memorization-check arm (conditions A/B only)"
     },
     {
-      "case_id": "scdb-1969-081",
-      "name": "RICHARD S. v. CITY OF NEW YORK",
-      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
-    },
-    {
-      "case_id": "scdb-1949-066",
-      "name": "MULLANE, SPECIAL GUARDIAN, v. CENTRAL HANOVER BANK & TRUST CO., TRUSTEE, ET AL.",
-      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
-    },
-    {
-      "case_id": "scdb-1980-078",
-      "name": "CALIFORNIA et al. v. SIERRA CLUB et al.",
-      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
-    },
-    {
-      "case_id": "scdb-1964-091",
-      "name": "MCKINNIE et al. v. TENNESSEE",
-      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
-    },
-    {
-      "case_id": "scdb-1984-092",
-      "name": "TENNESSEE v. STREET",
-      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
-    },
-    {
-      "case_id": "scdb-1947-082",
-      "name": "KENNEDY ET AL. v. SILAS MASON CO.",
-      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
-    },
-    {
-      "case_id": "scdb-1976-095",
-      "name": "BLACKLEDGE, WARDEN, et al. v. ALLISON",
-      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
-    },
-    {
-      "case_id": "scdb-1954-079",
-      "name": "EMSPAK v. UNITED STATES",
-      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
-    },
-    {
-      "case_id": "scdb-2010-048",
-      "name": "UNITED STATES, PETITIONER v. JASON LOUIS TINKLENBERG",
-      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
-    },
-    {
-      "case_id": "scdb-1992-064",
-      "name": "HENRY G. CISNEROS, SECRETARY OF HOUSING AND URBAN DEVELOPMENT, et al. v. ALPINE RIDGE GROUP et al.",
-      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
-    },
-    {
-      "case_id": "scdb-1949-071",
-      "name": "INTERNATIONAL UNION OF UNITED AUTOMOBILE, ETC. WORKERS OF AMERICA, C. I. O., ET AL. v. O'BRIEN, PROSECUTING ATTORNEY, ET AL.",
-      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
-    },
-    {
-      "case_id": "scdb-1995-066",
-      "name": "LOCKHEED CORPORATION, et al. v. PAUL L. SPINK",
-      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
-    },
-    {
-      "case_id": "scdb-2007-052",
-      "name": "IRIZARRY v. UNITED STATES",
-      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
-    },
-    {
-      "case_id": "scdb-1952-112",
-      "name": "SHELTON v. UNITED STATES",
-      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
-    },
-    {
-      "case_id": "scdb-1962-144",
-      "name": "YELLIN v. UNITED STATES",
-      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
-    },
-    {
-      "case_id": "scdb-2014-058",
-      "name": "WALKER v. TEXAS DIVISION, SONS OF CONFEDERATE VETERANS, INC.",
-      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
-    },
-    {
-      "case_id": "scdb-1965-130",
-      "name": "JOHNSON et al. v. NEW JERSEY",
-      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
-    },
-    {
-      "case_id": "scdb-2009-078",
-      "name": "RENT-A-CENTER, WEST, INC. v. ANTONIO JACKSON",
-      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
-    },
-    {
-      "case_id": "scdb-1957-129",
-      "name": "HANSON, EXECUTRIX, et al. v. DENCKLA et al.",
-      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
-    },
-    {
-      "case_id": "scdb-1993-081",
-      "name": "FLORENCE DOLAN v. CITY OF TIGARD",
-      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
-    },
-    {
-      "case_id": "scdb-2013-066",
-      "name": "FIFTH THIRD BANCORP v. DUDENHOEFFER",
-      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
-    },
-    {
-      "case_id": "scdb-1979-144",
-      "name": "CENTRAL MACHINERY CO. v. ARIZONA STATE TAX COMMISSION",
-      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
-    },
-    {
-      "case_id": "scdb-1971-173",
-      "name": "BOARD OF REGENTS OF STATE COLLEGES et al. v. ROTH",
-      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
-    },
-    {
-      "case_id": "scdb-1982-147",
-      "name": "UNITED STATES v. SELLS ENGINEERING, INC., et al.",
-      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
-    },
-    {
-      "case_id": "scdb-1977-104",
-      "name": "QUERN, DIRECTOR, DEPARTMENT OF PUBLIC AID OF ILLINOIS, et al. v. MANDLEY et al.",
-      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
-    },
-    {
-      "case_id": "scdb-2022-045",
-      "name": "JACK DANIELS PROPERTIES v. VIP PRODUCTS LLC",
-      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
+      "case_id": "scdb-2010-054",
+      "name": "CLIFTON TERELLE MCNEILL, PETITIONER v. UNITED STATES",
+      "tier": "scdb",
+      "rationale": "ordinary pre-cutoff SCDB case (era spread); memorization-check arm (conditions A/B only)"
     }
   ],
   "pending": [
@@ -271,5 +924,230 @@
       "rationale": "argued 2026-01-13, undecided as of ingestion; uncontaminatable by definition"
     }
   ],
-  "excluded": []
+  "excluded": [
+    {
+      "name": "Trump v. Barbara",
+      "reason": "duplicate cluster (revision)"
+    },
+    {
+      "name": "Landor v. Louisiana Dept of Corrections and Public Safety",
+      "reason": "duplicate cluster (revision)"
+    },
+    {
+      "name": "Hunter v. United States Revisions: 6/19/26",
+      "reason": "ground truth not cleanly extractable (mixed/unclear)"
+    },
+    {
+      "name": "Hunter v. United States",
+      "reason": "duplicate cluster (revision)"
+    },
+    {
+      "name": "T. M. v. University of Md. Medical System Corporation",
+      "reason": "duplicate cluster (revision)"
+    },
+    {
+      "name": "Abouammo v. United States",
+      "reason": "duplicate cluster (revision)"
+    },
+    {
+      "name": "FCC v. AT&T",
+      "reason": "ground truth not cleanly extractable (mixed/unclear)"
+    },
+    {
+      "name": "Hamm v. Smith",
+      "reason": "ground truth not cleanly extractable (mixed/unclear)"
+    },
+    {
+      "name": "Louisiana v. Callais",
+      "reason": "duplicate cluster (revision)"
+    },
+    {
+      "name": "Chiles v. Salazar Revisions: 3/31/26",
+      "reason": "duplicate cluster (revision)"
+    },
+    {
+      "name": "Galette v. New Jersey Transit Corp.",
+      "reason": "ground truth not cleanly extractable (mixed/unclear)"
+    },
+    {
+      "name": "Mirabelli v. Bonta",
+      "reason": "ground truth not cleanly extractable (mixed/unclear)"
+    },
+    {
+      "name": "Learning Resources, Inc. v. Trump Revisions: 2/23/26",
+      "reason": "ground truth not cleanly extractable (mixed/unclear)"
+    },
+    {
+      "name": "Learning Resources, Inc. v. Trump",
+      "reason": "duplicate cluster (revision)"
+    },
+    {
+      "name": "Bost v. Illinois Bd. of Elections",
+      "reason": "duplicate cluster (revision)"
+    },
+    {
+      "name": "Barrett v. United States",
+      "reason": "duplicate cluster (revision)"
+    },
+    {
+      "name": "Goldey v. Fields",
+      "reason": "duplicate cluster (revision)"
+    },
+    {
+      "name": "Goldey v. Fields",
+      "reason": "duplicate cluster (revision)"
+    },
+    {
+      "name": "Trump v. CASA, Inc.",
+      "reason": "duplicate cluster (revision)"
+    },
+    {
+      "name": "Trump v. CASA, Inc.",
+      "reason": "duplicate cluster (revision)"
+    },
+    {
+      "name": "Mahmoud v. Taylor",
+      "reason": "duplicate cluster (revision)"
+    },
+    {
+      "name": "Trump v. CASA, Inc. Revisions: 6/27/25",
+      "reason": "duplicate cluster (revision)"
+    },
+    {
+      "name": "Free Speech Coalition, Inc. v. Paxton",
+      "reason": "duplicate cluster (revision)"
+    },
+    {
+      "name": "FCC v. Consumers' Research",
+      "reason": "duplicate cluster (revision)"
+    },
+    {
+      "name": "Kennedy v. Braidwood Management, Inc.",
+      "reason": "duplicate cluster (revision)"
+    },
+    {
+      "name": "Trump v. CASA, Inc. Revisions: 6/27/25",
+      "reason": "duplicate cluster (revision)"
+    },
+    {
+      "name": "Hewitt v. United States",
+      "reason": "duplicate cluster (revision)"
+    },
+    {
+      "name": "Riley v. Bondi",
+      "reason": "duplicate cluster (revision)"
+    },
+    {
+      "name": "Gutierrez v. Saenz",
+      "reason": "duplicate cluster (revision)"
+    },
+    {
+      "name": "Medina v. Planned Parenthood South Atlantic",
+      "reason": "duplicate cluster (revision)"
+    },
+    {
+      "name": "Riley v. Bondi Revisions: 6/26/25",
+      "reason": "duplicate cluster (revision)"
+    },
+    {
+      "name": "Esteras v. United States",
+      "reason": "duplicate cluster (revision)"
+    },
+    {
+      "name": "FDA v. R. J. Reynolds Vapor Co.",
+      "reason": "duplicate cluster (revision)"
+    },
+    {
+      "name": "Diamond Alternative Energy, LLC v. EPA",
+      "reason": "duplicate cluster (revision)"
+    },
+    {
+      "name": "Fuld v. Palestine Liberation Organization",
+      "reason": "duplicate cluster (revision)"
+    },
+    {
+      "name": "McLaughlin Chiropractic Associates, Inc. v. McKesson Corp.",
+      "reason": "duplicate cluster (revision)"
+    },
+    {
+      "name": "Oklahoma v. EPA",
+      "reason": "duplicate cluster (revision)"
+    },
+    {
+      "name": "United States v. Skrmetti",
+      "reason": "duplicate cluster (revision)"
+    },
+    {
+      "name": "NRC v. Texas",
+      "reason": "duplicate cluster (revision)"
+    },
+    {
+      "name": "EPA v. Calumet Shreveport Refining, L.L.C.",
+      "reason": "duplicate cluster (revision)"
+    },
+    {
+      "name": "Perttu v. Richards",
+      "reason": "duplicate cluster (revision)"
+    },
+    {
+      "name": "Martin v. United States",
+      "reason": "duplicate cluster (revision)"
+    },
+    {
+      "name": "Soto v. United States",
+      "reason": "duplicate cluster (revision)"
+    },
+    {
+      "name": "Commissioner v. Zuch",
+      "reason": "duplicate cluster (revision)"
+    },
+    {
+      "name": "Parrish v. United States",
+      "reason": "duplicate cluster (revision)"
+    },
+    {
+      "name": "A. J. T. v. Osseo Area Schools, Independent School Dist. No. 279",
+      "reason": "duplicate cluster (revision)"
+    },
+    {
+      "name": "Rivers v. Guerrero",
+      "reason": "duplicate cluster (revision)"
+    },
+    {
+      "name": "Catholic Charities Bureau, Inc. v. Wisconsin Labor and Industry Review Comm'n.",
+      "reason": "duplicate cluster (revision)"
+    },
+    {
+      "name": "Laboratory Corp. of America Holdings v. Davis",
+      "reason": "ground truth not cleanly extractable (mixed/unclear)"
+    },
+    {
+      "name": "Ames v. Ohio Department of Youth Services",
+      "reason": "duplicate cluster (revision)"
+    },
+    {
+      "name": "Laboratory Corp. of America Holdings v. Davis",
+      "reason": "duplicate cluster (revision)"
+    },
+    {
+      "name": "Catholic Charities Bureau, Inc. v. Wisconsin Labor and Industry Review Comm'n.",
+      "reason": "duplicate cluster (revision)"
+    },
+    {
+      "name": "CC/Devas (Mauritius) Ltd. v. Antrix Corp.",
+      "reason": "duplicate cluster (revision)"
+    },
+    {
+      "name": "Smith & Wesson Brands, Inc. v. Estados Unidos Mexicanos",
+      "reason": "duplicate cluster (revision)"
+    },
+    {
+      "name": "BLOM Bank SAL v. Honickman",
+      "reason": "duplicate cluster (revision)"
+    },
+    {
+      "name": "BLOM Bank SAL v. Honickman",
+      "reason": "duplicate cluster (revision)"
+    }
+  ]
 }

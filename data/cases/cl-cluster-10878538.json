@@ -1,0 +1,19 @@
+{
+  "case_id": "cl-cluster-10878538",
+  "name": "Blanche v. Lau",
+  "docket": "25-429",
+  "date_argued": "2026-04-22",
+  "date_decided": "2026-06-23",
+  "question_presented": "To remove a lawful permanent resident who committed an offense listed in Section 1182(a)(2) and was subsequently paroled into the United States, must the government prove that it possessed clear and convincing evidence of the offense at the time of the lawful permanent resident\u2019s last reentry into the United States?",
+  "facts_summary": "Muk Choi Lau, a native and citizen of China, was admitted to the United States as a lawful permanent resident on September 7, 2007, after several years of traveling to the country as a nonimmigrant. On May 7, 2012, Lau was charged in New Jersey with third-degree trademark counterfeiting. While awaiting trial, he left the United States for a brief period. Upon returning on June 15, 2012, he presented himself at John F. Kennedy International Airport as a returning lawful permanent resident. However, because of his pending charge, immigration authorities declined to admit him outright and instead paroled him into the country pursuant to 8 U.S.C. \u00a7 1182(d)(5)(A). Over a year later, in June 2013, Lau pleaded guilty to the counterfeiting charge and was sentenced to two years\u2019 probation. The Department of Homeland Security initiated removal proceedings against Lau in March 2014, charging him with inadmissibility under 8 U.S.C. \u00a7 1182(a)(2)(A)(i)(I) for having been convicted of a crime involving moral turpitude (CIMT). Lau argued that he should not have been treated as an arriving alien at the time of reentry and that he was eligible for a discretionary waiver under 8 U.S.C. \u00a7 1182(h). The immigration judge rejected both claims, and the Board of Immigration Appeals affirmed. Lau petitioned for review, arguing primarily that DHS lacked clear and convincing evidence to treat him as an applicant for admission on reentry merely due to a then-pending charge. The U.S. Court of Appeals for the Second Circuit agreed, holding that DHS erred in treating Lau as inadmissible based solely on unproven allegations at the time of reentry and granted his petition. The immigration judge ordered removal in 2018, and the Board of Immigration Appeals upheld that decision in 2021. The Second Circuit vacated the removal order in 2025 and remanded the case to terminate proceedings under the inadmissibility ground, reserving the possibility of future removal under a deportability provision.",
+  "lower_court_ruling": "United States Court of Appeals for the Second Circuit",
+  "opinion_excerpt_urls": [
+    "https://www.courtlistener.com/opinion/10878538/blanche-v-lau/"
+  ],
+  "ground_truth": {
+    "disposition": "reversed",
+    "vote_split": "unknown",
+    "scdb_id": null
+  },
+  "status": "decided"
+}

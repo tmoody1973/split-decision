@@ -1,0 +1,17 @@
+{
+  "case_id": "landmark-9",
+  "name": "Youngstown Sheet & Tube Co. v. Sawyer",
+  "docket": "n/a",
+  "date_argued": "1952-06-02",
+  "date_decided": "1952-06-02",
+  "question_presented": "Memorization-check set: predict the Supreme Court's disposition in Youngstown Sheet & Tube Co. v. Sawyer (343 U.S. 579, 1952).",
+  "facts_summary": "Historical case in the memorization-check arm (famous tier). By design, only the case name, citation, and year are provided \u2014 this arm measures recall of memorized outcomes, not reasoning.",
+  "lower_court_ruling": "not provided (memorization-check arm)",
+  "opinion_excerpt_urls": [],
+  "ground_truth": {
+    "disposition": "affirmed",
+    "vote_split": "6-3",
+    "scdb_id": null
+  },
+  "status": "decided"
+}

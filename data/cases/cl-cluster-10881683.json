@@ -1,0 +1,19 @@
+{
+  "case_id": "cl-cluster-10881683",
+  "name": "Chatrie v. United States",
+  "docket": "25-112",
+  "date_argued": "2026-04-27",
+  "date_decided": "2026-06-29",
+  "question_presented": "Did the execution of the geofence warrant violate the Fourth Amendment?",
+  "facts_summary": "Okello Chatrie was arrested in connection with the armed robbery of a bank in Richmond, Virginia, where an individual entered the Call Federal Credit Union, threatened employees and patrons with a handgun, and escaped with $195,000. The robbery was captured by surveillance footage, which showed the perpetrator appearing to talk on a cellphone. Lacking viable leads, Detective Joshua Hylton applied for a \u201cgeofence warrant\u201d in June 2019. This novel form of warrant compelled Google to provide location data for all devices that had been near the robbery site within a one-hour window around the time of the crime. The geofence specified a 150-meter radius centered on the bank, encompassing not only the crime scene but also public streets, private residences, a hotel, a church, and a restaurant. Google responded with anonymized location data of devices within the geofence during the specified time. The government then requested two additional sets of data from Google: (1) expanded location data from nine of the original nineteen users, covering movements outside the geofence over a longer timeframe, and (2) identifying information for three of those users. One account belonged to Chatrie. Based on this data, law enforcement identified him as the suspect, arrested him, and charged him in federal court. Chatrie moved to suppress the location data obtained through the geofence warrant, arguing that it violated the Fourth Amendment. The U.S. District Court for the Eastern District of Virginia held that the warrant likely violated the Fourth Amendment but declined to suppress the evidence under the good-faith exception. The U.S. Court of Appeals for the Fourth Circuit, sitting en banc, affirmed the district court\u2019s denial of the suppression motion. While the panel sharply disagreed both on whether a Fourth Amendment search had occurred and whether the warrant was constitutionally valid, all judges agreed that any defect was ultimately excused under the good-faith exception.",
+  "lower_court_ruling": "United States Court of Appeals for the Fourth Circuit",
+  "opinion_excerpt_urls": [
+    "https://www.courtlistener.com/opinion/10881683/chatrie-v-united-states/"
+  ],
+  "ground_truth": {
+    "disposition": "reversed",
+    "vote_split": "unknown",
+    "scdb_id": null
+  },
+  "status": "decided"
+}

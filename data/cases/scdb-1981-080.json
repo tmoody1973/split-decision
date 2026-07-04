@@ -1,0 +1,17 @@
+{
+  "case_id": "scdb-1981-080",
+  "name": "INTERNATIONAL LONGSHOREMEN'S ASSOCIATION, AFL-CIO, et al. v. ALLIED INTERNATIONAL, INC.",
+  "docket": "80-1663",
+  "date_argued": "1982-04-20",
+  "date_decided": "1982-04-20",
+  "question_presented": "Memorization-check set: predict the Supreme Court's disposition in INTERNATIONAL LONGSHOREMEN'S ASSOCIATION, AFL-CIO, et al. v. ALLIED INTERNATIONAL, INC. (456 U.S. 212, 1981 Term).",
+  "facts_summary": "Historical case in the memorization-check arm. By design, only the case name, citation, and term are provided \u2014 this arm measures recall of memorized outcomes, not reasoning.",
+  "lower_court_ruling": "not provided (memorization-check arm)",
+  "opinion_excerpt_urls": [],
+  "ground_truth": {
+    "disposition": "affirmed",
+    "vote_split": "9-0",
+    "scdb_id": "1981-080"
+  },
+  "status": "decided"
+}

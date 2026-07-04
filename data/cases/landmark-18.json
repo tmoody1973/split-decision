@@ -1,0 +1,17 @@
+{
+  "case_id": "landmark-18",
+  "name": "Miranda v. Arizona",
+  "docket": "n/a",
+  "date_argued": "1966-06-13",
+  "date_decided": "1966-06-13",
+  "question_presented": "Memorization-check set: predict the Supreme Court's disposition in Miranda v. Arizona (384 U.S. 436, 1966).",
+  "facts_summary": "Historical case in the memorization-check arm (famous tier). By design, only the case name, citation, and year are provided \u2014 this arm measures recall of memorized outcomes, not reasoning.",
+  "lower_court_ruling": "not provided (memorization-check arm)",
+  "opinion_excerpt_urls": [],
+  "ground_truth": {
+    "disposition": "reversed",
+    "vote_split": "5-4",
+    "scdb_id": null
+  },
+  "status": "decided"
+}

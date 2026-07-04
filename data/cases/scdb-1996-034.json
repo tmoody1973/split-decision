@@ -1,0 +1,17 @@
+{
+  "case_id": "scdb-1996-034",
+  "name": "ARIZONANS FOR OFFICIAL ENGLISH AND ROBERT D. PARK v. ARIZONA et al.",
+  "docket": "95-974",
+  "date_argued": "1997-03-03",
+  "date_decided": "1997-03-03",
+  "question_presented": "Memorization-check set: predict the Supreme Court's disposition in ARIZONANS FOR OFFICIAL ENGLISH AND ROBERT D. PARK v. ARIZONA et al. (520 U.S. 43, 1996 Term).",
+  "facts_summary": "Historical case in the memorization-check arm. By design, only the case name, citation, and term are provided \u2014 this arm measures recall of memorized outcomes, not reasoning.",
+  "lower_court_ruling": "not provided (memorization-check arm)",
+  "opinion_excerpt_urls": [],
+  "ground_truth": {
+    "disposition": "reversed",
+    "vote_split": "9-0",
+    "scdb_id": "1996-034"
+  },
+  "status": "decided"
+}

@@ -1,0 +1,19 @@
+{
+  "case_id": "cl-cluster-10603451",
+  "name": "Parrish v. United States",
+  "docket": "n/a",
+  "date_argued": "2025-06-12",
+  "date_decided": "2025-06-12",
+  "question_presented": "(Slip Opinion) OCTOBER TERM, 2024 1 Syllabus NOTE: Where it is feasible, a syllabus (headnote) will be released, as is being done in connection with this case, at the time the opinion is issued. The syllabus constitutes no part of the opinion of the Court but has been prepared by the Reporter of Decisions for the convenience of the reader. See United States v. Detroit Timber & Lumber Co., 200 U. S. 321, 337. SUPREME COURT OF THE UNITED STATES Syllabus PARRISH v. UNITED STATES CERTIORARI TO THE UNITED STATES COURT OF APPEALS FOR THE FOURTH CIRCUIT No. 24\u2013275. Argued April 21, 2025\u2014Decided June 12, 2025 Federal inmate Donte Parrish alleges that he was placed in restrictive segregated confinement for",
+  "facts_summary": "(Slip Opinion) OCTOBER TERM, 2024 1 Syllabus NOTE: Where it is feasible, a syllabus (headnote) will be released, as is being done in connection with this case, at the time the opinion is issued. The syllabus constitutes no part of the opinion of the Court but has been prepared by the Reporter of Decisions for the convenience of the reader. See United States v. Detroit Timber & Lumber Co., 200 U. S. 321, 337. SUPREME COURT OF THE UNITED STATES Syllabus PARRISH v. UNITED STATES CERTIORARI TO THE UNITED STATES COURT OF APPEALS FOR THE FOURTH CIRCUIT No. 24\u2013275. Argued April 21, 2025\u2014Decided June 12, 2025 Federal inmate Donte Parrish alleges that he was placed in restrictive segregated confinement for 23 months based on his suspected involve- ment in another inmate\u2019s death. After a hearing officer cleared him of wrongdoing, Parrish filed suit in Federal District Court seeking dam- ages for his time in segregated confinement. The District Court dis- missed his case on March 23, 2020, holding that some claims were un- timely and others unexhausted. When the court\u2019s order reached the federal prison two weeks later, Parrish was no longer there, having been transferred to a different facility. Parrish received the dismissal order three months after it was issued and promptly filed a notice of appeal, explaining his delayed receipt. The Fourth Circuit recognized that Parrish\u2019s notice of appeal came well after the 60-day appeal period for suits against the United States, so it construed Parrish\u2019s filing as a motion to reopen the time to appeal under 28 U. S. C. \u00a72107(c). On remand, the District Court granted reopening for 14 days. Parrish did not file a second notice of appeal. Although both Parrish and the United States argued that the original notice of appeal was sufficient, the Fourth Circuit held that Parrish\u2019s failure to file a new notice of appeal within the reopened appeal period deprived the court of juris- diction. Held: A litigant who files a notice of appeal after the original appeal deadline but before the court grants reopening need not file a second notice after reopening. The original notice relates forward to the date reopening is granted. Pp. 4\u201313. (a) Civil litigants must ordinarily file a notice of appeal within 30 days after entry of judgment, or 60 days when the United States is a party. \u00a7\u00a72107(a), (b). In civil cases, the requirement to",
+  "lower_court_ruling": "see syllabus",
+  "opinion_excerpt_urls": [
+    "https://www.courtlistener.com/opinion/10603451/parrish-v-united-states/"
+  ],
+  "ground_truth": {
+    "disposition": "reversed",
+    "vote_split": "unknown",
+    "scdb_id": null
+  },
+  "status": "decided"
+}

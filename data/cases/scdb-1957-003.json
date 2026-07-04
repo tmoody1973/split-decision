@@ -1,0 +1,17 @@
+{
+  "case_id": "scdb-1957-003",
+  "name": "BLACK, ASSISTANT REGIONAL COMMISSIONER, ALCOHOL AND TOBACCO TAX DIVISION, INTERNAL REVENUE SERVICE, v. MAGNOLIA LIQUOR CO., INC.",
+  "docket": "14",
+  "date_argued": "1957-11-12",
+  "date_decided": "1957-11-12",
+  "question_presented": "Memorization-check set: predict the Supreme Court's disposition in BLACK, ASSISTANT REGIONAL COMMISSIONER, ALCOHOL AND TOBACCO TAX DIVISION, INTERNAL REVENUE SERVICE, v. MAGNOLIA LIQUOR CO., INC. (355 U.S. 24, 1957 Term).",
+  "facts_summary": "Historical case in the memorization-check arm. By design, only the case name, citation, and term are provided \u2014 this arm measures recall of memorized outcomes, not reasoning.",
+  "lower_court_ruling": "not provided (memorization-check arm)",
+  "opinion_excerpt_urls": [],
+  "ground_truth": {
+    "disposition": "reversed",
+    "vote_split": "9-0",
+    "scdb_id": "1957-003"
+  },
+  "status": "decided"
+}

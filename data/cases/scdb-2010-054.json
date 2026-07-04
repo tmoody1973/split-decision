@@ -1,0 +1,17 @@
+{
+  "case_id": "scdb-2010-054",
+  "name": "CLIFTON TERELLE MCNEILL, PETITIONER v. UNITED STATES",
+  "docket": "10-5258",
+  "date_argued": "2011-06-06",
+  "date_decided": "2011-06-06",
+  "question_presented": "Memorization-check set: predict the Supreme Court's disposition in CLIFTON TERELLE MCNEILL, PETITIONER v. UNITED STATES (563 U.S. 816, 2010 Term).",
+  "facts_summary": "Historical case in the memorization-check arm. By design, only the case name, citation, and term are provided \u2014 this arm measures recall of memorized outcomes, not reasoning.",
+  "lower_court_ruling": "not provided (memorization-check arm)",
+  "opinion_excerpt_urls": [],
+  "ground_truth": {
+    "disposition": "affirmed",
+    "vote_split": "9-0",
+    "scdb_id": "2010-054"
+  },
+  "status": "decided"
+}

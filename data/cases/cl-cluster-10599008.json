@@ -1,0 +1,19 @@
+{
+  "case_id": "cl-cluster-10599008",
+  "name": "CC/Devas (Mauritius) Ltd. v. Antrix Corp.",
+  "docket": "23-1201",
+  "date_argued": "2025-03-03",
+  "date_decided": "2025-06-05",
+  "question_presented": "Must plaintiffs prove minimum contacts before federal courts may assert personal jurisdiction over foreign states sued under the Foreign Sovereign Immunities Act?",
+  "facts_summary": "This case involves an agreement between two Indian corporations, Devas Multimedia Private Ltd. and Antrix Corp. Ltd. After a dispute arose, Devas obtained an arbitration award from the International Chamber of Commerce against Antrix. Devas then sought to confirm this award in a U.S. district court. Antrix challenged the court\u2019s personal jurisdiction, but the district court confirmed the award, concluding that a minimum contacts analysis was unnecessary under the Foreign Sovereign Immunities Act (FSIA). Antrix appealed the confirmation order, arguing that the district court erred in exercising personal jurisdiction without conducting a minimum contacts analysis. Meanwhile, a group of intervenors, including CC/Devas (Mauritius) Ltd. and others, moved to register the judgment in the Eastern District of Virginia. Both Antrix and Devas challenged this registration order. The U.S. Court of Appeals reversed, concluding that the plaintiff must prove minimum contacts, and its failure to do so meant it could not exercise personal jurisdiction over Antrix.",
+  "lower_court_ruling": "United States Court of Appeals for the Ninth Circuit",
+  "opinion_excerpt_urls": [
+    "https://www.courtlistener.com/opinion/10599008/ccdevas-mauritius-ltd-v-antrix-corp/"
+  ],
+  "ground_truth": {
+    "disposition": "reversed",
+    "vote_split": "9-0",
+    "scdb_id": null
+  },
+  "status": "decided"
+}

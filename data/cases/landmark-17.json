@@ -1,0 +1,17 @@
+{
+  "case_id": "landmark-17",
+  "name": "Griswold v. Connecticut",
+  "docket": "n/a",
+  "date_argued": "1965-06-07",
+  "date_decided": "1965-06-07",
+  "question_presented": "Memorization-check set: predict the Supreme Court's disposition in Griswold v. Connecticut (381 U.S. 479, 1965).",
+  "facts_summary": "Historical case in the memorization-check arm (famous tier). By design, only the case name, citation, and year are provided \u2014 this arm measures recall of memorized outcomes, not reasoning.",
+  "lower_court_ruling": "not provided (memorization-check arm)",
+  "opinion_excerpt_urls": [],
+  "ground_truth": {
+    "disposition": "reversed",
+    "vote_split": "7-2",
+    "scdb_id": null
+  },
+  "status": "decided"
+}

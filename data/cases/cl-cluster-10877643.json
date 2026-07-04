@@ -1,0 +1,19 @@
+{
+  "case_id": "cl-cluster-10877643",
+  "name": "T. M. v. University of Md. Medical System Corporation Revisions: 6/19/26",
+  "docket": "25-197",
+  "date_argued": "2026-04-20",
+  "date_decided": "2026-06-18",
+  "question_presented": "Can the Rooker-Feldman doctrine, which prevents parties who lose in state courts from challenging injuries caused by state-court judgments, be triggered by a state-court decision that remains subject to further review in state court?",
+  "facts_summary": "In March 2023, T.M., a woman with a rare medical condition that triggers psychosis upon consuming gluten, was involuntarily committed to Baltimore Washington Medical Center after an episode. Her treating psychiatrist sought and received state approval to forcibly administer antipsychotic medication; T.M. contested this but was unsuccessful in administrative proceedings. Independent psychiatrists later stated that T.M. no longer required inpatient care. To secure her release, T.M. and the hospital negotiated an oral agreement, which was formalized as a state court consent order. The order allowed her to leave the hospital on the condition that she comply with ongoing psychiatric treatment and medications, switch providers, and drop pending lawsuits. Her parents, J.M. and A.M., were also bound to notify authorities if she failed to comply. Ten days later, represented by new counsel, T.M. and her parents filed the present federal lawsuit claiming that the consent order was unconstitutional and entered under duress. They challenged the order as violating T.M.\u2019s due process rights and sought declaratory and injunctive relief invalidating its enforcement. They did not request damages or challenge the initial commitment decisions. The U.S. District Court for the District of Maryland dismissed the lawsuit. It held that T.M.\u2019s claims were barred by the Rooker-Feldman doctrine, which prevents parties who lose in state courts from challenging injuries caused by state-court judgments, because they amounted to a request for federal review of a state court judgment. It also dismissed the parents\u2019 claims for failure to state a constitutional violation. The U.S. Court of Appeals for the Fourth Circuit affirmed, concluding that T.M. was a \u201cstate-court loser\u201d seeking to undo a state judgment still reviewable in Maryland courts. Nonetheless, it remanded for the district court to modify T.M.\u2019s dismissal to be without prejudice, due to lack of jurisdiction.",
+  "lower_court_ruling": "United States Court of Appeals for the Fourth Circuit",
+  "opinion_excerpt_urls": [
+    "https://www.courtlistener.com/opinion/10877643/t-m-v-university-of-md-medical-system-corporation-revisions-61926/"
+  ],
+  "ground_truth": {
+    "disposition": "affirmed",
+    "vote_split": "unknown",
+    "scdb_id": null
+  },
+  "status": "decided"
+}

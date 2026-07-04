@@ -1,0 +1,19 @@
+{
+  "case_id": "cl-cluster-10603452",
+  "name": "Martin v. United States",
+  "docket": "n/a",
+  "date_argued": "2025-06-12",
+  "date_decided": "2025-06-12",
+  "question_presented": "(Slip Opinion) OCTOBER TERM, 2024 1 Syllabus NOTE: Where it is feasible, a syllabus (headnote) will be released, as is being done in connection with this case, at the time the opinion is issued. The syllabus constitutes no part of the opinion of the Court but has been prepared by the Reporter of Decisions for the convenience of the reader. See United States v. Detroit Timber & Lumber Co., 200 U. S. 321, 337. SUPREME COURT OF THE UNITED STATES Syllabus MARTIN, INDIVIDUALLY AND AS PARENT AND NEXT FRIEND OF G. W., A MINOR, ET AL. v. UNITED STATES ET AL. CERTIORARI TO THE UNITED STATES COURT OF APPEALS FOR THE ELEVENTH CIRCUIT No. 24\u2013362. Argued April 29, 2025\u2014Decided June",
+  "facts_summary": "(Slip Opinion) OCTOBER TERM, 2024 1 Syllabus NOTE: Where it is feasible, a syllabus (headnote) will be released, as is being done in connection with this case, at the time the opinion is issued. The syllabus constitutes no part of the opinion of the Court but has been prepared by the Reporter of Decisions for the convenience of the reader. See United States v. Detroit Timber & Lumber Co., 200 U. S. 321, 337. SUPREME COURT OF THE UNITED STATES Syllabus MARTIN, INDIVIDUALLY AND AS PARENT AND NEXT FRIEND OF G. W., A MINOR, ET AL. v. UNITED STATES ET AL. CERTIORARI TO THE UNITED STATES COURT OF APPEALS FOR THE ELEVENTH CIRCUIT No. 24\u2013362. Argued April 29, 2025\u2014Decided June 12, 2025 On October 18, 2017, the FBI raided the wrong house in suburban At- lanta. Officers meant to execute search and arrest warrants at a sus- pected gang hideout at 3741 Landau Lane but instead stormed 3756 Denville Trace, a quiet family home occupied by petitioners Hilliard Toi Cliatt, his partner Curtrina Martin, and her 7-year-old son. A six- member SWAT team breached the front door, detonated a flash-bang grenade, and assaulted the innocent occupants before realizing their mistake. The cause of the error was Special Agent Guerra\u2019s reliance on a personal GPS device, combined with the team\u2019s failure to notice the street sign for \u201cDenville Trace\u201d and the house number visible on the mailbox. Left with personal injuries and property damage, peti- tioners sued the United States under the Federal Tort Claims Act (FTCA), 28 U. S. C. \u00a72671 et seq., seeking damages resulting from the officers\u2019 alleged negligent and intentional actions during the raid. The district court granted summary judgment to the government. The Eleventh Circuit affirmed, applying a unique approach to FTCA claims. The FTCA waives the federal government\u2019s sovereign immunity from suit as to certain torts committed by federal employees acting within the scope of their employment. But that waiver is subject to statutory exceptions, including two relevant to a law enforcement mis- conduct case like this one. The first is the intentional-tort exception in \u00a72680(h), which bars claims against the government for 11 enumer- ated intentional torts. The second is the discretionary-function excep- tion in \u00a72680(a), which bars claims against the government that are based on an official\u2019s exercise of discretionary functions. Section 2 MARTIN v. UNITED STATES Syllabus 2680(h) also contains a \u201claw",
+  "lower_court_ruling": "see syllabus",
+  "opinion_excerpt_urls": [
+    "https://www.courtlistener.com/opinion/10603452/martin-v-united-states/"
+  ],
+  "ground_truth": {
+    "disposition": "reversed",
+    "vote_split": "unknown",
+    "scdb_id": null
+  },
+  "status": "decided"
+}

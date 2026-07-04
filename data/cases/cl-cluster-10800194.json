@@ -1,0 +1,19 @@
+{
+  "case_id": "cl-cluster-10800194",
+  "name": "Geo Group, Inc. v. Menocal",
+  "docket": "n/a",
+  "date_argued": "2026-02-25",
+  "date_decided": "2026-02-25",
+  "question_presented": "(Slip Opinion) OCTOBER TERM, 2025 1 Syllabus NOTE: Where it is feasible, a syllabus (headnote) will be released, as is being done in connection with this case, at the time the opinion is issued. The syllabus constitutes no part of the opinion of the Court but has been prepared by the Reporter of Decisions for the convenience of the reader. See United States v. Detroit Timber & Lumber Co., 200 U. S. 321, 337. SUPREME COURT OF THE UNITED STATES Syllabus GEO GROUP, INC. v. MENOCAL ET AL. CERTIORARI TO THE UNITED STATES COURT OF APPEALS FOR THE TENTH CIRCUIT No. 24\u2013758. Argued November 10, 2025\u2014Decided February 25, 2026 Petitioner GEO Group operates a private detention facility in Aurora, Colorado,",
+  "facts_summary": "(Slip Opinion) OCTOBER TERM, 2025 1 Syllabus NOTE: Where it is feasible, a syllabus (headnote) will be released, as is being done in connection with this case, at the time the opinion is issued. The syllabus constitutes no part of the opinion of the Court but has been prepared by the Reporter of Decisions for the convenience of the reader. See United States v. Detroit Timber & Lumber Co., 200 U. S. 321, 337. SUPREME COURT OF THE UNITED STATES Syllabus GEO GROUP, INC. v. MENOCAL ET AL. CERTIORARI TO THE UNITED STATES COURT OF APPEALS FOR THE TENTH CIRCUIT No. 24\u2013758. Argued November 10, 2025\u2014Decided February 25, 2026 Petitioner GEO Group operates a private detention facility in Aurora, Colorado, under a contract with U. S. Immigration and Customs En- forcement (ICE). Respondent Alejandro Menocal, a former detainee at the Aurora facility, initiated this class action, alleging GEO\u2019s work pol- icies for detainees violate a federal bar on forced labor and Colorado\u2019s prohibition on unjust enrichment. GEO responded that the suit must be dismissed under Yearsley v. W. A. Ross Constr. Co., 309 U. S. 18, which held that a federal contractor cannot be held liable for conduct that the Government has lawfully \u201cauthorized and directed\u201d the con- tractor to perform. Id., at 20\u201321. GEO argued that ICE had author- ized and directed it to carry out the challenged labor policies. But the District Court did not read GEO\u2019s contract with the Government to instruct GEO to adopt those policies. The District Court thus con- cluded that the Yearsley doctrine did not relieve GEO of legal respon- sibility and a trial would be necessary. GEO immediately filed an ap- peal, which the Court of Appeals for the Tenth Circuit dismissed for lack of jurisdiction, holding that an order denying Yearsley protection does not qualify for interlocutory review under Cohen v. Beneficial In- dustrial Loan Corp., 337 U. S. 541. Held: Because Yearsley provides federal contractors a potential merits defense rather than an immunity from suit, a pretrial order denying Yearsley protection is not immediately appealable. Pp. 3\u201312. (a) The courts of appeals have jurisdiction over appeals from \u201cfinal decisions of the district courts.\u201d 28 U. S. C. \u00a71291. A decision gener- ally is \u201cfinal\u201d only when it \u201cresolves the entire case\u201d\u2014when it \u201cends the litigation\u201d on the merits or otherwise. Ritzen Group, Inc. v. Jackson 2 GEO GROUP, INC. v.",
+  "lower_court_ruling": "see syllabus",
+  "opinion_excerpt_urls": [
+    "https://www.courtlistener.com/opinion/10800194/geo-group-inc-v-menocal/"
+  ],
+  "ground_truth": {
+    "disposition": "affirmed",
+    "vote_split": "unknown",
+    "scdb_id": null
+  },
+  "status": "decided"
+}

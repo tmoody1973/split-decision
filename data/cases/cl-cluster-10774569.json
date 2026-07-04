@@ -1,0 +1,19 @@
+{
+  "case_id": "cl-cluster-10774569",
+  "name": "Bost v. Illinois Bd. of Elections Revisions: 1/14/26",
+  "docket": "n/a",
+  "date_argued": "2026-01-14",
+  "date_decided": "2026-01-14",
+  "question_presented": "(Slip Opinion) OCTOBER TERM, 2025 1 Syllabus NOTE: Where it is feasible, a syllabus (headnote) will be released, as is being done in connection with this case, at the time the opinion is issued. The syllabus constitutes no part of the opinion of the Court but has been prepared by the Reporter of Decisions for the convenience of the reader. See United States v. Detroit Timber & Lumber Co., 200 U. S. 321, 337. SUPREME COURT OF THE UNITED STATES Syllabus BOST ET AL. v. ILLINOIS STATE BOARD OF ELECTIONS ET AL. CERTIORARI TO THE UNITED STATES COURT OF APPEALS FOR THE SEVENTH CIRCUIT No. 24\u2013568. Argued October 8, 2025\u2014Decided January 14, 2026 Illinois law requires election officials to count",
+  "facts_summary": "(Slip Opinion) OCTOBER TERM, 2025 1 Syllabus NOTE: Where it is feasible, a syllabus (headnote) will be released, as is being done in connection with this case, at the time the opinion is issued. The syllabus constitutes no part of the opinion of the Court but has been prepared by the Reporter of Decisions for the convenience of the reader. See United States v. Detroit Timber & Lumber Co., 200 U. S. 321, 337. SUPREME COURT OF THE UNITED STATES Syllabus BOST ET AL. v. ILLINOIS STATE BOARD OF ELECTIONS ET AL. CERTIORARI TO THE UNITED STATES COURT OF APPEALS FOR THE SEVENTH CIRCUIT No. 24\u2013568. Argued October 8, 2025\u2014Decided January 14, 2026 Illinois law requires election officials to count mail-in ballots postmarked or certified no later than election day and received within two weeks of election day. Congressman Michael Bost and two other political can- didates filed a lawsuit claiming that counting ballots received after election day violates federal law. They principally contended that do- ing so conflicts with 2 U. S. C. \u00a77 and 3 U. S. C. \u00a71, which set election day as the Tuesday following the first Monday in November. The dis- trict court dismissed the case, and the Seventh Circuit affirmed on the ground that petitioners lacked standing. Held: As a candidate for office, Congressman Bost has standing to chal- lenge the rules that govern the counting of votes in his election. Pp. 3\u2013 10. (a) Under Article III of the Constitution, plaintiffs must have a \u201cper- sonal stake\u201d in a case to have standing to sue. FDA v. Alliance for Hippocratic Medicine, 602 U. S. 367, 379. An unlawful election rule can injure a candidate in several ways: It might cause him to lose the election, require him to expend additional resources, or decrease his vote share and damage his reputation. But winning, and doing so as inexpensively and decisively as possible, are not a candidate\u2019s only in- terests in an election. Candidates also have an interest in a fair process. Candidates seek to represent the people, and their interest in that prize cannot be sev- ered from their interest in the electoral process. Win or lose, candi- dates suffer when the process departs from the law. The harm to can- didates from an unfair and inaccurate election is not common to all. 2 BOST v. ILLINOIS STATE BD. OF ELECTIONS Syllabus While voters",
+  "lower_court_ruling": "see syllabus",
+  "opinion_excerpt_urls": [
+    "https://www.courtlistener.com/opinion/10774569/bost-v-illinois-bd-of-elections-revisions-11426/"
+  ],
+  "ground_truth": {
+    "disposition": "reversed",
+    "vote_split": "5-4",
+    "scdb_id": null
+  },
+  "status": "decided"
+}

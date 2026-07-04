@@ -1,0 +1,17 @@
+{
+  "case_id": "landmark-4",
+  "name": "Dred Scott v. Sandford",
+  "docket": "n/a",
+  "date_argued": "1857-03-06",
+  "date_decided": "1857-03-06",
+  "question_presented": "Memorization-check set: predict the Supreme Court's disposition in Dred Scott v. Sandford (60 U.S. (19 How.) 393, 1857).",
+  "facts_summary": "Historical case in the memorization-check arm (famous tier). By design, only the case name, citation, and year are provided \u2014 this arm measures recall of memorized outcomes, not reasoning.",
+  "lower_court_ruling": "not provided (memorization-check arm)",
+  "opinion_excerpt_urls": [],
+  "ground_truth": {
+    "disposition": "reversed",
+    "vote_split": "7-2",
+    "scdb_id": null
+  },
+  "status": "decided"
+}

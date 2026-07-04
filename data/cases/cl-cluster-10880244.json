@@ -1,0 +1,19 @@
+{
+  "case_id": "cl-cluster-10880244",
+  "name": "Monsanto v. Durnell",
+  "docket": "24-1068",
+  "date_argued": "2026-04-27",
+  "date_decided": "2026-06-25",
+  "question_presented": "Does the Federal Insecticide, Fungicide, and Rodenticide Act preempt a label-based failure-to-warn claim where EPA has not required the warning?",
+  "facts_summary": "John L. Durnell used Monsanto\u2019s product Roundup, a herbicide containing the active ingredient glyphosate. Durnell subsequently developed non-Hodgkin\u2019s lymphoma, which he alleged was caused by his exposure to Roundup and glyphosate. In January 2019, Durnell sued Monsanto, asserting claims for strict liability defective design, strict liability failure to warn, and negligence. Durnell claimed that Monsanto should have included a cancer warning on Roundup\u2019s label to alert users to the risk of developing non-Hodgkin's lymphoma from glyphosate exposure. After a jury trial in September 2023 in the Circuit Court of the City of St. Louis, the jury found in favor of Durnell on his strict liability failure to warn claim and awarded him $1.25 million in compensatory damages, but ruled for Monsanto on the defective design and negligence claims. Monsanto moved for judgment notwithstanding the verdict, arguing that federal law\u2014specifically the Federal Insecticide, Fungicide, and Rodenticide Act (FIFRA)\u2014both expressly and impliedly preempted Durnell\u2019s failure to warn claim. The trial court denied the motion, and Monsanto appealed to the Missouri Court of Appeals, Eastern District, which affirmed the judgment.",
+  "lower_court_ruling": "Federal district court",
+  "opinion_excerpt_urls": [
+    "https://www.courtlistener.com/opinion/10880244/monsanto-v-durnell/"
+  ],
+  "ground_truth": {
+    "disposition": "reversed",
+    "vote_split": "unknown",
+    "scdb_id": null
+  },
+  "status": "decided"
+}

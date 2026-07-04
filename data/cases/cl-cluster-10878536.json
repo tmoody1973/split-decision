@@ -1,0 +1,19 @@
+{
+  "case_id": "cl-cluster-10878536",
+  "name": "Exxon Mobil Corp. v. Corporaci\u00f3n Cimex, S. A. (Cuba)",
+  "docket": "24-699",
+  "date_argued": "2026-02-23",
+  "date_decided": "2026-06-23",
+  "question_presented": "Does the Helms-Burton Act abrogate foreign sovereign immunity in cases against Cuban instrumentalities, even if the parties do not satisfy an exception under the Foreign Sovereign Immunities Act?",
+  "facts_summary": "This case involves Exxon Mobil Corporation\u2019s claim to property confiscated by the Cuban government decades ago. Exxon, through its predecessor Standard Oil Company, owned several subsidiaries in Cuba, including Esso Standard Oil, S.A. (Essosa), which operated oil and gas assets like a refinery, product terminals, and over 100 service stations. In 1960, following Fidel Castro\u2019s rise to power, the Cuban government confiscated these assets without providing compensation. The assets were subsequently transferred to Cuban state-owned enterprises, including Uni\u00f3n Cuba-Petr\u00f3leo (CUPET), the state oil company, and Corporaci\u00f3n CIMEX S.A. (Cuba) (CIMEX), a conglomerate. In 1969, the U.S. Foreign Claims Settlement Commission (FCSC) certified Standard Oil's loss at over $71 million, plus interest, due to the confiscation. In 1996, Congress passed the Cuban Liberty and Democratic Solidarity (LIBERTAD) Act, also known as the Helms-Burton Act, which created a private right of action in Title III for U.S. nationals to sue any \u201cperson\u201d who \u201ctraffics in\u201d their confiscated property, explicitly defining \u201cperson\u201d to include an agency or instrumentality of a foreign state. Although every President suspended this right of action until May 2, 2019, President Donald Trump\u2019s administration then allowed the suspension to lapse, and Exxon filed its lawsuit that same day. Exxon\u2019s complaint names the Cuban instrumentalities CIMEX, CUPET, and Corporaci\u00f3n CIMEX S.A. (Panama) as defendants, alleging they continue to traffic in the confiscated property through commercial activities such as refining oil and operating service stations that process remittances and sell imported goods. The Cuban defendants moved to dismiss the suit for lack of subject matter jurisdiction, asserting immunity under the Foreign Sovereign Immunities Act (FSIA). The district court held that the Helms-Burton Act did not independently abrogate foreign sovereign immunity and that the FSIA\u2019s expropriation exception did not apply, but found that the commercial-activity exception was met for CIMEX. The U.S. Court of Appeals for the D.C. Circuit agreed that the Helms-Burton Act did not displace the FSIA and that the expropriation exception was inapplicable, but vacated the ruling on the commercial-activity exception and remanded for further jurisdictional discovery.",
+  "lower_court_ruling": "United States Court of Appeals for the District of Columbia Circuit",
+  "opinion_excerpt_urls": [
+    "https://www.courtlistener.com/opinion/10878536/exxon-mobil-corp-v-corporacion-cimex-s-a-cuba/"
+  ],
+  "ground_truth": {
+    "disposition": "reversed",
+    "vote_split": "unknown",
+    "scdb_id": null
+  },
+  "status": "decided"
+}

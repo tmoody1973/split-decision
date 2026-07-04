@@ -1,0 +1,19 @@
+{
+  "case_id": "cl-cluster-10603453",
+  "name": "Commissioner v. Zuch",
+  "docket": "n/a",
+  "date_argued": "2025-06-12",
+  "date_decided": "2025-06-12",
+  "question_presented": "(Slip Opinion) OCTOBER TERM, 2024 1 Syllabus NOTE: Where it is feasible, a syllabus (headnote) will be released, as is being done in connection with this case, at the time the opinion is issued. The syllabus constitutes no part of the opinion of the Court but has been prepared by the Reporter of Decisions for the convenience of the reader. See United States v. Detroit Timber & Lumber Co., 200 U. S. 321, 337. SUPREME COURT OF THE UNITED STATES Syllabus COMMISSIONER OF INTERNAL REVENUE v. ZUCH CERTIORARI TO THE UNITED STATES COURT OF APPEALS FOR THE THIRD CIRCUIT No. 24\u2013416. Argued April 22, 2025\u2014Decided June 12, 2025 This case involves the jurisdiction of the United States Tax Court over",
+  "facts_summary": "(Slip Opinion) OCTOBER TERM, 2024 1 Syllabus NOTE: Where it is feasible, a syllabus (headnote) will be released, as is being done in connection with this case, at the time the opinion is issued. The syllabus constitutes no part of the opinion of the Court but has been prepared by the Reporter of Decisions for the convenience of the reader. See United States v. Detroit Timber & Lumber Co., 200 U. S. 321, 337. SUPREME COURT OF THE UNITED STATES Syllabus COMMISSIONER OF INTERNAL REVENUE v. ZUCH CERTIORARI TO THE UNITED STATES COURT OF APPEALS FOR THE THIRD CIRCUIT No. 24\u2013416. Argued April 22, 2025\u2014Decided June 12, 2025 This case involves the jurisdiction of the United States Tax Court over appeals from collection due process hearings when there is no longer an ongoing levy. The dispute here began in 2012, when Jennifer Zuch and her then-husband Patrick Gennardo each filed an untimely 2010 federal tax return. Gennardo subsequently submitted an offer in com- promise to resolve outstanding tax liabilities. This offer implicated $50,000 in estimated tax payments that the couple had previously sent to the IRS; following the offer, the IRS applied these payments to Gen- nardo\u2019s account. For her part, Zuch later amended her 2010 tax return to report additional income, which resulted in an additional $28,000 in taxes due. But Zuch maintained that the IRS should have credited the couple\u2019s $50,000 payment to her account, entitling her to a $22,000 refund. The IRS disagreed and sought to collect her unpaid taxes by placing a levy on her property pursuant to its authority under 26 U. S. C. \u00a76331(a). Zuch requested a collection due process hearing to contest the levy. The appeals officer rejected Zuch\u2019s argument about the misapplied $50,000 tax payment and issued a Notice of Determi- nation sustaining the levy action under \u00a76330(c)(3). Zuch then ap- pealed to the Tax Court under \u00a76330(d)(1). During the multi-year pro- ceedings before the agency and the Tax Court that followed, Zuch filed several annual tax returns showing overpayments. Each time, the IRS applied these overpayments to her outstanding 2010 tax liability ra- ther than issuing refunds. Once Zuch\u2019s liability reached zero, the IRS moved to dismiss the Tax Court proceeding as moot, arguing that the Tax Court lacked jurisdiction because the IRS no longer had a basis to levy on Zuch\u2019s property. The Tax Court agreed. But on appeal, the",
+  "lower_court_ruling": "see syllabus",
+  "opinion_excerpt_urls": [
+    "https://www.courtlistener.com/opinion/10603453/commissioner-v-zuch/"
+  ],
+  "ground_truth": {
+    "disposition": "reversed",
+    "vote_split": "unknown",
+    "scdb_id": null
+  },
+  "status": "decided"
+}

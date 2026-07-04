@@ -1,0 +1,19 @@
+{
+  "case_id": "cl-cluster-10603449",
+  "name": "Soto v. United States",
+  "docket": "n/a",
+  "date_argued": "2025-06-12",
+  "date_decided": "2025-06-12",
+  "question_presented": "(Slip Opinion) OCTOBER TERM, 2024 1 Syllabus NOTE: Where it is feasible, a syllabus (headnote) will be released, as is being done in connection with this case, at the time the opinion is issued. The syllabus constitutes no part of the opinion of the Court but has been prepared by the Reporter of Decisions for the convenience of the reader. See United States v. Detroit Timber & Lumber Co., 200 U. S. 321, 337. SUPREME COURT OF THE UNITED STATES Syllabus SOTO, INDIVIDUALLY AND ON BEHALF OF ALL OTHERS SIMILARLY SITUATED v. UNITED STATES CERTIORARI TO THE UNITED STATES COURT OF APPEALS FOR THE FEDERAL CIRCUIT No. 24\u2013320. Argued April 28, 2025\u2014Decided June 12, 2025 The Barring Act, 31 U.",
+  "facts_summary": "(Slip Opinion) OCTOBER TERM, 2024 1 Syllabus NOTE: Where it is feasible, a syllabus (headnote) will be released, as is being done in connection with this case, at the time the opinion is issued. The syllabus constitutes no part of the opinion of the Court but has been prepared by the Reporter of Decisions for the convenience of the reader. See United States v. Detroit Timber & Lumber Co., 200 U. S. 321, 337. SUPREME COURT OF THE UNITED STATES Syllabus SOTO, INDIVIDUALLY AND ON BEHALF OF ALL OTHERS SIMILARLY SITUATED v. UNITED STATES CERTIORARI TO THE UNITED STATES COURT OF APPEALS FOR THE FEDERAL CIRCUIT No. 24\u2013320. Argued April 28, 2025\u2014Decided June 12, 2025 The Barring Act, 31 U. S. C. \u00a73702, establishes default settlement proce- dures for claims against the Government and subjects most claims to a 6-year limitations period. However, the Act includes an exception: If \u201canother law\u201d confers authority to settle a claim against the Govern- ment, that law displaces the Barring Act\u2019s settlement mechanism, in- cluding its limitations period. \u00a73702(a). In 2002, Congress enacted a statute providing \u201ccombat-related special compensation\u201d (CRSC) to qualifying veterans who have suffered combat-related disabilities. 10 U. S. C. \u00a71413a. Under federal law, retired veterans generally must waive a portion of their military retirement pay to receive Veterans Affairs (VA) disability benefits, but the CRSC statute allows combat- disabled retirees to receive special compensation up to the amount of waived retired pay. Petitioner Simon Soto served in the Marine Corps from 2000 to 2006, including two tours in Operation Iraqi Freedom. He was medically retired in 2006 and later received a 100-percent disability rating for post-traumatic stress disorder from the VA. In 2016, Soto applied for CRSC payments. The Secretary of the Navy approved his application but limited retroactive compensation to six years, citing the Barring Act\u2019s limitations period. Soto filed a class-action lawsuit arguing that the Barring Act\u2019s 6-year limitations period does not apply to CRSC claims because the CRSC statute constitutes \u201canother law\u201d that pro- vides its own settlement mechanism. The District Court granted sum- mary judgment for the class, but the Federal Circuit reversed, holding that the CRSC statute does not explicitly grant settlement authority and therefore cannot displace the Barring Act. Held: The CRSC statute confers authority to settle CRSC claims and 2 SOTO v. UNITED STATES Syllabus thus displaces the Barring Act\u2019s settlement procedures and limitations",
+  "lower_court_ruling": "see syllabus",
+  "opinion_excerpt_urls": [
+    "https://www.courtlistener.com/opinion/10603449/soto-v-united-states/"
+  ],
+  "ground_truth": {
+    "disposition": "reversed",
+    "vote_split": "9-0",
+    "scdb_id": null
+  },
+  "status": "decided"
+}

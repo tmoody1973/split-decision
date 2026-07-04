@@ -1,0 +1,19 @@
+{
+  "case_id": "cl-cluster-10846666",
+  "name": "Hencely v. Fluor Corp.",
+  "docket": "n/a",
+  "date_argued": "2026-04-22",
+  "date_decided": "2026-04-22",
+  "question_presented": "(Slip Opinion) OCTOBER TERM, 2025 1 Syllabus NOTE: Where it is feasible, a syllabus (headnote) will be released, as is being done in connection with this case, at the time the opinion is issued. The syllabus constitutes no part of the opinion of the Court but has been prepared by the Reporter of Decisions for the convenience of the reader. See United States v. Detroit Timber & Lumber Co., 200 U. S. 321, 337. SUPREME COURT OF THE UNITED STATES Syllabus HENCELY v. FLUOR CORP. ET AL. CERTIORARI TO THE UNITED STATES COURT OF APPEALS FOR THE FOURTH CIRCUIT No. 24\u2013924. Argued November 3, 2025\u2014Decided April 22, 2026 Military contractor Fluor Corporation hired Ahmad Nayeb to work at a U.",
+  "facts_summary": "(Slip Opinion) OCTOBER TERM, 2025 1 Syllabus NOTE: Where it is feasible, a syllabus (headnote) will be released, as is being done in connection with this case, at the time the opinion is issued. The syllabus constitutes no part of the opinion of the Court but has been prepared by the Reporter of Decisions for the convenience of the reader. See United States v. Detroit Timber & Lumber Co., 200 U. S. 321, 337. SUPREME COURT OF THE UNITED STATES Syllabus HENCELY v. FLUOR CORP. ET AL. CERTIORARI TO THE UNITED STATES COURT OF APPEALS FOR THE FOURTH CIRCUIT No. 24\u2013924. Argued November 3, 2025\u2014Decided April 22, 2026 Military contractor Fluor Corporation hired Ahmad Nayeb to work at a U. S. base in Afghanistan as part of the \u201cAfghan First\u201d initiative, a military program that required contractors to hire Afghans to help stimulate the local economy and stabilize the Afghan Government. Nayeb, a Taliban operative, later carried out a suicide-bomb attack at the base that killed 5 and wounded 17. The Army\u2019s investigation found Fluor primarily responsible for the attack because it negligently su- pervised Nayeb in complying with base procedures. Former Army spe- cialist Winston T. Hencely, who suffered a fractured skull and brain injuries in the course of stopping Nayeb before he could reach a larger crowd, sued Fluor in the United States District Court for the District of South Carolina seeking damages under South Carolina law for neg- ligent supervision, negligent entrustment of tools, and negligent reten- tion of Nayeb. The District Court entered summary judgment for Fluor, and the Fourth Circuit affirmed. It held that during wartime, state-law claims against military contractors under military command arising out of combatant activities are preempted. The Fourth Circuit reasoned that the Federal Tort Claims Act\u2019s combatant-activities ex- ception, which preserves the Federal Government\u2019s immunity against claims \u201carising out of the combatant activities of the military\u201d during wartime, 28 U. S. C. \u00a72680(j), also reflects a congressional intent to bar tort suits against contractors connected with those combatant activi- ties, even when the contractor is alleged to have violated its instruc- tions from the military. Held: The Fourth Circuit erred in finding Hencely\u2019s state-law tort claims preempted where the Federal Government neither ordered nor author- ized Fluor\u2019s challenged conduct. Pp. 5\u201315. 2 HENCELY v. FLUOR CORP. Syllabus (a) Neither the Constitution nor any federal statute expressly preempts Hencely\u2019s suit. The",
+  "lower_court_ruling": "see syllabus",
+  "opinion_excerpt_urls": [
+    "https://www.courtlistener.com/opinion/10846666/hencely-v-fluor-corp/"
+  ],
+  "ground_truth": {
+    "disposition": "reversed",
+    "vote_split": "unknown",
+    "scdb_id": null
+  },
+  "status": "decided"
+}

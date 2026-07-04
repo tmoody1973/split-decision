@@ -1,0 +1,19 @@
+{
+  "case_id": "cl-cluster-10879690",
+  "name": "Landor v. Louisiana Dept of Corrections and Public Safety Revisions: 6/24/26",
+  "docket": "23-1197",
+  "date_argued": "2025-11-10",
+  "date_decided": "2026-06-23",
+  "question_presented": "May an individual sue a government official in his individual capacity for damages for violations of the Religious Land Use and Institutionalized Persons Act (RLUIPA)?",
+  "facts_summary": "Damon Landor, a devout Rastafarian, vowed as part of his faith never to cut his hair\u2014a religious commitment known as the Nazarite Vow. Incarcerated in 2020, Landor was first held at the St. Tammany Parish Detention Center and later at LaSalle Correctional Center, both of which allowed him to maintain his hairstyle in accordance with his religious beliefs. After approximately five months and with three weeks left in his sentence, Landor was transferred to Raymond Laborde Correctional Center. Upon arrival, Landor proactively explained his religious practices and presented documentation of previous accommodations, including a copy of a federal court decision supporting similar claims. An intake guard disregarded his documentation, summoned the warden, and upon Landor\u2019s inability to produce immediate additional proof of his beliefs, guards forcibly handcuffed Landor and shaved his head. Following his release, Landor sued the Louisiana Department of Corrections and Public Safety, its Secretary James LeBlanc, the correctional center, and Warden Marcus Myers, asserting claims under the Religious Land Use and Institutionalized Persons Act (RLUIPA) and 42 U.S.C. \u00a7 1983 for violations of his federal constitutional rights, as well as state law claims. The U.S. District Court for the Middle District of Louisiana dismissed Landor\u2019s individual-capacity RLUIPA claims for money damages, holding such relief unavailable under controlling Fifth Circuit precedent. The U.S. Court of Appeals for the Fifth Circuit affirmed, relying on its prior decision in Sossamon v. Lone Star State of Texas, and rejecting Landor\u2019s arguments that subsequent Supreme Court authority or other legal developments altered that result.",
+  "lower_court_ruling": "United States Court of Appeals for the Fifth Circuit",
+  "opinion_excerpt_urls": [
+    "https://www.courtlistener.com/opinion/10879690/landor-v-louisiana-dept-of-corrections-and-public-safety-revisions/"
+  ],
+  "ground_truth": {
+    "disposition": "affirmed",
+    "vote_split": "unknown",
+    "scdb_id": null
+  },
+  "status": "decided"
+}

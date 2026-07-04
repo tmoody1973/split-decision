@@ -1,0 +1,19 @@
+{
+  "case_id": "cl-cluster-10779476",
+  "name": "Klein v. Martin",
+  "docket": "n/a",
+  "date_argued": "2026-01-26",
+  "date_decided": "2026-01-26",
+  "question_presented": "Cite as: 607 U. S. ____ (2026) 1 Per Curiam SUPREME COURT OF THE UNITED STATES CHRISTOPHER KLEIN, SUPERINTENDENT, DEPARTMENT OF DETENTION FACILITIES FOR ANNE ARUNDEL COUNTY, ET AL. v. CHARLES BRANDON MARTIN ON PETITION FOR WRIT OF CERTIORARI TO THE UNITED STATES COURT OF APPEALS FOR THE FOURTH CIRCUIT No. 25\u201351. Decided January 26, 2026 PER CURIAM. Under the Antiterrorism and Effective Death Penalty Act of 1996 (AEDPA), strict standards govern the grant of fed- eral habeas relief to prisoners convicted in state court. Faithful application of those standards sometimes puts fed- eral district courts and courts of appeals in the disagreeable position of having to deny relief in cases they would have analyzed differently if they had been",
+  "facts_summary": "Cite as: 607 U. S. ____ (2026) 1 Per Curiam SUPREME COURT OF THE UNITED STATES CHRISTOPHER KLEIN, SUPERINTENDENT, DEPARTMENT OF DETENTION FACILITIES FOR ANNE ARUNDEL COUNTY, ET AL. v. CHARLES BRANDON MARTIN ON PETITION FOR WRIT OF CERTIORARI TO THE UNITED STATES COURT OF APPEALS FOR THE FOURTH CIRCUIT No. 25\u201351. Decided January 26, 2026 PER CURIAM. Under the Antiterrorism and Effective Death Penalty Act of 1996 (AEDPA), strict standards govern the grant of fed- eral habeas relief to prisoners convicted in state court. Faithful application of those standards sometimes puts fed- eral district courts and courts of appeals in the disagreeable position of having to deny relief in cases they would have analyzed differently if they had been in the shoes of the rel- evant state court. But federal courts are dutybound to com- ply with AEDPA, and we have granted summary relief when the lower courts have departed from the role AEDPA assigns. See, e.g., Clark v. Sweeney, 607 U. S. ___ (2025) (per curiam); Dunn v. Reeves, 594 U. S. 731 (2021) (per cu- riam); Mays v. Hines, 592 U. S. 385 (2021) (per curiam); Virginia v. LeBlanc, 582 U. S. 91 (2017) (per curiam); White v. Wheeler, 577 U. S. 73 (2015) (per curiam). This is such a case. Respondent Charles Brandon Martin was convicted in a Maryland court for the attempted mur- der of one of his girlfriends, Jodi Torok. The evidence against him was strong, his conviction was affirmed on ap- peal, and an appellate court held in a state postconviction proceeding that the State\u2019s failure to disclose certain im- peachment evidence that was favorable under Brady v. Maryland, 373 U. S. 83 (1963), did not warrant a new trial because there was no \u201creasonable probability that the re- sult of [the] trial would have been different\u201d had the 2 KLEIN v. MARTIN Per Curiam evidence been turned over. App. to Pet. for Cert. 115a (App.); see Kyles v. Whitley, 514 U. S. 419, 434 (1995) (the \u201ctouchstone of materiality is a \u2018reasonable probability\u2019 of a different result\u201d). Because that decision neither was \u201ccon- trary to\u201d nor \u201cinvolved an unreasonable application\u201d of \u201cclearly established Federal law,\u201d AEDPA required the de- nial of Martin\u2019s federal habeas petition. 28 U. S. C. \u00a72254(d)(1). Yet the Court of Appeals for the Fourth Circuit affirmed the award of a new trial based on reasoning that departed from",
+  "lower_court_ruling": "see syllabus",
+  "opinion_excerpt_urls": [
+    "https://www.courtlistener.com/opinion/10779476/klein-v-martin/"
+  ],
+  "ground_truth": {
+    "disposition": "reversed",
+    "vote_split": "unknown",
+    "scdb_id": null
+  },
+  "status": "decided"
+}

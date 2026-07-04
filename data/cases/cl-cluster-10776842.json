@@ -1,0 +1,19 @@
+{
+  "case_id": "cl-cluster-10776842",
+  "name": "Smith & Wesson Brands, Inc. v. Estados Unidos Mexicanos",
+  "docket": "n/a",
+  "date_argued": "2025-06-05",
+  "date_decided": "2025-06-05",
+  "question_presented": "PRELIMINARY PRINT Volume 605 U. S. Part 1 Pages 280\u2013302 OFFICIAL REPORTS OF THE SUPREME COURT June 5, 2025 Page Proof Pending Publication REBECCA A. WOMELDORF reporter of decisions NOTICE: This preliminary print is subject to formal revision before the bound volume is published. Users are requested to notify the Reporter of Decisions, Supreme Court of the United States, Washington, D. C. 20543, pio@supremecourt.gov, of any typographical or other formal errors. 280 OCTOBER TERM, 2024 Syllabus SMITH & WESSON BRANDS, INC., et al. v. ESTADOS UNIDOS MEXICANOS certiorari to the united states court of appeals for the \ue405rst circuit No. 23\u20131141. Argued March 4, 2025\u2014Decided June 5, 2025 The Protection of Lawful Commerce in Arms Act (PLCAA) bars certain lawsuits",
+  "facts_summary": "PRELIMINARY PRINT Volume 605 U. S. Part 1 Pages 280\u2013302 OFFICIAL REPORTS OF THE SUPREME COURT June 5, 2025 Page Proof Pending Publication REBECCA A. WOMELDORF reporter of decisions NOTICE: This preliminary print is subject to formal revision before the bound volume is published. Users are requested to notify the Reporter of Decisions, Supreme Court of the United States, Washington, D. C. 20543, pio@supremecourt.gov, of any typographical or other formal errors. 280 OCTOBER TERM, 2024 Syllabus SMITH & WESSON BRANDS, INC., et al. v. ESTADOS UNIDOS MEXICANOS certiorari to the united states court of appeals for the \ue405rst circuit No. 23\u20131141. Argued March 4, 2025\u2014Decided June 5, 2025 The Protection of Lawful Commerce in Arms Act (PLCAA) bars certain lawsuits against manufacturers and sellers of frearms. As relevant, it provides that a \u201cqualifed civil liability action . . . may not be brought in any Federal or State court,\u201d 15 U. S. C. \u00a7 7902(a), and defnes that term to include a \u201ccivil action or proceeding\u201d against a frearms manufacturer or seller stemming from \u201cthe criminal or unlawful misuse\u201d of a frearm by \u201ca third party,\u201d \u00a7 7903(5)(A). But PLCAA's general bar on these suits has an exception, usually called the predicate exception, relevant here. That exception applies to lawsuits in which the defendant manu- facturer or seller \u201cknowingly violated a State or Federal statute applica- ble to the sale or marketing\u201d of frearms, and the \u201cviolation was a proxi- mate cause of the harm for which relief is sought.\u201d \u00a7 7903(5)(A)(iii). Page Proof Pending Publication The predicate violation PLCAA demands may come from aiding and abetting someone else's frearms offense. PLCAA itself lists as exam- ples two ways in which aiding and abetting qualifes\u2014when a gun manu- facturer (or seller) aids and abets another person in making a false state- ment about a gun sale's legality or in making specifed criminal sales. See \u00a7 7903(5)(A)(iii)(I)\u2013(II). And more broadly, because federal law provides that whoever \u201caids [and] abets\u201d a federal crime \u201cis punishable as a principal,\u201d 18 U. S. C. \u00a7 2(a), a gun manufacturer that aids and abets a federal gun crime may itself commit a PLCAA predicate violation. Here, the Government of Mexico sued seven American gun manufac- turers, alleging that the companies aided and abetted unlawful gun sales that routed frearms to Mexican drug cartels. The basic theory of its suit is that the defendants failed to",
+  "lower_court_ruling": "see syllabus",
+  "opinion_excerpt_urls": [
+    "https://www.courtlistener.com/opinion/10776842/smith-wesson-brands-inc-v-estados-unidos-mexicanos/"
+  ],
+  "ground_truth": {
+    "disposition": "reversed",
+    "vote_split": "unknown",
+    "scdb_id": null
+  },
+  "status": "decided"
+}
