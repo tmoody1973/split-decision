@@ -22,6 +22,16 @@ MAX_ROUNDS = 5
 SUPERMAJORITY = 7
 STATEMENT_WORDS = 110
 REBUTTAL_WORDS = 60
+FLIP_FRICTION_AT = 2  # from the Nth flip on, changes need a NEW argument
+
+GROUND_RULES = (
+    "Ground rules: (1) The bench memo's RECORD FACTS are the COMPLETE record — "
+    "never assert a record fact that is not stated there, and never invent "
+    "evidence to justify a position. (2) Your colleagues are the eight "
+    "archetypes on this panel; address them ONLY by their archetype titles. "
+    "Never mention real justices, real judges, or the real Supreme Court's "
+    "members — you are not them and they are not here."
+)
 
 
 class Chamber:
@@ -32,6 +42,7 @@ class Chamber:
         self.memo = ""
         self.digests: dict[str, str] = {j: "" for j in JURIST_IDS}
         self.positions: dict[str, dict] = {j: {"position": "undecided", "confidence": 0.5} for j in JURIST_IDS}
+        self.flip_counts: dict[str, int] = {j: 0 for j in JURIST_IDS}
 
     # ---------- helpers ----------
 
@@ -55,12 +66,20 @@ class Chamber:
             '(empty string if unchanged)"'
             if must_explain else ""
         )
+        friction = ""
+        if self.flip_counts[jurist] >= FLIP_FRICTION_AT:
+            friction = (
+                f" You have already changed your position {self.flip_counts[jurist]} times in this "
+                "case; further vote whiplash reads as instability, not judgment. Change again ONLY "
+                "if you can name a specific NEW argument, not previously raised, that satisfies "
+                "your flip trigger — otherwise hold your position."
+            )
         user = (
-            f"BENCH MEMO:\n{self.memo}\n\n"
+            f"BENCH MEMO:\n{self.memo}\n\n{GROUND_RULES}\n\n"
             f"Private scratchpad vote ({'after' if revote else 'before'} round {round_no} debate). "
             "No other jurist will ever see this. Apply YOUR philosophy and its flip trigger honestly "
             "— do not move toward the majority for its own sake, and do not resist a flip your own "
-            "trigger condition demands.\n"
+            f"trigger condition demands.{friction}\n"
             'Reply ONLY JSON: {"position": "affirm"|"reverse", "confidence": 0.0-1.0' + extra + "}"
         )
         result = chat_json(JUROR_MODEL, self._sys(jurist, round_no), user,
@@ -95,7 +114,7 @@ class Chamber:
     def statement(self, jurist: str, round_no: int, transcript: list[str]) -> str:
         so_far = "\n".join(transcript) or "(you speak first this round)"
         user = (
-            f"BENCH MEMO:\n{self.memo}\n\n"
+            f"BENCH MEMO:\n{self.memo}\n\n{GROUND_RULES}\n\n"
             f"ROUND {round_no} STATEMENTS SO FAR:\n{so_far}\n\n"
             f"Deliver your statement to the panel (max {STATEMENT_WORDS} words), in character. "
             "Advance your strongest argument for your current position and engage the strongest "
@@ -130,7 +149,7 @@ class Chamber:
 
     def rebuttal(self, jurist: str, opponent: str, opponent_text: str, round_no: int) -> str:
         user = (
-            f"BENCH MEMO:\n{self.memo}\n\n"
+            f"BENCH MEMO:\n{self.memo}\n\n{GROUND_RULES}\n\n"
             f"Direct exchange. {self.personas[opponent]['display_name']} ({opponent}) just argued:\n"
             f"\"{opponent_text}\"\n\n"
             f"Rebut directly (max {REBUTTAL_WORDS} words), in character, on the substance.\n"
@@ -171,6 +190,7 @@ class Chamber:
             for j, v in votes.items():
                 prev = self.positions[j]["position"]
                 if round_no > 1 and v["position"] != prev:
+                    self.flip_counts[j] += 1
                     influenced = [i for i in v.get("influenced_by", []) if i in JURIST_IDS and i != j] or \
                                  [next(k for k in JURIST_IDS if k != j)]
                     self.log.add(type="vote_change", agent=j, round=round_no,
@@ -215,6 +235,7 @@ class Chamber:
             for j, v in revotes.items():
                 before = votes[j]["position"]
                 if v["position"] != before:
+                    self.flip_counts[j] += 1
                     debated = [i for pair in pairs for i in pair]
                     fallback = next((i for i in debated + JURIST_IDS if i != j))
                     influenced = [i for i in v.get("influenced_by", []) if i in JURIST_IDS and i != j] or \

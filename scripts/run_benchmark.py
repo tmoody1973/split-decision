@@ -152,6 +152,8 @@ def aggregate() -> dict:
     score("memorization", tier="scdb")
 
     # Condition C from deliberation episodes (benchmark sample)
+    from collections import Counter
+    flips_by_agent: Counter = Counter()
     hits, splits, n, flips, rounds = 0, [], 0, 0, []
     for e in manifest.get("benchmark", []):
         ev_path = EPISODES / e["case_id"] / "events.jsonl"
@@ -168,13 +170,17 @@ def aggregate() -> dict:
         pm, am = _maj(verdict["vote_split"]), _maj(gt["vote_split"])
         if pm and am:
             splits.append(abs(pm - am))
-        flips += sum(1 for x in events if x["type"] == "vote_change")
+        for x in events:
+            if x["type"] == "vote_change":
+                flips += 1
+                flips_by_agent[x["agent"]] += 1
         rounds.append(max(x.get("round", 0) for x in events))
     rows["benchmark:C"] = {
         "n": n, "accuracy": round(hits / n, 3) if n else None,
         "mean_split_distance": round(sum(splits) / len(splits), 2) if splits else None,
         "total_vote_changes": flips,
         "mean_rounds": round(sum(rounds) / len(rounds), 2) if rounds else None,
+        "flips_by_agent": dict(flips_by_agent.most_common()),  # steerability/instability metric
     }
 
     RESULTS.parent.mkdir(parents=True, exist_ok=True)
