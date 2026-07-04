@@ -1,0 +1,17 @@
+{
+  "case_id": "scdb-2014-058",
+  "name": "WALKER v. TEXAS DIVISION, SONS OF CONFEDERATE VETERANS, INC.",
+  "docket": "14-144",
+  "date_argued": "2015-06-18",
+  "date_decided": "2015-06-18",
+  "question_presented": "Memorization-check set: predict the Supreme Court's disposition in WALKER v. TEXAS DIVISION, SONS OF CONFEDERATE VETERANS, INC. (576 U.S. 200, 2014 Term).",
+  "facts_summary": "Historical case in the memorization-check arm. By design, only the case name, citation, and term are provided \u2014 this arm measures recall of memorized outcomes, not reasoning.",
+  "lower_court_ruling": "not provided (memorization-check arm)",
+  "opinion_excerpt_urls": [],
+  "ground_truth": {
+    "disposition": "reversed",
+    "vote_split": "5-4",
+    "scdb_id": "2014-058"
+  },
+  "status": "decided"
+}

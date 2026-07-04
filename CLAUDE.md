@@ -133,6 +133,11 @@ client = OpenAI(
   The society's prediction goes on the record. Uncontaminatable by definition.
 - **NEVER** include landmark/famous cases in the benchmark. If a case name would be
   recognized by a first-year law student, exclude it.
+- **Memorization-check set (n=50, added 2026-07-04):** pre-cutoff historical cases
+  from SCDB, famous ones welcome (that's the point). Run ONLY the cheap conditions
+  (A solo, B silent jury) — never full deliberation — and publish the accuracy gap
+  vs the post-cutoff benchmark as a labeled contamination exhibit. These cases NEVER
+  count toward the headline benchmark number.
 - Store the frozen case list in `/data/benchmark_manifest.json` with selection rationale.
 
 ### 3.3 Case record format (`contracts/case.schema.json`)
@@ -358,13 +363,25 @@ ROUND (max 5):
 
 ## 8. Scoreboard / Benchmark (`scoreboard/`)
 
-Three conditions per benchmark case, all on identical case records:
+Three conditions, all on identical case records:
 - **A. Solo:** single `qwen3.7-max` predicts disposition + split (1 call)
 - **B. Independent jury:** 9 personas vote once, no communication; majority wins
 - **C. Society:** full deliberation protocol
+
+**Widened scope (2026-07-04):** A and B run over the ENTIRE post-cutoff population
+(`benchmark_wide` in the manifest, ~200 cases); C runs on the 25-case
+Oyez-enriched sample (`benchmark`). C−B is computed on the sample; A/B population
+numbers give the strongest possible baseline stats.
 Metrics: disposition accuracy, split-distance (|predicted majVotes − actual|),
 flip count, rounds-to-consensus. Output `scoreboard/results.json` + a rendered table
 in README. **C − B = the value of deliberation itself** — the headline number.
+
+**Memorization-check arm:** conditions A and B ONLY over the 50-case historical set
+(§3.2), which is two-tiered: 25 famous landmarks (from
+`data/precedents/landmark_cases.json`) + 25 ordinary SCDB cases (era spread). Both
+tiers get identical minimal inputs (name + citation + term) so fame is the only
+variable. Published as a three-point contamination curve: famous vs ordinary-historical
+vs post-cutoff accuracy. The gap quantifies contamination and justifies the design.
 If C ≤ B, report it honestly as a finding and analyze which cases deliberation helped/hurt.
 An honest negative result with analysis scores better on Technical Depth than a fudged win.
 

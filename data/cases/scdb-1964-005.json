@@ -1,0 +1,17 @@
+{
+  "case_id": "scdb-1964-005",
+  "name": "UNITED STATES et al. v. POWELL et al.",
+  "docket": "54",
+  "date_argued": "1964-11-23",
+  "date_decided": "1964-11-23",
+  "question_presented": "Memorization-check set: predict the Supreme Court's disposition in UNITED STATES et al. v. POWELL et al. (379 U.S. 48, 1964 Term).",
+  "facts_summary": "Historical case in the memorization-check arm. By design, only the case name, citation, and term are provided \u2014 this arm measures recall of memorized outcomes, not reasoning.",
+  "lower_court_ruling": "not provided (memorization-check arm)",
+  "opinion_excerpt_urls": [],
+  "ground_truth": {
+    "disposition": "reversed",
+    "vote_split": "6-3",
+    "scdb_id": "1964-005"
+  },
+  "status": "decided"
+}

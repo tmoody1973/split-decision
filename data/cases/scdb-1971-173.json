@@ -1,0 +1,17 @@
+{
+  "case_id": "scdb-1971-173",
+  "name": "BOARD OF REGENTS OF STATE COLLEGES et al. v. ROTH",
+  "docket": "71-162",
+  "date_argued": "1972-06-29",
+  "date_decided": "1972-06-29",
+  "question_presented": "Memorization-check set: predict the Supreme Court's disposition in BOARD OF REGENTS OF STATE COLLEGES et al. v. ROTH (408 U.S. 564, 1971 Term).",
+  "facts_summary": "Historical case in the memorization-check arm. By design, only the case name, citation, and term are provided \u2014 this arm measures recall of memorized outcomes, not reasoning.",
+  "lower_court_ruling": "not provided (memorization-check arm)",
+  "opinion_excerpt_urls": [],
+  "ground_truth": {
+    "disposition": "reversed",
+    "vote_split": "5-3",
+    "scdb_id": "1971-173"
+  },
+  "status": "decided"
+}

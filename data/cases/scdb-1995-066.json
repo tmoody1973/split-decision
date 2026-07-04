@@ -1,0 +1,17 @@
+{
+  "case_id": "scdb-1995-066",
+  "name": "LOCKHEED CORPORATION, et al. v. PAUL L. SPINK",
+  "docket": "95-809",
+  "date_argued": "1996-06-10",
+  "date_decided": "1996-06-10",
+  "question_presented": "Memorization-check set: predict the Supreme Court's disposition in LOCKHEED CORPORATION, et al. v. PAUL L. SPINK (517 U.S. 882, 1995 Term).",
+  "facts_summary": "Historical case in the memorization-check arm. By design, only the case name, citation, and term are provided \u2014 this arm measures recall of memorized outcomes, not reasoning.",
+  "lower_court_ruling": "not provided (memorization-check arm)",
+  "opinion_excerpt_urls": [],
+  "ground_truth": {
+    "disposition": "reversed",
+    "vote_split": "9-0",
+    "scdb_id": "1995-066"
+  },
+  "status": "decided"
+}

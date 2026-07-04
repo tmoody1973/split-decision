@@ -1,0 +1,17 @@
+{
+  "case_id": "scdb-1977-104",
+  "name": "QUERN, DIRECTOR, DEPARTMENT OF PUBLIC AID OF ILLINOIS, et al. v. MANDLEY et al.",
+  "docket": "76-1159",
+  "date_argued": "1978-06-06",
+  "date_decided": "1978-06-06",
+  "question_presented": "Memorization-check set: predict the Supreme Court's disposition in QUERN, DIRECTOR, DEPARTMENT OF PUBLIC AID OF ILLINOIS, et al. v. MANDLEY et al. (436 U.S. 725, 1977 Term).",
+  "facts_summary": "Historical case in the memorization-check arm. By design, only the case name, citation, and term are provided \u2014 this arm measures recall of memorized outcomes, not reasoning.",
+  "lower_court_ruling": "not provided (memorization-check arm)",
+  "opinion_excerpt_urls": [],
+  "ground_truth": {
+    "disposition": "reversed",
+    "vote_split": "8-0",
+    "scdb_id": "1977-104"
+  },
+  "status": "decided"
+}

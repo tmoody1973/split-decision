@@ -1,0 +1,17 @@
+{
+  "case_id": "scdb-1984-020",
+  "name": "ALEXANDER, GOVERNOR OF TENNESSEE, et al. v. CHOATE et al.",
+  "docket": "83-727",
+  "date_argued": "1985-01-09",
+  "date_decided": "1985-01-09",
+  "question_presented": "Memorization-check set: predict the Supreme Court's disposition in ALEXANDER, GOVERNOR OF TENNESSEE, et al. v. CHOATE et al. (469 U.S. 287, 1984 Term).",
+  "facts_summary": "Historical case in the memorization-check arm. By design, only the case name, citation, and term are provided \u2014 this arm measures recall of memorized outcomes, not reasoning.",
+  "lower_court_ruling": "not provided (memorization-check arm)",
+  "opinion_excerpt_urls": [],
+  "ground_truth": {
+    "disposition": "reversed",
+    "vote_split": "9-0",
+    "scdb_id": "1984-020"
+  },
+  "status": "decided"
+}

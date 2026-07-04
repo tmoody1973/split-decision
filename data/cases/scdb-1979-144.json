@@ -1,0 +1,17 @@
+{
+  "case_id": "scdb-1979-144",
+  "name": "CENTRAL MACHINERY CO. v. ARIZONA STATE TAX COMMISSION",
+  "docket": "78-1604",
+  "date_argued": "1980-06-27",
+  "date_decided": "1980-06-27",
+  "question_presented": "Memorization-check set: predict the Supreme Court's disposition in CENTRAL MACHINERY CO. v. ARIZONA STATE TAX COMMISSION (448 U.S. 160, 1979 Term).",
+  "facts_summary": "Historical case in the memorization-check arm. By design, only the case name, citation, and term are provided \u2014 this arm measures recall of memorized outcomes, not reasoning.",
+  "lower_court_ruling": "not provided (memorization-check arm)",
+  "opinion_excerpt_urls": [],
+  "ground_truth": {
+    "disposition": "reversed",
+    "vote_split": "5-4",
+    "scdb_id": "1979-144"
+  },
+  "status": "decided"
+}

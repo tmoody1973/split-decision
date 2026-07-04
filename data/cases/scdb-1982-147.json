@@ -1,0 +1,17 @@
+{
+  "case_id": "scdb-1982-147",
+  "name": "UNITED STATES v. SELLS ENGINEERING, INC., et al.",
+  "docket": "81-1032",
+  "date_argued": "1983-06-30",
+  "date_decided": "1983-06-30",
+  "question_presented": "Memorization-check set: predict the Supreme Court's disposition in UNITED STATES v. SELLS ENGINEERING, INC., et al. (463 U.S. 418, 1982 Term).",
+  "facts_summary": "Historical case in the memorization-check arm. By design, only the case name, citation, and term are provided \u2014 this arm measures recall of memorized outcomes, not reasoning.",
+  "lower_court_ruling": "not provided (memorization-check arm)",
+  "opinion_excerpt_urls": [],
+  "ground_truth": {
+    "disposition": "affirmed",
+    "vote_split": "5-4",
+    "scdb_id": "1982-147"
+  },
+  "status": "decided"
+}

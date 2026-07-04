@@ -1,0 +1,275 @@
+{
+  "cutoff": "2025-06-02",
+  "created": "2026-07-04",
+  "benchmark": [],
+  "memorization": [
+    {
+      "case_id": "scdb-1988-018",
+      "name": "PERRY v. LEEKE, COMMISSIONER, SOUTH CAROLINA DEPARTMENT OF CORRECTIONS, et al.",
+      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
+    },
+    {
+      "case_id": "scdb-1987-018",
+      "name": "LOWENFIELD v. PHELPS, SECRETARY, LOUISIANA DEPARTMENT OF CORRECTIONS, et al.",
+      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
+    },
+    {
+      "case_id": "scdb-1965-038",
+      "name": "KOEHRING CO. v. HYDE CONSTRUCTION CO., INC., et al.",
+      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
+    },
+    {
+      "case_id": "scdb-1980-028",
+      "name": "RUBIN v. UNITED STATES",
+      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
+    },
+    {
+      "case_id": "scdb-1975-030",
+      "name": "NATIONAL INDEPENDENT COAL OPERATORS' ASSOCIATION et al. v. KLEPPE, SECRETARY OF THE INTERIOR, et al.",
+      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
+    },
+    {
+      "case_id": "scdb-1984-020",
+      "name": "ALEXANDER, GOVERNOR OF TENNESSEE, et al. v. CHOATE et al.",
+      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
+    },
+    {
+      "case_id": "scdb-1975-004",
+      "name": "CONNECTICUT v. MENILLO",
+      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
+    },
+    {
+      "case_id": "scdb-1964-005",
+      "name": "UNITED STATES et al. v. POWELL et al.",
+      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
+    },
+    {
+      "case_id": "scdb-1971-003",
+      "name": "SUPERINTENDENT OF INSURANCE OF NEW YORK v. BANKERS LIFE & CASUALTY CO. et al.",
+      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
+    },
+    {
+      "case_id": "scdb-1982-010",
+      "name": "LARKIN et al. v. GRENDEL'S DEN, INC.",
+      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
+    },
+    {
+      "case_id": "scdb-1952-027",
+      "name": "F. W. WOOLWORTH CO. v. CONTEMPORARY ARTS, INC.",
+      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
+    },
+    {
+      "case_id": "scdb-1952-017",
+      "name": "UNITED STATES v. CALTEX (PHILIPPINES), INC. ET AL.",
+      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
+    },
+    {
+      "case_id": "scdb-1996-029",
+      "name": "FRANCIS BERNARD AUER, et al. v. DAVID A. ROBBINS et al.",
+      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
+    },
+    {
+      "case_id": "scdb-1983-042",
+      "name": "DIXSON v. UNITED STATES",
+      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
+    },
+    {
+      "case_id": "scdb-1992-033",
+      "name": "EMERY L. NEGONSOTT v. HAROLD SAMUELS, WARDEN, et al.",
+      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
+    },
+    {
+      "case_id": "scdb-1979-044",
+      "name": "TRAMMEL v. UNITED STATES",
+      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
+    },
+    {
+      "case_id": "scdb-1968-052",
+      "name": "GREGORY et al. v. CITY OF CHICAGO",
+      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
+    },
+    {
+      "case_id": "scdb-1998-027",
+      "name": "ARIZONA DEPARTMENT OF REVENUE v. BLAZE CONSTRUCTION COMPANY, INC.",
+      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
+    },
+    {
+      "case_id": "scdb-1963-085",
+      "name": "JACKSON et al. v. UNITED STATES",
+      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
+    },
+    {
+      "case_id": "scdb-1973-083",
+      "name": "HUDDLESTON v. UNITED STATES",
+      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
+    },
+    {
+      "case_id": "scdb-1980-047",
+      "name": "DIAMOND, COMMISSIONER OF PATENTS AND TRADEMARKS v. DIEHR et al.",
+      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
+    },
+    {
+      "case_id": "scdb-1972-070",
+      "name": "BRADLEY et al. v. UNITED STATES",
+      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
+    },
+    {
+      "case_id": "scdb-1969-056",
+      "name": "INTERNATIONAL LONGSHOREMEN'S ASSOCIATION, LOCAL 1416, AFL-CIO v. ARIADNE SHIPPING CO., LTD., et al.",
+      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
+    },
+    {
+      "case_id": "scdb-1989-058",
+      "name": "NATIONAL LABOR RELATIONS BOARD v. CURTIN MATHESON SCIENTIFIC, INC.",
+      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
+    },
+    {
+      "case_id": "scdb-1969-081",
+      "name": "RICHARD S. v. CITY OF NEW YORK",
+      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
+    },
+    {
+      "case_id": "scdb-1949-066",
+      "name": "MULLANE, SPECIAL GUARDIAN, v. CENTRAL HANOVER BANK & TRUST CO., TRUSTEE, ET AL.",
+      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
+    },
+    {
+      "case_id": "scdb-1980-078",
+      "name": "CALIFORNIA et al. v. SIERRA CLUB et al.",
+      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
+    },
+    {
+      "case_id": "scdb-1964-091",
+      "name": "MCKINNIE et al. v. TENNESSEE",
+      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
+    },
+    {
+      "case_id": "scdb-1984-092",
+      "name": "TENNESSEE v. STREET",
+      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
+    },
+    {
+      "case_id": "scdb-1947-082",
+      "name": "KENNEDY ET AL. v. SILAS MASON CO.",
+      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
+    },
+    {
+      "case_id": "scdb-1976-095",
+      "name": "BLACKLEDGE, WARDEN, et al. v. ALLISON",
+      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
+    },
+    {
+      "case_id": "scdb-1954-079",
+      "name": "EMSPAK v. UNITED STATES",
+      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
+    },
+    {
+      "case_id": "scdb-2010-048",
+      "name": "UNITED STATES, PETITIONER v. JASON LOUIS TINKLENBERG",
+      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
+    },
+    {
+      "case_id": "scdb-1992-064",
+      "name": "HENRY G. CISNEROS, SECRETARY OF HOUSING AND URBAN DEVELOPMENT, et al. v. ALPINE RIDGE GROUP et al.",
+      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
+    },
+    {
+      "case_id": "scdb-1949-071",
+      "name": "INTERNATIONAL UNION OF UNITED AUTOMOBILE, ETC. WORKERS OF AMERICA, C. I. O., ET AL. v. O'BRIEN, PROSECUTING ATTORNEY, ET AL.",
+      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
+    },
+    {
+      "case_id": "scdb-1995-066",
+      "name": "LOCKHEED CORPORATION, et al. v. PAUL L. SPINK",
+      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
+    },
+    {
+      "case_id": "scdb-2007-052",
+      "name": "IRIZARRY v. UNITED STATES",
+      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
+    },
+    {
+      "case_id": "scdb-1952-112",
+      "name": "SHELTON v. UNITED STATES",
+      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
+    },
+    {
+      "case_id": "scdb-1962-144",
+      "name": "YELLIN v. UNITED STATES",
+      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
+    },
+    {
+      "case_id": "scdb-2014-058",
+      "name": "WALKER v. TEXAS DIVISION, SONS OF CONFEDERATE VETERANS, INC.",
+      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
+    },
+    {
+      "case_id": "scdb-1965-130",
+      "name": "JOHNSON et al. v. NEW JERSEY",
+      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
+    },
+    {
+      "case_id": "scdb-2009-078",
+      "name": "RENT-A-CENTER, WEST, INC. v. ANTONIO JACKSON",
+      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
+    },
+    {
+      "case_id": "scdb-1957-129",
+      "name": "HANSON, EXECUTRIX, et al. v. DENCKLA et al.",
+      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
+    },
+    {
+      "case_id": "scdb-1993-081",
+      "name": "FLORENCE DOLAN v. CITY OF TIGARD",
+      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
+    },
+    {
+      "case_id": "scdb-2013-066",
+      "name": "FIFTH THIRD BANCORP v. DUDENHOEFFER",
+      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
+    },
+    {
+      "case_id": "scdb-1979-144",
+      "name": "CENTRAL MACHINERY CO. v. ARIZONA STATE TAX COMMISSION",
+      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
+    },
+    {
+      "case_id": "scdb-1971-173",
+      "name": "BOARD OF REGENTS OF STATE COLLEGES et al. v. ROTH",
+      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
+    },
+    {
+      "case_id": "scdb-1982-147",
+      "name": "UNITED STATES v. SELLS ENGINEERING, INC., et al.",
+      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
+    },
+    {
+      "case_id": "scdb-1977-104",
+      "name": "QUERN, DIRECTOR, DEPARTMENT OF PUBLIC AID OF ILLINOIS, et al. v. MANDLEY et al.",
+      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
+    },
+    {
+      "case_id": "scdb-2022-045",
+      "name": "JACK DANIELS PROPERTIES v. VIP PRODUCTS LLC",
+      "rationale": "pre-cutoff SCDB case; memorization-check arm (conditions A/B only)"
+    }
+  ],
+  "pending": [
+    {
+      "case_id": "oyez-63796",
+      "name": "National Republican Senatorial Committee v. Federal Election Commission",
+      "rationale": "argued 2025-12-09, undecided as of ingestion; uncontaminatable by definition"
+    },
+    {
+      "case_id": "oyez-63811",
+      "name": "Little v. Hecox",
+      "rationale": "argued 2026-01-13, undecided as of ingestion; uncontaminatable by definition"
+    },
+    {
+      "case_id": "oyez-63813",
+      "name": "West Virginia v. B.P.J.",
+      "rationale": "argued 2026-01-13, undecided as of ingestion; uncontaminatable by definition"
+    }
+  ],
+  "excluded": []
+}

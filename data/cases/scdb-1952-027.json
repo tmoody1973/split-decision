@@ -1,0 +1,17 @@
+{
+  "case_id": "scdb-1952-027",
+  "name": "F. W. WOOLWORTH CO. v. CONTEMPORARY ARTS, INC.",
+  "docket": "42",
+  "date_argued": "1952-12-22",
+  "date_decided": "1952-12-22",
+  "question_presented": "Memorization-check set: predict the Supreme Court's disposition in F. W. WOOLWORTH CO. v. CONTEMPORARY ARTS, INC. (344 U.S. 228, 1952 Term).",
+  "facts_summary": "Historical case in the memorization-check arm. By design, only the case name, citation, and term are provided \u2014 this arm measures recall of memorized outcomes, not reasoning.",
+  "lower_court_ruling": "not provided (memorization-check arm)",
+  "opinion_excerpt_urls": [],
+  "ground_truth": {
+    "disposition": "affirmed",
+    "vote_split": "7-2",
+    "scdb_id": "1952-027"
+  },
+  "status": "decided"
+}

@@ -1,0 +1,19 @@
+{
+  "case_id": "cl-cluster-10873663",
+  "name": "Keathley v. Buddy Ayers Construction, Inc.",
+  "docket": "25-6",
+  "date_argued": "2026-03-24",
+  "date_decided": "2026-06-11",
+  "question_presented": "May the doctrine of judicial estoppel be invoked to bar a plaintiff who fails to disclose a civil claim in bankruptcy filings from pursuing that claim simply because there is a potential motive for nondisclosure, regardless of whether there is evidence that the plaintiff in fact acted in bad faith?",
+  "facts_summary": "Thomas Keathley filed for Chapter 13 bankruptcy in the U.S. Bankruptcy Court for the Eastern District of Arkansas in December 2019. In August 2021, while his bankruptcy case was ongoing, Keathley was in a motor vehicle collision with David Fowler, a truck driver employed by Buddy Ayers Construction, Inc. (BAC). Keathley hired a personal injury attorney the next day and subsequently filed a personal injury lawsuit against BAC in the U.S. District Court for the Northern District of Mississippi in December 2021, alleging negligence and vicarious liability. Keathley, however, failed to disclose this new personal injury lawsuit as a potential asset to the bankruptcy court. He submitted multiple amended bankruptcy plans in March 2022 and June 2022, none of which mentioned the pending lawsuit. The bankruptcy court confirmed Keathley\u2019s modified plan in July 2022, unaware of the personal injury claim. Keathley only amended his bankruptcy schedule to include the lawsuit after BAC moved to dismiss the personal injury case. BAC moved for summary judgment in the personal injury suit, arguing that the doctrine of judicial estoppel barred Keathley\u2019s claim because he failed to disclose it during his bankruptcy proceeding. The district court granted BAC\u2019s motion, dismissing the lawsuit, and subsequently denied Keathley's motion for reconsideration. Keathley then appealed both of those decisions to the U.S. Court of Appeals for the Fifth Circuit, which affirmed the district court\u2019s decisions.",
+  "lower_court_ruling": "United States Court of Appeals for the Fifth Circuit",
+  "opinion_excerpt_urls": [
+    "https://www.courtlistener.com/opinion/10873663/keathley-v-buddy-ayers-construction-inc/"
+  ],
+  "ground_truth": {
+    "disposition": "reversed",
+    "vote_split": "9-0",
+    "scdb_id": null
+  },
+  "status": "decided"
+}

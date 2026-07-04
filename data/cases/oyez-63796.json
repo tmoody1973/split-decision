@@ -1,0 +1,13 @@
+{
+  "case_id": "oyez-63796",
+  "name": "National Republican Senatorial Committee v. Federal Election Commission",
+  "docket": "24-621",
+  "date_argued": "2025-12-09",
+  "date_decided": null,
+  "question_presented": "Do FECA limits on coordinated party expenditures in 52 U.S.C. \u00a7 30116 violate the First Amendment, either on their face or as applied to party spending in connection with \u201cparty coordinated communications\u201d?",
+  "facts_summary": "In 2022, two Republican party committees\u2014the National Republican Senatorial Committee and the National Republican Congressional Committee\u2014along with then-Senator J.D. Vance and then-Representative Steve Chabot, sued the Federal Election Commission (FEC). The Republican committees asserted that the Federal Election Campaign Act of 1971 (FECA) unconstitutionally restricts their ability to coordinate campaign advertising with their own candidates. This coordination allows the party and its candidates to unify their political message and spend money more efficiently. For example, in the 2021-2022 election cycle, the senatorial committee spent about $15.5 million and the congressional committee spent about $8.3 million on such coordinated expenditures, which primarily fund political advertising. The plaintiffs argue that developments since a 2001 Supreme Court decision, FEC v. Colorado Republican Federal Campaign Committee (Colorado II), which upheld these same limits, have rendered that decision obsolete. Specifically, they point to changes in campaign finance law, the rise of \u201cSuper PACs,\u201d and shifts in the Supreme Court\u2019s First Amendment jurisprudence as reasons the restrictions no longer pass constitutional muster. The plaintiffs filed their lawsuit in the U.S. District Court for the Southern District of Ohio. As required by FECA for constitutional challenges, the district court certified the legal question to the U.S. Court of Appeals for the Sixth Circuit sitting en banc. The Sixth Circuit concluded that the FECA\u2019s limits on coordinated campaign expenditures do not violate the First Amendment and denied both the facial and as-applied challenges brought by the plaintiffs.",
+  "lower_court_ruling": "United States Court of Appeals for the Sixth Circuit",
+  "opinion_excerpt_urls": [],
+  "ground_truth": null,
+  "status": "pending"
+}

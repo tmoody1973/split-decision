@@ -1,0 +1,17 @@
+{
+  "case_id": "scdb-1976-095",
+  "name": "BLACKLEDGE, WARDEN, et al. v. ALLISON",
+  "docket": "75-1693",
+  "date_argued": "1977-05-02",
+  "date_decided": "1977-05-02",
+  "question_presented": "Memorization-check set: predict the Supreme Court's disposition in BLACKLEDGE, WARDEN, et al. v. ALLISON (431 U.S. 63, 1976 Term).",
+  "facts_summary": "Historical case in the memorization-check arm. By design, only the case name, citation, and term are provided \u2014 this arm measures recall of memorized outcomes, not reasoning.",
+  "lower_court_ruling": "not provided (memorization-check arm)",
+  "opinion_excerpt_urls": [],
+  "ground_truth": {
+    "disposition": "affirmed",
+    "vote_split": "8-0",
+    "scdb_id": "1976-095"
+  },
+  "status": "decided"
+}

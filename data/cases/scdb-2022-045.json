@@ -1,0 +1,17 @@
+{
+  "case_id": "scdb-2022-045",
+  "name": "JACK DANIELS PROPERTIES v. VIP PRODUCTS LLC",
+  "docket": "22-148",
+  "date_argued": "2023-06-08",
+  "date_decided": "2023-06-08",
+  "question_presented": "Memorization-check set: predict the Supreme Court's disposition in JACK DANIELS PROPERTIES v. VIP PRODUCTS LLC (599 U.S. 140, 2022 Term).",
+  "facts_summary": "Historical case in the memorization-check arm. By design, only the case name, citation, and term are provided \u2014 this arm measures recall of memorized outcomes, not reasoning.",
+  "lower_court_ruling": "not provided (memorization-check arm)",
+  "opinion_excerpt_urls": [],
+  "ground_truth": {
+    "disposition": "reversed",
+    "vote_split": "9-0",
+    "scdb_id": "2022-045"
+  },
+  "status": "decided"
+}

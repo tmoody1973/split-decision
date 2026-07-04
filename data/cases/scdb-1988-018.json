@@ -1,0 +1,17 @@
+{
+  "case_id": "scdb-1988-018",
+  "name": "PERRY v. LEEKE, COMMISSIONER, SOUTH CAROLINA DEPARTMENT OF CORRECTIONS, et al.",
+  "docket": "87-6325",
+  "date_argued": "1989-01-01",
+  "date_decided": "1989-01-01",
+  "question_presented": "Memorization-check set: predict the Supreme Court's disposition in PERRY v. LEEKE, COMMISSIONER, SOUTH CAROLINA DEPARTMENT OF CORRECTIONS, et al. (488 U.S. 272, 1988 Term).",
+  "facts_summary": "Historical case in the memorization-check arm. By design, only the case name, citation, and term are provided \u2014 this arm measures recall of memorized outcomes, not reasoning.",
+  "lower_court_ruling": "not provided (memorization-check arm)",
+  "opinion_excerpt_urls": [],
+  "ground_truth": {
+    "disposition": "affirmed",
+    "vote_split": "6-3",
+    "scdb_id": "1988-018"
+  },
+  "status": "decided"
+}

@@ -1,0 +1,17 @@
+{
+  "case_id": "scdb-1949-066",
+  "name": "MULLANE, SPECIAL GUARDIAN, v. CENTRAL HANOVER BANK & TRUST CO., TRUSTEE, ET AL.",
+  "docket": "378",
+  "date_argued": "1950-04-24",
+  "date_decided": "1950-04-24",
+  "question_presented": "Memorization-check set: predict the Supreme Court's disposition in MULLANE, SPECIAL GUARDIAN, v. CENTRAL HANOVER BANK & TRUST CO., TRUSTEE, ET AL. (339 U.S. 306, 1949 Term).",
+  "facts_summary": "Historical case in the memorization-check arm. By design, only the case name, citation, and term are provided \u2014 this arm measures recall of memorized outcomes, not reasoning.",
+  "lower_court_ruling": "not provided (memorization-check arm)",
+  "opinion_excerpt_urls": [],
+  "ground_truth": {
+    "disposition": "reversed",
+    "vote_split": "7-1",
+    "scdb_id": "1949-066"
+  },
+  "status": "decided"
+}

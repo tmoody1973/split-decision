@@ -1,0 +1,17 @@
+{
+  "case_id": "scdb-1949-071",
+  "name": "INTERNATIONAL UNION OF UNITED AUTOMOBILE, ETC. WORKERS OF AMERICA, C. I. O., ET AL. v. O'BRIEN, PROSECUTING ATTORNEY, ET AL.",
+  "docket": "456",
+  "date_argued": "1950-05-08",
+  "date_decided": "1950-05-08",
+  "question_presented": "Memorization-check set: predict the Supreme Court's disposition in INTERNATIONAL UNION OF UNITED AUTOMOBILE, ETC. WORKERS OF AMERICA, C. I. O., ET AL. v. O'BRIEN, PROSECUTING ATTORNEY, ET AL. (339 U.S. 454, 1949 Term).",
+  "facts_summary": "Historical case in the memorization-check arm. By design, only the case name, citation, and term are provided \u2014 this arm measures recall of memorized outcomes, not reasoning.",
+  "lower_court_ruling": "not provided (memorization-check arm)",
+  "opinion_excerpt_urls": [],
+  "ground_truth": {
+    "disposition": "reversed",
+    "vote_split": "9-0",
+    "scdb_id": "1949-071"
+  },
+  "status": "decided"
+}

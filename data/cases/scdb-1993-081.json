@@ -1,0 +1,17 @@
+{
+  "case_id": "scdb-1993-081",
+  "name": "FLORENCE DOLAN v. CITY OF TIGARD",
+  "docket": "93-518",
+  "date_argued": "1994-06-24",
+  "date_decided": "1994-06-24",
+  "question_presented": "Memorization-check set: predict the Supreme Court's disposition in FLORENCE DOLAN v. CITY OF TIGARD (512 U.S. 374, 1993 Term).",
+  "facts_summary": "Historical case in the memorization-check arm. By design, only the case name, citation, and term are provided \u2014 this arm measures recall of memorized outcomes, not reasoning.",
+  "lower_court_ruling": "not provided (memorization-check arm)",
+  "opinion_excerpt_urls": [],
+  "ground_truth": {
+    "disposition": "reversed",
+    "vote_split": "5-4",
+    "scdb_id": "1993-081"
+  },
+  "status": "decided"
+}

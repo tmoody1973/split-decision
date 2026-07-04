@@ -1,0 +1,17 @@
+{
+  "case_id": "scdb-1979-044",
+  "name": "TRAMMEL v. UNITED STATES",
+  "docket": "78-5705",
+  "date_argued": "1980-02-27",
+  "date_decided": "1980-02-27",
+  "question_presented": "Memorization-check set: predict the Supreme Court's disposition in TRAMMEL v. UNITED STATES (445 U.S. 40, 1979 Term).",
+  "facts_summary": "Historical case in the memorization-check arm. By design, only the case name, citation, and term are provided \u2014 this arm measures recall of memorized outcomes, not reasoning.",
+  "lower_court_ruling": "not provided (memorization-check arm)",
+  "opinion_excerpt_urls": [],
+  "ground_truth": {
+    "disposition": "affirmed",
+    "vote_split": "9-0",
+    "scdb_id": "1979-044"
+  },
+  "status": "decided"
+}

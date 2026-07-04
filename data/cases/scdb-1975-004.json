@@ -1,0 +1,17 @@
+{
+  "case_id": "scdb-1975-004",
+  "name": "CONNECTICUT v. MENILLO",
+  "docket": "74-1569",
+  "date_argued": "1975-11-11",
+  "date_decided": "1975-11-11",
+  "question_presented": "Memorization-check set: predict the Supreme Court's disposition in CONNECTICUT v. MENILLO (423 U.S. 9, 1975 Term).",
+  "facts_summary": "Historical case in the memorization-check arm. By design, only the case name, citation, and term are provided \u2014 this arm measures recall of memorized outcomes, not reasoning.",
+  "lower_court_ruling": "not provided (memorization-check arm)",
+  "opinion_excerpt_urls": [],
+  "ground_truth": {
+    "disposition": "reversed",
+    "vote_split": "9-0",
+    "scdb_id": "1975-004"
+  },
+  "status": "decided"
+}

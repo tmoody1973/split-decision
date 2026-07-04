@@ -1,0 +1,17 @@
+{
+  "case_id": "scdb-1969-056",
+  "name": "INTERNATIONAL LONGSHOREMEN'S ASSOCIATION, LOCAL 1416, AFL-CIO v. ARIADNE SHIPPING CO., LTD., et al.",
+  "docket": "231",
+  "date_argued": "1970-03-09",
+  "date_decided": "1970-03-09",
+  "question_presented": "Memorization-check set: predict the Supreme Court's disposition in INTERNATIONAL LONGSHOREMEN'S ASSOCIATION, LOCAL 1416, AFL-CIO v. ARIADNE SHIPPING CO., LTD., et al. (397 U.S. 195, 1969 Term).",
+  "facts_summary": "Historical case in the memorization-check arm. By design, only the case name, citation, and term are provided \u2014 this arm measures recall of memorized outcomes, not reasoning.",
+  "lower_court_ruling": "not provided (memorization-check arm)",
+  "opinion_excerpt_urls": [],
+  "ground_truth": {
+    "disposition": "reversed",
+    "vote_split": "8-0",
+    "scdb_id": "1969-056"
+  },
+  "status": "decided"
+}

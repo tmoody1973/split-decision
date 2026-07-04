@@ -1,0 +1,31 @@
+{
+  "_format": "one entry per persona; sheets are horizontal strips; anims list frame indices; palette_accent matches THEME.md and drives VoteBoard/Record colors",
+  "textualist": {
+    "sheets": { "idle": "textualist_idle.png", "walk": "textualist_walk.png" },
+    "base": "textualist_base.png",
+    "frame_w": 88,
+    "frame_h": 88,
+    "fps": 8,
+    "anims": { "idle": [0, 1, 2, 3, 4, 5, 6, 7], "walk": [0, 1, 2, 3, 4, 5, 6, 7] },
+    "palette_accent": "#7a1f2b",
+    "spritecook": {
+      "character_id": "1071579d-352d-4e52-bc62-febc68ed0f8b",
+      "idle_asset_id": "05fce938-5f74-47b4-95d5-7b4ce77b949a",
+      "walk_asset_id": "5d8ebabe-346a-4bee-b6f4-efbd402e94a8"
+    }
+  },
+  "pragmatist": {
+    "sheets": { "idle": "pragmatist_idle.png", "walk": "pragmatist_walk.png" },
+    "base": "pragmatist_base.png",
+    "frame_w": 80,
+    "frame_h": 80,
+    "fps": 8,
+    "anims": { "idle": [0, 1, 2, 3, 4, 5, 6, 7], "walk": [0, 1, 2, 3, 4, 5, 6, 7] },
+    "palette_accent": "#c27b2c",
+    "spritecook": {
+      "character_id": "2e1cad7b-61b7-4cb4-b803-df740d1813d9",
+      "idle_asset_id": "38499091-dbde-439d-895d-9ab3ad07c3f3",
+      "walk_asset_id": "4078ca4d-96b1-4f79-8a84-00a24ec7e748"
+    }
+  }
+}

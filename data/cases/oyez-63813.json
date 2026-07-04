@@ -1,0 +1,13 @@
+{
+  "case_id": "oyez-63813",
+  "name": "West Virginia v. B.P.J.",
+  "docket": "24-43",
+  "date_argued": "2026-01-13",
+  "date_decided": null,
+  "question_presented": "Does Title IX or the Equal Protection Clause prohibit a state from assigning students to girls\u2019 and boys\u2019 sports teams based on their biological sex as determined at birth?",
+  "facts_summary": "B.P.J. is a transgender girl who has identified as female since the third grade. At the onset of puberty, B.P.J. began taking puberty blockers and estrogen for medical treatment of gender dysphoria, effectively halting male pubertal development and aligning her physical characteristics with those of cisgender girls. Since her social transition, B.P.J. has consistently lived as a girl at school and participated on girls\u2019 athletic teams. In 2021, West Virginia enacted the \u201cSave Women\u2019s Sports Act,\u201d which requires public school and collegiate sports teams to be designated based on \u201cbiological sex\u201d and excludes individuals identified as male at birth from participating on female teams. This law, by its design and effect, prevented B.P.J. from continuing to compete on her school\u2019s girls\u2019 cross-country and track teams. Shortly after the Act took effect, B.P.J., through her mother, sued the West Virginia State Board of Education and other state and county education officials, as well as the West Virginia Secondary School Activities Commission. She alleged that excluding her from girls\u2019 sports violated the Equal Protection Clause and Title IX. The State of West Virginia intervened to defend the law. Initially, the district court granted B.P.J. a preliminary injunction, allowing her to participate on girls\u2019 teams pending litigation. However, at summary judgment, the district court reversed course and upheld the law, concluding that the classification on the basis of \u201cbiological sex\u201d was substantially related to the important government interest in ensuring fairness and opportunity in girls\u2019 athletics. The court granted summary judgment to the defendants and denied B.P.J.\u2019s cross-motion, holding that the exclusion of B.P.J. from girls\u2019 sports did not violate the Constitution or Title IX. On appeal, the U.S. Court of Appeals for the Fourth Circuit reversed in part, vacated in part, and remanded. It held that application of the law to B.P.J. violated Title IX and that factual disputes precluded summary judgment against her equal protection claim.",
+  "lower_court_ruling": "United States Court of Appeals for the Fourth Circuit",
+  "opinion_excerpt_urls": [],
+  "ground_truth": null,
+  "status": "pending"
+}

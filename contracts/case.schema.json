@@ -5,7 +5,11 @@
   "description": "One benchmark or pending case, assembled by ingest_cases.py from CourtListener + SCDB (scdb.wustl.edu) + Oyez. ground_truth and date_decided are null for pending cases. Contamination guard: decided cases must post-date 2025-06-01.",
   "type": "object",
   "properties": {
-    "case_id": { "type": "string", "pattern": "^cl-cluster-[0-9]+$" },
+    "case_id": {
+      "description": "cl-cluster-N for CourtListener-sourced cases; scdb-CASEID for historical memorization-check cases; landmark-N for the famous memorization tier (data/precedents/landmark_cases.json); oyez-N for pending cases (no cluster exists until decision)",
+      "type": "string",
+      "pattern": "^(cl-cluster-[0-9]+|scdb-[A-Za-z0-9-]+|landmark-[0-9]+|oyez-[0-9]+)$"
+    },
     "name": { "type": "string", "minLength": 1 },
     "docket": { "type": "string", "minLength": 1 },
     "date_argued": { "type": "string", "format": "date" },

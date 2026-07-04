@@ -1,0 +1,19 @@
+{
+  "case_id": "cl-cluster-10878534",
+  "name": "Pung v. Isabella County",
+  "docket": "25-95",
+  "date_argued": "2026-02-25",
+  "date_decided": "2026-06-23",
+  "question_presented": "1. When the government takes property for tax debt, does the Fifth Amendment require compensation based on the property\u2019s true fair market value, or only on the lower amount it sold for at a tax foreclosure auction? 2. Does the Eighth Amendment\u2019s Excessive Fines Clause prohibit the government from seizing and keeping a property worth far more than the small tax debt owed on it?",
+  "facts_summary": "This case involves a dispute over the foreclosure and sale of the Pung property in Isabella County, Michigan, following the death of its owner, Timothy Scott Pung, in 2004. The property had a Principal Residence Exemption (PRE) from local school taxes. In 2010, the township tax assessor, Patricia DePriest, retroactively denied the PRE for the years 2007-2009, asserting a new owner must file an affidavit. Although the Michigan Tax Tribunal overturned this decision in 2012, holding the PRE remained valid for the estate, DePriest subsequently revoked the PRE for the 2012 tax year based on the same unfiled-affidavit rationale. This denial created an unpaid tax bill of $2,241.93. The County Treasurer, Steven Pickens, initiated foreclosure proceedings for this delinquency. After a final judgment of foreclosure, the property sold at a public auction for $76,008. Isabella County and Pickens retained the entire $76,008 from the sale, refusing to return the surplus proceeds above the tax debt to Michael Pung, the estate's representative. Michael Pung sued, alleging this retention of the surplus violated the Fifth Amendment\u2019s Takings Clause and the Eighth Amendment\u2019s Excessive Fines Clause. The district court granted Pung summary judgment on the Takings Clause claim, ruling he was entitled to the surplus proceeds (the sale price minus the tax debt), but not to the greater loss in equity based on the property\u2019s fair market value. The U.S. Court of Appeals for the Sixth Circuit affirmed the district court\u2019s judgment on all claims, including the amount of compensation awarded.",
+  "lower_court_ruling": "United States Court of Appeals for the Sixth Circuit",
+  "opinion_excerpt_urls": [
+    "https://www.courtlistener.com/opinion/10878534/pung-v-isabella-county/"
+  ],
+  "ground_truth": {
+    "disposition": "reversed",
+    "vote_split": "9-0",
+    "scdb_id": null
+  },
+  "status": "decided"
+}

@@ -1,0 +1,17 @@
+{
+  "case_id": "scdb-1952-112",
+  "name": "SHELTON v. UNITED STATES",
+  "docket": "235M",
+  "date_argued": "1953-06-15",
+  "date_decided": "1953-06-15",
+  "question_presented": "Memorization-check set: predict the Supreme Court's disposition in SHELTON v. UNITED STATES (346 U.S. 270, 1952 Term).",
+  "facts_summary": "Historical case in the memorization-check arm. By design, only the case name, citation, and term are provided \u2014 this arm measures recall of memorized outcomes, not reasoning.",
+  "lower_court_ruling": "not provided (memorization-check arm)",
+  "opinion_excerpt_urls": [],
+  "ground_truth": {
+    "disposition": "reversed",
+    "vote_split": "9-0",
+    "scdb_id": "1952-112"
+  },
+  "status": "decided"
+}

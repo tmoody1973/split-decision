@@ -1,0 +1,17 @@
+{
+  "case_id": "scdb-1969-081",
+  "name": "RICHARD S. v. CITY OF NEW YORK",
+  "docket": "1478 M",
+  "date_argued": "1970-04-20",
+  "date_decided": "1970-04-20",
+  "question_presented": "Memorization-check set: predict the Supreme Court's disposition in RICHARD S. v. CITY OF NEW YORK (397 U.S. 597, 1969 Term).",
+  "facts_summary": "Historical case in the memorization-check arm. By design, only the case name, citation, and term are provided \u2014 this arm measures recall of memorized outcomes, not reasoning.",
+  "lower_court_ruling": "not provided (memorization-check arm)",
+  "opinion_excerpt_urls": [],
+  "ground_truth": {
+    "disposition": "reversed",
+    "vote_split": "5-3",
+    "scdb_id": "1969-081"
+  },
+  "status": "decided"
+}

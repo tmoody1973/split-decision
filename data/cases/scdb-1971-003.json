@@ -1,0 +1,17 @@
+{
+  "case_id": "scdb-1971-003",
+  "name": "SUPERINTENDENT OF INSURANCE OF NEW YORK v. BANKERS LIFE & CASUALTY CO. et al.",
+  "docket": "70-60",
+  "date_argued": "1971-11-08",
+  "date_decided": "1971-11-08",
+  "question_presented": "Memorization-check set: predict the Supreme Court's disposition in SUPERINTENDENT OF INSURANCE OF NEW YORK v. BANKERS LIFE & CASUALTY CO. et al. (404 U.S. 6, 1971 Term).",
+  "facts_summary": "Historical case in the memorization-check arm. By design, only the case name, citation, and term are provided \u2014 this arm measures recall of memorized outcomes, not reasoning.",
+  "lower_court_ruling": "not provided (memorization-check arm)",
+  "opinion_excerpt_urls": [],
+  "ground_truth": {
+    "disposition": "reversed",
+    "vote_split": "7-0",
+    "scdb_id": "1971-003"
+  },
+  "status": "decided"
+}

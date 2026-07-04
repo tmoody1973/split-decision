@@ -1,0 +1,3744 @@
+[
+  {
+    "id": 1,
+    "case_name": "Marbury v. Madison",
+    "citation": "5 U.S. (1 Cranch) 137",
+    "year": 1803,
+    "decided_date": "February 24, 1803",
+    "court_era": "Marshall Court",
+    "chief_justice": "John Marshall",
+    "vote": "4-0",
+    "category": [
+      "Judicial Power",
+      "Constitutional Structure"
+    ],
+    "constitutional_provisions": [
+      "Article III",
+      "Supremacy Clause"
+    ],
+    "parties": {
+      "petitioner": "William Marbury",
+      "respondent": "James Madison, Secretary of State"
+    },
+    "background": "President John Adams, in his final days in office, appointed William Marbury as a justice of the peace for Washington D.C. Secretary of State John Marshall signed the commissions but they were not delivered before Adams left office. The new Secretary of State, James Madison, refused to deliver the commissions on orders from President Thomas Jefferson.",
+    "key_issue": "Does the Supreme Court have the authority to review acts of Congress and declare them unconstitutional?",
+    "holding": "The Supreme Court held that it had the power of judicial review — the authority to strike down laws passed by Congress that violate the Constitution. However, the specific provision of the Judiciary Act of 1789 that gave the Court original jurisdiction over writs of mandamus was unconstitutional.",
+    "significance": "Established the doctrine of judicial review, making the Supreme Court the ultimate arbiter of the Constitution. This case is widely considered the most important decision in Supreme Court history as it fundamentally shaped the balance of power among the three branches of government.",
+    "outcome_for_petitioner": "Lost (no writ issued), but the Court's power was greatly expanded",
+    "overruled": false,
+    "overruled_by": null,
+    "key_precedent_set": "Judicial review — the power of federal courts to invalidate laws that conflict with the Constitution",
+    "notable_justices": [
+      "John Marshall (author)"
+    ],
+    "legal_area": "Constitutional Law",
+    "impact_level": "Foundational"
+  },
+  {
+    "id": 2,
+    "case_name": "McCulloch v. Maryland",
+    "citation": "17 U.S. (4 Wheat.) 316",
+    "year": 1819,
+    "decided_date": "March 6, 1819",
+    "court_era": "Marshall Court",
+    "chief_justice": "John Marshall",
+    "vote": "7-0",
+    "category": [
+      "Federalism",
+      "Congressional Power",
+      "Implied Powers"
+    ],
+    "constitutional_provisions": [
+      "Necessary and Proper Clause",
+      "Supremacy Clause",
+      "Article I"
+    ],
+    "parties": {
+      "petitioner": "James McCulloch, cashier of the Bank of the United States",
+      "respondent": "State of Maryland"
+    },
+    "background": "Congress established the Second Bank of the United States in 1816. Maryland imposed a tax on the bank's operations. James McCulloch, the bank's cashier, refused to pay the tax. Maryland sued McCulloch.",
+    "key_issue": "Does Congress have the power to establish a national bank, and can a state tax that bank?",
+    "holding": "Congress has implied powers under the Necessary and Proper Clause to create a national bank, even though the Constitution does not explicitly authorize it. Furthermore, states cannot tax federal institutions because federal law is supreme over state law.",
+    "significance": "Established two landmark constitutional principles: (1) the doctrine of implied powers, allowing Congress to exercise powers not explicitly listed in the Constitution if they are reasonably related to enumerated powers; and (2) the principle of federal supremacy over state law.",
+    "outcome_for_petitioner": "Won",
+    "overruled": false,
+    "overruled_by": null,
+    "key_precedent_set": "Implied powers doctrine; federal supremacy over state taxation of federal entities",
+    "notable_justices": [
+      "John Marshall (author)"
+    ],
+    "legal_area": "Constitutional Law / Federalism",
+    "impact_level": "Foundational"
+  },
+  {
+    "id": 3,
+    "case_name": "Gibbons v. Ogden",
+    "citation": "22 U.S. (9 Wheat.) 1",
+    "year": 1824,
+    "decided_date": "March 2, 1824",
+    "court_era": "Marshall Court",
+    "chief_justice": "John Marshall",
+    "vote": "6-0",
+    "category": [
+      "Commerce Clause",
+      "Federalism",
+      "Congressional Power"
+    ],
+    "constitutional_provisions": [
+      "Commerce Clause (Article I, Section 8)"
+    ],
+    "parties": {
+      "petitioner": "Thomas Gibbons",
+      "respondent": "Aaron Ogden"
+    },
+    "background": "New York had granted Aaron Ogden a monopoly to operate steamboats on New York waters. Thomas Gibbons operated a competing ferry service licensed under a federal coastal trade act. Ogden sued to stop Gibbons from operating in New York waters.",
+    "key_issue": "Does Congress have the power to regulate interstate commerce, including navigation?",
+    "holding": "Congress has broad power to regulate interstate commerce, including navigation. The federal license superseded the New York state monopoly, which was struck down as an unconstitutional interference with Congress's commerce power.",
+    "significance": "Broadly defined 'commerce' to include navigation and established that Congress's power to regulate interstate commerce is plenary and supreme over state regulations. This decision laid the groundwork for the modern expansive interpretation of the Commerce Clause.",
+    "outcome_for_petitioner": "Won",
+    "overruled": false,
+    "overruled_by": null,
+    "key_precedent_set": "Broad federal power over interstate commerce; states cannot create monopolies that interfere with federal commerce regulation",
+    "notable_justices": [
+      "John Marshall (author)"
+    ],
+    "legal_area": "Constitutional Law / Commerce Clause",
+    "impact_level": "Foundational"
+  },
+  {
+    "id": 4,
+    "case_name": "Dred Scott v. Sandford",
+    "citation": "60 U.S. (19 How.) 393",
+    "year": 1857,
+    "decided_date": "March 6, 1857",
+    "court_era": "Taney Court",
+    "chief_justice": "Roger B. Taney",
+    "vote": "7-2",
+    "category": [
+      "Slavery",
+      "Civil Rights",
+      "Citizenship"
+    ],
+    "constitutional_provisions": [
+      "Fifth Amendment (Due Process)",
+      "Article III"
+    ],
+    "parties": {
+      "petitioner": "Dred Scott",
+      "respondent": "John F.A. Sandford"
+    },
+    "background": "Dred Scott was an enslaved man who had lived for several years in free states and territories with his owner. He sued for his freedom, arguing that his residence in free territory had made him a free man.",
+    "key_issue": "Was Dred Scott a citizen with the right to sue in federal court? Could Congress prohibit slavery in the territories?",
+    "holding": "African Americans, whether enslaved or free, were not citizens of the United States and had no right to sue in federal court. Congress had no power to prohibit slavery in the territories, making the Missouri Compromise unconstitutional.",
+    "significance": "One of the most infamous decisions in Supreme Court history. It intensified the sectional conflict over slavery and is widely regarded as a major cause of the Civil War. The decision was effectively overturned by the Thirteenth and Fourteenth Amendments.",
+    "outcome_for_petitioner": "Lost",
+    "overruled": true,
+    "overruled_by": "Thirteenth Amendment (1865) and Fourteenth Amendment (1868)",
+    "key_precedent_set": "Infamously denied citizenship to African Americans; later nullified by constitutional amendments",
+    "notable_justices": [
+      "Roger B. Taney (author)",
+      "John McLean (dissent)",
+      "Benjamin Curtis (dissent)"
+    ],
+    "legal_area": "Constitutional Law / Civil Rights",
+    "impact_level": "Historically Significant (Negative)"
+  },
+  {
+    "id": 5,
+    "case_name": "Plessy v. Ferguson",
+    "citation": "163 U.S. 537",
+    "year": 1896,
+    "decided_date": "May 18, 1896",
+    "court_era": "Fuller Court",
+    "chief_justice": "Melville Fuller",
+    "vote": "7-1",
+    "category": [
+      "Civil Rights",
+      "Equal Protection",
+      "Racial Segregation"
+    ],
+    "constitutional_provisions": [
+      "Fourteenth Amendment (Equal Protection Clause)"
+    ],
+    "parties": {
+      "petitioner": "Homer Plessy",
+      "respondent": "John H. Ferguson, Judge"
+    },
+    "background": "Homer Plessy, who was seven-eighths white and one-eighth Black, was arrested for sitting in a 'whites only' railroad car in Louisiana in violation of the Separate Car Act of 1890.",
+    "key_issue": "Does Louisiana's Separate Car Act, which mandated racially segregated railroad cars, violate the Equal Protection Clause of the Fourteenth Amendment?",
+    "holding": "Racial segregation in public facilities is constitutional as long as the separate facilities are equal in quality — the 'separate but equal' doctrine.",
+    "significance": "Established the 'separate but equal' doctrine that legally sanctioned racial segregation across the United States for nearly 60 years. The decision was overturned by Brown v. Board of Education (1954) and is now considered one of the worst decisions in Supreme Court history.",
+    "outcome_for_petitioner": "Lost",
+    "overruled": true,
+    "overruled_by": "Brown v. Board of Education (1954)",
+    "key_precedent_set": "'Separate but equal' doctrine (later overturned)",
+    "notable_justices": [
+      "Henry Billings Brown (author)",
+      "John Marshall Harlan (lone dissent)"
+    ],
+    "legal_area": "Constitutional Law / Civil Rights",
+    "impact_level": "Historically Significant (Negative)"
+  },
+  {
+    "id": 6,
+    "case_name": "Lochner v. New York",
+    "citation": "198 U.S. 45",
+    "year": 1905,
+    "decided_date": "April 17, 1905",
+    "court_era": "Fuller Court",
+    "chief_justice": "Melville Fuller",
+    "vote": "5-4",
+    "category": [
+      "Substantive Due Process",
+      "Labor Law",
+      "Economic Liberty"
+    ],
+    "constitutional_provisions": [
+      "Fourteenth Amendment (Due Process Clause)"
+    ],
+    "parties": {
+      "petitioner": "Joseph Lochner",
+      "respondent": "State of New York"
+    },
+    "background": "New York's Bakeshop Act limited the working hours of bakers to 10 hours per day and 60 hours per week. Joseph Lochner, a bakery owner, was fined for allowing an employee to work more than 60 hours in a week.",
+    "key_issue": "Does New York's maximum hours law for bakers violate the Fourteenth Amendment's Due Process Clause by infringing on the freedom of contract?",
+    "holding": "The New York law unconstitutionally interfered with the freedom of contract between employers and employees, a liberty protected by the Fourteenth Amendment's Due Process Clause.",
+    "significance": "Gave rise to the 'Lochner Era' (1905–1937) during which the Court struck down numerous economic regulations as violations of substantive due process. The decision is now widely criticized and considered a cautionary tale of judicial overreach. It was effectively overruled by West Coast Hotel v. Parrish (1937).",
+    "outcome_for_petitioner": "Won",
+    "overruled": true,
+    "overruled_by": "West Coast Hotel Co. v. Parrish (1937)",
+    "key_precedent_set": "Freedom of contract as a fundamental right (later abandoned)",
+    "notable_justices": [
+      "Rufus Peckham (author)",
+      "Oliver Wendell Holmes (dissent)",
+      "John Marshall Harlan (dissent)"
+    ],
+    "legal_area": "Constitutional Law / Labor Law",
+    "impact_level": "High (Historically Significant)"
+  },
+  {
+    "id": 7,
+    "case_name": "Schenck v. United States",
+    "citation": "249 U.S. 47",
+    "year": 1919,
+    "decided_date": "March 3, 1919",
+    "court_era": "White Court",
+    "chief_justice": "Edward D. White",
+    "vote": "9-0",
+    "category": [
+      "First Amendment",
+      "Free Speech",
+      "National Security"
+    ],
+    "constitutional_provisions": [
+      "First Amendment (Freedom of Speech)"
+    ],
+    "parties": {
+      "petitioner": "Charles Schenck",
+      "respondent": "United States"
+    },
+    "background": "Charles Schenck, secretary of the Socialist Party, distributed leaflets urging men to resist the draft during World War I. He was convicted under the Espionage Act of 1917.",
+    "key_issue": "Does the Espionage Act violate the First Amendment's protection of free speech?",
+    "holding": "The Espionage Act does not violate the First Amendment. Speech that creates a 'clear and present danger' of bringing about substantive evils that Congress has a right to prevent may be restricted, especially during wartime.",
+    "significance": "Established the 'clear and present danger' test for limiting free speech. The famous analogy of 'falsely shouting fire in a crowded theater' originated in this opinion. The test was later modified by Brandenburg v. Ohio (1969), which requires speech to be directed to inciting imminent lawless action.",
+    "outcome_for_petitioner": "Lost",
+    "overruled": false,
+    "overruled_by": null,
+    "key_precedent_set": "'Clear and present danger' test for free speech limitations",
+    "notable_justices": [
+      "Oliver Wendell Holmes (author)"
+    ],
+    "legal_area": "Constitutional Law / First Amendment",
+    "impact_level": "High"
+  },
+  {
+    "id": 8,
+    "case_name": "Korematsu v. United States",
+    "citation": "323 U.S. 214",
+    "year": 1944,
+    "decided_date": "December 18, 1944",
+    "court_era": "Stone Court",
+    "chief_justice": "Harlan Fiske Stone",
+    "vote": "6-3",
+    "category": [
+      "Civil Liberties",
+      "National Security",
+      "Equal Protection",
+      "Executive Power"
+    ],
+    "constitutional_provisions": [
+      "Fifth Amendment (Due Process)",
+      "Equal Protection principles"
+    ],
+    "parties": {
+      "petitioner": "Fred Korematsu",
+      "respondent": "United States"
+    },
+    "background": "Following the attack on Pearl Harbor, President Franklin D. Roosevelt signed Executive Order 9066, authorizing the forced relocation and internment of Japanese Americans. Fred Korematsu, a U.S. citizen of Japanese descent, refused to comply with the exclusion order.",
+    "key_issue": "Did the President's Executive Order authorizing the internment of Japanese Americans violate the Constitution?",
+    "holding": "The exclusion order was constitutional as a wartime military necessity. The Court applied strict scrutiny for the first time to racial classifications but upheld the order.",
+    "significance": "While upholding the internment, the case was the first to apply strict scrutiny to racial classifications. It is now widely condemned as one of the worst decisions in Supreme Court history. It was formally overruled by Trump v. Hawaii (2018), and Congress later passed the Civil Liberties Act of 1988, apologizing to Japanese Americans and providing reparations.",
+    "outcome_for_petitioner": "Lost",
+    "overruled": true,
+    "overruled_by": "Trump v. Hawaii (2018)",
+    "key_precedent_set": "First application of strict scrutiny to racial classifications (though wrongly applied)",
+    "notable_justices": [
+      "Hugo Black (author)",
+      "Robert Jackson (dissent)",
+      "Frank Murphy (dissent)",
+      "Owen Roberts (dissent)"
+    ],
+    "legal_area": "Constitutional Law / Civil Liberties",
+    "impact_level": "Historically Significant (Negative)"
+  },
+  {
+    "id": 9,
+    "case_name": "Youngstown Sheet & Tube Co. v. Sawyer",
+    "citation": "343 U.S. 579",
+    "year": 1952,
+    "decided_date": "June 2, 1952",
+    "court_era": "Vinson Court",
+    "chief_justice": "Fred M. Vinson",
+    "vote": "6-3",
+    "category": [
+      "Separation of Powers",
+      "Executive Power",
+      "Presidential Authority"
+    ],
+    "constitutional_provisions": [
+      "Article II (Executive Power)",
+      "Separation of Powers"
+    ],
+    "parties": {
+      "petitioner": "Youngstown Sheet & Tube Co.",
+      "respondent": "Charles Sawyer, Secretary of Commerce"
+    },
+    "background": "During the Korean War, President Truman ordered the seizure of the nation's steel mills to prevent a strike that he feared would harm the war effort. The steel companies challenged the seizure as unconstitutional.",
+    "key_issue": "Does the President have inherent constitutional authority to seize private property to prevent a labor strike during wartime?",
+    "holding": "The President does not have inherent authority to seize private property without congressional authorization. The seizure was an unconstitutional exercise of legislative power.",
+    "significance": "Established important limits on presidential power. Justice Jackson's concurrence created the famous three-part framework for analyzing presidential power in relation to Congress, which remains the leading analytical tool for separation-of-powers cases today.",
+    "outcome_for_petitioner": "Won",
+    "overruled": false,
+    "overruled_by": null,
+    "key_precedent_set": "Limits on presidential power; Justice Jackson's three-part framework for presidential authority",
+    "notable_justices": [
+      "Hugo Black (author)",
+      "Robert Jackson (concurrence — most influential)"
+    ],
+    "legal_area": "Constitutional Law / Separation of Powers",
+    "impact_level": "High"
+  },
+  {
+    "id": 10,
+    "case_name": "Brown v. Board of Education",
+    "citation": "347 U.S. 483",
+    "year": 1954,
+    "decided_date": "May 17, 1954",
+    "court_era": "Warren Court",
+    "chief_justice": "Earl Warren",
+    "vote": "9-0",
+    "category": [
+      "Civil Rights",
+      "Equal Protection",
+      "Education",
+      "Racial Segregation"
+    ],
+    "constitutional_provisions": [
+      "Fourteenth Amendment (Equal Protection Clause)"
+    ],
+    "parties": {
+      "petitioner": "Oliver Brown et al.",
+      "respondent": "Board of Education of Topeka, Kansas"
+    },
+    "background": "Linda Brown, a Black student, was denied admission to an all-white elementary school near her home in Topeka, Kansas. Her father, Oliver Brown, along with other plaintiffs, challenged the constitutionality of school segregation. The NAACP, led by Thurgood Marshall, argued the case.",
+    "key_issue": "Does racial segregation in public schools violate the Equal Protection Clause of the Fourteenth Amendment?",
+    "holding": "Racial segregation in public schools is unconstitutional. 'Separate educational facilities are inherently unequal.' The Court overturned Plessy v. Ferguson as it applied to public education.",
+    "significance": "One of the most transformative decisions in American history. It overturned the 'separate but equal' doctrine, catalyzed the civil rights movement, and fundamentally changed American society. Thurgood Marshall, who argued the case, later became the first African American Supreme Court Justice.",
+    "outcome_for_petitioner": "Won",
+    "overruled": false,
+    "overruled_by": null,
+    "key_precedent_set": "Racial segregation in public schools is unconstitutional; overturned 'separate but equal'",
+    "notable_justices": [
+      "Earl Warren (author — unanimous opinion)"
+    ],
+    "legal_area": "Constitutional Law / Civil Rights",
+    "impact_level": "Foundational"
+  },
+  {
+    "id": 11,
+    "case_name": "Mapp v. Ohio",
+    "citation": "367 U.S. 643",
+    "year": 1961,
+    "decided_date": "June 19, 1961",
+    "court_era": "Warren Court",
+    "chief_justice": "Earl Warren",
+    "vote": "6-3",
+    "category": [
+      "Fourth Amendment",
+      "Criminal Procedure",
+      "Exclusionary Rule"
+    ],
+    "constitutional_provisions": [
+      "Fourth Amendment (Search and Seizure)",
+      "Fourteenth Amendment"
+    ],
+    "parties": {
+      "petitioner": "Dollree Mapp",
+      "respondent": "State of Ohio"
+    },
+    "background": "Police officers forcibly entered Dollree Mapp's home without a valid search warrant, searching for a suspected bombing fugitive. They found obscene materials and she was convicted under Ohio law for possessing them.",
+    "key_issue": "Does the Fourth Amendment's exclusionary rule — which bars illegally obtained evidence from federal courts — apply to state courts through the Fourteenth Amendment?",
+    "holding": "The exclusionary rule applies to state courts through the Fourteenth Amendment. Evidence obtained in violation of the Fourth Amendment cannot be used in state criminal proceedings.",
+    "significance": "Incorporated the Fourth Amendment's exclusionary rule to the states, dramatically changing criminal procedure across the country. It remains a cornerstone of Fourth Amendment jurisprudence and has had a profound impact on law enforcement practices.",
+    "outcome_for_petitioner": "Won",
+    "overruled": false,
+    "overruled_by": null,
+    "key_precedent_set": "Exclusionary rule applies to state courts; illegally obtained evidence inadmissible",
+    "notable_justices": [
+      "Tom Clark (author)"
+    ],
+    "legal_area": "Constitutional Law / Criminal Procedure",
+    "impact_level": "High"
+  },
+  {
+    "id": 12,
+    "case_name": "Baker v. Carr",
+    "citation": "369 U.S. 186",
+    "year": 1962,
+    "decided_date": "March 26, 1962",
+    "court_era": "Warren Court",
+    "chief_justice": "Earl Warren",
+    "vote": "6-2",
+    "category": [
+      "Voting Rights",
+      "Reapportionment",
+      "Political Questions"
+    ],
+    "constitutional_provisions": [
+      "Fourteenth Amendment (Equal Protection Clause)",
+      "Article III"
+    ],
+    "parties": {
+      "petitioner": "Charles W. Baker",
+      "respondent": "Joe C. Carr, Tennessee Secretary of State"
+    },
+    "background": "Tennessee had not reapportioned its state legislature since 1901, despite significant population shifts. Urban voters were severely underrepresented compared to rural voters. Baker and other urban voters sued, arguing their votes were diluted.",
+    "key_issue": "Are federal courts able to hear challenges to state legislative apportionment, or is this a non-justiciable 'political question'?",
+    "holding": "Federal courts have jurisdiction over legislative apportionment challenges. The case is justiciable and does not present a non-justiciable political question.",
+    "significance": "Opened the federal courts to legislative apportionment challenges, leading to the 'one person, one vote' principle established in Reynolds v. Sims (1964). It fundamentally transformed American democracy by requiring equal representation in state legislatures.",
+    "outcome_for_petitioner": "Won (case remanded)",
+    "overruled": false,
+    "overruled_by": null,
+    "key_precedent_set": "Federal courts have jurisdiction over apportionment challenges; foundation for 'one person, one vote'",
+    "notable_justices": [
+      "William Brennan (author)",
+      "Felix Frankfurter (dissent)"
+    ],
+    "legal_area": "Constitutional Law / Voting Rights",
+    "impact_level": "High"
+  },
+  {
+    "id": 13,
+    "case_name": "Engel v. Vitale",
+    "citation": "370 U.S. 421",
+    "year": 1962,
+    "decided_date": "June 25, 1962",
+    "court_era": "Warren Court",
+    "chief_justice": "Earl Warren",
+    "vote": "6-1",
+    "category": [
+      "First Amendment",
+      "Establishment Clause",
+      "Religion in Schools"
+    ],
+    "constitutional_provisions": [
+      "First Amendment (Establishment Clause)",
+      "Fourteenth Amendment"
+    ],
+    "parties": {
+      "petitioner": "Steven Engel et al.",
+      "respondent": "William Vitale, President of the Board of Education"
+    },
+    "background": "The New York State Board of Regents composed a nondenominational prayer to be recited in public schools each morning. A group of parents challenged the practice as a violation of the Establishment Clause.",
+    "key_issue": "Does the recitation of a state-composed prayer in public schools violate the Establishment Clause of the First Amendment?",
+    "holding": "Government-directed prayer in public schools violates the Establishment Clause, even if the prayer is nondenominational and participation is voluntary.",
+    "significance": "Established that government-sponsored prayer in public schools is unconstitutional. The decision sparked enormous public controversy and remains one of the most debated rulings in Supreme Court history. It set the foundation for subsequent cases on religion in public schools.",
+    "outcome_for_petitioner": "Won",
+    "overruled": false,
+    "overruled_by": null,
+    "key_precedent_set": "Government-sponsored prayer in public schools violates the Establishment Clause",
+    "notable_justices": [
+      "Hugo Black (author)",
+      "Potter Stewart (sole dissent)"
+    ],
+    "legal_area": "Constitutional Law / First Amendment",
+    "impact_level": "High"
+  },
+  {
+    "id": 14,
+    "case_name": "Gideon v. Wainwright",
+    "citation": "372 U.S. 335",
+    "year": 1963,
+    "decided_date": "March 18, 1963",
+    "court_era": "Warren Court",
+    "chief_justice": "Earl Warren",
+    "vote": "9-0",
+    "category": [
+      "Sixth Amendment",
+      "Right to Counsel",
+      "Criminal Procedure"
+    ],
+    "constitutional_provisions": [
+      "Sixth Amendment (Right to Counsel)",
+      "Fourteenth Amendment"
+    ],
+    "parties": {
+      "petitioner": "Clarence Earl Gideon",
+      "respondent": "Louie L. Wainwright, Director of Florida Division of Corrections"
+    },
+    "background": "Clarence Gideon was charged with breaking and entering in Florida. Too poor to afford an attorney, he asked the court to appoint one. The judge refused, citing Florida law that only provided counsel in capital cases. Gideon represented himself, was convicted, and appealed.",
+    "key_issue": "Does the Sixth Amendment's right to counsel apply to state criminal proceedings through the Fourteenth Amendment?",
+    "holding": "The Sixth Amendment's right to counsel is a fundamental right that applies to state criminal proceedings through the Fourteenth Amendment. Indigent defendants charged with serious crimes must be provided a lawyer at state expense.",
+    "significance": "Transformed the American criminal justice system by guaranteeing the right to counsel for all defendants who cannot afford an attorney. It led to the establishment and expansion of public defender offices across the country. Gideon represented himself in his handwritten petition to the Supreme Court.",
+    "outcome_for_petitioner": "Won",
+    "overruled": false,
+    "overruled_by": null,
+    "key_precedent_set": "Right to appointed counsel for indigent defendants in state criminal proceedings",
+    "notable_justices": [
+      "Hugo Black (author)"
+    ],
+    "legal_area": "Constitutional Law / Criminal Procedure",
+    "impact_level": "Foundational"
+  },
+  {
+    "id": 15,
+    "case_name": "New York Times Co. v. Sullivan",
+    "citation": "376 U.S. 254",
+    "year": 1964,
+    "decided_date": "March 9, 1964",
+    "court_era": "Warren Court",
+    "chief_justice": "Earl Warren",
+    "vote": "9-0",
+    "category": [
+      "First Amendment",
+      "Freedom of Press",
+      "Defamation",
+      "Civil Rights"
+    ],
+    "constitutional_provisions": [
+      "First Amendment (Freedom of Press and Speech)"
+    ],
+    "parties": {
+      "petitioner": "New York Times Company",
+      "respondent": "L.B. Sullivan, Montgomery, Alabama Public Safety Commissioner"
+    },
+    "background": "The New York Times published a full-page advertisement by civil rights leaders that contained some factual inaccuracies about police conduct in Montgomery, Alabama. L.B. Sullivan, a city commissioner, sued for libel and won a $500,000 judgment in Alabama courts.",
+    "key_issue": "Does the First Amendment limit the ability of a public official to sue for defamation?",
+    "holding": "A public official cannot recover damages for defamation relating to their official conduct unless they can prove the statement was made with 'actual malice' — that is, with knowledge that it was false or with reckless disregard for its truth or falsity.",
+    "significance": "Established the 'actual malice' standard for defamation claims by public officials, providing broad First Amendment protection to the press. The decision is considered essential to a free press and the ability of the media to report on public officials without fear of ruinous libel suits.",
+    "outcome_for_petitioner": "Won",
+    "overruled": false,
+    "overruled_by": null,
+    "key_precedent_set": "'Actual malice' standard for defamation by public officials; broad press freedom",
+    "notable_justices": [
+      "William Brennan (author)"
+    ],
+    "legal_area": "Constitutional Law / First Amendment",
+    "impact_level": "Foundational"
+  },
+  {
+    "id": 16,
+    "case_name": "Heart of Atlanta Motel, Inc. v. United States",
+    "citation": "379 U.S. 241",
+    "year": 1964,
+    "decided_date": "December 14, 1964",
+    "court_era": "Warren Court",
+    "chief_justice": "Earl Warren",
+    "vote": "9-0",
+    "category": [
+      "Civil Rights",
+      "Commerce Clause",
+      "Racial Discrimination"
+    ],
+    "constitutional_provisions": [
+      "Commerce Clause (Article I, Section 8)",
+      "Civil Rights Act of 1964"
+    ],
+    "parties": {
+      "petitioner": "Heart of Atlanta Motel, Inc.",
+      "respondent": "United States"
+    },
+    "background": "The Heart of Atlanta Motel refused to rent rooms to Black customers in violation of Title II of the Civil Rights Act of 1964, which prohibited racial discrimination in public accommodations. The motel argued Congress had exceeded its Commerce Clause authority.",
+    "key_issue": "Does Congress have the power under the Commerce Clause to prohibit racial discrimination in public accommodations?",
+    "holding": "Congress has the power under the Commerce Clause to prohibit racial discrimination in public accommodations because racial discrimination in hotels affects interstate commerce.",
+    "significance": "Upheld the Civil Rights Act of 1964's public accommodations provisions, providing the constitutional foundation for federal civil rights legislation. The decision confirmed Congress's broad power to use the Commerce Clause to address racial discrimination.",
+    "outcome_for_petitioner": "Lost",
+    "overruled": false,
+    "overruled_by": null,
+    "key_precedent_set": "Commerce Clause authorizes federal anti-discrimination laws in public accommodations",
+    "notable_justices": [
+      "Tom Clark (author)"
+    ],
+    "legal_area": "Constitutional Law / Civil Rights",
+    "impact_level": "High"
+  },
+  {
+    "id": 17,
+    "case_name": "Griswold v. Connecticut",
+    "citation": "381 U.S. 479",
+    "year": 1965,
+    "decided_date": "June 7, 1965",
+    "court_era": "Warren Court",
+    "chief_justice": "Earl Warren",
+    "vote": "7-2",
+    "category": [
+      "Privacy Rights",
+      "Substantive Due Process",
+      "Marriage",
+      "Contraception"
+    ],
+    "constitutional_provisions": [
+      "First, Third, Fourth, Fifth, Ninth, and Fourteenth Amendments (penumbras)"
+    ],
+    "parties": {
+      "petitioner": "Estelle Griswold, Executive Director of Planned Parenthood of Connecticut",
+      "respondent": "State of Connecticut"
+    },
+    "background": "Connecticut law prohibited the use of contraceptives and the counseling of married couples about contraception. Estelle Griswold and a doctor were convicted under the law for providing contraceptive advice to married couples.",
+    "key_issue": "Does the Constitution protect a right to marital privacy that prevents states from banning contraceptive use by married couples?",
+    "holding": "The Constitution protects a right to privacy in marital relations. Connecticut's law prohibiting contraceptive use by married couples unconstitutionally intrudes upon the right to marital privacy found in the 'penumbras' of the Bill of Rights.",
+    "significance": "Established the constitutional right to privacy, which became the foundation for later landmark decisions including Roe v. Wade (1973), Lawrence v. Texas (2003), and Obergefell v. Hodges (2015). Justice Douglas's 'penumbras and emanations' reasoning remains one of the most discussed passages in constitutional law.",
+    "outcome_for_petitioner": "Won",
+    "overruled": false,
+    "overruled_by": null,
+    "key_precedent_set": "Constitutional right to privacy; foundation for reproductive and personal liberty rights",
+    "notable_justices": [
+      "William O. Douglas (author)",
+      "Arthur Goldberg (concurrence)",
+      "Hugo Black (dissent)",
+      "Potter Stewart (dissent)"
+    ],
+    "legal_area": "Constitutional Law / Privacy",
+    "impact_level": "Foundational"
+  },
+  {
+    "id": 18,
+    "case_name": "Miranda v. Arizona",
+    "citation": "384 U.S. 436",
+    "year": 1966,
+    "decided_date": "June 13, 1966",
+    "court_era": "Warren Court",
+    "chief_justice": "Earl Warren",
+    "vote": "5-4",
+    "category": [
+      "Fifth Amendment",
+      "Sixth Amendment",
+      "Criminal Procedure",
+      "Self-Incrimination"
+    ],
+    "constitutional_provisions": [
+      "Fifth Amendment (Self-Incrimination)",
+      "Sixth Amendment (Right to Counsel)"
+    ],
+    "parties": {
+      "petitioner": "Ernesto Miranda",
+      "respondent": "State of Arizona"
+    },
+    "background": "Ernesto Miranda was arrested for kidnapping and rape. After two hours of interrogation, he signed a written confession. He was not told of his right to remain silent or his right to an attorney. He was convicted based largely on the confession.",
+    "key_issue": "Are statements made during a custodial interrogation admissible if the suspect was not informed of their Fifth and Sixth Amendment rights?",
+    "holding": "Before any custodial interrogation, police must inform suspects of their rights: the right to remain silent, that anything said can be used against them in court, the right to an attorney, and the right to have an attorney appointed if they cannot afford one.",
+    "significance": "Created the famous 'Miranda warnings' that are now a staple of American law enforcement and popular culture. The decision fundamentally changed police interrogation practices and remains one of the most recognized Supreme Court decisions among the general public.",
+    "outcome_for_petitioner": "Won (conviction reversed)",
+    "overruled": false,
+    "overruled_by": null,
+    "key_precedent_set": "Miranda warnings required before custodial interrogation",
+    "notable_justices": [
+      "Earl Warren (author)"
+    ],
+    "legal_area": "Constitutional Law / Criminal Procedure",
+    "impact_level": "Foundational"
+  },
+  {
+    "id": 19,
+    "case_name": "Loving v. Virginia",
+    "citation": "388 U.S. 1",
+    "year": 1967,
+    "decided_date": "June 12, 1967",
+    "court_era": "Warren Court",
+    "chief_justice": "Earl Warren",
+    "vote": "9-0",
+    "category": [
+      "Civil Rights",
+      "Equal Protection",
+      "Due Process",
+      "Marriage"
+    ],
+    "constitutional_provisions": [
+      "Fourteenth Amendment (Equal Protection and Due Process Clauses)"
+    ],
+    "parties": {
+      "petitioner": "Richard and Mildred Loving",
+      "respondent": "Commonwealth of Virginia"
+    },
+    "background": "Richard Loving (white) and Mildred Jeter (Black and Native American) were married in Washington D.C. and returned to Virginia, where interracial marriage was illegal under the Racial Integrity Act of 1924. They were convicted and sentenced to one year in prison, suspended on the condition they leave Virginia.",
+    "key_issue": "Do Virginia's anti-miscegenation laws violate the Equal Protection and Due Process Clauses of the Fourteenth Amendment?",
+    "holding": "Laws prohibiting interracial marriage violate both the Equal Protection Clause and the Due Process Clause of the Fourteenth Amendment. Marriage is a fundamental right that cannot be restricted on the basis of race.",
+    "significance": "Struck down all remaining anti-miscegenation laws in the United States. The decision established marriage as a fundamental right and is frequently cited in subsequent cases involving marriage rights, including Obergefell v. Hodges (2015), which legalized same-sex marriage.",
+    "outcome_for_petitioner": "Won",
+    "overruled": false,
+    "overruled_by": null,
+    "key_precedent_set": "Anti-miscegenation laws unconstitutional; marriage is a fundamental right",
+    "notable_justices": [
+      "Earl Warren (author)"
+    ],
+    "legal_area": "Constitutional Law / Civil Rights",
+    "impact_level": "Foundational"
+  },
+  {
+    "id": 20,
+    "case_name": "Terry v. Ohio",
+    "citation": "392 U.S. 1",
+    "year": 1968,
+    "decided_date": "June 10, 1968",
+    "court_era": "Warren Court",
+    "chief_justice": "Earl Warren",
+    "vote": "8-1",
+    "category": [
+      "Fourth Amendment",
+      "Search and Seizure",
+      "Criminal Procedure"
+    ],
+    "constitutional_provisions": [
+      "Fourth Amendment (Unreasonable Searches and Seizures)"
+    ],
+    "parties": {
+      "petitioner": "John W. Terry",
+      "respondent": "State of Ohio"
+    },
+    "background": "A police officer observed John Terry and others acting suspiciously, appearing to case a store for robbery. The officer stopped and frisked them, finding concealed weapons. Terry was convicted of carrying a concealed weapon.",
+    "key_issue": "Does the Fourth Amendment permit a police officer to stop and frisk a person based on reasonable suspicion, short of probable cause?",
+    "holding": "Police officers may stop and briefly detain a person based on 'reasonable suspicion' — less than probable cause — and may conduct a limited pat-down for weapons if they reasonably believe the person is armed and dangerous.",
+    "significance": "Created the 'stop and frisk' doctrine, allowing police to conduct brief investigatory stops and pat-downs based on reasonable suspicion. The decision has had enormous practical impact on law enforcement and has been the subject of ongoing controversy regarding racial profiling.",
+    "outcome_for_petitioner": "Lost",
+    "overruled": false,
+    "overruled_by": null,
+    "key_precedent_set": "Reasonable suspicion standard for stop-and-frisk; Terry stops",
+    "notable_justices": [
+      "Earl Warren (author)",
+      "William O. Douglas (sole dissent)"
+    ],
+    "legal_area": "Constitutional Law / Criminal Procedure",
+    "impact_level": "High"
+  },
+  {
+    "id": 21,
+    "case_name": "Tinker v. Des Moines Independent Community School District",
+    "citation": "393 U.S. 503",
+    "year": 1969,
+    "decided_date": "February 24, 1969",
+    "court_era": "Warren Court",
+    "chief_justice": "Earl Warren",
+    "vote": "7-2",
+    "category": [
+      "First Amendment",
+      "Free Speech",
+      "Student Rights",
+      "Symbolic Speech"
+    ],
+    "constitutional_provisions": [
+      "First Amendment (Freedom of Speech)",
+      "Fourteenth Amendment"
+    ],
+    "parties": {
+      "petitioner": "Mary Beth Tinker et al.",
+      "respondent": "Des Moines Independent Community School District"
+    },
+    "background": "Mary Beth Tinker and other students wore black armbands to school to protest the Vietnam War. The school district, anticipating disruption, adopted a policy banning armbands. The students were suspended for violating the policy.",
+    "key_issue": "Does a public school's prohibition on students wearing armbands as a form of political protest violate the First Amendment?",
+    "holding": "Students do not 'shed their constitutional rights to freedom of speech or expression at the schoolhouse gate.' Schools may only restrict student speech if it would cause substantial disruption to school operations. Wearing armbands was protected symbolic speech.",
+    "significance": "Established that students retain First Amendment rights in public schools. The 'substantial disruption' test remains the governing standard for student speech cases. The decision is one of the most important cases in the area of student rights.",
+    "outcome_for_petitioner": "Won",
+    "overruled": false,
+    "overruled_by": null,
+    "key_precedent_set": "Students retain First Amendment rights in school; 'substantial disruption' test",
+    "notable_justices": [
+      "Abe Fortas (author)",
+      "Hugo Black (dissent)"
+    ],
+    "legal_area": "Constitutional Law / First Amendment",
+    "impact_level": "High"
+  },
+  {
+    "id": 22,
+    "case_name": "New York Times Co. v. United States",
+    "citation": "403 U.S. 713",
+    "year": 1971,
+    "decided_date": "June 30, 1971",
+    "court_era": "Burger Court",
+    "chief_justice": "Warren E. Burger",
+    "vote": "6-3",
+    "category": [
+      "First Amendment",
+      "Freedom of Press",
+      "Prior Restraint",
+      "National Security"
+    ],
+    "constitutional_provisions": [
+      "First Amendment (Freedom of Press)"
+    ],
+    "parties": {
+      "petitioner": "New York Times Co.",
+      "respondent": "United States"
+    },
+    "background": "The Nixon administration sought to prevent the New York Times and Washington Post from publishing the 'Pentagon Papers,' a classified Defense Department study of U.S. involvement in Vietnam, arguing publication would harm national security.",
+    "key_issue": "Can the government impose prior restraint on the press to prevent publication of classified documents?",
+    "holding": "The government failed to meet the heavy burden required to justify prior restraint of the press. The newspapers were free to publish the Pentagon Papers.",
+    "significance": "Reaffirmed the strong presumption against prior restraint of the press. The decision is a landmark for press freedom, establishing that the government bears an extremely heavy burden to justify any prior restraint on publication.",
+    "outcome_for_petitioner": "Won",
+    "overruled": false,
+    "overruled_by": null,
+    "key_precedent_set": "Heavy presumption against prior restraint of the press",
+    "notable_justices": [
+      "Per Curiam opinion",
+      "Hugo Black (concurrence)",
+      "William O. Douglas (concurrence)"
+    ],
+    "legal_area": "Constitutional Law / First Amendment",
+    "impact_level": "High"
+  },
+  {
+    "id": 23,
+    "case_name": "Roe v. Wade",
+    "citation": "410 U.S. 113",
+    "year": 1973,
+    "decided_date": "January 22, 1973",
+    "court_era": "Burger Court",
+    "chief_justice": "Warren E. Burger",
+    "vote": "7-2",
+    "category": [
+      "Privacy Rights",
+      "Abortion",
+      "Substantive Due Process",
+      "Women's Rights"
+    ],
+    "constitutional_provisions": [
+      "Fourteenth Amendment (Due Process Clause — right to privacy)"
+    ],
+    "parties": {
+      "petitioner": "Jane Roe (Norma McCorvey)",
+      "respondent": "Henry Wade, Dallas County District Attorney"
+    },
+    "background": "Texas law prohibited abortion except to save the mother's life. 'Jane Roe' challenged the law, arguing it violated her constitutional right to privacy. The case was consolidated with Doe v. Bolton.",
+    "key_issue": "Does the Constitution protect a woman's right to terminate a pregnancy?",
+    "holding": "The Constitution's right to privacy, found in the Due Process Clause of the Fourteenth Amendment, encompasses a woman's decision to terminate a pregnancy. States may regulate abortion in the second trimester and prohibit it in the third trimester, except to preserve the life or health of the mother.",
+    "significance": "One of the most controversial decisions in Supreme Court history. It established a constitutional right to abortion and created the trimester framework for state regulation. The decision was overruled by Dobbs v. Jackson Women's Health Organization (2022).",
+    "outcome_for_petitioner": "Won",
+    "overruled": true,
+    "overruled_by": "Dobbs v. Jackson Women's Health Organization (2022)",
+    "key_precedent_set": "Constitutional right to abortion (later overruled); trimester framework",
+    "notable_justices": [
+      "Harry Blackmun (author)",
+      "Byron White (dissent)",
+      "William Rehnquist (dissent)"
+    ],
+    "legal_area": "Constitutional Law / Privacy / Reproductive Rights",
+    "impact_level": "Foundational (Historically Significant)"
+  },
+  {
+    "id": 24,
+    "case_name": "United States v. Nixon",
+    "citation": "418 U.S. 683",
+    "year": 1974,
+    "decided_date": "July 24, 1974",
+    "court_era": "Burger Court",
+    "chief_justice": "Warren E. Burger",
+    "vote": "8-0",
+    "category": [
+      "Separation of Powers",
+      "Executive Privilege",
+      "Presidential Power"
+    ],
+    "constitutional_provisions": [
+      "Article II (Executive Power)",
+      "Separation of Powers"
+    ],
+    "parties": {
+      "petitioner": "United States",
+      "respondent": "President Richard M. Nixon"
+    },
+    "background": "During the Watergate investigation, Special Prosecutor Leon Jaworski subpoenaed audio tapes of White House conversations. President Nixon refused to comply, asserting executive privilege — the right of the President to keep communications confidential.",
+    "key_issue": "Does the President have an absolute executive privilege to withhold evidence from a criminal proceeding?",
+    "holding": "While the President has a qualified executive privilege, it is not absolute. When balanced against the need for evidence in a criminal proceeding, the privilege must yield. Nixon was required to turn over the tapes.",
+    "significance": "Established that the President is not above the law and that executive privilege is not absolute. The decision led directly to Nixon's resignation — the only resignation of a U.S. President in history. It remains the definitive case on the limits of presidential power.",
+    "outcome_for_petitioner": "Won (tapes ordered released)",
+    "overruled": false,
+    "overruled_by": null,
+    "key_precedent_set": "Executive privilege is not absolute; President is subject to judicial process",
+    "notable_justices": [
+      "Warren E. Burger (author — unanimous)"
+    ],
+    "legal_area": "Constitutional Law / Separation of Powers",
+    "impact_level": "Foundational"
+  },
+  {
+    "id": 25,
+    "case_name": "Buckley v. Valeo",
+    "citation": "424 U.S. 1",
+    "year": 1976,
+    "decided_date": "January 30, 1976",
+    "court_era": "Burger Court",
+    "chief_justice": "Warren E. Burger",
+    "vote": "Per Curiam (various majorities)",
+    "category": [
+      "First Amendment",
+      "Campaign Finance",
+      "Political Speech"
+    ],
+    "constitutional_provisions": [
+      "First Amendment (Freedom of Speech)"
+    ],
+    "parties": {
+      "petitioner": "James L. Buckley et al.",
+      "respondent": "Francis R. Valeo, Secretary of the Senate"
+    },
+    "background": "Following Watergate, Congress enacted the Federal Election Campaign Act of 1974, which imposed limits on campaign contributions and expenditures. Senator James Buckley and others challenged the law as a violation of the First Amendment.",
+    "key_issue": "Do limits on campaign contributions and expenditures violate the First Amendment's protection of political speech?",
+    "holding": "Contribution limits are constitutional as they prevent corruption. However, expenditure limits are unconstitutional because spending money to express political views is protected speech under the First Amendment.",
+    "significance": "Established the foundational framework for campaign finance law by equating money with speech. The decision's distinction between contributions and expenditures has shaped all subsequent campaign finance jurisprudence, including Citizens United v. FEC (2010).",
+    "outcome_for_petitioner": "Partial win",
+    "overruled": false,
+    "overruled_by": null,
+    "key_precedent_set": "Political spending as protected speech; contribution limits constitutional, expenditure limits not",
+    "notable_justices": [
+      "Per Curiam opinion"
+    ],
+    "legal_area": "Constitutional Law / Campaign Finance",
+    "impact_level": "High"
+  },
+  {
+    "id": 26,
+    "case_name": "Regents of the University of California v. Bakke",
+    "citation": "438 U.S. 265",
+    "year": 1978,
+    "decided_date": "June 28, 1978",
+    "court_era": "Burger Court",
+    "chief_justice": "Warren E. Burger",
+    "vote": "5-4 (split decision)",
+    "category": [
+      "Affirmative Action",
+      "Equal Protection",
+      "Higher Education"
+    ],
+    "constitutional_provisions": [
+      "Fourteenth Amendment (Equal Protection Clause)",
+      "Title VI of the Civil Rights Act"
+    ],
+    "parties": {
+      "petitioner": "Regents of the University of California",
+      "respondent": "Allan Bakke"
+    },
+    "background": "Allan Bakke, a white applicant, was twice rejected from the UC Davis Medical School while minority applicants with lower test scores were admitted under a special admissions program that reserved 16 of 100 seats for minority students.",
+    "key_issue": "Does a university's use of racial quotas in admissions violate the Equal Protection Clause or Title VI?",
+    "holding": "Rigid racial quotas in university admissions are unconstitutional. However, race may be considered as one factor among many in a holistic admissions process to achieve a diverse student body.",
+    "significance": "Established the framework for affirmative action in higher education that persisted for decades. Justice Powell's controlling opinion introduced the concept of 'diversity' as a compelling state interest. The decision was partially overruled by Students for Fair Admissions v. Harvard (2023).",
+    "outcome_for_petitioner": "Split — Bakke admitted but race-conscious admissions allowed",
+    "overruled": true,
+    "overruled_by": "Students for Fair Admissions v. Harvard (2023) (partially)",
+    "key_precedent_set": "Race may be a factor in admissions but not through rigid quotas; diversity as compelling interest",
+    "notable_justices": [
+      "Lewis Powell (controlling opinion)",
+      "Thurgood Marshall (partial dissent)",
+      "William Brennan (partial concurrence/dissent)"
+    ],
+    "legal_area": "Constitutional Law / Equal Protection",
+    "impact_level": "High"
+  },
+  {
+    "id": 27,
+    "case_name": "Texas v. Johnson",
+    "citation": "491 U.S. 397",
+    "year": 1989,
+    "decided_date": "June 21, 1989",
+    "court_era": "Rehnquist Court",
+    "chief_justice": "William H. Rehnquist",
+    "vote": "5-4",
+    "category": [
+      "First Amendment",
+      "Symbolic Speech",
+      "Flag Burning"
+    ],
+    "constitutional_provisions": [
+      "First Amendment (Freedom of Speech)"
+    ],
+    "parties": {
+      "petitioner": "Gregory Lee Johnson",
+      "respondent": "State of Texas"
+    },
+    "background": "Gregory Lee Johnson burned an American flag outside the 1984 Republican National Convention in Dallas to protest Reagan administration policies. He was convicted under a Texas law prohibiting desecration of the flag.",
+    "key_issue": "Is flag burning a form of symbolic speech protected by the First Amendment?",
+    "holding": "Flag burning is a form of symbolic speech protected by the First Amendment. The government cannot prohibit the expression of an idea simply because society finds the idea disagreeable or offensive.",
+    "significance": "One of the most controversial First Amendment decisions, establishing that even deeply offensive symbolic speech is constitutionally protected. The decision prompted Congress to pass the Flag Protection Act of 1989, which was also struck down by the Court in United States v. Eichman (1990).",
+    "outcome_for_petitioner": "Won",
+    "overruled": false,
+    "overruled_by": null,
+    "key_precedent_set": "Flag burning as protected symbolic speech; government cannot suppress offensive expression",
+    "notable_justices": [
+      "William Brennan (author)",
+      "William H. Rehnquist (dissent)",
+      "John Paul Stevens (dissent)"
+    ],
+    "legal_area": "Constitutional Law / First Amendment",
+    "impact_level": "High"
+  },
+  {
+    "id": 28,
+    "case_name": "Planned Parenthood v. Casey",
+    "citation": "505 U.S. 833",
+    "year": 1992,
+    "decided_date": "June 29, 1992",
+    "court_era": "Rehnquist Court",
+    "chief_justice": "William H. Rehnquist",
+    "vote": "5-4 (various majorities)",
+    "category": [
+      "Abortion",
+      "Privacy Rights",
+      "Substantive Due Process",
+      "Women's Rights"
+    ],
+    "constitutional_provisions": [
+      "Fourteenth Amendment (Due Process Clause — liberty)"
+    ],
+    "parties": {
+      "petitioner": "Planned Parenthood of Southeastern Pennsylvania",
+      "respondent": "Robert P. Casey, Governor of Pennsylvania"
+    },
+    "background": "Pennsylvania enacted the Abortion Control Act, which imposed several restrictions on abortion, including a 24-hour waiting period, informed consent requirements, parental consent for minors, and spousal notification. Planned Parenthood challenged the law.",
+    "key_issue": "Does Pennsylvania's Abortion Control Act violate the constitutional right to abortion established in Roe v. Wade?",
+    "holding": "The Court reaffirmed the core holding of Roe v. Wade — that women have a constitutional right to abortion before viability. However, it replaced the trimester framework with the 'undue burden' standard: regulations are unconstitutional only if they impose a substantial obstacle to a woman seeking an abortion.",
+    "significance": "Preserved the right to abortion while allowing more state regulation. The 'undue burden' standard replaced Roe's trimester framework and governed abortion jurisprudence until Dobbs v. Jackson (2022). The joint opinion by O'Connor, Kennedy, and Souter is notable for its defense of stare decisis.",
+    "outcome_for_petitioner": "Partial win",
+    "overruled": true,
+    "overruled_by": "Dobbs v. Jackson Women's Health Organization (2022)",
+    "key_precedent_set": "'Undue burden' standard for abortion regulations; reaffirmed core of Roe",
+    "notable_justices": [
+      "Sandra Day O'Connor, Anthony Kennedy, David Souter (joint opinion)",
+      "William H. Rehnquist (dissent)",
+      "Antonin Scalia (dissent)"
+    ],
+    "legal_area": "Constitutional Law / Reproductive Rights",
+    "impact_level": "High"
+  },
+  {
+    "id": 29,
+    "case_name": "United States v. Lopez",
+    "citation": "514 U.S. 549",
+    "year": 1995,
+    "decided_date": "April 26, 1995",
+    "court_era": "Rehnquist Court",
+    "chief_justice": "William H. Rehnquist",
+    "vote": "5-4",
+    "category": [
+      "Commerce Clause",
+      "Federalism",
+      "Congressional Power"
+    ],
+    "constitutional_provisions": [
+      "Commerce Clause (Article I, Section 8)"
+    ],
+    "parties": {
+      "petitioner": "United States",
+      "respondent": "Alfonso Lopez Jr."
+    },
+    "background": "Alfonso Lopez, a 12th-grade student, brought a concealed handgun to his San Antonio high school. He was charged under the federal Gun-Free School Zones Act of 1990, which made it a federal crime to possess a firearm in a school zone.",
+    "key_issue": "Does the Gun-Free School Zones Act exceed Congress's power under the Commerce Clause?",
+    "holding": "The Gun-Free School Zones Act exceeds Congress's Commerce Clause authority. Possessing a gun in a school zone is not an economic activity that substantially affects interstate commerce.",
+    "significance": "The first decision in nearly 60 years to strike down a federal law as exceeding Congress's Commerce Clause power. It signaled a new era of federalism jurisprudence and set limits on Congress's ability to regulate non-economic activity under the Commerce Clause.",
+    "outcome_for_petitioner": "Lost",
+    "overruled": false,
+    "overruled_by": null,
+    "key_precedent_set": "Limits on Commerce Clause power; non-economic activity not regulable under Commerce Clause",
+    "notable_justices": [
+      "William H. Rehnquist (author)",
+      "Stephen Breyer (dissent)"
+    ],
+    "legal_area": "Constitutional Law / Federalism",
+    "impact_level": "High"
+  },
+  {
+    "id": 30,
+    "case_name": "Romer v. Evans",
+    "citation": "517 U.S. 620",
+    "year": 1996,
+    "decided_date": "May 20, 1996",
+    "court_era": "Rehnquist Court",
+    "chief_justice": "William H. Rehnquist",
+    "vote": "6-3",
+    "category": [
+      "Equal Protection",
+      "LGBTQ+ Rights",
+      "Sexual Orientation"
+    ],
+    "constitutional_provisions": [
+      "Fourteenth Amendment (Equal Protection Clause)"
+    ],
+    "parties": {
+      "petitioner": "Roy Romer, Governor of Colorado",
+      "respondent": "Richard Evans et al."
+    },
+    "background": "Colorado voters passed Amendment 2 to the state constitution, which prohibited any state or local government from enacting laws protecting gay, lesbian, or bisexual persons from discrimination. Several Colorado cities had enacted such protections.",
+    "key_issue": "Does Colorado's Amendment 2, which bars anti-discrimination protections for gay people, violate the Equal Protection Clause?",
+    "holding": "Amendment 2 violates the Equal Protection Clause because it singles out a group of people and denies them the ability to seek protection from discrimination, without any rational basis for doing so.",
+    "significance": "The first major Supreme Court victory for LGBTQ+ rights. The decision was a precursor to Lawrence v. Texas (2003) and Obergefell v. Hodges (2015). Justice Kennedy's majority opinion established that laws motivated by animus toward a group fail rational basis review.",
+    "outcome_for_petitioner": "Lost",
+    "overruled": false,
+    "overruled_by": null,
+    "key_precedent_set": "Laws motivated by animus toward a group violate Equal Protection; first LGBTQ+ rights victory",
+    "notable_justices": [
+      "Anthony Kennedy (author)",
+      "Antonin Scalia (dissent)"
+    ],
+    "legal_area": "Constitutional Law / Equal Protection",
+    "impact_level": "High"
+  },
+  {
+    "id": 31,
+    "case_name": "United States v. Virginia",
+    "citation": "518 U.S. 515",
+    "year": 1996,
+    "decided_date": "June 26, 1996",
+    "court_era": "Rehnquist Court",
+    "chief_justice": "William H. Rehnquist",
+    "vote": "7-1",
+    "category": [
+      "Equal Protection",
+      "Sex Discrimination",
+      "Education",
+      "Women's Rights"
+    ],
+    "constitutional_provisions": [
+      "Fourteenth Amendment (Equal Protection Clause)"
+    ],
+    "parties": {
+      "petitioner": "United States",
+      "respondent": "Commonwealth of Virginia"
+    },
+    "background": "The Virginia Military Institute (VMI), a state-funded military college, refused to admit women. The United States sued, arguing the exclusion violated the Equal Protection Clause. Virginia proposed a separate women's program as an alternative.",
+    "key_issue": "Does VMI's male-only admissions policy violate the Equal Protection Clause?",
+    "holding": "VMI's exclusion of women violates the Equal Protection Clause. The state must provide an 'exceedingly persuasive justification' for sex-based classifications, and Virginia failed to do so. The proposed separate women's program was an inadequate remedy.",
+    "significance": "Established the 'exceedingly persuasive justification' standard for sex-based classifications, effectively raising the bar for intermediate scrutiny. The decision ended VMI's 157-year tradition of excluding women and is a landmark in gender equality law.",
+    "outcome_for_petitioner": "Won",
+    "overruled": false,
+    "overruled_by": null,
+    "key_precedent_set": "'Exceedingly persuasive justification' standard for sex discrimination; VMI must admit women",
+    "notable_justices": [
+      "Ruth Bader Ginsburg (author)",
+      "Antonin Scalia (sole dissent)"
+    ],
+    "legal_area": "Constitutional Law / Equal Protection",
+    "impact_level": "High"
+  },
+  {
+    "id": 32,
+    "case_name": "Clinton v. City of New York",
+    "citation": "524 U.S. 417",
+    "year": 1998,
+    "decided_date": "June 25, 1998",
+    "court_era": "Rehnquist Court",
+    "chief_justice": "William H. Rehnquist",
+    "vote": "6-3",
+    "category": [
+      "Separation of Powers",
+      "Legislative Power",
+      "Line-Item Veto"
+    ],
+    "constitutional_provisions": [
+      "Presentment Clause (Article I, Section 7)",
+      "Separation of Powers"
+    ],
+    "parties": {
+      "petitioner": "William J. Clinton, President of the United States",
+      "respondent": "City of New York et al."
+    },
+    "background": "Congress passed the Line Item Veto Act of 1996, which allowed the President to cancel specific spending provisions in legislation after signing a bill into law. President Clinton used the power to cancel provisions benefiting New York City and potato growers.",
+    "key_issue": "Does the Line Item Veto Act violate the Presentment Clause of the Constitution?",
+    "holding": "The Line Item Veto Act is unconstitutional because it allows the President to unilaterally amend or repeal parts of duly enacted statutes, violating the Presentment Clause's requirement that legislation be passed by both houses of Congress before being presented to the President.",
+    "significance": "Reinforced the constitutional requirement that laws be enacted through the full legislative process. The decision confirmed that the President cannot be granted the power to selectively cancel parts of legislation without a constitutional amendment.",
+    "outcome_for_petitioner": "Lost",
+    "overruled": false,
+    "overruled_by": null,
+    "key_precedent_set": "Line-item veto unconstitutional; President cannot unilaterally repeal parts of statutes",
+    "notable_justices": [
+      "John Paul Stevens (author)",
+      "Antonin Scalia (dissent)"
+    ],
+    "legal_area": "Constitutional Law / Separation of Powers",
+    "impact_level": "Moderate"
+  },
+  {
+    "id": 33,
+    "case_name": "Bush v. Gore",
+    "citation": "531 U.S. 98",
+    "year": 2000,
+    "decided_date": "December 12, 2000",
+    "court_era": "Rehnquist Court",
+    "chief_justice": "William H. Rehnquist",
+    "vote": "5-4 (per curiam) / 7-2 (Equal Protection violation)",
+    "category": [
+      "Equal Protection",
+      "Elections",
+      "Presidential Election"
+    ],
+    "constitutional_provisions": [
+      "Fourteenth Amendment (Equal Protection Clause)",
+      "Article II"
+    ],
+    "parties": {
+      "petitioner": "George W. Bush",
+      "respondent": "Albert Gore Jr."
+    },
+    "background": "The 2000 presidential election between George W. Bush and Al Gore came down to Florida, where the margin was razor-thin. The Florida Supreme Court ordered manual recounts of undervotes. Bush sought to stop the recount.",
+    "key_issue": "Does the Florida Supreme Court's recount order violate the Equal Protection Clause because different counties used different standards for counting ballots?",
+    "holding": "The varying standards used in the Florida recount violated the Equal Protection Clause. Furthermore, there was insufficient time to establish a uniform standard and complete the recount before the federal deadline, effectively ending the recount.",
+    "significance": "One of the most controversial decisions in Supreme Court history, effectively deciding the 2000 presidential election in favor of George W. Bush. The per curiam opinion stated it was 'limited to the present circumstances,' making it an unusual precedent.",
+    "outcome_for_petitioner": "Won",
+    "overruled": false,
+    "overruled_by": null,
+    "key_precedent_set": "Inconsistent ballot-counting standards violate Equal Protection (limited precedential value)",
+    "notable_justices": [
+      "Per Curiam opinion",
+      "John Paul Stevens (dissent)",
+      "Ruth Bader Ginsburg (dissent)",
+      "Stephen Breyer (dissent)"
+    ],
+    "legal_area": "Constitutional Law / Elections",
+    "impact_level": "High (Historically Significant)"
+  },
+  {
+    "id": 34,
+    "case_name": "Lawrence v. Texas",
+    "citation": "539 U.S. 558",
+    "year": 2003,
+    "decided_date": "June 26, 2003",
+    "court_era": "Rehnquist Court",
+    "chief_justice": "William H. Rehnquist",
+    "vote": "6-3",
+    "category": [
+      "Privacy Rights",
+      "LGBTQ+ Rights",
+      "Substantive Due Process",
+      "Sexual Orientation"
+    ],
+    "constitutional_provisions": [
+      "Fourteenth Amendment (Due Process Clause — liberty)"
+    ],
+    "parties": {
+      "petitioner": "John Geddes Lawrence",
+      "respondent": "State of Texas"
+    },
+    "background": "Police entered John Lawrence's apartment and found him engaged in consensual sexual activity with another man. Both were charged under Texas's 'Homosexual Conduct' law. They challenged the law as unconstitutional.",
+    "key_issue": "Does a Texas law criminalizing consensual same-sex sexual conduct violate the Due Process Clause?",
+    "holding": "The Texas law violates the Due Process Clause's protection of liberty. Adults have the right to engage in consensual private sexual conduct without government interference. The Court overruled Bowers v. Hardwick (1986).",
+    "significance": "Struck down all remaining sodomy laws in the United States. The decision was a major milestone for LGBTQ+ rights and paved the way for Obergefell v. Hodges (2015). Justice Scalia's dissent predicted the decision would lead to the legalization of same-sex marriage.",
+    "outcome_for_petitioner": "Won",
+    "overruled": false,
+    "overruled_by": null,
+    "key_precedent_set": "Right to private consensual sexual conduct; struck down sodomy laws",
+    "notable_justices": [
+      "Anthony Kennedy (author)",
+      "Antonin Scalia (dissent)",
+      "Clarence Thomas (dissent)"
+    ],
+    "legal_area": "Constitutional Law / Privacy / LGBTQ+ Rights",
+    "impact_level": "Foundational"
+  },
+  {
+    "id": 35,
+    "case_name": "Grutter v. Bollinger",
+    "citation": "539 U.S. 306",
+    "year": 2003,
+    "decided_date": "June 23, 2003",
+    "court_era": "Rehnquist Court",
+    "chief_justice": "William H. Rehnquist",
+    "vote": "5-4",
+    "category": [
+      "Affirmative Action",
+      "Equal Protection",
+      "Higher Education"
+    ],
+    "constitutional_provisions": [
+      "Fourteenth Amendment (Equal Protection Clause)"
+    ],
+    "parties": {
+      "petitioner": "Barbara Grutter",
+      "respondent": "Lee Bollinger, President of the University of Michigan"
+    },
+    "background": "Barbara Grutter, a white Michigan resident, was denied admission to the University of Michigan Law School. She argued that the school's race-conscious admissions policy, which considered race as a 'plus factor' in a holistic review, violated the Equal Protection Clause.",
+    "key_issue": "Does the University of Michigan Law School's race-conscious admissions policy violate the Equal Protection Clause?",
+    "holding": "A narrowly tailored, holistic use of race in law school admissions is constitutional because student body diversity is a compelling state interest. The policy did not use racial quotas and considered race as one factor among many.",
+    "significance": "Upheld affirmative action in higher education for 25 years. The decision was overruled by Students for Fair Admissions v. Harvard (2023), which held that race-conscious admissions programs at Harvard and UNC violated the Equal Protection Clause.",
+    "outcome_for_petitioner": "Lost",
+    "overruled": true,
+    "overruled_by": "Students for Fair Admissions v. Harvard (2023)",
+    "key_precedent_set": "Diversity as compelling state interest for affirmative action (later overruled)",
+    "notable_justices": [
+      "Sandra Day O'Connor (author)",
+      "Clarence Thomas (dissent)",
+      "Antonin Scalia (dissent)"
+    ],
+    "legal_area": "Constitutional Law / Equal Protection",
+    "impact_level": "High"
+  },
+  {
+    "id": 36,
+    "case_name": "Kelo v. City of New London",
+    "citation": "545 U.S. 469",
+    "year": 2005,
+    "decided_date": "June 23, 2005",
+    "court_era": "Rehnquist Court",
+    "chief_justice": "William H. Rehnquist",
+    "vote": "5-4",
+    "category": [
+      "Fifth Amendment",
+      "Eminent Domain",
+      "Takings Clause",
+      "Property Rights"
+    ],
+    "constitutional_provisions": [
+      "Fifth Amendment (Takings Clause — 'public use')"
+    ],
+    "parties": {
+      "petitioner": "Susette Kelo et al.",
+      "respondent": "City of New London, Connecticut"
+    },
+    "background": "New London, Connecticut, used eminent domain to seize private homes in a residential neighborhood to transfer to a private developer for an economic development project intended to create jobs and tax revenue. Homeowners challenged the taking as not for 'public use.'",
+    "key_issue": "Does the use of eminent domain to transfer private property to a private developer for economic development constitute a 'public use' under the Fifth Amendment?",
+    "holding": "Economic development that creates jobs and tax revenue constitutes a 'public use' under the Fifth Amendment, allowing the government to use eminent domain to transfer property to private developers.",
+    "significance": "One of the most controversial property rights decisions. The ruling sparked enormous public backlash and led many states to enact laws restricting the use of eminent domain for economic development. The development project ultimately failed, and the land was never developed.",
+    "outcome_for_petitioner": "Lost",
+    "overruled": false,
+    "overruled_by": null,
+    "key_precedent_set": "Economic development qualifies as 'public use' for eminent domain purposes",
+    "notable_justices": [
+      "John Paul Stevens (author)",
+      "Sandra Day O'Connor (dissent)",
+      "Clarence Thomas (dissent)"
+    ],
+    "legal_area": "Constitutional Law / Property Rights",
+    "impact_level": "High"
+  },
+  {
+    "id": 37,
+    "case_name": "District of Columbia v. Heller",
+    "citation": "554 U.S. 570",
+    "year": 2008,
+    "decided_date": "June 26, 2008",
+    "court_era": "Roberts Court",
+    "chief_justice": "John G. Roberts Jr.",
+    "vote": "5-4",
+    "category": [
+      "Second Amendment",
+      "Gun Rights",
+      "Individual Rights"
+    ],
+    "constitutional_provisions": [
+      "Second Amendment (Right to Keep and Bear Arms)"
+    ],
+    "parties": {
+      "petitioner": "District of Columbia",
+      "respondent": "Dick Anthony Heller"
+    },
+    "background": "Washington D.C. had one of the strictest gun control laws in the country, banning handguns and requiring that all firearms in the home be kept unloaded and disassembled. Dick Heller, a special police officer, applied for a license to keep a handgun at home for self-defense and was denied.",
+    "key_issue": "Does the Second Amendment protect an individual's right to possess firearms for traditionally lawful purposes, such as self-defense within the home?",
+    "holding": "The Second Amendment protects an individual's right to possess firearms for traditionally lawful purposes, such as self-defense within the home, independent of service in a militia. D.C.'s handgun ban and trigger-lock requirement were unconstitutional.",
+    "significance": "The first Supreme Court decision to hold that the Second Amendment protects an individual right to keep and bear arms for self-defense. The decision transformed Second Amendment jurisprudence and has been cited in thousands of subsequent gun rights cases.",
+    "outcome_for_petitioner": "Lost",
+    "overruled": false,
+    "overruled_by": null,
+    "key_precedent_set": "Second Amendment protects individual right to bear arms for self-defense in the home",
+    "notable_justices": [
+      "Antonin Scalia (author)",
+      "John Paul Stevens (dissent)",
+      "Stephen Breyer (dissent)"
+    ],
+    "legal_area": "Constitutional Law / Second Amendment",
+    "impact_level": "Foundational"
+  },
+  {
+    "id": 38,
+    "case_name": "Citizens United v. Federal Election Commission",
+    "citation": "558 U.S. 310",
+    "year": 2010,
+    "decided_date": "January 21, 2010",
+    "court_era": "Roberts Court",
+    "chief_justice": "John G. Roberts Jr.",
+    "vote": "5-4",
+    "category": [
+      "First Amendment",
+      "Campaign Finance",
+      "Corporate Speech",
+      "Political Speech"
+    ],
+    "constitutional_provisions": [
+      "First Amendment (Freedom of Speech)"
+    ],
+    "parties": {
+      "petitioner": "Citizens United",
+      "respondent": "Federal Election Commission"
+    },
+    "background": "Citizens United, a nonprofit corporation, sought to air a film critical of Hillary Clinton and advertisements for the film during the 2008 primary season. Federal law prohibited corporations and unions from using general treasury funds for 'electioneering communications' within 30 days of a primary.",
+    "key_issue": "Does the First Amendment prohibit Congress from restricting independent political expenditures by corporations and unions?",
+    "holding": "The First Amendment prohibits the government from restricting independent political expenditures by corporations, associations, or labor unions. Political speech does not lose First Amendment protection simply because its source is a corporation.",
+    "significance": "One of the most controversial campaign finance decisions. It opened the door to unlimited independent political spending by corporations and unions, leading to the rise of 'Super PACs.' Critics argue it has fundamentally altered American democracy by allowing unlimited money in politics.",
+    "outcome_for_petitioner": "Won",
+    "overruled": false,
+    "overruled_by": null,
+    "key_precedent_set": "Corporations have First Amendment right to make independent political expenditures",
+    "notable_justices": [
+      "Anthony Kennedy (author)",
+      "John Paul Stevens (dissent)",
+      "Ruth Bader Ginsburg (dissent)"
+    ],
+    "legal_area": "Constitutional Law / Campaign Finance",
+    "impact_level": "Foundational"
+  },
+  {
+    "id": 39,
+    "case_name": "McDonald v. City of Chicago",
+    "citation": "561 U.S. 742",
+    "year": 2010,
+    "decided_date": "June 28, 2010",
+    "court_era": "Roberts Court",
+    "chief_justice": "John G. Roberts Jr.",
+    "vote": "5-4",
+    "category": [
+      "Second Amendment",
+      "Incorporation",
+      "Gun Rights"
+    ],
+    "constitutional_provisions": [
+      "Second Amendment",
+      "Fourteenth Amendment (Due Process Clause)"
+    ],
+    "parties": {
+      "petitioner": "Otis McDonald et al.",
+      "respondent": "City of Chicago"
+    },
+    "background": "Following the Heller decision, Otis McDonald and other Chicago residents challenged the city's handgun ban, arguing that the Second Amendment right recognized in Heller should apply to state and local governments through the Fourteenth Amendment.",
+    "key_issue": "Does the Second Amendment right to keep and bear arms apply to state and local governments through the Fourteenth Amendment?",
+    "holding": "The Second Amendment right to keep and bear arms is incorporated against state and local governments through the Due Process Clause of the Fourteenth Amendment.",
+    "significance": "Extended the individual right to bear arms recognized in Heller to apply against all levels of government. Together with Heller, McDonald forms the constitutional foundation for Second Amendment litigation challenging state and local gun regulations.",
+    "outcome_for_petitioner": "Won",
+    "overruled": false,
+    "overruled_by": null,
+    "key_precedent_set": "Second Amendment incorporated against states through Fourteenth Amendment",
+    "notable_justices": [
+      "Samuel Alito (author)",
+      "John Paul Stevens (dissent)",
+      "Stephen Breyer (dissent)"
+    ],
+    "legal_area": "Constitutional Law / Second Amendment",
+    "impact_level": "High"
+  },
+  {
+    "id": 40,
+    "case_name": "National Federation of Independent Business v. Sebelius",
+    "citation": "567 U.S. 519",
+    "year": 2012,
+    "decided_date": "June 28, 2012",
+    "court_era": "Roberts Court",
+    "chief_justice": "John G. Roberts Jr.",
+    "vote": "5-4 (various majorities)",
+    "category": [
+      "Commerce Clause",
+      "Taxing Power",
+      "Affordable Care Act",
+      "Federalism"
+    ],
+    "constitutional_provisions": [
+      "Commerce Clause (Article I, Section 8)",
+      "Taxing and Spending Clause"
+    ],
+    "parties": {
+      "petitioner": "National Federation of Independent Business et al.",
+      "respondent": "Kathleen Sebelius, Secretary of Health and Human Services"
+    },
+    "background": "The Affordable Care Act (ACA) included an 'individual mandate' requiring most Americans to purchase health insurance or pay a penalty. Twenty-six states and the NFIB challenged the mandate as exceeding Congress's constitutional authority.",
+    "key_issue": "Does Congress have the power to enact the individual mandate under the Commerce Clause or the Taxing Power?",
+    "holding": "The individual mandate cannot be sustained under the Commerce Clause because Congress cannot compel people to engage in commerce. However, the mandate is constitutional as a tax under Congress's taxing power.",
+    "significance": "Upheld the Affordable Care Act, preserving health insurance coverage for millions of Americans. Chief Justice Roberts's surprising vote to uphold the mandate as a tax was one of the most consequential judicial decisions of the 21st century.",
+    "outcome_for_petitioner": "Partial win (mandate upheld, Medicaid expansion partially struck down)",
+    "overruled": false,
+    "overruled_by": null,
+    "key_precedent_set": "Individual mandate upheld as tax; Commerce Clause cannot compel commerce",
+    "notable_justices": [
+      "John G. Roberts Jr. (author — key swing vote)",
+      "Antonin Scalia, Anthony Kennedy, Clarence Thomas, Samuel Alito (joint dissent)"
+    ],
+    "legal_area": "Constitutional Law / Commerce Clause",
+    "impact_level": "Foundational"
+  },
+  {
+    "id": 41,
+    "case_name": "United States v. Windsor",
+    "citation": "570 U.S. 744",
+    "year": 2013,
+    "decided_date": "June 26, 2013",
+    "court_era": "Roberts Court",
+    "chief_justice": "John G. Roberts Jr.",
+    "vote": "5-4",
+    "category": [
+      "LGBTQ+ Rights",
+      "Equal Protection",
+      "Due Process",
+      "Marriage"
+    ],
+    "constitutional_provisions": [
+      "Fifth Amendment (Due Process/Equal Protection)",
+      "Defense of Marriage Act"
+    ],
+    "parties": {
+      "petitioner": "United States",
+      "respondent": "Edith Schlain Windsor"
+    },
+    "background": "Edith Windsor and Thea Spyer were married in Canada and their marriage was recognized by New York. When Spyer died, Windsor was required to pay $363,053 in federal estate taxes because the federal Defense of Marriage Act (DOMA) defined marriage as between a man and a woman for federal purposes.",
+    "key_issue": "Does Section 3 of DOMA, which defines marriage as between a man and a woman for federal purposes, violate the Fifth Amendment?",
+    "holding": "Section 3 of DOMA is unconstitutional as a deprivation of the liberty of the person protected by the Fifth Amendment. The federal government must recognize same-sex marriages that are valid under state law.",
+    "significance": "Struck down the federal definition of marriage as between a man and a woman, requiring the federal government to recognize same-sex marriages. The decision was a major step toward Obergefell v. Hodges (2015), which established a constitutional right to same-sex marriage nationwide.",
+    "outcome_for_petitioner": "Won (Windsor won; DOMA struck down)",
+    "overruled": false,
+    "overruled_by": null,
+    "key_precedent_set": "Federal DOMA unconstitutional; federal government must recognize same-sex marriages",
+    "notable_justices": [
+      "Anthony Kennedy (author)",
+      "Antonin Scalia (dissent)",
+      "John G. Roberts Jr. (dissent)"
+    ],
+    "legal_area": "Constitutional Law / LGBTQ+ Rights",
+    "impact_level": "High"
+  },
+  {
+    "id": 42,
+    "case_name": "Obergefell v. Hodges",
+    "citation": "576 U.S. 644",
+    "year": 2015,
+    "decided_date": "June 26, 2015",
+    "court_era": "Roberts Court",
+    "chief_justice": "John G. Roberts Jr.",
+    "vote": "5-4",
+    "category": [
+      "LGBTQ+ Rights",
+      "Marriage Equality",
+      "Due Process",
+      "Equal Protection"
+    ],
+    "constitutional_provisions": [
+      "Fourteenth Amendment (Due Process and Equal Protection Clauses)"
+    ],
+    "parties": {
+      "petitioner": "James Obergefell et al.",
+      "respondent": "Richard Hodges, Director of Ohio Department of Health"
+    },
+    "background": "James Obergefell married his partner John Arthur in Maryland, but Ohio refused to recognize their marriage on Arthur's death certificate. Multiple same-sex couples from several states challenged laws banning same-sex marriage.",
+    "key_issue": "Does the Fourteenth Amendment require states to license same-sex marriages and recognize same-sex marriages performed in other states?",
+    "holding": "The Fourteenth Amendment requires states to license and recognize same-sex marriages. The right to marry is a fundamental liberty, and denying same-sex couples the right to marry violates both the Due Process and Equal Protection Clauses.",
+    "significance": "Established a constitutional right to same-sex marriage nationwide, ending all state bans on same-sex marriage. One of the most significant civil rights decisions of the 21st century. Justice Kennedy's opinion is celebrated for its eloquent defense of marriage equality.",
+    "outcome_for_petitioner": "Won",
+    "overruled": false,
+    "overruled_by": null,
+    "key_precedent_set": "Constitutional right to same-sex marriage; states must license and recognize same-sex marriages",
+    "notable_justices": [
+      "Anthony Kennedy (author)",
+      "John G. Roberts Jr. (dissent)",
+      "Antonin Scalia (dissent)",
+      "Clarence Thomas (dissent)",
+      "Samuel Alito (dissent)"
+    ],
+    "legal_area": "Constitutional Law / LGBTQ+ Rights",
+    "impact_level": "Foundational"
+  },
+  {
+    "id": 43,
+    "case_name": "Dobbs v. Jackson Women's Health Organization",
+    "citation": "597 U.S. 215",
+    "year": 2022,
+    "decided_date": "June 24, 2022",
+    "court_era": "Roberts Court",
+    "chief_justice": "John G. Roberts Jr.",
+    "vote": "6-3 (overruling Roe/Casey) / 5-4 (upholding Mississippi law)",
+    "category": [
+      "Abortion",
+      "Substantive Due Process",
+      "Women's Rights",
+      "Reproductive Rights"
+    ],
+    "constitutional_provisions": [
+      "Fourteenth Amendment (Due Process Clause)"
+    ],
+    "parties": {
+      "petitioner": "Thomas E. Dobbs, Mississippi State Health Officer",
+      "respondent": "Jackson Women's Health Organization"
+    },
+    "background": "Mississippi enacted a law banning most abortions after 15 weeks of pregnancy. Jackson Women's Health Organization, the only licensed abortion clinic in Mississippi, challenged the law. The case directly asked the Court to reconsider Roe v. Wade and Planned Parenthood v. Casey.",
+    "key_issue": "Does the Constitution confer a right to abortion? Should Roe v. Wade and Planned Parenthood v. Casey be overruled?",
+    "holding": "The Constitution does not confer a right to abortion. Roe v. Wade and Planned Parenthood v. Casey are overruled. The authority to regulate abortion must be returned to the people and their elected representatives.",
+    "significance": "One of the most consequential Supreme Court decisions in decades. It overruled nearly 50 years of precedent established by Roe v. Wade, eliminating the federal constitutional right to abortion and allowing states to ban or severely restrict the procedure. The decision sparked massive national debate.",
+    "outcome_for_petitioner": "Won",
+    "overruled": false,
+    "overruled_by": null,
+    "key_precedent_set": "No constitutional right to abortion; states may regulate or ban abortion",
+    "notable_justices": [
+      "Samuel Alito (author)",
+      "Clarence Thomas (concurrence)",
+      "Stephen Breyer, Sonia Sotomayor, Elena Kagan (joint dissent)",
+      "John G. Roberts Jr. (concurrence in judgment only)"
+    ],
+    "legal_area": "Constitutional Law / Reproductive Rights",
+    "impact_level": "Foundational"
+  },
+  {
+    "id": 44,
+    "case_name": "West Coast Hotel Co. v. Parrish",
+    "citation": "300 U.S. 379",
+    "year": 1937,
+    "decided_date": "March 29, 1937",
+    "court_era": "Hughes Court",
+    "chief_justice": "Charles Evans Hughes",
+    "vote": "5-4",
+    "category": [
+      "Labor Law",
+      "Substantive Due Process",
+      "Minimum Wage",
+      "Women's Rights"
+    ],
+    "constitutional_provisions": [
+      "Fourteenth Amendment (Due Process Clause)"
+    ],
+    "parties": {
+      "petitioner": "West Coast Hotel Co.",
+      "respondent": "Elsie Parrish"
+    },
+    "background": "Elsie Parrish, a hotel chambermaid, sued for back wages under Washington State's minimum wage law for women. The hotel argued the law violated the freedom of contract protected by the Fourteenth Amendment.",
+    "key_issue": "Does Washington State's minimum wage law for women violate the Due Process Clause of the Fourteenth Amendment?",
+    "holding": "Washington's minimum wage law is constitutional. The Court upheld the law and effectively overruled Adkins v. Children's Hospital (1923), which had struck down a minimum wage law for women.",
+    "significance": "Marked the end of the Lochner era and the 'switch in time that saved nine.' The decision signaled the Court's acceptance of New Deal economic legislation and the government's power to regulate the economy. It fundamentally changed the relationship between the Court and economic regulation.",
+    "outcome_for_petitioner": "Lost",
+    "overruled": false,
+    "overruled_by": null,
+    "key_precedent_set": "End of Lochner era; minimum wage laws constitutional; government may regulate economy",
+    "notable_justices": [
+      "Charles Evans Hughes (author)",
+      "George Sutherland (dissent)"
+    ],
+    "legal_area": "Constitutional Law / Labor Law",
+    "impact_level": "Foundational"
+  },
+  {
+    "id": 45,
+    "case_name": "Wickard v. Filburn",
+    "citation": "317 U.S. 111",
+    "year": 1942,
+    "decided_date": "November 9, 1942",
+    "court_era": "Stone Court",
+    "chief_justice": "Harlan Fiske Stone",
+    "vote": "9-0",
+    "category": [
+      "Commerce Clause",
+      "New Deal",
+      "Congressional Power",
+      "Federalism"
+    ],
+    "constitutional_provisions": [
+      "Commerce Clause (Article I, Section 8)"
+    ],
+    "parties": {
+      "petitioner": "Claude R. Wickard, Secretary of Agriculture",
+      "respondent": "Roscoe Filburn"
+    },
+    "background": "Roscoe Filburn, an Ohio farmer, grew wheat in excess of his allotment under the Agricultural Adjustment Act of 1938. He used the excess wheat for personal consumption on his farm. The government penalized him for exceeding his quota.",
+    "key_issue": "Does Congress have the power under the Commerce Clause to regulate wheat grown for personal consumption on a farm?",
+    "holding": "Even wheat grown for personal consumption on a farm substantially affects interstate commerce in the aggregate, because it reduces the amount of wheat the farmer would otherwise buy on the market. Congress may regulate such activity under the Commerce Clause.",
+    "significance": "Established the broadest interpretation of the Commerce Clause in Supreme Court history, allowing Congress to regulate virtually any economic activity that, in the aggregate, substantially affects interstate commerce. The decision was a cornerstone of New Deal constitutionalism and remained the dominant interpretation until Lopez (1995).",
+    "outcome_for_petitioner": "Won",
+    "overruled": false,
+    "overruled_by": null,
+    "key_precedent_set": "Aggregate effects doctrine; Commerce Clause reaches local economic activity",
+    "notable_justices": [
+      "Robert Jackson (author)"
+    ],
+    "legal_area": "Constitutional Law / Commerce Clause",
+    "impact_level": "Foundational"
+  },
+  {
+    "id": 46,
+    "case_name": "Shelley v. Kraemer",
+    "citation": "334 U.S. 1",
+    "year": 1948,
+    "decided_date": "May 3, 1948",
+    "court_era": "Vinson Court",
+    "chief_justice": "Fred M. Vinson",
+    "vote": "6-0",
+    "category": [
+      "Civil Rights",
+      "Equal Protection",
+      "Housing Discrimination",
+      "State Action"
+    ],
+    "constitutional_provisions": [
+      "Fourteenth Amendment (Equal Protection Clause)"
+    ],
+    "parties": {
+      "petitioner": "J.D. Shelley et al.",
+      "respondent": "Louis Kraemer et al."
+    },
+    "background": "J.D. and Ethel Shelley, an African American family, purchased a home in St. Louis. The property was subject to a restrictive covenant barring sale to non-Caucasians. Louis Kraemer, a neighbor, sued to enforce the covenant.",
+    "key_issue": "Does judicial enforcement of a racially restrictive covenant constitute state action that violates the Equal Protection Clause?",
+    "holding": "While private racially restrictive covenants are not themselves unconstitutional, judicial enforcement of such covenants by state courts constitutes state action that violates the Equal Protection Clause.",
+    "significance": "Struck down judicial enforcement of racially restrictive housing covenants, helping to open housing markets to African Americans. The decision expanded the concept of 'state action' and was an important precursor to the Fair Housing Act of 1968.",
+    "outcome_for_petitioner": "Won",
+    "overruled": false,
+    "overruled_by": null,
+    "key_precedent_set": "Judicial enforcement of private racial covenants is unconstitutional state action",
+    "notable_justices": [
+      "Fred M. Vinson (author)"
+    ],
+    "legal_area": "Constitutional Law / Civil Rights",
+    "impact_level": "High"
+  },
+  {
+    "id": 47,
+    "case_name": "Griggs v. Duke Power Co.",
+    "citation": "401 U.S. 424",
+    "year": 1971,
+    "decided_date": "March 8, 1971",
+    "court_era": "Burger Court",
+    "chief_justice": "Warren E. Burger",
+    "vote": "8-0",
+    "category": [
+      "Civil Rights",
+      "Employment Discrimination",
+      "Disparate Impact"
+    ],
+    "constitutional_provisions": [
+      "Title VII of the Civil Rights Act of 1964"
+    ],
+    "parties": {
+      "petitioner": "Willie Griggs et al.",
+      "respondent": "Duke Power Co."
+    },
+    "background": "Duke Power Company required employees in certain departments to have a high school diploma or pass a general intelligence test. These requirements disqualified a disproportionate number of Black applicants and employees. The company had a history of intentional racial discrimination.",
+    "key_issue": "Does Title VII prohibit employment practices that are neutral on their face but have a disproportionate adverse impact on minority groups?",
+    "holding": "Title VII prohibits not only intentional discrimination but also employment practices that are neutral in form but discriminatory in operation — 'disparate impact' discrimination. Employers must show that such practices are related to job performance.",
+    "significance": "Established the 'disparate impact' theory of employment discrimination, allowing plaintiffs to challenge facially neutral employment practices that have a disproportionate adverse effect on protected groups. The decision transformed employment discrimination law and remains one of the most important civil rights decisions.",
+    "outcome_for_petitioner": "Won",
+    "overruled": false,
+    "overruled_by": null,
+    "key_precedent_set": "Disparate impact theory of employment discrimination under Title VII",
+    "notable_justices": [
+      "Warren E. Burger (author — unanimous)"
+    ],
+    "legal_area": "Civil Rights / Employment Discrimination",
+    "impact_level": "Foundational"
+  },
+  {
+    "id": 48,
+    "case_name": "Reynolds v. Sims",
+    "citation": "377 U.S. 533",
+    "year": 1964,
+    "decided_date": "June 15, 1964",
+    "court_era": "Warren Court",
+    "chief_justice": "Earl Warren",
+    "vote": "8-1",
+    "category": [
+      "Voting Rights",
+      "Equal Protection",
+      "Reapportionment"
+    ],
+    "constitutional_provisions": [
+      "Fourteenth Amendment (Equal Protection Clause)"
+    ],
+    "parties": {
+      "petitioner": "M.O. Sims et al.",
+      "respondent": "B.A. Reynolds, Judge"
+    },
+    "background": "Alabama's state legislature had not been reapportioned since 1901, resulting in vast disparities in the population of legislative districts. Urban voters were severely underrepresented.",
+    "key_issue": "Does the Equal Protection Clause require that both houses of a state legislature be apportioned on a population basis?",
+    "holding": "Both houses of a state legislature must be apportioned on a population basis — 'one person, one vote.' The Equal Protection Clause requires that each citizen's vote be given equal weight.",
+    "significance": "Established the 'one person, one vote' principle for state legislative apportionment. The decision transformed American democracy by requiring equal representation and led to the redrawing of legislative districts across the country.",
+    "outcome_for_petitioner": "Won",
+    "overruled": false,
+    "overruled_by": null,
+    "key_precedent_set": "'One person, one vote' principle for state legislative apportionment",
+    "notable_justices": [
+      "Earl Warren (author)",
+      "John Marshall Harlan II (dissent)"
+    ],
+    "legal_area": "Constitutional Law / Voting Rights",
+    "impact_level": "Foundational"
+  },
+  {
+    "id": 49,
+    "case_name": "Brandenburg v. Ohio",
+    "citation": "395 U.S. 444",
+    "year": 1969,
+    "decided_date": "June 9, 1969",
+    "court_era": "Warren Court",
+    "chief_justice": "Earl Warren",
+    "vote": "9-0",
+    "category": [
+      "First Amendment",
+      "Free Speech",
+      "Incitement",
+      "Hate Speech"
+    ],
+    "constitutional_provisions": [
+      "First Amendment (Freedom of Speech)",
+      "Fourteenth Amendment"
+    ],
+    "parties": {
+      "petitioner": "Clarence Brandenburg",
+      "respondent": "State of Ohio"
+    },
+    "background": "Clarence Brandenburg, a Ku Klux Klan leader, was convicted under Ohio's criminal syndicalism statute for advocating violence at a KKK rally. He challenged the conviction as a violation of the First Amendment.",
+    "key_issue": "Does the First Amendment protect speech that advocates illegal conduct, including violence?",
+    "holding": "The government may not punish inflammatory speech unless it is directed to inciting or producing 'imminent lawless action' and is likely to produce such action. Ohio's criminal syndicalism statute was unconstitutional.",
+    "significance": "Replaced the 'clear and present danger' test from Schenck with the more speech-protective 'imminent lawless action' standard. The Brandenburg test remains the governing standard for incitement cases and provides broad protection for even extreme political speech.",
+    "outcome_for_petitioner": "Won",
+    "overruled": false,
+    "overruled_by": null,
+    "key_precedent_set": "'Imminent lawless action' test for incitement; replaced 'clear and present danger'",
+    "notable_justices": [
+      "Per Curiam opinion"
+    ],
+    "legal_area": "Constitutional Law / First Amendment",
+    "impact_level": "Foundational"
+  },
+  {
+    "id": 50,
+    "case_name": "Furman v. Georgia",
+    "citation": "408 U.S. 238",
+    "year": 1972,
+    "decided_date": "June 29, 1972",
+    "court_era": "Burger Court",
+    "chief_justice": "Warren E. Burger",
+    "vote": "5-4",
+    "category": [
+      "Eighth Amendment",
+      "Death Penalty",
+      "Cruel and Unusual Punishment"
+    ],
+    "constitutional_provisions": [
+      "Eighth Amendment (Cruel and Unusual Punishment)",
+      "Fourteenth Amendment"
+    ],
+    "parties": {
+      "petitioner": "William Henry Furman",
+      "respondent": "State of Georgia"
+    },
+    "background": "William Furman was sentenced to death for murder. The case was consolidated with two other death penalty cases. The petitioners argued that the arbitrary and capricious application of the death penalty constituted cruel and unusual punishment.",
+    "key_issue": "Does the imposition and carrying out of the death penalty in these cases constitute cruel and unusual punishment in violation of the Eighth and Fourteenth Amendments?",
+    "holding": "The imposition and carrying out of the death penalty in these cases constitutes cruel and unusual punishment. The decision effectively placed a moratorium on executions in the United States.",
+    "significance": "Temporarily halted all executions in the United States. The decision led states to revise their death penalty statutes. The moratorium ended with Gregg v. Georgia (1976), which upheld revised death penalty laws. Furman remains the most significant death penalty decision in American history.",
+    "outcome_for_petitioner": "Won",
+    "overruled": false,
+    "overruled_by": null,
+    "key_precedent_set": "Arbitrary application of death penalty is unconstitutional; temporary moratorium on executions",
+    "notable_justices": [
+      "Per Curiam opinion (9 separate opinions)",
+      "William O. Douglas, William Brennan, Thurgood Marshall (would abolish death penalty entirely)"
+    ],
+    "legal_area": "Constitutional Law / Criminal Procedure",
+    "impact_level": "High"
+  },
+  {
+    "id": 51,
+    "case_name": "Gregg v. Georgia",
+    "citation": "428 U.S. 153",
+    "year": 1976,
+    "decided_date": "July 2, 1976",
+    "court_era": "Burger Court",
+    "chief_justice": "Warren E. Burger",
+    "vote": "7-2",
+    "category": [
+      "Eighth Amendment",
+      "Death Penalty",
+      "Cruel and Unusual Punishment"
+    ],
+    "constitutional_provisions": [
+      "Eighth Amendment (Cruel and Unusual Punishment)"
+    ],
+    "parties": {
+      "petitioner": "Troy Leon Gregg",
+      "respondent": "State of Georgia"
+    },
+    "background": "Following Furman v. Georgia, Georgia revised its death penalty statute to provide guided discretion to juries. Troy Gregg was sentenced to death under the new statute and challenged it as unconstitutional.",
+    "key_issue": "Does Georgia's revised death penalty statute, which provides guided discretion to juries, violate the Eighth Amendment?",
+    "holding": "The death penalty is not per se unconstitutional. Georgia's revised statute, which provides guided discretion and bifurcated proceedings, satisfies the Eighth Amendment.",
+    "significance": "Ended the moratorium on executions established by Furman v. Georgia and confirmed that the death penalty is constitutional when applied with appropriate procedural safeguards. Executions resumed in the United States in 1977.",
+    "outcome_for_petitioner": "Lost",
+    "overruled": false,
+    "overruled_by": null,
+    "key_precedent_set": "Death penalty constitutional with guided discretion; executions may resume",
+    "notable_justices": [
+      "Potter Stewart, Lewis Powell, John Paul Stevens (plurality)",
+      "William Brennan (dissent)",
+      "Thurgood Marshall (dissent)"
+    ],
+    "legal_area": "Constitutional Law / Criminal Procedure",
+    "impact_level": "High"
+  },
+  {
+    "id": 52,
+    "case_name": "Bowers v. Hardwick",
+    "citation": "478 U.S. 186",
+    "year": 1986,
+    "decided_date": "June 30, 1986",
+    "court_era": "Burger Court",
+    "chief_justice": "Warren E. Burger",
+    "vote": "5-4",
+    "category": [
+      "Privacy Rights",
+      "LGBTQ+ Rights",
+      "Substantive Due Process"
+    ],
+    "constitutional_provisions": [
+      "Fourteenth Amendment (Due Process Clause)"
+    ],
+    "parties": {
+      "petitioner": "Michael J. Bowers, Attorney General of Georgia",
+      "respondent": "Michael Hardwick"
+    },
+    "background": "Michael Hardwick was arrested in his home for engaging in consensual same-sex sexual activity in violation of Georgia's sodomy law. He challenged the law as a violation of his constitutional right to privacy.",
+    "key_issue": "Does the Constitution protect a right to engage in consensual homosexual sodomy?",
+    "holding": "The Constitution does not confer a fundamental right to engage in homosexual sodomy. The Court declined to extend the right to privacy to cover such conduct.",
+    "significance": "Upheld sodomy laws criminalizing same-sex conduct. The decision was widely criticized and was later overruled by Lawrence v. Texas (2003), which recognized a constitutional right to private consensual sexual conduct. Bowers is now considered one of the most discredited decisions in Supreme Court history.",
+    "outcome_for_petitioner": "Won",
+    "overruled": true,
+    "overruled_by": "Lawrence v. Texas (2003)",
+    "key_precedent_set": "No constitutional right to homosexual sodomy (later overruled)",
+    "notable_justices": [
+      "Byron White (author)",
+      "Harry Blackmun (dissent)",
+      "John Paul Stevens (dissent)"
+    ],
+    "legal_area": "Constitutional Law / Privacy / LGBTQ+ Rights",
+    "impact_level": "High (Historically Significant)"
+  },
+  {
+    "id": 53,
+    "case_name": "Atkins v. Virginia",
+    "citation": "536 U.S. 304",
+    "year": 2002,
+    "decided_date": "June 20, 2002",
+    "court_era": "Rehnquist Court",
+    "chief_justice": "William H. Rehnquist",
+    "vote": "6-3",
+    "category": [
+      "Eighth Amendment",
+      "Death Penalty",
+      "Intellectual Disability"
+    ],
+    "constitutional_provisions": [
+      "Eighth Amendment (Cruel and Unusual Punishment)"
+    ],
+    "parties": {
+      "petitioner": "Daryl Renard Atkins",
+      "respondent": "Commonwealth of Virginia"
+    },
+    "background": "Daryl Atkins, who had an IQ of 59 and was diagnosed as mildly intellectually disabled, was convicted of capital murder and sentenced to death.",
+    "key_issue": "Does the Eighth Amendment prohibit the execution of intellectually disabled persons?",
+    "holding": "Executing intellectually disabled persons constitutes cruel and unusual punishment in violation of the Eighth Amendment. A national consensus had developed against such executions.",
+    "significance": "Prohibited the execution of intellectually disabled persons, applying the 'evolving standards of decency' test. The decision reflected a significant shift in the Court's approach to the death penalty.",
+    "outcome_for_petitioner": "Won",
+    "overruled": false,
+    "overruled_by": null,
+    "key_precedent_set": "Execution of intellectually disabled persons is unconstitutional",
+    "notable_justices": [
+      "John Paul Stevens (author)",
+      "Antonin Scalia (dissent)",
+      "Clarence Thomas (dissent)"
+    ],
+    "legal_area": "Constitutional Law / Criminal Procedure",
+    "impact_level": "High"
+  },
+  {
+    "id": 54,
+    "case_name": "Roper v. Simmons",
+    "citation": "543 U.S. 551",
+    "year": 2005,
+    "decided_date": "March 1, 2005",
+    "court_era": "Rehnquist Court",
+    "chief_justice": "William H. Rehnquist",
+    "vote": "5-4",
+    "category": [
+      "Eighth Amendment",
+      "Death Penalty",
+      "Juvenile Justice"
+    ],
+    "constitutional_provisions": [
+      "Eighth Amendment (Cruel and Unusual Punishment)"
+    ],
+    "parties": {
+      "petitioner": "Donald P. Roper, Superintendent",
+      "respondent": "Christopher Simmons"
+    },
+    "background": "Christopher Simmons committed murder at age 17 and was sentenced to death. He challenged his sentence, arguing that executing someone for a crime committed as a juvenile violated the Eighth Amendment.",
+    "key_issue": "Does the Eighth Amendment prohibit the execution of individuals who were under 18 at the time of their crime?",
+    "holding": "The Eighth Amendment prohibits the death penalty for offenders who were under 18 at the time of their crime. Evolving standards of decency and the diminished culpability of juveniles make such executions unconstitutional.",
+    "significance": "Abolished the juvenile death penalty in the United States. The decision is notable for its reference to international law and foreign legal standards, which generated significant controversy. It was a major step in the Court's juvenile justice jurisprudence.",
+    "outcome_for_petitioner": "Won",
+    "overruled": false,
+    "overruled_by": null,
+    "key_precedent_set": "Death penalty for juvenile offenders is unconstitutional",
+    "notable_justices": [
+      "Anthony Kennedy (author)",
+      "Antonin Scalia (dissent)",
+      "Sandra Day O'Connor (dissent)"
+    ],
+    "legal_area": "Constitutional Law / Criminal Procedure",
+    "impact_level": "High"
+  },
+  {
+    "id": 55,
+    "case_name": "Hamdan v. Rumsfeld",
+    "citation": "548 U.S. 557",
+    "year": 2006,
+    "decided_date": "June 29, 2006",
+    "court_era": "Roberts Court",
+    "chief_justice": "John G. Roberts Jr.",
+    "vote": "5-3",
+    "category": [
+      "War Powers",
+      "Military Tribunals",
+      "Separation of Powers",
+      "Habeas Corpus"
+    ],
+    "constitutional_provisions": [
+      "Article I",
+      "Article II",
+      "Uniform Code of Military Justice",
+      "Geneva Conventions"
+    ],
+    "parties": {
+      "petitioner": "Salim Ahmed Hamdan",
+      "respondent": "Donald H. Rumsfeld, Secretary of Defense"
+    },
+    "background": "Salim Hamdan, Osama bin Laden's driver, was captured in Afghanistan and held at Guantanamo Bay. The Bush administration established military commissions to try detainees. Hamdan challenged the legality of the commission.",
+    "key_issue": "Does the President have authority to establish military commissions to try enemy combatants without congressional authorization?",
+    "holding": "The military commissions established by the President lack the power to proceed because their structure and procedures violate the Uniform Code of Military Justice and the Geneva Conventions. Congress must authorize such tribunals.",
+    "significance": "A major check on executive power during the War on Terror. The decision required the Bush administration to seek congressional authorization for military tribunals, leading to the Military Commissions Act of 2006.",
+    "outcome_for_petitioner": "Won",
+    "overruled": false,
+    "overruled_by": null,
+    "key_precedent_set": "President cannot establish military commissions without congressional authorization; Geneva Conventions apply to detainees",
+    "notable_justices": [
+      "John Paul Stevens (author)",
+      "Clarence Thomas (dissent)"
+    ],
+    "legal_area": "Constitutional Law / War Powers",
+    "impact_level": "High"
+  },
+  {
+    "id": 56,
+    "case_name": "Boumediene v. Bush",
+    "citation": "553 U.S. 723",
+    "year": 2008,
+    "decided_date": "June 12, 2008",
+    "court_era": "Roberts Court",
+    "chief_justice": "John G. Roberts Jr.",
+    "vote": "5-4",
+    "category": [
+      "Habeas Corpus",
+      "War Powers",
+      "Guantanamo",
+      "Separation of Powers"
+    ],
+    "constitutional_provisions": [
+      "Article I, Section 9 (Suspension Clause)",
+      "Habeas Corpus"
+    ],
+    "parties": {
+      "petitioner": "Lakhdar Boumediene et al.",
+      "respondent": "George W. Bush, President"
+    },
+    "background": "Detainees held at Guantanamo Bay challenged their detention through habeas corpus petitions. The Military Commissions Act of 2006 stripped federal courts of jurisdiction to hear such petitions.",
+    "key_issue": "Do Guantanamo detainees have a constitutional right to habeas corpus review?",
+    "holding": "Guantanamo detainees have a constitutional right to habeas corpus review in federal courts. The Military Commissions Act's jurisdiction-stripping provision is an unconstitutional suspension of the writ of habeas corpus.",
+    "significance": "Established that the constitutional right to habeas corpus extends to foreign nationals held at Guantanamo Bay. The decision was a significant check on executive detention power during the War on Terror.",
+    "outcome_for_petitioner": "Won",
+    "overruled": false,
+    "overruled_by": null,
+    "key_precedent_set": "Habeas corpus rights extend to Guantanamo detainees; Congress cannot strip courts of jurisdiction",
+    "notable_justices": [
+      "Anthony Kennedy (author)",
+      "John G. Roberts Jr. (dissent)",
+      "Antonin Scalia (dissent)"
+    ],
+    "legal_area": "Constitutional Law / Habeas Corpus",
+    "impact_level": "High"
+  },
+  {
+    "id": 57,
+    "case_name": "Shelby County v. Holder",
+    "citation": "570 U.S. 529",
+    "year": 2013,
+    "decided_date": "June 25, 2013",
+    "court_era": "Roberts Court",
+    "chief_justice": "John G. Roberts Jr.",
+    "vote": "5-4",
+    "category": [
+      "Voting Rights",
+      "Fifteenth Amendment",
+      "Congressional Power"
+    ],
+    "constitutional_provisions": [
+      "Fifteenth Amendment",
+      "Fourteenth Amendment",
+      "Article I"
+    ],
+    "parties": {
+      "petitioner": "Shelby County, Alabama",
+      "respondent": "Eric H. Holder Jr., Attorney General"
+    },
+    "background": "Section 4(b) of the Voting Rights Act of 1965 established a formula to determine which states and localities must obtain federal 'preclearance' before changing their voting laws. Shelby County challenged the formula as outdated and unconstitutional.",
+    "key_issue": "Is Section 4(b) of the Voting Rights Act, which determines which jurisdictions must obtain federal preclearance before changing voting laws, constitutional?",
+    "holding": "Section 4(b)'s coverage formula is unconstitutional because it is based on 40-year-old data and no longer reflects current conditions. Congress cannot impose preclearance requirements based on outdated criteria.",
+    "significance": "Effectively gutted the preclearance requirement of the Voting Rights Act by invalidating the coverage formula. Within hours of the decision, several states moved to implement new voting restrictions. The decision is highly controversial and has had significant practical effects on voting rights.",
+    "outcome_for_petitioner": "Won",
+    "overruled": false,
+    "overruled_by": null,
+    "key_precedent_set": "VRA Section 4(b) coverage formula unconstitutional; preclearance requirement effectively ended",
+    "notable_justices": [
+      "John G. Roberts Jr. (author)",
+      "Ruth Bader Ginsburg (dissent)"
+    ],
+    "legal_area": "Constitutional Law / Voting Rights",
+    "impact_level": "High"
+  },
+  {
+    "id": 58,
+    "case_name": "Riley v. California",
+    "citation": "573 U.S. 373",
+    "year": 2014,
+    "decided_date": "June 25, 2014",
+    "court_era": "Roberts Court",
+    "chief_justice": "John G. Roberts Jr.",
+    "vote": "9-0",
+    "category": [
+      "Fourth Amendment",
+      "Digital Privacy",
+      "Search and Seizure"
+    ],
+    "constitutional_provisions": [
+      "Fourth Amendment (Search and Seizure)"
+    ],
+    "parties": {
+      "petitioner": "David Leon Riley",
+      "respondent": "California"
+    },
+    "background": "Police arrested David Riley for a traffic violation and, incident to the arrest, searched his smartphone without a warrant. They found evidence linking him to a shooting and gang activity. Riley was convicted based in part on the phone's contents.",
+    "key_issue": "Does the Fourth Amendment require police to obtain a warrant before searching a cell phone seized incident to arrest?",
+    "holding": "Police generally must obtain a warrant before searching a cell phone seized incident to arrest. The digital data on a cell phone is qualitatively different from physical items and deserves strong Fourth Amendment protection.",
+    "significance": "A landmark digital privacy decision that recognized the unique nature of cell phone data and required warrants for cell phone searches. The decision is widely regarded as the most important Fourth Amendment ruling of the digital age.",
+    "outcome_for_petitioner": "Won",
+    "overruled": false,
+    "overruled_by": null,
+    "key_precedent_set": "Warrant required to search cell phone incident to arrest; digital privacy protected",
+    "notable_justices": [
+      "John G. Roberts Jr. (author — unanimous)"
+    ],
+    "legal_area": "Constitutional Law / Digital Privacy",
+    "impact_level": "Foundational"
+  },
+  {
+    "id": 59,
+    "case_name": "Burwell v. Hobby Lobby Stores",
+    "citation": "573 U.S. 682",
+    "year": 2014,
+    "decided_date": "June 30, 2014",
+    "court_era": "Roberts Court",
+    "chief_justice": "John G. Roberts Jr.",
+    "vote": "5-4",
+    "category": [
+      "Religious Freedom",
+      "RFRA",
+      "Corporate Rights",
+      "Contraception"
+    ],
+    "constitutional_provisions": [
+      "Religious Freedom Restoration Act (RFRA)",
+      "First Amendment (Free Exercise)"
+    ],
+    "parties": {
+      "petitioner": "Sylvia Mathews Burwell, Secretary of HHS",
+      "respondent": "Hobby Lobby Stores, Inc."
+    },
+    "background": "The ACA required employers to provide health insurance covering contraceptives. Hobby Lobby, a closely held corporation owned by a religious family, objected to covering certain contraceptives it believed caused abortions, arguing it violated RFRA.",
+    "key_issue": "Does RFRA allow a closely held for-profit corporation to deny its employees health coverage for contraceptives based on the owners' religious beliefs?",
+    "holding": "Closely held for-profit corporations are 'persons' under RFRA and may assert religious freedom claims. The contraceptive mandate substantially burdens the owners' religious exercise and is not the least restrictive means of achieving the government's interest.",
+    "significance": "Extended religious freedom protections to closely held corporations, allowing them to opt out of generally applicable laws based on religious beliefs. The decision has had broad implications for the intersection of religious liberty and anti-discrimination law.",
+    "outcome_for_petitioner": "Lost",
+    "overruled": false,
+    "overruled_by": null,
+    "key_precedent_set": "Closely held corporations have RFRA religious freedom rights; can opt out of contraceptive mandate",
+    "notable_justices": [
+      "Samuel Alito (author)",
+      "Ruth Bader Ginsburg (dissent)"
+    ],
+    "legal_area": "Constitutional Law / Religious Freedom",
+    "impact_level": "High"
+  },
+  {
+    "id": 60,
+    "case_name": "Carpenter v. United States",
+    "citation": "585 U.S. 296",
+    "year": 2018,
+    "decided_date": "June 22, 2018",
+    "court_era": "Roberts Court",
+    "chief_justice": "John G. Roberts Jr.",
+    "vote": "5-4",
+    "category": [
+      "Fourth Amendment",
+      "Digital Privacy",
+      "Third-Party Doctrine"
+    ],
+    "constitutional_provisions": [
+      "Fourth Amendment (Search and Seizure)"
+    ],
+    "parties": {
+      "petitioner": "Timothy Ivory Carpenter",
+      "respondent": "United States"
+    },
+    "background": "The FBI obtained historical cell-site location information (CSLI) from Carpenter's wireless carriers without a warrant, using it to place him near the scenes of several robberies. Carpenter was convicted and challenged the warrantless acquisition of his location data.",
+    "key_issue": "Does the government's acquisition of historical cell-site location information from a wireless carrier constitute a Fourth Amendment search requiring a warrant?",
+    "holding": "The government's acquisition of historical CSLI constitutes a Fourth Amendment search. A warrant is generally required to obtain such data. The third-party doctrine does not apply to this type of comprehensive location data.",
+    "significance": "A landmark digital privacy decision that limited the third-party doctrine in the context of digital data. The decision recognized that comprehensive location data reveals intimate details of a person's life and deserves strong Fourth Amendment protection.",
+    "outcome_for_petitioner": "Won",
+    "overruled": false,
+    "overruled_by": null,
+    "key_precedent_set": "Warrant required for historical cell-site location data; limits on third-party doctrine in digital age",
+    "notable_justices": [
+      "John G. Roberts Jr. (author)",
+      "Anthony Kennedy (dissent)",
+      "Samuel Alito (dissent)"
+    ],
+    "legal_area": "Constitutional Law / Digital Privacy",
+    "impact_level": "High"
+  },
+  {
+    "id": 61,
+    "case_name": "New York State Rifle & Pistol Association v. Bruen",
+    "citation": "597 U.S. 1",
+    "year": 2022,
+    "decided_date": "June 23, 2022",
+    "court_era": "Roberts Court",
+    "chief_justice": "John G. Roberts Jr.",
+    "vote": "6-3",
+    "category": [
+      "Second Amendment",
+      "Gun Rights",
+      "Concealed Carry"
+    ],
+    "constitutional_provisions": [
+      "Second Amendment (Right to Keep and Bear Arms)",
+      "Fourteenth Amendment"
+    ],
+    "parties": {
+      "petitioner": "New York State Rifle & Pistol Association, Inc.",
+      "respondent": "Kevin P. Bruen, Superintendent of New York State Police"
+    },
+    "background": "New York required applicants for a license to carry a concealed handgun in public to demonstrate 'proper cause' — a special need for self-defense beyond the general desire for protection. The plaintiffs were denied licenses.",
+    "key_issue": "Does New York's 'proper cause' requirement for concealed carry permits violate the Second and Fourteenth Amendments?",
+    "holding": "New York's 'proper cause' requirement violates the Second Amendment. The right to bear arms extends to carrying firearms in public for self-defense. Gun regulations must be consistent with the nation's historical tradition of firearm regulation.",
+    "significance": "Established a new historical tradition test for Second Amendment cases, replacing the two-part means-ends scrutiny used by lower courts. The decision struck down restrictive concealed carry laws in several states and has led to a wave of Second Amendment litigation.",
+    "outcome_for_petitioner": "Won",
+    "overruled": false,
+    "overruled_by": null,
+    "key_precedent_set": "Second Amendment protects right to carry firearms in public; historical tradition test for gun regulations",
+    "notable_justices": [
+      "Clarence Thomas (author)",
+      "Stephen Breyer (dissent)",
+      "Sonia Sotomayor (dissent)",
+      "Elena Kagan (dissent)"
+    ],
+    "legal_area": "Constitutional Law / Second Amendment",
+    "impact_level": "High"
+  },
+  {
+    "id": 62,
+    "case_name": "Students for Fair Admissions v. Harvard",
+    "citation": "600 U.S. 181",
+    "year": 2023,
+    "decided_date": "June 29, 2023",
+    "court_era": "Roberts Court",
+    "chief_justice": "John G. Roberts Jr.",
+    "vote": "6-3 (Harvard) / 6-2 (UNC)",
+    "category": [
+      "Affirmative Action",
+      "Equal Protection",
+      "Higher Education",
+      "Race"
+    ],
+    "constitutional_provisions": [
+      "Fourteenth Amendment (Equal Protection Clause)",
+      "Title VI"
+    ],
+    "parties": {
+      "petitioner": "Students for Fair Admissions, Inc.",
+      "respondent": "President and Fellows of Harvard College; University of North Carolina"
+    },
+    "background": "Students for Fair Admissions challenged the race-conscious admissions programs at Harvard and the University of North Carolina, arguing they violated the Equal Protection Clause and Title VI of the Civil Rights Act.",
+    "key_issue": "Do race-conscious admissions programs at Harvard and UNC violate the Equal Protection Clause?",
+    "holding": "Race-conscious admissions programs at Harvard and UNC violate the Equal Protection Clause. Universities may not use race as a factor in admissions decisions. The Court overruled Grutter v. Bollinger and Gratz v. Bollinger.",
+    "significance": "Ended affirmative action in college admissions at institutions receiving federal funds, overruling 45 years of precedent. The decision has had immediate and sweeping effects on college admissions policies nationwide.",
+    "outcome_for_petitioner": "Won",
+    "overruled": false,
+    "overruled_by": null,
+    "key_precedent_set": "Race-conscious college admissions unconstitutional; overruled Grutter and Gratz",
+    "notable_justices": [
+      "John G. Roberts Jr. (author)",
+      "Sonia Sotomayor (dissent)",
+      "Ketanji Brown Jackson (dissent)"
+    ],
+    "legal_area": "Constitutional Law / Equal Protection",
+    "impact_level": "Foundational"
+  },
+  {
+    "id": 63,
+    "case_name": "Barron v. City of Baltimore",
+    "citation": "32 U.S. (7 Pet.) 243",
+    "year": 1833,
+    "decided_date": "February 16, 1833",
+    "court_era": "Marshall Court",
+    "chief_justice": "John Marshall",
+    "vote": "7-0",
+    "category": [
+      "Bill of Rights",
+      "Incorporation",
+      "Federalism"
+    ],
+    "constitutional_provisions": [
+      "Fifth Amendment (Takings Clause)",
+      "Bill of Rights"
+    ],
+    "parties": {
+      "petitioner": "John Barron",
+      "respondent": "Mayor and City Council of Baltimore"
+    },
+    "background": "Baltimore's street-paving activities diverted streams, causing sand and gravel to accumulate near Barron's wharf, making it too shallow for vessels. Barron sued the city, arguing the Fifth Amendment's Takings Clause required compensation.",
+    "key_issue": "Does the Fifth Amendment's Takings Clause apply to state and local governments?",
+    "holding": "The Bill of Rights applies only to the federal government, not to state or local governments. The Fifth Amendment's Takings Clause does not restrict the actions of state governments.",
+    "significance": "Established that the Bill of Rights originally applied only to the federal government. This holding remained the law until the Fourteenth Amendment was ratified in 1868, and the subsequent incorporation doctrine gradually applied most Bill of Rights protections to the states.",
+    "outcome_for_petitioner": "Lost",
+    "overruled": false,
+    "overruled_by": null,
+    "key_precedent_set": "Bill of Rights applies only to federal government (later modified by incorporation doctrine)",
+    "notable_justices": [
+      "John Marshall (author)"
+    ],
+    "legal_area": "Constitutional Law / Bill of Rights",
+    "impact_level": "Foundational"
+  },
+  {
+    "id": 64,
+    "case_name": "The Slaughter-House Cases",
+    "citation": "83 U.S. (16 Wall.) 36",
+    "year": 1873,
+    "decided_date": "April 14, 1873",
+    "court_era": "Chase Court",
+    "chief_justice": "Salmon P. Chase",
+    "vote": "5-4",
+    "category": [
+      "Fourteenth Amendment",
+      "Privileges or Immunities",
+      "Civil Rights",
+      "Reconstruction"
+    ],
+    "constitutional_provisions": [
+      "Fourteenth Amendment (Privileges or Immunities Clause)"
+    ],
+    "parties": {
+      "petitioner": "Butchers' Benevolent Association of New Orleans",
+      "respondent": "Crescent City Live-Stock Landing and Slaughter-House Company"
+    },
+    "background": "Louisiana granted a monopoly to a slaughterhouse company, requiring all butchers in New Orleans to use its facilities. Independent butchers challenged the monopoly as violating their Fourteenth Amendment rights.",
+    "key_issue": "Does the Fourteenth Amendment's Privileges or Immunities Clause protect the right of citizens to practice their trade against state interference?",
+    "holding": "The Privileges or Immunities Clause of the Fourteenth Amendment protects only rights of national citizenship, not the broad civil rights of state citizenship. The clause does not protect the right to practice a trade against state regulation.",
+    "significance": "Severely limited the Privileges or Immunities Clause of the Fourteenth Amendment, effectively gutting it as a tool for protecting civil rights. The decision has been widely criticized as a betrayal of the Reconstruction Amendments' purpose and remains one of the most controversial in the Court's history.",
+    "outcome_for_petitioner": "Lost",
+    "overruled": false,
+    "overruled_by": null,
+    "key_precedent_set": "Narrow interpretation of Privileges or Immunities Clause; limited federal protection of civil rights",
+    "notable_justices": [
+      "Samuel Miller (author)",
+      "Stephen Field (dissent)",
+      "Joseph Bradley (dissent)"
+    ],
+    "legal_area": "Constitutional Law / Fourteenth Amendment",
+    "impact_level": "Foundational (Historically Significant)"
+  },
+  {
+    "id": 65,
+    "case_name": "Yick Wo v. Hopkins",
+    "citation": "118 U.S. 356",
+    "year": 1886,
+    "decided_date": "May 10, 1886",
+    "court_era": "Waite Court",
+    "chief_justice": "Morrison R. Waite",
+    "vote": "9-0",
+    "category": [
+      "Equal Protection",
+      "Racial Discrimination",
+      "Immigration"
+    ],
+    "constitutional_provisions": [
+      "Fourteenth Amendment (Equal Protection Clause)"
+    ],
+    "parties": {
+      "petitioner": "Yick Wo",
+      "respondent": "Peter Hopkins, Sheriff of San Francisco"
+    },
+    "background": "San Francisco required a permit to operate a laundry in a wooden building. The city denied permits to nearly all Chinese applicants while granting them to almost all non-Chinese applicants. Yick Wo, a Chinese immigrant, was jailed for operating his laundry without a permit.",
+    "key_issue": "Does the racially discriminatory application of a facially neutral law violate the Equal Protection Clause?",
+    "holding": "A law that is neutral on its face but is administered in a discriminatory manner violates the Equal Protection Clause. The Fourteenth Amendment protects all persons within the jurisdiction of the United States, not just citizens.",
+    "significance": "Established that the Equal Protection Clause protects non-citizens and that racially discriminatory enforcement of neutral laws is unconstitutional. The decision is a foundational precedent for equal protection jurisprudence.",
+    "outcome_for_petitioner": "Won",
+    "overruled": false,
+    "overruled_by": null,
+    "key_precedent_set": "Discriminatory enforcement of neutral laws violates Equal Protection; protects non-citizens",
+    "notable_justices": [
+      "Stanley Matthews (author)"
+    ],
+    "legal_area": "Constitutional Law / Equal Protection",
+    "impact_level": "Foundational"
+  },
+  {
+    "id": 66,
+    "case_name": "Gitlow v. New York",
+    "citation": "268 U.S. 652",
+    "year": 1925,
+    "decided_date": "June 8, 1925",
+    "court_era": "Taft Court",
+    "chief_justice": "William Howard Taft",
+    "vote": "7-2",
+    "category": [
+      "First Amendment",
+      "Incorporation",
+      "Free Speech",
+      "Communism"
+    ],
+    "constitutional_provisions": [
+      "First Amendment (Freedom of Speech)",
+      "Fourteenth Amendment"
+    ],
+    "parties": {
+      "petitioner": "Benjamin Gitlow",
+      "respondent": "State of New York"
+    },
+    "background": "Benjamin Gitlow, a socialist, was convicted under New York's Criminal Anarchy Law for publishing a 'Left Wing Manifesto' calling for the establishment of socialism through strikes and class action.",
+    "key_issue": "Does the First Amendment's protection of free speech apply to the states through the Fourteenth Amendment?",
+    "holding": "The Court upheld Gitlow's conviction but, for the first time, assumed that the First Amendment's free speech and press protections apply to the states through the Fourteenth Amendment's Due Process Clause.",
+    "significance": "The first case to incorporate a Bill of Rights protection against the states, beginning the selective incorporation doctrine that would eventually apply most of the Bill of Rights to state governments. The decision opened the door to federal protection of civil liberties against state action.",
+    "outcome_for_petitioner": "Lost (conviction upheld)",
+    "overruled": false,
+    "overruled_by": null,
+    "key_precedent_set": "First Amendment incorporated against states through Fourteenth Amendment; beginning of selective incorporation",
+    "notable_justices": [
+      "Edward Sanford (author)",
+      "Oliver Wendell Holmes (dissent)",
+      "Louis Brandeis (dissent)"
+    ],
+    "legal_area": "Constitutional Law / First Amendment / Incorporation",
+    "impact_level": "Foundational"
+  },
+  {
+    "id": 67,
+    "case_name": "Near v. Minnesota",
+    "citation": "283 U.S. 697",
+    "year": 1931,
+    "decided_date": "June 1, 1931",
+    "court_era": "Hughes Court",
+    "chief_justice": "Charles Evans Hughes",
+    "vote": "5-4",
+    "category": [
+      "First Amendment",
+      "Freedom of Press",
+      "Prior Restraint"
+    ],
+    "constitutional_provisions": [
+      "First Amendment (Freedom of Press)",
+      "Fourteenth Amendment"
+    ],
+    "parties": {
+      "petitioner": "Jay Near",
+      "respondent": "State of Minnesota"
+    },
+    "background": "Jay Near published a newspaper, The Saturday Press, that contained anti-Semitic and defamatory content about local officials. Minnesota's 'gag law' allowed courts to shut down malicious, scandalous, and defamatory publications as public nuisances.",
+    "key_issue": "Does Minnesota's 'gag law' allowing prior restraint of the press violate the First Amendment?",
+    "holding": "The Minnesota law constitutes an unconstitutional prior restraint on the press. The First Amendment, as incorporated against the states, prohibits prior restraints on publication except in very limited circumstances.",
+    "significance": "Established the strong constitutional presumption against prior restraint of the press. The decision is a cornerstone of press freedom jurisprudence and was the foundation for New York Times Co. v. United States (1971).",
+    "outcome_for_petitioner": "Won",
+    "overruled": false,
+    "overruled_by": null,
+    "key_precedent_set": "Prior restraint of press is presumptively unconstitutional",
+    "notable_justices": [
+      "Charles Evans Hughes (author)",
+      "Pierce Butler (dissent)"
+    ],
+    "legal_area": "Constitutional Law / First Amendment",
+    "impact_level": "High"
+  },
+  {
+    "id": 68,
+    "case_name": "Palko v. Connecticut",
+    "citation": "302 U.S. 319",
+    "year": 1937,
+    "decided_date": "December 6, 1937",
+    "court_era": "Hughes Court",
+    "chief_justice": "Charles Evans Hughes",
+    "vote": "8-1",
+    "category": [
+      "Fifth Amendment",
+      "Double Jeopardy",
+      "Incorporation",
+      "Due Process"
+    ],
+    "constitutional_provisions": [
+      "Fifth Amendment (Double Jeopardy)",
+      "Fourteenth Amendment (Due Process)"
+    ],
+    "parties": {
+      "petitioner": "Frank Palko",
+      "respondent": "State of Connecticut"
+    },
+    "background": "Frank Palko was convicted of second-degree murder and sentenced to life imprisonment. The state appealed and obtained a new trial, where Palko was convicted of first-degree murder and sentenced to death. He argued the retrial violated the Double Jeopardy Clause.",
+    "key_issue": "Does the Double Jeopardy Clause of the Fifth Amendment apply to the states through the Fourteenth Amendment?",
+    "holding": "The Double Jeopardy Clause does not apply to the states through the Fourteenth Amendment. Only those rights that are 'fundamental' and 'of the very essence of a scheme of ordered liberty' are incorporated.",
+    "significance": "Established the 'ordered liberty' test for selective incorporation, which determined which Bill of Rights provisions apply to the states. Although Palko was later overruled as to its specific holding on double jeopardy, its framework for selective incorporation remains influential.",
+    "outcome_for_petitioner": "Lost",
+    "overruled": true,
+    "overruled_by": "Benton v. Maryland (1969) (as to double jeopardy incorporation)",
+    "key_precedent_set": "'Ordered liberty' test for selective incorporation of Bill of Rights",
+    "notable_justices": [
+      "Benjamin Cardozo (author)",
+      "Pierce Butler (dissent)"
+    ],
+    "legal_area": "Constitutional Law / Incorporation",
+    "impact_level": "High"
+  },
+  {
+    "id": 69,
+    "case_name": "West Virginia State Board of Education v. Barnette",
+    "citation": "319 U.S. 624",
+    "year": 1943,
+    "decided_date": "June 14, 1943",
+    "court_era": "Stone Court",
+    "chief_justice": "Harlan Fiske Stone",
+    "vote": "6-3",
+    "category": [
+      "First Amendment",
+      "Free Speech",
+      "Compelled Speech",
+      "Religion"
+    ],
+    "constitutional_provisions": [
+      "First Amendment (Freedom of Speech and Religion)",
+      "Fourteenth Amendment"
+    ],
+    "parties": {
+      "petitioner": "West Virginia State Board of Education",
+      "respondent": "Walter Barnette et al."
+    },
+    "background": "West Virginia required all students to salute the flag and recite the Pledge of Allegiance. Jehovah's Witnesses refused on religious grounds, believing the salute violated their faith. Their children were expelled.",
+    "key_issue": "Can the government compel students to salute the flag and recite the Pledge of Allegiance?",
+    "holding": "The government cannot compel individuals to salute the flag or recite the Pledge of Allegiance. Compelling a person to express a belief they do not hold violates the First Amendment.",
+    "significance": "Established the principle that the government cannot compel speech or expression. Justice Jackson's opinion contains some of the most celebrated passages in Supreme Court history, including: 'If there is any fixed star in our constitutional constellation, it is that no official can prescribe what shall be orthodox in politics, nationalism, religion, or other matters of opinion.'",
+    "outcome_for_petitioner": "Lost",
+    "overruled": false,
+    "overruled_by": null,
+    "key_precedent_set": "Government cannot compel speech or expression; overruled Minersville School District v. Gobitis (1940)",
+    "notable_justices": [
+      "Robert Jackson (author)",
+      "Felix Frankfurter (dissent)"
+    ],
+    "legal_area": "Constitutional Law / First Amendment",
+    "impact_level": "Foundational"
+  },
+  {
+    "id": 70,
+    "case_name": "Dennis v. United States",
+    "citation": "341 U.S. 494",
+    "year": 1951,
+    "decided_date": "June 4, 1951",
+    "court_era": "Vinson Court",
+    "chief_justice": "Fred M. Vinson",
+    "vote": "6-2",
+    "category": [
+      "First Amendment",
+      "Free Speech",
+      "Communism",
+      "National Security"
+    ],
+    "constitutional_provisions": [
+      "First Amendment (Freedom of Speech)",
+      "Smith Act"
+    ],
+    "parties": {
+      "petitioner": "Eugene Dennis et al.",
+      "respondent": "United States"
+    },
+    "background": "Eugene Dennis and other leaders of the Communist Party of America were convicted under the Smith Act for conspiring to advocate the violent overthrow of the government. They challenged their convictions as violations of the First Amendment.",
+    "key_issue": "Does the Smith Act's prohibition on advocating the violent overthrow of the government violate the First Amendment?",
+    "holding": "The Smith Act is constitutional as applied to the Communist Party leaders. The gravity of the evil discounted by its improbability justifies the restriction on speech.",
+    "significance": "Upheld the conviction of Communist Party leaders during the McCarthy era. The decision is now widely criticized as inconsistent with Brandenburg v. Ohio (1969) and is seen as a product of Cold War hysteria. It represents one of the low points of First Amendment jurisprudence.",
+    "outcome_for_petitioner": "Lost",
+    "overruled": false,
+    "overruled_by": null,
+    "key_precedent_set": "Modified 'clear and present danger' test; allowed prosecution of Communist Party leaders",
+    "notable_justices": [
+      "Fred M. Vinson (author)",
+      "Hugo Black (dissent)",
+      "William O. Douglas (dissent)"
+    ],
+    "legal_area": "Constitutional Law / First Amendment",
+    "impact_level": "Moderate (Historically Significant)"
+  },
+  {
+    "id": 71,
+    "case_name": "Cooper v. Aaron",
+    "citation": "358 U.S. 1",
+    "year": 1958,
+    "decided_date": "September 29, 1958",
+    "court_era": "Warren Court",
+    "chief_justice": "Earl Warren",
+    "vote": "9-0",
+    "category": [
+      "Judicial Supremacy",
+      "Desegregation",
+      "Federalism",
+      "Civil Rights"
+    ],
+    "constitutional_provisions": [
+      "Supremacy Clause",
+      "Fourteenth Amendment"
+    ],
+    "parties": {
+      "petitioner": "William G. Cooper et al., School Board of Little Rock",
+      "respondent": "John Aaron et al."
+    },
+    "background": "Following Brown v. Board of Education, Arkansas Governor Orval Faubus used the National Guard to block Black students from entering Little Rock Central High School. The school board sought a delay in desegregation, citing the state's defiance.",
+    "key_issue": "Can state officials refuse to comply with federal court desegregation orders based on their disagreement with Brown v. Board of Education?",
+    "holding": "State officials are bound by the Supreme Court's interpretation of the Constitution under the Supremacy Clause. No state official can defy federal court orders based on disagreement with the Court's constitutional interpretations.",
+    "significance": "Reaffirmed the supremacy of federal constitutional law over state action and the binding nature of Supreme Court decisions on all government officials. The decision was signed by all nine justices individually, an unprecedented act emphasizing the Court's unanimity.",
+    "outcome_for_petitioner": "Lost",
+    "overruled": false,
+    "overruled_by": null,
+    "key_precedent_set": "States must comply with Supreme Court constitutional interpretations; judicial supremacy reaffirmed",
+    "notable_justices": [
+      "All nine justices signed the opinion"
+    ],
+    "legal_area": "Constitutional Law / Judicial Power",
+    "impact_level": "High"
+  },
+  {
+    "id": 72,
+    "case_name": "Abington School District v. Schempp",
+    "citation": "374 U.S. 203",
+    "year": 1963,
+    "decided_date": "June 17, 1963",
+    "court_era": "Warren Court",
+    "chief_justice": "Earl Warren",
+    "vote": "8-1",
+    "category": [
+      "First Amendment",
+      "Establishment Clause",
+      "Religion in Schools"
+    ],
+    "constitutional_provisions": [
+      "First Amendment (Establishment Clause)",
+      "Fourteenth Amendment"
+    ],
+    "parties": {
+      "petitioner": "Abington School District",
+      "respondent": "Edward Schempp"
+    },
+    "background": "Pennsylvania required that ten Bible verses be read aloud at the start of each school day. The Schempp family, Unitarians, challenged the practice as a violation of the Establishment Clause.",
+    "key_issue": "Does Bible reading in public schools violate the Establishment Clause?",
+    "holding": "Bible reading in public schools violates the Establishment Clause. The government must maintain neutrality toward religion and cannot sponsor religious activities in public schools.",
+    "significance": "Prohibited Bible reading and the Lord's Prayer in public schools, reinforcing Engel v. Vitale (1962). The decision established the 'secular purpose and primary effect' test for Establishment Clause cases, a precursor to the Lemon test.",
+    "outcome_for_petitioner": "Lost",
+    "overruled": false,
+    "overruled_by": null,
+    "key_precedent_set": "Bible reading in public schools unconstitutional; secular purpose test for Establishment Clause",
+    "notable_justices": [
+      "Tom Clark (author)",
+      "Potter Stewart (sole dissent)"
+    ],
+    "legal_area": "Constitutional Law / First Amendment",
+    "impact_level": "High"
+  },
+  {
+    "id": 73,
+    "case_name": "Escobedo v. Illinois",
+    "citation": "378 U.S. 478",
+    "year": 1964,
+    "decided_date": "June 22, 1964",
+    "court_era": "Warren Court",
+    "chief_justice": "Earl Warren",
+    "vote": "5-4",
+    "category": [
+      "Sixth Amendment",
+      "Right to Counsel",
+      "Criminal Procedure"
+    ],
+    "constitutional_provisions": [
+      "Sixth Amendment (Right to Counsel)",
+      "Fourteenth Amendment"
+    ],
+    "parties": {
+      "petitioner": "Danny Escobedo",
+      "respondent": "State of Illinois"
+    },
+    "background": "Danny Escobedo was arrested for murder and interrogated by police. His attorney was present at the station but was denied access to Escobedo. Escobedo repeatedly asked to speak with his attorney but was refused. He made incriminating statements and was convicted.",
+    "key_issue": "Does the Sixth Amendment right to counsel attach during police interrogation before formal charges are filed?",
+    "holding": "When a police investigation focuses on a particular suspect and the suspect requests counsel, the Sixth Amendment right to counsel attaches. Statements obtained in violation of this right are inadmissible.",
+    "significance": "Extended the right to counsel to the interrogation stage, a precursor to Miranda v. Arizona (1966). The decision significantly expanded the rights of criminal suspects during police questioning.",
+    "outcome_for_petitioner": "Won",
+    "overruled": false,
+    "overruled_by": null,
+    "key_precedent_set": "Right to counsel attaches during police interrogation when suspect is focus of investigation",
+    "notable_justices": [
+      "Arthur Goldberg (author)",
+      "Byron White (dissent)"
+    ],
+    "legal_area": "Constitutional Law / Criminal Procedure",
+    "impact_level": "High"
+  },
+  {
+    "id": 74,
+    "case_name": "Katzenbach v. McClung",
+    "citation": "379 U.S. 294",
+    "year": 1964,
+    "decided_date": "December 14, 1964",
+    "court_era": "Warren Court",
+    "chief_justice": "Earl Warren",
+    "vote": "9-0",
+    "category": [
+      "Civil Rights",
+      "Commerce Clause",
+      "Racial Discrimination"
+    ],
+    "constitutional_provisions": [
+      "Commerce Clause (Article I, Section 8)",
+      "Civil Rights Act of 1964"
+    ],
+    "parties": {
+      "petitioner": "Nicholas deB. Katzenbach, Attorney General",
+      "respondent": "Ollie McClung Sr."
+    },
+    "background": "Ollie's Barbecue in Birmingham, Alabama refused to serve Black customers in its dining room. The restaurant was a local establishment but purchased a significant portion of its food from out-of-state suppliers. The government sued under Title II of the Civil Rights Act.",
+    "key_issue": "Does Congress have the power under the Commerce Clause to prohibit racial discrimination in a local restaurant that purchases food from out-of-state suppliers?",
+    "holding": "Congress has the power under the Commerce Clause to prohibit racial discrimination in a local restaurant that purchases food from interstate commerce. Racial discrimination in restaurants affects interstate commerce in the aggregate.",
+    "significance": "Decided the same day as Heart of Atlanta Motel, Katzenbach extended the Civil Rights Act to local businesses with tenuous connections to interstate commerce, broadly upholding the Act's public accommodations provisions.",
+    "outcome_for_petitioner": "Won",
+    "overruled": false,
+    "overruled_by": null,
+    "key_precedent_set": "Commerce Clause reaches local businesses with interstate supply connections; Civil Rights Act upheld",
+    "notable_justices": [
+      "Tom Clark (author — unanimous)"
+    ],
+    "legal_area": "Constitutional Law / Civil Rights",
+    "impact_level": "High"
+  },
+  {
+    "id": 75,
+    "case_name": "Harper v. Virginia State Board of Elections",
+    "citation": "383 U.S. 663",
+    "year": 1966,
+    "decided_date": "March 24, 1966",
+    "court_era": "Warren Court",
+    "chief_justice": "Earl Warren",
+    "vote": "6-3",
+    "category": [
+      "Voting Rights",
+      "Equal Protection",
+      "Poll Tax"
+    ],
+    "constitutional_provisions": [
+      "Fourteenth Amendment (Equal Protection Clause)",
+      "Twenty-Fourth Amendment"
+    ],
+    "parties": {
+      "petitioner": "Annie E. Harper et al.",
+      "respondent": "Virginia State Board of Elections"
+    },
+    "background": "Virginia imposed a $1.50 poll tax as a condition for voting in state elections. The Twenty-Fourth Amendment had already abolished poll taxes in federal elections. Harper challenged Virginia's poll tax in state elections.",
+    "key_issue": "Does Virginia's poll tax for state elections violate the Equal Protection Clause?",
+    "holding": "A state poll tax for voting in state elections violates the Equal Protection Clause. Wealth or ability to pay a fee cannot be made a condition for exercising the fundamental right to vote.",
+    "significance": "Abolished poll taxes in state elections, extending the Twenty-Fourth Amendment's principle to state elections through the Equal Protection Clause. The decision reinforced the fundamental nature of the right to vote.",
+    "outcome_for_petitioner": "Won",
+    "overruled": false,
+    "overruled_by": null,
+    "key_precedent_set": "Poll taxes in state elections unconstitutional; wealth cannot condition the right to vote",
+    "notable_justices": [
+      "William O. Douglas (author)",
+      "Hugo Black (dissent)",
+      "Potter Stewart (dissent)"
+    ],
+    "legal_area": "Constitutional Law / Voting Rights",
+    "impact_level": "High"
+  },
+  {
+    "id": 76,
+    "case_name": "Katz v. United States",
+    "citation": "389 U.S. 347",
+    "year": 1967,
+    "decided_date": "December 18, 1967",
+    "court_era": "Warren Court",
+    "chief_justice": "Earl Warren",
+    "vote": "7-1",
+    "category": [
+      "Fourth Amendment",
+      "Privacy",
+      "Search and Seizure",
+      "Wiretapping"
+    ],
+    "constitutional_provisions": [
+      "Fourth Amendment (Search and Seizure)"
+    ],
+    "parties": {
+      "petitioner": "Charles Katz",
+      "respondent": "United States"
+    },
+    "background": "FBI agents attached an electronic eavesdropping device to the outside of a public phone booth used by Charles Katz to transmit illegal gambling information. The government argued no warrant was needed because there was no physical intrusion.",
+    "key_issue": "Does the Fourth Amendment protect against electronic surveillance of conversations in a public phone booth?",
+    "holding": "The Fourth Amendment protects people, not places. What a person knowingly exposes to the public is not protected, but what a person seeks to preserve as private, even in a public area, may be constitutionally protected. A warrant was required for the wiretap.",
+    "significance": "Established the 'reasonable expectation of privacy' test (articulated in Justice Harlan's concurrence) as the governing standard for Fourth Amendment analysis. The decision extended Fourth Amendment protection to electronic surveillance and is the foundation of modern privacy law.",
+    "outcome_for_petitioner": "Won",
+    "overruled": false,
+    "overruled_by": null,
+    "key_precedent_set": "'Reasonable expectation of privacy' test; Fourth Amendment protects people, not just places",
+    "notable_justices": [
+      "Potter Stewart (author)",
+      "John Marshall Harlan II (concurrence — most influential)"
+    ],
+    "legal_area": "Constitutional Law / Fourth Amendment",
+    "impact_level": "Foundational"
+  },
+  {
+    "id": 77,
+    "case_name": "Swann v. Charlotte-Mecklenburg Board of Education",
+    "citation": "402 U.S. 1",
+    "year": 1971,
+    "decided_date": "April 20, 1971",
+    "court_era": "Burger Court",
+    "chief_justice": "Warren E. Burger",
+    "vote": "9-0",
+    "category": [
+      "Civil Rights",
+      "Desegregation",
+      "Busing",
+      "Education"
+    ],
+    "constitutional_provisions": [
+      "Fourteenth Amendment (Equal Protection Clause)"
+    ],
+    "parties": {
+      "petitioner": "James Swann et al.",
+      "respondent": "Charlotte-Mecklenburg Board of Education"
+    },
+    "background": "Despite Brown v. Board of Education, Charlotte-Mecklenburg schools remained largely segregated due to residential patterns. A federal district court ordered extensive busing of students to achieve racial integration.",
+    "key_issue": "Are federal courts authorized to order busing of students to achieve racial integration in public schools?",
+    "holding": "Federal courts have broad remedial powers to dismantle segregated school systems, including ordering busing, reassignment of teachers, and alteration of attendance zones.",
+    "significance": "Authorized busing as a tool for school desegregation, leading to widespread busing programs across the country. The decision sparked enormous controversy and political backlash, and busing became one of the most contentious civil rights issues of the 1970s.",
+    "outcome_for_petitioner": "Won",
+    "overruled": false,
+    "overruled_by": null,
+    "key_precedent_set": "Busing authorized as desegregation remedy; broad federal court remedial power",
+    "notable_justices": [
+      "Warren E. Burger (author — unanimous)"
+    ],
+    "legal_area": "Constitutional Law / Civil Rights",
+    "impact_level": "High"
+  },
+  {
+    "id": 78,
+    "case_name": "Frontiero v. Richardson",
+    "citation": "411 U.S. 677",
+    "year": 1973,
+    "decided_date": "May 14, 1973",
+    "court_era": "Burger Court",
+    "chief_justice": "Warren E. Burger",
+    "vote": "8-1",
+    "category": [
+      "Equal Protection",
+      "Sex Discrimination",
+      "Military Benefits"
+    ],
+    "constitutional_provisions": [
+      "Fifth Amendment (Due Process/Equal Protection)",
+      "Fourteenth Amendment"
+    ],
+    "parties": {
+      "petitioner": "Sharron Frontiero",
+      "respondent": "Elliot L. Richardson, Secretary of Defense"
+    },
+    "background": "Federal law automatically granted housing and medical benefits to wives of male military personnel but required female military personnel to prove their husbands were dependent on them for more than half their support. Sharron Frontiero challenged the law.",
+    "key_issue": "Does the military benefits statute's different treatment of male and female service members violate the equal protection component of the Fifth Amendment?",
+    "holding": "The statute's different treatment of male and female service members is unconstitutional. Sex, like race, is a suspect classification requiring heightened scrutiny.",
+    "significance": "A landmark sex discrimination case argued by Ruth Bader Ginsburg (then an ACLU attorney). Four justices would have declared sex a suspect classification requiring strict scrutiny, but a majority did not agree on the standard. The case laid the groundwork for heightened scrutiny of sex-based classifications.",
+    "outcome_for_petitioner": "Won",
+    "overruled": false,
+    "overruled_by": null,
+    "key_precedent_set": "Sex-based classifications in military benefits unconstitutional; foundation for heightened scrutiny of sex discrimination",
+    "notable_justices": [
+      "William Brennan (plurality)",
+      "Lewis Powell (concurrence)",
+      "William H. Rehnquist (dissent)"
+    ],
+    "legal_area": "Constitutional Law / Equal Protection",
+    "impact_level": "High"
+  },
+  {
+    "id": 79,
+    "case_name": "Milliken v. Bradley",
+    "citation": "418 U.S. 717",
+    "year": 1974,
+    "decided_date": "July 25, 1974",
+    "court_era": "Burger Court",
+    "chief_justice": "Warren E. Burger",
+    "vote": "5-4",
+    "category": [
+      "Civil Rights",
+      "Desegregation",
+      "Education",
+      "Busing"
+    ],
+    "constitutional_provisions": [
+      "Fourteenth Amendment (Equal Protection Clause)"
+    ],
+    "parties": {
+      "petitioner": "William G. Milliken, Governor of Michigan",
+      "respondent": "Ronald Bradley et al."
+    },
+    "background": "Detroit's public schools were heavily segregated. A federal district court ordered a metropolitan-wide busing plan that would include 53 suburban school districts to achieve integration, even though the suburban districts had not been found to have engaged in segregation.",
+    "key_issue": "Can a federal court order inter-district busing to remedy segregation in one school district when the surrounding districts have not been found to have engaged in segregation?",
+    "holding": "Federal courts cannot impose inter-district desegregation remedies unless it is shown that the district lines were deliberately drawn to achieve segregation or that the suburban districts engaged in intentional segregation.",
+    "significance": "Severely limited the reach of school desegregation remedies by preventing inter-district busing across school district lines. The decision effectively preserved suburban-urban school segregation and is seen as a major setback for school integration efforts.",
+    "outcome_for_petitioner": "Won",
+    "overruled": false,
+    "overruled_by": null,
+    "key_precedent_set": "Inter-district busing remedies require showing of inter-district violation; limits on desegregation remedies",
+    "notable_justices": [
+      "Warren E. Burger (author)",
+      "Thurgood Marshall (dissent)",
+      "William O. Douglas (dissent)"
+    ],
+    "legal_area": "Constitutional Law / Civil Rights",
+    "impact_level": "High"
+  },
+  {
+    "id": 80,
+    "case_name": "Maher v. Roe",
+    "citation": "432 U.S. 464",
+    "year": 1977,
+    "decided_date": "June 20, 1977",
+    "court_era": "Burger Court",
+    "chief_justice": "Warren E. Burger",
+    "vote": "6-3",
+    "category": [
+      "Abortion",
+      "Medicaid",
+      "Equal Protection",
+      "Privacy Rights"
+    ],
+    "constitutional_provisions": [
+      "Fourteenth Amendment (Equal Protection and Due Process)"
+    ],
+    "parties": {
+      "petitioner": "Edward W. Maher, Commissioner of Social Services",
+      "respondent": "Susan Roe et al."
+    },
+    "background": "Connecticut's Medicaid program funded childbirth expenses but not non-therapeutic abortions. Poor women who wanted abortions challenged the policy as a violation of their constitutional rights under Roe v. Wade.",
+    "key_issue": "Does a state's refusal to fund non-therapeutic abortions through Medicaid violate the constitutional right to abortion?",
+    "holding": "A state is not required to fund non-therapeutic abortions even if it funds childbirth. The constitutional right to abortion does not impose an affirmative obligation on the government to subsidize the exercise of that right.",
+    "significance": "Established that the government has no obligation to fund constitutionally protected activities. The decision significantly limited the practical impact of Roe v. Wade for poor women and established the principle that the government may choose to fund childbirth over abortion.",
+    "outcome_for_petitioner": "Won",
+    "overruled": false,
+    "overruled_by": null,
+    "key_precedent_set": "Government not required to fund abortion; constitutional rights do not require government subsidies",
+    "notable_justices": [
+      "Lewis Powell (author)",
+      "William Brennan (dissent)",
+      "Thurgood Marshall (dissent)"
+    ],
+    "legal_area": "Constitutional Law / Reproductive Rights",
+    "impact_level": "Moderate"
+  },
+  {
+    "id": 81,
+    "case_name": "Zurcher v. Stanford Daily",
+    "citation": "436 U.S. 547",
+    "year": 1978,
+    "decided_date": "May 31, 1978",
+    "court_era": "Burger Court",
+    "chief_justice": "Warren E. Burger",
+    "vote": "5-3",
+    "category": [
+      "First Amendment",
+      "Fourth Amendment",
+      "Press Freedom",
+      "Search and Seizure"
+    ],
+    "constitutional_provisions": [
+      "First Amendment (Freedom of Press)",
+      "Fourth Amendment"
+    ],
+    "parties": {
+      "petitioner": "James Zurcher, Chief of Police",
+      "respondent": "The Stanford Daily"
+    },
+    "background": "Police obtained a warrant to search the Stanford University student newspaper's offices for photographs of a violent demonstration. The newspaper challenged the search as a violation of the First and Fourth Amendments.",
+    "key_issue": "Does the First Amendment require a subpoena rather than a search warrant when the target is a newspaper?",
+    "holding": "The First and Fourth Amendments do not prohibit the use of a search warrant to search a newspaper's offices. The press is not exempt from the general requirement of probable cause for searches.",
+    "significance": "The decision prompted Congress to pass the Privacy Protection Act of 1980, which generally requires law enforcement to use subpoenas rather than search warrants when seeking evidence from journalists and publishers, providing greater protection than the Court had granted.",
+    "outcome_for_petitioner": "Won",
+    "overruled": false,
+    "overruled_by": null,
+    "key_precedent_set": "Newspapers not exempt from search warrants; led to Privacy Protection Act of 1980",
+    "notable_justices": [
+      "Byron White (author)",
+      "Potter Stewart (dissent)",
+      "John Paul Stevens (dissent)"
+    ],
+    "legal_area": "Constitutional Law / First Amendment",
+    "impact_level": "Moderate"
+  },
+  {
+    "id": 82,
+    "case_name": "Hazelwood School District v. Kuhlmeier",
+    "citation": "484 U.S. 260",
+    "year": 1988,
+    "decided_date": "January 13, 1988",
+    "court_era": "Rehnquist Court",
+    "chief_justice": "William H. Rehnquist",
+    "vote": "5-3",
+    "category": [
+      "First Amendment",
+      "Student Speech",
+      "School Press"
+    ],
+    "constitutional_provisions": [
+      "First Amendment (Freedom of Speech and Press)",
+      "Fourteenth Amendment"
+    ],
+    "parties": {
+      "petitioner": "Hazelwood School District et al.",
+      "respondent": "Cathy Kuhlmeier et al."
+    },
+    "background": "The principal of Hazelwood East High School deleted two articles from the school newspaper — one about student pregnancies and one about divorce — before publication, deeming them inappropriate.",
+    "key_issue": "Does a school principal's deletion of articles from a school-sponsored newspaper violate the First Amendment rights of student journalists?",
+    "holding": "School officials may exercise editorial control over school-sponsored student publications if their actions are reasonably related to legitimate pedagogical concerns. The school newspaper was not a public forum.",
+    "significance": "Established that school officials have broad authority to regulate school-sponsored student expression, in contrast to Tinker v. Des Moines (1969), which protected student expression not sponsored by the school. The decision significantly limited student press freedom.",
+    "outcome_for_petitioner": "Won",
+    "overruled": false,
+    "overruled_by": null,
+    "key_precedent_set": "School officials may regulate school-sponsored student publications for legitimate pedagogical reasons",
+    "notable_justices": [
+      "Byron White (author)",
+      "William Brennan (dissent)"
+    ],
+    "legal_area": "Constitutional Law / First Amendment",
+    "impact_level": "High"
+  },
+  {
+    "id": 83,
+    "case_name": "Morrison v. Olson",
+    "citation": "487 U.S. 654",
+    "year": 1988,
+    "decided_date": "June 29, 1988",
+    "court_era": "Rehnquist Court",
+    "chief_justice": "William H. Rehnquist",
+    "vote": "7-1",
+    "category": [
+      "Separation of Powers",
+      "Independent Counsel",
+      "Executive Power"
+    ],
+    "constitutional_provisions": [
+      "Article II (Appointments Clause)",
+      "Separation of Powers"
+    ],
+    "parties": {
+      "petitioner": "Alexia Morrison, Independent Counsel",
+      "respondent": "Theodore Olson et al."
+    },
+    "background": "The Ethics in Government Act of 1978 established an independent counsel mechanism to investigate and prosecute high-level executive branch officials. Theodore Olson challenged the constitutionality of the independent counsel statute.",
+    "key_issue": "Does the independent counsel statute violate the Appointments Clause or the separation of powers?",
+    "holding": "The independent counsel statute is constitutional. The independent counsel is an 'inferior officer' who may be appointed by a court. The statute does not impermissibly interfere with the President's ability to perform his constitutional duties.",
+    "significance": "Upheld the independent counsel statute, which was used in numerous high-profile investigations including the Iran-Contra affair and the Clinton-Lewinsky investigation. The statute was allowed to expire in 1999. Justice Scalia's lone dissent is widely considered prescient.",
+    "outcome_for_petitioner": "Won",
+    "overruled": false,
+    "overruled_by": null,
+    "key_precedent_set": "Independent counsel statute constitutional; inferior officers may be appointed by courts",
+    "notable_justices": [
+      "William H. Rehnquist (author)",
+      "Antonin Scalia (lone dissent)"
+    ],
+    "legal_area": "Constitutional Law / Separation of Powers",
+    "impact_level": "Moderate"
+  },
+  {
+    "id": 84,
+    "case_name": "Employment Division v. Smith",
+    "citation": "494 U.S. 872",
+    "year": 1990,
+    "decided_date": "April 17, 1990",
+    "court_era": "Rehnquist Court",
+    "chief_justice": "William H. Rehnquist",
+    "vote": "6-3",
+    "category": [
+      "First Amendment",
+      "Free Exercise of Religion",
+      "Drug Laws"
+    ],
+    "constitutional_provisions": [
+      "First Amendment (Free Exercise Clause)",
+      "Fourteenth Amendment"
+    ],
+    "parties": {
+      "petitioner": "Employment Division, Department of Human Resources of Oregon",
+      "respondent": "Alfred Smith"
+    },
+    "background": "Alfred Smith and Galen Black were fired from their jobs at a drug rehabilitation organization for using peyote in a Native American Church ceremony. They were denied unemployment benefits because they had been fired for 'misconduct.'",
+    "key_issue": "Does the Free Exercise Clause require religious exemptions from generally applicable, religiously neutral laws?",
+    "holding": "The Free Exercise Clause does not require religious exemptions from neutral, generally applicable laws. The government need not show a compelling interest to enforce a neutral law that incidentally burdens religious practice.",
+    "significance": "Significantly limited the Free Exercise Clause by eliminating the compelling interest test for neutral, generally applicable laws. The decision prompted Congress to pass the Religious Freedom Restoration Act (RFRA) in 1993 to restore the compelling interest test.",
+    "outcome_for_petitioner": "Won",
+    "overruled": false,
+    "overruled_by": null,
+    "key_precedent_set": "No religious exemptions from neutral, generally applicable laws; prompted passage of RFRA",
+    "notable_justices": [
+      "Antonin Scalia (author)",
+      "Sandra Day O'Connor (concurrence)",
+      "Harry Blackmun (dissent)"
+    ],
+    "legal_area": "Constitutional Law / First Amendment",
+    "impact_level": "High"
+  },
+  {
+    "id": 85,
+    "case_name": "Lee v. Weisman",
+    "citation": "505 U.S. 577",
+    "year": 1992,
+    "decided_date": "June 24, 1992",
+    "court_era": "Rehnquist Court",
+    "chief_justice": "William H. Rehnquist",
+    "vote": "5-4",
+    "category": [
+      "First Amendment",
+      "Establishment Clause",
+      "Prayer",
+      "Graduation"
+    ],
+    "constitutional_provisions": [
+      "First Amendment (Establishment Clause)",
+      "Fourteenth Amendment"
+    ],
+    "parties": {
+      "petitioner": "Robert E. Lee, Principal",
+      "respondent": "Daniel Weisman"
+    },
+    "background": "A middle school principal invited a rabbi to deliver a prayer at graduation. The prayer was nonsectarian but religious. Daniel Weisman challenged the practice as a violation of the Establishment Clause.",
+    "key_issue": "Does a school-sponsored prayer at a public school graduation ceremony violate the Establishment Clause?",
+    "holding": "A school-sponsored prayer at a public school graduation ceremony violates the Establishment Clause. The government's involvement in the prayer creates psychological coercion on students to participate.",
+    "significance": "Extended the prohibition on school prayer to graduation ceremonies, applying the 'coercion test.' The decision is notable for Justice Kennedy's switch from a more permissive view of religion in public life to a stricter separationist position.",
+    "outcome_for_petitioner": "Lost",
+    "overruled": false,
+    "overruled_by": null,
+    "key_precedent_set": "School-sponsored graduation prayer unconstitutional; coercion test for Establishment Clause",
+    "notable_justices": [
+      "Anthony Kennedy (author)",
+      "Antonin Scalia (dissent)"
+    ],
+    "legal_area": "Constitutional Law / First Amendment",
+    "impact_level": "High"
+  },
+  {
+    "id": 86,
+    "case_name": "Printz v. United States",
+    "citation": "521 U.S. 898",
+    "year": 1997,
+    "decided_date": "June 27, 1997",
+    "court_era": "Rehnquist Court",
+    "chief_justice": "William H. Rehnquist",
+    "vote": "5-4",
+    "category": [
+      "Federalism",
+      "Anti-Commandeering",
+      "Second Amendment",
+      "Commerce Clause"
+    ],
+    "constitutional_provisions": [
+      "Tenth Amendment",
+      "Supremacy Clause",
+      "Article I"
+    ],
+    "parties": {
+      "petitioner": "Jay Printz, Sheriff of Ravalli County, Montana",
+      "respondent": "United States"
+    },
+    "background": "The Brady Handgun Violence Prevention Act required state and local law enforcement officers to conduct background checks on prospective handgun purchasers. Jay Printz challenged the requirement as an unconstitutional commandeering of state officers.",
+    "key_issue": "May Congress compel state officers to administer or enforce a federal regulatory program?",
+    "holding": "Congress may not compel state officers to administer or enforce a federal regulatory program. The anti-commandeering principle prohibits the federal government from directing state executives to implement federal law.",
+    "significance": "Established the anti-commandeering doctrine, prohibiting Congress from requiring state officials to implement federal programs. The decision is a significant federalism precedent and has been applied in subsequent cases, including Murphy v. NCAA (2018) on sports betting.",
+    "outcome_for_petitioner": "Won",
+    "overruled": false,
+    "overruled_by": null,
+    "key_precedent_set": "Anti-commandeering doctrine; Congress cannot compel state officers to enforce federal law",
+    "notable_justices": [
+      "Antonin Scalia (author)",
+      "John Paul Stevens (dissent)",
+      "Stephen Breyer (dissent)"
+    ],
+    "legal_area": "Constitutional Law / Federalism",
+    "impact_level": "High"
+  },
+  {
+    "id": 87,
+    "case_name": "Zelman v. Simmons-Harris",
+    "citation": "536 U.S. 639",
+    "year": 2002,
+    "decided_date": "June 27, 2002",
+    "court_era": "Rehnquist Court",
+    "chief_justice": "William H. Rehnquist",
+    "vote": "5-4",
+    "category": [
+      "First Amendment",
+      "Establishment Clause",
+      "School Vouchers",
+      "Religion"
+    ],
+    "constitutional_provisions": [
+      "First Amendment (Establishment Clause)",
+      "Fourteenth Amendment"
+    ],
+    "parties": {
+      "petitioner": "Susan Tave Zelman, Superintendent of Public Instruction",
+      "respondent": "Doris Simmons-Harris et al."
+    },
+    "background": "Ohio's Pilot Project Scholarship Program provided tuition vouchers to students in failing school districts, which could be used at private schools, including religious schools. Taxpayers challenged the program as a violation of the Establishment Clause.",
+    "key_issue": "Does a school voucher program that allows public funds to be used at religious schools violate the Establishment Clause?",
+    "holding": "The school voucher program does not violate the Establishment Clause. The program is neutral with respect to religion, and the flow of funds to religious schools results from the independent choices of private individuals.",
+    "significance": "Upheld school voucher programs that include religious schools, significantly expanding the permissible relationship between government funding and religious education. The decision has had major implications for school choice policy.",
+    "outcome_for_petitioner": "Won",
+    "overruled": false,
+    "overruled_by": null,
+    "key_precedent_set": "School voucher programs including religious schools do not violate Establishment Clause",
+    "notable_justices": [
+      "William H. Rehnquist (author)",
+      "John Paul Stevens (dissent)",
+      "David Souter (dissent)"
+    ],
+    "legal_area": "Constitutional Law / First Amendment",
+    "impact_level": "High"
+  },
+  {
+    "id": 88,
+    "case_name": "Gonzales v. Raich",
+    "citation": "545 U.S. 1",
+    "year": 2005,
+    "decided_date": "June 6, 2005",
+    "court_era": "Rehnquist Court",
+    "chief_justice": "William H. Rehnquist",
+    "vote": "6-3",
+    "category": [
+      "Commerce Clause",
+      "Federalism",
+      "Drug Policy"
+    ],
+    "constitutional_provisions": [
+      "Commerce Clause (Article I, Section 8)",
+      "Necessary and Proper Clause"
+    ],
+    "parties": {
+      "petitioner": "Alberto Gonzales, Attorney General",
+      "respondent": "Angel Raich"
+    },
+    "background": "California's Compassionate Use Act legalized medical marijuana. Angel Raich used marijuana grown at home for medical purposes under California law. Federal agents destroyed her marijuana plants, and she sued to prevent enforcement of the federal Controlled Substances Act.",
+    "key_issue": "Does Congress have the power under the Commerce Clause to prohibit the local cultivation and use of marijuana authorized by state law?",
+    "holding": "Congress has the power under the Commerce Clause to regulate the local cultivation and use of marijuana as part of a comprehensive federal drug control scheme, even when the marijuana is grown at home for personal medical use.",
+    "significance": "Reaffirmed the broad reach of the Commerce Clause and limited the federalism revolution of Lopez and Morrison. The decision confirmed that Congress can regulate local non-commercial activity if it is part of a comprehensive regulatory scheme.",
+    "outcome_for_petitioner": "Won",
+    "overruled": false,
+    "overruled_by": null,
+    "key_precedent_set": "Commerce Clause allows federal drug laws to override state medical marijuana laws",
+    "notable_justices": [
+      "John Paul Stevens (author)",
+      "Sandra Day O'Connor (dissent)",
+      "Clarence Thomas (dissent)"
+    ],
+    "legal_area": "Constitutional Law / Commerce Clause",
+    "impact_level": "High"
+  },
+  {
+    "id": 89,
+    "case_name": "Parents Involved in Community Schools v. Seattle School District No. 1",
+    "citation": "551 U.S. 701",
+    "year": 2007,
+    "decided_date": "June 28, 2007",
+    "court_era": "Roberts Court",
+    "chief_justice": "John G. Roberts Jr.",
+    "vote": "5-4",
+    "category": [
+      "Equal Protection",
+      "Affirmative Action",
+      "Education",
+      "Race"
+    ],
+    "constitutional_provisions": [
+      "Fourteenth Amendment (Equal Protection Clause)"
+    ],
+    "parties": {
+      "petitioner": "Parents Involved in Community Schools",
+      "respondent": "Seattle School District No. 1 et al."
+    },
+    "background": "Seattle and Louisville school districts used race as a factor in student assignment to maintain racial diversity in schools. Parents challenged the race-based assignment plans as violations of the Equal Protection Clause.",
+    "key_issue": "Do school districts' voluntary race-based student assignment plans violate the Equal Protection Clause?",
+    "holding": "The school districts' race-based student assignment plans violate the Equal Protection Clause. Racial classifications must be narrowly tailored to serve a compelling interest. Achieving racial balance is not a compelling interest.",
+    "significance": "Limited the use of race in K-12 school assignment plans. Chief Justice Roberts's plurality opinion contained the famous line: 'The way to stop discrimination on the basis of race is to stop discriminating on the basis of race.' Justice Kennedy's concurrence provided a narrower basis for the decision.",
+    "outcome_for_petitioner": "Won",
+    "overruled": false,
+    "overruled_by": null,
+    "key_precedent_set": "Race-based K-12 school assignment plans unconstitutional; racial balance not a compelling interest",
+    "notable_justices": [
+      "John G. Roberts Jr. (plurality)",
+      "Anthony Kennedy (concurrence)",
+      "John Paul Stevens (dissent)",
+      "Stephen Breyer (dissent)"
+    ],
+    "legal_area": "Constitutional Law / Equal Protection",
+    "impact_level": "High"
+  },
+  {
+    "id": 90,
+    "case_name": "Snyder v. Phelps",
+    "citation": "562 U.S. 443",
+    "year": 2011,
+    "decided_date": "March 2, 2011",
+    "court_era": "Roberts Court",
+    "chief_justice": "John G. Roberts Jr.",
+    "vote": "8-1",
+    "category": [
+      "First Amendment",
+      "Free Speech",
+      "Funeral Protests",
+      "Intentional Infliction of Emotional Distress"
+    ],
+    "constitutional_provisions": [
+      "First Amendment (Freedom of Speech)"
+    ],
+    "parties": {
+      "petitioner": "Albert Snyder",
+      "respondent": "Fred W. Phelps Sr. et al. (Westboro Baptist Church)"
+    },
+    "background": "Members of the Westboro Baptist Church picketed near the funeral of Marine Lance Corporal Matthew Snyder, carrying signs with anti-gay messages. Matthew's father, Albert Snyder, sued for intentional infliction of emotional distress.",
+    "key_issue": "Does the First Amendment protect the Westboro Baptist Church's picketing near a military funeral?",
+    "holding": "The First Amendment protects the Westboro Baptist Church's speech on matters of public concern, even when that speech is deeply offensive and causes emotional distress. The church's picketing was on public land and addressed matters of public concern.",
+    "significance": "Reaffirmed the broad protection the First Amendment provides to speech on matters of public concern, even when that speech is deeply offensive. The decision is a strong statement of the principle that the government cannot restrict speech simply because it causes emotional harm.",
+    "outcome_for_petitioner": "Lost",
+    "overruled": false,
+    "overruled_by": null,
+    "key_precedent_set": "First Amendment protects offensive speech on matters of public concern; funeral protest protected",
+    "notable_justices": [
+      "John G. Roberts Jr. (author)",
+      "Samuel Alito (sole dissent)"
+    ],
+    "legal_area": "Constitutional Law / First Amendment",
+    "impact_level": "High"
+  },
+  {
+    "id": 91,
+    "case_name": "Holder v. Humanitarian Law Project",
+    "citation": "561 U.S. 1",
+    "year": 2010,
+    "decided_date": "June 21, 2010",
+    "court_era": "Roberts Court",
+    "chief_justice": "John G. Roberts Jr.",
+    "vote": "6-3",
+    "category": [
+      "First Amendment",
+      "Terrorism",
+      "National Security",
+      "Material Support"
+    ],
+    "constitutional_provisions": [
+      "First Amendment (Freedom of Speech and Association)",
+      "Due Process"
+    ],
+    "parties": {
+      "petitioner": "Eric H. Holder Jr., Attorney General",
+      "respondent": "Humanitarian Law Project"
+    },
+    "background": "The Humanitarian Law Project sought to provide support to the Kurdistan Workers' Party (PKK) and the Liberation Tigers of Tamil Eelam (LTTE) for lawful, nonviolent activities. The federal material support statute prohibited providing any support to designated terrorist organizations.",
+    "key_issue": "Does the federal material support statute, as applied to providing support for lawful activities of designated terrorist organizations, violate the First Amendment?",
+    "holding": "The material support statute is constitutional as applied. The government's interest in preventing terrorism justifies the restriction on providing support to terrorist organizations, even for ostensibly peaceful purposes.",
+    "significance": "Upheld broad federal power to restrict speech and association in the context of counter-terrorism. The decision has been criticized for allowing the government to criminalize speech and association that does not directly support violence.",
+    "outcome_for_petitioner": "Won",
+    "overruled": false,
+    "overruled_by": null,
+    "key_precedent_set": "Material support statute constitutional; government may restrict support to terrorist organizations",
+    "notable_justices": [
+      "John G. Roberts Jr. (author)",
+      "Stephen Breyer (dissent)"
+    ],
+    "legal_area": "Constitutional Law / First Amendment",
+    "impact_level": "Moderate"
+  },
+  {
+    "id": 92,
+    "case_name": "Arizona v. United States",
+    "citation": "567 U.S. 387",
+    "year": 2012,
+    "decided_date": "June 25, 2012",
+    "court_era": "Roberts Court",
+    "chief_justice": "John G. Roberts Jr.",
+    "vote": "5-3",
+    "category": [
+      "Immigration",
+      "Federalism",
+      "Preemption",
+      "State Power"
+    ],
+    "constitutional_provisions": [
+      "Supremacy Clause",
+      "Article I (Immigration Power)"
+    ],
+    "parties": {
+      "petitioner": "State of Arizona",
+      "respondent": "United States"
+    },
+    "background": "Arizona enacted SB 1070, a strict immigration enforcement law that, among other things, required state officers to check the immigration status of persons stopped or arrested and made it a state crime to be in the country illegally. The federal government challenged the law as preempted by federal immigration law.",
+    "key_issue": "Are Arizona's immigration enforcement provisions preempted by federal immigration law?",
+    "holding": "Three of Arizona's four challenged provisions are preempted by federal law. The federal government has broad, preemptive authority over immigration. However, the 'show me your papers' provision requiring status checks was not facially preempted.",
+    "significance": "Reaffirmed the federal government's dominant role in immigration enforcement. The decision struck down most of Arizona's controversial immigration law while leaving open the possibility of future challenges to the status-check provision.",
+    "outcome_for_petitioner": "Partial win (one provision survived)",
+    "overruled": false,
+    "overruled_by": null,
+    "key_precedent_set": "Federal government has preemptive authority over immigration; most state immigration enforcement preempted",
+    "notable_justices": [
+      "Anthony Kennedy (author)",
+      "Antonin Scalia (dissent in part)",
+      "Clarence Thomas (dissent in part)"
+    ],
+    "legal_area": "Constitutional Law / Immigration",
+    "impact_level": "High"
+  },
+  {
+    "id": 93,
+    "case_name": "Whole Woman's Health v. Hellerstedt",
+    "citation": "579 U.S. 582",
+    "year": 2016,
+    "decided_date": "June 27, 2016",
+    "court_era": "Roberts Court",
+    "chief_justice": "John G. Roberts Jr.",
+    "vote": "5-3",
+    "category": [
+      "Abortion",
+      "Women's Rights",
+      "Undue Burden",
+      "Reproductive Rights"
+    ],
+    "constitutional_provisions": [
+      "Fourteenth Amendment (Due Process Clause)"
+    ],
+    "parties": {
+      "petitioner": "Whole Woman's Health",
+      "respondent": "John Hellerstedt, Commissioner of Texas Department of State Health Services"
+    },
+    "background": "Texas enacted HB 2, which required abortion providers to have admitting privileges at nearby hospitals and abortion facilities to meet the standards of ambulatory surgical centers. The law would have closed most abortion clinics in Texas.",
+    "key_issue": "Do Texas's abortion clinic regulations impose an undue burden on a woman's right to abortion?",
+    "holding": "Texas's admitting privileges and surgical center requirements impose an undue burden on a woman's right to abortion. Courts must weigh the benefits of abortion regulations against the burdens they impose.",
+    "significance": "Strengthened the undue burden standard from Planned Parenthood v. Casey by requiring courts to weigh the benefits and burdens of abortion regulations. The decision struck down Texas's clinic regulations and protected access to abortion in several states. Later superseded by Dobbs (2022).",
+    "outcome_for_petitioner": "Won",
+    "overruled": true,
+    "overruled_by": "Dobbs v. Jackson Women's Health Organization (2022) (as to constitutional framework)",
+    "key_precedent_set": "Benefit-burden balancing test for abortion regulations; strengthened undue burden standard",
+    "notable_justices": [
+      "Stephen Breyer (author)",
+      "Clarence Thomas (dissent)",
+      "Samuel Alito (dissent)"
+    ],
+    "legal_area": "Constitutional Law / Reproductive Rights",
+    "impact_level": "High"
+  },
+  {
+    "id": 94,
+    "case_name": "Trump v. Hawaii",
+    "citation": "585 U.S. 667",
+    "year": 2018,
+    "decided_date": "June 26, 2018",
+    "court_era": "Roberts Court",
+    "chief_justice": "John G. Roberts Jr.",
+    "vote": "5-4",
+    "category": [
+      "Immigration",
+      "Executive Power",
+      "National Security",
+      "Religious Discrimination"
+    ],
+    "constitutional_provisions": [
+      "Article II (Executive Power)",
+      "Immigration and Nationality Act",
+      "Establishment Clause"
+    ],
+    "parties": {
+      "petitioner": "Donald J. Trump, President of the United States",
+      "respondent": "State of Hawaii et al."
+    },
+    "background": "President Trump issued a proclamation restricting entry into the United States from several predominantly Muslim countries. Hawaii and others challenged the proclamation as exceeding the President's statutory authority and violating the Establishment Clause.",
+    "key_issue": "Does the President's travel ban proclamation exceed his statutory authority or violate the Establishment Clause?",
+    "holding": "The President has broad statutory authority to restrict entry of aliens when he finds it in the national interest. The proclamation is facially neutral and does not violate the Establishment Clause. The Court formally overruled Korematsu v. United States.",
+    "significance": "Upheld the travel ban while formally overruling Korematsu. The decision reaffirmed broad presidential power over immigration and national security. The overruling of Korematsu was widely welcomed, though critics noted the irony of doing so while upholding a policy they viewed as similarly discriminatory.",
+    "outcome_for_petitioner": "Won",
+    "overruled": false,
+    "overruled_by": null,
+    "key_precedent_set": "Broad presidential power over immigration; formally overruled Korematsu",
+    "notable_justices": [
+      "John G. Roberts Jr. (author)",
+      "Sonia Sotomayor (dissent)",
+      "Ruth Bader Ginsburg (dissent)"
+    ],
+    "legal_area": "Constitutional Law / Immigration / Executive Power",
+    "impact_level": "High"
+  },
+  {
+    "id": 95,
+    "case_name": "Bostock v. Clayton County",
+    "citation": "590 U.S. 644",
+    "year": 2020,
+    "decided_date": "June 15, 2020",
+    "court_era": "Roberts Court",
+    "chief_justice": "John G. Roberts Jr.",
+    "vote": "6-3",
+    "category": [
+      "LGBTQ+ Rights",
+      "Employment Discrimination",
+      "Civil Rights",
+      "Statutory Interpretation"
+    ],
+    "constitutional_provisions": [
+      "Title VII of the Civil Rights Act of 1964"
+    ],
+    "parties": {
+      "petitioner": "Gerald Bostock",
+      "respondent": "Clayton County, Georgia"
+    },
+    "background": "Three consolidated cases involved employees fired for being gay or transgender. Gerald Bostock was fired from his job as a child welfare services coordinator after joining a gay recreational softball league. The question was whether Title VII's prohibition on sex discrimination covers sexual orientation and gender identity.",
+    "key_issue": "Does Title VII of the Civil Rights Act of 1964 prohibit employment discrimination based on sexual orientation or gender identity?",
+    "holding": "Title VII's prohibition on discrimination 'because of sex' encompasses discrimination based on sexual orientation and gender identity. An employer who fires an employee for being gay or transgender violates Title VII.",
+    "significance": "Extended federal employment discrimination protections to LGBTQ+ workers, one of the most significant LGBTQ+ rights decisions since Obergefell. The decision was authored by Justice Gorsuch, a Trump appointee, and was widely seen as a landmark in LGBTQ+ civil rights.",
+    "outcome_for_petitioner": "Won",
+    "overruled": false,
+    "overruled_by": null,
+    "key_precedent_set": "Title VII prohibits employment discrimination based on sexual orientation and gender identity",
+    "notable_justices": [
+      "Neil Gorsuch (author)",
+      "Samuel Alito (dissent)",
+      "Brett Kavanaugh (dissent)"
+    ],
+    "legal_area": "Civil Rights / Employment Discrimination",
+    "impact_level": "Foundational"
+  },
+  {
+    "id": 96,
+    "case_name": "Trump v. United States",
+    "citation": "603 U.S. 593",
+    "year": 2024,
+    "decided_date": "July 1, 2024",
+    "court_era": "Roberts Court",
+    "chief_justice": "John G. Roberts Jr.",
+    "vote": "6-3",
+    "category": [
+      "Presidential Immunity",
+      "Separation of Powers",
+      "Executive Power"
+    ],
+    "constitutional_provisions": [
+      "Article II (Executive Power)",
+      "Separation of Powers"
+    ],
+    "parties": {
+      "petitioner": "Donald J. Trump",
+      "respondent": "United States"
+    },
+    "background": "Former President Donald Trump was indicted on federal charges related to his alleged efforts to overturn the 2020 election results. Trump claimed absolute presidential immunity from criminal prosecution for all acts taken while in office.",
+    "key_issue": "Is a former president immune from federal criminal prosecution for conduct alleged to involve official acts during his tenure in office?",
+    "holding": "A former president has absolute immunity from criminal prosecution for actions within his core constitutional powers, and presumptive immunity for all other official acts. There is no immunity for unofficial acts.",
+    "significance": "A landmark and highly controversial decision establishing broad presidential immunity from criminal prosecution. Critics argued it placed the president above the law; supporters argued it was necessary to protect presidential decision-making. The decision had immediate implications for the federal cases against former President Trump.",
+    "outcome_for_petitioner": "Won (partial immunity granted)",
+    "overruled": false,
+    "overruled_by": null,
+    "key_precedent_set": "Former presidents have absolute immunity for core constitutional acts and presumptive immunity for official acts",
+    "notable_justices": [
+      "John G. Roberts Jr. (author)",
+      "Sonia Sotomayor (dissent)",
+      "Elena Kagan (dissent)",
+      "Ketanji Brown Jackson (dissent)"
+    ],
+    "legal_area": "Constitutional Law / Executive Power",
+    "impact_level": "Foundational"
+  },
+  {
+    "id": 97,
+    "case_name": "Zadvydas v. Davis",
+    "citation": "533 U.S. 678",
+    "year": 2001,
+    "decided_date": "June 28, 2001",
+    "court_era": "Rehnquist Court",
+    "chief_justice": "William H. Rehnquist",
+    "vote": "5-4",
+    "category": [
+      "Immigration",
+      "Due Process",
+      "Indefinite Detention"
+    ],
+    "constitutional_provisions": [
+      "Fifth Amendment (Due Process Clause)"
+    ],
+    "parties": {
+      "petitioner": "Kestutis Zadvydas",
+      "respondent": "Christine Davis, INS District Director"
+    },
+    "background": "Kestutis Zadvydas, a resident alien ordered deported, could not be removed because no country would accept him. The INS held him indefinitely after the 90-day removal period. He challenged his continued detention as a violation of due process.",
+    "key_issue": "Does the due process clause permit the government to detain a deportable alien indefinitely when removal is not reasonably foreseeable?",
+    "holding": "The immigration statute does not authorize indefinite detention of aliens who cannot be removed. To avoid serious constitutional questions, the statute should be read to authorize detention for a period reasonably necessary to secure removal — presumptively six months.",
+    "significance": "Established important due process limits on indefinite immigration detention. The decision has been significant in subsequent cases involving the detention of non-citizens and has influenced the legal framework for immigration enforcement.",
+    "outcome_for_petitioner": "Won",
+    "overruled": false,
+    "overruled_by": null,
+    "key_precedent_set": "Indefinite detention of deportable aliens violates due process; six-month presumptive limit",
+    "notable_justices": [
+      "Stephen Breyer (author)",
+      "Clarence Thomas (dissent)"
+    ],
+    "legal_area": "Constitutional Law / Immigration",
+    "impact_level": "Moderate"
+  },
+  {
+    "id": 98,
+    "case_name": "Lemon v. Kurtzman",
+    "citation": "403 U.S. 602",
+    "year": 1971,
+    "decided_date": "June 28, 1971",
+    "court_era": "Burger Court",
+    "chief_justice": "Warren E. Burger",
+    "vote": "8-0",
+    "category": [
+      "First Amendment",
+      "Establishment Clause",
+      "Government Aid to Religion"
+    ],
+    "constitutional_provisions": [
+      "First Amendment (Establishment Clause)",
+      "Fourteenth Amendment"
+    ],
+    "parties": {
+      "petitioner": "Alton Lemon et al.",
+      "respondent": "David Kurtzman, Pennsylvania Superintendent of Public Instruction"
+    },
+    "background": "Pennsylvania and Rhode Island enacted laws providing state aid to parochial schools, including salary supplements for teachers of secular subjects. Taxpayers challenged the laws as violations of the Establishment Clause.",
+    "key_issue": "Do state programs providing financial aid to parochial schools violate the Establishment Clause?",
+    "holding": "The state aid programs violate the Establishment Clause. The Court established the three-part 'Lemon test': government action must (1) have a secular purpose, (2) neither advance nor inhibit religion as its primary effect, and (3) not foster excessive government entanglement with religion.",
+    "significance": "Created the 'Lemon test,' which governed Establishment Clause cases for decades. The test was criticized by many justices and was effectively replaced by the 'historical practices and understandings' test in Kennedy v. Bremerton School District (2022).",
+    "outcome_for_petitioner": "Won",
+    "overruled": true,
+    "overruled_by": "Kennedy v. Bremerton School District (2022) (Lemon test abandoned)",
+    "key_precedent_set": "Three-part Lemon test for Establishment Clause (later abandoned)",
+    "notable_justices": [
+      "Warren E. Burger (author)"
+    ],
+    "legal_area": "Constitutional Law / First Amendment",
+    "impact_level": "High"
+  },
+  {
+    "id": 99,
+    "case_name": "Rucho v. Common Cause",
+    "citation": "588 U.S. 684",
+    "year": 2019,
+    "decided_date": "June 27, 2019",
+    "court_era": "Roberts Court",
+    "chief_justice": "John G. Roberts Jr.",
+    "vote": "5-4",
+    "category": [
+      "Gerrymandering",
+      "Political Questions",
+      "Voting Rights",
+      "Elections"
+    ],
+    "constitutional_provisions": [
+      "Article III",
+      "Elections Clause (Article I, Section 4)",
+      "First and Fourteenth Amendments"
+    ],
+    "parties": {
+      "petitioner": "Robert A. Rucho et al.",
+      "respondent": "Common Cause et al."
+    },
+    "background": "North Carolina and Maryland drew congressional district maps that were extreme partisan gerrymanders. Voters challenged the maps as unconstitutional violations of the First Amendment, Equal Protection Clause, and Elections Clause.",
+    "key_issue": "Do federal courts have the authority to review and remedy partisan gerrymandering claims?",
+    "holding": "Partisan gerrymandering claims present political questions beyond the reach of federal courts. Federal courts cannot review or remedy partisan gerrymandering because there is no judicially manageable standard for determining when partisan gerrymandering has gone too far.",
+    "significance": "Effectively removed federal courts from the business of policing partisan gerrymandering, leaving the issue to state courts and legislatures. The decision has had significant implications for electoral maps and political representation across the country.",
+    "outcome_for_petitioner": "Won",
+    "overruled": false,
+    "overruled_by": null,
+    "key_precedent_set": "Partisan gerrymandering is a non-justiciable political question; federal courts cannot remedy it",
+    "notable_justices": [
+      "John G. Roberts Jr. (author)",
+      "Elena Kagan (dissent)",
+      "Ruth Bader Ginsburg (dissent)"
+    ],
+    "legal_area": "Constitutional Law / Elections",
+    "impact_level": "High"
+  },
+  {
+    "id": 100,
+    "case_name": "Moore v. Harper",
+    "citation": "600 U.S. 1",
+    "year": 2023,
+    "decided_date": "June 27, 2023",
+    "court_era": "Roberts Court",
+    "chief_justice": "John G. Roberts Jr.",
+    "vote": "6-3",
+    "category": [
+      "Elections",
+      "Independent State Legislature Theory",
+      "Federalism",
+      "Voting Rights"
+    ],
+    "constitutional_provisions": [
+      "Elections Clause (Article I, Section 4)",
+      "Article II"
+    ],
+    "parties": {
+      "petitioner": "Timothy K. Moore, Speaker of the North Carolina House",
+      "respondent": "Rebecca Harper et al."
+    },
+    "background": "The North Carolina Supreme Court struck down a congressional redistricting map as an extreme partisan gerrymander under the state constitution. The North Carolina legislature argued that under the 'independent state legislature theory,' state courts have no power to review federal election laws enacted by state legislatures.",
+    "key_issue": "Does the Elections Clause of the Constitution give state legislatures exclusive, unreviewable authority to regulate federal elections, free from state constitutional constraints?",
+    "holding": "The Elections Clause does not give state legislatures unlimited power to regulate federal elections free from state constitutional constraints. State courts may review state election laws under state constitutions, but federal courts will review whether state courts have exceeded their authority.",
+    "significance": "Rejected the most extreme version of the independent state legislature theory, which could have allowed state legislatures to set federal election rules without any check from state courts or governors. The decision preserved the role of state courts in reviewing election laws and was seen as a major protection for democratic governance.",
+    "outcome_for_petitioner": "Lost",
+    "overruled": false,
+    "overruled_by": null,
+    "key_precedent_set": "Rejected independent state legislature theory; state courts may review federal election laws",
+    "notable_justices": [
+      "John G. Roberts Jr. (author)",
+      "Clarence Thomas (dissent)",
+      "Samuel Alito (dissent)",
+      "Neil Gorsuch (dissent)"
+    ],
+    "legal_area": "Constitutional Law / Elections",
+    "impact_level": "High"
+  }
+]

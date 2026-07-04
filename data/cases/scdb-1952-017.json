@@ -1,0 +1,17 @@
+{
+  "case_id": "scdb-1952-017",
+  "name": "UNITED STATES v. CALTEX (PHILIPPINES), INC. ET AL.",
+  "docket": "16",
+  "date_argued": "1952-12-08",
+  "date_decided": "1952-12-08",
+  "question_presented": "Memorization-check set: predict the Supreme Court's disposition in UNITED STATES v. CALTEX (PHILIPPINES), INC. ET AL. (344 U.S. 149, 1952 Term).",
+  "facts_summary": "Historical case in the memorization-check arm. By design, only the case name, citation, and term are provided \u2014 this arm measures recall of memorized outcomes, not reasoning.",
+  "lower_court_ruling": "not provided (memorization-check arm)",
+  "opinion_excerpt_urls": [],
+  "ground_truth": {
+    "disposition": "reversed",
+    "vote_split": "7-2",
+    "scdb_id": "1952-017"
+  },
+  "status": "decided"
+}

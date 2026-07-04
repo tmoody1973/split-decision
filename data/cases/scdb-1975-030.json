@@ -1,0 +1,17 @@
+{
+  "case_id": "scdb-1975-030",
+  "name": "NATIONAL INDEPENDENT COAL OPERATORS' ASSOCIATION et al. v. KLEPPE, SECRETARY OF THE INTERIOR, et al.",
+  "docket": "73-2066",
+  "date_argued": "1976-01-26",
+  "date_decided": "1976-01-26",
+  "question_presented": "Memorization-check set: predict the Supreme Court's disposition in NATIONAL INDEPENDENT COAL OPERATORS' ASSOCIATION et al. v. KLEPPE, SECRETARY OF THE INTERIOR, et al. (423 U.S. 388, 1975 Term).",
+  "facts_summary": "Historical case in the memorization-check arm. By design, only the case name, citation, and term are provided \u2014 this arm measures recall of memorized outcomes, not reasoning.",
+  "lower_court_ruling": "not provided (memorization-check arm)",
+  "opinion_excerpt_urls": [],
+  "ground_truth": {
+    "disposition": "affirmed",
+    "vote_split": "8-0",
+    "scdb_id": "1975-030"
+  },
+  "status": "decided"
+}

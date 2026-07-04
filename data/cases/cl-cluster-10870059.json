@@ -1,0 +1,19 @@
+{
+  "case_id": "cl-cluster-10870059",
+  "name": "Sripetch v. SEC",
+  "docket": "25-466",
+  "date_argued": "2026-04-20",
+  "date_decided": "2026-06-04",
+  "question_presented": "May the SEC seek equitable disgorgement under 15 U.S.C. \u00a7\u00a7 78u(d)(5) and (d)(7) without showing investors suffered pecuniary harm?",
+  "facts_summary": "From at least 2013 to 2019, Ongkaruck Sripetch participated in a series of fraudulent securities schemes involving at least 20 microcap, or \u201cpenny,\u201d stock companies. Working alongside various associates and through multiple entities, Sripetch acquired discounted shares of small-cap companies and then secretly funded promotional campaigns to inflate their stock prices before selling his own holdings into the artificially heightened market\u2014a practice known as stock scalping. He also engaged in unregistered sales of securities, most notably through control of a company called Abby Inc., and manipulated trading in another company, VMS Rehab Systems, through matched trades and wash trades designed to create the illusion of market activity. Later, he organized pump-and-dump schemes for Argus Worldwide stock, using matched trading to build trading volume before dumping shares after promotions without disclosing his intent to sell. In 2020, the U.S. Securities and Exchange Commission (SEC) filed a civil enforcement action against Sripetch and others. In 2023, Sripetch consented to a bifurcated judgment, agreeing to the SEC\u2019s allegations for the purposes of remedies. The U.S. District Court for the Southern District of California found him liable for $2.25 million in disgorgement and over $1 million in interest. On appeal, the U.S. Court of Appeals for the Ninth Circuit affirmed that the SEC may obtain disgorgement under 15 U.S.C. \u00a7\u00a7 78u(d)(5) and (d)(7) without showing that investors suffered pecuniary harm, joining a circuit split on this question.",
+  "lower_court_ruling": "United States Court of Appeals for the Ninth Circuit",
+  "opinion_excerpt_urls": [
+    "https://www.courtlistener.com/opinion/10870059/sripetch-v-sec/"
+  ],
+  "ground_truth": {
+    "disposition": "affirmed",
+    "vote_split": "9-0",
+    "scdb_id": null
+  },
+  "status": "decided"
+}

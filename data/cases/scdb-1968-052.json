@@ -1,0 +1,17 @@
+{
+  "case_id": "scdb-1968-052",
+  "name": "GREGORY et al. v. CITY OF CHICAGO",
+  "docket": "60",
+  "date_argued": "1969-03-10",
+  "date_decided": "1969-03-10",
+  "question_presented": "Memorization-check set: predict the Supreme Court's disposition in GREGORY et al. v. CITY OF CHICAGO (394 U.S. 111, 1968 Term).",
+  "facts_summary": "Historical case in the memorization-check arm. By design, only the case name, citation, and term are provided \u2014 this arm measures recall of memorized outcomes, not reasoning.",
+  "lower_court_ruling": "not provided (memorization-check arm)",
+  "opinion_excerpt_urls": [],
+  "ground_truth": {
+    "disposition": "reversed",
+    "vote_split": "9-0",
+    "scdb_id": "1968-052"
+  },
+  "status": "decided"
+}

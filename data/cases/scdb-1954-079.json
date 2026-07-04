@@ -1,0 +1,17 @@
+{
+  "case_id": "scdb-1954-079",
+  "name": "EMSPAK v. UNITED STATES",
+  "docket": "9",
+  "date_argued": "1955-05-23",
+  "date_decided": "1955-05-23",
+  "question_presented": "Memorization-check set: predict the Supreme Court's disposition in EMSPAK v. UNITED STATES (349 U.S. 190, 1954 Term).",
+  "facts_summary": "Historical case in the memorization-check arm. By design, only the case name, citation, and term are provided \u2014 this arm measures recall of memorized outcomes, not reasoning.",
+  "lower_court_ruling": "not provided (memorization-check arm)",
+  "opinion_excerpt_urls": [],
+  "ground_truth": {
+    "disposition": "reversed",
+    "vote_split": "6-3",
+    "scdb_id": "1954-079"
+  },
+  "status": "decided"
+}

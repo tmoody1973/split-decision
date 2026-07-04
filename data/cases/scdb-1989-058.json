@@ -1,0 +1,17 @@
+{
+  "case_id": "scdb-1989-058",
+  "name": "NATIONAL LABOR RELATIONS BOARD v. CURTIN MATHESON SCIENTIFIC, INC.",
+  "docket": "88-1685",
+  "date_argued": "1990-04-17",
+  "date_decided": "1990-04-17",
+  "question_presented": "Memorization-check set: predict the Supreme Court's disposition in NATIONAL LABOR RELATIONS BOARD v. CURTIN MATHESON SCIENTIFIC, INC. (494 U.S. 775, 1989 Term).",
+  "facts_summary": "Historical case in the memorization-check arm. By design, only the case name, citation, and term are provided \u2014 this arm measures recall of memorized outcomes, not reasoning.",
+  "lower_court_ruling": "not provided (memorization-check arm)",
+  "opinion_excerpt_urls": [],
+  "ground_truth": {
+    "disposition": "reversed",
+    "vote_split": "5-4",
+    "scdb_id": "1989-058"
+  },
+  "status": "decided"
+}

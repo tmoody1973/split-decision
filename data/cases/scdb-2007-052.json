@@ -1,0 +1,17 @@
+{
+  "case_id": "scdb-2007-052",
+  "name": "IRIZARRY v. UNITED STATES",
+  "docket": "06-7517",
+  "date_argued": "2008-06-12",
+  "date_decided": "2008-06-12",
+  "question_presented": "Memorization-check set: predict the Supreme Court's disposition in IRIZARRY v. UNITED STATES (553 U.S. 708, 2007 Term).",
+  "facts_summary": "Historical case in the memorization-check arm. By design, only the case name, citation, and term are provided \u2014 this arm measures recall of memorized outcomes, not reasoning.",
+  "lower_court_ruling": "not provided (memorization-check arm)",
+  "opinion_excerpt_urls": [],
+  "ground_truth": {
+    "disposition": "affirmed",
+    "vote_split": "5-4",
+    "scdb_id": "2007-052"
+  },
+  "status": "decided"
+}

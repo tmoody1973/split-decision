@@ -1,0 +1,17 @@
+{
+  "case_id": "scdb-1957-129",
+  "name": "HANSON, EXECUTRIX, et al. v. DENCKLA et al.",
+  "docket": "107",
+  "date_argued": "1958-06-23",
+  "date_decided": "1958-06-23",
+  "question_presented": "Memorization-check set: predict the Supreme Court's disposition in HANSON, EXECUTRIX, et al. v. DENCKLA et al. (357 U.S. 235, 1957 Term).",
+  "facts_summary": "Historical case in the memorization-check arm. By design, only the case name, citation, and term are provided \u2014 this arm measures recall of memorized outcomes, not reasoning.",
+  "lower_court_ruling": "not provided (memorization-check arm)",
+  "opinion_excerpt_urls": [],
+  "ground_truth": {
+    "disposition": "reversed",
+    "vote_split": "5-4",
+    "scdb_id": "1957-129"
+  },
+  "status": "decided"
+}

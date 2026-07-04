@@ -1,0 +1,17 @@
+{
+  "case_id": "scdb-1980-078",
+  "name": "CALIFORNIA et al. v. SIERRA CLUB et al.",
+  "docket": "79-1252",
+  "date_argued": "1981-04-28",
+  "date_decided": "1981-04-28",
+  "question_presented": "Memorization-check set: predict the Supreme Court's disposition in CALIFORNIA et al. v. SIERRA CLUB et al. (451 U.S. 287, 1980 Term).",
+  "facts_summary": "Historical case in the memorization-check arm. By design, only the case name, citation, and term are provided \u2014 this arm measures recall of memorized outcomes, not reasoning.",
+  "lower_court_ruling": "not provided (memorization-check arm)",
+  "opinion_excerpt_urls": [],
+  "ground_truth": {
+    "disposition": "reversed",
+    "vote_split": "9-0",
+    "scdb_id": "1980-078"
+  },
+  "status": "decided"
+}
