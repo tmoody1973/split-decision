@@ -92,6 +92,16 @@ cp .env.example .env   # add your keys (see table below)
 # -> episodes/<case_id>/events.jsonl + console summary of votes, flips, verdict
 ```
 
+### Put any case in front of the panel
+
+The corpus ships in the repo — pick any of the 170+ ingested cases in
+`data/cases/` and convene the panel on it with the `deliberate.py` command
+above. Nine jurists brief, vote privately, argue, and issue a verdict; the
+full event log lands in `episodes/`. Fair warning: a deliberation is 150–200
+reasoning-model calls and takes 45–90 minutes of wall clock for ~15 minutes
+of actual argument — the replay player exists precisely to compress that into
+performance speed.
+
 ## Environment variables
 
 | Variable | Description | Required |
@@ -146,6 +156,16 @@ first one's record.
 - [ ] Pixel courtroom + "The Record" transcript panel
 - [ ] SAS + OSS deployment, proof screenshot
 - [ ] 3-min demo video, architecture diagram, Devpost submission
+
+## After the hackathon
+
+The pending-case scoreboard keeps this alive: every time the real Court rules
+on a predicted case, the season record updates. On the roadmap: a
+**listener-request docket** — pick a case from the term, the pipeline
+deliberates it overnight on Alibaba Cloud, and the episode appears in the
+podcast feed the next morning, like a request show for Supreme Court nerds.
+The engine itself is domain-independent — swap the corpus and personas for
+medical boards, code-review panels, or policy red teams.
 
 ## Data credits
 
