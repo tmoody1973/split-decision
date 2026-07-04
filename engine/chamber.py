@@ -46,11 +46,14 @@ class Chamber:
     # ---------- phases ----------
 
     def private_vote(self, jurist: str, round_no: int, revote: bool) -> dict:
+        # After round 1, ANY position change (within-round or between rounds)
+        # must name what moved it — cross-round drift is not allowed to be silent.
+        must_explain = revote or round_no > 1
         extra = (
             ' ,"changed": true|false, "influenced_by": ["jurist_id", ...], '
             '"reason": "1-2 sentences in character naming the SPECIFIC argument that moved you '
             '(empty string if unchanged)"'
-            if revote else ""
+            if must_explain else ""
         )
         user = (
             f"BENCH MEMO:\n{self.memo}\n\n"
@@ -163,9 +166,18 @@ class Chamber:
 
         final_votes: dict[str, dict] = {}
         for round_no in range(1, MAX_ROUNDS + 1):
-            # 1. PRIVATE_VOTE
+            # 1. PRIVATE_VOTE (cross-round drift from last revote emits vote_change)
             votes = self.all_private_votes(round_no, revote=False)
             for j, v in votes.items():
+                prev = self.positions[j]["position"]
+                if round_no > 1 and v["position"] != prev:
+                    influenced = [i for i in v.get("influenced_by", []) if i in JURIST_IDS and i != j] or \
+                                 [next(k for k in JURIST_IDS if k != j)]
+                    self.log.add(type="vote_change", agent=j, round=round_no,
+                                 **{"from": prev, "to": v["position"]},
+                                 influenced_by=influenced,
+                                 reason_text=v.get("reason") or "Reflection between rounds moved me.")
+                    print(f"[round {round_no}] DRIFT FLIP: {j} {prev} -> {v['position']}")
                 self.positions[j] = v
                 self.log.add(type="vote", agent=j, round=round_no,
                              position=v["position"], confidence=v["confidence"], public=False)
