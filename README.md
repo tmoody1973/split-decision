@@ -160,12 +160,19 @@ first one's record.
 ## After the hackathon
 
 The pending-case scoreboard keeps this alive: every time the real Court rules
-on a predicted case, the season record updates. On the roadmap: a
-**listener-request docket** — pick a case from the term, the pipeline
-deliberates it overnight on Alibaba Cloud, and the episode appears in the
-podcast feed the next morning, like a request show for Supreme Court nerds.
-The engine itself is domain-independent — swap the corpus and personas for
-medical boards, code-review panels, or policy red teams.
+on a predicted case, the season record updates. On the roadmap:
+
+- **Listener-request docket** — pick a case from the term, the pipeline
+  deliberates it overnight on Alibaba Cloud, and the episode appears in the
+  podcast feed the next morning, like a request show for Supreme Court nerds.
+- **Landmark re-litigation specials** — the panel re-argues a historical
+  landmark (*Korematsu*, *Plessy*). Never benchmarked (the outcomes are in
+  every model's training data), but the drama is different: not *what* the
+  Court decided, but whether nine judicial philosophies hold up under
+  embarrassment — does the Precedent Maximalist defend settled-but-shameful
+  law? Civic education as a season finale.
+- The engine itself is domain-independent — swap the corpus and personas for
+  medical boards, code-review panels, or policy red teams.
 
 ## Data credits
 

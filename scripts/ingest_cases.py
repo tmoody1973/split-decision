@@ -164,15 +164,25 @@ def oyez_case(term: str, docket: str) -> dict | None:
         return None
 
 
-def fetch_pending_from_oyez(term: str = "2025") -> list[dict]:
-    """Cases argued in the term with no Decided timeline event."""
+def fetch_pending_from_oyez(term: str, decided_names: set[str]) -> list[dict]:
+    """Cert-granted, NOT-yet-argued cases for the upcoming term.
+
+    Pivot 2026-07-04: the OT2025 term ended June 30 — every argued case is
+    decided (Oyez timelines lag, which briefly fooled us: B.P.J. and NRSC
+    were 'pending' here but decided on CourtListener). Predictions now file
+    BEFORE ORAL ARGUMENT, cross-checked against CL's decided clusters.
+    """
     r = requests.get(f"https://api.oyez.org/cases?filter=term:{term}&per_page=0", timeout=60)
     r.raise_for_status()
     pending = []
     for c in r.json():
         events = {e.get("event") for e in (c.get("timeline") or [])}
-        if "Argued" in events and "Decided" not in events:
-            pending.append(c)
+        if "Argued" in events or "Decided" in events:
+            continue
+        norm = re.sub(r"[^a-z]", "", (c.get("name") or "").casefold())
+        if norm and any(norm in d or d in norm for d in decided_names if d):
+            continue  # decided per CourtListener even if Oyez lags
+        pending.append(c)
     return pending
 
 
@@ -395,22 +405,19 @@ def build_pending_record(oyez_list_item: dict) -> dict | None:
     detail = oyez_case(oyez_list_item["term"], oyez_list_item["docket_number"])
     if not detail:
         return None
-    facts = strip_html(detail.get("facts_of_the_case") or "")
     question = strip_html(detail.get("question") or "")
-    argued = next(
-        (e["dates"][0] for e in (detail.get("timeline") or []) if e.get("event") == "Argued"),
-        None,
+    if not question:
+        return None  # nothing to deliberate without the QP
+    facts = strip_html(detail.get("facts_of_the_case") or "") or (
+        "Cert granted; the case has not yet been argued. The record before the "
+        "panel is the question presented and the lower-court posture."
     )
-    if not (facts and question and argued):
-        return None
-    import datetime
-    date_argued = datetime.datetime.fromtimestamp(argued, datetime.UTC).strftime("%Y-%m-%d")
     lower = (detail.get("lower_court") or {}).get("name")
     return {
         "case_id": f"oyez-{detail['ID']}",
         "name": detail["name"],
         "docket": detail["docket_number"],
-        "date_argued": date_argued,
+        "date_argued": None,  # prediction files BEFORE argument
         "date_decided": None,
         "question_presented": question,
         "facts_summary": first_words(facts, 400),
@@ -526,9 +533,10 @@ def main() -> int:
         })
     print(f"  {len(manifest['memorization']) - famous_count} scdb-tier cases written")
 
-    # --- pending set ---
-    print("\nSearching Oyez for argued-but-undecided cases (term 2025)...")
-    for item in fetch_pending_from_oyez("2025")[: PENDING_MAX * 3]:
+    # --- pending set: OT2026 cert-granted, pre-argument ---
+    print("\nSearching Oyez for next-term granted (unargued) cases...")
+    decided_names = {re.sub(r"[^a-z]", "", c["case_name"].casefold()) for c in clusters}
+    for item in fetch_pending_from_oyez("2026", decided_names):
         if len(manifest["pending"]) >= PENDING_MAX:
             break
         record = build_pending_record(item)
@@ -539,9 +547,9 @@ def main() -> int:
             continue
         manifest["pending"].append({
             "case_id": record["case_id"], "name": record["name"],
-            "rationale": f"argued {record['date_argued']}, undecided as of ingestion; uncontaminatable by definition",
+            "rationale": "cert granted for OT2026, not yet argued; prediction filed pre-argument — uncontaminatable by definition",
         })
-        print(f"  ✓ pending: {record['name']} (argued {record['date_argued']})")
+        print(f"  ✓ pending: {record['name']} (docket {record['docket']}, unargued)")
 
     MANIFEST_PATH.write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8")
     print(

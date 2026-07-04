@@ -12,7 +12,10 @@
     },
     "name": { "type": "string", "minLength": 1 },
     "docket": { "type": "string", "minLength": 1 },
-    "date_argued": { "type": "string", "format": "date" },
+    "date_argued": {
+      "description": "null for pending cases granted cert but not yet argued (OT2026 prediction set)",
+      "oneOf": [{ "type": "string", "format": "date" }, { "type": "null" }]
+    },
     "date_decided": {
       "oneOf": [{ "type": "string", "format": "date" }, { "type": "null" }]
     },

@@ -34,8 +34,9 @@ EPISODES = REPO_ROOT / "episodes"
 
 
 def case_presentation(case: dict) -> str:
+    argued = case.get("date_argued") or "not yet argued"
     return (
-        f"Case: {case['name']} (docket {case['docket']}, argued {case['date_argued']})\n"
+        f"Case: {case['name']} (docket {case['docket']}, {argued})\n"
         f"Question presented: {case['question_presented']}\n"
         f"Lower court ruling: {case['lower_court_ruling']}\n"
         f"Facts: {case['facts_summary']}\n"
