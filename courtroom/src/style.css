@@ -1,0 +1,190 @@
+:root {
+  --bg: #14110e;
+  --panel: #1c1813;
+  --ink: #e8e0d2;
+  --muted: #9a8f7d;
+  --line: #2e2820;
+  --affirm: #2f7d4f;
+  --reverse: #a83a3a;
+  --unknown: #4b4436;
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  overflow: hidden;
+}
+
+#app {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  height: 100vh;
+}
+
+#stage-row {
+  display: grid;
+  grid-template-columns: 65% 35%;
+  min-height: 0;
+}
+
+#game {
+  position: relative;
+  min-height: 0;
+  background: #0f0d0a;
+}
+
+#game canvas {
+  display: block;
+}
+
+/* The Record — court-reporter transcript panel */
+#record {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  border-left: 1px solid var(--line);
+  background: var(--panel);
+  font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  font-size: 13px;
+}
+
+#record .record-head {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--line);
+  background: #211c16;
+}
+
+#record .record-title {
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+#record .tally {
+  display: flex;
+  gap: 12px;
+  margin-top: 6px;
+  font-size: 12px;
+}
+
+#record .tally .aff {
+  color: var(--affirm);
+}
+#record .tally .rev {
+  color: var(--reverse);
+}
+
+#record .record-scroll {
+  flex: 1;
+  overflow-y: auto;
+  padding: 8px 12px 40px;
+  scroll-behavior: smooth;
+}
+
+#record .line {
+  padding: 3px 0;
+  line-height: 1.45;
+  cursor: pointer;
+  border-left: 3px solid transparent;
+  padding-left: 8px;
+}
+
+#record .line:hover {
+  background: #262019;
+  border-left-color: var(--muted);
+}
+
+#record .line .ts {
+  color: var(--muted);
+  margin-right: 8px;
+}
+
+#record .line .who {
+  font-weight: 700;
+}
+
+#record .line.system {
+  background: #2a2118;
+  border-left-color: #caa24a;
+  color: #f0d79a;
+  font-weight: 600;
+  margin: 4px 0;
+}
+
+#record .line.foreperson {
+  color: var(--muted);
+  font-style: italic;
+}
+
+#record .line.verdict {
+  background: #23281f;
+  border-left-color: var(--affirm);
+  color: #cfe6c0;
+  font-weight: 700;
+}
+
+/* Controls */
+#controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 16px;
+  border-top: 1px solid var(--line);
+  background: #100e0b;
+}
+
+#controls button {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  background: #221d16;
+  color: var(--ink);
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#controls button:hover {
+  background: #2c261d;
+}
+
+#seek {
+  flex: 1;
+  accent-color: #caa24a;
+}
+
+.time {
+  font-family: ui-monospace, monospace;
+  font-size: 13px;
+  color: var(--muted);
+  min-width: 110px;
+  text-align: right;
+}
+
+#episode-picker {
+  background: #221d16;
+  color: var(--ink);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 8px;
+  font-size: 12px;
+}
+
+/* Recording mode: hide chrome, let the split view be the whole frame. */
+body.record #controls {
+  display: none;
+}
+body.record #app {
+  grid-template-rows: 1fr;
+}
