@@ -215,8 +215,10 @@ class Chamber:
             for j, v in revotes.items():
                 before = votes[j]["position"]
                 if v["position"] != before:
+                    debated = [i for pair in pairs for i in pair]
+                    fallback = next((i for i in debated + JURIST_IDS if i != j))
                     influenced = [i for i in v.get("influenced_by", []) if i in JURIST_IDS and i != j] or \
-                                 [pairs[0][0] if pairs else "textualist"]
+                                 [fallback]
                     self.log.add(type="vote_change", agent=j, round=round_no,
                                  **{"from": before, "to": v["position"]},
                                  influenced_by=influenced,
