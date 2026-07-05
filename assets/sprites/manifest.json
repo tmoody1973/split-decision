@@ -27,5 +27,166 @@
       "idle_asset_id": "38499091-dbde-439d-895d-9ab3ad07c3f3",
       "walk_asset_id": "4078ca4d-96b1-4f79-8a84-00a24ec7e748"
     }
+  },
+  "originalist": {
+    "sheets": { "idle": "originalist_idle.png", "walk": "originalist_walk.png" },
+    "base": "originalist_base.png",
+    "frame_w": 158,
+    "frame_h": 158,
+    "fps": 8,
+    "anims": { "idle": [0, 1, 2, 3, 4, 5, 6, 7], "walk": [0, 1, 2, 3, 4, 5, 6, 7] },
+    "palette_accent": "#5b4a2f",
+    "spritecook": {
+      "character_id": "430272d8-d69a-4f3f-b122-4ebbc9376366",
+      "idle_asset_id": "f0c1cf8e-1063-4cc1-a270-5354a44a2f8f",
+      "walk_asset_id": "5f48a490-29f3-4378-b54b-741ead99fcde"
+    }
+  },
+  "living_constitutionalist": {
+    "sheets": { "idle": "living_constitutionalist_idle.png", "walk": "living_constitutionalist_walk.png" },
+    "base": "living_constitutionalist_base.png",
+    "frame_w": 86,
+    "frame_h": 86,
+    "fps": 8,
+    "anims": { "idle": [0, 1, 2, 3, 4, 5, 6, 7], "walk": [0, 1, 2, 3, 4, 5, 6, 7] },
+    "palette_accent": "#2e6f5e",
+    "spritecook": {
+      "character_id": "354e8be7-cd65-4d1e-8b03-d39a41507f81",
+      "idle_asset_id": "248558d5-3a4c-4bc0-a642-4406acf5319f",
+      "walk_asset_id": "5b2194ef-244c-410d-b3c7-5b5ac0b8384e"
+    }
+  },
+  "precedent_maximalist": {
+    "sheets": { "idle": "precedent_maximalist_idle.png", "walk": "precedent_maximalist_walk.png" },
+    "base": "precedent_maximalist_base.png",
+    "frame_w": 106,
+    "frame_h": 106,
+    "fps": 8,
+    "anims": { "idle": [0, 1, 2, 3, 4, 5, 6, 7], "walk": [0, 1, 2, 3, 4, 5, 6, 7] },
+    "palette_accent": "#4a4e69",
+    "spritecook": {
+      "character_id": "f8c5da77-5265-437b-8590-9ec39c88792d",
+      "idle_asset_id": "ec891809-0a67-4496-bd84-2eb05965a6f7",
+      "walk_asset_id": "e428baed-2826-49d2-9d4e-72a76bbb8d39"
+    }
+  },
+  "federalism_hawk": {
+    "sheets": { "idle": "federalism_hawk_idle.png", "walk": "federalism_hawk_walk.png" },
+    "base": "federalism_hawk_base.png",
+    "frame_w": 96,
+    "frame_h": 96,
+    "fps": 8,
+    "anims": { "idle": [0, 1, 2, 3, 4, 5, 6, 7], "walk": [0, 1, 2, 3, 4, 5, 6, 7] },
+    "palette_accent": "#8c3b00",
+    "spritecook": {
+      "character_id": "77891128-b40d-49e0-a898-cbb7d0f97a8c",
+      "idle_asset_id": "bf17b0be-4793-4418-90f0-b7676a3a33d7",
+      "walk_asset_id": "fb704e70-4ebd-486f-a9a2-4bb6b176dbbe"
+    }
+  },
+  "civil_libertarian": {
+    "sheets": { "idle": "civil_libertarian_idle.png", "walk": "civil_libertarian_walk.png" },
+    "base": "civil_libertarian_base.png",
+    "frame_w": 88,
+    "frame_h": 88,
+    "fps": 8,
+    "anims": { "idle": [0, 1, 2, 3, 4, 5, 6, 7], "walk": [0, 1, 2, 3, 4, 5, 6, 7] },
+    "palette_accent": "#2b6cb0",
+    "spritecook": {
+      "character_id": "1ed32da9-d1f5-477b-b80a-3b661c123d64",
+      "idle_asset_id": "a9d6bef0-cb74-4863-9f5f-fedc9a7071e2",
+      "walk_asset_id": "c7db2332-d096-43dc-9368-96bb2a55d05d"
+    }
+  },
+  "process_formalist": {
+    "sheets": { "idle": "process_formalist_idle.png", "walk": "process_formalist_walk.png" },
+    "base": "process_formalist_base.png",
+    "frame_w": 192,
+    "frame_h": 192,
+    "fps": 8,
+    "anims": { "idle": [0, 1, 2, 3, 4, 5, 6, 7], "walk": [0, 1, 2, 3, 4, 5, 6, 7] },
+    "palette_accent": "#6b7280",
+    "spritecook": {
+      "character_id": "d9f9080c-9d6e-4d5e-a079-403a0faa0dc3",
+      "idle_asset_id": "657e728d-2094-4510-a958-23e97028a485",
+      "walk_asset_id": "ae6fd635-82fe-4a94-9b71-4553b93b038a"
+    }
+  },
+  "minimalist": {
+    "sheets": { "idle": "minimalist_idle.png", "walk": "minimalist_walk.png" },
+    "base": "minimalist_base.png",
+    "frame_w": 86,
+    "frame_h": 86,
+    "fps": 8,
+    "anims": { "idle": [0, 1, 2, 3, 4, 5, 6, 7], "walk": [0, 1, 2, 3, 4, 5, 6, 7] },
+    "palette_accent": "#9b8ec4",
+    "spritecook": {
+      "character_id": "dba610bc-06d5-4312-b18e-7f61d366a698",
+      "idle_asset_id": "798ee420-66de-49cc-98dd-210e8669fa74",
+      "walk_asset_id": "c07ee1e7-a16c-4a04-84ca-cf825dc687c4"
+    }
+  },
+  "foreperson": {
+    "sheets": { "idle": "foreperson_idle.png", "walk": "foreperson_walk.png" },
+    "base": "foreperson_base.png",
+    "frame_w": 90,
+    "frame_h": 90,
+    "fps": 8,
+    "anims": { "idle": [0, 1, 2, 3, 4, 5, 6, 7], "walk": [0, 1, 2, 3, 4, 5, 6, 7] },
+    "palette_accent": "#1f2a44",
+    "spritecook": {
+      "character_id": "86b47f9d-0703-4e1c-a8c3-2e81cc79fe29",
+      "idle_asset_id": "d7ef3eb0-23bd-4d33-9d92-0d5247414ddf",
+      "walk_asset_id": "cbf6866f-6aa1-4d7b-a3e6-b057e4864faf"
+    }
+  },
+  "anchor_lead": {
+    "sheets": { "idle": "anchor_lead_idle.png", "walk": "anchor_lead_walk.png" },
+    "base": "anchor_lead_base.png",
+    "frame_w": 98,
+    "frame_h": 98,
+    "fps": 8,
+    "anims": { "idle": [0, 1, 2, 3, 4, 5, 6, 7], "walk": [0, 1, 2, 3, 4, 5, 6, 7] },
+    "palette_accent": "#b23a48",
+    "spritecook": {
+      "character_id": "1dbdd5c6-e7ef-4815-853a-e6350226ee0b",
+      "idle_asset_id": "d1ab5542-4805-488e-a5f9-62af574759a3",
+      "walk_asset_id": "611ab3ab-538f-4bf3-86ce-6e37716db48c"
+    }
+  },
+  "anchor_analyst": {
+    "sheets": { "idle": "anchor_analyst_idle.png", "walk": "anchor_analyst_walk.png" },
+    "base": "anchor_analyst_base.png",
+    "frame_w": 174,
+    "frame_h": 174,
+    "fps": 8,
+    "anims": { "idle": [0, 1, 2, 3, 4, 5, 6, 7], "walk": [0, 1, 2, 3, 4, 5, 6, 7] },
+    "palette_accent": "#3a7ca5",
+    "spritecook": {
+      "character_id": "af867b9b-f86b-403a-9107-0dd8e66d61be",
+      "idle_asset_id": "7efc6d7e-0636-4f16-95cc-0b9a4df68a32",
+      "walk_asset_id": "c0a55251-419d-45e7-ab78-ebb02363b114"
+    }
+  },
+  "set_pieces": {
+    "_note": "static layers; not animated. courtroom_bg is bg_mode include (opaque); lectern and news_desk are transparent props. Dimensions are the smart-cropped output size.",
+    "courtroom_bg": {
+      "file": "set_courtroom_bg.png",
+      "width": 512,
+      "height": 288,
+      "spritecook": { "asset_id": "04544e8d-c199-4dd0-a27e-9af462880d3a" }
+    },
+    "lectern": {
+      "file": "set_lectern.png",
+      "width": 66,
+      "height": 66,
+      "spritecook": { "asset_id": "8b31cf2d-9710-43e2-995d-6d94c6f19749" }
+    },
+    "news_desk": {
+      "file": "set_newsdesk.png",
+      "width": 150,
+      "height": 150,
+      "spritecook": { "asset_id": "2a598060-0334-4b93-87a4-dc23d8f806a4" }
+    }
   }
 }
