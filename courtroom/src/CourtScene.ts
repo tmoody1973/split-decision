@@ -166,7 +166,10 @@ export class CourtScene extends Phaser.Scene {
       // Frontal desk, split into two layers so the anchors sandwich between them:
       // the painted chairs render behind the sprites, the counter in front — the
       // same occlusion trick as the courtroom bench overlay.
-      const SPLIT = 0.5; // texture fraction where the desk surface line sits
+      // Split at the desk's BACK edge (top of the surface band): everything from the
+      // back edge down — the whole surface + front rail — renders in front of the
+      // anchors, so a torso cropped below that line is swallowed by the desk.
+      const SPLIT = 0.46;
       const deskW = Math.min(width * 0.62, 720);
       const scale = deskW / s.desk.width;
       for (const img of [s.deskBack, s.desk]) {
@@ -177,12 +180,12 @@ export class CourtScene extends Phaser.Scene {
       s.desk.setCrop(0, texH * SPLIT, s.desk.width, texH * (1 - SPLIT));
       const deskH = s.desk.displayHeight;
       const deskTop = height * 0.86 - deskH;
-      // Seated read: the sprite is cropped to its top 60% (torso) and anchored so the
-      // crop line falls just below the painted desk surface — no legs behind the set.
+      // Seated read: torso crop line tucked just below the back edge, under the
+      // front layer — the body meets the desk exactly where a seated person would.
       const CROP = 0.6;
       const anchorH = deskH * 0.72;
-      const surfaceY = deskTop + deskH * 0.52;
-      const baseline = surfaceY + 12 + anchorH * (1 - CROP);
+      const hiddenLine = deskTop + deskH * (SPLIT + 0.04);
+      const baseline = hiddenLine + anchorH * (1 - CROP);
       const lead = s.anchors["anchor_lead"];
       const analyst = s.anchors["anchor_analyst"];
       for (const a of [lead, analyst]) {
