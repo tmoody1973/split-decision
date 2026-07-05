@@ -188,3 +188,41 @@ body.record #controls {
 body.record #app {
   grid-template-rows: 1fr;
 }
+
+/* Architecture modal */
+#arch-open {
+  font: 11px ui-monospace, monospace;
+  background: #241a10;
+  color: #f0d79a;
+  border: 2px solid #8a5a2b;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+#arch-open:hover { background: #4a3320; }
+#arch-modal {
+  border: 3px solid #8a5a2b;
+  background: #1a140d;
+  padding: 0;
+  width: min(1320px, 94vw);
+}
+#arch-modal::backdrop { background: rgba(6, 4, 2, 0.82); }
+#arch-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  font: bold 13px ui-monospace, monospace;
+  color: #f0d79a;
+  background: #241a10;
+  border-bottom: 2px solid #4a3320;
+}
+#arch-bar button {
+  font: 11px ui-monospace, monospace;
+  background: #1a140d;
+  color: #f0d79a;
+  border: 2px solid #8a5a2b;
+  padding: 4px 8px;
+  margin-left: 8px;
+  cursor: pointer;
+}
+#arch-canvas { line-height: 0; }

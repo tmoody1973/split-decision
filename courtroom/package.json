@@ -15,7 +15,8 @@
     "test:watch": "vitest"
   },
   "dependencies": {
-    "phaser": "^3.90.0"
+    "phaser": "^3.90.0",
+    "pixi.js": "^8.19.0"
   },
   "devDependencies": {
     "typescript": "^5.7.3",

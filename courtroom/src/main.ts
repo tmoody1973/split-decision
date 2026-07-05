@@ -110,6 +110,40 @@ async function boot(): Promise<void> {
     // Give the scene a beat to build, then autoplay for screen capture.
     setTimeout(() => player.play(), 400);
   }
+
+  wireArchModal();
+}
+
+// The judged architecture diagram (PixiJS, lazy chunk) behind a modal — the diagram
+// wears the product's own pixel register and exports the submission PNG.
+function wireArchModal(): void {
+  const modal = document.getElementById("arch-modal") as HTMLDialogElement;
+  const openBtn = document.getElementById("arch-open") as HTMLButtonElement;
+  const closeBtn = document.getElementById("arch-close") as HTMLButtonElement;
+  const dlBtn = document.getElementById("arch-download") as HTMLButtonElement;
+  let diagram: import("./archDiagram").ArchDiagram | null = null;
+
+  openBtn.addEventListener("click", async () => {
+    modal.showModal();
+    if (!diagram) {
+      const { createArchDiagram } = await import("./archDiagram");
+      diagram = await createArchDiagram(document.getElementById("arch-canvas") as HTMLElement);
+    }
+    diagram.open();
+  });
+  const close = (): void => {
+    diagram?.close();
+    if (modal.open) modal.close();
+  };
+  closeBtn.addEventListener("click", close);
+  modal.addEventListener("close", () => diagram?.close());
+  dlBtn.addEventListener("click", async () => {
+    if (!diagram) return;
+    const a = document.createElement("a");
+    a.href = await diagram.exportPng();
+    a.download = "split-decision-architecture.png";
+    a.click();
+  });
 }
 
 boot().catch((err) => {

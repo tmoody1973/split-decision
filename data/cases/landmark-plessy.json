@@ -1,0 +1,16 @@
+{
+  "case_id": "landmark-plessy",
+  "name": "Plessy v. Ferguson (LANDMARK SPECIAL)",
+  "docket": "210",
+  "date_argued": "1896-04-13",
+  "date_decided": "1896-05-18",
+  "question_presented": "Does a state law requiring railway companies to provide 'equal but separate' accommodations for passengers of different races violate the Equal Protection Clause of the Fourteenth Amendment?",
+  "facts_summary": "Louisiana's Separate Car Act of 1890 required railway companies operating in the state to provide 'equal but separate' accommodations for passengers of different races, and made it an offense for a passenger to occupy a car other than the one assigned. Homer Plessy, a Louisiana citizen of mixed ancestry, boarded a car reserved for white passengers as part of a planned test of the law, declined to move when instructed, and was arrested and charged. Plessy challenged the statute, arguing that state-mandated racial segregation imposes a badge of inferiority and denies the equal protection of the laws guaranteed by the Fourteenth Amendment. The state argued the statute treated the races equally and fell within the state's police power to regulate for public order. The Louisiana courts upheld the law, and Plessy sought review.",
+  "lower_court_ruling": "affirmed",
+  "ground_truth": {
+    "disposition": "affirmed",
+    "vote_split": "7-1"
+  },
+  "status": "decided",
+  "landmark_special": true
+}

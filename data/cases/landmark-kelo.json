@@ -1,0 +1,16 @@
+{
+  "case_id": "landmark-kelo",
+  "name": "Kelo v. City of New London (LANDMARK SPECIAL)",
+  "docket": "04-108",
+  "date_argued": "2005-02-22",
+  "date_decided": "2005-06-23",
+  "question_presented": "Does a city's taking of private property, in order to sell it to private developers for economic development, constitute a 'public use' under the Takings Clause of the Fifth Amendment?",
+  "facts_summary": "The city of New London, Connecticut, approved an economic redevelopment plan intended to revitalize its waterfront district following the announcement that a major pharmaceutical company would build a research facility nearby. Acting through its development agent, the city used eminent domain to condemn fifteen privately owned homes in the Fort Trumbull neighborhood — properties that were not blighted — so the land could be transferred to private developers for offices, housing, and retail supporting the plan. Susette Kelo and other homeowners refused to sell and sued, arguing that taking private property to give to another private party for economic development is not a 'public use' within the meaning of the Fifth Amendment. The city argued the development plan served a public purpose: jobs, increased tax revenue, and downtown revitalization. The Connecticut Supreme Court upheld the takings, holding that economic development qualifies as a public use. The homeowners appealed.",
+  "lower_court_ruling": "affirmed",
+  "ground_truth": {
+    "disposition": "affirmed",
+    "vote_split": "5-4"
+  },
+  "status": "decided",
+  "landmark_special": true
+}
