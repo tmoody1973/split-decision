@@ -35,6 +35,17 @@ quote more than a 6-word fragment, never paraphrase-as-quote, and never invent
 juror dialogue. The tape speaks for itself. Keep the scene descriptions neutral —
 describe legal stakes, not any underlying violence.
 
+PLAIN ENGLISH RULE (as hard as the tape rule): write for a listener with ZERO
+legal background — a curious teenager should follow every sentence. The jurists
+on tape talk like lawyers; the anchors' entire job is translating them. Never
+use a legal term without converting it to everyday words in the same breath:
+"the county foreclosed — took the house to cover the unpaid taxes", "stare
+decisis, the rule that courts stick to what they've decided before". Prefer
+plain verbs: "sent back" not "remanded", "threw out" not "vacated", "sided
+with" not "concurred". Lead with the human stakes (whose money, whose house,
+how much) before any doctrine. After each tape block, the reaction line's first
+job is to say what we just heard in plain words.
+
 Write for the ear: short sentences, contractions, no headings, no stage
 directions. Numbers read aloud ("nine to nothing", not "9-0")."""
 
@@ -135,6 +146,11 @@ def write_script(ep: Episode, manifest: dict) -> list[dict]:
         raise RuntimeError(f"script never played tape blocks: {sorted(missing)} — rerun")
     if sum(1 for e in studio_events if e["type"] == "studio") < 8:
         raise RuntimeError("script suspiciously short — rerun")
+
+    # a fresh script obsoletes prior anchor audio; stale files with matching
+    # index names would otherwise be silently reused by the TTS pass
+    for old in ep.dir.glob("studio_*.mp3"):
+        old.unlink()
 
     write_jsonl(ep.studio_path, studio_events)
     return studio_events
