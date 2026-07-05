@@ -1,0 +1,59 @@
+{
+  "case_id": "oyez-63890",
+  "clips": [
+    {
+      "id": "c01",
+      "purpose": "color",
+      "event_span": [
+        1,
+        1
+      ],
+      "note": "Foreperson frames the core disputes of the case"
+    },
+    {
+      "id": "c02",
+      "purpose": "cold_open",
+      "event_span": [
+        11,
+        13
+      ],
+      "note": "Sharp opening clash on finality and statutory purpose"
+    },
+    {
+      "id": "c03",
+      "purpose": "color",
+      "event_span": [
+        14,
+        19
+      ],
+      "note": "Federalism, standing, and precedent arguments for reversal"
+    },
+    {
+      "id": "c04",
+      "purpose": "color",
+      "event_span": [
+        20,
+        24
+      ],
+      "note": "Foreperson summary and deep dive into textualism vs purpose"
+    },
+    {
+      "id": "c05",
+      "purpose": "color",
+      "event_span": [
+        25,
+        26
+      ],
+      "note": "Civil libertarian and federalism hawk clash on sovereign duty"
+    },
+    {
+      "id": "c06",
+      "purpose": "verdict_run",
+      "event_span": [
+        27,
+        28
+      ],
+      "note": "Final exchange on federalism right before the verdict"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "case_id": "oyez-63889",
+  "clips": [
+    {
+      "id": "c01",
+      "purpose": "cold_open",
+      "event_span": [
+        11,
+        13
+      ],
+      "note": "Pragmatist and Textualist clash over procedural traps versus strict rule text."
+    },
+    {
+      "id": "c02",
+      "purpose": "color",
+      "event_span": [
+        14,
+        19
+      ],
+      "note": "Four justices argue for reversal based on notice, rights, and precedent."
+    },
+    {
+      "id": "c03",
+      "purpose": "color",
+      "event_span": [
+        20,
+        24
+      ],
+      "note": "Foreperson frames debate while Pragmatist and Textualist argue over docket efficiency."
+    },
+    {
+      "id": "c04",
+      "purpose": "color",
+      "event_span": [
+        25,
+        26
+      ],
+      "note": "Federalism Hawk challenges Originalist on whether sovereignty overrides procedural rules."
+    },
+    {
+      "id": "c05",
+      "purpose": "verdict_run",
+      "event_span": [
+        27,
+        28
+      ],
+      "note": "Final exchange between Federalism Hawk and Originalist just before the verdict."
+    },
+    {
+      "id": "c06",
+      "purpose": "flip",
+      "event_span": [
+        32,
+        32
+      ],
+      "note": "Pragmatist flips to reverse, conceding the arithmetic makes the rule unworkable."
+    }
+  ]
+}

@@ -109,6 +109,9 @@ def tts_episode(ep: Episode) -> tuple[list[dict], list[dict]]:
     write_jsonl(ep.events_path, events)
     print(f"deliberation: {n} utterances")
 
+    if not ep.studio_path.exists():
+        print("studio: no studio_events.jsonl — deliberation stream only")
+        return events, []
     studio = read_jsonl(ep.studio_path)
     n = _tts_events(studio, "studio", ep.dir, voices, "producer:tts:studio")
     write_jsonl(ep.studio_path, studio)

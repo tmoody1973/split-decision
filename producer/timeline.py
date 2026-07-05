@@ -61,6 +61,9 @@ def run_timestamp_pass(ep: Episode) -> list[dict]:
     events = fill_replay_clock(read_jsonl(ep.events_path))
     write_jsonl(ep.events_path, events)
 
+    if not ep.studio_path.exists():
+        print("no studio stream — replay clock filled, no cue sheet")
+        return []
     studio, cues = fill_podcast_clock(read_jsonl(ep.studio_path), events)
     write_jsonl(ep.studio_path, studio)
     ep.cue_sheet_path.write_text(json.dumps(cues, indent=1) + "\n")

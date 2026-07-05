@@ -1,0 +1,240 @@
+[
+ {
+  "t": 0,
+  "stream": "studio",
+  "event_index": 0,
+  "audio_file": "studio_000.mp3",
+  "dur_ms": 6160
+ },
+ {
+  "t": 6460,
+  "stream": "deliberation",
+  "event_index": 11,
+  "audio_file": "utt_011.mp3",
+  "dur_ms": 34000
+ },
+ {
+  "t": 40760,
+  "stream": "deliberation",
+  "event_index": 12,
+  "audio_file": "utt_012.mp3",
+  "dur_ms": 31760
+ },
+ {
+  "t": 72820,
+  "stream": "deliberation",
+  "event_index": 13,
+  "audio_file": "utt_013.mp3",
+  "dur_ms": 36560
+ },
+ {
+  "t": 109680,
+  "stream": "studio",
+  "event_index": 2,
+  "audio_file": "studio_002.mp3",
+  "dur_ms": 14400
+ },
+ {
+  "t": 124380,
+  "stream": "studio",
+  "event_index": 3,
+  "audio_file": "studio_003.mp3",
+  "dur_ms": 49760
+ },
+ {
+  "t": 174440,
+  "stream": "studio",
+  "event_index": 4,
+  "audio_file": "studio_004.mp3",
+  "dur_ms": 41920
+ },
+ {
+  "t": 216660,
+  "stream": "studio",
+  "event_index": 5,
+  "audio_file": "studio_005.mp3",
+  "dur_ms": 6400
+ },
+ {
+  "t": 223360,
+  "stream": "deliberation",
+  "event_index": 1,
+  "audio_file": "utt_001.mp3",
+  "dur_ms": 26880
+ },
+ {
+  "t": 250540,
+  "stream": "studio",
+  "event_index": 7,
+  "audio_file": "studio_007.mp3",
+  "dur_ms": 14240
+ },
+ {
+  "t": 265080,
+  "stream": "studio",
+  "event_index": 8,
+  "audio_file": "studio_008.mp3",
+  "dur_ms": 10400
+ },
+ {
+  "t": 275780,
+  "stream": "deliberation",
+  "event_index": 14,
+  "audio_file": "utt_014.mp3",
+  "dur_ms": 40240
+ },
+ {
+  "t": 316320,
+  "stream": "deliberation",
+  "event_index": 15,
+  "audio_file": "utt_015.mp3",
+  "dur_ms": 31920
+ },
+ {
+  "t": 348540,
+  "stream": "deliberation",
+  "event_index": 16,
+  "audio_file": "utt_016.mp3",
+  "dur_ms": 45120
+ },
+ {
+  "t": 393960,
+  "stream": "deliberation",
+  "event_index": 17,
+  "audio_file": "utt_017.mp3",
+  "dur_ms": 36960
+ },
+ {
+  "t": 431220,
+  "stream": "deliberation",
+  "event_index": 18,
+  "audio_file": "utt_018.mp3",
+  "dur_ms": 27520
+ },
+ {
+  "t": 459040,
+  "stream": "deliberation",
+  "event_index": 19,
+  "audio_file": "utt_019.mp3",
+  "dur_ms": 31280
+ },
+ {
+  "t": 490620,
+  "stream": "studio",
+  "event_index": 10,
+  "audio_file": "studio_010.mp3",
+  "dur_ms": 17680
+ },
+ {
+  "t": 508600,
+  "stream": "studio",
+  "event_index": 11,
+  "audio_file": "studio_011.mp3",
+  "dur_ms": 9600
+ },
+ {
+  "t": 518500,
+  "stream": "deliberation",
+  "event_index": 20,
+  "audio_file": "utt_020.mp3",
+  "dur_ms": 24320
+ },
+ {
+  "t": 543120,
+  "stream": "deliberation",
+  "event_index": 21,
+  "audio_file": "utt_021.mp3",
+  "dur_ms": 22480
+ },
+ {
+  "t": 565900,
+  "stream": "deliberation",
+  "event_index": 22,
+  "audio_file": "utt_022.mp3",
+  "dur_ms": 23360
+ },
+ {
+  "t": 589560,
+  "stream": "deliberation",
+  "event_index": 23,
+  "audio_file": "utt_023.mp3",
+  "dur_ms": 21120
+ },
+ {
+  "t": 610980,
+  "stream": "deliberation",
+  "event_index": 24,
+  "audio_file": "utt_024.mp3",
+  "dur_ms": 25840
+ },
+ {
+  "t": 637120,
+  "stream": "deliberation",
+  "event_index": 25,
+  "audio_file": "utt_025.mp3",
+  "dur_ms": 19360
+ },
+ {
+  "t": 656780,
+  "stream": "studio",
+  "event_index": 13,
+  "audio_file": "studio_013.mp3",
+  "dur_ms": 22080
+ },
+ {
+  "t": 679160,
+  "stream": "studio",
+  "event_index": 14,
+  "audio_file": "studio_014.mp3",
+  "dur_ms": 8400
+ },
+ {
+  "t": 687860,
+  "stream": "deliberation",
+  "event_index": 26,
+  "audio_file": "utt_026.mp3",
+  "dur_ms": 22800
+ },
+ {
+  "t": 710960,
+  "stream": "studio",
+  "event_index": 16,
+  "audio_file": "studio_016.mp3",
+  "dur_ms": 21360
+ },
+ {
+  "t": 732620,
+  "stream": "studio",
+  "event_index": 17,
+  "audio_file": "studio_017.mp3",
+  "dur_ms": 14320
+ },
+ {
+  "t": 747240,
+  "stream": "studio",
+  "event_index": 18,
+  "audio_file": "studio_018.mp3",
+  "dur_ms": 27600
+ },
+ {
+  "t": 775140,
+  "stream": "studio",
+  "event_index": 19,
+  "audio_file": "studio_019.mp3",
+  "dur_ms": 22800
+ },
+ {
+  "t": 798240,
+  "stream": "studio",
+  "event_index": 20,
+  "audio_file": "studio_020.mp3",
+  "dur_ms": 19440
+ },
+ {
+  "t": 817980,
+  "stream": "studio",
+  "event_index": 21,
+  "audio_file": "studio_021.mp3",
+  "dur_ms": 4720
+ }
+]

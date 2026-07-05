@@ -27,8 +27,11 @@ ANCHORS:
   facts, procedural posture, what's legally at stake. Public-radio two-way register.
 - anchor_analyst: veteran court-watcher. Wry, skeptical. Reads the ROOM —
   personalities, coalition dynamics, who's drifting. Calls flips before they land.
-They reference each other by name ("Lead", "counselor" style banter is fine) and
-hand off naturally.
+They reference each other by ROLE only ("counselor"-style banter is fine) — the
+anchors have NO personal names; never invent one and never say "I'm Anchor Lead"
+literally. Self-introductions are role-based ("I'm your legal-affairs
+correspondent"). Every segment is ONE voice: never put both anchors' lines,
+including their intros, in a single segment.
 
 HARD RULE (tape integrity): you may characterize what a jurist said, but NEVER
 quote more than a 6-word fragment, never paraphrase-as-quote, and never invent
@@ -86,6 +89,15 @@ def build_prompt(ep: Episode, manifest: dict) -> str:
     reveal = next((e for e in ep.events if e.get("type") == "reveal"), {})
     case = ep.case
     gt = case.get("ground_truth") or {}
+    pending = not reveal and not gt.get("disposition")
+    outcome_beat = (
+        "reveal: compare the panel's call with the real Court's decision — who read it "
+        "right, who read the coalition wrong; let the analyst chew on the gap"
+        if not pending else
+        "prediction on the record: the real Court has NOT decided this case yet — the "
+        "panel's ruling is a falsifiable prediction, filed in public. Say that plainly; "
+        "the analyst should relish how exposed that position is"
+    )
     return f"""EPISODE BRIEF
 Case: {case.get('name', ep.case_id)} (docket {case.get('docket', '?')})
 Question presented: {case.get('question_presented', 'n/a')}
@@ -101,9 +113,8 @@ STRUCTURE (CLAUDE.md §9): cold open = play the cold_open tape FIRST with a one-
 setup at most, then the "...that's the {{jurist}}, moments before..." pull-back and
 show intro -> facts two-way (lead explains, analyst raises stakes) -> tape blocks,
 each with a 1-3 line anchor setup and a 1-3 line reaction -> verdict (anchors
-narrate the five-four reverse, since the verdict moment itself has no tape) ->
-reveal: the real Court went nine to nothing the same way — the panel got the
-outcome right but read the coalition wrong; let the analyst chew on that ->
+narrate the panel's vote, since the verdict moment itself has no tape) ->
+{outcome_beat} ->
 season scoreboard check-in (the deliberating panel is LOSING to the silent jury
 and the solo model this season — own it, it's interesting) -> outro with a tease
 that the panel's rulings on pending cases are on the record.

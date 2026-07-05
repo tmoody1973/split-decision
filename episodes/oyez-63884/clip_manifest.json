@@ -1,0 +1,50 @@
+{
+  "case_id": "oyez-63884",
+  "clips": [
+    {
+      "id": "c01",
+      "purpose": "color",
+      "event_span": [
+        1,
+        1
+      ],
+      "note": "Foreperson frames the core jurisdictional and preemption questions."
+    },
+    {
+      "id": "c02",
+      "purpose": "cold_open",
+      "event_span": [
+        11,
+        13
+      ],
+      "note": "Sharp opening clash over text, statutory purpose, and policy patches."
+    },
+    {
+      "id": "c03",
+      "purpose": "color",
+      "event_span": [
+        14,
+        19
+      ],
+      "note": "Six justices robustly defend state police powers against federal overreach."
+    },
+    {
+      "id": "c04",
+      "purpose": "color",
+      "event_span": [
+        20,
+        25
+      ],
+      "note": "Pragmatist and Formalist battle over jurisdiction versus unworkable policy."
+    },
+    {
+      "id": "c05",
+      "purpose": "verdict_run",
+      "event_span": [
+        26,
+        26
+      ],
+      "note": "Precedent Maximalist defends dual sovereignty right before the final flip."
+    }
+  ]
+}
