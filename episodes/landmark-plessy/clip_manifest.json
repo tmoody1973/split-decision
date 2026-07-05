@@ -1,0 +1,68 @@
+{
+  "case_id": "landmark-plessy",
+  "clips": [
+    {
+      "id": "c01",
+      "purpose": "cold_open",
+      "event_span": [
+        12,
+        14
+      ],
+      "note": "Living Const and Civil Lib attack the badge of inferiority argument."
+    },
+    {
+      "id": "c02",
+      "purpose": "color",
+      "event_span": [
+        1,
+        1
+      ],
+      "note": "Foreperson sets the stage for the landmark equal protection debate."
+    },
+    {
+      "id": "c03",
+      "purpose": "color",
+      "event_span": [
+        11,
+        11
+      ],
+      "note": "Originalist defends the historical context of the Fourteenth Amendment."
+    },
+    {
+      "id": "c04",
+      "purpose": "color",
+      "event_span": [
+        15,
+        17
+      ],
+      "note": "Process Formalist, Pragmatist, and Federalism Hawk argue procedural and federal limits."
+    },
+    {
+      "id": "c05",
+      "purpose": "color",
+      "event_span": [
+        18,
+        20
+      ],
+      "note": "Precedent Maximalist and Minimalist weigh reliance interests and narrow rulings."
+    },
+    {
+      "id": "c06",
+      "purpose": "color",
+      "event_span": [
+        21,
+        25
+      ],
+      "note": "Textualist and Civil Libertarian clash over equal protection and dignity."
+    },
+    {
+      "id": "c07",
+      "purpose": "verdict_run",
+      "event_span": [
+        26,
+        28
+      ],
+      "note": "Living Const and Federalism Hawk battle over state police power."
+    }
+  ]
+}

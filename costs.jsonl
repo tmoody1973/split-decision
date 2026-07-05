@@ -9190,3 +9190,471 @@
 {"ts": "2026-07-05T14:44:56-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:studio", "tts_chars": 66}
 {"ts": "2026-07-05T14:44:56-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:studio", "tts_chars": 207}
 {"ts": "2026-07-05T14:44:58-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:studio", "tts_chars": 302}
+{"ts": "2026-07-05T15:57:11-0500", "model": "qwen3.7-max", "purpose": "clerk:landmark-kelo", "prompt_tokens": 415, "completion_tokens": 2893, "total_tokens": 3308}
+{"ts": "2026-07-05T15:57:24-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r1:vote:textualist", "prompt_tokens": 938, "completion_tokens": 674, "total_tokens": 1612}
+{"ts": "2026-07-05T15:57:25-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r1:vote:originalist", "prompt_tokens": 916, "completion_tokens": 684, "total_tokens": 1600}
+{"ts": "2026-07-05T15:57:30-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r1:vote:minimalist", "prompt_tokens": 918, "completion_tokens": 942, "total_tokens": 1860}
+{"ts": "2026-07-05T15:57:30-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r1:vote:precedent_maximalist", "prompt_tokens": 933, "completion_tokens": 998, "total_tokens": 1931}
+{"ts": "2026-07-05T15:57:32-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r1:vote:civil_libertarian", "prompt_tokens": 922, "completion_tokens": 1095, "total_tokens": 2017}
+{"ts": "2026-07-05T15:57:33-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r1:vote:pragmatist", "prompt_tokens": 938, "completion_tokens": 1166, "total_tokens": 2104}
+{"ts": "2026-07-05T15:57:42-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r1:vote:process_formalist", "prompt_tokens": 930, "completion_tokens": 1636, "total_tokens": 2566}
+{"ts": "2026-07-05T15:57:46-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r1:vote:living_constitutionalist", "prompt_tokens": 919, "completion_tokens": 1877, "total_tokens": 2796}
+{"ts": "2026-07-05T15:57:53-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r1:vote:federalism_hawk", "prompt_tokens": 922, "completion_tokens": 2249, "total_tokens": 3171}
+{"ts": "2026-07-05T15:58:25-0500", "model": "qwen3.7-max", "purpose": "deliberate:landmark-kelo:r1:order", "prompt_tokens": 322, "completion_tokens": 1712, "total_tokens": 2034}
+{"ts": "2026-07-05T15:58:56-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r1:speak:textualist", "prompt_tokens": 934, "completion_tokens": 1703, "total_tokens": 2637}
+{"ts": "2026-07-05T15:59:34-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r1:speak:living_constitutionalist", "prompt_tokens": 981, "completion_tokens": 2012, "total_tokens": 2993}
+{"ts": "2026-07-05T16:00:15-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r1:speak:originalist", "prompt_tokens": 1117, "completion_tokens": 2173, "total_tokens": 3290}
+{"ts": "2026-07-05T16:00:55-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r1:speak:pragmatist", "prompt_tokens": 1251, "completion_tokens": 2147, "total_tokens": 3398}
+{"ts": "2026-07-05T16:01:36-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r1:speak:process_formalist", "prompt_tokens": 1374, "completion_tokens": 2231, "total_tokens": 3605}
+{"ts": "2026-07-05T16:02:19-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r1:speak:precedent_maximalist", "prompt_tokens": 1519, "completion_tokens": 2337, "total_tokens": 3856}
+{"ts": "2026-07-05T16:03:03-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r1:speak:federalism_hawk", "prompt_tokens": 1642, "completion_tokens": 2351, "total_tokens": 3993}
+{"ts": "2026-07-05T16:03:42-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r1:speak:civil_libertarian", "prompt_tokens": 1770, "completion_tokens": 2102, "total_tokens": 3872}
+{"ts": "2026-07-05T16:04:23-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r1:speak:minimalist", "prompt_tokens": 1876, "completion_tokens": 2192, "total_tokens": 4068}
+{"ts": "2026-07-05T16:05:07-0500", "model": "qwen3.7-max", "purpose": "deliberate:landmark-kelo:r1:pairing", "prompt_tokens": 781, "completion_tokens": 2224, "total_tokens": 3005}
+{"ts": "2026-07-05T16:05:37-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r1:debate:originalist", "prompt_tokens": 1009, "completion_tokens": 1633, "total_tokens": 2642}
+{"ts": "2026-07-05T16:06:07-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r1:debate:precedent_maximalist", "prompt_tokens": 960, "completion_tokens": 1589, "total_tokens": 2549}
+{"ts": "2026-07-05T16:06:37-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r1:debate:originalist", "prompt_tokens": 953, "completion_tokens": 1595, "total_tokens": 2548}
+{"ts": "2026-07-05T16:07:11-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r1:debate:precedent_maximalist", "prompt_tokens": 962, "completion_tokens": 1823, "total_tokens": 2785}
+{"ts": "2026-07-05T16:07:48-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r1:debate:pragmatist", "prompt_tokens": 1008, "completion_tokens": 1972, "total_tokens": 2980}
+{"ts": "2026-07-05T16:08:18-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r1:debate:civil_libertarian", "prompt_tokens": 962, "completion_tokens": 1607, "total_tokens": 2569}
+{"ts": "2026-07-05T16:08:48-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r1:debate:pragmatist", "prompt_tokens": 962, "completion_tokens": 1571, "total_tokens": 2533}
+{"ts": "2026-07-05T16:09:22-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r1:debate:civil_libertarian", "prompt_tokens": 957, "completion_tokens": 1785, "total_tokens": 2742}
+{"ts": "2026-07-05T16:09:36-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r1:revote:living_constitutionalist", "prompt_tokens": 962, "completion_tokens": 675, "total_tokens": 1637}
+{"ts": "2026-07-05T16:09:41-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r1:revote:originalist", "prompt_tokens": 959, "completion_tokens": 997, "total_tokens": 1956}
+{"ts": "2026-07-05T16:09:51-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r1:revote:civil_libertarian", "prompt_tokens": 965, "completion_tokens": 1515, "total_tokens": 2480}
+{"ts": "2026-07-05T16:09:53-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r1:revote:textualist", "prompt_tokens": 981, "completion_tokens": 1690, "total_tokens": 2671}
+{"ts": "2026-07-05T16:09:55-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r1:revote:process_formalist", "prompt_tokens": 973, "completion_tokens": 1730, "total_tokens": 2703}
+{"ts": "2026-07-05T16:10:00-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r1:revote:minimalist", "prompt_tokens": 961, "completion_tokens": 2043, "total_tokens": 3004}
+{"ts": "2026-07-05T16:10:02-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r1:revote:precedent_maximalist", "prompt_tokens": 976, "completion_tokens": 2075, "total_tokens": 3051}
+{"ts": "2026-07-05T16:10:04-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r1:revote:pragmatist", "prompt_tokens": 981, "completion_tokens": 2157, "total_tokens": 3138}
+{"ts": "2026-07-05T16:10:51-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r1:revote:federalism_hawk", "prompt_tokens": 965, "completion_tokens": 4864, "total_tokens": 5829}
+{"ts": "2026-07-05T16:11:21-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r1:digest:civil_libertarian", "prompt_tokens": 1966, "completion_tokens": 1533, "total_tokens": 3499}
+{"ts": "2026-07-05T16:11:29-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r1:digest:living_constitutionalist", "prompt_tokens": 1963, "completion_tokens": 2015, "total_tokens": 3978}
+{"ts": "2026-07-05T16:11:31-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r1:digest:textualist", "prompt_tokens": 1982, "completion_tokens": 2111, "total_tokens": 4093}
+{"ts": "2026-07-05T16:11:36-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r1:digest:precedent_maximalist", "prompt_tokens": 1977, "completion_tokens": 2365, "total_tokens": 4342}
+{"ts": "2026-07-05T16:11:41-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r1:digest:federalism_hawk", "prompt_tokens": 1966, "completion_tokens": 2629, "total_tokens": 4595}
+{"ts": "2026-07-05T16:11:41-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r1:digest:pragmatist", "prompt_tokens": 1982, "completion_tokens": 2659, "total_tokens": 4641}
+{"ts": "2026-07-05T16:11:42-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r1:digest:minimalist", "prompt_tokens": 1962, "completion_tokens": 2734, "total_tokens": 4696}
+{"ts": "2026-07-05T16:11:45-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r1:digest:originalist", "prompt_tokens": 1960, "completion_tokens": 2895, "total_tokens": 4855}
+{"ts": "2026-07-05T16:11:57-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r1:digest:process_formalist", "prompt_tokens": 1974, "completion_tokens": 3554, "total_tokens": 5528}
+{"ts": "2026-07-05T16:12:24-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r2:vote:civil_libertarian", "prompt_tokens": 1091, "completion_tokens": 1391, "total_tokens": 2482}
+{"ts": "2026-07-05T16:12:24-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r2:vote:federalism_hawk", "prompt_tokens": 1091, "completion_tokens": 1407, "total_tokens": 2498}
+{"ts": "2026-07-05T16:12:27-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r2:vote:living_constitutionalist", "prompt_tokens": 1080, "completion_tokens": 1549, "total_tokens": 2629}
+{"ts": "2026-07-05T16:12:28-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r2:vote:textualist", "prompt_tokens": 1111, "completion_tokens": 1653, "total_tokens": 2764}
+{"ts": "2026-07-05T16:12:32-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r2:vote:originalist", "prompt_tokens": 1097, "completion_tokens": 1883, "total_tokens": 2980}
+{"ts": "2026-07-05T16:12:36-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r2:vote:precedent_maximalist", "prompt_tokens": 1113, "completion_tokens": 2065, "total_tokens": 3178}
+{"ts": "2026-07-05T16:12:43-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r2:vote:process_formalist", "prompt_tokens": 1112, "completion_tokens": 2415, "total_tokens": 3527}
+{"ts": "2026-07-05T16:12:46-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r2:vote:pragmatist", "prompt_tokens": 1097, "completion_tokens": 2613, "total_tokens": 3710}
+{"ts": "2026-07-05T16:12:58-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r2:vote:minimalist", "prompt_tokens": 1088, "completion_tokens": 3279, "total_tokens": 4367}
+{"ts": "2026-07-05T16:13:27-0500", "model": "qwen3.7-max", "purpose": "deliberate:landmark-kelo:r2:order", "prompt_tokens": 322, "completion_tokens": 1494, "total_tokens": 1816}
+{"ts": "2026-07-05T16:14:02-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r2:speak:textualist", "prompt_tokens": 1064, "completion_tokens": 1837, "total_tokens": 2901}
+{"ts": "2026-07-05T16:14:42-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r2:speak:pragmatist", "prompt_tokens": 1150, "completion_tokens": 2163, "total_tokens": 3313}
+{"ts": "2026-07-05T16:15:14-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r2:speak:originalist", "prompt_tokens": 1269, "completion_tokens": 1701, "total_tokens": 2970}
+{"ts": "2026-07-05T16:15:57-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r2:speak:precedent_maximalist", "prompt_tokens": 1418, "completion_tokens": 2359, "total_tokens": 3777}
+{"ts": "2026-07-05T16:16:35-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r2:speak:living_constitutionalist", "prompt_tokens": 1531, "completion_tokens": 2046, "total_tokens": 3577}
+{"ts": "2026-07-05T16:17:13-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r2:speak:federalism_hawk", "prompt_tokens": 1666, "completion_tokens": 1979, "total_tokens": 3645}
+{"ts": "2026-07-05T16:17:47-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r2:speak:civil_libertarian", "prompt_tokens": 1768, "completion_tokens": 1828, "total_tokens": 3596}
+{"ts": "2026-07-05T16:18:27-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r2:speak:process_formalist", "prompt_tokens": 1895, "completion_tokens": 2120, "total_tokens": 4015}
+{"ts": "2026-07-05T16:19:02-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r2:speak:minimalist", "prompt_tokens": 1983, "completion_tokens": 1873, "total_tokens": 3856}
+{"ts": "2026-07-05T16:19:37-0500", "model": "qwen3.7-max", "purpose": "deliberate:landmark-kelo:r2:pairing", "prompt_tokens": 763, "completion_tokens": 1871, "total_tokens": 2634}
+{"ts": "2026-07-05T16:20:10-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r2:debate:textualist", "prompt_tokens": 1173, "completion_tokens": 1762, "total_tokens": 2935}
+{"ts": "2026-07-05T16:20:55-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r2:debate:precedent_maximalist", "prompt_tokens": 1092, "completion_tokens": 2470, "total_tokens": 3562}
+{"ts": "2026-07-05T16:21:21-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r2:debate:textualist", "prompt_tokens": 1105, "completion_tokens": 1383, "total_tokens": 2488}
+{"ts": "2026-07-05T16:21:50-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r2:debate:precedent_maximalist", "prompt_tokens": 1095, "completion_tokens": 1531, "total_tokens": 2626}
+{"ts": "2026-07-05T16:22:16-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r2:debate:pragmatist", "prompt_tokens": 1120, "completion_tokens": 1375, "total_tokens": 2495}
+{"ts": "2026-07-05T16:22:37-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r2:debate:civil_libertarian", "prompt_tokens": 1084, "completion_tokens": 1144, "total_tokens": 2228}
+{"ts": "2026-07-05T16:23:25-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r2:debate:pragmatist", "prompt_tokens": 1081, "completion_tokens": 2570, "total_tokens": 3651}
+{"ts": "2026-07-05T16:23:56-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r2:debate:civil_libertarian", "prompt_tokens": 1083, "completion_tokens": 1711, "total_tokens": 2794}
+{"ts": "2026-07-05T16:24:27-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r2:revote:textualist", "prompt_tokens": 1111, "completion_tokens": 1591, "total_tokens": 2702}
+{"ts": "2026-07-05T16:24:27-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r2:revote:process_formalist", "prompt_tokens": 1112, "completion_tokens": 1600, "total_tokens": 2712}
+{"ts": "2026-07-05T16:24:28-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r2:revote:originalist", "prompt_tokens": 1097, "completion_tokens": 1662, "total_tokens": 2759}
+{"ts": "2026-07-05T16:24:29-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r2:revote:civil_libertarian", "prompt_tokens": 1091, "completion_tokens": 1672, "total_tokens": 2763}
+{"ts": "2026-07-05T16:24:30-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r2:revote:precedent_maximalist", "prompt_tokens": 1113, "completion_tokens": 1782, "total_tokens": 2895}
+{"ts": "2026-07-05T16:24:38-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r2:revote:federalism_hawk", "prompt_tokens": 1091, "completion_tokens": 2184, "total_tokens": 3275}
+{"ts": "2026-07-05T16:24:52-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r2:revote:pragmatist", "prompt_tokens": 1097, "completion_tokens": 2951, "total_tokens": 4048}
+{"ts": "2026-07-05T16:24:55-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r2:revote:minimalist", "prompt_tokens": 1088, "completion_tokens": 3145, "total_tokens": 4233}
+{"ts": "2026-07-05T16:25:19-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r2:revote:living_constitutionalist", "prompt_tokens": 1080, "completion_tokens": 4465, "total_tokens": 5545}
+{"ts": "2026-07-05T16:25:52-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r2:digest:minimalist", "prompt_tokens": 2195, "completion_tokens": 1715, "total_tokens": 3910}
+{"ts": "2026-07-05T16:25:56-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r2:digest:living_constitutionalist", "prompt_tokens": 2178, "completion_tokens": 1962, "total_tokens": 4140}
+{"ts": "2026-07-05T16:25:58-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r2:digest:federalism_hawk", "prompt_tokens": 2197, "completion_tokens": 2073, "total_tokens": 4270}
+{"ts": "2026-07-05T16:26:02-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r2:digest:civil_libertarian", "prompt_tokens": 2197, "completion_tokens": 2287, "total_tokens": 4484}
+{"ts": "2026-07-05T16:26:06-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r2:digest:textualist", "prompt_tokens": 2221, "completion_tokens": 2533, "total_tokens": 4754}
+{"ts": "2026-07-05T16:26:07-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r2:digest:precedent_maximalist", "prompt_tokens": 2230, "completion_tokens": 2521, "total_tokens": 4751}
+{"ts": "2026-07-05T16:26:09-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r2:digest:pragmatist", "prompt_tokens": 2193, "completion_tokens": 2659, "total_tokens": 4852}
+{"ts": "2026-07-05T16:26:10-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r2:digest:originalist", "prompt_tokens": 2215, "completion_tokens": 2743, "total_tokens": 4958}
+{"ts": "2026-07-05T16:26:19-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r2:digest:process_formalist", "prompt_tokens": 2231, "completion_tokens": 3222, "total_tokens": 5453}
+{"ts": "2026-07-05T16:26:37-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r3:vote:textualist", "prompt_tokens": 1114, "completion_tokens": 928, "total_tokens": 2042}
+{"ts": "2026-07-05T16:26:42-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r3:vote:process_formalist", "prompt_tokens": 1107, "completion_tokens": 1189, "total_tokens": 2296}
+{"ts": "2026-07-05T16:26:42-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r3:vote:precedent_maximalist", "prompt_tokens": 1122, "completion_tokens": 1203, "total_tokens": 2325}
+{"ts": "2026-07-05T16:26:50-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r3:vote:civil_libertarian", "prompt_tokens": 1088, "completion_tokens": 1619, "total_tokens": 2707}
+{"ts": "2026-07-05T16:26:50-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r3:vote:pragmatist", "prompt_tokens": 1100, "completion_tokens": 1644, "total_tokens": 2744}
+{"ts": "2026-07-05T16:26:50-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r3:vote:originalist", "prompt_tokens": 1073, "completion_tokens": 1635, "total_tokens": 2708}
+{"ts": "2026-07-05T16:26:55-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r3:vote:minimalist", "prompt_tokens": 1079, "completion_tokens": 1912, "total_tokens": 2991}
+{"ts": "2026-07-05T16:26:56-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r3:vote:federalism_hawk", "prompt_tokens": 1090, "completion_tokens": 2010, "total_tokens": 3100}
+{"ts": "2026-07-05T16:27:18-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r3:vote:living_constitutionalist", "prompt_tokens": 1129, "completion_tokens": 3199, "total_tokens": 4328}
+{"ts": "2026-07-05T16:27:50-0500", "model": "qwen3.7-max", "purpose": "deliberate:landmark-kelo:r3:order", "prompt_tokens": 323, "completion_tokens": 1676, "total_tokens": 1999}
+{"ts": "2026-07-05T16:28:38-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r3:speak:textualist", "prompt_tokens": 1067, "completion_tokens": 2612, "total_tokens": 3679}
+{"ts": "2026-07-05T16:29:07-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r3:speak:living_constitutionalist", "prompt_tokens": 1117, "completion_tokens": 1551, "total_tokens": 2668}
+{"ts": "2026-07-05T16:29:44-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r3:speak:originalist", "prompt_tokens": 1239, "completion_tokens": 2008, "total_tokens": 3247}
+{"ts": "2026-07-05T16:30:15-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r3:speak:pragmatist", "prompt_tokens": 1365, "completion_tokens": 1665, "total_tokens": 3030}
+{"ts": "2026-07-05T16:30:55-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r3:speak:civil_libertarian", "prompt_tokens": 1468, "completion_tokens": 2164, "total_tokens": 3632}
+{"ts": "2026-07-05T16:31:22-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r3:speak:federalism_hawk", "prompt_tokens": 1584, "completion_tokens": 1452, "total_tokens": 3036}
+{"ts": "2026-07-05T16:31:54-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r3:speak:process_formalist", "prompt_tokens": 1721, "completion_tokens": 1711, "total_tokens": 3432}
+{"ts": "2026-07-05T16:32:34-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r3:speak:precedent_maximalist", "prompt_tokens": 1854, "completion_tokens": 2144, "total_tokens": 3998}
+{"ts": "2026-07-05T16:33:09-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r3:speak:minimalist", "prompt_tokens": 1961, "completion_tokens": 1880, "total_tokens": 3841}
+{"ts": "2026-07-05T16:33:50-0500", "model": "qwen3.7-max", "purpose": "deliberate:landmark-kelo:r3:pairing", "prompt_tokens": 766, "completion_tokens": 2218, "total_tokens": 2984}
+{"ts": "2026-07-05T16:34:19-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r3:debate:originalist", "prompt_tokens": 1104, "completion_tokens": 1532, "total_tokens": 2636}
+{"ts": "2026-07-05T16:34:48-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r3:debate:pragmatist", "prompt_tokens": 1082, "completion_tokens": 1566, "total_tokens": 2648}
+{"ts": "2026-07-05T16:35:10-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r3:debate:originalist", "prompt_tokens": 1064, "completion_tokens": 1158, "total_tokens": 2222}
+{"ts": "2026-07-05T16:35:40-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r3:debate:pragmatist", "prompt_tokens": 1081, "completion_tokens": 1623, "total_tokens": 2704}
+{"ts": "2026-07-05T16:36:14-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r3:debate:precedent_maximalist", "prompt_tokens": 1153, "completion_tokens": 1845, "total_tokens": 2998}
+{"ts": "2026-07-05T16:36:45-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r3:debate:minimalist", "prompt_tokens": 1089, "completion_tokens": 1617, "total_tokens": 2706}
+{"ts": "2026-07-05T16:37:22-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r3:debate:precedent_maximalist", "prompt_tokens": 1111, "completion_tokens": 2009, "total_tokens": 3120}
+{"ts": "2026-07-05T16:37:57-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r3:debate:minimalist", "prompt_tokens": 1079, "completion_tokens": 1900, "total_tokens": 2979}
+{"ts": "2026-07-05T16:38:18-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r3:revote:textualist", "prompt_tokens": 1114, "completion_tokens": 1060, "total_tokens": 2174}
+{"ts": "2026-07-05T16:38:24-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r3:revote:civil_libertarian", "prompt_tokens": 1088, "completion_tokens": 1366, "total_tokens": 2454}
+{"ts": "2026-07-05T16:38:27-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r3:revote:minimalist", "prompt_tokens": 1079, "completion_tokens": 1519, "total_tokens": 2598}
+{"ts": "2026-07-05T16:38:29-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r3:revote:originalist", "prompt_tokens": 1073, "completion_tokens": 1623, "total_tokens": 2696}
+{"ts": "2026-07-05T16:38:30-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r3:revote:living_constitutionalist", "prompt_tokens": 1129, "completion_tokens": 1715, "total_tokens": 2844}
+{"ts": "2026-07-05T16:38:36-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r3:revote:process_formalist", "prompt_tokens": 1107, "completion_tokens": 2029, "total_tokens": 3136}
+{"ts": "2026-07-05T16:38:48-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r3:revote:federalism_hawk", "prompt_tokens": 1090, "completion_tokens": 2717, "total_tokens": 3807}
+{"ts": "2026-07-05T16:38:50-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r3:revote:precedent_maximalist", "prompt_tokens": 1122, "completion_tokens": 2782, "total_tokens": 3904}
+{"ts": "2026-07-05T16:38:52-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r3:revote:pragmatist", "prompt_tokens": 1100, "completion_tokens": 2946, "total_tokens": 4046}
+{"ts": "2026-07-05T16:39:32-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r3:digest:textualist", "prompt_tokens": 2244, "completion_tokens": 2119, "total_tokens": 4363}
+{"ts": "2026-07-05T16:39:34-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r3:digest:process_formalist", "prompt_tokens": 2238, "completion_tokens": 2229, "total_tokens": 4467}
+{"ts": "2026-07-05T16:39:35-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r3:digest:pragmatist", "prompt_tokens": 2216, "completion_tokens": 2271, "total_tokens": 4487}
+{"ts": "2026-07-05T16:39:35-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r3:digest:minimalist", "prompt_tokens": 2194, "completion_tokens": 2271, "total_tokens": 4465}
+{"ts": "2026-07-05T16:39:35-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r3:digest:originalist", "prompt_tokens": 2184, "completion_tokens": 2308, "total_tokens": 4492}
+{"ts": "2026-07-05T16:39:37-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r3:digest:living_constitutionalist", "prompt_tokens": 2189, "completion_tokens": 2352, "total_tokens": 4541}
+{"ts": "2026-07-05T16:39:38-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r3:digest:federalism_hawk", "prompt_tokens": 2212, "completion_tokens": 2412, "total_tokens": 4624}
+{"ts": "2026-07-05T16:39:41-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r3:digest:precedent_maximalist", "prompt_tokens": 2265, "completion_tokens": 2604, "total_tokens": 4869}
+{"ts": "2026-07-05T16:39:50-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r3:digest:civil_libertarian", "prompt_tokens": 2208, "completion_tokens": 3075, "total_tokens": 5283}
+{"ts": "2026-07-05T16:40:10-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r4:vote:minimalist", "prompt_tokens": 1089, "completion_tokens": 1004, "total_tokens": 2093}
+{"ts": "2026-07-05T16:40:11-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r4:vote:originalist", "prompt_tokens": 1094, "completion_tokens": 1052, "total_tokens": 2146}
+{"ts": "2026-07-05T16:40:13-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r4:vote:federalism_hawk", "prompt_tokens": 1100, "completion_tokens": 1207, "total_tokens": 2307}
+{"ts": "2026-07-05T16:40:13-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r4:vote:textualist", "prompt_tokens": 1098, "completion_tokens": 1246, "total_tokens": 2344}
+{"ts": "2026-07-05T16:40:20-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r4:vote:process_formalist", "prompt_tokens": 1095, "completion_tokens": 1556, "total_tokens": 2651}
+{"ts": "2026-07-05T16:40:25-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r4:vote:pragmatist", "prompt_tokens": 1099, "completion_tokens": 1880, "total_tokens": 2979}
+{"ts": "2026-07-05T16:40:26-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r4:vote:civil_libertarian", "prompt_tokens": 1087, "completion_tokens": 1910, "total_tokens": 2997}
+{"ts": "2026-07-05T16:40:33-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r4:vote:living_constitutionalist", "prompt_tokens": 1152, "completion_tokens": 2292, "total_tokens": 3444}
+{"ts": "2026-07-05T16:40:37-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r4:vote:precedent_maximalist", "prompt_tokens": 1119, "completion_tokens": 2522, "total_tokens": 3641}
+{"ts": "2026-07-05T16:40:53-0500", "model": "qwen3.7-max", "purpose": "deliberate:landmark-kelo:r4:order", "prompt_tokens": 323, "completion_tokens": 836, "total_tokens": 1159}
+{"ts": "2026-07-05T16:41:28-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r4:speak:textualist", "prompt_tokens": 1051, "completion_tokens": 1870, "total_tokens": 2921}
+{"ts": "2026-07-05T16:41:59-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r4:speak:living_constitutionalist", "prompt_tokens": 1143, "completion_tokens": 1691, "total_tokens": 2834}
+{"ts": "2026-07-05T16:42:33-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r4:speak:originalist", "prompt_tokens": 1265, "completion_tokens": 1802, "total_tokens": 3067}
+{"ts": "2026-07-05T16:43:15-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r4:speak:pragmatist", "prompt_tokens": 1395, "completion_tokens": 2249, "total_tokens": 3644}
+{"ts": "2026-07-05T16:44:02-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r4:speak:civil_libertarian", "prompt_tokens": 1510, "completion_tokens": 2516, "total_tokens": 4026}
+{"ts": "2026-07-05T16:44:42-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r4:speak:precedent_maximalist", "prompt_tokens": 1639, "completion_tokens": 2164, "total_tokens": 3803}
+{"ts": "2026-07-05T16:45:22-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r4:speak:process_formalist", "prompt_tokens": 1730, "completion_tokens": 2118, "total_tokens": 3848}
+{"ts": "2026-07-05T16:46:03-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r4:speak:federalism_hawk", "prompt_tokens": 1842, "completion_tokens": 2251, "total_tokens": 4093}
+{"ts": "2026-07-05T16:46:33-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r4:speak:minimalist", "prompt_tokens": 1949, "completion_tokens": 1549, "total_tokens": 3498}
+{"ts": "2026-07-05T16:47:22-0500", "model": "qwen3.7-max", "purpose": "deliberate:landmark-kelo:r4:pairing", "prompt_tokens": 778, "completion_tokens": 2674, "total_tokens": 3452}
+{"ts": "2026-07-05T16:48:05-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r4:debate:textualist", "prompt_tokens": 1141, "completion_tokens": 2334, "total_tokens": 3475}
+{"ts": "2026-07-05T16:48:27-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r4:debate:pragmatist", "prompt_tokens": 1083, "completion_tokens": 1155, "total_tokens": 2238}
+{"ts": "2026-07-05T16:48:53-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r4:debate:textualist", "prompt_tokens": 1092, "completion_tokens": 1359, "total_tokens": 2451}
+{"ts": "2026-07-05T16:49:28-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r4:debate:pragmatist", "prompt_tokens": 1075, "completion_tokens": 1877, "total_tokens": 2952}
+{"ts": "2026-07-05T16:50:00-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r4:debate:originalist", "prompt_tokens": 1128, "completion_tokens": 1752, "total_tokens": 2880}
+{"ts": "2026-07-05T16:50:30-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r4:debate:federalism_hawk", "prompt_tokens": 1090, "completion_tokens": 1619, "total_tokens": 2709}
+{"ts": "2026-07-05T16:51:00-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r4:debate:originalist", "prompt_tokens": 1076, "completion_tokens": 1578, "total_tokens": 2654}
+{"ts": "2026-07-05T16:51:28-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r4:debate:federalism_hawk", "prompt_tokens": 1102, "completion_tokens": 1488, "total_tokens": 2590}
+{"ts": "2026-07-05T16:51:47-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r4:revote:textualist", "prompt_tokens": 1098, "completion_tokens": 971, "total_tokens": 2069}
+{"ts": "2026-07-05T16:51:54-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r4:revote:process_formalist", "prompt_tokens": 1095, "completion_tokens": 1371, "total_tokens": 2466}
+{"ts": "2026-07-05T16:51:57-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r4:revote:originalist", "prompt_tokens": 1094, "completion_tokens": 1553, "total_tokens": 2647}
+{"ts": "2026-07-05T16:52:05-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r4:revote:minimalist", "prompt_tokens": 1089, "completion_tokens": 1967, "total_tokens": 3056}
+{"ts": "2026-07-05T16:52:06-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r4:revote:precedent_maximalist", "prompt_tokens": 1119, "completion_tokens": 2045, "total_tokens": 3164}
+{"ts": "2026-07-05T16:52:08-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r4:revote:civil_libertarian", "prompt_tokens": 1087, "completion_tokens": 2129, "total_tokens": 3216}
+{"ts": "2026-07-05T16:52:10-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r4:revote:living_constitutionalist", "prompt_tokens": 1152, "completion_tokens": 2235, "total_tokens": 3387}
+{"ts": "2026-07-05T16:52:16-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r4:revote:federalism_hawk", "prompt_tokens": 1100, "completion_tokens": 2578, "total_tokens": 3678}
+{"ts": "2026-07-05T16:52:27-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r4:revote:pragmatist", "prompt_tokens": 1099, "completion_tokens": 3219, "total_tokens": 4318}
+{"ts": "2026-07-05T16:52:59-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r4:digest:minimalist", "prompt_tokens": 2170, "completion_tokens": 1675, "total_tokens": 3845}
+{"ts": "2026-07-05T16:53:01-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r4:digest:pragmatist", "prompt_tokens": 2170, "completion_tokens": 1737, "total_tokens": 3907}
+{"ts": "2026-07-05T16:53:02-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r4:digest:originalist", "prompt_tokens": 2182, "completion_tokens": 1875, "total_tokens": 4057}
+{"ts": "2026-07-05T16:53:09-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r4:digest:precedent_maximalist", "prompt_tokens": 2215, "completion_tokens": 2211, "total_tokens": 4426}
+{"ts": "2026-07-05T16:53:09-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r4:digest:textualist", "prompt_tokens": 2168, "completion_tokens": 2192, "total_tokens": 4360}
+{"ts": "2026-07-05T16:53:09-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r4:digest:process_formalist", "prompt_tokens": 2170, "completion_tokens": 2213, "total_tokens": 4383}
+{"ts": "2026-07-05T16:53:12-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r4:digest:federalism_hawk", "prompt_tokens": 2188, "completion_tokens": 2405, "total_tokens": 4593}
+{"ts": "2026-07-05T16:53:12-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r4:digest:living_constitutionalist", "prompt_tokens": 2191, "completion_tokens": 2408, "total_tokens": 4599}
+{"ts": "2026-07-05T16:53:17-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r4:digest:civil_libertarian", "prompt_tokens": 2162, "completion_tokens": 2674, "total_tokens": 4836}
+{"ts": "2026-07-05T16:53:33-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r5:vote:originalist", "prompt_tokens": 1082, "completion_tokens": 813, "total_tokens": 1895}
+{"ts": "2026-07-05T16:53:34-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r5:vote:civil_libertarian", "prompt_tokens": 1100, "completion_tokens": 832, "total_tokens": 1932}
+{"ts": "2026-07-05T16:53:38-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r5:vote:process_formalist", "prompt_tokens": 1075, "completion_tokens": 1046, "total_tokens": 2121}
+{"ts": "2026-07-05T16:53:47-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r5:vote:textualist", "prompt_tokens": 1080, "completion_tokens": 1527, "total_tokens": 2607}
+{"ts": "2026-07-05T16:53:47-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r5:vote:pragmatist", "prompt_tokens": 1101, "completion_tokens": 1541, "total_tokens": 2642}
+{"ts": "2026-07-05T16:53:48-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r5:vote:precedent_maximalist", "prompt_tokens": 1112, "completion_tokens": 1574, "total_tokens": 2686}
+{"ts": "2026-07-05T16:53:55-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r5:vote:living_constitutionalist", "prompt_tokens": 1133, "completion_tokens": 2041, "total_tokens": 3174}
+{"ts": "2026-07-05T16:53:56-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r5:vote:minimalist", "prompt_tokens": 1076, "completion_tokens": 2072, "total_tokens": 3148}
+{"ts": "2026-07-05T16:54:13-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r5:vote:federalism_hawk", "prompt_tokens": 1097, "completion_tokens": 3002, "total_tokens": 4099}
+{"ts": "2026-07-05T16:54:27-0500", "model": "qwen3.7-max", "purpose": "deliberate:landmark-kelo:r5:order", "prompt_tokens": 323, "completion_tokens": 774, "total_tokens": 1097}
+{"ts": "2026-07-05T16:54:55-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r5:speak:textualist", "prompt_tokens": 1033, "completion_tokens": 1464, "total_tokens": 2497}
+{"ts": "2026-07-05T16:55:30-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r5:speak:living_constitutionalist", "prompt_tokens": 1118, "completion_tokens": 1857, "total_tokens": 2975}
+{"ts": "2026-07-05T16:56:08-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r5:speak:originalist", "prompt_tokens": 1223, "completion_tokens": 2058, "total_tokens": 3281}
+{"ts": "2026-07-05T16:56:45-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r5:speak:pragmatist", "prompt_tokens": 1356, "completion_tokens": 2001, "total_tokens": 3357}
+{"ts": "2026-07-05T16:57:15-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r5:speak:process_formalist", "prompt_tokens": 1442, "completion_tokens": 1619, "total_tokens": 3061}
+{"ts": "2026-07-05T16:57:55-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r5:speak:precedent_maximalist", "prompt_tokens": 1578, "completion_tokens": 2149, "total_tokens": 3727}
+{"ts": "2026-07-05T16:58:37-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r5:speak:minimalist", "prompt_tokens": 1674, "completion_tokens": 2268, "total_tokens": 3942}
+{"ts": "2026-07-05T16:59:29-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r5:speak:federalism_hawk", "prompt_tokens": 1823, "completion_tokens": 2840, "total_tokens": 4663}
+{"ts": "2026-07-05T17:00:02-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r5:speak:civil_libertarian", "prompt_tokens": 1960, "completion_tokens": 1756, "total_tokens": 3716}
+{"ts": "2026-07-05T17:00:40-0500", "model": "qwen3.7-max", "purpose": "deliberate:landmark-kelo:r5:pairing", "prompt_tokens": 776, "completion_tokens": 2043, "total_tokens": 2819}
+{"ts": "2026-07-05T17:01:22-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r5:debate:pragmatist", "prompt_tokens": 1118, "completion_tokens": 2256, "total_tokens": 3374}
+{"ts": "2026-07-05T17:01:49-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r5:debate:civil_libertarian", "prompt_tokens": 1095, "completion_tokens": 1411, "total_tokens": 2506}
+{"ts": "2026-07-05T17:02:21-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r5:debate:pragmatist", "prompt_tokens": 1081, "completion_tokens": 1695, "total_tokens": 2776}
+{"ts": "2026-07-05T17:02:51-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r5:debate:civil_libertarian", "prompt_tokens": 1092, "completion_tokens": 1607, "total_tokens": 2699}
+{"ts": "2026-07-05T17:03:34-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r5:debate:process_formalist", "prompt_tokens": 1123, "completion_tokens": 2343, "total_tokens": 3466}
+{"ts": "2026-07-05T17:04:10-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r5:debate:precedent_maximalist", "prompt_tokens": 1111, "completion_tokens": 1956, "total_tokens": 3067}
+{"ts": "2026-07-05T17:04:46-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r5:debate:process_formalist", "prompt_tokens": 1069, "completion_tokens": 1937, "total_tokens": 3006}
+{"ts": "2026-07-05T17:05:11-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r5:debate:precedent_maximalist", "prompt_tokens": 1095, "completion_tokens": 1341, "total_tokens": 2436}
+{"ts": "2026-07-05T17:05:23-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r5:revote:textualist", "prompt_tokens": 1080, "completion_tokens": 589, "total_tokens": 1669}
+{"ts": "2026-07-05T17:05:27-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r5:revote:originalist", "prompt_tokens": 1082, "completion_tokens": 761, "total_tokens": 1843}
+{"ts": "2026-07-05T17:05:31-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r5:revote:process_formalist", "prompt_tokens": 1075, "completion_tokens": 989, "total_tokens": 2064}
+{"ts": "2026-07-05T17:05:43-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r5:revote:precedent_maximalist", "prompt_tokens": 1112, "completion_tokens": 1687, "total_tokens": 2799}
+{"ts": "2026-07-05T17:05:49-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r5:revote:pragmatist", "prompt_tokens": 1101, "completion_tokens": 1987, "total_tokens": 3088}
+{"ts": "2026-07-05T17:05:49-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r5:revote:civil_libertarian", "prompt_tokens": 1100, "completion_tokens": 1995, "total_tokens": 3095}
+{"ts": "2026-07-05T17:05:51-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r5:revote:federalism_hawk", "prompt_tokens": 1097, "completion_tokens": 2098, "total_tokens": 3195}
+{"ts": "2026-07-05T17:05:55-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r5:revote:minimalist", "prompt_tokens": 1076, "completion_tokens": 2330, "total_tokens": 3406}
+{"ts": "2026-07-05T17:05:58-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r5:revote:living_constitutionalist", "prompt_tokens": 1133, "completion_tokens": 2516, "total_tokens": 3649}
+{"ts": "2026-07-05T17:06:32-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r5:digest:living_constitutionalist", "prompt_tokens": 2153, "completion_tokens": 1738, "total_tokens": 3891}
+{"ts": "2026-07-05T17:06:37-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r5:digest:originalist", "prompt_tokens": 2158, "completion_tokens": 2083, "total_tokens": 4241}
+{"ts": "2026-07-05T17:06:37-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r5:digest:process_formalist", "prompt_tokens": 2130, "completion_tokens": 2049, "total_tokens": 4179}
+{"ts": "2026-07-05T17:06:40-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r5:digest:minimalist", "prompt_tokens": 2144, "completion_tokens": 2198, "total_tokens": 4342}
+{"ts": "2026-07-05T17:06:52-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r5:digest:textualist", "prompt_tokens": 2132, "completion_tokens": 2918, "total_tokens": 5050}
+{"ts": "2026-07-05T17:06:52-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r5:digest:precedent_maximalist", "prompt_tokens": 2201, "completion_tokens": 2893, "total_tokens": 5094}
+{"ts": "2026-07-05T17:06:55-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r5:digest:civil_libertarian", "prompt_tokens": 2188, "completion_tokens": 3062, "total_tokens": 5250}
+{"ts": "2026-07-05T17:06:57-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r5:digest:pragmatist", "prompt_tokens": 2174, "completion_tokens": 3150, "total_tokens": 5324}
+{"ts": "2026-07-05T17:06:59-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-kelo:r5:digest:federalism_hawk", "prompt_tokens": 2182, "completion_tokens": 3269, "total_tokens": 5451}
+{"ts": "2026-07-05T17:07:46-0500", "model": "qwen3.7-max", "purpose": "clerk:landmark-plessy", "prompt_tokens": 394, "completion_tokens": 2449, "total_tokens": 2843}
+{"ts": "2026-07-05T17:08:00-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-plessy:r1:vote:living_constitutionalist", "prompt_tokens": 837, "completion_tokens": 683, "total_tokens": 1520}
+{"ts": "2026-07-05T17:08:00-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-plessy:r1:vote:precedent_maximalist", "prompt_tokens": 851, "completion_tokens": 707, "total_tokens": 1558}
+{"ts": "2026-07-05T17:08:06-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-plessy:r1:vote:civil_libertarian", "prompt_tokens": 840, "completion_tokens": 1009, "total_tokens": 1849}
+{"ts": "2026-07-05T17:08:09-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-plessy:r1:vote:textualist", "prompt_tokens": 856, "completion_tokens": 1197, "total_tokens": 2053}
+{"ts": "2026-07-05T17:08:11-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-plessy:r1:vote:pragmatist", "prompt_tokens": 856, "completion_tokens": 1267, "total_tokens": 2123}
+{"ts": "2026-07-05T17:08:13-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-plessy:r1:vote:minimalist", "prompt_tokens": 836, "completion_tokens": 1433, "total_tokens": 2269}
+{"ts": "2026-07-05T17:08:15-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-plessy:r1:vote:process_formalist", "prompt_tokens": 848, "completion_tokens": 1498, "total_tokens": 2346}
+{"ts": "2026-07-05T17:08:17-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-plessy:r1:vote:federalism_hawk", "prompt_tokens": 840, "completion_tokens": 1652, "total_tokens": 2492}
+{"ts": "2026-07-05T17:08:26-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-plessy:r1:vote:originalist", "prompt_tokens": 834, "completion_tokens": 2163, "total_tokens": 2997}
+{"ts": "2026-07-05T17:09:05-0500", "model": "qwen3.7-max", "purpose": "deliberate:landmark-plessy:r1:order", "prompt_tokens": 326, "completion_tokens": 2031, "total_tokens": 2357}
+{"ts": "2026-07-05T17:09:45-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-plessy:r1:speak:originalist", "prompt_tokens": 830, "completion_tokens": 2137, "total_tokens": 2967}
+{"ts": "2026-07-05T17:10:25-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-plessy:r1:speak:living_constitutionalist", "prompt_tokens": 949, "completion_tokens": 2185, "total_tokens": 3134}
+{"ts": "2026-07-05T17:10:59-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-plessy:r1:speak:textualist", "prompt_tokens": 1105, "completion_tokens": 1859, "total_tokens": 2964}
+{"ts": "2026-07-05T17:11:30-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-plessy:r1:speak:civil_libertarian", "prompt_tokens": 1200, "completion_tokens": 1635, "total_tokens": 2835}
+{"ts": "2026-07-05T17:12:20-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-plessy:r1:speak:process_formalist", "prompt_tokens": 1314, "completion_tokens": 2696, "total_tokens": 4010}
+{"ts": "2026-07-05T17:13:02-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-plessy:r1:speak:pragmatist", "prompt_tokens": 1431, "completion_tokens": 2256, "total_tokens": 3687}
+{"ts": "2026-07-05T17:13:35-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-plessy:r1:speak:federalism_hawk", "prompt_tokens": 1544, "completion_tokens": 1782, "total_tokens": 3326}
+{"ts": "2026-07-05T17:14:10-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-plessy:r1:speak:precedent_maximalist", "prompt_tokens": 1670, "completion_tokens": 1891, "total_tokens": 3561}
+{"ts": "2026-07-05T17:14:52-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-plessy:r1:speak:minimalist", "prompt_tokens": 1782, "completion_tokens": 2275, "total_tokens": 4057}
+{"ts": "2026-07-05T17:15:32-0500", "model": "qwen3.7-max", "purpose": "deliberate:landmark-plessy:r1:pairing", "prompt_tokens": 781, "completion_tokens": 2141, "total_tokens": 2922}
+{"ts": "2026-07-05T17:16:03-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-plessy:r1:debate:textualist", "prompt_tokens": 920, "completion_tokens": 1664, "total_tokens": 2584}
+{"ts": "2026-07-05T17:16:32-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-plessy:r1:debate:civil_libertarian", "prompt_tokens": 873, "completion_tokens": 1534, "total_tokens": 2407}
+{"ts": "2026-07-05T17:16:55-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-plessy:r1:debate:textualist", "prompt_tokens": 886, "completion_tokens": 1189, "total_tokens": 2075}
+{"ts": "2026-07-05T17:17:34-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-plessy:r1:debate:civil_libertarian", "prompt_tokens": 873, "completion_tokens": 2132, "total_tokens": 3005}
+{"ts": "2026-07-05T17:17:36-0500", "model": "qwen3.7-plus", "purpose": "producer:clips", "prompt_tokens": 9641, "completion_tokens": 6405, "total_tokens": 16046}
+{"ts": "2026-07-05T17:17:56-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-plessy:r1:debate:living_constitutionalist", "prompt_tokens": 911, "completion_tokens": 1160, "total_tokens": 2071}
+{"ts": "2026-07-05T17:18:24-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-plessy:r1:debate:federalism_hawk", "prompt_tokens": 873, "completion_tokens": 1448, "total_tokens": 2321}
+{"ts": "2026-07-05T17:18:45-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-plessy:r1:debate:living_constitutionalist", "prompt_tokens": 869, "completion_tokens": 1098, "total_tokens": 1967}
+{"ts": "2026-07-05T17:19:21-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-plessy:r1:debate:federalism_hawk", "prompt_tokens": 881, "completion_tokens": 1964, "total_tokens": 2845}
+{"ts": "2026-07-05T17:19:44-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-plessy:r1:revote:civil_libertarian", "prompt_tokens": 883, "completion_tokens": 1143, "total_tokens": 2026}
+{"ts": "2026-07-05T17:19:45-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-plessy:r1:revote:minimalist", "prompt_tokens": 879, "completion_tokens": 1222, "total_tokens": 2101}
+{"ts": "2026-07-05T17:19:48-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-plessy:r1:revote:textualist", "prompt_tokens": 899, "completion_tokens": 1446, "total_tokens": 2345}
+{"ts": "2026-07-05T17:19:50-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-plessy:r1:revote:living_constitutionalist", "prompt_tokens": 880, "completion_tokens": 1478, "total_tokens": 2358}
+{"ts": "2026-07-05T17:19:55-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-plessy:r1:revote:federalism_hawk", "prompt_tokens": 883, "completion_tokens": 1761, "total_tokens": 2644}
+{"ts": "2026-07-05T17:19:57-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-plessy:r1:revote:precedent_maximalist", "prompt_tokens": 894, "completion_tokens": 1843, "total_tokens": 2737}
+{"ts": "2026-07-05T17:19:59-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-plessy:r1:revote:originalist", "prompt_tokens": 877, "completion_tokens": 1986, "total_tokens": 2863}
+{"ts": "2026-07-05T17:20:10-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-plessy:r1:revote:pragmatist", "prompt_tokens": 899, "completion_tokens": 2556, "total_tokens": 3455}
+{"ts": "2026-07-05T17:20:12-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-plessy:r1:revote:process_formalist", "prompt_tokens": 891, "completion_tokens": 2747, "total_tokens": 3638}
+{"ts": "2026-07-05T17:20:23-0500", "model": "qwen3.7-plus", "purpose": "producer:script", "prompt_tokens": 1831, "completion_tokens": 9129, "total_tokens": 10960}
+{"ts": "2026-07-05T17:20:36-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 316}
+{"ts": "2026-07-05T17:20:36-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 312}
+{"ts": "2026-07-05T17:20:43-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 551}
+{"ts": "2026-07-05T17:20:44-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 684}
+{"ts": "2026-07-05T17:20:44-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-plessy:r1:digest:originalist", "prompt_tokens": 1964, "completion_tokens": 1688, "total_tokens": 3652}
+{"ts": "2026-07-05T17:20:47-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-plessy:r1:digest:pragmatist", "prompt_tokens": 1986, "completion_tokens": 1816, "total_tokens": 3802}
+{"ts": "2026-07-05T17:20:51-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 592}
+{"ts": "2026-07-05T17:20:51-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-plessy:r1:digest:living_constitutionalist", "prompt_tokens": 1967, "completion_tokens": 2064, "total_tokens": 4031}
+{"ts": "2026-07-05T17:20:53-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 630}
+{"ts": "2026-07-05T17:20:56-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-plessy:r1:digest:precedent_maximalist", "prompt_tokens": 1981, "completion_tokens": 2334, "total_tokens": 4315}
+{"ts": "2026-07-05T17:20:58-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 591}
+{"ts": "2026-07-05T17:20:58-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-plessy:r1:digest:minimalist", "prompt_tokens": 1966, "completion_tokens": 2399, "total_tokens": 4365}
+{"ts": "2026-07-05T17:20:58-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 625}
+{"ts": "2026-07-05T17:21:01-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-plessy:r1:digest:textualist", "prompt_tokens": 1986, "completion_tokens": 2614, "total_tokens": 4600}
+{"ts": "2026-07-05T17:21:02-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 562}
+{"ts": "2026-07-05T17:21:04-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 539}
+{"ts": "2026-07-05T17:21:09-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 333}
+{"ts": "2026-07-05T17:21:10-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 429}
+{"ts": "2026-07-05T17:21:11-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-plessy:r1:digest:civil_libertarian", "prompt_tokens": 1970, "completion_tokens": 3171, "total_tokens": 5141}
+{"ts": "2026-07-05T17:21:12-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 306}
+{"ts": "2026-07-05T17:21:13-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-plessy:r1:digest:federalism_hawk", "prompt_tokens": 1970, "completion_tokens": 3287, "total_tokens": 5257}
+{"ts": "2026-07-05T17:21:14-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 337}
+{"ts": "2026-07-05T17:21:18-0500", "model": "qwen3.7-plus", "purpose": "deliberate:landmark-plessy:r1:digest:process_formalist", "prompt_tokens": 1978, "completion_tokens": 3515, "total_tokens": 5493}
+{"ts": "2026-07-05T17:21:20-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 354}
+{"ts": "2026-07-05T17:21:20-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 369}
+{"ts": "2026-07-05T17:21:21-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 339}
+{"ts": "2026-07-05T17:21:23-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 352}
+{"ts": "2026-07-05T17:21:27-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 269}
+{"ts": "2026-07-05T17:21:28-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 242}
+{"ts": "2026-07-05T17:21:29-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 318}
+{"ts": "2026-07-05T17:21:40-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 464}
+{"ts": "2026-07-05T17:21:44-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 537}
+{"ts": "2026-07-05T17:21:50-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 660}
+{"ts": "2026-07-05T17:21:51-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 631}
+{"ts": "2026-07-05T17:21:57-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 594}
+{"ts": "2026-07-05T17:21:59-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 477}
+{"ts": "2026-07-05T17:22:06-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 542}
+{"ts": "2026-07-05T17:22:08-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 534}
+{"ts": "2026-07-05T17:22:09-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 499}
+{"ts": "2026-07-05T17:22:11-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 438}
+{"ts": "2026-07-05T17:22:14-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 240}
+{"ts": "2026-07-05T17:22:17-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 273}
+{"ts": "2026-07-05T17:22:18-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 334}
+{"ts": "2026-07-05T17:22:21-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 319}
+{"ts": "2026-07-05T17:22:24-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 341}
+{"ts": "2026-07-05T17:22:26-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 333}
+{"ts": "2026-07-05T17:22:29-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 323}
+{"ts": "2026-07-05T17:22:32-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 331}
+{"ts": "2026-07-05T17:22:36-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 337}
+{"ts": "2026-07-05T17:22:44-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 449}
+{"ts": "2026-07-05T17:22:46-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 458}
+{"ts": "2026-07-05T17:22:47-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 594}
+{"ts": "2026-07-05T17:22:47-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 501}
+{"ts": "2026-07-05T17:22:58-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 580}
+{"ts": "2026-07-05T17:23:02-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 562}
+{"ts": "2026-07-05T17:23:02-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 568}
+{"ts": "2026-07-05T17:23:05-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 696}
+{"ts": "2026-07-05T17:23:10-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 383}
+{"ts": "2026-07-05T17:23:10-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 343}
+{"ts": "2026-07-05T17:23:10-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 537}
+{"ts": "2026-07-05T17:23:13-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 318}
+{"ts": "2026-07-05T17:23:18-0500", "model": "qwen3.7-plus", "purpose": "producer:clips", "prompt_tokens": 2320, "completion_tokens": 4387, "total_tokens": 6707}
+{"ts": "2026-07-05T17:23:19-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 327}
+{"ts": "2026-07-05T17:23:20-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 299}
+{"ts": "2026-07-05T17:23:23-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 297}
+{"ts": "2026-07-05T17:23:24-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 392}
+{"ts": "2026-07-05T17:23:31-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 334}
+{"ts": "2026-07-05T17:23:32-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 358}
+{"ts": "2026-07-05T17:23:40-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 426}
+{"ts": "2026-07-05T17:23:44-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 648}
+{"ts": "2026-07-05T17:23:52-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 671}
+{"ts": "2026-07-05T17:23:53-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 434}
+{"ts": "2026-07-05T17:23:59-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 510}
+{"ts": "2026-07-05T17:24:05-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 542}
+{"ts": "2026-07-05T17:24:06-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 476}
+{"ts": "2026-07-05T17:24:10-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 533}
+{"ts": "2026-07-05T17:24:14-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 394}
+{"ts": "2026-07-05T17:24:15-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 290}
+{"ts": "2026-07-05T17:24:21-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 318}
+{"ts": "2026-07-05T17:24:24-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 254}
+{"ts": "2026-07-05T17:24:25-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 333}
+{"ts": "2026-07-05T17:24:30-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 357}
+{"ts": "2026-07-05T17:24:31-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 304}
+{"ts": "2026-07-05T17:24:34-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 397}
+{"ts": "2026-07-05T17:24:42-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 324}
+{"ts": "2026-07-05T17:24:42-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 415}
+{"ts": "2026-07-05T17:24:44-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 565}
+{"ts": "2026-07-05T17:24:52-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 509}
+{"ts": "2026-07-05T17:24:54-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 496}
+{"ts": "2026-07-05T17:24:56-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 414}
+{"ts": "2026-07-05T17:24:59-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 537}
+{"ts": "2026-07-05T17:25:10-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 543}
+{"ts": "2026-07-05T17:25:10-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 649}
+{"ts": "2026-07-05T17:25:11-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 473}
+{"ts": "2026-07-05T17:25:13-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 643}
+{"ts": "2026-07-05T17:25:20-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 298}
+{"ts": "2026-07-05T17:25:21-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 328}
+{"ts": "2026-07-05T17:25:22-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 344}
+{"ts": "2026-07-05T17:25:28-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 302}
+{"ts": "2026-07-05T17:25:30-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 416}
+{"ts": "2026-07-05T17:25:33-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 342}
+{"ts": "2026-07-05T17:25:33-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 347}
+{"ts": "2026-07-05T17:25:39-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 290}
+{"ts": "2026-07-05T17:25:43-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 361}
+{"ts": "2026-07-05T17:25:48-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:studio", "tts_chars": 102}
+{"ts": "2026-07-05T17:25:49-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:studio", "tts_chars": 172}
+{"ts": "2026-07-05T17:25:51-0500", "model": "qwen3.7-plus", "purpose": "producer:script", "prompt_tokens": 1588, "completion_tokens": 8424, "total_tokens": 10012}
+{"ts": "2026-07-05T17:25:55-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:studio", "tts_chars": 208}
+{"ts": "2026-07-05T17:25:56-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:studio", "tts_chars": 503}
+{"ts": "2026-07-05T17:25:57-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:studio", "tts_chars": 215}
+{"ts": "2026-07-05T17:26:00-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:studio", "tts_chars": 896}
+{"ts": "2026-07-05T17:26:01-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:studio", "tts_chars": 212}
+{"ts": "2026-07-05T17:26:02-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 310}
+{"ts": "2026-07-05T17:26:03-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:studio", "tts_chars": 225}
+{"ts": "2026-07-05T17:26:05-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 648}
+{"ts": "2026-07-05T17:26:06-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:studio", "tts_chars": 279}
+{"ts": "2026-07-05T17:26:07-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:studio", "tts_chars": 224}
+{"ts": "2026-07-05T17:26:07-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 642}
+{"ts": "2026-07-05T17:26:08-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:studio", "tts_chars": 195}
+{"ts": "2026-07-05T17:26:11-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:studio", "tts_chars": 205}
+{"ts": "2026-07-05T17:26:12-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:studio", "tts_chars": 205}
+{"ts": "2026-07-05T17:26:13-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 532}
+{"ts": "2026-07-05T17:26:15-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:studio", "tts_chars": 205}
+{"ts": "2026-07-05T17:26:16-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:studio", "tts_chars": 262}
+{"ts": "2026-07-05T17:26:21-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:studio", "tts_chars": 220}
+{"ts": "2026-07-05T17:26:21-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 573}
+{"ts": "2026-07-05T17:26:21-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:studio", "tts_chars": 197}
+{"ts": "2026-07-05T17:26:21-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 522}
+{"ts": "2026-07-05T17:26:23-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:studio", "tts_chars": 252}
+{"ts": "2026-07-05T17:26:23-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:studio", "tts_chars": 249}
+{"ts": "2026-07-05T17:26:24-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 486}
+{"ts": "2026-07-05T17:26:24-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 527}
+{"ts": "2026-07-05T17:26:28-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:studio", "tts_chars": 213}
+{"ts": "2026-07-05T17:26:28-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:studio", "tts_chars": 235}
+{"ts": "2026-07-05T17:26:31-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:studio", "tts_chars": 217}
+{"ts": "2026-07-05T17:26:36-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 321}
+{"ts": "2026-07-05T17:26:36-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 447}
+{"ts": "2026-07-05T17:26:38-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:studio", "tts_chars": 437}
+{"ts": "2026-07-05T17:26:39-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 562}
+{"ts": "2026-07-05T17:26:40-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:studio", "tts_chars": 331}
+{"ts": "2026-07-05T17:26:42-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:studio", "tts_chars": 373}
+{"ts": "2026-07-05T17:26:44-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 288}
+{"ts": "2026-07-05T17:26:46-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 313}
+{"ts": "2026-07-05T17:26:48-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:studio", "tts_chars": 285}
+{"ts": "2026-07-05T17:26:49-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:studio", "tts_chars": 534}
+{"ts": "2026-07-05T17:26:50-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:studio", "tts_chars": 206}
+{"ts": "2026-07-05T17:26:51-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:studio", "tts_chars": 323}
+{"ts": "2026-07-05T17:26:51-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 340}
+{"ts": "2026-07-05T17:26:53-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 359}
+{"ts": "2026-07-05T17:26:53-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:studio", "tts_chars": 136}
+{"ts": "2026-07-05T17:26:54-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 321}
+{"ts": "2026-07-05T17:27:02-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 390}
+{"ts": "2026-07-05T17:27:03-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 359}
+{"ts": "2026-07-05T17:27:09-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:deliberation", "tts_chars": 423}
+{"ts": "2026-07-05T17:27:13-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:studio", "tts_chars": 60}
+{"ts": "2026-07-05T17:27:18-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:studio", "tts_chars": 229}
+{"ts": "2026-07-05T17:27:18-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:studio", "tts_chars": 236}
+{"ts": "2026-07-05T17:27:22-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:studio", "tts_chars": 59}
+{"ts": "2026-07-05T17:27:27-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:studio", "tts_chars": 226}
+{"ts": "2026-07-05T17:27:28-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:studio", "tts_chars": 148}
+{"ts": "2026-07-05T17:27:28-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:studio", "tts_chars": 531}
+{"ts": "2026-07-05T17:27:31-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:studio", "tts_chars": 686}
+{"ts": "2026-07-05T17:27:34-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:studio", "tts_chars": 138}
+{"ts": "2026-07-05T17:27:34-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:studio", "tts_chars": 253}
+{"ts": "2026-07-05T17:27:36-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:studio", "tts_chars": 131}
+{"ts": "2026-07-05T17:27:36-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:studio", "tts_chars": 277}
+{"ts": "2026-07-05T17:27:39-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:studio", "tts_chars": 158}
+{"ts": "2026-07-05T17:27:41-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:studio", "tts_chars": 247}
+{"ts": "2026-07-05T17:27:42-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:studio", "tts_chars": 158}
+{"ts": "2026-07-05T17:27:43-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:studio", "tts_chars": 280}
+{"ts": "2026-07-05T17:27:45-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:studio", "tts_chars": 249}
+{"ts": "2026-07-05T17:27:53-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:studio", "tts_chars": 332}
+{"ts": "2026-07-05T17:27:53-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:studio", "tts_chars": 226}
+{"ts": "2026-07-05T17:27:56-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:studio", "tts_chars": 547}
+{"ts": "2026-07-05T17:27:56-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:studio", "tts_chars": 761}
+{"ts": "2026-07-05T17:29:36-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:studio", "tts_chars": 60}
+{"ts": "2026-07-05T17:29:40-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:studio", "tts_chars": 229}
+{"ts": "2026-07-05T17:29:41-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:studio", "tts_chars": 236}
+{"ts": "2026-07-05T17:29:43-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:studio", "tts_chars": 59}
+{"ts": "2026-07-05T17:29:47-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:studio", "tts_chars": 226}
+{"ts": "2026-07-05T17:29:47-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:studio", "tts_chars": 148}
+{"ts": "2026-07-05T17:29:50-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:studio", "tts_chars": 531}
+{"ts": "2026-07-05T17:29:51-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:studio", "tts_chars": 686}
+{"ts": "2026-07-05T17:29:53-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:studio", "tts_chars": 138}
+{"ts": "2026-07-05T17:29:55-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:studio", "tts_chars": 253}
+{"ts": "2026-07-05T17:29:56-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:studio", "tts_chars": 131}
+{"ts": "2026-07-05T17:29:58-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:studio", "tts_chars": 277}
+{"ts": "2026-07-05T17:29:59-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:studio", "tts_chars": 247}
+{"ts": "2026-07-05T17:30:00-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:studio", "tts_chars": 158}
+{"ts": "2026-07-05T17:30:04-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:studio", "tts_chars": 280}
+{"ts": "2026-07-05T17:30:05-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:studio", "tts_chars": 158}
+{"ts": "2026-07-05T17:30:05-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:studio", "tts_chars": 249}
+{"ts": "2026-07-05T17:30:10-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:studio", "tts_chars": 332}
+{"ts": "2026-07-05T17:30:16-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:studio", "tts_chars": 481}
+{"ts": "2026-07-05T17:30:17-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:studio", "tts_chars": 547}
+{"ts": "2026-07-05T17:30:17-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:studio", "tts_chars": 226}
+{"ts": "2026-07-05T17:30:22-0500", "model": "qwen3-tts-vd-2026-01-26", "purpose": "producer:tts:studio", "tts_chars": 870}

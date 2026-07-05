@@ -1,0 +1,95 @@
+{
+  "case_id": "landmark-kelo",
+  "clips": [
+    {
+      "id": "c01",
+      "purpose": "cold_open",
+      "event_span": [
+        12,
+        13
+      ],
+      "note": "Living Constitutionalist and Originalist clash over public use versus public purpose."
+    },
+    {
+      "id": "c02",
+      "purpose": "flip",
+      "event_span": [
+        34,
+        34
+      ],
+      "note": "Federalism Hawk flips to affirm, citing state police power over local planning."
+    },
+    {
+      "id": "c03",
+      "purpose": "flip",
+      "event_span": [
+        41,
+        41
+      ],
+      "note": "Living Constitutionalist flips to reverse, persuaded by dignity and non-blighted sanctuary arguments."
+    },
+    {
+      "id": "c04",
+      "purpose": "flip",
+      "event_span": [
+        69,
+        69
+      ],
+      "note": "Living Constitutionalist flips back to affirm, convinced by Pragmatist's warning on urban paralysis."
+    },
+    {
+      "id": "c05",
+      "purpose": "color",
+      "event_span": [
+        15,
+        19
+      ],
+      "note": "Initial threshold and merits debate: standing, precedent, federalism, liberty, and minimalist off-ramps."
+    },
+    {
+      "id": "c06",
+      "purpose": "color",
+      "event_span": [
+        25,
+        28
+      ],
+      "note": "Pragmatist and Civil Libertarian fiercely debate holdout vetoes versus individual dignity and liberty."
+    },
+    {
+      "id": "c07",
+      "purpose": "color",
+      "event_span": [
+        50,
+        53
+      ],
+      "note": "Round two opening: Pragmatist warns of text traps, Originalist and Precedent Maximalist respond."
+    },
+    {
+      "id": "c08",
+      "purpose": "color",
+      "event_span": [
+        89,
+        92
+      ],
+      "note": "Pragmatist defends assembly math; Civil Libertarian, Federalism Hawk, and Process Formalist push back."
+    },
+    {
+      "id": "c09",
+      "purpose": "color",
+      "event_span": [
+        168,
+        171
+      ],
+      "note": "Final clash: Pragmatist demands workable blight standards, Civil Libertarian defends home as sanctuary."
+    },
+    {
+      "id": "c10",
+      "purpose": "verdict_run",
+      "event_span": [
+        173,
+        175
+      ],
+      "note": "Precedent Maximalist and Process Formalist argue over state finality versus federal Article III jurisdiction."
+    }
+  ]
+}
