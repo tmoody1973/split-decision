@@ -32,6 +32,35 @@ Three conditions, identical case records:
 **C − B is the value of deliberation itself** — the headline number. A null or
 negative result gets reported honestly as a finding.
 
+## Results (first full run, July 5, 2026)
+
+| Condition | Post-cutoff accuracy | Famous landmarks | Ordinary historical |
+|---|---|---|---|
+| A — solo `qwen3.7-max` | **83.0%** (n=94) | 95.8% | 96.0% |
+| B — silent jury of 9 | 77.4% (n=93) | 95.8% | 100% |
+| C — full deliberation | **66.7%** (n=24) | — | — |
+
+Three measured findings, reproducible via `scripts/run_benchmark.py`:
+
+1. **Contamination is ~15 points and reaches obscure cases.** The model scores
+   96–100% on *anything* pre-cutoff — even cases no law student has heard of —
+   vs 77–83% on post-cutoff cases. Benchmarks on historical rulings are
+   measuring memory, not judgment.
+2. **More agents, worse predictions — monotonically.** A > B > C. Nine
+   philosophically committed jurists vote their philosophies; the real Court
+   is more unanimous than a panel of ideologues (jury split-distance 2.0 vs
+   solo 0.73). Deliberation amplified rather than corrected: 85 argued vote
+   changes across 24 cases, and accuracy fell another 10 points.
+3. **Steerability follows philosophy.** Flip counts per juror: Minimalist 21,
+   Pragmatist 14, Precedent Maximalist 13 … Originalist 1, Textualist 1. The
+   archetypes anchored to fixed sources (text, history) are nearly immovable;
+   the ones anchored to case-by-case judgment sway constantly.
+
+Deliberation makes worse predictions and much better arguments — which is the
+honest trade this project set out to measure. (One of 25 deliberation cases
+failed on a content-moderation block and is excluded; per-case predictions
+live in `scoreboard/predictions/`.)
+
 ### Contamination guard (and the memorization exhibit)
 
 Benchmark cases are decided **after 2025-06-01** — past every model's training
