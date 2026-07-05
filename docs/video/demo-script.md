@@ -98,7 +98,7 @@ highlighted) → landing page → end card: URL, GitHub, `Track 3 · Agent Socie
   cut (~1:50–2:40 of the Pung podcast); Plessy verdict moment; landing hero + diagram
   + prompt modal. Capture AFTER final UI sign-off.
 - **VO:** `scripts/make_demo_vo.py` extracts the `VO-n` blocks above and renders
-  ElevenLabs MP3s to `video/vo/` (voice via `ELEVENLABS_VOICE_ID`, default Daniel).
+  ElevenLabs MP3s to `video/vo/` (voice locked: `pDxcmDdBPmpAPjBko2mF`).
 - **Hyperframes:** project in `video/` — design.md mirrors the app palette
   (`#1a140d/#f0d79a/#caa24a/#7a1f2b/#1e2a4a`, ui-monospace). Rhythm:
   TAPE-fast-DIAGRAM-hold-CUT-fast-BARS-slow-hold-CLOSE.
