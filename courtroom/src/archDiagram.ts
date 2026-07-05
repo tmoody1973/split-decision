@@ -90,7 +90,12 @@ export async function createArchDiagram(mount: HTMLElement): Promise<ArchDiagram
     autoStart: false,
     resolution: 1,
   });
-  app.canvas.style.width = "100%";
+  // Fit the whole diagram on screen: constrain BOTH axes and let the browser keep
+  // the canvas's intrinsic 16:9 — a width-only rule overflows short windows and
+  // <dialog> doesn't scroll, clipping the bottom of the diagram.
+  app.canvas.style.maxWidth = "min(1280px, 92vw)";
+  app.canvas.style.maxHeight = "calc(92vh - 60px)";
+  app.canvas.style.width = "auto";
   app.canvas.style.height = "auto";
   app.canvas.style.imageRendering = "pixelated";
   mount.appendChild(app.canvas);

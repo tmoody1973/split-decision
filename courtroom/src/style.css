@@ -203,7 +203,8 @@ body.record #app {
   border: 3px solid #8a5a2b;
   background: #1a140d;
   padding: 0;
-  width: min(1320px, 94vw);
+  width: fit-content;
+  max-width: 94vw;
 }
 #arch-modal::backdrop { background: rgba(6, 4, 2, 0.82); }
 #arch-bar {
