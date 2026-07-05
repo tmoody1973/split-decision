@@ -30,10 +30,21 @@
     "mean_split_distance": 1.48
   },
   "benchmark:C": {
-    "n": 3,
-    "accuracy": 0.333,
+    "n": 24,
+    "accuracy": 0.667,
     "mean_split_distance": 2.67,
-    "total_vote_changes": 21,
-    "mean_rounds": 4.0
+    "total_vote_changes": 85,
+    "mean_rounds": 2.92,
+    "flips_by_agent": {
+      "minimalist": 21,
+      "pragmatist": 14,
+      "precedent_maximalist": 13,
+      "living_constitutionalist": 12,
+      "civil_libertarian": 11,
+      "federalism_hawk": 10,
+      "process_formalist": 2,
+      "originalist": 1,
+      "textualist": 1
+    }
   }
 }
