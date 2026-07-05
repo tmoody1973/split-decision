@@ -45,6 +45,7 @@ export class JuristSprite {
   private visualBaseY: number;
   private readonly frameH: number;
   private bottomPad = 0;
+  private plateEnabled = true;
 
   private home = { x: 0, y: 0 };
   private lectern = { x: 0, y: 0 };
@@ -120,6 +121,24 @@ export class JuristSprite {
       this.visualBaseY = -h / 2;
       rect.setY(this.visualBaseY);
     }
+  }
+
+  /** Show/hide the whole unit (sprite + nameplate) — used by the studio/courtroom cut. */
+  setVisible(on: boolean): void {
+    this.container.setVisible(on);
+    this.plate.setVisible(on && this.plateEnabled);
+  }
+
+  /** Permanently drop the nameplate (studio anchors — the desk has no plate rail). */
+  disablePlate(): void {
+    this.plateEnabled = false;
+    this.plate.setVisible(false);
+  }
+
+  /** Override the depth band (studio anchors render above the studio backdrop). */
+  setBaseDepth(depth: number): void {
+    this.container.setDepth(depth);
+    this.plate.setDepth(depth + 1);
   }
 
   setSeat(x: number, y: number): void {

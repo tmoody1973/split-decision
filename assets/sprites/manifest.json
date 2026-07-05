@@ -1,12 +1,36 @@
 {
   "_format": "one entry per persona; sheets are horizontal strips; anims list frame indices; palette_accent matches THEME.md and drives VoteBoard/Record colors",
   "textualist": {
-    "sheets": { "idle": "textualist_idle.png", "walk": "textualist_walk.png" },
+    "sheets": {
+      "idle": "textualist_idle.png",
+      "walk": "textualist_walk.png"
+    },
     "base": "textualist_base.png",
     "frame_w": 88,
     "frame_h": 88,
     "fps": 8,
-    "anims": { "idle": [0, 1, 2, 3, 4, 5, 6, 7], "walk": [0, 1, 2, 3, 4, 5, 6, 7] },
+    "anims": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "walk": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
     "palette_accent": "#7a1f2b",
     "spritecook": {
       "character_id": "1071579d-352d-4e52-bc62-febc68ed0f8b",
@@ -15,12 +39,36 @@
     }
   },
   "pragmatist": {
-    "sheets": { "idle": "pragmatist_idle.png", "walk": "pragmatist_walk.png" },
+    "sheets": {
+      "idle": "pragmatist_idle.png",
+      "walk": "pragmatist_walk.png"
+    },
     "base": "pragmatist_base.png",
     "frame_w": 80,
     "frame_h": 80,
     "fps": 8,
-    "anims": { "idle": [0, 1, 2, 3, 4, 5, 6, 7], "walk": [0, 1, 2, 3, 4, 5, 6, 7] },
+    "anims": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "walk": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
     "palette_accent": "#c27b2c",
     "spritecook": {
       "character_id": "2e1cad7b-61b7-4cb4-b803-df740d1813d9",
@@ -29,12 +77,36 @@
     }
   },
   "originalist": {
-    "sheets": { "idle": "originalist_idle.png", "walk": "originalist_walk.png" },
+    "sheets": {
+      "idle": "originalist_idle.png",
+      "walk": "originalist_walk.png"
+    },
     "base": "originalist_base.png",
     "frame_w": 158,
     "frame_h": 158,
     "fps": 8,
-    "anims": { "idle": [0, 1, 2, 3, 4, 5, 6, 7], "walk": [0, 1, 2, 3, 4, 5, 6, 7] },
+    "anims": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "walk": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
     "palette_accent": "#5b4a2f",
     "spritecook": {
       "character_id": "430272d8-d69a-4f3f-b122-4ebbc9376366",
@@ -43,12 +115,36 @@
     }
   },
   "living_constitutionalist": {
-    "sheets": { "idle": "living_constitutionalist_idle.png", "walk": "living_constitutionalist_walk.png" },
+    "sheets": {
+      "idle": "living_constitutionalist_idle.png",
+      "walk": "living_constitutionalist_walk.png"
+    },
     "base": "living_constitutionalist_base.png",
     "frame_w": 86,
     "frame_h": 86,
     "fps": 8,
-    "anims": { "idle": [0, 1, 2, 3, 4, 5, 6, 7], "walk": [0, 1, 2, 3, 4, 5, 6, 7] },
+    "anims": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "walk": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
     "palette_accent": "#2e6f5e",
     "spritecook": {
       "character_id": "354e8be7-cd65-4d1e-8b03-d39a41507f81",
@@ -57,12 +153,36 @@
     }
   },
   "precedent_maximalist": {
-    "sheets": { "idle": "precedent_maximalist_idle.png", "walk": "precedent_maximalist_walk.png" },
+    "sheets": {
+      "idle": "precedent_maximalist_idle.png",
+      "walk": "precedent_maximalist_walk.png"
+    },
     "base": "precedent_maximalist_base.png",
     "frame_w": 106,
     "frame_h": 106,
     "fps": 8,
-    "anims": { "idle": [0, 1, 2, 3, 4, 5, 6, 7], "walk": [0, 1, 2, 3, 4, 5, 6, 7] },
+    "anims": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "walk": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
     "palette_accent": "#4a4e69",
     "spritecook": {
       "character_id": "f8c5da77-5265-437b-8590-9ec39c88792d",
@@ -71,12 +191,36 @@
     }
   },
   "federalism_hawk": {
-    "sheets": { "idle": "federalism_hawk_idle.png", "walk": "federalism_hawk_walk.png" },
+    "sheets": {
+      "idle": "federalism_hawk_idle.png",
+      "walk": "federalism_hawk_walk.png"
+    },
     "base": "federalism_hawk_base.png",
     "frame_w": 96,
     "frame_h": 96,
     "fps": 8,
-    "anims": { "idle": [0, 1, 2, 3, 4, 5, 6, 7], "walk": [0, 1, 2, 3, 4, 5, 6, 7] },
+    "anims": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "walk": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
     "palette_accent": "#8c3b00",
     "spritecook": {
       "character_id": "77891128-b40d-49e0-a898-cbb7d0f97a8c",
@@ -85,12 +229,36 @@
     }
   },
   "civil_libertarian": {
-    "sheets": { "idle": "civil_libertarian_idle.png", "walk": "civil_libertarian_walk.png" },
+    "sheets": {
+      "idle": "civil_libertarian_idle.png",
+      "walk": "civil_libertarian_walk.png"
+    },
     "base": "civil_libertarian_base.png",
     "frame_w": 88,
     "frame_h": 88,
     "fps": 8,
-    "anims": { "idle": [0, 1, 2, 3, 4, 5, 6, 7], "walk": [0, 1, 2, 3, 4, 5, 6, 7] },
+    "anims": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "walk": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
     "palette_accent": "#2b6cb0",
     "spritecook": {
       "character_id": "1ed32da9-d1f5-477b-b80a-3b661c123d64",
@@ -99,12 +267,36 @@
     }
   },
   "process_formalist": {
-    "sheets": { "idle": "process_formalist_idle.png", "walk": "process_formalist_walk.png" },
+    "sheets": {
+      "idle": "process_formalist_idle.png",
+      "walk": "process_formalist_walk.png"
+    },
     "base": "process_formalist_base.png",
     "frame_w": 192,
     "frame_h": 192,
     "fps": 8,
-    "anims": { "idle": [0, 1, 2, 3, 4, 5, 6, 7], "walk": [0, 1, 2, 3, 4, 5, 6, 7] },
+    "anims": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "walk": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
     "palette_accent": "#6b7280",
     "spritecook": {
       "character_id": "d9f9080c-9d6e-4d5e-a079-403a0faa0dc3",
@@ -113,12 +305,36 @@
     }
   },
   "minimalist": {
-    "sheets": { "idle": "minimalist_idle.png", "walk": "minimalist_walk.png" },
+    "sheets": {
+      "idle": "minimalist_idle.png",
+      "walk": "minimalist_walk.png"
+    },
     "base": "minimalist_base.png",
     "frame_w": 86,
     "frame_h": 86,
     "fps": 8,
-    "anims": { "idle": [0, 1, 2, 3, 4, 5, 6, 7], "walk": [0, 1, 2, 3, 4, 5, 6, 7] },
+    "anims": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "walk": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
     "palette_accent": "#9b8ec4",
     "spritecook": {
       "character_id": "dba610bc-06d5-4312-b18e-7f61d366a698",
@@ -127,12 +343,36 @@
     }
   },
   "foreperson": {
-    "sheets": { "idle": "foreperson_idle.png", "walk": "foreperson_walk.png" },
+    "sheets": {
+      "idle": "foreperson_idle.png",
+      "walk": "foreperson_walk.png"
+    },
     "base": "foreperson_base.png",
     "frame_w": 90,
     "frame_h": 90,
     "fps": 8,
-    "anims": { "idle": [0, 1, 2, 3, 4, 5, 6, 7], "walk": [0, 1, 2, 3, 4, 5, 6, 7] },
+    "anims": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "walk": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
     "palette_accent": "#1f2a44",
     "spritecook": {
       "character_id": "86b47f9d-0703-4e1c-a8c3-2e81cc79fe29",
@@ -141,12 +381,36 @@
     }
   },
   "anchor_lead": {
-    "sheets": { "idle": "anchor_lead_idle.png", "walk": "anchor_lead_walk.png" },
+    "sheets": {
+      "idle": "anchor_lead_idle.png",
+      "walk": "anchor_lead_walk.png"
+    },
     "base": "anchor_lead_base.png",
     "frame_w": 98,
     "frame_h": 98,
     "fps": 8,
-    "anims": { "idle": [0, 1, 2, 3, 4, 5, 6, 7], "walk": [0, 1, 2, 3, 4, 5, 6, 7] },
+    "anims": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "walk": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
     "palette_accent": "#b23a48",
     "spritecook": {
       "character_id": "1dbdd5c6-e7ef-4815-853a-e6350226ee0b",
@@ -155,12 +419,36 @@
     }
   },
   "anchor_analyst": {
-    "sheets": { "idle": "anchor_analyst_idle.png", "walk": "anchor_analyst_walk.png" },
+    "sheets": {
+      "idle": "anchor_analyst_idle.png",
+      "walk": "anchor_analyst_walk.png"
+    },
     "base": "anchor_analyst_base.png",
     "frame_w": 174,
     "frame_h": 174,
     "fps": 8,
-    "anims": { "idle": [0, 1, 2, 3, 4, 5, 6, 7], "walk": [0, 1, 2, 3, 4, 5, 6, 7] },
+    "anims": {
+      "idle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "walk": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
     "palette_accent": "#3a7ca5",
     "spritecook": {
       "character_id": "af867b9b-f86b-403a-9107-0dd8e66d61be",
@@ -174,19 +462,25 @@
       "file": "set_courtroom_bg.png",
       "width": 512,
       "height": 288,
-      "spritecook": { "asset_id": "1704c2f1-181b-4cb0-ad74-d337639a360a" }
+      "spritecook": {
+        "asset_id": "1704c2f1-181b-4cb0-ad74-d337639a360a"
+      }
     },
     "lectern": {
       "file": "set_lectern.png",
       "width": 66,
       "height": 66,
-      "spritecook": { "asset_id": "8b31cf2d-9710-43e2-995d-6d94c6f19749" }
+      "spritecook": {
+        "asset_id": "8b31cf2d-9710-43e2-995d-6d94c6f19749"
+      }
     },
     "news_desk": {
       "file": "set_newsdesk.png",
-      "width": 150,
-      "height": 150,
-      "spritecook": { "asset_id": "2a598060-0334-4b93-87a4-dc23d8f806a4" }
+      "width": 186,
+      "height": 186,
+      "spritecook": {
+        "asset_id": "218600a0-2c2b-4b6c-a8d0-8c9cf92d6d00"
+      }
     }
   }
 }

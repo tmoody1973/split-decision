@@ -65,6 +65,13 @@ export class RecordPanel {
         el.innerHTML = `<span class="ts">${fmt(ev.t)}</span><span class="who" style="color:${p.accent}">${p.display}:</span> ${escapeHtml(ev.text)}`;
         return el;
       }
+      case "studio": {
+        const p = personaFor(ev.agent);
+        const el = document.createElement("div");
+        el.className = "line studio";
+        el.innerHTML = `<span class="ts">${fmt(ev.t)}</span><span class="who" style="color:${p.accent}">STUDIO · ${p.display}:</span> ${escapeHtml(ev.text)}`;
+        return el;
+      }
       case "foreperson": {
         const el = document.createElement("div");
         el.className = "line foreperson";

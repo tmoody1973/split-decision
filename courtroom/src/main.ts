@@ -3,6 +3,7 @@ import { AudioClock, loadEpisodeAudio } from "./audioClock";
 import { CourtScene } from "./CourtScene";
 import { TimerClock } from "./clock";
 import { parseManifest, setPieceFile, type SpriteManifest } from "./manifest";
+import { loadPodcastTimeline } from "./podcastTimeline";
 import { normalizeEvents, parseJsonl } from "./normalize";
 import { RecordPanel } from "./RecordPanel";
 import { TimelinePlayer } from "./TimelinePlayer";
@@ -29,13 +30,21 @@ async function loadIndex(): Promise<EpisodeIndex> {
   }
 }
 
-async function loadManifest(): Promise<{ manifest: SpriteManifest; bgFile: string | null }> {
+async function loadManifest(): Promise<{
+  manifest: SpriteManifest;
+  bgFile: string | null;
+  deskFile: string | null;
+}> {
   try {
     const raw = JSON.parse(await fetchText("assets/sprites/manifest.json"));
-    return { manifest: parseManifest(raw), bgFile: setPieceFile(raw, "courtroom_bg") };
+    return {
+      manifest: parseManifest(raw),
+      bgFile: setPieceFile(raw, "courtroom_bg"),
+      deskFile: setPieceFile(raw, "news_desk"),
+    };
   } catch (err) {
     console.warn("no sprite manifest — all jurists render as placeholders", err);
-    return { manifest: {}, bgFile: null };
+    return { manifest: {}, bgFile: null, deskFile: null };
   }
 }
 
@@ -49,18 +58,24 @@ async function boot(): Promise<void> {
 
   const index = await loadIndex();
   const episodeId = params.get("episode") ?? index.default;
-  const [rawEvents, { manifest, bgFile }, audio] = await Promise.all([
+  const wantPodcast = params.get("mode") === "podcast";
+  const [rawEvents, { manifest, bgFile, deskFile }, pod] = await Promise.all([
     fetchText(`episodes/${episodeId}/events.jsonl`),
     loadManifest(),
-    loadEpisodeAudio(episodeId),
+    loadPodcastTimeline(episodeId), // null when the episode has no produced podcast
   ]);
+  const podcast = wantPodcast && pod !== null;
+  if (wantPodcast && !podcast) console.warn(`no podcast data for ${episodeId} — courtroom mode`);
 
-  const events = normalizeEvents(parseJsonl(rawEvents));
-  // Audio is the master clock whenever the episode ships a pre-rendered replay track;
-  // the wall-clock timer remains the fallback (e.g. the smoke fixture has no audio).
+  // Master clock: podcast mode plays the mixed episode; courtroom mode the replay
+  // track. The wall-clock timer remains the fallback (e.g. the smoke fixture).
+  const audio = await loadEpisodeAudio(episodeId, podcast ? "episode.mp3" : "deliberation.mp3");
   const clock = audio ? new AudioClock(audio) : new TimerClock();
-  if (!audio) console.warn(`no deliberation.mp3 for ${episodeId} — silent TimerClock replay`);
+  if (!audio) console.warn(`no audio for ${episodeId} — silent TimerClock replay`);
+
+  const events = podcast ? pod.merged : normalizeEvents(parseJsonl(rawEvents));
   const player = new TimelinePlayer(events, clock);
+  wireModeToggle(episodeId, podcast, pod !== null);
 
   const recordRoot = document.getElementById("record") as HTMLElement;
   const record = new RecordPanel(recordRoot, (ms) => player.seek(ms));
@@ -103,7 +118,16 @@ async function boot(): Promise<void> {
     backgroundColor: "#0f0d0a",
     pixelArt: true,
     scale: { mode: Phaser.Scale.RESIZE, autoCenter: Phaser.Scale.NO_CENTER },
-    scene: new CourtScene({ manifest, bgFile, player, record, onFrame }),
+    scene: new CourtScene({
+      manifest,
+      bgFile,
+      player,
+      record,
+      onFrame,
+      ...(podcast
+        ? { stateEvents: pod.stateEvents, sceneTime: pod.sceneTime, streamAt: pod.streamAt, deskFile }
+        : {}),
+    }),
   });
 
   if (recordMode) {
@@ -112,6 +136,22 @@ async function boot(): Promise<void> {
   }
 
   wireArchModal();
+}
+
+// PODCAST/CHAMBER toggle — only for episodes with a produced podcast (cue sheet +
+// episode.mp3). Swapping the `mode` param reloads into the other view.
+function wireModeToggle(episodeId: string, inPodcast: boolean, available: boolean): void {
+  if (!available) return;
+  const link = document.createElement("a");
+  link.id = "mode-toggle";
+  link.textContent = inPodcast ? "◂ CHAMBER" : "PODCAST ▸";
+  const next = new URLSearchParams(location.search);
+  next.set("episode", episodeId);
+  if (inPodcast) next.delete("mode");
+  else next.set("mode", "podcast");
+  link.href = `?${next.toString()}`;
+  const picker = document.getElementById("episode-picker") as HTMLElement;
+  picker.parentElement?.insertBefore(link, picker);
 }
 
 // The judged architecture diagram (PixiJS, lazy chunk) behind a modal — the diagram

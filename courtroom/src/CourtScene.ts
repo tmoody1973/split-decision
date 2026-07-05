@@ -4,10 +4,11 @@ import { JuristSprite } from "./JuristSprite";
 import type { SpriteManifest } from "./manifest";
 import { JURIST_ORDER, personaFor } from "./personas";
 import { RecordPanel, tallyOf } from "./RecordPanel";
+import { replayState } from "./replayState";
 import { Stage } from "./Stage";
 import { TimelinePlayer } from "./TimelinePlayer";
 import { VoteBoard } from "./VoteBoard";
-import type { Place } from "./types";
+import type { NormalizedEvent, Place } from "./types";
 
 export interface SceneDeps {
   manifest: SpriteManifest;
@@ -15,6 +16,15 @@ export interface SceneDeps {
   player: TimelinePlayer;
   record: RecordPanel;
   onFrame: (now: number, duration: number, playing: boolean) => void;
+  // Podcast mode (all optional; absent = plain courtroom replay):
+  /** Full deliberation on the replay clock — the vote board's state source. */
+  stateEvents?: NormalizedEvent[];
+  /** Podcast clock -> replay clock (which deliberation moment the tape came from). */
+  sceneTime?: (t: number) => number;
+  /** Which set the camera shows at a podcast instant. */
+  streamAt?: (t: number) => "studio" | "deliberation";
+  /** News-desk set piece file; enables the studio set. */
+  deskFile?: string | null;
 }
 
 // The renderer proper. It reconstructs stage state from the player every frame and drives
@@ -27,6 +37,15 @@ export class CourtScene extends Phaser.Scene {
   private sprites: Record<string, JuristSprite> = {};
   private verdictBanner!: Phaser.GameObjects.Text;
   private bubbleIndex = -1;
+  // Studio set (podcast mode): a full-canvas cutaway above the courtroom.
+  private studio?: {
+    backdrop: Phaser.GameObjects.Graphics;
+    deskBack: Phaser.GameObjects.Image; // chairs — behind the anchors
+    desk: Phaser.GameObjects.Image; // counter — in front of them
+    caption: Phaser.GameObjects.Text;
+    anchors: Record<string, JuristSprite>;
+  };
+  private onStudio = false;
 
   constructor(private readonly deps: SceneDeps) {
     super("court");
@@ -38,6 +57,9 @@ export class CourtScene extends Phaser.Scene {
     });
     if (this.deps.bgFile) {
       this.load.image("courtroom_bg", `assets/sprites/${this.deps.bgFile}`);
+    }
+    if (this.deps.deskFile) {
+      this.load.image("news_desk", `assets/sprites/${this.deps.deskFile}`);
     }
     for (const [id, entry] of Object.entries(this.deps.manifest)) {
       const cfg = { frameWidth: entry.frame_w, frameHeight: entry.frame_h };
@@ -75,6 +97,34 @@ export class CourtScene extends Phaser.Scene {
       this.sprites[id] = new JuristSprite(this, personaFor(id), this.deps.manifest[id], seatW);
     }
 
+    if (this.deps.deskFile && this.textures.exists("news_desk")) {
+      const anchors: Record<string, JuristSprite> = {};
+      const seatW = this.scale.width / 6;
+      for (const id of ["anchor_lead", "anchor_analyst"]) {
+        const a = new JuristSprite(this, personaFor(id), this.deps.manifest[id], seatW);
+        a.setBaseDepth(305);
+        a.disablePlate();
+        a.setVisible(false);
+        anchors[id] = a;
+      }
+      this.studio = {
+        backdrop: this.add.graphics().setDepth(300).setVisible(false),
+        deskBack: this.add.image(0, 0, "news_desk").setOrigin(0.5, 1).setDepth(302).setVisible(false),
+        desk: this.add.image(0, 0, "news_desk").setOrigin(0.5, 1).setDepth(310).setVisible(false),
+        caption: this.add
+          .text(0, 0, "SPLIT DECISION — THE DESK", {
+            fontFamily: "ui-monospace, monospace",
+            fontSize: "13px",
+            color: "#9a8f7d",
+            fontStyle: "bold",
+          })
+          .setOrigin(0.5, 0)
+          .setDepth(315)
+          .setVisible(false),
+        anchors,
+      };
+    }
+
     this.verdictBanner = this.add
       .text(0, 0, "", {
         fontFamily: "ui-monospace, monospace",
@@ -105,6 +155,51 @@ export class CourtScene extends Phaser.Scene {
     });
     this.board.layout(layout.board.x, layout.board.y, layout.board.width);
     this.verdictBanner.setPosition(width / 2, height * 0.5);
+
+    if (this.studio) {
+      const s = this.studio;
+      s.backdrop.clear();
+      s.backdrop.fillStyle(0x10131f, 1).fillRect(0, 0, width, height);
+      s.backdrop.fillStyle(0x1c2233, 1).fillRect(0, height * 0.7, width, height * 0.3);
+      // Spotlight wash behind the desk.
+      s.backdrop.fillStyle(0x2a3350, 0.5).fillRect(width * 0.2, 0, width * 0.6, height * 0.7);
+      // Frontal desk, split into two layers so the anchors sandwich between them:
+      // the painted chairs render behind the sprites, the counter in front — the
+      // same occlusion trick as the courtroom bench overlay.
+      const SPLIT = 0.5; // texture fraction where the desk surface line sits
+      const deskW = Math.min(width * 0.62, 720);
+      const scale = deskW / s.desk.width;
+      for (const img of [s.deskBack, s.desk]) {
+        img.setScale(scale).setPosition(width / 2, height * 0.86);
+      }
+      const texH = s.desk.height;
+      s.deskBack.setCrop(0, 0, s.desk.width, texH * SPLIT);
+      s.desk.setCrop(0, texH * SPLIT, s.desk.width, texH * (1 - SPLIT));
+      const deskH = s.desk.displayHeight;
+      const deskTop = height * 0.86 - deskH;
+      const anchorH = deskH * 0.58;
+      const baseline = deskTop + deskH * 0.68;
+      const lead = s.anchors["anchor_lead"];
+      const analyst = s.anchors["anchor_analyst"];
+      for (const a of [lead, analyst]) a.setDisplayHeight(anchorH);
+      lead.setSeat(width / 2 - deskW * 0.2, baseline);
+      analyst.setSeat(width / 2 + deskW * 0.2, baseline);
+      s.caption.setPosition(width / 2, 12);
+    }
+  }
+
+  private setStudioVisible(on: boolean): void {
+    if (!this.studio || on === this.onStudio) return;
+    this.onStudio = on;
+    const s = this.studio;
+    s.backdrop.setVisible(on);
+    s.deskBack.setVisible(on);
+    s.desk.setVisible(on);
+    s.caption.setVisible(on);
+    for (const a of Object.values(s.anchors)) a.setVisible(on);
+    // A cut in either direction retires whichever bubble was up.
+    this.bubble.hide();
+    this.bubbleIndex = -1;
   }
 
   update(_time: number, delta: number): void {
@@ -131,7 +226,14 @@ export class CourtScene extends Phaser.Scene {
   }
 
   private applyState(now: number, seeked: boolean, delta = 0): void {
-    const state = this.deps.player.stateAt(now);
+    this.setStudioVisible(this.deps.streamAt?.(now) === "studio");
+    // In podcast mode the vote board reflects the deliberation moment the tape came
+    // from (replay clock), reconstructed over the FULL event log — including votes
+    // that never aired.
+    const sceneT = this.deps.sceneTime ? this.deps.sceneTime(now) : now;
+    const state = this.deps.stateEvents
+      ? replayState(this.deps.stateEvents, sceneT)
+      : this.deps.player.stateAt(now);
 
     for (const id of JURIST_ORDER) {
       const s = this.sprites[id];
@@ -146,18 +248,30 @@ export class CourtScene extends Phaser.Scene {
     const { affirm, reverse } = tallyOf(state.votes);
     this.deps.record.setTally(affirm, reverse);
 
+    if (this.studio) {
+      for (const a of Object.values(this.studio.anchors)) {
+        a.setSpeaking(false);
+        a.update(delta, now);
+      }
+    }
     this.updateBubble(now);
   }
 
   private updateBubble(now: number): void {
     const utt = this.deps.player.activeUtterance(now);
-    if (utt && (utt.type === "speak" || utt.type === "vote_change")) {
-      const sprite = this.sprites[utt.agent];
-      const text = utt.type === "speak" ? utt.text : utt.reason_text;
+    const sprite =
+      utt?.type === "studio"
+        ? this.studio?.anchors[utt.agent]
+        : utt && (utt.type === "speak" || utt.type === "vote_change")
+          ? this.sprites[utt.agent]
+          : undefined;
+    if (utt && sprite && (utt.type === "speak" || utt.type === "vote_change" || utt.type === "studio")) {
+      const text = utt.type === "vote_change" ? utt.reason_text : utt.text;
       if (this.bubbleIndex !== utt.index) {
         this.bubble.show(text, utt.t, utt.durMs);
         this.bubbleIndex = utt.index;
       }
+      sprite.setSpeaking(true);
       const a = sprite.bubbleAnchor;
       this.bubble.anchor(a.x, a.y);
       this.bubble.update(now);

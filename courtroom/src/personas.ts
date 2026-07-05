@@ -43,6 +43,8 @@ export const PERSONAS: Record<string, Persona> = {
   process_formalist: { id: "process_formalist", display: "The Process Formalist", short: "Process", accent: "#6b7280" },
   minimalist: { id: "minimalist", display: "The Minimalist", short: "Minimalist", accent: "#9b8ec4" },
   foreperson: { id: "foreperson", display: "The Foreperson", short: "Foreperson", accent: "#1f2a44" },
+  anchor_lead: { id: "anchor_lead", display: "The Correspondent", short: "Lead", accent: "#b23a48" },
+  anchor_analyst: { id: "anchor_analyst", display: "The Court-Watcher", short: "Analyst", accent: "#3a7ca5" },
 };
 
 export function personaFor(agent: string): Persona {

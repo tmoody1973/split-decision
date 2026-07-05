@@ -30,9 +30,12 @@ export class AudioClock implements Clock {
   }
 }
 
-/** Probe for an episode's pre-rendered replay track; null if it doesn't exist. */
-export async function loadEpisodeAudio(episodeId: string): Promise<HTMLAudioElement | null> {
-  const url = `episodes/${episodeId}/deliberation.mp3`;
+/** Probe for an episode's pre-rendered audio track; null if it doesn't exist. */
+export async function loadEpisodeAudio(
+  episodeId: string,
+  file = "deliberation.mp3",
+): Promise<HTMLAudioElement | null> {
+  const url = `episodes/${episodeId}/${file}`;
   const head = await fetch(url, { method: "HEAD" }).catch(() => null);
   // Dev/preview servers SPA-fallback missing files to index.html with a 200 —
   // only a real audio content-type counts as "this episode ships audio".

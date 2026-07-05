@@ -91,6 +91,17 @@ export interface RevealEvent {
   match: boolean;
 }
 
+// Studio stream (podcast mode): anchor commentary. tape_ref events are resolved by the
+// cue sheet into deliberation spans and never reach the renderer directly.
+export interface StudioEvent {
+  t: number | null;
+  type: "studio";
+  agent: "anchor_lead" | "anchor_analyst";
+  text: string;
+  audio_file?: string;
+  dur_ms?: number;
+}
+
 export type DeliberationEvent =
   | SessionStartEvent
   | SpeakEvent
@@ -99,7 +110,8 @@ export type DeliberationEvent =
   | ForepersonEvent
   | MoveEvent
   | VerdictEvent
-  | RevealEvent;
+  | RevealEvent
+  | StudioEvent;
 
 // After normalization every event carries a concrete start time and a visual/audio
 // duration (0 for instantaneous events). `index` is the original line index — the

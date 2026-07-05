@@ -127,6 +127,11 @@ body {
   font-style: italic;
 }
 
+#record .line.studio {
+  background: #131a26;
+  border-left-color: #3a7ca5;
+}
+
 #record .line.verdict {
   background: #23281f;
   border-left-color: var(--affirm);
@@ -177,7 +182,8 @@ body {
   color: #f0d79a;
 }
 
-#findings-link {
+#findings-link,
+#mode-toggle {
   display: flex;
   align-items: center;
   padding: 0 14px;

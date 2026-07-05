@@ -74,7 +74,7 @@ export class TimelinePlayer {
     let found: NormalizedEvent | null = null;
     for (const ev of this.events) {
       if (ev.t > t) break;
-      if (ev.type === "speak" || ev.type === "vote_change") {
+      if (ev.type === "speak" || ev.type === "vote_change" || ev.type === "studio") {
         found = t < ev.t + ev.durMs ? ev : null;
       }
     }

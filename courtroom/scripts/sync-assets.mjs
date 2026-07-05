@@ -22,12 +22,15 @@ async function copyEpisode(caseId, srcRel) {
   await cp(src, resolve(destDir, "events.jsonl"));
   console.log(`  episode ${caseId} <- ${srcRel}`);
 
-  // The pre-rendered replay soundtrack (Producer output) — optional; the player falls
-  // back to a silent TimerClock replay when absent (e.g. the smoke fixture).
-  const audioSrc = resolve(dirname(resolve(repoRoot, srcRel)), "deliberation.mp3");
-  if (existsSync(audioSrc)) {
-    await cp(audioSrc, resolve(destDir, "deliberation.mp3"));
-    console.log(`  episode ${caseId} <- deliberation.mp3`);
+  // Producer outputs, all optional: the replay soundtrack (courtroom mode), and the
+  // podcast trio (episode mix + studio stream + cue sheet) that enables ?mode=podcast.
+  const epDir = dirname(resolve(repoRoot, srcRel));
+  for (const extra of ["deliberation.mp3", "episode.mp3", "studio_events.jsonl", "cue_sheet.json"]) {
+    const src = resolve(epDir, extra);
+    if (existsSync(src)) {
+      await cp(src, resolve(destDir, extra));
+      console.log(`  episode ${caseId} <- ${extra}`);
+    }
   }
 }
 
