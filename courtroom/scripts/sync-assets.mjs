@@ -6,6 +6,7 @@ import { cp, mkdir, readFile, readdir, writeFile } from "node:fs/promises";
 import { existsSync } from "node:fs";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
+import { parse as parseYaml } from "yaml";
 
 const here = dirname(fileURLToPath(import.meta.url));
 const repoRoot = resolve(here, "..", "..");
@@ -69,6 +70,25 @@ async function main() {
   // The hand-written 10-event smoke fixture, served as its own "episode".
   await copyEpisode("smoke", "fixtures/smoke.jsonl");
   entries.push({ id: "smoke", label: "Smoke fixture (10 events)", hasAudio: false });
+
+  // Persona registry -> personas.json for the landing page's prompt modals. The
+  // yaml files are the single source of truth; the page shows them VERBATIM.
+  const personasDir = resolve(repoRoot, "personas");
+  if (existsSync(personasDir)) {
+    const personas = [];
+    for (const f of (await readdir(personasDir)).filter((n) => n.endsWith(".yaml")).sort()) {
+      const doc = parseYaml(await readFile(resolve(personasDir, f), "utf8"));
+      personas.push({
+        id: doc.id,
+        display_name: doc.display_name,
+        system_prompt: doc.system_prompt ?? null,
+        voice_design_prompt: doc.voice_design_prompt ?? null,
+        bias_axes: doc.bias_axes ?? null,
+      });
+    }
+    await writeFile(resolve(publicDir, "personas.json"), JSON.stringify(personas, null, 2));
+    console.log(`  personas.json <- personas/*.yaml (${personas.length})`);
+  }
 
   // Scoreboard results — the FINDINGS page renders live from the same file the
   // benchmark writes, so the exhibit can never drift from the data.

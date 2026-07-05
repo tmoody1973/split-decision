@@ -3,35 +3,328 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Split Decision — Courtroom</title>
+    <title>Split Decision — nine AI judges, two AI journalists, real cases</title>
+    <meta name="description" content="An agent-society experiment: nine AI jurists deliberate real Supreme Court cases, two AI journalists cover the fight, and every word is on the record." />
     <link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y=".9em" font-size="90">⚖️</text></svg>' />
-    <link rel="stylesheet" href="/src/style.css" />
+    <style>
+      /* Landing — the app's pixel register at page scale: hard 3px borders, hard
+         shadows, header bars, monospace. Same language as the PixiJS diagram. */
+      :root {
+        --bg: #1a140d; --panel: #241a10; --line: #4a3320; --wood: #8a5a2b;
+        --ink: #e8e0d2; --muted: #9a8f7d; --gold: #caa24a; --goldhi: #f0d79a;
+        --navy: #1e2a4a; --navyhi: #3a5a9a; --burgundy: #7a1f2b; --green: #3f6d4e;
+      }
+      * { box-sizing: border-box; margin: 0; }
+      html { scroll-behavior: smooth; }
+      body { background: var(--bg); color: var(--ink); font: 15px/1.6 ui-monospace, Menlo, monospace; }
+      img { image-rendering: pixelated; }
+      main { max-width: 980px; margin: 0 auto; padding: 0 20px 80px; }
+
+      /* Hero */
+      #hero {
+        position: relative; overflow: hidden;
+        background: url("assets/sprites/set_courtroom_bg.png") center 30% / cover no-repeat;
+        border-bottom: 3px solid var(--wood);
+      }
+      #hero .scrim { position: absolute; inset: 0; background: linear-gradient(#0a07049a, #1a140dee); }
+      #hero .inner { position: relative; max-width: 980px; margin: 0 auto; padding: 90px 20px 70px; }
+      h1 {
+        font-size: clamp(34px, 6vw, 58px); color: var(--goldhi); letter-spacing: 0.04em;
+        text-shadow: 4px 4px 0 #000;
+      }
+      .tagline { font-size: clamp(15px, 2.2vw, 19px); color: var(--ink); margin: 14px 0 6px; max-width: 640px; }
+      .subtag { color: var(--muted); font-size: 13px; margin-bottom: 28px; }
+      .cta-row { display: flex; gap: 12px; flex-wrap: wrap; }
+      .chip {
+        display: inline-block; padding: 12px 18px; border: 3px solid var(--wood);
+        background: var(--panel); color: var(--goldhi); text-decoration: none;
+        font-weight: 700; font-size: 13px; letter-spacing: 0.06em;
+        box-shadow: 4px 4px 0 #000a;
+      }
+      .chip:hover { background: var(--line); transform: translate(-1px, -1px); box-shadow: 5px 5px 0 #000a; }
+      .chip.primary { border-color: var(--gold); background: #2c2115; }
+
+      /* Sections as pixel panels */
+      section { margin-top: 56px; }
+      .panel { background: var(--panel); border: 3px solid var(--line); box-shadow: 5px 6px 0 #0009; }
+      .panel > .bar {
+        padding: 8px 14px; font-weight: 700; font-size: 13px; letter-spacing: 0.08em;
+        color: var(--goldhi); border-bottom: 3px solid var(--line);
+      }
+      .bar.b-gold { background: #43371b; }
+      .bar.b-navy { background: var(--navy); }
+      .bar.b-burgundy { background: var(--burgundy); }
+      .bar.b-green { background: var(--green); }
+      .panel > .body { padding: 18px 20px; }
+      .body p + p { margin-top: 12px; }
+      .body b, .body strong { color: var(--goldhi); }
+      .muted { color: var(--muted); }
+
+      /* Steps */
+      ol.steps { list-style: none; counter-reset: s; display: grid; gap: 10px; }
+      ol.steps li {
+        counter-increment: s; display: grid; grid-template-columns: 44px 1fr; gap: 14px;
+        align-items: start; background: #1f1811; border: 2px solid var(--line); padding: 12px 14px;
+      }
+      ol.steps li::before {
+        content: counter(s); display: grid; place-items: center; width: 34px; height: 34px;
+        background: var(--navy); border: 2px solid var(--navyhi); color: var(--goldhi);
+        font-weight: 700; font-size: 15px;
+      }
+      #diagram-mount { line-height: 0; border-top: 3px solid var(--line); }
+      #diagram-mount canvas { max-width: 100%; height: auto; image-rendering: pixelated; }
+
+      /* Agent grid */
+      .agents { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 14px; }
+      .agent {
+        background: #1f1811; border: 3px solid var(--acc, var(--wood)); cursor: pointer;
+        padding: 12px 10px 10px; text-align: center; box-shadow: 3px 4px 0 #0009;
+        transition: transform 0.06s;
+      }
+      .agent:hover { transform: translate(-1px, -2px); }
+      .agent img { width: 84px; height: 84px; object-fit: contain; }
+      .agent .nm { font-weight: 700; font-size: 12.5px; color: var(--goldhi); margin-top: 6px; }
+      .agent .ph { font-size: 11px; color: var(--muted); line-height: 1.45; margin-top: 4px; min-height: 3em; }
+
+      /* Prompt modal */
+      dialog {
+        border: 3px solid var(--wood); background: var(--bg); color: var(--ink);
+        padding: 0; width: min(760px, 94vw); max-height: 88vh;
+      }
+      dialog::backdrop { background: rgba(6, 4, 2, 0.85); }
+      #pm-head {
+        display: flex; justify-content: space-between; align-items: center; gap: 10px;
+        padding: 10px 14px; background: var(--panel); border-bottom: 3px solid var(--line);
+        font-weight: 700; color: var(--goldhi);
+      }
+      #pm-head button {
+        font: 700 12px ui-monospace, monospace; background: var(--bg); color: var(--goldhi);
+        border: 2px solid var(--wood); padding: 4px 10px; cursor: pointer;
+      }
+      #pm-body { padding: 16px 18px; overflow-y: auto; max-height: calc(88vh - 54px); }
+      #pm-body h3 { font-size: 12px; color: var(--gold); letter-spacing: 0.08em; margin: 18px 0 6px; }
+      #pm-body h3:first-child { margin-top: 0; }
+      #pm-body pre {
+        white-space: pre-wrap; background: #14100a; border: 2px solid var(--line);
+        border-left: 3px solid var(--gold); padding: 12px; font-size: 12.5px; line-height: 1.55;
+      }
+      .axes { display: grid; gap: 6px; }
+      .axes .ax { display: grid; grid-template-columns: 150px 1fr 44px; gap: 10px; align-items: center; font-size: 12px; }
+      .axes .track { height: 12px; background: #14100a; border: 1px solid var(--line); position: relative; }
+      .axes .fill { position: absolute; inset: 2px auto 2px 2px; background: var(--gold); }
+
+      /* Stat tiles */
+      .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 14px; }
+      .tile { background: #1f1811; border: 3px solid var(--line); padding: 16px; text-align: center; box-shadow: 3px 4px 0 #0009; }
+      .tile .big { font-size: 34px; font-weight: 700; color: var(--goldhi); }
+      .tile.loss .big { color: #c96f6f; }
+      .tile .lbl { font-size: 12px; color: var(--muted); margin-top: 4px; }
+
+      .rules { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; }
+
+      footer { margin-top: 70px; border-top: 3px solid var(--line); padding: 20px; text-align: center; color: var(--muted); font-size: 12px; }
+      footer a { color: var(--gold); }
+      section > h2 { font-size: 17px; color: var(--gold); letter-spacing: 0.1em; margin-bottom: 14px; }
+      a { color: var(--gold); }
+    </style>
   </head>
   <body>
-    <div id="app">
-      <div id="stage-row">
-        <div id="game"></div>
-        <aside id="record" aria-label="The Record — live transcript"></aside>
+    <header id="hero">
+      <div class="scrim"></div>
+      <div class="inner">
+        <h1>SPLIT DECISION</h1>
+        <p class="tagline">Nine AI judges argue real Supreme Court cases. Two AI journalists cover the fight. Every word is on the record.</p>
+        <p class="subtag">Qwen Cloud Global AI Hackathon · Track 3: Agent Society · open source, Apache-2.0</p>
+        <div class="cta-row">
+          <a class="chip primary" href="./courtroom.html">▶ WATCH A DELIBERATION</a>
+          <a class="chip" href="./courtroom.html?mode=podcast">🎙 PODCAST MODE</a>
+          <a class="chip" href="./findings.html">📊 THE FINDINGS</a>
+        </div>
       </div>
-      <div id="controls">
-        <button id="play" type="button" aria-label="Play or pause">▶</button>
-        <input id="seek" type="range" min="0" max="1000" value="0" step="1" aria-label="Seek" />
-        <span id="time" class="time">0:00 / 0:00</span>
-        <button id="arch-open" type="button" title="System architecture">ARCHITECTURE</button>
-        <a id="findings-link" href="./findings.html" title="Benchmark findings">FINDINGS</a>
-        <select id="episode-picker" aria-label="Episode"></select>
-      </div>
-    </div>
-    <dialog id="arch-modal" aria-label="System architecture diagram">
-      <div id="arch-bar">
-        <span>SPLIT DECISION — SYSTEM ARCHITECTURE</span>
-        <span>
-          <button id="arch-download" type="button">PNG ↓</button>
-          <button id="arch-close" type="button">✕</button>
-        </span>
-      </div>
-      <div id="arch-canvas"></div>
+    </header>
+
+    <main>
+      <section>
+        <div class="panel">
+          <div class="bar b-gold">THE EXPENSIVE QUESTION</div>
+          <div class="body">
+            <p>Everyone building multi-agent AI eventually pays for the same assumption:
+            that making agents <b>debate</b> produces better decisions than asking one
+            model directly. Debate costs tokens, time, and complexity — but does it
+            actually help?</p>
+            <p>Split Decision tests that on one of the few public sets of genuinely hard,
+            formally graded judgment calls: <b>real Supreme Court cases</b>. Nine AI
+            jurists — each locked to a distinct judicial philosophy — read the same case,
+            vote in private, argue for up to five rounds, and file a verdict. Their
+            predictions are scored against what the real Court actually did. For cases
+            the Court hasn't decided yet, the panel's ruling stands as a
+            <b>falsifiable public prediction</b>.</p>
+            <p>The answer surprised us: <b>deliberation made the panel more persuasive
+            and less accurate</b> — and we published that instead of hiding it. The full
+            numbers are on the <a href="./findings.html">findings page</a>.</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>HOW THE SOCIETY WORKS</h2>
+        <div class="panel">
+          <div class="body">
+            <ol class="steps">
+              <li><span>The <b>Clerk</b> reads a real case — filings, facts, the question presented — and writes a neutral bench memo.</span></li>
+              <li><span><b>Nine jurists</b> vote in private first. No one has spoken yet, so these votes are each philosophy's honest, independent read.</span></li>
+              <li><span>They argue. The <b>Foreperson</b> (who never votes) picks the sharpest disagreements and makes those jurists face each other directly.</span></li>
+              <li><span>They vote in private again. Any changed vote is a <b>measured act of persuasion</b> — argued in the transcript, never just announced.</span></li>
+              <li><span>After up to five rounds, the panel files its <b>verdict</b>. Decided cases get graded against the real Court; pending cases go on the record as predictions.</span></li>
+              <li><span>A second society — <b>two AI journalists</b> — cuts the deliberation into a podcast. They may frame and react, but every clip of jurist speech is played verbatim from the log. They are never allowed to re-voice the court.</span></li>
+              <li><span>Everything you can watch, hear, or score comes from <b>one immutable event log</b> per case. The pixel courtroom just replays it.</span></li>
+            </ol>
+          </div>
+          <div id="diagram-mount" aria-label="Animated system architecture"></div>
+          <div class="body muted" style="font-size:12px">Live diagram — those dots are the actual data flow, rendered in PixiJS. Also available inside the player under ARCHITECTURE.</div>
+        </div>
+      </section>
+
+      <section>
+        <h2>MEET THE AGENTS — AND READ THEIR ACTUAL PROMPTS</h2>
+        <div class="panel">
+          <div class="body">
+            <p style="margin-bottom:16px">Every agent below is steered by <b>one system prompt</b> — its whole constitution.
+            Click any card to read it verbatim, including the anti-sycophancy trigger that tells each jurist
+            exactly when it is allowed to change its vote. Nothing else makes them who they are.</p>
+            <div class="agents" id="agents"></div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>THE HONEST FINDING</h2>
+        <div class="tiles">
+          <div class="tile"><div class="big">83%</div><div class="lbl">one model, asked directly<br/>(n=94 cases)</div></div>
+          <div class="tile"><div class="big">77.4%</div><div class="lbl">nine philosophies, voting silently<br/>(n=93)</div></div>
+          <div class="tile loss"><div class="big">66.7%</div><div class="lbl">the full deliberating society<br/>(n=24)</div></div>
+        </div>
+        <div class="panel" style="margin-top:14px"><div class="body">
+          <p><b>More debate, better arguments, worse predictions.</b> Eloquent majorities pulled
+          correct independent votes into 5–4 splits on cases the real Court decided 9–0. If your
+          agents can be talked out of correct answers, deliberation is a liability — independence
+          is a feature you have to engineer for. <a href="./findings.html">See the full analysis →</a></p>
+        </div></div>
+      </section>
+
+      <section>
+        <h2>TWO RULES WE COULDN'T BREAK</h2>
+        <div class="rules">
+          <div class="panel"><div class="bar b-burgundy">TAPE INTEGRITY</div><div class="body">
+            <p>The podcast, the scoreboard, and the courtroom all read the same
+            <b>events.jsonl</b>. The journalists select clips by event index — they can
+            characterize what a jurist said, but they can never rewrite, re-voice, or
+            paraphrase it. After every production run we diff the log: <b>zero content
+            changes, every time</b>.</p>
+          </div></div>
+          <div class="panel"><div class="bar b-green">THE CONTAMINATION GUARD</div><div class="body">
+            <p>The model already knows history — it scores ~96% on pre-2025 cases because
+            it's <b>remembering</b>, not predicting. So the benchmark only uses cases decided
+            after June 2025, plus pending cases nothing could have memorized. Famous
+            landmark episodes exist for civic education and are labeled
+            <b>exhibition, never benchmark</b>.</p>
+          </div></div>
+        </div>
+      </section>
+
+      <section>
+        <h2>LISTEN &amp; WATCH</h2>
+        <div class="panel"><div class="body">
+          <p>▶ <a href="./courtroom.html">The pixel courtroom</a> — every deliberation replays from the log, with "The Record" transcript beside it.</p>
+          <p>🎙 <a href="./courtroom.html?mode=podcast">Podcast mode</a> — the newsroom covers the chamber: anchors at the desk, hard cuts to verbatim tape.</p>
+          <p>📡 <a href="https://split-decision.oss-ap-southeast-1.aliyuncs.com/feed.xml">RSS feed</a> — subscribe in any podcast app.</p>
+          <p class="muted" style="margin-top:10px">Three predictions are currently on the record for cases the real Court hasn't decided. We'll be graded whether we like it or not.</p>
+        </div></div>
+      </section>
+    </main>
+
+    <dialog id="prompt-modal" aria-label="Agent prompt">
+      <div id="pm-head"><span id="pm-title"></span><button id="pm-close" type="button">✕ CLOSE</button></div>
+      <div id="pm-body"></div>
     </dialog>
-    <script type="module" src="/src/main.ts"></script>
+
+    <footer>
+      Built on Qwen Cloud — qwen3.7-plus (jurists, producer) · qwen3.7-max (clerk, foreperson) ·
+      qwen3-tts-vd voices · wan2.6-t2i art — with Phaser 3, PixiJS, SpriteCook, and Alibaba OSS + SAS.<br/>
+      <a href="https://github.com/tmoody1973/split-decision">github.com/tmoody1973/split-decision</a> · Apache-2.0 ·
+      Not a legal-advice tool: a research instrument and a public-education artifact.
+    </footer>
+
+    <script type="module">
+      import { createArchDiagram } from "./src/archDiagram";
+
+      // ---- Live PixiJS diagram, embedded ----
+      createArchDiagram(document.getElementById("diagram-mount")).then((d) => d.open());
+
+      // ---- Agent cards + verbatim prompt modals ----
+      const ORDER = [
+        "textualist", "originalist", "living_constitutionalist", "pragmatist",
+        "precedent_maximalist", "federalism_hawk", "civil_libertarian",
+        "process_formalist", "minimalist", "foreperson", "anchor_lead", "anchor_analyst",
+      ];
+      const ACCENT = {
+        textualist: "#7a1f2b", originalist: "#5b4a2f", living_constitutionalist: "#2e6f5e",
+        pragmatist: "#c27b2c", precedent_maximalist: "#4a4e69", federalism_hawk: "#8c3b00",
+        civil_libertarian: "#2b6cb0", process_formalist: "#6b7280", minimalist: "#9b8ec4",
+        foreperson: "#caa24a", anchor_lead: "#b23a48", anchor_analyst: "#3a7ca5",
+      };
+      const ONE_LINER = {
+        textualist: "The text controls. Full stop.",
+        originalist: "What the words meant when ratified.",
+        living_constitutionalist: "The Constitution grows with the country.",
+        pragmatist: "Will the rule actually work?",
+        precedent_maximalist: "Stand by what's been decided.",
+        federalism_hawk: "The states decide their own business.",
+        civil_libertarian: "The tie goes to the individual.",
+        process_formalist: "Jurisdiction first. Merits later.",
+        minimalist: "Decide small. Avoid the big question.",
+        foreperson: "Moderates the chamber. Never votes.",
+        anchor_lead: "Explains the law. Carries the facts.",
+        anchor_analyst: "Reads the room. Calls the flips.",
+      };
+
+      const personas = await (await fetch("personas.json")).json();
+      const byId = Object.fromEntries(personas.map((p) => [p.id, p]));
+      const grid = document.getElementById("agents");
+      const modal = document.getElementById("prompt-modal");
+      const pmTitle = document.getElementById("pm-title");
+      const pmBody = document.getElementById("pm-body");
+      document.getElementById("pm-close").addEventListener("click", () => modal.close());
+
+      const esc = (s) => s.replace(/[&<>]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;" })[c]);
+
+      for (const id of ORDER) {
+        const p = byId[id];
+        if (!p) continue;
+        const card = document.createElement("div");
+        card.className = "agent";
+        card.style.setProperty("--acc", ACCENT[id]);
+        card.innerHTML = `
+          <img src="assets/sprites/${id}_base.png" alt="${esc(p.display_name)} sprite" loading="lazy" />
+          <div class="nm">${esc(p.display_name)}</div>
+          <div class="ph">${esc(ONE_LINER[id] ?? "")}</div>`;
+        card.addEventListener("click", () => {
+          pmTitle.textContent = `${p.display_name} — the complete prompt`;
+          let html = "";
+          if (p.system_prompt) html += `<h3>SYSTEM PROMPT (verbatim from personas/${id}.yaml)</h3><pre>${esc(p.system_prompt)}</pre>`;
+          if (p.voice_design_prompt) html += `<h3>VOICE DESIGN PROMPT</h3><pre>${esc(p.voice_design_prompt)}</pre>`;
+          if (p.bias_axes) {
+            html += `<h3>BIAS AXES (0–1)</h3><div class="axes">` +
+              Object.entries(p.bias_axes).map(([k, v]) =>
+                `<div class="ax"><span>${esc(k)}</span><span class="track"><span class="fill" style="width:${v * 100}%"></span></span><span>${v}</span></div>`
+              ).join("") + `</div>`;
+          }
+          pmBody.innerHTML = html || "<p class='muted'>No prompt on file.</p>";
+          pmBody.scrollTop = 0;
+          modal.showModal();
+        });
+        grid.appendChild(card);
+      }
+    </script>
   </body>
 </html>

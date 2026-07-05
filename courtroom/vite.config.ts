@@ -9,7 +9,8 @@ export default defineConfig({
     emptyOutDir: true,
     rollupOptions: {
       input: {
-        main: resolve(__dirname, "index.html"),
+        landing: resolve(__dirname, "index.html"),
+        courtroom: resolve(__dirname, "courtroom.html"),
         findings: resolve(__dirname, "findings.html"),
       },
     },

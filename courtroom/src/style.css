@@ -183,6 +183,7 @@ body {
 }
 
 #findings-link,
+#about-link,
 #mode-toggle {
   display: flex;
   align-items: center;

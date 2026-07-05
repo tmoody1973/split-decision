@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Split Decision — Courtroom</title>
+    <link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y=".9em" font-size="90">⚖️</text></svg>' />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div id="stage-row">
+        <div id="game"></div>
+        <aside id="record" aria-label="The Record — live transcript"></aside>
+      </div>
+      <div id="controls">
+        <button id="play" type="button" aria-label="Play or pause">▶</button>
+        <input id="seek" type="range" min="0" max="1000" value="0" step="1" aria-label="Seek" />
+        <span id="time" class="time">0:00 / 0:00</span>
+        <button id="arch-open" type="button" title="System architecture">ARCHITECTURE</button>
+        <a id="findings-link" href="./findings.html" title="Benchmark findings">FINDINGS</a>
+        <a id="about-link" href="./index.html" title="About Split Decision">ABOUT</a>
+        <select id="episode-picker" aria-label="Episode"></select>
+      </div>
+    </div>
+    <dialog id="arch-modal" aria-label="System architecture diagram">
+      <div id="arch-bar">
+        <span>SPLIT DECISION — SYSTEM ARCHITECTURE</span>
+        <span>
+          <button id="arch-download" type="button">PNG ↓</button>
+          <button id="arch-close" type="button">✕</button>
+        </span>
+      </div>
+      <div id="arch-canvas"></div>
+    </dialog>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
