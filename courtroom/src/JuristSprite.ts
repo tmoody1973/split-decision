@@ -135,6 +135,15 @@ export class JuristSprite {
     this.plate.setVisible(false);
   }
 
+  /** Render only the top `fraction` of the frame — a seated figure's torso; the legs
+   * end cleanly at the crop line instead of dangling behind the set. */
+  setCropBottom(fraction: number): void {
+    if (this.hasSheet) {
+      const spr = this.visual as Phaser.GameObjects.Sprite;
+      spr.setCrop(0, 0, spr.frame.width, spr.frame.height * fraction);
+    }
+  }
+
   /** Override the depth band (studio anchors render above the studio backdrop). */
   setBaseDepth(depth: number): void {
     this.container.setDepth(depth);

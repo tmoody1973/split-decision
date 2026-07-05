@@ -177,11 +177,18 @@ export class CourtScene extends Phaser.Scene {
       s.desk.setCrop(0, texH * SPLIT, s.desk.width, texH * (1 - SPLIT));
       const deskH = s.desk.displayHeight;
       const deskTop = height * 0.86 - deskH;
-      const anchorH = deskH * 0.58;
-      const baseline = deskTop + deskH * 0.68;
+      // Seated read: the sprite is cropped to its top 60% (torso) and anchored so the
+      // crop line falls just below the painted desk surface — no legs behind the set.
+      const CROP = 0.6;
+      const anchorH = deskH * 0.72;
+      const surfaceY = deskTop + deskH * 0.52;
+      const baseline = surfaceY + 12 + anchorH * (1 - CROP);
       const lead = s.anchors["anchor_lead"];
       const analyst = s.anchors["anchor_analyst"];
-      for (const a of [lead, analyst]) a.setDisplayHeight(anchorH);
+      for (const a of [lead, analyst]) {
+        a.setDisplayHeight(anchorH);
+        a.setCropBottom(CROP);
+      }
       lead.setSeat(width / 2 - deskW * 0.2, baseline);
       analyst.setSeat(width / 2 + deskW * 0.2, baseline);
       s.caption.setPosition(width / 2, 12);
