@@ -1,0 +1,77 @@
+{
+  "case_id": "cl-cluster-10878534",
+  "clips": [
+    {
+      "id": "c01",
+      "purpose": "cold_open",
+      "event_span": [
+        126,
+        128
+      ],
+      "note": "Sharp clash on FMV litigation factory vs plain text"
+    },
+    {
+      "id": "c02",
+      "purpose": "flip",
+      "event_span": [
+        32,
+        32
+      ],
+      "note": "Pragmatist flips to reverse on FMV loophole"
+    },
+    {
+      "id": "c03",
+      "purpose": "flip",
+      "event_span": [
+        44,
+        44
+      ],
+      "note": "Precedent Maximalist flips citing Tyler erosion"
+    },
+    {
+      "id": "c04",
+      "purpose": "color",
+      "event_span": [
+        51,
+        55
+      ],
+      "note": "Debate on text, FMV costs, and state sovereignty"
+    },
+    {
+      "id": "c06",
+      "purpose": "flip",
+      "event_span": [
+        111,
+        111
+      ],
+      "note": "Precedent Maximalist flips again on Tyler precedent"
+    },
+    {
+      "id": "c08",
+      "purpose": "flip",
+      "event_span": [
+        162,
+        162
+      ],
+      "note": "Minimalist flips to narrow state-law property ground"
+    },
+    {
+      "id": "c09",
+      "purpose": "color",
+      "event_span": [
+        164,
+        168
+      ],
+      "note": "Jurisdictional void vs plain text and founding-era meaning"
+    },
+    {
+      "id": "c10",
+      "purpose": "verdict_run",
+      "event_span": [
+        178,
+        181
+      ],
+      "note": "Final clash on state property definitions vs Constitution"
+    }
+  ]
+}

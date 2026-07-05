@@ -1,0 +1,331 @@
+[
+ {
+  "t": 0,
+  "stream": "studio",
+  "event_index": 0,
+  "audio_file": "studio_000.mp3",
+  "dur_ms": 4240
+ },
+ {
+  "t": 4540,
+  "stream": "deliberation",
+  "event_index": 126,
+  "audio_file": "utt_126.mp3",
+  "dur_ms": 32080
+ },
+ {
+  "t": 36920,
+  "stream": "deliberation",
+  "event_index": 127,
+  "audio_file": "utt_127.mp3",
+  "dur_ms": 34720
+ },
+ {
+  "t": 71940,
+  "stream": "deliberation",
+  "event_index": 128,
+  "audio_file": "utt_128.mp3",
+  "dur_ms": 35120
+ },
+ {
+  "t": 107360,
+  "stream": "studio",
+  "event_index": 2,
+  "audio_file": "studio_002.mp3",
+  "dur_ms": 8160
+ },
+ {
+  "t": 115820,
+  "stream": "studio",
+  "event_index": 3,
+  "audio_file": "studio_003.mp3",
+  "dur_ms": 4400
+ },
+ {
+  "t": 120520,
+  "stream": "studio",
+  "event_index": 4,
+  "audio_file": "studio_004.mp3",
+  "dur_ms": 52640
+ },
+ {
+  "t": 173460,
+  "stream": "studio",
+  "event_index": 5,
+  "audio_file": "studio_005.mp3",
+  "dur_ms": 29280
+ },
+ {
+  "t": 203040,
+  "stream": "studio",
+  "event_index": 6,
+  "audio_file": "studio_006.mp3",
+  "dur_ms": 6160
+ },
+ {
+  "t": 209500,
+  "stream": "deliberation",
+  "event_index": 32,
+  "audio_file": "utt_032.mp3",
+  "dur_ms": 18880
+ },
+ {
+  "t": 228680,
+  "stream": "studio",
+  "event_index": 8,
+  "audio_file": "studio_008.mp3",
+  "dur_ms": 15360
+ },
+ {
+  "t": 244340,
+  "stream": "studio",
+  "event_index": 9,
+  "audio_file": "studio_009.mp3",
+  "dur_ms": 6560
+ },
+ {
+  "t": 251200,
+  "stream": "deliberation",
+  "event_index": 44,
+  "audio_file": "utt_044.mp3",
+  "dur_ms": 31360
+ },
+ {
+  "t": 282860,
+  "stream": "studio",
+  "event_index": 11,
+  "audio_file": "studio_011.mp3",
+  "dur_ms": 10880
+ },
+ {
+  "t": 294040,
+  "stream": "studio",
+  "event_index": 12,
+  "audio_file": "studio_012.mp3",
+  "dur_ms": 6240
+ },
+ {
+  "t": 300580,
+  "stream": "deliberation",
+  "event_index": 51,
+  "audio_file": "utt_051.mp3",
+  "dur_ms": 37440
+ },
+ {
+  "t": 338320,
+  "stream": "deliberation",
+  "event_index": 52,
+  "audio_file": "utt_052.mp3",
+  "dur_ms": 30000
+ },
+ {
+  "t": 368620,
+  "stream": "deliberation",
+  "event_index": 53,
+  "audio_file": "utt_053.mp3",
+  "dur_ms": 31680
+ },
+ {
+  "t": 400600,
+  "stream": "deliberation",
+  "event_index": 54,
+  "audio_file": "utt_054.mp3",
+  "dur_ms": 34960
+ },
+ {
+  "t": 435860,
+  "stream": "deliberation",
+  "event_index": 55,
+  "audio_file": "utt_055.mp3",
+  "dur_ms": 27280
+ },
+ {
+  "t": 463440,
+  "stream": "studio",
+  "event_index": 14,
+  "audio_file": "studio_014.mp3",
+  "dur_ms": 10240
+ },
+ {
+  "t": 473980,
+  "stream": "studio",
+  "event_index": 15,
+  "audio_file": "studio_018.mp3",
+  "dur_ms": 6720
+ },
+ {
+  "t": 481000,
+  "stream": "deliberation",
+  "event_index": 111,
+  "audio_file": "utt_111.mp3",
+  "dur_ms": 19200
+ },
+ {
+  "t": 500500,
+  "stream": "studio",
+  "event_index": 17,
+  "audio_file": "studio_020.mp3",
+  "dur_ms": 10960
+ },
+ {
+  "t": 511760,
+  "stream": "studio",
+  "event_index": 18,
+  "audio_file": "studio_024.mp3",
+  "dur_ms": 5600
+ },
+ {
+  "t": 517660,
+  "stream": "deliberation",
+  "event_index": 162,
+  "audio_file": "utt_162.mp3",
+  "dur_ms": 12800
+ },
+ {
+  "t": 530760,
+  "stream": "studio",
+  "event_index": 20,
+  "audio_file": "studio_026.mp3",
+  "dur_ms": 11040
+ },
+ {
+  "t": 542100,
+  "stream": "studio",
+  "event_index": 21,
+  "audio_file": "studio_027.mp3",
+  "dur_ms": 7680
+ },
+ {
+  "t": 550080,
+  "stream": "deliberation",
+  "event_index": 164,
+  "audio_file": "utt_164.mp3",
+  "dur_ms": 36640
+ },
+ {
+  "t": 587020,
+  "stream": "deliberation",
+  "event_index": 165,
+  "audio_file": "utt_165.mp3",
+  "dur_ms": 32960
+ },
+ {
+  "t": 620280,
+  "stream": "deliberation",
+  "event_index": 166,
+  "audio_file": "utt_166.mp3",
+  "dur_ms": 33360
+ },
+ {
+  "t": 653940,
+  "stream": "deliberation",
+  "event_index": 167,
+  "audio_file": "utt_167.mp3",
+  "dur_ms": 35840
+ },
+ {
+  "t": 690080,
+  "stream": "deliberation",
+  "event_index": 168,
+  "audio_file": "utt_168.mp3",
+  "dur_ms": 35200
+ },
+ {
+  "t": 725580,
+  "stream": "studio",
+  "event_index": 23,
+  "audio_file": "studio_029.mp3",
+  "dur_ms": 10320
+ },
+ {
+  "t": 736200,
+  "stream": "studio",
+  "event_index": 24,
+  "audio_file": "studio_030.mp3",
+  "dur_ms": 7680
+ },
+ {
+  "t": 744180,
+  "stream": "deliberation",
+  "event_index": 178,
+  "audio_file": "utt_178.mp3",
+  "dur_ms": 17520
+ },
+ {
+  "t": 762000,
+  "stream": "deliberation",
+  "event_index": 179,
+  "audio_file": "utt_179.mp3",
+  "dur_ms": 22080
+ },
+ {
+  "t": 784380,
+  "stream": "deliberation",
+  "event_index": 180,
+  "audio_file": "utt_180.mp3",
+  "dur_ms": 22320
+ },
+ {
+  "t": 807000,
+  "stream": "deliberation",
+  "event_index": 181,
+  "audio_file": "utt_181.mp3",
+  "dur_ms": 20400
+ },
+ {
+  "t": 827700,
+  "stream": "studio",
+  "event_index": 26,
+  "audio_file": "studio_032.mp3",
+  "dur_ms": 10880
+ },
+ {
+  "t": 838880,
+  "stream": "studio",
+  "event_index": 27,
+  "audio_file": "studio_033.mp3",
+  "dur_ms": 11360
+ },
+ {
+  "t": 850540,
+  "stream": "studio",
+  "event_index": 28,
+  "audio_file": "studio_034.mp3",
+  "dur_ms": 10080
+ },
+ {
+  "t": 860920,
+  "stream": "studio",
+  "event_index": 29,
+  "audio_file": "studio_035.mp3",
+  "dur_ms": 6640
+ },
+ {
+  "t": 867860,
+  "stream": "studio",
+  "event_index": 30,
+  "audio_file": "studio_036.mp3",
+  "dur_ms": 24880
+ },
+ {
+  "t": 893040,
+  "stream": "studio",
+  "event_index": 31,
+  "audio_file": "studio_037.mp3",
+  "dur_ms": 8400
+ },
+ {
+  "t": 901740,
+  "stream": "studio",
+  "event_index": 32,
+  "audio_file": "studio_038.mp3",
+  "dur_ms": 16480
+ },
+ {
+  "t": 918520,
+  "stream": "studio",
+  "event_index": 33,
+  "audio_file": "studio_039.mp3",
+  "dur_ms": 18640
+ }
+]
