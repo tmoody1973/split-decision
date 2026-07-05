@@ -253,3 +253,17 @@ body.record #app {
   cursor: pointer;
 }
 #arch-canvas { line-height: 0; }
+
+/* Landmark exhibition badge on The Record header */
+.exh-badge {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 2px 7px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #f0d79a;
+  background: #7a1f2b;
+  border: 1px solid #caa24a;
+  vertical-align: middle;
+}

@@ -34,7 +34,7 @@ export class Stage {
   private readonly lecternRect: Phaser.GameObjects.Rectangle;
   private readonly boardLabel: Phaser.GameObjects.Text;
 
-  constructor(scene: Phaser.Scene) {
+  constructor(scene: Phaser.Scene, title = "SPLIT DECISION — THE CHAMBER") {
     // The pixel-art courtroom backdrop (16-bit bench for nine), when its texture loaded.
     // The flat graphics backdrop stays underneath as a letterbox fill. benchFront is a
     // cropped re-render of the same image (bench-top line downward) drawn ABOVE the
@@ -48,7 +48,7 @@ export class Stage {
       : null;
     this.g = scene.add.graphics().setDepth(-10);
     this.title = scene.add
-      .text(0, 12, "SPLIT DECISION — THE CHAMBER", {
+      .text(0, 12, title, {
         fontFamily: "ui-monospace, monospace",
         fontSize: "13px",
         color: "#9a8f7d",

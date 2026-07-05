@@ -63,13 +63,31 @@ async function main() {
     await copyEpisode(id, `episodes/${id}/events.jsonl`);
     const hasAudio = existsSync(resolve(repoRoot, "episodes", id, "deliberation.mp3"));
     const label = await caseLabel(id);
-    entries.push({ id, label: hasAudio ? `♪ ${label}` : label, hasAudio });
+    // Grouping is epistemology: benchmark cases are science, pending cases are
+    // falsifiable predictions, landmarks are labeled exhibition (contamination guard).
+    const group = id.startsWith("landmark-")
+      ? "Landmark Specials — exhibition, not benchmark"
+      : id.startsWith("oyez-")
+        ? "Predictions on the Record — pending cases"
+        : "This Term — the benchmark";
+    entries.push({
+      id,
+      label: (hasAudio ? `♪ ${label}` : label).replace(" (LANDMARK SPECIAL)", ""),
+      hasAudio,
+      group,
+    });
   }
-  entries.sort((a, b) => Number(b.hasAudio) - Number(a.hasAudio) || a.label.localeCompare(b.label));
+  const groupRank = (g) => (g.startsWith("This Term") ? 0 : g.startsWith("Predictions") ? 1 : 2);
+  entries.sort(
+    (a, b) =>
+      groupRank(a.group) - groupRank(b.group) ||
+      Number(b.hasAudio) - Number(a.hasAudio) ||
+      a.label.localeCompare(b.label),
+  );
 
   // The hand-written 10-event smoke fixture, served as its own "episode".
   await copyEpisode("smoke", "fixtures/smoke.jsonl");
-  entries.push({ id: "smoke", label: "Smoke fixture (10 events)", hasAudio: false });
+  entries.push({ id: "smoke", label: "Smoke fixture (10 events)", hasAudio: false, group: "Fixtures" });
 
   // Persona registry -> personas.json for the landing page's prompt modals. The
   // yaml files are the single source of truth; the page shows them VERBATIM.
@@ -110,10 +128,10 @@ async function main() {
     console.warn("  skip sprites: assets/sprites not found");
   }
 
-  // A manifest of which episodes are available, for the picker.
+  // A manifest of which episodes are available, for the picker (grouped).
   const index = {
-    default: entries.find((e) => e.hasAudio)?.id ?? entries[0].id,
-    episodes: entries.map(({ id, label }) => ({ id, label })),
+    default: entries.find((e) => e.hasAudio && e.group.startsWith("This Term"))?.id ?? entries[0].id,
+    episodes: entries.map(({ id, label, group }) => ({ id, label, group })),
   };
   await writeFile(
     resolve(publicDir, "episodes", "index.json"),

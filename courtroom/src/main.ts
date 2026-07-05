@@ -10,7 +10,7 @@ import { TimelinePlayer } from "./TimelinePlayer";
 
 interface EpisodeIndex {
   default: string;
-  episodes: { id: string; label: string }[];
+  episodes: { id: string; label: string; group?: string }[];
 }
 
 const params = new URLSearchParams(location.search);
@@ -79,6 +79,11 @@ async function boot(): Promise<void> {
 
   const recordRoot = document.getElementById("record") as HTMLElement;
   const record = new RecordPanel(recordRoot, (ms) => player.seek(ms));
+  const exhibition = episodeId.startsWith("landmark-");
+  if (exhibition) {
+    const title = recordRoot.querySelector(".record-title") as HTMLElement;
+    title.innerHTML = 'The Record <span class="exh-badge">EXHIBITION</span>';
+  }
 
   // Controls.
   const playBtn = document.getElementById("play") as HTMLButtonElement;
@@ -87,12 +92,25 @@ async function boot(): Promise<void> {
   const picker = document.getElementById("episode-picker") as HTMLSelectElement;
   let scrubbing = false;
 
+  // Grouped picker: the section labels themselves teach which episodes are
+  // benchmark science, which are filed predictions, and which are exhibition.
+  const groups = new Map<string, HTMLElement>();
   for (const ep of index.episodes) {
+    let parent: HTMLElement = picker;
+    if (ep.group) {
+      if (!groups.has(ep.group)) {
+        const og = document.createElement("optgroup");
+        og.label = ep.group;
+        picker.appendChild(og);
+        groups.set(ep.group, og);
+      }
+      parent = groups.get(ep.group)!;
+    }
     const opt = document.createElement("option");
     opt.value = ep.id;
     opt.textContent = ep.label;
     if (ep.id === episodeId) opt.selected = true;
-    picker.appendChild(opt);
+    parent.appendChild(opt);
   }
   picker.addEventListener("change", () => {
     params.set("episode", picker.value);
@@ -124,6 +142,7 @@ async function boot(): Promise<void> {
       player,
       record,
       onFrame,
+      exhibition,
       ...(podcast
         ? { stateEvents: pod.stateEvents, sceneTime: pod.sceneTime, streamAt: pod.streamAt, deskFile }
         : {}),

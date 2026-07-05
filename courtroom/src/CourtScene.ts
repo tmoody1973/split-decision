@@ -25,6 +25,8 @@ export interface SceneDeps {
   streamAt?: (t: number) => "studio" | "deliberation";
   /** News-desk set piece file; enables the studio set. */
   deskFile?: string | null;
+  /** Landmark specials: exhibition label in the scene (contamination guard, visible). */
+  exhibition?: boolean;
 }
 
 // The renderer proper. It reconstructs stage state from the player every frame and drives
@@ -88,7 +90,12 @@ export class CourtScene extends Phaser.Scene {
       }
     }
 
-    this.stage = new Stage(this);
+    this.stage = new Stage(
+      this,
+      this.deps.exhibition
+        ? "SPLIT DECISION — SPECIAL SESSION · EXHIBITION, NOT BENCHMARK"
+        : undefined,
+    );
     this.board = new VoteBoard(this);
     this.bubble = new Bubble(this);
 
