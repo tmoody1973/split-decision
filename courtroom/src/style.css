@@ -145,6 +145,7 @@ body {
 }
 
 #controls button,
+#controls a,
 #episode-picker {
   height: 34px;
   background: #241a10;
@@ -158,6 +159,7 @@ body {
 }
 
 #controls button:hover,
+#controls a:hover,
 #episode-picker:hover {
   border-color: #8a5a2b;
   background: #2c2115;
@@ -173,6 +175,14 @@ body {
 #arch-open {
   padding: 0 14px;
   color: #f0d79a;
+}
+
+#findings-link {
+  display: flex;
+  align-items: center;
+  padding: 0 14px;
+  color: #f0d79a;
+  text-decoration: none;
 }
 
 #seek {

@@ -67,6 +67,15 @@ async function main() {
   await copyEpisode("smoke", "fixtures/smoke.jsonl");
   entries.push({ id: "smoke", label: "Smoke fixture (10 events)", hasAudio: false });
 
+  // Scoreboard results — the FINDINGS page renders live from the same file the
+  // benchmark writes, so the exhibit can never drift from the data.
+  const resultsSrc = resolve(repoRoot, "scoreboard", "results.json");
+  if (existsSync(resultsSrc)) {
+    await mkdir(resolve(publicDir, "scoreboard"), { recursive: true });
+    await cp(resultsSrc, resolve(publicDir, "scoreboard", "results.json"));
+    console.log("  scoreboard/results.json <- scoreboard/results.json");
+  }
+
   // Sprite sheets + manifest (textualist & pragmatist exist today; the rest fall back
   // to coloured rectangles at runtime).
   const spritesSrc = resolve(repoRoot, "assets", "sprites");

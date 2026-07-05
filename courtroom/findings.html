@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Split Decision — Findings</title>
+    <link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y=".9em" font-size="90">⚖️</text></svg>' />
+    <style>
+      /* Findings exhibit — court-reporter register, dark by design (matches the app).
+         Charts: single-hue magnitude bars, 0-based scale, direct labels, table view. */
+      :root {
+        --bg: #1a140d; --panel: #241a10; --line: #4a3320; --wood: #8a5a2b;
+        --ink: #e8e0d2; --muted: #9a8f7d; --gold: #caa24a; --goldhi: #f0d79a;
+        --green: #3f6d4e; --burgundy: #7a1f2b;
+      }
+      * { box-sizing: border-box; margin: 0; }
+      body {
+        background: var(--bg); color: var(--ink);
+        font: 14px/1.55 ui-monospace, Menlo, monospace;
+        padding: 32px 20px 60px;
+      }
+      main { max-width: 880px; margin: 0 auto; }
+      a.back {
+        color: var(--goldhi); text-decoration: none; font-weight: 700; font-size: 12px;
+        border: 2px solid var(--wood); padding: 6px 12px; display: inline-block;
+        margin-bottom: 24px; border-radius: 3px;
+      }
+      a.back:hover { background: var(--line); }
+      h1 { font-size: 26px; color: var(--goldhi); letter-spacing: 0.02em; }
+      .banner { color: var(--muted); margin: 6px 0 40px; font-size: 15px; }
+      section { margin-bottom: 48px; }
+      h2 {
+        font-size: 15px; color: var(--gold); letter-spacing: 0.08em;
+        border-bottom: 2px solid var(--line); padding-bottom: 8px; margin-bottom: 6px;
+      }
+      .sub { color: var(--muted); font-size: 12.5px; margin-bottom: 18px; }
+      .row { display: grid; grid-template-columns: 252px 1fr 90px; gap: 12px; align-items: center; margin: 10px 0; }
+      .row .name { text-align: right; font-size: 12.5px; color: var(--ink); white-space: nowrap; }
+      .row .name .chip { display: inline-block; width: 9px; height: 9px; margin-right: 7px; border: 1px solid #0008; vertical-align: baseline; }
+      .track { background: var(--panel); border: 1px solid var(--line); height: 18px; position: relative; }
+      .bar {
+        position: absolute; inset: 2px auto 2px 2px; background: var(--gold);
+        border-radius: 0 4px 4px 0; min-width: 3px; transition: width 0.6s ease;
+      }
+      .bar.dim { background: var(--wood); }
+      .row .val { font-size: 12.5px; color: var(--goldhi); font-weight: 700; }
+      .row .val small { color: var(--muted); font-weight: 400; }
+      .note {
+        background: var(--panel); border-left: 3px solid var(--gold);
+        padding: 14px 16px; font-size: 13px; color: var(--ink); margin-top: 18px;
+      }
+      .note b { color: var(--goldhi); }
+      details { margin-top: 16px; }
+      summary { color: var(--muted); font-size: 12px; cursor: pointer; }
+      table { border-collapse: collapse; margin-top: 10px; font-size: 12px; }
+      th, td { border: 1px solid var(--line); padding: 5px 10px; text-align: left; color: var(--ink); }
+      th { color: var(--muted); font-weight: 700; }
+      .foot { color: var(--muted); font-size: 11.5px; margin-top: 40px; border-top: 1px solid var(--line); padding-top: 14px; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <a class="back" href="./index.html">← THE COURTROOM</a>
+      <h1>FINDINGS</h1>
+      <p class="banner">More debate, better arguments, worse predictions — what an agent society
+      actually did to decision quality, measured on real Supreme Court outcomes.</p>
+
+      <section id="abc">
+        <h2>DOES DELIBERATION IMPROVE DECISIONS?</h2>
+        <p class="sub">Disposition accuracy, identical case records, three conditions. Post-June-2025 cases only.</p>
+        <div id="abc-rows"></div>
+        <div class="note" id="abc-note"></div>
+        <details><summary>data table</summary><table id="abc-table"></table></details>
+      </section>
+
+      <section id="contamination">
+        <h2>THE CONTAMINATION CURVE</h2>
+        <p class="sub">Same solo model, three case pools. The benchmark starts June 2025 because the model
+        has already memorized history — fame isn't required, age is enough.</p>
+        <div id="cont-rows"></div>
+        <div class="note">This is why famous cases can never count toward the benchmark:
+        the model isn't <b>predicting</b> them, it's <b>remembering</b> them. Landmark episodes
+        in the courtroom are labeled exhibition for exactly this reason.</div>
+        <details><summary>data table</summary><table id="cont-table"></table></details>
+      </section>
+
+      <section id="steer">
+        <h2>WHO CAN BE PERSUADED (85 VOTE FLIPS, 24 CASES)</h2>
+        <p class="sub">Every flip is argued in the transcript, not announced — and the pattern is
+        philosophy-consistent: the persuadable flip, the anchored don't.</p>
+        <div id="steer-rows"></div>
+        <div class="note">The <b>minimalist</b> (decide narrowly, avoid the big question) flipped 21 times;
+        the <b>textualist</b> ("the text controls, full stop") flipped once. The personas hold under
+        pressure — persuasion is real. It just isn't <b>accurate</b>: eloquent majorities pulled
+        correct independent votes into 5–4 splits on cases the real Court decided 9–0.</div>
+        <details><summary>data table</summary><table id="steer-table"></table></details>
+      </section>
+
+      <section>
+        <h2>THE TAKEAWAY FOR MULTI-AGENT BUILDERS</h2>
+        <div class="note">
+          If your agents can be talked out of correct answers, deliberation is a liability.
+          Independence is a feature you have to engineer for — private votes before public
+          statements made the drift <b>measurable</b> here, and the measurement says the silent
+          jury beat the deliberating panel by ten points. Deliberation bought richer arguments,
+          philosophy-true persuasion, and an audit trail — it did not buy accuracy.
+          <b>Measure both before you pay for debate.</b>
+        </div>
+      </section>
+
+      <p class="foot">All numbers render live from <code>scoreboard/results.json</code> — the same file the
+      benchmark writes. Tape integrity: podcast, scoreboard, and courtroom read one immutable
+      <code>events.jsonl</code> per case; juror words are never rewritten.</p>
+    </main>
+
+    <script type="module">
+      const ACCENTS = {
+        minimalist: "#9b8ec4", pragmatist: "#c27b2c", precedent_maximalist: "#4a4e69",
+        living_constitutionalist: "#2e6f5e", civil_libertarian: "#2b6cb0",
+        federalism_hawk: "#8c3b00", process_formalist: "#6b7280",
+        originalist: "#5b4a2f", textualist: "#7a1f2b",
+      };
+      const pretty = (id) => id.replaceAll("_", " ").replace(/\b\w/g, (c) => c.toUpperCase());
+      const pct = (x) => (x * 100).toFixed(1).replace(/\.0$/, "") + "%";
+
+      function bars(mount, rows, max, dimBelow) {
+        mount.innerHTML = rows.map(({ label, value, display, chip, dim }) => `
+          <div class="row" title="${label}: ${display}">
+            <span class="name">${chip ? `<span class="chip" style="background:${chip}"></span>` : ""}${label}</span>
+            <span class="track"><span class="bar${dim ? " dim" : ""}" style="width:${(value / max) * 100}%"></span></span>
+            <span class="val">${display}</span>
+          </div>`).join("");
+      }
+      function table(mount, head, rows) {
+        mount.innerHTML = `<tr>${head.map((h) => `<th>${h}</th>`).join("")}</tr>` +
+          rows.map((r) => `<tr>${r.map((c) => `<td>${c}</td>`).join("")}</tr>`).join("");
+      }
+
+      const res = await (await fetch("scoreboard/results.json")).json();
+      const A = res["benchmark_wide:A"], B = res["benchmark_wide:B"], C = res["benchmark:C"];
+
+      bars(document.getElementById("abc-rows"), [
+        { label: "A · solo model", value: A.accuracy, display: `${pct(A.accuracy)} <small>n=${A.n}</small>` },
+        { label: "B · silent jury (9, no talk)", value: B.accuracy, display: `${pct(B.accuracy)} <small>n=${B.n}</small>` },
+        { label: "C · deliberating panel", value: C.accuracy, display: `${pct(C.accuracy)} <small>n=${C.n}</small>`, dim: true },
+      ], 1);
+      document.getElementById("abc-note").innerHTML =
+        `Monotonic, and the wrong direction: every layer of social process cost accuracy. ` +
+        `C − B = <b>${((C.accuracy - B.accuracy) * 100).toFixed(1)} points</b> — the measured price of deliberation ` +
+        `(${C.total_vote_changes} flips, ${C.mean_rounds} rounds/case).`;
+      table(document.getElementById("abc-table"), ["condition", "accuracy", "n"], [
+        ["A solo", pct(A.accuracy), A.n], ["B silent jury", pct(B.accuracy), B.n], ["C deliberation", pct(C.accuracy), C.n],
+      ]);
+
+      const fam = res["memorization:famous:A"], hist = res["memorization:scdb:A"];
+      bars(document.getElementById("cont-rows"), [
+        { label: "famous landmarks (pre-cutoff)", value: fam.accuracy, display: `${pct(fam.accuracy)} <small>n=${fam.n}</small>`, dim: true },
+        { label: "ordinary historical (pre-cutoff)", value: hist.accuracy, display: `${pct(hist.accuracy)} <small>n=${hist.n}</small>`, dim: true },
+        { label: "post-cutoff (the benchmark)", value: A.accuracy, display: `${pct(A.accuracy)} <small>n=${A.n}</small>` },
+      ], 1);
+      table(document.getElementById("cont-table"), ["case pool", "solo accuracy", "n"], [
+        ["famous landmarks", pct(fam.accuracy), fam.n], ["ordinary historical", pct(hist.accuracy), hist.n], ["post-cutoff", pct(A.accuracy), A.n],
+      ]);
+
+      const flips = Object.entries(C.flips_by_agent).sort((a, b) => b[1] - a[1]);
+      const maxFlips = flips[0][1];
+      bars(document.getElementById("steer-rows"), flips.map(([id, n]) => ({
+        label: pretty(id), value: n, display: `${n} flip${n === 1 ? "" : "s"}`, chip: ACCENTS[id],
+      })), maxFlips);
+      table(document.getElementById("steer-table"), ["jurist", "vote flips"], flips.map(([id, n]) => [pretty(id), n]));
+    </script>
+  </body>
+</html>
