@@ -1,8 +1,10 @@
 # Courtroom — the pixel replay player
 
 A deterministic VCR over a deliberation's `events.jsonl`. No game logic: it reconstructs
-stage state from the event log at any instant and renders it. Audio will later drive the
-clock (see `clock.ts`); today a wall-clock timer stands in.
+stage state from the event log at any instant and renders it. When an episode ships a
+Producer-rendered `deliberation.mp3`, audio drives the clock (`audioClock.ts` — 
+audio.currentTime IS the playhead, drift-proof); episodes without audio fall back to a
+wall-clock timer with synthesized timing.
 
 ## Run
 
@@ -35,8 +37,8 @@ script is the only bridge and it copies, never edits.
 
 ## Timing note
 
-Real episodes ship with `t: null` on every event — the Producer fills timestamps after
-TTS. Until then `normalize.ts` synthesizes a playable timeline: each event starts 300ms
+Produced episodes (e.g. Pung) carry real Producer timestamps and a `deliberation.mp3`;
+the rest still ship `t: null`. For those, `normalize.ts` synthesizes a playable timeline: each event starts 300ms
 after the previous ends, spoken events last `max(3000, chars × 55)` ms. Events that
 already carry a real `t` (the smoke fixture) are honoured as-is. This is the one place
 timing is invented.
@@ -46,13 +48,14 @@ timing is invented.
 - `replayState.ts` — **pure** `(events, t) => state`. The tested core; `seek()` is just a
   call to it. State = positions, votes, current speaker, verdict.
 - `normalize.ts` — assigns concrete `t`/duration to every event; parses `.jsonl`.
-- `clock.ts` — `Clock` interface + `TimerClock`. The seam for a future `AudioClock`.
+- `clock.ts` / `audioClock.ts` — the `Clock` seam: `AudioClock` (audio-driven master
+  clock) when the episode has a replay track, `TimerClock` otherwise.
 - `TimelinePlayer.ts` — owns clock + events; `tick()` reports the time, freshly-crossed
   events (one-shot animations), and whether a seek just happened (snap vs animate).
 - `CourtScene.ts` — Phaser scene; reconstructs state each frame and drives visuals.
-- `Stage / JuristSprite / VoteBoard / Bubble` — Phaser presentation. Textualist and
-  pragmatist use real sprite sheets; the other seven fall back to accent-coloured
-  rectangles until their sprites land.
+- `Stage / JuristSprite / VoteBoard / Bubble` — Phaser presentation. All nine jurists
+  use real sprite sheets, seated behind the painted bench (a cropped bench-front
+  overlay occludes their lower bodies; feet are pixel-scanned to the baseline).
 - `RecordPanel.ts` — "The Record" DOM transcript (right 35%). Lines append as events play,
   `vote_change` renders as a highlighted system line, click-to-seek, running tally,
   auto-scroll with pause-on-hover.

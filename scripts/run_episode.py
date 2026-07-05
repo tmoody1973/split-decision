@@ -17,7 +17,7 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(REPO_ROOT))
 
-from producer.assemble import assemble  # noqa: E402
+from producer.assemble import assemble, assemble_deliberation  # noqa: E402
 from producer.clips import select_clips  # noqa: E402
 from producer.episode import load_episode  # noqa: E402
 from producer.rss import publish_episode  # noqa: E402
@@ -69,6 +69,7 @@ def main() -> int:
     if active("assemble"):
         print("assemble: mixing...")
         assemble(ep)
+        assemble_deliberation(ep)
 
     if active("publish"):
         name = ep.case.get("name", ep.case_id)

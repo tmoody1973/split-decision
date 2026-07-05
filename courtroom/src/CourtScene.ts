@@ -11,6 +11,7 @@ import type { Place } from "./types";
 
 export interface SceneDeps {
   manifest: SpriteManifest;
+  bgFile: string | null;
   player: TimelinePlayer;
   record: RecordPanel;
   onFrame: (now: number, duration: number, playing: boolean) => void;
@@ -35,6 +36,9 @@ export class CourtScene extends Phaser.Scene {
     this.load.on("loaderror", (file: Phaser.Loader.File) => {
       console.warn(`sprite sheet missing, falling back to placeholder: ${file.key}`);
     });
+    if (this.deps.bgFile) {
+      this.load.image("courtroom_bg", `assets/sprites/${this.deps.bgFile}`);
+    }
     for (const [id, entry] of Object.entries(this.deps.manifest)) {
       const cfg = { frameWidth: entry.frame_w, frameHeight: entry.frame_h };
       this.load.spritesheet(`${id}-idle`, `assets/sprites/${entry.sheets.idle}`, cfg);
@@ -95,6 +99,7 @@ export class CourtScene extends Phaser.Scene {
     const layout = this.stage.layout(width, height);
     JURIST_ORDER.forEach((id, i) => {
       const s = this.sprites[id];
+      s.setDisplayHeight(layout.spriteH);
       s.setSeat(layout.seatX(i), layout.seatY);
       s.setLectern(layout.lectern.x, layout.lectern.y);
     });

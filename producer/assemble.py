@@ -15,7 +15,7 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(REPO_ROOT))
 
-from producer.episode import Episode  # noqa: E402
+from producer.episode import Episode, read_jsonl  # noqa: E402
 
 BED_PATH = REPO_ROOT / "assets" / "music" / "bed.mp3"
 BED_BASE_DB = -20.0   # bed level in the gaps between segments
@@ -35,6 +35,41 @@ def _studio_ranges(cues: list[dict]) -> list[tuple[int, int]]:
         else:
             ranges.append((start, end))
     return ranges
+
+
+def _mix_at_offsets(ep_dir: Path, items: list[tuple[int, str]], total_ms: int,
+                    out_path: Path, bitrate: str = "128k", channels: int = 2) -> None:
+    """Place each (t_ms, audio_file) at its offset and mix to one mp3."""
+    inputs, delays = [], []
+    for n, (t, name) in enumerate(items):
+        inputs += ["-i", str(ep_dir / name)]
+        delays.append(f"[{n}:a]adelay={t}|{t}[d{n}]")
+    mix = "".join(f"[d{n}]" for n in range(len(items)))
+    filters = delays + [f"{mix}amix=inputs={len(items)}:normalize=0[speech]",
+                        "[speech]loudnorm=I=-16:TP=-1.5:LRA=11[out]"]
+    cmd = (["ffmpeg", "-y", "-loglevel", "error"] + inputs +
+           ["-filter_complex", ";".join(filters), "-map", "[out]",
+            "-codec:a", "libmp3lame", "-b:a", bitrate, "-ar", "44100",
+            "-ac", str(channels),
+            "-t", f"{total_ms / 1000:.3f}", str(out_path)])
+    subprocess.run(cmd, check=True)
+
+
+def assemble_deliberation(ep: Episode) -> Path:
+    """Render the courtroom soundtrack: every deliberation utterance at its
+    replay-clock `t` (events.jsonl), no bed. The Phaser AudioClock plays this
+    file, so audio position IS the replay playhead."""
+    spoken = [e for e in read_jsonl(ep.events_path)
+              if e.get("audio_file") and e.get("t") is not None and e.get("dur_ms")]
+    if not spoken:
+        raise RuntimeError("no timestamped audio events — run tts + timestamps first")
+    total_ms = max(int(e["t"]) + int(e["dur_ms"]) for e in spoken) + TAIL_MS
+    out = ep.dir / "deliberation.mp3"
+    # dialog-only browser asset: mono 64k halves the download for identical timing
+    _mix_at_offsets(ep.dir, [(int(e["t"]), e["audio_file"]) for e in spoken],
+                    total_ms, out, bitrate="64k", channels=1)
+    print(f"assembled {out} ({total_ms / 60000:.1f} min replay track)")
+    return out
 
 
 def assemble(ep: Episode) -> Path:

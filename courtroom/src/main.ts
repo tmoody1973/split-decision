@@ -1,7 +1,8 @@
 import Phaser from "phaser";
+import { AudioClock, loadEpisodeAudio } from "./audioClock";
 import { CourtScene } from "./CourtScene";
 import { TimerClock } from "./clock";
-import { parseManifest, type SpriteManifest } from "./manifest";
+import { parseManifest, setPieceFile, type SpriteManifest } from "./manifest";
 import { normalizeEvents, parseJsonl } from "./normalize";
 import { RecordPanel } from "./RecordPanel";
 import { TimelinePlayer } from "./TimelinePlayer";
@@ -28,12 +29,13 @@ async function loadIndex(): Promise<EpisodeIndex> {
   }
 }
 
-async function loadManifest(): Promise<SpriteManifest> {
+async function loadManifest(): Promise<{ manifest: SpriteManifest; bgFile: string | null }> {
   try {
-    return parseManifest(JSON.parse(await fetchText("assets/sprites/manifest.json")));
+    const raw = JSON.parse(await fetchText("assets/sprites/manifest.json"));
+    return { manifest: parseManifest(raw), bgFile: setPieceFile(raw, "courtroom_bg") };
   } catch (err) {
     console.warn("no sprite manifest — all jurists render as placeholders", err);
-    return {};
+    return { manifest: {}, bgFile: null };
   }
 }
 
@@ -47,13 +49,17 @@ async function boot(): Promise<void> {
 
   const index = await loadIndex();
   const episodeId = params.get("episode") ?? index.default;
-  const [rawEvents, manifest] = await Promise.all([
+  const [rawEvents, { manifest, bgFile }, audio] = await Promise.all([
     fetchText(`episodes/${episodeId}/events.jsonl`),
     loadManifest(),
+    loadEpisodeAudio(episodeId),
   ]);
 
   const events = normalizeEvents(parseJsonl(rawEvents));
-  const clock = new TimerClock();
+  // Audio is the master clock whenever the episode ships a pre-rendered replay track;
+  // the wall-clock timer remains the fallback (e.g. the smoke fixture has no audio).
+  const clock = audio ? new AudioClock(audio) : new TimerClock();
+  if (!audio) console.warn(`no deliberation.mp3 for ${episodeId} — silent TimerClock replay`);
   const player = new TimelinePlayer(events, clock);
 
   const recordRoot = document.getElementById("record") as HTMLElement;
@@ -97,7 +103,7 @@ async function boot(): Promise<void> {
     backgroundColor: "#0f0d0a",
     pixelArt: true,
     scale: { mode: Phaser.Scale.RESIZE, autoCenter: Phaser.Scale.NO_CENTER },
-    scene: new CourtScene({ manifest, player, record, onFrame }),
+    scene: new CourtScene({ manifest, bgFile, player, record, onFrame }),
   });
 
   if (recordMode) {
