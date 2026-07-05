@@ -59,7 +59,7 @@ async function main() {
     await copyEpisode(id, `episodes/${id}/events.jsonl`);
     const hasAudio = existsSync(resolve(repoRoot, "episodes", id, "deliberation.mp3"));
     const label = await caseLabel(id);
-    entries.push({ id, label: hasAudio ? `${label} 🔊` : label, hasAudio });
+    entries.push({ id, label: hasAudio ? `♪ ${label}` : label, hasAudio });
   }
   entries.sort((a, b) => Number(b.hasAudio) - Number(a.hasAudio) || a.label.localeCompare(b.label));
 

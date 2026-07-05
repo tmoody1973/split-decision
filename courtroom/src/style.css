@@ -134,33 +134,50 @@ body {
   font-weight: 700;
 }
 
-/* Controls */
+/* Controls — one system: pixel-register chips on the reporter bar. */
 #controls {
   display: flex;
   align-items: center;
-  gap: 12px;
-  padding: 10px 16px;
-  border-top: 1px solid var(--line);
+  gap: 10px;
+  padding: 10px 14px;
+  border-top: 2px solid #4a3320;
   background: #100e0b;
 }
 
-#controls button {
-  width: 40px;
-  height: 40px;
-  border-radius: 8px;
-  border: 1px solid var(--line);
-  background: #221d16;
-  color: var(--ink);
-  font-size: 16px;
+#controls button,
+#episode-picker {
+  height: 34px;
+  background: #241a10;
+  border: 2px solid #4a3320;
+  border-radius: 3px;
+  font: 700 11px ui-monospace, Menlo, monospace;
+  letter-spacing: 0.06em;
+  color: #e8e0d2;
   cursor: pointer;
+  flex: 0 0 auto;
 }
 
-#controls button:hover {
-  background: #2c261d;
+#controls button:hover,
+#episode-picker:hover {
+  border-color: #8a5a2b;
+  background: #2c2115;
+}
+
+#play {
+  width: 42px;
+  font-size: 14px;
+  color: #f0d79a;
+  border-color: #8a5a2b;
+}
+
+#arch-open {
+  padding: 0 14px;
+  color: #f0d79a;
 }
 
 #seek {
-  flex: 1;
+  flex: 1 1 auto;
+  min-width: 120px;
   accent-color: #caa24a;
 }
 
@@ -170,15 +187,16 @@ body {
   color: var(--muted);
   min-width: 110px;
   text-align: right;
+  white-space: nowrap;
 }
 
 #episode-picker {
-  background: #221d16;
-  color: var(--ink);
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  padding: 8px;
-  font-size: 12px;
+  flex: 0 1 340px;
+  max-width: 340px;
+  padding: 0 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 /* Recording mode: hide chrome, let the split view be the whole frame. */
@@ -190,15 +208,6 @@ body.record #app {
 }
 
 /* Architecture modal */
-#arch-open {
-  font: 11px ui-monospace, monospace;
-  background: #241a10;
-  color: #f0d79a;
-  border: 2px solid #8a5a2b;
-  padding: 6px 10px;
-  cursor: pointer;
-}
-#arch-open:hover { background: #4a3320; }
 #arch-modal {
   border: 3px solid #8a5a2b;
   background: #1a140d;
