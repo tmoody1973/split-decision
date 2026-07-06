@@ -163,7 +163,7 @@
 
       const CN = res["benchmark:C_neutral"]; // neutral-panel control arm, present once run
       bars(document.getElementById("abc-rows"), [
-        { label: "always guess \"reverse\" (no AI at all)", value: NAIVE.accuracy, display: `${pct(NAIVE.accuracy)} <small>n=${NAIVE.n}</small>`, dim: true },
+        { label: "always guess 'reverse' (no AI at all)", value: NAIVE.accuracy, display: `${pct(NAIVE.accuracy)} <small>n=${NAIVE.n}</small>`, dim: true },
         { label: "one model, asked directly", value: A.accuracy, display: `${pct(A.accuracy)} <small>n=${A.n}</small>` },
         { label: "nine judges, no talking", value: B.accuracy, display: `${pct(B.accuracy)} <small>n=${B.n}</small>` },
         { label: "nine judges who debate first", value: C.accuracy, display: `${pct(C.accuracy)} <small>n=${C.n}</small>` },
