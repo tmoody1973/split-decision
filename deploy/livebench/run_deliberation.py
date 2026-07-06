@@ -9,6 +9,7 @@ Usage: run_deliberation.py <case_json_path> <run_dir>
 """
 
 import json
+import os
 import sys
 import time
 from pathlib import Path
@@ -27,6 +28,7 @@ from engine.chamber import Chamber  # noqa: E402
 def main() -> int:
     case_path, run_dir = Path(sys.argv[1]), Path(sys.argv[2])
     run_dir.mkdir(parents=True, exist_ok=True)
+    (run_dir / "pid").write_text(str(os.getpid()))
     stream = (run_dir / "stream.jsonl").open("a", buffering=1, encoding="utf-8")
     try:
         case = json.loads(case_path.read_text(encoding="utf-8"))

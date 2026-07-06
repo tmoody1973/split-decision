@@ -88,7 +88,8 @@ def status() -> dict:
             "event_count": len(_events(run)), "error": None}
     if done is None:
         return {"state": "running", **base}
-    remaining = int(COOLDOWN_S - (time.time() - done["finished"]))
+    cooldown = COOLDOWN_S if done.get("ok") else 120  # brief recess after failures
+    remaining = int(cooldown - (time.time() - done["finished"]))
     if not done.get("ok"):
         base["error"] = done.get("error")
     if remaining > 0:
@@ -115,12 +116,15 @@ def convene() -> tuple[int, dict]:
     case_name = json.loads(DEMO_CASE.read_text(encoding="utf-8"))["name"]
     (run / "meta.json").write_text(json.dumps(
         {"case_name": case_name, "started": time.time()}))
-    with (run / "runner.log").open("w") as logf:
-        proc = subprocess.Popen(
-            [str(PYTHON), str(RUNNER), str(DEMO_CASE), str(run)],
-            stdout=logf, stderr=subprocess.STDOUT,
-            start_new_session=True, cwd=str(REPO_ROOT))
-    (run / "pid").write_text(str(proc.pid))
+    # systemd-run puts the runner in its OWN transient unit (own cgroup), so
+    # restarting livebench never kills a judge's session. start_new_session
+    # alone is NOT enough — children share the service cgroup and die with it
+    # (verified live 2026-07-06). The runner writes its own pidfile.
+    subprocess.run(
+        ["systemd-run", "--collect", f"--unit=sd-{run_id}",
+         f"--property=WorkingDirectory={REPO_ROOT}",
+         str(PYTHON), str(RUNNER), str(DEMO_CASE), str(run)],
+        check=True, capture_output=True)
     return 200, status()
 
 
