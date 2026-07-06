@@ -54,7 +54,8 @@ systemctl daemon-reload
 echo "== nginx site (courtroom app) =="
 mkdir -p /opt/split-decision-site
 cp "$APP_DIR/deploy/nginx-split-decision.conf" /etc/nginx/conf.d/split-decision.conf
-# quiet the distro default server if present
+# quiet the distro default sites (Ubuntu ships a default_server in sites-enabled)
+rm -f /etc/nginx/sites-enabled/default
 sed -i 's/ default_server//g' /etc/nginx/nginx.conf 2>/dev/null || true
 nginx -t && systemctl enable --now nginx && systemctl reload nginx
 
