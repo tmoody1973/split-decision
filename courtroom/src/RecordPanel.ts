@@ -62,7 +62,7 @@ export class RecordPanel {
         const p = personaFor(ev.agent);
         const el = document.createElement("div");
         el.className = "line speak";
-        el.innerHTML = `<span class="ts">${fmt(ev.t)}</span><span class="who" style="color:${p.accent}">${p.display}:</span> ${escapeHtml(ev.text)}${ev.synthesized ? " · ⚠ synthesized" : ""}`;
+        el.innerHTML = `<span class="ts">${fmt(ev.t)}</span><span class="who" style="color:${p.accent}">${p.display}:</span> ${escapeHtml(ev.text)}${warn(ev.synthesized, "synthesized")}`;
         return el;
       }
       case "studio": {
@@ -82,7 +82,7 @@ export class RecordPanel {
         const p = personaFor(ev.agent);
         const el = document.createElement("div");
         el.className = "line system";
-        el.textContent = `⚖ ${p.display.toUpperCase()} changes vote: ${ev.from.toUpperCase()} → ${ev.to.toUpperCase()} (rd ${ev.round})${ev.influence_inferred ? " · ⚠ influence inferred" : ""}${ev.reason_inferred ? " · ⚠ reason inferred" : ""}`;
+        el.textContent = `⚖ ${p.display.toUpperCase()} changes vote: ${ev.from.toUpperCase()} → ${ev.to.toUpperCase()} (rd ${ev.round})${warn(ev.influence_inferred, "influence inferred")}${warn(ev.reason_inferred, "reason inferred")}`;
         return el;
       }
       case "verdict": {
@@ -111,6 +111,11 @@ export function tallyOf(votes: Record<string, Position | "unknown">): { affirm: 
     else if (v === "reverse") reverse += 1;
   }
   return { affirm, reverse };
+}
+
+/** Degraded-data marker suffix — mirrors the engine's marked-never-silent flags. */
+function warn(flag: boolean | undefined, label: string): string {
+  return flag ? ` · ⚠ ${label}` : "";
 }
 
 function fmt(ms: number): string {
