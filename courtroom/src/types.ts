@@ -31,6 +31,7 @@ export interface SpeakEvent {
   text: string;
   stance: Position;
   confidence: number;
+  synthesized?: boolean; // text is an engine placeholder after a malformed reply
   audio_file?: string;
   dur_ms?: number;
 }
@@ -56,6 +57,7 @@ export interface VoteChangeEvent {
   influenced_by: JuristId[];
   reason_text: string;
   influence_inferred?: boolean; // influenced_by inferred by the engine, not named by the jurist
+  reason_inferred?: boolean; // reason_text is an engine placeholder, not the jurist's words
   audio_file?: string;
   dur_ms?: number;
 }

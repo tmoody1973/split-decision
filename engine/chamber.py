@@ -114,7 +114,9 @@ class Chamber:
             order = JURIST_IDS[round_no - 1:] + JURIST_IDS[: round_no - 1]  # deterministic fallback rotation
         return order
 
-    def statement(self, jurist: str, round_no: int, transcript: list[str]) -> str:
+    def statement(self, jurist: str, round_no: int, transcript: list[str]) -> str | None:
+        """The jurist's statement text, or None on a malformed reply (caller
+        substitutes a placeholder and marks the event synthesized)."""
         so_far = "\n".join(transcript) or "(you speak first this round)"
         user = (
             f"BENCH MEMO:\n{self.memo}\n\n{GROUND_RULES}\n\n"
@@ -126,7 +128,7 @@ class Chamber:
         )
         result = chat_json(JUROR_MODEL, self._sys(jurist, round_no), user,
                            self._purpose(f"r{round_no}:speak:{jurist}"))
-        return (result or {}).get("text") or "I rest on my prior statement."
+        return (result or {}).get("text") or None
 
     def pick_debate_pairs(self, round_no: int, statements: dict[str, str]) -> tuple[list[list[str]], str]:
         summary = "\n".join(
@@ -150,7 +152,7 @@ class Chamber:
         text = (result or {}).get("text") or "The chair pairs the sharpest disagreements for focused exchange."
         return pairs, text
 
-    def rebuttal(self, jurist: str, opponent: str, opponent_text: str, round_no: int) -> str:
+    def rebuttal(self, jurist: str, opponent: str, opponent_text: str, round_no: int) -> str | None:
         user = (
             f"BENCH MEMO:\n{self.memo}\n\n{GROUND_RULES}\n\n"
             f"Direct exchange. {self.personas[opponent]['display_name']} ({opponent}) just argued:\n"
@@ -160,7 +162,7 @@ class Chamber:
         )
         result = chat_json(JUROR_MODEL, self._sys(jurist, round_no), user,
                            self._purpose(f"r{round_no}:debate:{jurist}"))
-        return (result or {}).get("text") or "My position stands for the reasons given."
+        return (result or {}).get("text") or None
 
     def update_digest(self, jurist: str, round_no: int, transcript: list[str]) -> str:
         user = (
@@ -196,11 +198,13 @@ class Chamber:
                     self.flip_counts[j] += 1
                     named = [i for i in v.get("influenced_by", []) if i in JURIST_IDS and i != j]
                     influenced = named or [next(k for k in JURIST_IDS if k != j)]
+                    reason = v.get("reason")
                     self.log.add(type="vote_change", agent=j, round=round_no,
                                  **{"from": prev, "to": v["position"]},
                                  influenced_by=influenced,
-                                 reason_text=v.get("reason") or "Reflection between rounds moved me.",
-                                 **({} if named else {"influence_inferred": True}))
+                                 reason_text=reason or "Reflection between rounds moved me.",
+                                 **({} if named else {"influence_inferred": True}),
+                                 **({} if reason else {"reason_inferred": True}))
                     print(f"[round {round_no}] DRIFT FLIP: {j} {prev} -> {v['position']}")
                 self.positions[j] = v
                 self.log.add(type="vote", agent=j, round=round_no,
@@ -214,11 +218,15 @@ class Chamber:
             statements: dict[str, str] = {}
             for j in self.speaking_order(round_no):
                 text = self.statement(j, round_no, transcript)
+                synth = text is None
+                if synth:
+                    text = "I rest on my prior statement."
                 statements[j] = text
                 transcript.append(f"{self.personas[j]['display_name']} ({j}): {text}")
                 self.log.add(type="speak", agent=j, round=round_no, text=text,
                              stance=self.positions[j]["position"],
-                             confidence=self.positions[j]["confidence"])
+                             confidence=self.positions[j]["confidence"],
+                             **({"synthesized": True} if synth else {}))
 
             # 3. PAIR_DEBATE
             pairs, frame_text = self.pick_debate_pairs(round_no, statements)
@@ -229,11 +237,15 @@ class Chamber:
                 last = {a: statements[a], b: statements[b]}
                 for speaker, opponent in ((a, b), (b, a), (a, b), (b, a)):
                     text = self.rebuttal(speaker, opponent, last[opponent], round_no)
+                    synth = text is None
+                    if synth:
+                        text = "My position stands for the reasons given."
                     last[speaker] = text
                     transcript.append(f"{self.personas[speaker]['display_name']} ({speaker}): {text}")
                     self.log.add(type="speak", agent=speaker, round=round_no, text=text,
                                  stance=self.positions[speaker]["position"],
-                                 confidence=self.positions[speaker]["confidence"])
+                                 confidence=self.positions[speaker]["confidence"],
+                                 **({"synthesized": True} if synth else {}))
 
             # 4. REVOTE (flips emit vote_change)
             revotes = self.all_private_votes(round_no, revote=True)
@@ -245,11 +257,13 @@ class Chamber:
                     fallback = next((i for i in debated + JURIST_IDS if i != j))
                     named = [i for i in v.get("influenced_by", []) if i in JURIST_IDS and i != j]
                     influenced = named or [fallback]
+                    reason = v.get("reason")
                     self.log.add(type="vote_change", agent=j, round=round_no,
                                  **{"from": before, "to": v["position"]},
                                  influenced_by=influenced,
-                                 reason_text=v.get("reason") or "On reflection, the argument carried.",
-                                 **({} if named else {"influence_inferred": True}))
+                                 reason_text=reason or "On reflection, the argument carried.",
+                                 **({} if named else {"influence_inferred": True}),
+                                 **({} if reason else {"reason_inferred": True}))
                     print(f"[round {round_no}] FLIP: {j} {before} -> {v['position']}")
                 self.positions[j] = v
                 self.log.add(type="vote", agent=j, round=round_no,

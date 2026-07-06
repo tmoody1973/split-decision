@@ -112,8 +112,10 @@ rewrite the record. One log, four consumers.
 
 **Degraded data is marked, never silent.** When a jurist's reply is malformed,
 the engine carries its prior position forward and stamps the vote event
-`"synthesized": true`; when a flipping jurist doesn't name who moved it, the
-engine's guess is stamped `"influence_inferred": true`. Both flags are in
+`"synthesized": true`; placeholder statements get the same flag on their
+`speak` events. When a flipping jurist doesn't name who moved it, the engine's
+guess is stamped `"influence_inferred": true`; a substituted flip reason is
+stamped `"reason_inferred": true`. All flags are in
 `contracts/events.schema.json` and render as ⚠ markers in the transcript
 surfaces. Episode logs generated before 2026-07-06 predate the flags (the
 schema keeps them optional, so old logs still validate).

@@ -84,13 +84,13 @@ function render(e){
   else if (e.type === "foreperson") d.innerHTML = `<span class="who fore">THE FOREPERSON:</span> ${esc(e.text||e.action||"")}`;
   else if (e.type === "speak") {
     const c = AGENT_COLORS[e.agent] || "#e8e0d2";
-    d.innerHTML = `<span class="who" style="color:${c}">${nice(e.agent).toUpperCase()} <span class="vote">(rd ${e.round}, ${e.stance})</span>:</span> ${esc(e.text)}`;
+    d.innerHTML = `<span class="who" style="color:${c}">${nice(e.agent).toUpperCase()} <span class="vote">(rd ${e.round}, ${e.stance})</span>:</span> ${esc(e.text)}${e.synthesized ? ' <span class="vote">⚠ synthesized</span>' : ""}`;
   } else if (e.type === "vote") {
     tally[e.agent] = e.position; updTally();
     d.innerHTML = `<span class="vote">· private ballot — ${nice(e.agent)}: ${e.position} (conf ${e.confidence})${e.synthesized ? " ⚠ synthesized (malformed reply; prior position carried)" : ""}</span>`;
   } else if (e.type === "vote_change") {
     tally[e.agent] = e.to; updTally();
-    d.innerHTML = `<span class="flip">⚖ ${nice(e.agent).toUpperCase()} CHANGES VOTE: ${e.from} → ${e.to} (rd ${e.round})${e.influence_inferred ? " · ⚠ influence inferred" : ""}</span><br><span class="vote">${esc(e.reason_text||"")}</span>`;
+    d.innerHTML = `<span class="flip">⚖ ${nice(e.agent).toUpperCase()} CHANGES VOTE: ${e.from} → ${e.to} (rd ${e.round})${e.influence_inferred ? " · ⚠ influence inferred" : ""}${e.reason_inferred ? " · ⚠ reason inferred" : ""}</span><br><span class="vote">${esc(e.reason_text||"")}</span>`;
   } else if (e.type === "verdict") {
     d.innerHTML = `<span class="verdict">VERDICT: ${e.position.toUpperCase()} ${e.vote_split}</span>`;
   } else if (e.type === "reveal") {

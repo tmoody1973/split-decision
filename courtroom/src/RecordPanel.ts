@@ -62,7 +62,7 @@ export class RecordPanel {
         const p = personaFor(ev.agent);
         const el = document.createElement("div");
         el.className = "line speak";
-        el.innerHTML = `<span class="ts">${fmt(ev.t)}</span><span class="who" style="color:${p.accent}">${p.display}:</span> ${escapeHtml(ev.text)}`;
+        el.innerHTML = `<span class="ts">${fmt(ev.t)}</span><span class="who" style="color:${p.accent}">${p.display}:</span> ${escapeHtml(ev.text)}${ev.synthesized ? " · ⚠ synthesized" : ""}`;
         return el;
       }
       case "studio": {
@@ -82,7 +82,7 @@ export class RecordPanel {
         const p = personaFor(ev.agent);
         const el = document.createElement("div");
         el.className = "line system";
-        el.textContent = `⚖ ${p.display.toUpperCase()} changes vote: ${ev.from.toUpperCase()} → ${ev.to.toUpperCase()} (rd ${ev.round})${ev.influence_inferred ? " · ⚠ influence inferred" : ""}`;
+        el.textContent = `⚖ ${p.display.toUpperCase()} changes vote: ${ev.from.toUpperCase()} → ${ev.to.toUpperCase()} (rd ${ev.round})${ev.influence_inferred ? " · ⚠ influence inferred" : ""}${ev.reason_inferred ? " · ⚠ reason inferred" : ""}`;
         return el;
       }
       case "verdict": {

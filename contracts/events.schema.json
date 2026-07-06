@@ -76,6 +76,10 @@
         "text": { "type": "string", "minLength": 1 },
         "stance": { "$ref": "#/$defs/position" },
         "confidence": { "$ref": "#/$defs/confidence" },
+        "synthesized": {
+          "description": "True when the jurist's reply was malformed and the text is an engine placeholder — degraded data, always marked, never silent. Absent on real utterances (and on logs generated before 2026-07-06).",
+          "type": "boolean"
+        },
         "audio_file": { "$ref": "#/$defs/audio_file" },
         "dur_ms": { "$ref": "#/$defs/dur_ms" }
       },
@@ -121,6 +125,10 @@
         "reason_text": { "type": "string", "minLength": 1 },
         "influence_inferred": {
           "description": "True when the jurist did not name who moved it and influenced_by was inferred by the engine — disclosed, never silent. Absent when the jurist named its influencers (and on logs generated before 2026-07-06).",
+          "type": "boolean"
+        },
+        "reason_inferred": {
+          "description": "True when the jurist gave no reason and reason_text is an engine placeholder — disclosed, never silent. Absent when the jurist stated its own reason (and on logs generated before 2026-07-06).",
           "type": "boolean"
         },
         "audio_file": { "$ref": "#/$defs/audio_file" },
