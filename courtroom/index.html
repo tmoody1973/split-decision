@@ -248,6 +248,20 @@
       </section>
     </main>
 
+    <dialog id="tour-invite" aria-label="Judge's tour invitation" style="width:min(560px,94vw)">
+      <div style="padding:26px 28px">
+        <div style="font-size:22px;color:var(--gold-hi,#f0d79a);letter-spacing:.08em;font-weight:700;margin-bottom:10px">🧭 FIRST TIME HERE?</div>
+        <p style="margin:0 0 18px;line-height:1.65;font-size:14.5px">
+          Split Decision has five surfaces — the courtroom replay, podcast mode, a live
+          deliberation you can convene yourself, the benchmark findings, and every agent's
+          actual prompt. The 90-second tour hits all of them, mapped to what you're judging.
+        </p>
+        <div style="display:flex;gap:12px;flex-wrap:wrap">
+          <a class="chip primary" href="./judges.html">🧭 TAKE THE 90-SECOND TOUR</a>
+          <button class="chip" id="tour-dismiss" type="button" style="cursor:pointer;font:inherit">EXPLORE ON MY OWN</button>
+        </div>
+      </div>
+    </dialog>
     <dialog id="prompt-modal" aria-label="Agent prompt">
       <div id="pm-head"><span id="pm-title"></span><button id="pm-close" type="button">✕ CLOSE</button></div>
       <div id="pm-body"></div>
@@ -330,6 +344,19 @@
         });
         grid.appendChild(card);
       }
+    </script>
+    <script>
+      (function () {
+        try {
+          if (localStorage.getItem("sd_tour_seen")) return;
+          var dlg = document.getElementById("tour-invite");
+          var seen = function () { try { localStorage.setItem("sd_tour_seen", "1"); } catch (e) {} };
+          setTimeout(function () { try { dlg.showModal(); } catch (e) {} }, 900);
+          document.getElementById("tour-dismiss").addEventListener("click", function () { seen(); dlg.close(); });
+          dlg.addEventListener("close", seen);
+          dlg.querySelector("a.chip").addEventListener("click", seen);
+        } catch (e) {}
+      })();
     </script>
   </body>
 </html>
