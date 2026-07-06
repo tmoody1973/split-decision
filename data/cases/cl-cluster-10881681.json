@@ -5,14 +5,14 @@
   "date_argued": "2025-12-08",
   "date_decided": "2026-06-29",
   "question_presented": "Do the statutory removal protections for members of the Federal Trade Commission violate the separation of powers?",
-  "facts_summary": "Rebecca Kelly Slaughter was serving as a Commissioner on the Federal Trade Commission (FTC), an agency led by five commissioners appointed by the President and confirmed by the Senate to seven-year terms. The Federal Trade Commission Act limits the President\u2019s ability to remove an FTC Commissioner to \u201cinefficiency, neglect of duty, or malfeasance in office.\u201d President Donald J. Trump fired Commissioner Slaughter, explaining her continued service was \u201cinconsistent with [the] Administration\u2019s priorities,\u201d which did not meet the statutory standard of \u201ccause.\u201d Slaughter sued President Trump and the three remaining FTC Commissioners, arguing her removal was unlawful because the President failed to offer a statutory cause. The district court ruled in favor of Commissioner Slaughter, declaring her removal unlawful, ordering her reinstatement, and issuing a permanent injunction against the remaining Commissioners and their subordinates, barring them from interfering with her duties. The government appealed the decision and requested a stay of the district court's order pending the appeal. The U.S. Court of Appeals for the D.C. Circuit denied the government\u2019s motion for a stay pending appeal and dissolved an administrative stay that had been previously entered. The Supreme Court granted the stay on September 22, 2025, and also granted certiorari.",
+  "facts_summary": "Rebecca Kelly Slaughter was serving as a Commissioner on the Federal Trade Commission (FTC), an agency led by five commissioners appointed by the President and confirmed by the Senate to seven-year terms. The Federal Trade Commission Act limits the President’s ability to remove an FTC Commissioner to “inefficiency, neglect of duty, or malfeasance in office.” President Donald J. Trump fired Commissioner Slaughter, explaining her continued service was “inconsistent with [the] Administration’s priorities,” which did not meet the statutory standard of “cause.” Slaughter sued President Trump and the three remaining FTC Commissioners, arguing her removal was unlawful because the President failed to offer a statutory cause. The district court ruled in favor of Commissioner Slaughter, declaring her removal unlawful, ordering her reinstatement, and issuing a permanent injunction against the remaining Commissioners and their subordinates, barring them from interfering with her duties. The government appealed the decision and requested a stay of the district court's order pending the appeal. The U.S. Court of Appeals for the D.C. Circuit denied the government’s motion for a stay pending appeal and dissolved an administrative stay that had been previously entered. The Supreme Court granted the stay on September 22, 2025, and also granted certiorari.",
   "lower_court_ruling": "United States Court of Appeals for the District of Columbia Circuit",
   "opinion_excerpt_urls": [
     "https://www.courtlistener.com/opinion/10881681/trump-v-slaughter/"
   ],
   "ground_truth": {
     "disposition": "reversed",
-    "vote_split": "unknown",
+    "vote_split": "6-3",
     "scdb_id": null
   },
   "status": "decided"

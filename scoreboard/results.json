@@ -2,14 +2,14 @@
   "benchmark_wide:A": {
     "n": 94,
     "accuracy": 0.83,
-    "mean_split_distance": 0.73,
-    "split_n": 15
+    "mean_split_distance": 0.71,
+    "split_n": 17
   },
   "benchmark_wide:B": {
     "n": 93,
     "accuracy": 0.774,
-    "mean_split_distance": 2.0,
-    "split_n": 15
+    "mean_split_distance": 1.94,
+    "split_n": 17
   },
   "memorization:famous:A": {
     "n": 24,
@@ -38,8 +38,8 @@
   "benchmark:C": {
     "n": 24,
     "accuracy": 0.667,
-    "mean_split_distance": 2.67,
-    "split_n": 3,
+    "mean_split_distance": 2.4,
+    "split_n": 5,
     "total_vote_changes": 85,
     "mean_rounds": 2.92,
     "flips_by_agent": {
@@ -54,17 +54,36 @@
       "textualist": 1
     }
   },
+  "benchmark:C_neutral": {
+    "n": 14,
+    "accuracy": 0.643,
+    "mean_split_distance": 2.0,
+    "split_n": 3,
+    "total_vote_changes": 56,
+    "mean_rounds": 1.93,
+    "flips_by_agent": {
+      "originalist": 9,
+      "precedent_maximalist": 8,
+      "textualist": 7,
+      "living_constitutionalist": 6,
+      "pragmatist": 6,
+      "federalism_hawk": 5,
+      "process_formalist": 5,
+      "civil_libertarian": 5,
+      "minimalist": 5
+    }
+  },
   "benchmark:A": {
     "n": 24,
     "accuracy": 0.75,
-    "mean_split_distance": 1.0,
-    "split_n": 3
+    "mean_split_distance": 0.8,
+    "split_n": 5
   },
   "benchmark:B": {
     "n": 24,
     "accuracy": 0.667,
-    "mean_split_distance": 3.33,
-    "split_n": 3
+    "mean_split_distance": 2.6,
+    "split_n": 5
   },
   "benchmark:naive_reverse": {
     "n": 24,
