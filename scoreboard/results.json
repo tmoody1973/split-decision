@@ -2,37 +2,44 @@
   "benchmark_wide:A": {
     "n": 94,
     "accuracy": 0.83,
-    "mean_split_distance": 0.73
+    "mean_split_distance": 0.73,
+    "split_n": 15
   },
   "benchmark_wide:B": {
     "n": 93,
     "accuracy": 0.774,
-    "mean_split_distance": 2.0
+    "mean_split_distance": 2.0,
+    "split_n": 15
   },
   "memorization:famous:A": {
     "n": 24,
     "accuracy": 0.958,
-    "mean_split_distance": 0.0
+    "mean_split_distance": 0.0,
+    "split_n": 24
   },
   "memorization:famous:B": {
     "n": 24,
     "accuracy": 0.958,
-    "mean_split_distance": 1.54
+    "mean_split_distance": 1.54,
+    "split_n": 24
   },
   "memorization:scdb:A": {
     "n": 25,
     "accuracy": 0.96,
-    "mean_split_distance": 0.48
+    "mean_split_distance": 0.48,
+    "split_n": 25
   },
   "memorization:scdb:B": {
     "n": 25,
     "accuracy": 1.0,
-    "mean_split_distance": 1.48
+    "mean_split_distance": 1.48,
+    "split_n": 25
   },
   "benchmark:C": {
     "n": 24,
     "accuracy": 0.667,
     "mean_split_distance": 2.67,
+    "split_n": 3,
     "total_vote_changes": 85,
     "mean_rounds": 2.92,
     "flips_by_agent": {
@@ -45,6 +52,53 @@
       "process_formalist": 2,
       "originalist": 1,
       "textualist": 1
+    }
+  },
+  "benchmark:A": {
+    "n": 24,
+    "accuracy": 0.75,
+    "mean_split_distance": 1.0,
+    "split_n": 3
+  },
+  "benchmark:B": {
+    "n": 24,
+    "accuracy": 0.667,
+    "mean_split_distance": 3.33,
+    "split_n": 3
+  },
+  "benchmark:naive_reverse": {
+    "n": 24,
+    "accuracy": 0.75
+  },
+  "benchmark_wide:naive_reverse": {
+    "n": 94,
+    "accuracy": 0.723
+  },
+  "benchmark:paired": {
+    "n": 24,
+    "accuracy": {
+      "A": 0.75,
+      "B": 0.667,
+      "C": 0.667
+    },
+    "wilson95": {
+      "A": [
+        0.551,
+        0.88
+      ],
+      "B": [
+        0.467,
+        0.82
+      ],
+      "C": [
+        0.467,
+        0.82
+      ]
+    },
+    "sign_test_C_vs_B": {
+      "c_only_correct": 2,
+      "b_only_correct": 2,
+      "p_two_sided": 1.0
     }
   }
 }

@@ -65,15 +65,18 @@
       <a class="back" href="./judges.html">🧭 JUDGE'S TOUR</a>
       <h1>FINDINGS</h1>
       <p class="banner">We built a society of AI judges and measured whether talking it out made
-      them smarter. It didn't — it made them more persuasive and less accurate. Here's what
+      them smarter. It didn't — paired on identical cases, debate moved persuasion, not accuracy.
+      And on brand-new cases, none of our setups beat the dumbest possible baseline. Here's what
       actually happened, in plain English, with the receipts.</p>
 
       <section id="abc">
         <h2>DOES TALKING IT OUT IMPROVE DECISIONS?</h2>
         <p class="sub">We asked the same AI to predict how real Supreme Court cases would come out,
         three different ways: one model alone, nine AI judges voting without speaking to each
-        other, and the full court that argues before voting. Same cases, and the real Court's
-        rulings to grade against.</p>
+        other, and the full court that argues before voting. All three graded on the <b>same
+        cases</b> against the real Court's rulings — plus the row any honest scoreboard needs:
+        the Court reverses most cases it agrees to hear, so "always guess reverse" is the score
+        to beat.</p>
         <div id="abc-rows"></div>
         <div class="note" id="abc-note"></div>
         <details><summary>data table</summary><table id="abc-table"></table></details>
@@ -102,23 +105,26 @@
         <div id="steer-rows"></div>
         <div class="note">The <b>Minimalist</b> — whose whole philosophy is "decide as little as
         possible" — changed its vote 21 times. The <b>Textualist</b> — "the text controls, full
-        stop" — changed once. So the persuasion was real and true to character. The problem:
-        it pushed the group the <b>wrong way</b>. Confident, eloquent judges talked correct
-        colleagues out of right answers — the panel split 5–4 on cases the real Court decided
-        unanimously, 9–0.</div>
+        stop" — changed once. So the persuasion was real and true to character. Its net effect
+        on accuracy was a wash — debate corrected two cases and spoiled two. What it did distort
+        was <b>confidence</b>: the panel split 5–4 on a case the real Court decided unanimously,
+        9–0. (Split-distance caveat: only 3 of the 24 sample cases have a known real vote split;
+        the data table reports that n.)</div>
         <details><summary>data table</summary><table id="steer-table"></table></details>
       </section>
 
       <section>
         <h2>WHAT THIS MEANS FOR AI TEAMS (AND HUMAN ONES)</h2>
         <div class="note">
-          A confident, well-argued voice can talk a group out of right answers — that's as true
-          for AI agents as it is for people in a meeting. If you're building a system where AI
-          agents discuss before deciding, don't assume the discussion helps: <b>measure it</b>.
-          Here, keeping the nine judges silent beat letting them debate, by ten full points.
-          What the debate <b>did</b> buy: richer arguments, in-character persuasion, and a
-          complete record of who convinced whom — real value, just not accuracy.
-          <b>Know which one you're paying for.</b>
+          A confident, well-argued voice can flip votes — that's as true for AI agents as it is
+          for people in a meeting. But measure before you moralize: the first version of this
+          page said debate cost the group ten points, and that number was an artifact of
+          comparing different case pools. Paired on identical cases, debate was
+          <b>accuracy-neutral</b> — it bought richer arguments, in-character persuasion, and a
+          complete record of who convinced whom, not correctness. And at this sample size,
+          nothing here beat "always guess reverse" on genuinely new cases. If your AI agents
+          deliberate before deciding: <b>pair your comparisons, publish the naive baseline, and
+          be willing to kill your own headline.</b> We just did.
         </div>
       </section>
 
@@ -151,19 +157,38 @@
       }
 
       const res = await (await fetch("scoreboard/results.json")).json();
-      const A = res["benchmark_wide:A"], B = res["benchmark_wide:B"], C = res["benchmark:C"];
+      const A = res["benchmark:A"], B = res["benchmark:B"], C = res["benchmark:C"];
+      const NAIVE = res["benchmark:naive_reverse"], P = res["benchmark:paired"];
+      const WA = res["benchmark_wide:A"], WB = res["benchmark_wide:B"], WN = res["benchmark_wide:naive_reverse"];
 
       bars(document.getElementById("abc-rows"), [
+        { label: "always guess \"reverse\" (no AI at all)", value: NAIVE.accuracy, display: `${pct(NAIVE.accuracy)} <small>n=${NAIVE.n}</small>`, dim: true },
         { label: "one model, asked directly", value: A.accuracy, display: `${pct(A.accuracy)} <small>n=${A.n}</small>` },
         { label: "nine judges, no talking", value: B.accuracy, display: `${pct(B.accuracy)} <small>n=${B.n}</small>` },
-        { label: "nine judges who debate first", value: C.accuracy, display: `${pct(C.accuracy)} <small>n=${C.n}</small>`, dim: true },
+        { label: "nine judges who debate first", value: C.accuracy, display: `${pct(C.accuracy)} <small>n=${C.n}</small>` },
       ], 1);
+      const st = P.sign_test_C_vs_B;
       document.getElementById("abc-note").innerHTML =
-        `Every step toward more discussion made the group worse at predicting. The judges who ` +
-        `argued scored <b>${(Math.abs(C.accuracy - B.accuracy) * 100).toFixed(1)} points lower</b> than the same nine judges kept silent — ` +
-        `that gap is the measured cost of debate (${C.total_vote_changes} changed votes, ~${Math.round(C.mean_rounds)} rounds of argument per case).`;
-      table(document.getElementById("abc-table"), ["condition", "accuracy", "n"], [
-        ["one model alone", pct(A.accuracy), A.n], ["nine judges, silent", pct(B.accuracy), B.n], ["nine judges, debating", pct(C.accuracy), C.n],
+        `All four rows are graded on the <b>same ${P.n} cases</b>. Debate barely moved the score: ` +
+        `silent jury ${pct(B.accuracy)}, debating court ${pct(C.accuracy)} — the debate corrected ` +
+        `${st.c_only_correct} case${st.c_only_correct === 1 ? "" : "s"} and spoiled ${st.b_only_correct} ` +
+        `(sign test p=${st.p_two_sided}${st.p_two_sided >= 0.05 ? ", statistically indistinguishable" : ""}). ` +
+        `The persuasion was real (${C.total_vote_changes} changed votes, ~${Math.round(C.mean_rounds)} rounds ` +
+        `per case); its net effect on accuracy was not. The uncomfortable row is the top one: on these ` +
+        `${P.n} brand-new cases <b>nothing beat "always guess reverse"</b> (${pct(NAIVE.accuracy)}). ` +
+        `On the full ${WA.n}-case pool the solo model does clear that bar (${pct(WA.accuracy)} vs ` +
+        `${pct(WN.accuracy)}); on this small deliberation sample, nothing does. An earlier version of ` +
+        `this page said debate cost ten points — that compared different case pools. We fixed the math ` +
+        `and kept the receipt.`;
+      const ci = (c) => P.wilson95[c] ? `${pct(P.wilson95[c][0])}–${pct(P.wilson95[c][1])}` : "—";
+      table(document.getElementById("abc-table"), ["condition", "accuracy", "95% CI", "n"], [
+        ["always-reverse baseline (paired sample)", pct(NAIVE.accuracy), "—", NAIVE.n],
+        ["one model alone (paired sample)", pct(A.accuracy), ci("A"), A.n],
+        ["nine judges, silent (paired sample)", pct(B.accuracy), ci("B"), B.n],
+        ["nine judges, debating (paired sample)", pct(C.accuracy), ci("C"), C.n],
+        ["always-reverse baseline (full pool)", pct(WN.accuracy), "—", WN.n],
+        ["one model alone (full pool)", pct(WA.accuracy), "—", WA.n],
+        ["nine judges, silent (full pool)", pct(WB.accuracy), "—", WB.n],
       ]);
 
       const fam = res["memorization:famous:A"], hist = res["memorization:scdb:A"];

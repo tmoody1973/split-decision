@@ -16,6 +16,7 @@ Usage:
 
 import argparse
 import json
+import math
 import sys
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
@@ -122,52 +123,86 @@ def _maj(split: str) -> int | None:
         return None
 
 
+def _gt(case_id: str) -> dict:
+    return json.loads((CASES_DIR / f"{case_id}.json").read_text())["ground_truth"]
+
+
+def _actual(gt: dict) -> str:
+    return "affirm" if gt["disposition"] == "affirmed" else "reverse"
+
+
+def _wilson95(hits: int, n: int) -> list | None:
+    if not n:
+        return None
+    z = 1.96
+    p = hits / n
+    denom = 1 + z * z / n
+    center = (p + z * z / (2 * n)) / denom
+    half = z * math.sqrt(p * (1 - p) / n + z * z / (4 * n * n)) / denom
+    return [round(center - half, 3), round(center + half, 3)]
+
+
 def aggregate() -> dict:
     manifest = json.loads(MANIFEST.read_text())
     rows = {}
 
-    def score(set_name: str, tier: str | None = None) -> None:
-        entries = [e for e in manifest.get(set_name, []) if tier is None or e.get("tier") == tier]
-        for cond in ("A", "B"):
-            hits, splits, n = 0, [], 0
-            for e in entries:
-                pred_path = PRED_DIR / f"{e['case_id']}.json"
-                if not pred_path.exists():
-                    continue
-                pred = (json.loads(pred_path.read_text()) or {}).get(cond)
-                gt = json.loads((CASES_DIR / f"{e['case_id']}.json").read_text())["ground_truth"]
-                if not (pred and pred.get("disposition") and gt):
-                    continue  # missing, malformed, or moderation-blocked
-                n += 1
-                actual = "affirm" if gt["disposition"] == "affirmed" else "reverse"
-                hits += pred["disposition"] == actual
-                pm, am = _maj(pred.get("vote_split", "")), _maj(gt["vote_split"])
-                if pm and am:
-                    splits.append(abs(pm - am))
-            label = f"{set_name}{f':{tier}' if tier else ''}:{cond}"
-            rows[label] = {"n": n, "accuracy": round(hits / n, 3) if n else None,
-                           "mean_split_distance": round(sum(splits) / len(splits), 2) if splits else None}
+    def score(label: str, entries: list, cond: str) -> dict:
+        """Score one condition over entries. Returns per-case correctness (for pairing).
+        mean_split_distance covers only cases whose actual vote split is known (split_n)."""
+        hits, splits, n, correct = 0, [], 0, {}
+        for e in entries:
+            pred_path = PRED_DIR / f"{e['case_id']}.json"
+            if not pred_path.exists():
+                continue
+            pred = (json.loads(pred_path.read_text()) or {}).get(cond)
+            gt = _gt(e["case_id"])
+            if not (pred and pred.get("disposition") and gt):
+                continue  # missing, malformed, or moderation-blocked
+            n += 1
+            ok = pred["disposition"] == _actual(gt)
+            hits += ok
+            correct[e["case_id"]] = ok
+            pm, am = _maj(pred.get("vote_split", "")), _maj(gt["vote_split"])
+            if pm and am:
+                splits.append(abs(pm - am))
+        rows[label] = {"n": n, "accuracy": round(hits / n, 3) if n else None,
+                       "mean_split_distance": round(sum(splits) / len(splits), 2) if splits else None,
+                       "split_n": len(splits)}
+        return correct
 
-    score("benchmark_wide")
-    score("memorization", tier="famous")
-    score("memorization", tier="scdb")
+    def naive_reverse(label: str, entries: list) -> None:
+        """Majority-class baseline: predict 'reverse' for every case."""
+        actuals = [_actual(_gt(e["case_id"])) for e in entries]
+        n = len(actuals)
+        rows[label] = {"n": n,
+                       "accuracy": round(sum(a == "reverse" for a in actuals) / n, 3) if n else None}
+
+    wide = manifest.get("benchmark_wide", [])
+    for cond in ("A", "B"):
+        score(f"benchmark_wide:{cond}", wide, cond)
+    for tier in ("famous", "scdb"):
+        entries = [e for e in manifest.get("memorization", []) if e.get("tier") == tier]
+        for cond in ("A", "B"):
+            score(f"memorization:{tier}:{cond}", entries, cond)
 
     # Condition C from deliberation episodes (benchmark sample)
     from collections import Counter
     flips_by_agent: Counter = Counter()
     hits, splits, n, flips, rounds = 0, [], 0, 0, []
+    c_correct: dict = {}
     for e in manifest.get("benchmark", []):
         ev_path = EPISODES / e["case_id"] / "events.jsonl"
         if not ev_path.exists():
             continue
         events = [json.loads(l) for l in ev_path.read_text().splitlines()]
         verdict = next((x for x in events if x["type"] == "verdict"), None)
-        gt = json.loads((CASES_DIR / f"{e['case_id']}.json").read_text())["ground_truth"]
+        gt = _gt(e["case_id"])
         if not (verdict and gt):
             continue
         n += 1
-        actual = "affirm" if gt["disposition"] == "affirmed" else "reverse"
-        hits += verdict["position"] == actual
+        ok = verdict["position"] == _actual(gt)
+        hits += ok
+        c_correct[e["case_id"]] = ok
         pm, am = _maj(verdict["vote_split"]), _maj(gt["vote_split"])
         if pm and am:
             splits.append(abs(pm - am))
@@ -179,9 +214,37 @@ def aggregate() -> dict:
     rows["benchmark:C"] = {
         "n": n, "accuracy": round(hits / n, 3) if n else None,
         "mean_split_distance": round(sum(splits) / len(splits), 2) if splits else None,
+        "split_n": len(splits),
         "total_vote_changes": flips,
         "mean_rounds": round(sum(rounds) / len(rounds), 2) if rounds else None,
         "flips_by_agent": dict(flips_by_agent.most_common()),  # steerability/instability metric
+    }
+
+    # Paired comparison: A and B restricted to the exact cases C covers, the
+    # majority-class baseline on both pools, and a C-vs-B sign test. Same cases,
+    # same ground truth — no cross-pool comparisons.
+    sample = [e for e in manifest.get("benchmark", []) if e["case_id"] in c_correct]
+    a_correct = score("benchmark:A", sample, "A")
+    b_correct = score("benchmark:B", sample, "B")
+    naive_reverse("benchmark:naive_reverse", sample)
+    naive_reverse("benchmark_wide:naive_reverse", wide)
+
+    both = [cid for cid in c_correct if cid in b_correct]
+    c_only = sum(c_correct[cid] and not b_correct[cid] for cid in both)
+    b_only = sum(b_correct[cid] and not c_correct[cid] for cid in both)
+    discordant = c_only + b_only
+    p = (2 * sum(math.comb(discordant, i) for i in range(min(c_only, b_only) + 1))
+         / 2 ** discordant) if discordant else 1.0
+    rows["benchmark:paired"] = {
+        "n": len(both),
+        "accuracy": {k: rows[f"benchmark:{k}"]["accuracy"] for k in ("A", "B", "C")},
+        "wilson95": {
+            "A": _wilson95(sum(a_correct.values()), len(a_correct)),
+            "B": _wilson95(sum(b_correct.values()), len(b_correct)),
+            "C": _wilson95(sum(c_correct.values()), len(c_correct)),
+        },
+        "sign_test_C_vs_B": {"c_only_correct": c_only, "b_only_correct": b_only,
+                             "p_two_sided": round(min(p, 1.0), 3)},
     }
 
     RESULTS.parent.mkdir(parents=True, exist_ok=True)
