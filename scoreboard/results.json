@@ -55,20 +55,20 @@
     }
   },
   "benchmark:C_neutral": {
-    "n": 14,
-    "accuracy": 0.643,
-    "mean_split_distance": 2.0,
-    "split_n": 3,
-    "total_vote_changes": 56,
-    "mean_rounds": 1.93,
+    "n": 24,
+    "accuracy": 0.667,
+    "mean_split_distance": 1.4,
+    "split_n": 5,
+    "total_vote_changes": 62,
+    "mean_rounds": 1.54,
     "flips_by_agent": {
+      "precedent_maximalist": 11,
       "originalist": 9,
-      "precedent_maximalist": 8,
-      "textualist": 7,
+      "textualist": 8,
+      "federalism_hawk": 6,
+      "process_formalist": 6,
       "living_constitutionalist": 6,
       "pragmatist": 6,
-      "federalism_hawk": 5,
-      "process_formalist": 5,
       "civil_libertarian": 5,
       "minimalist": 5
     }

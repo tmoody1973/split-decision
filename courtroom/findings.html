@@ -192,7 +192,7 @@
       ], 1);
       const st = P.sign_test_C_vs_B;
       document.getElementById("abc-note").innerHTML =
-        `All four rows are graded on the <b>same ${P.n} cases</b>. Debate barely moved the score: ` +
+        `Every row is graded on the <b>same ${P.n} cases</b>. Debate barely moved the score: ` +
         `silent jury ${pct(B.accuracy)}, debating court ${pct(C.accuracy)} — the debate corrected ` +
         `${st.c_only_correct} case${st.c_only_correct === 1 ? "" : "s"} and spoiled ${st.b_only_correct} ` +
         `(sign test p=${st.p_two_sided}${st.p_two_sided >= 0.05 ? ", statistically indistinguishable" : ""}). ` +
@@ -202,7 +202,13 @@
         `On the full ${WA.n}-case pool the solo model does clear that bar (${pct(WA.accuracy)} vs ` +
         `${pct(WN.accuracy)}); on this small deliberation sample, nothing does. An earlier version of ` +
         `this page said debate cost ten points — that compared different case pools. We fixed the math ` +
-        `and kept the receipt.`;
+        `and kept the receipt.` +
+        (CN ? ` And the control: swap the nine ideologues for nine <b>neutral analysts</b> — same ` +
+        `protocol, no philosophies — and accuracy lands at ${pct(CN.accuracy)} (ideologues: ` +
+        `${pct(C.accuracy)}). The personas aren't what caps accuracy; they shape the debate's ` +
+        `character — the neutral panel converged in ~${CN.mean_rounds} rounds (vs ~${C.mean_rounds}) ` +
+        `with ${CN.total_vote_changes} flips spread evenly across all nine (vs ${C.total_vote_changes} ` +
+        `concentrated in the persuadable philosophies).` : "");
       const ci = (c) => P.wilson95[c] ? `${pct(P.wilson95[c][0])}–${pct(P.wilson95[c][1])}` : "—";
       table(document.getElementById("abc-table"), ["condition", "accuracy", "95% CI", "n"], [
         ["always-reverse baseline (paired sample)", pct(NAIVE.accuracy), "—", NAIVE.n],

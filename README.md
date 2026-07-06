@@ -46,7 +46,8 @@ compared C against B on a different, larger pool):
 | Always-guess-"reverse" baseline | 75.0% | — |
 | A — solo `qwen3.7-max` | 75.0% | 55.1–88.0% |
 | B — silent jury of 9 | 66.7% | 46.7–82.0% |
-| C — full deliberation | 66.7% | 46.7–82.0% |
+| C — full deliberation (9 ideologues) | 66.7% | 46.7–82.0% |
+| C-neutral — full deliberation (9 neutral analysts, control) | 66.7% | 46.7–82.0% |
 
 C vs B paired sign test: debate corrected 2 cases and spoiled 2 (p = 1.0) —
 **deliberation was accuracy-neutral**, not accuracy-negative. Full-pool numbers
@@ -73,6 +74,16 @@ from the committed per-case predictions:
    Pragmatist 14, Precedent Maximalist 13 … Originalist 1, Textualist 1. The
    archetypes anchored to fixed sources (text, history) are nearly immovable;
    the ones anchored to case-by-case judgment sway constantly.
+4. **The personas aren't the ceiling — a neutral control panel scored the
+   same.** Nine neutral analysts (no ideology, flip trigger = "a better
+   argument") ran the identical protocol on the identical 24 cases: 66.7%,
+   exactly matching the ideologue panel (the two disagreed on 4 cases and
+   split them 2–2). What changed was character, not accuracy: neutral panels
+   converged in ~1.5 rounds vs ~2.9, flipped 62 times vs 85 with no
+   philosophy gradient (5–11 flips per juror vs 1–21), reached unanimous 9–0
+   verdicts on half the cases, and tracked the real Court's vote splits
+   better (split distance 1.4 vs 2.4, n=5). Ideology shapes the debate;
+   the model sets the score.
 
 Deliberation makes equally accurate predictions and much better arguments —
 which is the honest trade this project set out to measure. (One of 25
