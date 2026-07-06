@@ -185,40 +185,49 @@ def aggregate() -> dict:
         for cond in ("A", "B"):
             score(f"memorization:{tier}:{cond}", entries, cond)
 
-    # Condition C from deliberation episodes (benchmark sample)
+    # Condition C from deliberation episodes (benchmark sample). The neutral
+    # control arm (MOO-253) reuses the same scorer over episodes/neutral-<id>/.
     from collections import Counter
-    flips_by_agent: Counter = Counter()
-    hits, splits, n, flips, rounds = 0, [], 0, 0, []
-    c_correct: dict = {}
-    for e in manifest.get("benchmark", []):
-        ev_path = EPISODES / e["case_id"] / "events.jsonl"
-        if not ev_path.exists():
-            continue
-        events = [json.loads(l) for l in ev_path.read_text().splitlines()]
-        verdict = next((x for x in events if x["type"] == "verdict"), None)
-        gt = _gt(e["case_id"])
-        if not (verdict and gt):
-            continue
-        n += 1
-        ok = verdict["position"] == _actual(gt)
-        hits += ok
-        c_correct[e["case_id"]] = ok
-        pm, am = _maj(verdict["vote_split"]), _maj(gt["vote_split"])
-        if pm and am:
-            splits.append(abs(pm - am))
-        for x in events:
-            if x["type"] == "vote_change":
-                flips += 1
-                flips_by_agent[x["agent"]] += 1
-        rounds.append(max(x.get("round", 0) for x in events))
-    rows["benchmark:C"] = {
-        "n": n, "accuracy": round(hits / n, 3) if n else None,
-        "mean_split_distance": round(sum(splits) / len(splits), 2) if splits else None,
-        "split_n": len(splits),
-        "total_vote_changes": flips,
-        "mean_rounds": round(sum(rounds) / len(rounds), 2) if rounds else None,
-        "flips_by_agent": dict(flips_by_agent.most_common()),  # steerability/instability metric
-    }
+
+    def score_c(label: str, episode_dir) -> dict:
+        flips_by_agent: Counter = Counter()
+        hits, splits, n, flips, rounds = 0, [], 0, 0, []
+        correct: dict = {}
+        for e in manifest.get("benchmark", []):
+            ev_path = EPISODES / episode_dir(e["case_id"]) / "events.jsonl"
+            if not ev_path.exists():
+                continue
+            events = [json.loads(l) for l in ev_path.read_text().splitlines()]
+            verdict = next((x for x in events if x["type"] == "verdict"), None)
+            gt = _gt(e["case_id"])
+            if not (verdict and gt):
+                continue
+            n += 1
+            ok = verdict["position"] == _actual(gt)
+            hits += ok
+            correct[e["case_id"]] = ok
+            pm, am = _maj(verdict["vote_split"]), _maj(gt["vote_split"])
+            if pm and am:
+                splits.append(abs(pm - am))
+            for x in events:
+                if x["type"] == "vote_change":
+                    flips += 1
+                    flips_by_agent[x["agent"]] += 1
+            rounds.append(max(x.get("round", 0) for x in events))
+        rows[label] = {
+            "n": n, "accuracy": round(hits / n, 3) if n else None,
+            "mean_split_distance": round(sum(splits) / len(splits), 2) if splits else None,
+            "split_n": len(splits),
+            "total_vote_changes": flips,
+            "mean_rounds": round(sum(rounds) / len(rounds), 2) if rounds else None,
+            "flips_by_agent": dict(flips_by_agent.most_common()),  # steerability/instability metric
+        }
+        return correct
+
+    c_correct = score_c("benchmark:C", lambda cid: cid)
+    if any((EPISODES / f"neutral-{e['case_id']}" / "events.jsonl").exists()
+           for e in manifest.get("benchmark", [])):
+        score_c("benchmark:C_neutral", lambda cid: f"neutral-{cid}")
 
     # Paired comparison: A and B restricted to the exact cases C covers, the
     # majority-class baseline on both pools, and a C-vs-B sign test. Same cases,

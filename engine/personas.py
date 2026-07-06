@@ -4,6 +4,7 @@ The persona system prompt is re-injected EVERY round with fresh
 {round}/{memory_digest}/{position}/{confidence} values — drift resistance.
 """
 
+import os
 from pathlib import Path
 
 import yaml
@@ -25,8 +26,12 @@ JURIST_IDS = [
 
 
 def load_personas() -> dict[str, dict]:
+    # SD_PERSONA_DIR swaps the registry (e.g. personas/neutral for the
+    # control arm, MOO-253). Same nine agent ids — the event schema's enum
+    # is the contract; only the philosophies change.
+    directory = Path(os.environ.get("SD_PERSONA_DIR") or PERSONAS_DIR)
     personas = {}
-    for path in PERSONAS_DIR.glob("*.yaml"):
+    for path in directory.glob("*.yaml"):
         p = yaml.safe_load(path.read_text(encoding="utf-8"))
         personas[p["id"]] = p
     missing = [j for j in JURIST_IDS + ["foreperson"] if j not in personas]

@@ -161,11 +161,13 @@
       const NAIVE = res["benchmark:naive_reverse"], P = res["benchmark:paired"];
       const WA = res["benchmark_wide:A"], WB = res["benchmark_wide:B"], WN = res["benchmark_wide:naive_reverse"];
 
+      const CN = res["benchmark:C_neutral"]; // neutral-panel control arm, present once run
       bars(document.getElementById("abc-rows"), [
         { label: "always guess \"reverse\" (no AI at all)", value: NAIVE.accuracy, display: `${pct(NAIVE.accuracy)} <small>n=${NAIVE.n}</small>`, dim: true },
         { label: "one model, asked directly", value: A.accuracy, display: `${pct(A.accuracy)} <small>n=${A.n}</small>` },
         { label: "nine judges, no talking", value: B.accuracy, display: `${pct(B.accuracy)} <small>n=${B.n}</small>` },
         { label: "nine judges who debate first", value: C.accuracy, display: `${pct(C.accuracy)} <small>n=${C.n}</small>` },
+        ...(CN ? [{ label: "nine NEUTRAL judges who debate (control)", value: CN.accuracy, display: `${pct(CN.accuracy)} <small>n=${CN.n}</small>` }] : []),
       ], 1);
       const st = P.sign_test_C_vs_B;
       document.getElementById("abc-note").innerHTML =
@@ -186,6 +188,7 @@
         ["one model alone (paired sample)", pct(A.accuracy), ci("A"), A.n],
         ["nine judges, silent (paired sample)", pct(B.accuracy), ci("B"), B.n],
         ["nine judges, debating (paired sample)", pct(C.accuracy), ci("C"), C.n],
+        ...(CN ? [["nine neutral judges, debating (control)", pct(CN.accuracy), "—", CN.n]] : []),
         ["always-reverse baseline (full pool)", pct(WN.accuracy), "—", WN.n],
         ["one model alone (full pool)", pct(WA.accuracy), "—", WA.n],
         ["nine judges, silent (full pool)", pct(WB.accuracy), "—", WB.n],
