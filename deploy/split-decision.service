@@ -1,0 +1,27 @@
+# Split Decision — episode pipeline runner (MOO-226)
+# Runs the podcast production pipeline on the SAS instance for the hero case.
+# All passes are idempotent (existing artifacts are reused), so restarting the
+# service re-verifies the pipeline and republishes episode.mp3 + feed.xml to
+# OSS from Alibaba Cloud compute.
+#
+# Install: cp deploy/split-decision.service /etc/systemd/system/
+#          systemctl daemon-reload && systemctl enable --now split-decision
+
+[Unit]
+Description=Split Decision episode pipeline (hero case publish)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+WorkingDirectory=/opt/split-decision
+# Hero case: Younge v. Fulton Judicial Circuit D.A. (prediction on the record)
+Environment=HERO_CASE=oyez-63889
+EnvironmentFile=/opt/split-decision/.env
+ExecStart=/opt/split-decision/.venv/bin/python scripts/run_episode.py --case ${HERO_CASE} --from publish
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
