@@ -2,101 +2,126 @@
 
 A deliberately tiny stdlib HTTP service that lets a hackathon judge convene
 the agent society ON THIS INSTANCE and watch the event log stream as the
-jurists argue. No framework deps; runs from the repo venv for engine imports.
+jurists argue. No framework deps.
+
+Design: the server is STATELESS. Each deliberation runs as a detached
+subprocess (deploy/livebench/run_deliberation.py) writing stream.jsonl /
+done.json / pid under /var/lib/split-decision-livebench/runs/<run_id>/ —
+so server restarts (deploys, unattended-upgrades) never kill a session.
 
 Endpoints (proxied by nginx under /api/):
   POST /api/convene        -> start a run (409 if one is live, 429 in cooldown)
-  GET  /api/status         -> {"state": idle|running|cooldown, "run_id", ...}
-  GET  /api/log?from=N     -> events[N:] of the active/most recent run
+  GET  /api/status         -> {"state": idle|running|cooldown, ...}
+  GET  /api/log?from=N     -> events[N:] of the latest run
 
 Guardrails: one run at a time; cooldown between runs; daily cap. The demo
-case is fixed (decided case, so nothing here can contradict the published
-pending-case predictions).
+case is fixed to Pung v. Isabella County — proven moderation-safe through the
+full pipeline, decided (9-0), so live runs can never contradict the published
+pending-case predictions.
 """
 
 import json
+import subprocess
 import sys
-import threading
 import time
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 
 REPO_ROOT = Path("/opt/split-decision")
-sys.path.insert(0, str(REPO_ROOT))
-sys.path.insert(0, str(REPO_ROOT / "scripts"))
-
-from qwen_client import load_dotenv  # noqa: E402
-
-load_dotenv()
-
-from engine.chamber import Chamber  # noqa: E402
+PYTHON = REPO_ROOT / ".venv" / "bin" / "python"
+RUNNER = REPO_ROOT / "deploy" / "livebench" / "run_deliberation.py"
+DEMO_CASE = REPO_ROOT / "data" / "cases" / "cl-cluster-10878534.json"
+RUNS_DIR = Path("/var/lib/split-decision-livebench/runs")
 
 PORT = 8787
-# Pung v. Isabella County — the podcast case: proven clean through the full
-# pipeline (moderation-safe), decided 9-0, so judges can grade the live panel.
-DEMO_CASE = REPO_ROOT / "data" / "cases" / "cl-cluster-10878534.json"
-STATE_DIR = Path("/var/lib/split-decision-livebench")
 COOLDOWN_S = 20 * 60
 DAILY_CAP = 12
 
-_lock = threading.Lock()
-_state = {"state": "idle", "run_id": None, "started": None, "finished": None,
-          "case_name": None, "error": None, "runs_today": 0, "day": None}
-_events: list[dict] = []
+
+def _latest_run() -> Path | None:
+    runs = sorted(RUNS_DIR.glob("live-*"))
+    return runs[-1] if runs else None
 
 
-def _now() -> float:
-    return time.time()
-
-
-def _day() -> str:
-    return time.strftime("%Y-%m-%d")
-
-
-def _public_state() -> dict:
-    s = dict(_state)
-    if s["state"] == "cooldown" and s["finished"]:
-        s["cooldown_remaining_s"] = max(0, int(COOLDOWN_S - (_now() - s["finished"])))
-    s["event_count"] = len(_events)
-    s.pop("runs_today", None)
-    return s
-
-
-def _tick() -> None:
-    """Advance cooldown -> idle lazily."""
-    if _state["state"] == "cooldown" and _state["finished"] and \
-            _now() - _state["finished"] > COOLDOWN_S:
-        _state["state"] = "idle"
-
-
-def _run_deliberation(run_id: str) -> None:
-    global _events
+def _pid_alive(run: Path) -> bool:
     try:
-        case = json.loads(DEMO_CASE.read_text(encoding="utf-8"))
-        case["case_id"] = run_id  # isolate output from real episodes
-        chamber = Chamber(case)
-        orig_add = chamber.log.add
+        pid = int((run / "pid").read_text().strip())
+        return Path(f"/proc/{pid}").exists()
+    except (FileNotFoundError, ValueError):
+        return False
 
-        def streaming_add(**payload):
-            event = orig_add(**payload)
-            with _lock:
-                _events.append(event)
-            return event
 
-        chamber.log.add = streaming_add
-        log = chamber.run()
-        out_dir = STATE_DIR / "runs" / run_id
-        out_dir.mkdir(parents=True, exist_ok=True)
-        log.write(out_dir / "events.jsonl")
-        with _lock:
-            _state["error"] = None
-    except Exception as exc:  # noqa: BLE001 — surface anything to the page
-        with _lock:
-            _state["error"] = f"{type(exc).__name__}: {exc}"[:300]
-    finally:
-        with _lock:
-            _state["state"] = "cooldown"
-            _state["finished"] = _now()
+def _done(run: Path) -> dict | None:
+    try:
+        return json.loads((run / "done.json").read_text())
+    except FileNotFoundError:
+        return None
+
+
+def _meta(run: Path) -> dict:
+    try:
+        return json.loads((run / "meta.json").read_text())
+    except FileNotFoundError:
+        return {}
+
+
+def _events(run: Path) -> list[dict]:
+    try:
+        with (run / "stream.jsonl").open(encoding="utf-8") as fh:
+            return [json.loads(line) for line in fh if line.strip()]
+    except FileNotFoundError:
+        return []
+
+
+def status() -> dict:
+    run = _latest_run()
+    if run is None:
+        return {"state": "idle", "run_id": None, "case_name": None,
+                "error": None, "event_count": 0}
+    done = _done(run)
+    if done is None and not _pid_alive(run):
+        # runner died without reporting (e.g. hard reboot) — close it out
+        done = {"ok": False, "error": "the session was interrupted; the panel will re-convene",
+                "finished": time.time()}
+        (run / "done.json").write_text(json.dumps(done))
+    base = {"run_id": run.name, "case_name": _meta(run).get("case_name"),
+            "event_count": len(_events(run)), "error": None}
+    if done is None:
+        return {"state": "running", **base}
+    remaining = int(COOLDOWN_S - (time.time() - done["finished"]))
+    if not done.get("ok"):
+        base["error"] = done.get("error")
+    if remaining > 0:
+        return {"state": "cooldown", "cooldown_remaining_s": remaining, **base}
+    return {"state": "idle", **base}
+
+
+def _runs_today() -> int:
+    prefix = f"live-{time.strftime('%Y%m%d')}"
+    return len(list(RUNS_DIR.glob(prefix + "*")))
+
+
+def convene() -> tuple[int, dict]:
+    s = status()
+    if s["state"] == "running":
+        return 409, {"error": "the panel is already in session — watch along", **s}
+    if s["state"] == "cooldown":
+        return 429, {"error": "the panel is in recess", **s}
+    if _runs_today() >= DAILY_CAP:
+        return 429, {"error": "daily session cap reached", **s}
+    run_id = f"live-{time.strftime('%Y%m%d-%H%M%S')}"
+    run = RUNS_DIR / run_id
+    run.mkdir(parents=True, exist_ok=True)
+    case_name = json.loads(DEMO_CASE.read_text(encoding="utf-8"))["name"]
+    (run / "meta.json").write_text(json.dumps(
+        {"case_name": case_name, "started": time.time()}))
+    with (run / "runner.log").open("w") as logf:
+        proc = subprocess.Popen(
+            [str(PYTHON), str(RUNNER), str(DEMO_CASE), str(run)],
+            stdout=logf, stderr=subprocess.STDOUT,
+            start_new_session=True, cwd=str(REPO_ROOT))
+    (run / "pid").write_text(str(proc.pid))
+    return 200, status()
 
 
 class Handler(BaseHTTPRequestHandler):
@@ -113,48 +138,30 @@ class Handler(BaseHTTPRequestHandler):
         pass
 
     def do_GET(self):  # noqa: N802
-        with _lock:
-            _tick()
-            if self.path.startswith("/api/status"):
-                return self._json(200, _public_state())
-            if self.path.startswith("/api/log"):
-                try:
-                    frm = int(self.path.split("from=")[1].split("&")[0]) if "from=" in self.path else 0
-                except ValueError:
-                    frm = 0
-                return self._json(200, {"from": frm, "events": _events[frm:],
-                                        "total": len(_events), "state": _public_state()})
+        if self.path.startswith("/api/status"):
+            return self._json(200, status())
+        if self.path.startswith("/api/log"):
+            try:
+                frm = int(self.path.split("from=")[1].split("&")[0]) if "from=" in self.path else 0
+            except ValueError:
+                frm = 0
+            run = _latest_run()
+            events = _events(run) if run else []
+            return self._json(200, {"from": frm, "events": events[frm:],
+                                    "total": len(events), "state": status()})
         return self._json(404, {"error": "not found"})
 
     def do_POST(self):  # noqa: N802
-        global _events
         if not self.path.startswith("/api/convene"):
             return self._json(404, {"error": "not found"})
-        with _lock:
-            _tick()
-            if _state["day"] != _day():
-                _state["day"], _state["runs_today"] = _day(), 0
-            if _state["state"] == "running":
-                return self._json(409, {"error": "the panel is already in session — watch along",
-                                        **_public_state()})
-            if _state["state"] == "cooldown":
-                return self._json(429, {"error": "the panel is in recess", **_public_state()})
-            if _state["runs_today"] >= DAILY_CAP:
-                return self._json(429, {"error": "daily session cap reached", **_public_state()})
-            run_id = f"live-{time.strftime('%Y%m%d-%H%M%S')}"
-            case_name = json.loads(DEMO_CASE.read_text(encoding="utf-8"))["name"]
-            _events = []
-            _state.update(state="running", run_id=run_id, started=_now(),
-                          finished=None, case_name=case_name, error=None)
-            _state["runs_today"] += 1
-        threading.Thread(target=_run_deliberation, args=(run_id,), daemon=True).start()
-        return self._json(200, _public_state())
+        code, payload = convene()
+        return self._json(code, payload)
 
 
 def main() -> int:
-    STATE_DIR.mkdir(parents=True, exist_ok=True)
+    RUNS_DIR.mkdir(parents=True, exist_ok=True)
     server = ThreadingHTTPServer(("127.0.0.1", PORT), Handler)
-    print(f"livebench on 127.0.0.1:{PORT}, demo case: {DEMO_CASE.name}")
+    print(f"livebench on 127.0.0.1:{PORT}, demo case: {DEMO_CASE.name} (stateless, disk-backed)")
     server.serve_forever()
     return 0
 

@@ -74,7 +74,7 @@ const AGENT_COLORS = {
   foreperson:"#caa24a"
 };
 const nice = id => (id||"").replace(/_/g," ").replace(/\b\w/g, c=>c.toUpperCase());
-let from = 0, running = false, tally = {};
+let from = 0, running = false, tally = {}, lastErr = null;
 const el = id => document.getElementById(id);
 
 function render(e){
@@ -113,13 +113,14 @@ async function poll(){
     el("st").textContent = s.state + (s.state==="cooldown" && s.cooldown_remaining_s ? ` (${Math.ceil(s.cooldown_remaining_s/60)}m)` : "");
     el("btn").disabled = s.state !== "idle";
     if (s.case_name){ el("case").style.display=""; el("case").textContent = s.case_name; }
-    if (s.error){ const d=document.createElement("p"); d.className="ln";
-      d.innerHTML=`<span class="err">session error: ${esc(s.error)}</span>`; el("lines").appendChild(d); s.error=null; }
+    if (s.error && s.error !== lastErr){ lastErr = s.error;
+      const d=document.createElement("p"); d.className="ln";
+      d.innerHTML=`<span class="err">session error: ${esc(s.error)}</span>`; el("lines").appendChild(d); }
   } catch(e){ el("st").textContent = "unreachable"; }
   setTimeout(poll, 2500);
 }
 el("btn").onclick = async () => {
-  el("btn").disabled = true; tally = {};
+  el("btn").disabled = true; tally = {}; lastErr = null;
   el("lines").innerHTML = ""; from = 0;
   const r = await fetch("/api/convene", {method:"POST"});
   const j = await r.json();
