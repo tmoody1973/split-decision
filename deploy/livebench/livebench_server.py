@@ -32,7 +32,9 @@ load_dotenv()
 from engine.chamber import Chamber  # noqa: E402
 
 PORT = 8787
-DEMO_CASE = REPO_ROOT / "data" / "cases" / "cl-cluster-10867983.json"
+# Pung v. Isabella County — the podcast case: proven clean through the full
+# pipeline (moderation-safe), decided 9-0, so judges can grade the live panel.
+DEMO_CASE = REPO_ROOT / "data" / "cases" / "cl-cluster-10878534.json"
 STATE_DIR = Path("/var/lib/split-decision-livebench")
 COOLDOWN_S = 20 * 60
 DAILY_CAP = 12
