@@ -8,10 +8,13 @@
 Built for the **Qwen Cloud Global AI Hackathon — Track 3: Agent Society** ·
 Submission July 8, 2026 · Solo build by [Tarik Moody](https://github.com/tmoody1973)
 
-> 🚧 **Active build (Day 1–2 of 5).** The deliberation engine and data layer are
-> live; scoreboard results, published episodes, the courtroom app, and the
-> architecture diagram land here at submission. Blueprint: [CLAUDE.md](CLAUDE.md) ·
-> Product spec: [docs/PRD.md](docs/PRD.md)
+> ⚖️ **Live now:** [split-decision.tarikmoody.com](https://split-decision.tarikmoody.com) —
+> courtroom replays, [findings](https://split-decision.tarikmoody.com/findings.html),
+> [live bench](https://split-decision.tarikmoody.com/live.html),
+> [judge's tour](https://split-decision.tarikmoody.com/judges.html), and the
+> [podcast feed](https://split-decision.tarikmoody.com/feed.xml). Runs on Alibaba
+> Cloud (SAS, Singapore). Submission: July 8, 2026. Blueprint:
+> [CLAUDE.md](CLAUDE.md) · Product spec: [docs/PRD.md](docs/PRD.md)
 
 ## The core question
 
@@ -32,34 +35,51 @@ Three conditions, identical case records:
 **C − B is the value of deliberation itself** — the headline number. A null or
 negative result gets reported honestly as a finding.
 
-## Results (first full run, July 5, 2026)
+## Results (first full run July 5, 2026; paired analysis July 6)
 
-| Condition | Post-cutoff accuracy | Famous landmarks | Ordinary historical |
-|---|---|---|---|
-| A — solo `qwen3.7-max` | **83.0%** (n=94) | 95.8% | 96.0% |
-| B — silent jury of 9 | 77.4% (n=93) | 95.8% | 100% |
-| C — full deliberation | **66.7%** (n=24) | — | — |
+**Paired comparison — all conditions graded on the identical 24 post-cutoff
+cases** (the only honest way to compare; an earlier version of this table
+compared C against B on a different, larger pool):
 
-Three measured findings, reproducible via `scripts/run_benchmark.py`:
+| Condition | Accuracy (same 24 cases) | 95% CI |
+|---|---|---|
+| Always-guess-"reverse" baseline | 75.0% | — |
+| A — solo `qwen3.7-max` | 75.0% | 55.1–88.0% |
+| B — silent jury of 9 | 66.7% | 46.7–82.0% |
+| C — full deliberation | 66.7% | 46.7–82.0% |
+
+C vs B paired sign test: debate corrected 2 cases and spoiled 2 (p = 1.0) —
+**deliberation was accuracy-neutral**, not accuracy-negative. Full-pool numbers
+(different n, listed for completeness, never compared against C): baseline
+72.3%, A 83.0% (n=94), B 77.4% (n=93); famous landmarks A/B 95.8%, ordinary
+historical A 96.0% / B 100%.
+
+Three measured findings, reproducible via `scripts/run_benchmark.py --aggregate`
+from the committed per-case predictions:
 
 1. **Contamination is ~15 points and reaches obscure cases.** The model scores
    96–100% on *anything* pre-cutoff — even cases no law student has heard of —
    vs 77–83% on post-cutoff cases. Benchmarks on historical rulings are
    measuring memory, not judgment.
-2. **More agents, worse predictions — monotonically.** A > B > C. Nine
-   philosophically committed jurists vote their philosophies; the real Court
-   is more unanimous than a panel of ideologues (jury split-distance 2.0 vs
-   solo 0.73). Deliberation amplified rather than corrected: 85 argued vote
-   changes across 24 cases, and accuracy fell another 10 points.
+2. **Deliberation moved persuasion, not accuracy — and nothing beat the naive
+   baseline on the sample.** Paired on identical cases, silent and debating
+   juries both scored 66.7%; the 85 argued vote changes redistributed errors
+   (2 fixed, 2 broken) without reducing them. On these 24 brand-new cases no
+   condition beat "always guess reverse" (75%), though solo does clear that
+   bar on the full 94-case pool (83.0% vs 72.3%). Our first published readout
+   claimed debate cost 10 points; that was an unpaired-pool artifact, and the
+   correction is part of the exhibit.
 3. **Steerability follows philosophy.** Flip counts per juror: Minimalist 21,
    Pragmatist 14, Precedent Maximalist 13 … Originalist 1, Textualist 1. The
    archetypes anchored to fixed sources (text, history) are nearly immovable;
    the ones anchored to case-by-case judgment sway constantly.
 
-Deliberation makes worse predictions and much better arguments — which is the
-honest trade this project set out to measure. (One of 25 deliberation cases
-failed on a content-moderation block and is excluded; per-case predictions
-live in `scoreboard/predictions/`.)
+Deliberation makes equally accurate predictions and much better arguments —
+which is the honest trade this project set out to measure. (One of 25
+deliberation cases failed on a content-moderation block and is excluded;
+per-case predictions live in `scoreboard/predictions/`. Split-distance stats
+carry their own `split_n` — only 3 of the 24 sample cases have a known real
+vote split.)
 
 ### Contamination guard (and the memorization exhibit)
 
@@ -154,7 +174,7 @@ split-decision/
   scripts/          # verify_models, create_voices, ingest_cases, deliberate, ...
   data/             # case records, benchmark manifest, SCDB, landmark precedents
   assets/           # sprite sheets + manifest, voice previews, THEME.md
-  episodes/         # per-case events.jsonl (+ audio & cue sheets, from Day 3)
+  episodes/         # per-case events.jsonl + audio & cue sheets (hero episodes committed)
   fixtures/         # hand-written smoke fixture for the courtroom renderer
   docs/             # PRD, hackathon requirements, design specs
 ```
@@ -180,11 +200,12 @@ first one's record.
 - [x] 12 Voice Design voices created and locked
 - [x] Case ingestion: contamination-guarded benchmark + two-tier memorization set + pending cases
 - [x] Deliberation engine with anti-sycophancy machinery
-- [ ] Scoreboard (conditions A/B/C + memorization curve)
-- [ ] Podcast producer (clips → two-way script → TTS → ffmpeg → RSS)
-- [ ] Pixel courtroom + "The Record" transcript panel
-- [ ] SAS + OSS deployment, proof screenshot
-- [ ] 3-min demo video, architecture diagram, Devpost submission
+- [x] Scoreboard (conditions A/B/C, paired analysis + memorization curve)
+- [x] Podcast producer (clips → two-way script → TTS → ffmpeg → RSS)
+- [x] Pixel courtroom + "The Record" transcript panel
+- [x] SAS deployment ([split-decision.tarikmoody.com](https://split-decision.tarikmoody.com)) + OSS episode storage
+- [x] 3-min demo video
+- [ ] Workbench proof screenshot, architecture diagram, Devpost submission
 
 ## After the hackathon
 
