@@ -47,12 +47,14 @@ if [ ! -f "$APP_DIR/.env" ]; then
   echo "NOTE: fill in $APP_DIR/.env — DASHSCOPE_API_KEY, OSS_ACCESS_KEY_ID, OSS_ACCESS_KEY_SECRET"
 fi
 
-echo "== systemd unit =="
+echo "== systemd units =="
 cp "$APP_DIR/deploy/split-decision.service" /etc/systemd/system/
+cp "$APP_DIR/deploy/split-decision-livebench.service" /etc/systemd/system/
 systemctl daemon-reload
 
-echo "== nginx site (courtroom app) =="
+echo "== nginx site (courtroom app + live bench) =="
 mkdir -p /opt/split-decision-site
+cp "$APP_DIR/deploy/livebench/live.html" /opt/split-decision-site/live.html
 cp "$APP_DIR/deploy/nginx-split-decision.conf" /etc/nginx/conf.d/split-decision.conf
 # quiet the distro default sites (Ubuntu ships a default_server in sites-enabled)
 rm -f /etc/nginx/sites-enabled/default

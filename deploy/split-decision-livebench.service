@@ -1,0 +1,22 @@
+# Live Bench — judge-facing realtime deliberation demo (MOO-226 ext).
+# Serves 127.0.0.1:8787 (nginx proxies /api/); page at /live.html.
+# Install: cp deploy/split-decision-livebench.service /etc/systemd/system/
+#          systemctl daemon-reload && systemctl enable --now split-decision-livebench
+
+[Unit]
+Description=Split Decision Live Bench (realtime deliberation demo)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/split-decision
+EnvironmentFile=/opt/split-decision/.env
+ExecStart=/opt/split-decision/.venv/bin/python deploy/livebench/livebench_server.py
+Restart=on-failure
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

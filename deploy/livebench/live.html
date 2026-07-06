@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Live Bench — Split Decision</title>
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: #1a140d; color: #e8e0d2;
+    font-family: ui-monospace, Menlo, monospace; font-weight: 700;
+    min-height: 100vh; display: flex; flex-direction: column; align-items: center;
+    padding: 28px 16px 60px;
+  }
+  .frame { width: min(1000px, 100%); }
+  h1 { color: #f0d79a; letter-spacing: .1em; font-size: 30px; margin: 0 0 6px;
+       text-shadow: 4px 4px 0 rgba(0,0,0,.7); }
+  .sub { color: #9a8f7d; font-size: 14px; letter-spacing: .12em; text-transform: uppercase; margin-bottom: 22px; }
+  .bar { display: flex; gap: 14px; align-items: center; flex-wrap: wrap; margin-bottom: 18px; }
+  button {
+    font: inherit; cursor: pointer; color: #1a140d; background: #caa24a;
+    border: 3px solid #000; box-shadow: 4px 4px 0 rgba(0,0,0,.66);
+    padding: 14px 26px; letter-spacing: .14em; text-transform: uppercase; font-size: 16px;
+  }
+  button:disabled { background: #4a3320; color: #9a8f7d; cursor: not-allowed; }
+  .chip { border: 3px solid #4a3320; background: #241a10; box-shadow: 4px 4px 0 rgba(0,0,0,.66);
+          padding: 10px 16px; font-size: 14px; letter-spacing: .1em; color: #9a8f7d; text-transform: uppercase; }
+  .chip b { color: #f0d79a; }
+  .note { color: #9a8f7d; font-size: 13px; line-height: 1.6; max-width: 760px; margin-bottom: 20px; }
+  #record {
+    border: 3px solid #4a3320; background: #241a10; box-shadow: 6px 6px 0 rgba(0,0,0,.66);
+    padding: 20px 22px; min-height: 320px; max-height: 62vh; overflow-y: auto;
+    font-weight: 400; font-size: 14px; line-height: 1.65;
+  }
+  #record .hdr { color: #9a8f7d; letter-spacing: .18em; font-weight: 700; text-transform: uppercase;
+                 border-bottom: 2px solid #4a3320; padding-bottom: 8px; margin-bottom: 12px; }
+  .ln { margin: 0 0 10px; white-space: pre-wrap; }
+  .who { font-weight: 700; }
+  .fore { color: #caa24a; }
+  .flip { color: #f0d79a; background: #7a1f2b; padding: 3px 8px; display: inline-block;
+          border: 2px solid #000; font-weight: 700; }
+  .vote { color: #9a8f7d; font-size: 12.5px; }
+  .verdict { color: #1a140d; background: #caa24a; padding: 6px 10px; display: inline-block;
+             border: 3px solid #000; font-weight: 700; letter-spacing: .08em; }
+  .sys { color: #9a8f7d; letter-spacing: .12em; text-transform: uppercase; font-weight: 700; font-size: 12.5px; }
+  .err { color: #f0d79a; background: #7a1f2b; padding: 4px 8px; display: inline-block; }
+</style>
+</head>
+<body>
+<div class="frame">
+  <h1>LIVE BENCH</h1>
+  <div class="sub">convene the agent society — running live on this Alibaba Cloud instance</div>
+  <div class="bar">
+    <button id="btn">Convene the panel</button>
+    <span class="chip">status: <b id="st">…</b></span>
+    <span class="chip" id="case" style="display:none"></span>
+    <span class="chip" id="tally" style="display:none"></span>
+  </div>
+  <div class="note">
+    Pressing the button starts a <em>real</em> deliberation: nine AI jurists on qwen3.7-plus
+    (foreperson on qwen3.7-max) vote in private, argue, and file a verdict — nothing is cached
+    or replayed. A full deliberation takes ~10–15 minutes; events appear below the moment each
+    agent produces them. One session at a time; the panel takes a recess between sessions.
+    The demo case is a decided case, so you can judge the panel against the real Court.
+  </div>
+  <div id="record"><div class="hdr">The Record — live</div><div id="lines"><p class="ln sys">The chamber is empty. Convene the panel to begin.</p></div></div>
+</div>
+<script>
+const AGENT_COLORS = {
+  textualist:"#c96a5a", originalist:"#b0885a", living_constitutionalist:"#7fae8f",
+  pragmatist:"#9a8fd0", precedent_maximalist:"#c9a44a", federalism_hawk:"#5a9ab0",
+  civil_libertarian:"#d08fb0", process_formalist:"#8fa3b0", minimalist:"#a3b08f",
+  foreperson:"#caa24a"
+};
+const nice = id => (id||"").replace(/_/g," ").replace(/\b\w/g, c=>c.toUpperCase());
+let from = 0, running = false, tally = {};
+const el = id => document.getElementById(id);
+
+function render(e){
+  const d = document.createElement("p"); d.className = "ln";
+  if (e.type === "session_start") d.innerHTML = `<span class="sys">— court convened —</span>`;
+  else if (e.type === "foreperson") d.innerHTML = `<span class="who fore">THE FOREPERSON:</span> ${esc(e.text||e.action||"")}`;
+  else if (e.type === "speak") {
+    const c = AGENT_COLORS[e.agent] || "#e8e0d2";
+    d.innerHTML = `<span class="who" style="color:${c}">${nice(e.agent).toUpperCase()} <span class="vote">(rd ${e.round}, ${e.stance})</span>:</span> ${esc(e.text)}`;
+  } else if (e.type === "vote") {
+    tally[e.agent] = e.position; updTally();
+    d.innerHTML = `<span class="vote">· private ballot — ${nice(e.agent)}: ${e.position} (conf ${e.confidence})</span>`;
+  } else if (e.type === "vote_change") {
+    tally[e.agent] = e.to; updTally();
+    d.innerHTML = `<span class="flip">⚖ ${nice(e.agent).toUpperCase()} CHANGES VOTE: ${e.from} → ${e.to} (rd ${e.round})</span><br><span class="vote">${esc(e.reason_text||"")}</span>`;
+  } else if (e.type === "verdict") {
+    d.innerHTML = `<span class="verdict">VERDICT: ${e.position.toUpperCase()} ${e.vote_split}</span>`;
+  } else if (e.type === "reveal") {
+    d.innerHTML = `<span class="${e.match?'verdict':'flip'}">THE REAL COURT: ${e.actual.toUpperCase()} ${e.actual_split} — ${e.match?"MATCH":"MISS"}</span>`;
+  } else return;
+  el("lines").appendChild(d);
+  el("record").scrollTop = el("record").scrollHeight;
+}
+function updTally(){
+  const vals = Object.values(tally);
+  const a = vals.filter(v=>v==="affirm").length, r = vals.filter(v=>v==="reverse").length;
+  el("tally").style.display = ""; el("tally").innerHTML = `affirm <b>${a}</b> · reverse <b>${r}</b>`;
+}
+const esc = s => (s||"").replace(/[&<>]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
+
+async function poll(){
+  try {
+    const r = await (await fetch(`/api/log?from=${from}`)).json();
+    r.events.forEach(render); from = r.total;
+    const s = r.state;
+    el("st").textContent = s.state + (s.state==="cooldown" && s.cooldown_remaining_s ? ` (${Math.ceil(s.cooldown_remaining_s/60)}m)` : "");
+    el("btn").disabled = s.state !== "idle";
+    if (s.case_name){ el("case").style.display=""; el("case").textContent = s.case_name; }
+    if (s.error){ const d=document.createElement("p"); d.className="ln";
+      d.innerHTML=`<span class="err">session error: ${esc(s.error)}</span>`; el("lines").appendChild(d); s.error=null; }
+  } catch(e){ el("st").textContent = "unreachable"; }
+  setTimeout(poll, 2500);
+}
+el("btn").onclick = async () => {
+  el("btn").disabled = true; tally = {};
+  el("lines").innerHTML = ""; from = 0;
+  const r = await fetch("/api/convene", {method:"POST"});
+  const j = await r.json();
+  if (!r.ok){ const d=document.createElement("p"); d.className="ln";
+    d.innerHTML=`<span class="err">${esc(j.error||"cannot convene")}</span>`; el("lines").appendChild(d); }
+};
+poll();
+</script>
+</body>
+</html>
