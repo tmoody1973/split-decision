@@ -22,7 +22,10 @@ Two Alibaba Cloud surfaces:
 ## Current deployment (2026-07-06)
 
 - Instance: `3e5aa12c9828479c80ac1c8dd1f0fd36` (Singapore, Ubuntu 24.04, 2c/1G, expires 2026-08-06)
-- App: **http://47.237.96.135/** · hero replay: `http://47.237.96.135/courtroom.html?episode=oyez-63889`
+- App: **https://split-decision.tarikmoody.com/** (Cloudflare proxy, SSL Full, orange-cloud A record -> 47.237.96.135)
+  - hero replay: `https://split-decision.tarikmoody.com/courtroom.html?episode=oyez-63889`
+  - Live Bench (judge-triggered live deliberation): `https://split-decision.tarikmoody.com/live.html`
+  - direct-IP fallback: `http://47.237.96.135/`
 - `split-decision.service`: active (exited) — publishes the hero episode + feed to OSS from the instance
 - Provisioned entirely via Cloud Assistant RunCommand (no SSH) — see the runbook below for rebuilds
 
