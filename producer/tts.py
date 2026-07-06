@@ -51,6 +51,11 @@ def synthesize(text: str, voice: str, out_mp3: Path, purpose: str, tries: int = 
                 json={"model": TTS_MODEL, "input": {"text": text, "voice": voice}},
                 timeout=120,
             )
+            if 400 <= resp.status_code < 500 and resp.status_code != 429:
+                # 4xx (incl. moderation DataInspectionFailed) is never retryable —
+                # re-submitting the same blocked content just burns attempts.
+                raise RuntimeError(
+                    f"TTS non-retryable {resp.status_code} for {out_mp3.name}: {resp.text[:300]}")
             resp.raise_for_status()
             audio_url = resp.json()["output"]["audio"]["url"]
             wav = requests.get(audio_url, timeout=120)
@@ -63,7 +68,9 @@ def synthesize(text: str, voice: str, out_mp3: Path, purpose: str, tries: int = 
             tmp.unlink()
             log_tts_cost(purpose, len(text))
             return duration_ms(out_mp3)
-        except Exception as err:  # noqa: BLE001 — moderation/network both land here
+        except RuntimeError:
+            raise  # non-retryable (moderation / other 4xx) — fail fast with the body
+        except Exception as err:  # noqa: BLE001 — 429/5xx/network: transient, retry
             last_err = err
             time.sleep(2 * (attempt + 1))
     raise RuntimeError(f"TTS failed for {out_mp3.name}: {last_err}")
