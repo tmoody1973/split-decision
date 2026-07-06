@@ -63,6 +63,17 @@ Two Alibaba Cloud surfaces:
    `http://<public-ip>/courtroom.html?episode=oyez-63889`.
 8. **Firewall** — default rules already allow TCP 80; nothing to add.
 
+## Live Bench — judges convene the panel themselves
+
+**http://47.237.96.135/live.html** — one button convenes a REAL deliberation on
+the instance (nothing cached): nine jurists on qwen3.7-plus + foreperson on
+qwen3.7-max argue Pung v. Isabella County while the page streams every event
+the moment an agent produces it. Guardrails: one session at a time, 20-minute
+recess between sessions, daily cap. Components: `livebench/livebench_server.py`
+(stdlib HTTP on 127.0.0.1:8787, systemd `split-decision-livebench`), nginx
+`/api/` proxy, `livebench/live.html`. Completed runs are archived under
+`/var/lib/split-decision-livebench/runs/`.
+
 ## Proof of deployment (submission artifact)
 
 Per the doc (§ "Sample Screenshot"): open **Workbench** on the running
