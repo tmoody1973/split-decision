@@ -15,14 +15,14 @@ APP_DIR="/opt/split-decision"
 
 echo "== packages =="
 if command -v dnf >/dev/null 2>&1; then
-  dnf install -y git python3 python3-pip ffmpeg 2>/dev/null || {
+  dnf install -y git python3 python3-pip nginx ffmpeg 2>/dev/null || {
     # ffmpeg lives in EPEL on Alibaba Cloud Linux 3
     dnf install -y epel-release || true
-    dnf install -y git python3 python3-pip ffmpeg
+    dnf install -y git python3 python3-pip nginx ffmpeg
   }
 elif command -v apt-get >/dev/null 2>&1; then
   apt-get update
-  apt-get install -y git python3 python3-venv python3-pip ffmpeg
+  apt-get install -y git python3 python3-venv python3-pip nginx ffmpeg
 else
   echo "unsupported package manager" >&2
   exit 1
@@ -51,9 +51,19 @@ echo "== systemd unit =="
 cp "$APP_DIR/deploy/split-decision.service" /etc/systemd/system/
 systemctl daemon-reload
 
+echo "== nginx site (courtroom app) =="
+mkdir -p /opt/split-decision-site
+cp "$APP_DIR/deploy/nginx-split-decision.conf" /etc/nginx/conf.d/split-decision.conf
+# quiet the distro default server if present
+sed -i 's/ default_server//g' /etc/nginx/nginx.conf 2>/dev/null || true
+nginx -t && systemctl enable --now nginx && systemctl reload nginx
+
 echo
 echo "Provisioned. Next steps:"
 echo "  1. vi $APP_DIR/.env            # paste the three secrets"
 echo "  2. systemctl enable --now split-decision"
 echo "  3. systemctl status split-decision   # should be: active (exited)"
 echo "  4. journalctl -u split-decision -n 30 # shows mp3+feed publish from this instance"
+echo "  5. From the dev machine, ship the built app:"
+echo "       bash deploy/push_site_to_sas.sh root@<public-ip>"
+echo "     then open http://<public-ip>/ in a browser"
