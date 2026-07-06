@@ -85,7 +85,10 @@ class Chamber:
         result = chat_json(JUROR_MODEL, self._sys(jurist, round_no), user,
                            self._purpose(f"r{round_no}:{'revote' if revote else 'vote'}:{jurist}"))
         if not result or result.get("position") not in ("affirm", "reverse"):
-            result = {"position": self.positions[jurist]["position"], "confidence": 0.5}
+            # Malformed reply: carry the prior position forward, MARKED — synthesized
+            # votes are degraded data and must never be silent in the record.
+            result = {"position": self.positions[jurist]["position"], "confidence": 0.5,
+                      "synthesized": True}
             if result["position"] == "undecided":
                 result["position"] = "affirm"
         result["confidence"] = clamp01(result.get("confidence"))
@@ -191,16 +194,18 @@ class Chamber:
                 prev = self.positions[j]["position"]
                 if round_no > 1 and v["position"] != prev:
                     self.flip_counts[j] += 1
-                    influenced = [i for i in v.get("influenced_by", []) if i in JURIST_IDS and i != j] or \
-                                 [next(k for k in JURIST_IDS if k != j)]
+                    named = [i for i in v.get("influenced_by", []) if i in JURIST_IDS and i != j]
+                    influenced = named or [next(k for k in JURIST_IDS if k != j)]
                     self.log.add(type="vote_change", agent=j, round=round_no,
                                  **{"from": prev, "to": v["position"]},
                                  influenced_by=influenced,
-                                 reason_text=v.get("reason") or "Reflection between rounds moved me.")
+                                 reason_text=v.get("reason") or "Reflection between rounds moved me.",
+                                 **({} if named else {"influence_inferred": True}))
                     print(f"[round {round_no}] DRIFT FLIP: {j} {prev} -> {v['position']}")
                 self.positions[j] = v
                 self.log.add(type="vote", agent=j, round=round_no,
-                             position=v["position"], confidence=v["confidence"], public=False)
+                             position=v["position"], confidence=v["confidence"], public=False,
+                             **({"synthesized": True} if v.get("synthesized") else {}))
             tally = self._tally(votes)
             print(f"[round {round_no}] private votes: {tally}")
 
@@ -238,16 +243,18 @@ class Chamber:
                     self.flip_counts[j] += 1
                     debated = [i for pair in pairs for i in pair]
                     fallback = next((i for i in debated + JURIST_IDS if i != j))
-                    influenced = [i for i in v.get("influenced_by", []) if i in JURIST_IDS and i != j] or \
-                                 [fallback]
+                    named = [i for i in v.get("influenced_by", []) if i in JURIST_IDS and i != j]
+                    influenced = named or [fallback]
                     self.log.add(type="vote_change", agent=j, round=round_no,
                                  **{"from": before, "to": v["position"]},
                                  influenced_by=influenced,
-                                 reason_text=v.get("reason") or "On reflection, the argument carried.")
+                                 reason_text=v.get("reason") or "On reflection, the argument carried.",
+                                 **({} if named else {"influence_inferred": True}))
                     print(f"[round {round_no}] FLIP: {j} {before} -> {v['position']}")
                 self.positions[j] = v
                 self.log.add(type="vote", agent=j, round=round_no,
-                             position=v["position"], confidence=v["confidence"], public=False)
+                             position=v["position"], confidence=v["confidence"], public=False,
+                             **({"synthesized": True} if v.get("synthesized") else {}))
             final_votes = revotes
 
             # 5. digests + CHECK

@@ -110,6 +110,14 @@ schema-validated event log that feeds the scoreboard, the courtroom renderer, an
 the transcript panel. The journalist anchors characterize and analyze; they never
 rewrite the record. One log, four consumers.
 
+**Degraded data is marked, never silent.** When a jurist's reply is malformed,
+the engine carries its prior position forward and stamps the vote event
+`"synthesized": true`; when a flipping jurist doesn't name who moved it, the
+engine's guess is stamped `"influence_inferred": true`. Both flags are in
+`contracts/events.schema.json` and render as ⚠ markers in the transcript
+surfaces. Episode logs generated before 2026-07-06 predate the flags (the
+schema keeps them optional, so old logs still validate).
+
 ## Tech stack
 
 | Layer | Choice |

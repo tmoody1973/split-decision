@@ -82,7 +82,7 @@ export class RecordPanel {
         const p = personaFor(ev.agent);
         const el = document.createElement("div");
         el.className = "line system";
-        el.textContent = `⚖ ${p.display.toUpperCase()} changes vote: ${ev.from.toUpperCase()} → ${ev.to.toUpperCase()} (rd ${ev.round})`;
+        el.textContent = `⚖ ${p.display.toUpperCase()} changes vote: ${ev.from.toUpperCase()} → ${ev.to.toUpperCase()} (rd ${ev.round})${ev.influence_inferred ? " · ⚠ influence inferred" : ""}`;
         return el;
       }
       case "verdict": {

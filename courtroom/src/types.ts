@@ -43,6 +43,7 @@ export interface VoteEvent {
   position: Position;
   confidence: number;
   public: false;
+  synthesized?: boolean; // engine carried a prior position forward on a malformed reply
 }
 
 export interface VoteChangeEvent {
@@ -54,6 +55,7 @@ export interface VoteChangeEvent {
   to: Position;
   influenced_by: JuristId[];
   reason_text: string;
+  influence_inferred?: boolean; // influenced_by inferred by the engine, not named by the jurist
   audio_file?: string;
   dur_ms?: number;
 }
