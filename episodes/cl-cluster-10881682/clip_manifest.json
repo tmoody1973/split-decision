@@ -1,0 +1,77 @@
+{
+  "case_id": "cl-cluster-10881682",
+  "clips": [
+    {
+      "id": "c01",
+      "purpose": "cold_open",
+      "event_span": [
+        15,
+        16
+      ],
+      "note": "Textualist and pragmatist clash over statutory text and ground-level reality."
+    },
+    {
+      "id": "c02",
+      "purpose": "color",
+      "event_span": [
+        11,
+        14
+      ],
+      "note": "Initial arguments on executive power, independence, and due process."
+    },
+    {
+      "id": "c03",
+      "purpose": "color",
+      "event_span": [
+        17,
+        19
+      ],
+      "note": "Jurisdictional and procedural thresholds raised by formalist, minimalist, maximalist."
+    },
+    {
+      "id": "c04",
+      "purpose": "color",
+      "event_span": [
+        20,
+        24
+      ],
+      "note": "Foreperson frames debates; originalist and textualist clash over 1789 vs text."
+    },
+    {
+      "id": "c05",
+      "purpose": "color",
+      "event_span": [
+        25,
+        26
+      ],
+      "note": "Federalism hawk and civil libertarian debate structural accountability vs individual liberty."
+    },
+    {
+      "id": "c06",
+      "purpose": "verdict_run",
+      "event_span": [
+        27,
+        28
+      ],
+      "note": "Final exchange on individual burden and executive convenience before the flip."
+    },
+    {
+      "id": "c07",
+      "purpose": "flip",
+      "event_span": [
+        34,
+        34
+      ],
+      "note": "Federalism hawk flips to affirm, citing lack of state authority implication."
+    },
+    {
+      "id": "c08",
+      "purpose": "color",
+      "event_span": [
+        1,
+        1
+      ],
+      "note": "Foreperson convenes the panel and frames the initial question."
+    }
+  ]
+}

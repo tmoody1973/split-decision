@@ -34,5 +34,23 @@
     "bytes": 13163667,
     "duration": "00:13:42",
     "pub_date": "Mon, 06 Jul 2026 07:14:18 -0000"
+  },
+  {
+    "case_id": "cl-cluster-10881681",
+    "title": "Trump v. Slaughter",
+    "description": "The panel deliberates Trump v. Slaughter. Verdict: reverse 7-2. The real Court: reverse unknown. Every clip is verbatim from the deliberation record.",
+    "mp3_url": "https://split-decision.oss-ap-southeast-1.aliyuncs.com/episodes/cl-cluster-10881681/episode.mp3",
+    "bytes": 16880996,
+    "duration": "00:17:35",
+    "pub_date": "Mon, 06 Jul 2026 20:57:49 -0000"
+  },
+  {
+    "case_id": "cl-cluster-10881682",
+    "title": "Trump v. Cook",
+    "description": "The panel deliberates Trump v. Cook. Verdict: affirm 8-1. The real Court: affirm unknown. Every clip is verbatim from the deliberation record.",
+    "mp3_url": "https://split-decision.oss-ap-southeast-1.aliyuncs.com/episodes/cl-cluster-10881682/episode.mp3",
+    "bytes": 13434087,
+    "duration": "00:13:59",
+    "pub_date": "Mon, 06 Jul 2026 21:15:40 -0000"
   }
 ]

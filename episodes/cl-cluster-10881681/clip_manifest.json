@@ -1,0 +1,68 @@
+{
+  "case_id": "cl-cluster-10881681",
+  "clips": [
+    {
+      "id": "c01",
+      "purpose": "cold_open",
+      "event_span": [
+        11,
+        13
+      ],
+      "note": "Textualist and living constitutionalist clash over Article II vesting and purpose."
+    },
+    {
+      "id": "c02",
+      "purpose": "color",
+      "event_span": [
+        14,
+        19
+      ],
+      "note": "Broad opening statements on precedent, federalism, liberty, and jurisdiction."
+    },
+    {
+      "id": "c04",
+      "purpose": "flip",
+      "event_span": [
+        36,
+        36
+      ],
+      "note": "Civil libertarian flips to reverse, prioritizing democratic accountability over bureaucratic stability."
+    },
+    {
+      "id": "c05",
+      "purpose": "flip",
+      "event_span": [
+        48,
+        48
+      ],
+      "note": "Minimalist flips to reverse, taking the process formalist jurisdictional off-ramp."
+    },
+    {
+      "id": "c06",
+      "purpose": "color",
+      "event_span": [
+        50,
+        53
+      ],
+      "note": "Living constitutionalist and originalist debate evolving purpose versus original public meaning."
+    },
+    {
+      "id": "c07",
+      "purpose": "color",
+      "event_span": [
+        54,
+        58
+      ],
+      "note": "Intense debate on stare decisis, jurisdiction, and federalism merits."
+    },
+    {
+      "id": "c08",
+      "purpose": "color",
+      "event_span": [
+        60,
+        63
+      ],
+      "note": "Pragmatist and textualist clash over administrability and litigation burdens."
+    }
+  ]
+}
