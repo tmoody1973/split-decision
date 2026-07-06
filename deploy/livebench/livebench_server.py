@@ -80,10 +80,15 @@ def status() -> dict:
                 "error": None, "event_count": 0}
     done = _done(run)
     if done is None and not _pid_alive(run):
-        # runner died without reporting (e.g. hard reboot) — close it out
-        done = {"ok": False, "error": "the session was interrupted; the panel will re-convene",
-                "finished": time.time()}
-        (run / "done.json").write_text(json.dumps(done))
+        # Grace window: the runner needs a few seconds to boot and write its
+        # pidfile — convene() calls status() immediately after systemd-run, and
+        # judging that instant killed newborn runs (verified live 2026-07-06).
+        age = time.time() - _meta(run).get("started", 0)
+        if age > 30:
+            # runner died without reporting (e.g. hard reboot) — close it out
+            done = {"ok": False, "error": "the session was interrupted; the panel will re-convene",
+                    "finished": time.time()}
+            (run / "done.json").write_text(json.dumps(done))
     base = {"run_id": run.name, "case_name": _meta(run).get("case_name"),
             "event_count": len(_events(run)), "error": None}
     if done is None:
