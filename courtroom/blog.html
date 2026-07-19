@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Split Decision — The Build Journal</title>
+    <meta name="description" content="Three days on Qwen Cloud building an AI Supreme Court: nine arguing judges, twelve designed voices, one wrong headline, and an honest scoreboard." />
+    <link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y=".9em" font-size="90">⚖️</text></svg>' />
+    <style>
+      :root {
+        --bg: #1a140d; --panel: #241a10; --line: #4a3320; --wood: #8a5a2b;
+        --ink: #e8e0d2; --muted: #9a8f7d; --gold: #caa24a; --goldhi: #f0d79a;
+        --burgundy: #7a1f2b;
+      }
+      * { box-sizing: border-box; margin: 0; }
+      body {
+        background: var(--bg); color: var(--ink);
+        font: 16px/1.7 Georgia, "Times New Roman", serif;
+        padding: 32px 20px 80px;
+      }
+      main { max-width: 680px; margin: 0 auto; }
+      a.back {
+        color: var(--goldhi); text-decoration: none; font-weight: 700; font-size: 12px;
+        font-family: ui-monospace, Menlo, monospace;
+        border: 2px solid var(--wood); padding: 6px 12px; display: inline-block;
+        margin: 0 6px 24px 0; border-radius: 3px;
+      }
+      a.back:hover { background: var(--line); }
+      h1 {
+        font-family: ui-monospace, Menlo, monospace;
+        font-size: 30px; color: var(--goldhi); line-height: 1.25; margin-bottom: 8px;
+      }
+      .byline { color: var(--muted); font-size: 14px; margin-bottom: 36px;
+        font-family: ui-monospace, Menlo, monospace; }
+      h2 {
+        font-family: ui-monospace, Menlo, monospace;
+        font-size: 16px; color: var(--gold); letter-spacing: 0.06em;
+        border-bottom: 2px solid var(--line); padding-bottom: 8px;
+        margin: 40px 0 16px;
+      }
+      p { margin-bottom: 18px; }
+      a { color: var(--goldhi); }
+      .pull {
+        border-left: 3px solid var(--gold); background: var(--panel);
+        padding: 14px 18px; margin: 24px 0; font-style: italic;
+      }
+      .foot { color: var(--muted); font-size: 13px; margin-top: 48px;
+        border-top: 1px solid var(--line); padding-top: 16px;
+        font-family: ui-monospace, Menlo, monospace; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <a class="back" href="./index.html">← ABOUT</a>
+      <a class="back" href="./findings.html">📊 FINDINGS</a>
+      <a class="back" href="./courtroom.html">⚖ COURTROOM</a>
+
+      <h1>The night I listened to nine machines argue</h1>
+      <p class="byline">Tarik Moody · July 2026 · built for the Qwen Cloud Global AI
+      Hackathon, Agent Society track</p>
+
+      <p>A few nights ago I sat in my kitchen and listened to nine voices argue about
+      whether a president can fire the officials who regulate him. One voice was
+      gravelly and Southern and impatient with everyone. One kept asking what the words
+      meant when they were written. One wanted to know who would live with the
+      consequences. They interrupted each other. They conceded points. About twelve
+      minutes in, a voice I had built to be cautious changed its vote out loud and
+      named the exact argument that moved it.</p>
+
+      <p>None of them are people. I had made all of them a couple of days earlier, for
+      a hackathon.</p>
+
+      <p>I make radio for a living, so I think about voices and arguments more than is
+      probably healthy. When Qwen Cloud announced a hackathon with an "agent society"
+      track, my first thought wasn't a productivity tool. It was a question I couldn't
+      find a straight answer to: everyone is wiring AI agents together and letting them
+      talk, and almost nobody can tell you whether the talking helps. Ask and you get
+      vibes. I wanted a number. And because of the radio thing, I wanted you to be able
+      to <em>hear</em> the answer, not just read it.</p>
+
+      <p>Supreme Court cases turned out to be the honest test I was looking for. The
+      Court grades in public. It tells you who won and by what vote, and there is no
+      arguing with the answer key.</p>
+
+      <h2>Three days on Qwen Cloud</h2>
+
+      <p>My first API call hit Qwen Cloud on the morning of July 4th at 9:28 a.m. By
+      submission the log showed 11,271 calls and about 35 million tokens, all inside
+      the free tier. I know that because every single call appends a line to a cost
+      log. That file became the project's conscience more than once.</p>
+
+      <p>Casting the models felt like casting a show. The nine jurists run on
+      qwen3.7-plus, which turned out to have plenty of judgment for arguing doctrine
+      at a fraction of the cost. The foreperson and the clerk run on qwen3.7-max,
+      because the moderator should not be the least capable voice in the room. The
+      boring formatting calls go to qwen3.6-flash. Nobody notices the intern, which
+      is the point.</p>
+
+      <p>The voices were the part that felt like magic, and they almost didn't happen.
+      I had planned to use CosyVoice. A live test on day one returned an error that,
+      after some digging, meant the model only exists in the Beijing region. The detour
+      led me to Qwen's Voice Design, where you describe a voice in prose the way a
+      casting director would: "older male voice, gravelly, deliberate, slight Southern
+      cadence, dry wit." It hands you back that person. I made twelve — nine judges,
+      a foreperson, two news anchors — and sat there listening to preview clips like
+      demo tapes, sending some back. Twenty years of radio and I have never cast a
+      show that fast.</p>
+
+      <p>Not everything charmed me. The image model blocked my first episode-art
+      prompts because I described the crimes in the cases instead of the scene I
+      wanted drawn. Fair enough; lesson learned. Less fair: a content-moderation block
+      once killed a deliberation forty minutes in, mid-round, because the engine
+      retried the same blocked content like it was a network hiccup. Now moderation
+      fails fast and loud, and only genuinely transient errors retry. The pipeline
+      got more resilient because it got hurt.</p>
+
+      <p>Deployment had its own surprise. Alibaba's object storage force-downloads
+      HTML pages on the default endpoint, which I discovered only when my deployed
+      site downloaded itself instead of loading. The web app moved to nginx on a small
+      Simple Application Server instance, which turned out to be a gift: with real
+      compute behind the site, I could add a live bench where a visitor presses a
+      button and convenes an actual deliberation, nine models arguing in real time on
+      that server, nothing cached. Judges can make the machine perform on demand. On
+      radio we call that going live, and it is always the part that makes you sweat.</p>
+
+      <h2>The part where I was wrong</h2>
+
+      <p>My first published scoreboard said that debate made the panel ten points less
+      accurate. I was proud of that number. An honest negative result, I told myself.
+      Look how rigorous.</p>
+
+      <p>Then I ran a mock judging pass against my own project, and one of the
+      reviewer personas took my benchmark apart. The ten-point gap compared two
+      different sets of cases. Paired on the identical 24, the story collapsed: silent
+      jury, 66.7 percent. Debating court, 66.7 percent. The debate fixed two cases and
+      broke two. And nothing — not the solo model, not the jury, not the arguing
+      court — beat the dumbest possible strategy on that sample, which is to always
+      guess "reverse," because the Supreme Court reverses most cases it takes.</p>
+
+      <p class="pull">I fixed the math and left the correction on the findings page,
+      in public, next to the numbers it corrects. It stung to write. It is also the
+      part of the project I trust the most.</p>
+
+      <p>The control experiment made the lesson sharper. I swapped the nine ideologues
+      for nine neutral analysts, no philosophies at all, and ran the same 24 cases
+      again overnight. Same accuracy, to the decimal. What changed was the character
+      of the room: the neutral panel herded, reaching unanimous verdicts on half the
+      cases in a round and a half, while the ideologues argued for three rounds and
+      flipped along philosophical lines — the cautious Minimalist changed its vote 21
+      times, the immovable Textualist once. Ideology shapes the debate. The model sets
+      the score.</p>
+
+      <h2>What the machines showed me</h2>
+
+      <p>Ten years ago I wrote <a href="https://radiomilwaukee.org/stories/uniquely-milwaukee/2016-08-15/missing-city-empathy">a
+      piece for Radio Milwaukee</a> arguing that what my city was missing was empathy.
+      I did not expect that thought to be waiting for me inside a hackathon project.</p>
+
+      <p>As an exhibition, outside the scoreboard, I had the panel re-argue Plessy v.
+      Ferguson, the 1896 case that blessed "separate but equal." Nine judicial
+      philosophies, faithfully applied, upheld it 7 to 2. The real Court went 7 to 1.
+      The two dissents in my simulation came from the judges built to ask who bears
+      the burden — the Civil Libertarian and the Living Constitutionalist, standing
+      roughly where Justice Harlan stood alone. Method, honestly followed, walked
+      straight into one of the worst decisions in American history. The objection came
+      from the corner where empathy lives. You can listen to it happen. I am still not
+      sure how I feel about how easy it was.</p>
+
+      <p>The panel earns back some respect on new ground. On June 29 the real Court
+      decided two presidential-removal cases the same morning, in opposite directions:
+      it let the President fire an FTC commissioner and kept a Federal Reserve
+      governor in her seat. My panel, working blind from briefing memos — these cases
+      sit past the models' training cutoff — split the pair the same way, dissents
+      surfacing from the philosophically matching corners. Two cases prove very
+      little. They do make you lean in.</p>
+
+      <h2>The deal</h2>
+
+      <p>Three predictions now sit on the record for cases the Court has not decided.
+      When the rulings come down, the scoreboard updates in public, whether it
+      flatters me or not. That is the deal I think anyone building with AI agents
+      should be willing to take: put the number where people can check it, publish the
+      baseline, and keep the receipts when you are wrong. We demand that much from our
+      institutions. The machines will argue either way — beautifully, it turns out.
+      The honesty is still on us.</p>
+
+      <p><a href="https://split-decision.tarikmoody.com">Watch the courtroom, convene
+      the live bench, or subscribe to the podcast</a>. The code is
+      <a href="https://github.com/tmoody1973/split-decision">open source</a>.</p>
+
+      <p class="foot">Built solo, July 4–8 2026, on Qwen Cloud (qwen3.7-plus,
+      qwen3.7-max, qwen3.6-flash, Voice Design, qwen3-tts, wan2.6-t2i) and Alibaba
+      Cloud (SAS + OSS), for the Qwen Cloud Global AI Hackathon — Agent Society
+      track. Every number here renders from the same logs the scoreboard reads:
+      <a href="./findings.html">the findings</a>.</p>
+    </main>
+  </body>
+</html>

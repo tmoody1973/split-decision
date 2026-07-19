@@ -12,6 +12,7 @@ export default defineConfig({
         landing: resolve(__dirname, "index.html"),
         courtroom: resolve(__dirname, "courtroom.html"),
         findings: resolve(__dirname, "findings.html"),
+        blog: resolve(__dirname, "blog.html"),
       },
     },
   },
