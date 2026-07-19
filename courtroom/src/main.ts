@@ -203,6 +203,24 @@ function wireArchModal(): void {
     a.download = "split-decision-architecture.png";
     a.click();
   });
+
+  // Deep link: ?arch=1 opens the diagram; ?arch=png replaces the page with the
+  // raw 2x export (how docs/architecture.png is regenerated headlessly).
+  const archParam = new URLSearchParams(location.search).get("arch");
+  if (archParam === "png") {
+    void (async () => {
+      const { createArchDiagram } = await import("./archDiagram");
+      const d = await createArchDiagram(document.createElement("div"));
+      const img = document.createElement("img");
+      img.id = "arch-export";
+      img.src = await d.exportPng();
+      img.style.cssText =
+        "position:fixed;inset:0;width:100vw;height:100vh;object-fit:contain;background:#1a140d;z-index:9999";
+      document.body.appendChild(img);
+    })();
+  } else if (archParam) {
+    openBtn.click();
+  }
 }
 
 boot().catch((err) => {

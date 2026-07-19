@@ -39,21 +39,23 @@ const NODES: Node[] = [
   { id: "clerk", x: 262, y: 176, w: 172, h: 118, title: "CLERK", accent: C.burgundy,
     lines: ["case record ->", "bench memo"], badge: "qwen3.7-max", badgeColor: C.burgundy },
   { id: "chamber", x: 482, y: 96, w: 236, h: 278, title: "DELIBERATION CHAMBER", accent: C.navyHi,
-    lines: ["9 jurists, 5 rounds", "private votes first,", "debate second —", "flips are measured", "persuasion"],
+    lines: ["9 jurists, 5 rounds", "private votes first,", "debate second —", "flips are measured", "persuasion; fallbacks", "flagged, never silent"],
     badge: "9 x qwen3.7-plus", badgeColor: C.navy },
   { id: "events", x: 766, y: 150, w: 176, h: 170, title: "events.jsonl", accent: C.gold,
     lines: ["THE SPINE", "", "one immutable log,", "every consumer", "reads the same", "record verbatim"] },
   { id: "scoreboard", x: 990, y: 44, w: 266, h: 122, title: "SCOREBOARD", accent: C.green,
-    lines: ["solo 83% > jury 77%", "> deliberation 67%", "honest negative result"] },
+    lines: ["paired on the same 24:", "solo 75% · jury 66.7%", "debate 66.7% · base 75%", "neutral control 66.7%", "an honest null, published"] },
   { id: "producer", x: 990, y: 196, w: 266, h: 150, title: "PRODUCER", accent: C.burgundy,
     lines: ["clips -> two-way script", "verbatim tape only", "ffmpeg mix -> MP3"],
     badge: "qwen3-tts-vd · wan2.6-t2i", badgeColor: C.navy },
   { id: "courtroom", x: 990, y: 376, w: 266, h: 122, title: "PIXEL COURTROOM", accent: C.navyHi,
     lines: ["Phaser replay VCR", "audio drives visuals", "(this app)"] },
-  { id: "oss", x: 700, y: 540, w: 300, h: 130, title: "OSS BUCKET", accent: C.gold,
-    lines: ["podcast MP3 + RSS feed", "episode art", "this web app (static)"] },
-  { id: "sas", x: 320, y: 540, w: 280, h: 130, title: "SAS RUNNER", accent: C.green,
-    lines: ["run_episode.py", "systemd service", "(pipeline compute)"] },
+  { id: "oss", x: 800, y: 540, w: 230, h: 130, title: "OSS BUCKET", accent: C.gold,
+    lines: ["podcast MP3 +", "RSS feed", "episode art"] },
+  { id: "sas", x: 320, y: 540, w: 220, h: 130, title: "SAS RUNNER", accent: C.green,
+    lines: ["nginx: this app", "run_episode.py", "(systemd pipeline)"] },
+  { id: "livebench", x: 560, y: 540, w: 220, h: 130, title: "LIVE BENCH", accent: C.burgundy,
+    lines: ["judges convene a", "REAL deliberation,", "streamed as it runs"] },
 ];
 
 // Elbow-routed edges as waypoint polylines; dots animate along them.
@@ -64,9 +66,9 @@ const EDGES: [string, number[][]][] = [
   ["events->scoreboard", [[942, 200], [966, 200], [966, 105], [990, 105]]],
   ["events->producer", [[942, 250], [966, 250], [966, 271], [990, 271]]],
   ["events->courtroom", [[942, 300], [966, 300], [966, 437], [990, 437]]],
-  ["producer->oss", [[1123, 346], [1123, 470], [850, 470], [850, 540]]],
+  ["producer->oss", [[1123, 346], [1123, 470], [880, 470], [880, 540]]],
   ["sas->chamber", [[460, 540], [460, 420], [530, 420], [530, 374]]],
-  ["oss->courtroom", [[1000, 605], [1200, 605], [1200, 498]]],
+  ["oss->courtroom", [[1030, 605], [1200, 605], [1200, 498]]],
 ];
 
 function drawPixelBox(g: Graphics, n: Node): void {
@@ -88,7 +90,8 @@ export async function createArchDiagram(mount: HTMLElement): Promise<ArchDiagram
     background: C.bg,
     antialias: false,
     autoStart: false,
-    resolution: 1,
+    resolution: 2, // 2x export for the submission PNG; CSS caps on-screen size
+    autoDensity: true,
   });
   // Fit the whole diagram on screen: constrain BOTH axes and let the browser keep
   // the canvas's intrinsic 16:9 — a width-only rule overflows short windows and
@@ -120,7 +123,7 @@ export async function createArchDiagram(mount: HTMLElement): Promise<ArchDiagram
   }));
 
   const cloudBand = new Graphics();
-  cloudBand.rect(300, 516, 720, 178).stroke({ width: 3, color: C.wood });
+  cloudBand.rect(300, 516, 748, 178).stroke({ width: 3, color: C.wood });
   root.addChild(cloudBand);
   root.addChild(new Text({
     text: "ALIBABA CLOUD — DEPLOYED",
